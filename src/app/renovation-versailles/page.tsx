@@ -72,25 +72,6 @@ export default function RenovationVersailles() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention à Versailles
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Versailles est une ville d&apos;exception. Capitale historique de la royauté française, elle abrite un parc immobilier d&apos;une qualité remarquable. Le quartier des Chantiers autour de la gare Versailles-Chantiers, le quartier Notre-Dame avec ses immeubles du XVIIe et XVIIIe siècles, le quartier Saint-Louis et le quartier Clagny-Glatigny proposent des appartements allant du studio étudiant à l&apos;appartement de prestige avec parquet d&apos;époque.
-            </p>
-            <p>
-              Espace Design intervient à Versailles pour des projets de rénovation de standing. La ville impose souvent des contraintes architecturales importantes — secteur sauvegardé, abords du Château et du Parc, bâtiments classés — que notre équipe maîtrise parfaitement. Nous travaillons dans le respect des matériaux d&apos;origine et des exigences des Architectes des Bâtiments de France tout en apportant le confort moderne attendu.
-            </p>
-            <p>
-              De la Rue de la Paroisse à la Rue du Maréchal Joffre, de l&apos;Avenue de Paris aux abords des Écuries du Roi, nous couvrons l&apos;ensemble de Versailles. Notre expertise en rénovation patrimoniale et notre sens de l&apos;esthétisme sont particulièrement adaptés aux biens versaillais.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

@@ -72,25 +72,6 @@ export default function RenovationParis4e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 4e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 4e arrondissement concentre quelques-uns des biens les plus convoités de Paris. L&apos;Île Saint-Louis et ses hôtels particuliers du XVIIe siècle, le Marais médiéval autour de la Rue Saint-Paul, les abords de la Place des Vosges et les rues pavées du Quartier Saint-Gervais : chaque secteur du 4e a une identité singulière que nos équipes savent révéler.
-            </p>
-            <p>
-              Nous intervenons régulièrement dans les appartements de l&apos;Île Saint-Louis — souvent de grandes superficies avec des hauteurs sous plafond exceptionnelles et des vues incomparables sur la Seine. Ces biens d&apos;exception exigent un savoir-faire rare : Espace Design maîtrise les techniques de restauration de l&apos;ancien tout en intégrant les équipements modernes (domotique, climatisation réversible, isolation phonique).
-            </p>
-            <p>
-              Dans le Marais, autour de la Rue de Rivoli et de la Rue Saint-Antoine, nous rénovons des appartements haussmanniens et des anciens locaux reconvertis en lofts contemporains. Notre maîtrise des volumes et de la lumière nous permet de créer des intérieurs fluides et élégants, même dans les configurations les plus contraintes.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

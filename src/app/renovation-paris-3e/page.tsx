@@ -72,25 +72,6 @@ export default function RenovationParis3e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 3e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 3e arrondissement, cœur historique du Marais, est l&apos;un des secteurs les plus prisés de Paris pour ses hôtels particuliers, ses cours pavées et ses immeubles du XVIIe siècle. Entre la Rue du Temple, la Rue de Bretagne, la Place des Arts et Métiers et les ruelles du Haut Marais, les appartements ici ont une personnalité forte que nous mettons un point d&apos;honneur à sublimer.
-            </p>
-            <p>
-              Espace Design est familier des contraintes architecturales du secteur sauvegardé du Marais. Nous travaillons en étroite collaboration avec les Architectes des Bâtiments de France pour garantir la conformité des travaux tout en respectant votre vision. Poutres apparentes, voûtes en pierre, escaliers en colimaçon : nous valorisons ces éléments patrimoniaux plutôt que de les masquer.
-            </p>
-            <p>
-              De la Rue de Bretagne à la Rue Pastourelle, du Square du Temple à la Rue des Gravilliers, nos équipes connaissent le 3e dans ses moindres détails. Nous vous accompagnons depuis la conception jusqu&apos;à la livraison, avec un suivi personnalisé à chaque étape.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

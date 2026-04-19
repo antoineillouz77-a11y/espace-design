@@ -73,26 +73,6 @@ export default function RenovationParis15e() {
         </div>
       </section>
 
-      {/* Notre intervention dans le 15e */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 15e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 15e arrondissement est l&apos;arrondissement le plus peuplé de Paris. Entre la Rue de la Convention, le Boulevard de Grenelle, la Rue Lecourbe, la Rue Vaugirard et La Motte-Piquet, on y trouve une grande diversité d&apos;appartements : des haussmanniens traditionnels, des immeubles des années 70 et de nombreuses copropriétés récentes. Espace Design intervient régulièrement dans ce secteur pour tous types de projets de rénovation.
-            </p>
-            <p>
-              Que vous habitiez dans le quartier de la Motte-Picquet, autour du Parc André-Citroën, dans le secteur Beaugrenelle ou le long du Boulevard Pasteur, nous nous déplaçons dans tout le 15e sans frais supplémentaires. Notre connaissance du quartier nous permet d&apos;anticiper les contraintes techniques propres aux différents types de bâtiments.
-            </p>
-            <p>
-              Dans le 15e, nous intervenons aussi bien pour la rénovation d&apos;une salle de bain ou d&apos;une cuisine que pour la transformation complète d&apos;un appartement familial. Notre approche : un chantier soigné, propre, dans le respect de vos voisins et de votre quotidien.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

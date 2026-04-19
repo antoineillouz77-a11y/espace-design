@@ -72,25 +72,6 @@ export default function RenovationParis9e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 9e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 9e arrondissement est l&apos;un des quartiers les plus dynamiques et convoités de Paris. Le SoPi (South Pigalle), autour de la Rue des Martyrs, de la Rue Notre-Dame-de-Lorette et de la Rue Henry Monnier, s&apos;est imposé comme le nouveau village parisien par excellence — avec ses marchés, ses restaurants branchés et ses appartements rénovés avec goût.
-            </p>
-            <p>
-              Espace Design est particulièrement actif dans le 9e arrondissement, où la demande de rénovation haut de gamme est en forte croissance. Nous intervenons dans les appartements haussmanniens typiques du secteur — parquets en chêne, moulures, cheminées — que nous restaurons et modernisons avec une approche contemporaine et respectueuse du caractère du lieu.
-            </p>
-            <p>
-              De la Place Pigalle aux abords de l&apos;Opéra, de la Rue La Fayette à la Rue Blanche, nous couvrons l&apos;ensemble du 9e. Notre connaissance approfondie des immeubles du quartier et de leurs contraintes techniques nous permet d&apos;établir des devis précis et de tenir nos engagements en termes de délais et de budget.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

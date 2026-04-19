@@ -73,26 +73,6 @@ export default function RenovationParis16e() {
         </div>
       </section>
 
-      {/* Notre intervention dans le 16e */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 16e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 16e arrondissement est l&apos;un des arrondissements les plus résidentiels et les plus huppés de Paris. De la Rue de la Pompe à l&apos;Avenue Victor Hugo, en passant par le Trocadéro, la Rue Molitor et la Rue de Passy, cet arrondissement abrite de magnifiques appartements bourgeois et de luxueuses villas. Espace Design intervient régulièrement dans ce secteur pour des projets de rénovation et de décoration exigeants.
-            </p>
-            <p>
-              Que vous habitiez dans les quartiers de La Muette, Auteuil, Chaillot ou du Ranelagh, nous nous déplaçons dans tout le 16e sans frais supplémentaires. Notre expérience dans cet arrondissement nous a permis de développer une expertise particulière pour les intérieurs classiques à fort caractère, notamment les appartements Art déco et les hôtels particuliers.
-            </p>
-            <p>
-              Dans le 16e, nos clients recherchent l&apos;excellence. Nous y répondons avec des matériaux nobles, des finitions irréprochables et un sens du détail qui honore les belles demeures de ce quartier d&apos;exception.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

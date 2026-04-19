@@ -73,26 +73,6 @@ export default function RenovationParis2e() {
         </div>
       </section>
 
-      {/* Notre intervention dans le 2e */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 2e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 2e arrondissement est un quartier en pleine mutation, entre héritage commercial et résidentiel prisé. Entre la Rue Montorgueil animée, la Galerie Vivienne, la Place de la Bourse et les passages couverts historiques, le 2e recèle d&apos;appartements au charme unique — souvent des anciens immeubles de négoce convertis en lofts ou en appartements familiaux.
-            </p>
-            <p>
-              Espace Design intervient dans tout le 2e arrondissement pour des projets de rénovation complète ou de rafraîchissement ciblé. Nous sommes habitués aux planchers anciens, aux façades classées et aux contraintes des copropriétés parisiennes historiques. Notre approche : respecter l&apos;architecture, sublimer l&apos;espace, apporter le confort du neuf.
-            </p>
-            <p>
-              De la Rue d&apos;Aboukir à la Rue du Sentier, de la Rue Réaumur aux abords du Palais Brongniart, chaque chantier dans le 2e est traité avec la même exigence. Nous coordonnons l&apos;ensemble des corps de métier — électricité, plomberie, menuiserie, peinture — pour un résultat irréprochable.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

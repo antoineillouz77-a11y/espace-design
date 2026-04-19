@@ -72,25 +72,6 @@ export default function RenovationVincennes() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention à Vincennes
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Vincennes est une ville particulièrement prisée, à deux pas de Paris via la ligne 1 du métro. Son marché immobilier est l&apos;un des plus actifs de la proche banlieue est, attirant des familles et des jeunes propriétaires séduits par la qualité de vie qu&apos;elle offre : le Bois de Vincennes, le Château historique, des commerces de qualité et un tissu résidentiel agréable autour de la Rue de Fontenay et de l&apos;Avenue de Paris.
-            </p>
-            <p>
-              Espace Design intervient régulièrement à Vincennes pour des projets de rénovation variés. Les appartements haussmanniens du centre-ville, les immeubles des années 50-60 autour du Avenue de Paris et les programmes neufs vers la Porte de Vincennes représentent autant de typologies différentes que notre équipe maîtrise parfaitement. Nous gérons l&apos;ensemble du chantier avec une coordination rigoureuse de tous les corps de métiers.
-            </p>
-            <p>
-              De la Rue de la Tourelle à l&apos;Avenue de la République, de la Rue de Fontenay au Boulevard des Maréchaux, nous couvrons toute la commune de Vincennes. Devis gratuit sous 48h, déplacement sans engagement.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

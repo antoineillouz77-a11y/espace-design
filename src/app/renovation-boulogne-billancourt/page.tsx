@@ -72,25 +72,6 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention à Boulogne-Billancourt
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Boulogne-Billancourt est la deuxième ville d&apos;Île-de-France et l&apos;une des plus attractives. Limitrophe du 16e arrondissement de Paris, elle propose un parc résidentiel varié : appartements haussmanniens des quartiers Reine et Billancourt, immeubles Art déco des années 30 autour du Pont de Sèvres, constructions contemporaines du secteur Seguin-Rives de Seine. Espace Design accompagne les habitants de Boulogne dans leurs projets de rénovation depuis plusieurs années.
-            </p>
-            <p>
-              Le quartier de Billancourt, en particulier autour de la Rue Yves Kermen, de l&apos;Avenue Jean Jaurès et des rues adjacentes à la station Marcel Sembat, est un secteur où nous intervenons régulièrement. Les appartements y sont souvent dans des copropriétés des années 60-70 qui méritent une sérieuse remise au goût du jour : refonte de salle de bain, cuisine ouverte, parquet, peinture. Notre expertise de ces typologies d&apos;appartements nous permet d&apos;établir des devis précis et de tenir nos délais.
-            </p>
-            <p>
-              De la Rue de la Tourelle à l&apos;Avenue Pierre Grenier, de la Rue Clément Ader à l&apos;Avenue Edouard Vaillant, nous couvrons toute la commune de Boulogne-Billancourt. Premier rendez-vous gratuit et devis sous 48h.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

@@ -73,26 +73,6 @@ export default function RenovationParis1er() {
         </div>
       </section>
 
-      {/* Notre intervention dans le 1er */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 1er arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 1er arrondissement est le cœur historique de Paris. Entre la Rue de Rivoli, le Palais Royal, la Place Vendôme, les Halles et la Rue Saint-Honoré, ce quartier d&apos;exception abrite des appartements d&apos;un prestige rare, souvent chargés d&apos;histoire. Espace Design intervient dans ce secteur d&apos;élite pour des projets de rénovation complète et de décoration intérieure haute gamme.
-            </p>
-            <p>
-              Que votre appartement se situe au pied du Palais Royal, dans les immeubles anciens de la Rue des Petits Champs, ou face au Louvre, nous prenons soin de chaque détail architecturale. Moulures, parquets en point de Hongrie, cheminées d&apos;époque : nous restaurons l&apos;âme de votre bien tout en lui apportant le confort moderne — domotique, isolation, électricité aux normes.
-            </p>
-            <p>
-              Notre connaissance des immeubles du 1er arrondissement — souvent classés ou sous contrainte ABF — nous permet de mener vos chantiers dans les meilleures conditions. Nous gérons les démarches administratives et coordonnons toutes les corps de métiers pour vous garantir un résultat impeccable.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

@@ -72,25 +72,6 @@ export default function RenovationParis14e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 14e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 14e arrondissement est l&apos;un des plus tranquilles et des plus agréables de Paris. Du quartier Montparnasse avec ses immeubles des années 30 à Alésia et ses rues commerçantes animées, en passant par Plaisance, Pernety et le quartier Mouton-Duvernet, le 14e offre une grande variété de biens résidentiels à des prix encore accessibles pour la capitale.
-            </p>
-            <p>
-              Espace Design intervient dans le 14e pour des projets complets ou ciblés. Nous sommes particulièrement présents dans les quartiers Plaisance et Pernety, où les appartements dans les immeubles de standing des années 50-70 peuvent être transformés de manière spectaculaire grâce à une rénovation bien pensée. Cuisine ouverte, salle de bain sur-mesure, parquet contrecollé posé en diagonale — nos équipes maîtrisent toutes ces techniques.
-            </p>
-            <p>
-              De la Rue Raymond Losserand à la Rue d&apos;Alésia, du Boulevard Brune à la Rue de la Gaîté, nous couvrons l&apos;ensemble du 14e arrondissement. Premier rendez-vous gratuit, devis détaillé sous 48h, accompagnement personnalisé tout au long du chantier.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

@@ -73,26 +73,6 @@ export default function RenovationParis6e() {
         </div>
       </section>
 
-      {/* Notre intervention dans le 6e */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 6e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 6e arrondissement est l&apos;un des plus emblématiques de Paris. Entre la Rue de Vaugirard, le Boulevard Saint-Germain, la Rue de Rennes, l&apos;Odéon et Saint-Sulpice, le quartier incarne l&apos;élégance parisienne dans toute sa subtilité. Espace Design intervient dans ce secteur très exigeant pour des rénovations complètes et des projets de décoration intérieure d&apos;exception.
-            </p>
-            <p>
-              Que vous résidiez dans le quartier du Luxembourg, de l&apos;Odéon, de Saint-Germain-des-Prés ou autour de la Rue de Rennes, nous nous déplaçons dans tout le 6e sans frais supplémentaires. Nos réalisations dans ce quartier témoignent de notre capacité à nous adapter aux contraintes des immeubles anciens — pierres de taille, parquets anciens, hauteurs sous plafond généreuses — tout en apportant un confort contemporain.
-            </p>
-            <p>
-              Dans le 6e, chaque intérieur a une âme. Notre mission : la révéler. Que vous souhaitiez restaurer un appartement haussmannien dans son esprit d&apos;origine ou lui donner une nouvelle vie contemporaine, Espace Design saura vous accompagner avec talent et précision.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

@@ -72,25 +72,6 @@ export default function RenovationParis12e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 12e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 12e arrondissement offre un cadre de vie privilégié avec le Bois de Vincennes à l&apos;est, le quartier de Bercy réhabilité et ses immeubles contemporains, et les avenues résidentielles autour de Daumesnil et Nation. Ce secteur, moins dense que les arrondissements centraux, propose des appartements spacieux dans des immeubles de standing que nous aimons rénover avec soin.
-            </p>
-            <p>
-              Espace Design intervient régulièrement dans le 12e pour des projets variés : rénovation complète d&apos;appartements familiaux Avenue Daumesnil, transformation d&apos;appartements dans les anciennes caves à vin de Bercy Village, rafraîchissement ciblé de biens autour de la Place de la Nation. Notre capacité à intervenir sur tous les corps de métier nous permet de vous offrir un suivi global et sans faille.
-            </p>
-            <p>
-              De la Rue du Faubourg Saint-Antoine à l&apos;Avenue de Saint-Mandé, de la Rue de Picpus à la Rue de Reuilly, nous connaissons bien les typologies d&apos;appartements du 12e et leurs spécificités. Nous vous garantissons un devis précis, des délais tenus et une qualité de finitions irréprochable.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

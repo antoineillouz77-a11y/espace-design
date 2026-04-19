@@ -72,25 +72,6 @@ export default function RenovationParis13e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 13e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 13e arrondissement est un quartier contrasté et attachant. D&apos;un côté, la Butte aux Cailles avec ses ruelles pittoresques et ses maisons de village en plein Paris ; de l&apos;autre, le quartier des Gobelins avec ses immeubles haussmanniens et ses ateliers d&apos;artistes ; sans oublier le secteur de Tolbiac et de la Bibliothèque François-Mitterrand, en pleine mutation résidentielle.
-            </p>
-            <p>
-              Espace Design connaît bien la diversité du bâti dans le 13e. Que vous habitiez une maison de ville Square de la Butte aux Cailles, un appartement Avenue des Gobelins ou un loft dans le secteur Paris Rive Gauche, nous adaptons notre approche à chaque contexte. Notre savoir-faire s&apos;étend des rénovations patrimoniales aux transformations contemporaines les plus audacieuses.
-            </p>
-            <p>
-              De la Rue de la Glacière à la Rue Bobillot, de la Rue Nationale au Boulevard Auguste-Blanqui, nous intervenons dans tout le 13e arrondissement. Nos équipes sont disponibles pour un premier rendez-vous de chantier sans engagement, suivi d&apos;un devis détaillé sous 48 heures.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

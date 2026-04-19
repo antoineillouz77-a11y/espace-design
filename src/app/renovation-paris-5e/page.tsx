@@ -72,25 +72,6 @@ export default function RenovationParis5e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 5e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 5e arrondissement, cœur intellectuel de Paris, abrite le Quartier Latin, le Panthéon, la Rue Mouffetard et les rives animées de la Seine. Entre la Rue Saint-Jacques, le Boulevard Saint-Michel, la Rue de la Montagne Sainte-Geneviève et les abords de Jussieu, ce quartier offre des appartements variés : studios d&apos;étudiants convertis, appartements familiaux haussmanniens, duplex nichés sous les toits.
-            </p>
-            <p>
-              Espace Design intervient dans tout le 5e arrondissement avec une approche sur-mesure adaptée à chaque bien. Nous avons une longue expérience des appartements en rez-de-jardin, des greniers aménagés et des appartements à fort potentiel architectural. Notre équipe sait tirer le meilleur parti des espaces atypiques et des contraintes techniques des immeubles anciens.
-            </p>
-            <p>
-              Que vous souhaitiez rénover un appartement Rue Descartes, refaire une cuisine ouverte dans un bien Rue Monge, ou transformer un studio du Quartier Latin en appartement raffiné, Espace Design est votre partenaire de confiance. Devis gratuit sous 48h, déplacement sans frais dans tout le 5e.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

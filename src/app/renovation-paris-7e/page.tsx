@@ -73,26 +73,6 @@ export default function RenovationParis7e() {
         </div>
       </section>
 
-      {/* Notre intervention dans le 7e */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 7e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 7e arrondissement de Paris est l&apos;un des plus prestigieux de la capitale. Entre l&apos;Avenue de Breteuil, le Boulevard des Invalides, la Rue de Varenne et la Rue du Bac, les appartements haussmanniens côtoient les immeubles bourgeois et les hôtels particuliers. Espace Design intervient régulièrement dans ce secteur pour des rénovations complètes ou des projets de décoration intérieure de haut niveau.
-            </p>
-            <p>
-              Que vous habitiez près du Champ-de-Mars, de la Rue Saint-Dominique, de la Rue de Grenelle ou du Musée d&apos;Orsay, nous nous déplaçons dans tout le 7e arrondissement sans frais supplémentaires. Nos clients dans ce quartier nous confient aussi bien la rénovation d&apos;un studio que la transformation complète d&apos;un appartement familial de 150 m².
-            </p>
-            <p>
-              Notre approche dans le 7e : respecter le cachet haussmannien tout en apportant un confort moderne. Parquet point de Hongrie restauré, moulures remises en valeur, cuisine sur-mesure intégrée, salle de bain en marbre — nous maîtrisons les codes de cet arrondissement exigeant.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

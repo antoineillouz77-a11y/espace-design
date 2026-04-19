@@ -72,25 +72,6 @@ export default function RenovationParis11e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 11e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 11e arrondissement est le quartier des bobos parisiens par excellence — créatif, vivant, et de plus en plus recherché. Entre Oberkampf, la Rue de la Roquette, la Rue Charonne, la Rue Saint-Maur et les abords de la Place de la Bastille, le 11e abrite des appartements souvent spacieux et abordables que de nombreux propriétaires souhaitent transformer en espaces de vie contemporains et raffinés.
-            </p>
-            <p>
-              Espace Design est très actif dans le 11e, où nous réalisons aussi bien des rénovations complètes d&apos;appartements haussmanniens que des transformations d&apos;anciens locaux industriels ou d&apos;artisans. Notre expertise en matière d&apos;aménagement d&apos;espaces ouverts, de cloisons vitrées et de matériaux mixtes (bois, métal, béton) correspond parfaitement aux tendances architecturales du quartier.
-            </p>
-            <p>
-              De la Rue Voltaire au Boulevard Richard-Lenoir, du Passage Louis-Philippe à la Rue Amelot, nous intervenons dans tout le 11e avec la même exigence. Chaque projet est unique et mérite une attention particulière — c&apos;est pourquoi nous débutons toujours par une visite de chantier gratuite et un devis détaillé sous 48h.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

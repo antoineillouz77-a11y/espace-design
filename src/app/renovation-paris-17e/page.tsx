@@ -73,26 +73,6 @@ export default function RenovationParis17e() {
         </div>
       </section>
 
-      {/* Notre intervention dans le 17e */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 17e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 17e arrondissement offre une grande diversité de quartiers et d&apos;atmosphères. De l&apos;élégance bourgeoise des Ternes et du Boulevard Pereire aux ruelles bohèmes des Batignolles, en passant par l&apos;Avenue de Villiers et la Place de Clichy, cet arrondissement est en pleine mutation. Espace Design intervient régulièrement dans le 17e pour des projets de rénovation adaptés à chaque quartier.
-            </p>
-            <p>
-              Que vous habitiez dans le secteur des Ternes, autour du Boulevard de Courcelles, dans le quartier des Batignolles ou le long du Boulevard Bessières, nous nous déplaçons dans tout le 17e sans frais supplémentaires. Nous connaissons les contraintes des immeubles anciens du quartier comme des constructions récentes.
-            </p>
-            <p>
-              Dans le 17e, nous avons réalisé des dizaines de projets : de la simple rénovation de salle de bain à la restructuration complète d&apos;appartements familiaux. Notre méthode : écouter, conseiller, puis exécuter avec précision et respect de votre budget.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

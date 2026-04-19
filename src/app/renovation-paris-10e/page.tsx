@@ -72,25 +72,6 @@ export default function RenovationParis10e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 10e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 10e arrondissement connaît une transformation spectaculaire depuis une décennie. Le Canal Saint-Martin et ses quais réhabilités, la Rue de Lancry, la Rue Beaurepaire et les abords de la Place de la République attirent une clientèle jeune et exigeante, avide de lofts et d&apos;appartements rénovés avec caractère. Espace Design accompagne cette dynamique avec des projets de rénovation ambitieux.
-            </p>
-            <p>
-              Nous intervenons dans tous les profils d&apos;appartements du 10e : les immeubles haussmanniens du Boulevard de Magenta ou de la Rue du Faubourg Saint-Denis, les anciens ateliers d&apos;artisans transformés en lofts lumineux, les appartements du quartier de la Gare du Nord en pleine valorisation. Notre expertise en aménagement de volumes et en création de cuisines ouvertes est particulièrement appréciée dans ce secteur.
-            </p>
-            <p>
-              Du côté de la Rue de la Grange aux Belles à la Rue des Vinaigriers, nos équipes maîtrisent les spécificités du bâti du 10e. Nous vous proposons un accompagnement complet : conception, suivi de chantier, coordination des artisans, livraison clés en main.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

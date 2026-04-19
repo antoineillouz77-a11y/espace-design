@@ -72,25 +72,6 @@ export default function RenovationLevallois() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention à Levallois-Perret
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Levallois-Perret est l&apos;une des villes les plus denses de France et l&apos;une des plus attractives de la première couronne parisienne. Avec son tissu résidentiel dense, ses appartements haussmanniens et ses constructions récentes autour de la Rue Anatole France, du Pont de Levallois et du quartier Louise Michel, la ville attire de nombreux actifs parisiens qui souhaitent rénover leur bien pour le valoriser ou l&apos;adapter à leur mode de vie.
-            </p>
-            <p>
-              Espace Design intervient à Levallois-Perret pour des projets de toutes envergures : rénovation complète d&apos;un appartement familial, refonte de salle de bain, création d&apos;une cuisine ouverte ou ravalement intérieur. Notre équipe est habituée aux contraintes des copropriétés levalloisennes et gère les démarches administratives pour vous. Nous travaillons proprement, avec des protections de chantier soignées pour éviter tout désagrément aux voisins.
-            </p>
-            <p>
-              De la Rue du Président Wilson à la Rue Rivay, de l&apos;Avenue Aristide Briand au Boulevard Bineau, nous couvrons l&apos;ensemble de Levallois-Perret. Devis gratuit sous 48h, déplacement sans engagement.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

@@ -72,25 +72,6 @@ export default function RenovationParis18e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 18e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 18e arrondissement est l&apos;un des plus iconiques de Paris. Montmartre et sa Butte, les Abbesses et leurs ruelles escarpées, le Sacré-Cœur dominant toute la ville, la Rue Lepic et ses marchés colorés — autant de lieux chargés d&apos;histoire et de charme qui attirent des propriétaires souhaitant rénover des appartements atypiques.
-            </p>
-            <p>
-              Espace Design est particulièrement expérimenté dans la rénovation des appartements montmartrois, souvent nichés dans des immeubles anciens aux configurations atypiques : escaliers étroits, plafonds bas sous les combles, pentes de toiture, vues imprenables sur Paris. Ces contraintes sont pour nous autant d&apos;opportunités de créer des intérieurs uniques et créatifs.
-            </p>
-            <p>
-              Nous intervenons dans tout le 18e : du quartier des Grandes Carrières autour de la Rue Ordener aux abords de la Place de Clichy, de la Rue Caulaincourt au Boulevard de Rochechouart. Notre équipe se déplace gratuitement pour un premier diagnostic, suivi d&apos;un devis clair et détaillé sous 48 heures.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

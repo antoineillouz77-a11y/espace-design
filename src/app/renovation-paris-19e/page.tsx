@@ -72,25 +72,6 @@ export default function RenovationParis19e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 19e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 19e arrondissement est l&apos;un des arrondissements les plus en vogue de Paris pour les jeunes propriétaires. Autour des Buttes Chaumont — l&apos;un des plus beaux parcs de Paris — les appartements des rues Botzaris, Manin et Crimée offrent un cadre verdoyant et calme, très recherché. Le quartier de La Villette, autour de la Cité des Sciences, et le secteur de Belleville complètent ce tableau.
-            </p>
-            <p>
-              Espace Design accompagne de nombreux propriétaires du 19e dans leurs projets de rénovation. Nous sommes notamment reconnus pour nos réalisations dans les appartements des immeubles des années 1960-1980, souvent spacieux mais nécessitant une remise au goût du jour complète. Cuisine ouverte sur le salon, réfection des salles de bain, installation de parquet contrecollé — nos prestations sont adaptées aux besoins et aux budgets des propriétaires du 19e.
-            </p>
-            <p>
-              De la Rue de Meaux à la Rue de la Villette, de l&apos;Avenue Jean Jaurès à la Rue de Belleville, nous couvrons l&apos;ensemble du 19e arrondissement avec le même niveau d&apos;exigence. Devis gratuit sous 48h, premier rendez-vous sans engagement.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

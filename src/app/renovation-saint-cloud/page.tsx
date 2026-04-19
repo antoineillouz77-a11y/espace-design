@@ -72,25 +72,6 @@ export default function RenovationSaintCloud() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention à Saint-Cloud
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Saint-Cloud est une ville résidentielle d&apos;exception, nichée entre le Parc de Saint-Cloud — l&apos;un des plus beaux de France — et la Seine. Ses quartiers résidentiels comme Montretout, Bel-Air ou les abords du Parc de Montretout proposent des appartements et des maisons de standing avec souvent des vues panoramiques sur Paris. Espace Design intervient dans cette commune prisée avec le niveau d&apos;exigence qu&apos;elle mérite.
-            </p>
-            <p>
-              Les propriétaires de Saint-Cloud ont des attentes élevées en matière de qualité et d&apos;esthétisme. Notre approche de la rénovation — matériaux nobles, finitions soignées, respect de l&apos;architecture — correspond parfaitement à cette clientèle exigeante. Nous avons réalisé de nombreux projets dans les maisons individuelles des coteaux et les appartements des résidences de standing de la ville.
-            </p>
-            <p>
-              De la Rue Dailly à la Rue du Calvaire, des avenues du Parc aux rues du centre-ville, nous couvrons l&apos;ensemble de Saint-Cloud. Notre intervention est propre, rapide et soignée, avec un suivi personnalisé à chaque étape du chantier.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

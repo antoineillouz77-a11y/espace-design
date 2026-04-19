@@ -72,25 +72,6 @@ export default function RenovationParis20e() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 20e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 20e arrondissement est en pleine gentrification et attire de plus en plus de primo-accédants et d&apos;investisseurs qui y voient un fort potentiel. Belleville et son effervescence artistique, Ménilmontant et ses ruelles en pente, le quartier Gambetta et ses appartements familiaux, les abords du Père Lachaise — chaque micro-quartier du 20e a son caractère propre que nous aimons mettre en valeur.
-            </p>
-            <p>
-              Espace Design accompagne de nombreux propriétaires du 20e dans leurs projets de rénovation. Nous sommes notamment reconnus pour nos réalisations dans les appartements des anciens immeubles ouvriers reconvertis et les appartements des copropriétés des années 70 qui retrouvent une nouvelle vie après une rénovation soignée. Notre maîtrise des petites surfaces et des espaces atypiques est un atout particulièrement apprécié dans ce quartier.
-            </p>
-            <p>
-              De la Rue Oberkampf au Boulevard Davout, de la Rue de Bagnolet à la Rue des Pyrénées, nous couvrons tout le 20e arrondissement. Notre engagement : un devis précis et honnête sous 48h, des délais tenus, une qualité de finitions irréprochable.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

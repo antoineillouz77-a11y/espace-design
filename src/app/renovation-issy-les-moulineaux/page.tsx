@@ -72,25 +72,6 @@ export default function RenovationIssy() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention à Issy-les-Moulineaux
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Issy-les-Moulineaux est une ville en plein essor, prisée par les cadres et les familles qui recherchent un cadre de vie de qualité à proximité de Paris. Entre le quartier Corentin Celton avec ses nombreuses résidences récentes, le quartier du Fort d&apos;Issy en renouvellement urbain, et la Manufacture historique, la ville offre une grande diversité de biens résidentiels.
-            </p>
-            <p>
-              Espace Design intervient à Issy-les-Moulineaux pour des projets de rénovation dans toutes les typologies d&apos;appartements : des résidences des années 1980 autour de la Rue Camille Desmoulins aux programmes neufs en bord de Seine, en passant par les appartements haussmanniens du centre-ville. Notre équipe est habituée aux exigences des résidences sécurisées et des copropriétés modernes.
-            </p>
-            <p>
-              De la Rue Ernest Renan à la Rue de Paris, de l&apos;Avenue de Verdun au Boulevard Gallieni, nous couvrons toute la commune d&apos;Issy-les-Moulineaux. Devis gratuit sous 48h, intervention rapide et soignée.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">

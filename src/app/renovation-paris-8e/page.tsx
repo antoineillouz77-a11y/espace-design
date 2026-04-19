@@ -73,26 +73,6 @@ export default function RenovationParis8e() {
         </div>
       </section>
 
-      {/* Notre intervention dans le 8e */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention dans le 8e arrondissement
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Le 8e arrondissement de Paris est synonyme d&apos;élégance et de prestige. Du Boulevard Haussmann aux abords des Champs-Élysées, en passant par la Rue du Faubourg Saint-Honoré et le Parc Monceau, cet arrondissement accueille parmi les plus beaux appartements de la capitale. Espace Design intervient dans ce secteur pour des projets de rénovation et de décoration à la hauteur de ses intérieurs d&apos;exception.
-            </p>
-            <p>
-              Que vous résidiez Avenue de Wagram, Rue de Courcelles, Boulevard de Courcelles ou dans les rues calmes autour du Parc Monceau, nous nous déplaçons dans tout le 8e sans frais supplémentaires. Nos projets dans cet arrondissement vont de la remise en état d&apos;un appartement haussmannien à la transformation complète d&apos;un penthouse contemporain.
-            </p>
-            <p>
-              Notre savoir-faire dans le 8e : allier les matières nobles — marbre, boiseries, cuivres — à une conception moderne et fonctionnelle. Chaque rénovation est pensée pour valoriser le bien et satisfaire ses occupants sur le long terme.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">

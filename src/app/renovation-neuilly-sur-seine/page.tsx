@@ -72,25 +72,6 @@ export default function RenovationNeuilly() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-6">
-            Notre intervention à Neuilly-sur-Seine
-          </h2>
-          <div className="space-y-4 text-gray-500 text-sm leading-relaxed font-light">
-            <p>
-              Neuilly-sur-Seine est l&apos;une des communes les plus prestigieuses de France. Limitrophe du 17e arrondissement de Paris, elle concentre un parc immobilier résidentiel d&apos;exception : hôtels particuliers autour du Parc de Bagatelle, grands appartements Avenue Charles de Gaulle, immeubles de standing du quartier des Sablons et du Roule. Espace Design intervient dans ce secteur ultra-exigeant avec le niveau de qualité qu&apos;il mérite.
-            </p>
-            <p>
-              Les appartements de Neuilly se distinguent par leurs volumes généreux, leurs finitions soignées d&apos;origine et leur clientèle attachée à l&apos;excellence. Notre approche correspond parfaitement à ces attentes : matériaux nobles, artisanat de qualité, délais respectés, un seul interlocuteur pour l&apos;ensemble du chantier. Nous intervenons aussi bien pour des rénovations complètes que pour des travaux ciblés — salle de bain de prestige, cuisine sur-mesure, parquet en chêne massif.
-            </p>
-            <p>
-              De l&apos;Avenue du Roule à la Rue de Chartres, de l&apos;Avenue du Château à la Rue Perronet, nous couvrons l&apos;ensemble de Neuilly-sur-Seine. Notre réputation dans ce secteur est fondée sur des années de chantiers menés avec rigueur et passion pour le beau travail.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
