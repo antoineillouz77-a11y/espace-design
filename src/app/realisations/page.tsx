@@ -149,10 +149,8 @@ export default function RealisationsPage() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
-                {/* Overlay hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <div className="text-white text-sm font-semibold">{p.label}</div>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/65 px-4 py-3">
+                  <div className="text-white text-sm font-medium leading-tight">{p.label}</div>
                   <div className="text-[#D4AF37] text-xs mt-1">{p.lieu}</div>
                   <div className="text-gray-300 text-xs mt-0.5">{p.type}</div>
                 </div>
