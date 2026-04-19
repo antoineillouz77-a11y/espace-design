@@ -24,8 +24,7 @@ export default function ContactForm() {
     e.preventDefault()
     setState('sending')
 
-    // Formspree endpoint — à remplacer par l'ID Formspree de Patrick
-    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/VOTRE_ID'
+    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xbdqklrr'
 
     try {
       const res = await fetch(FORMSPREE_ENDPOINT, {
