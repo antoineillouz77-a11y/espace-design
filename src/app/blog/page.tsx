@@ -114,6 +114,30 @@ const articles = [
     desc: 'De 60 000 à 120 000 € selon les finitions — guide complet avec tableau de postes et exemple clé en main.',
     tag: 'Prix & Budgets',
   },
+  {
+    href: '/blog/renovation-4-pieces-paris',
+    title: 'Rénovation 4 pièces Paris : prix, budget & guide 2025',
+    desc: 'Budget de 80 000 à 160 000 € selon les finitions — guide complet pour rénover un 4 pièces à Paris.',
+    tag: 'Prix & Budgets',
+  },
+  {
+    href: '/blog/electricite-appartement-paris',
+    title: 'Électricité appartement Paris : prix, mise aux normes & guide 2025',
+    desc: 'Remise aux normes NF C 15-100, tableau électrique, prix au m² — tout pour la rénovation électrique dans les appartements parisiens.',
+    tag: 'Électricité',
+  },
+  {
+    href: '/blog/renovation-avant-achat-appartement-paris',
+    title: 'Rénovation avant achat appartement Paris : guide & budget 2025',
+    desc: 'Estimer les travaux avant d\'acheter, négocier le prix, éviter les pièges — guide complet pour l\'achat-rénovation à Paris.',
+    tag: 'Guides',
+  },
+  {
+    href: '/blog/investissement-locatif-renovation-paris',
+    title: 'Investissement locatif & rénovation Paris : guide 2025',
+    desc: 'Rénover pour louer à Paris — rentabilité, travaux prioritaires, DPE, fiscalité. Guide complet pour les investisseurs.',
+    tag: 'Investissement',
+  },
 ]
 
 export default function BlogPage() {

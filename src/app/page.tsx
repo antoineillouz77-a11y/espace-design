@@ -76,6 +76,49 @@ const faqs = [
   },
 ]
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HomeAndConstructionBusiness',
+  name: 'Espace Design',
+  description: 'Artisan rénovateur et décorateur intérieur à Paris. Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
+  telephone: '+33611783867',
+  url: 'https://espacedesignparis.fr',
+  priceRange: '€€€',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Paris',
+    addressCountry: 'FR',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Paris' },
+    { '@type': 'City', name: 'Boulogne-Billancourt' },
+    { '@type': 'City', name: 'Levallois-Perret' },
+    { '@type': 'City', name: 'Neuilly-sur-Seine' },
+    { '@type': 'City', name: 'Versailles' },
+    { '@type': 'City', name: 'Courbevoie' },
+    { '@type': 'City', name: 'Issy-les-Moulineaux' },
+    { '@type': 'City', name: 'Saint-Cloud' },
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Services de rénovation appartement Paris',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Rénovation complète appartement', url: 'https://espacedesignparis.fr/renovation-appartement-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Rénovation salle de bain', url: 'https://espacedesignparis.fr/renovation-salle-de-bain-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Rénovation cuisine', url: 'https://espacedesignparis.fr/renovation-cuisine-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Peinture appartement', url: 'https://espacedesignparis.fr/peinture-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Parquet', url: 'https://espacedesignparis.fr/parquet-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Carrelage', url: 'https://espacedesignparis.fr/carrelage-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Électricité rénovation', url: 'https://espacedesignparis.fr/electricite-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Plomberie rénovation', url: 'https://espacedesignparis.fr/plomberie-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Menuiserie sur mesure', url: 'https://espacedesignparis.fr/menuiserie-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Isolation thermique et acoustique', url: 'https://espacedesignparis.fr/isolation-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Plâtrerie et cloisons', url: 'https://espacedesignparis.fr/platrererie-paris' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Décoration intérieure', url: 'https://espacedesignparis.fr/decoration-interieure-paris' } },
+    ],
+  },
+}
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -115,6 +158,11 @@ function FAQItem({ faq }: { faq: { q: string; a: string } }) {
 export default function HomePage() {
   return (
     <>
+      {/* LocalBusiness Schema JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       {/* FAQ Schema JSON-LD */}
       <script
         type="application/ld+json"
