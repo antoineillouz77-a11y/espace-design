@@ -53,53 +53,83 @@ const temoignages = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-[#1C1C1C]" aria-hidden="true" />
-        <Image
-          src="/images/hero.jpg"
-          alt="Rénovation salon Paris — Espace Design"
-          fill
-          className="object-cover object-center opacity-45"
-          priority
-          sizes="100vw"
-        />
-
-        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto pt-24">
-          <div className="inline-flex items-center gap-2 bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#D4AF37] text-xs font-medium tracking-widest uppercase px-4 py-2 rounded-full mb-6">
-            <MapPin size={12} />
-            Paris & Île-de-France
+      {/* Hero — split layout */}
+      <section className="pt-16 sm:pt-20 bg-[#FAFAF8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          {/* Texte intro */}
+          <div className="text-center py-10 sm:py-14">
+            <div className="inline-flex items-center gap-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#B8960C] text-xs font-medium tracking-widest uppercase px-4 py-2 rounded-full mb-5">
+              <MapPin size={12} />
+              Paris & Île-de-France
+            </div>
+            <h1 className="font-display text-3xl sm:text-5xl font-bold text-[#1C1C1C] leading-tight mb-4">
+              Votre intérieur,{' '}
+              <span className="text-[#B8960C]">réinventé.</span>
+            </h1>
+            <p className="text-gray-600 max-w-xl mx-auto text-sm sm:text-base mb-8 leading-relaxed">
+              Artisan rénovateur et décorateur intérieur à Paris.
+              Finitions haut de gamme, travail soigné, résultat qui vous ressemble.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a
+                href="tel:+33611783867"
+                className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-semibold text-sm hover:bg-[#B8960C] transition-colors"
+              >
+                <Phone size={16} />
+                06 11 78 38 67
+              </a>
+              <Link
+                href="/contact"
+                className="flex items-center justify-center gap-2 border border-[#1C1C1C] text-[#1C1C1C] px-7 py-3.5 rounded font-medium text-sm hover:bg-[#1C1C1C] hover:text-white transition-colors"
+              >
+                Devis gratuit <ArrowRight size={14} />
+              </Link>
+            </div>
           </div>
-          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-            Votre intérieur,{' '}
-            <span className="text-[#D4AF37]">réinventé.</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Paris. Des finitions
-            haut de gamme, un travail soigné, un résultat qui vous ressemble.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+33611783867"
-              className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-8 py-4 rounded font-semibold text-base hover:bg-[#c9a030] transition-colors"
-            >
-              <Phone size={18} />
-              06 11 78 38 67
-            </a>
-            <Link
-              href="/contact"
-              className="flex items-center justify-center gap-2 border border-white/40 text-white px-8 py-4 rounded font-medium text-base hover:bg-white/10 transition-colors"
-            >
-              Demander un devis gratuit
-              <ArrowRight size={16} />
-            </Link>
-          </div>
-          <p className="text-gray-500 text-sm mt-6">Réponse sous 24h — Devis gratuit</p>
-        </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500">
-          <div className="w-px h-8 bg-gradient-to-b from-transparent to-gray-500" />
+          {/* Grille photos hero — 3 photos côte à côte */}
+          <div className="grid grid-cols-3 gap-2 sm:gap-3 pb-10">
+            <div className="relative rounded-xl overflow-hidden h-48 sm:h-72 col-span-2">
+              <Image
+                src="/images/hero.jpg"
+                alt="Salon rénovation Paris — Espace Design"
+                fill
+                className="object-cover object-center"
+                priority
+                sizes="(max-width: 640px) 66vw, 50vw"
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
+                <p className="text-white text-xs font-medium">Paris 6e · Rue de Vaugirard</p>
+                <p className="text-[#D4AF37] text-xs">Salon — éclairage architectural</p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 sm:gap-3">
+              <div className="relative rounded-xl overflow-hidden flex-1">
+                <Image
+                  src="/images/realisations/04-terrasse-vue-paris.jpg"
+                  alt="Terrasse Paris 9e — Espace Design"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 640px) 33vw, 25vw"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/60 to-transparent">
+                  <p className="text-white text-xs hidden sm:block">Paris 9e</p>
+                </div>
+              </div>
+              <div className="relative rounded-xl overflow-hidden flex-1">
+                <Image
+                  src="/images/realisations/01-salon-parisien-bibliotheque.jpg"
+                  alt="Bibliothèque sur-mesure Paris — Espace Design"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 640px) 33vw, 25vw"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/60 to-transparent">
+                  <p className="text-white text-xs hidden sm:block">Paris 7e</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
