@@ -166,9 +166,9 @@ export default function HomePage() {
                 priority
                 sizes="(max-width: 640px) 66vw, 50vw"
               />
-              <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
-                <p className="text-white text-xs font-light">Paris 6e · Rue de Vaugirard</p>
-                <p className="text-[#D4AF37] text-xs">Salon — éclairage architectural</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-3 py-2">
+                <p className="text-white text-sm font-medium">Paris 6e · Rue de Vaugirard</p>
+                <p className="text-[#D4AF37] text-xs font-light">Salon — éclairage architectural</p>
               </div>
             </div>
             <div className="flex flex-col gap-2 sm:gap-3">
@@ -180,8 +180,8 @@ export default function HomePage() {
                   className="object-cover object-center"
                   sizes="(max-width: 640px) 33vw, 25vw"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/60 to-transparent">
-                  <p className="text-white text-xs font-light">Paris 9e</p>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-2 py-1.5">
+                  <p className="text-white text-xs font-medium">Paris 9e</p>
                 </div>
               </div>
               <div className="relative rounded-xl overflow-hidden flex-1">
@@ -192,8 +192,8 @@ export default function HomePage() {
                   className="object-cover object-center"
                   sizes="(max-width: 640px) 33vw, 25vw"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/60 to-transparent">
-                  <p className="text-white text-xs font-light">Paris 7e</p>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-2 py-1.5">
+                  <p className="text-white text-xs font-medium">Paris 7e</p>
                 </div>
               </div>
             </div>
@@ -281,10 +281,9 @@ export default function HomePage() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <div className="text-white text-xs font-light">{item.label}</div>
-                  <div className="text-[#D4AF37] text-xs">{item.lieu}</div>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/65 px-3 py-2">
+                  <div className="text-white text-sm font-medium leading-tight">{item.label}</div>
+                  <div className="text-[#D4AF37] text-xs mt-0.5">{item.lieu}</div>
                 </div>
               </div>
             ))}
