@@ -181,7 +181,7 @@ export default function HomePage() {
                   sizes="(max-width: 640px) 33vw, 25vw"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/60 to-transparent">
-                  <p className="text-white text-xs hidden sm:block font-light">Paris 9e</p>
+                  <p className="text-white text-xs font-light">Paris 9e</p>
                 </div>
               </div>
               <div className="relative rounded-xl overflow-hidden flex-1">
@@ -193,7 +193,7 @@ export default function HomePage() {
                   sizes="(max-width: 640px) 33vw, 25vw"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/60 to-transparent">
-                  <p className="text-white text-xs hidden sm:block font-light">Paris 7e</p>
+                  <p className="text-white text-xs font-light">Paris 7e</p>
                 </div>
               </div>
             </div>
@@ -281,8 +281,8 @@ export default function HomePage() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
-                <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-3">
                   <div className="text-white text-xs font-light">{item.label}</div>
                   <div className="text-[#D4AF37] text-xs">{item.lieu}</div>
                 </div>
