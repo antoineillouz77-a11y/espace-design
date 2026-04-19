@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Phone, ArrowRight, CheckCircle, Star } from 'lucide-react'
+import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Rénovation Appartement Paris 9e — Espace Design | Artisan Rénovateur',
@@ -116,34 +116,11 @@ export default function RenovationParis9e() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Quelques réalisations
+            Une réalisation dans le 9e
           </h2>
-          <div className="grid grid-cols-3 gap-3">
-            {[
-              { src: '/images/realisations/04-terrasse-vue-paris.jpg', alt: 'Terrasse Paris 9e' },
-              { src: '/images/realisations/09-chambre-tete-lit.jpg', alt: 'Chambre Paris 9e' },
-              { src: '/images/realisations/03-buffet-led.jpg', alt: 'Buffet LED Paris 9e' },
-            ].map((img) => (
-              <div key={img.src} className="relative rounded-lg overflow-hidden h-44 sm:h-60">
-                <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="33vw" />
-              </div>
-            ))}
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/04-terrasse-vue-paris.jpg" alt="Terrasse vue Paris 9e" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-          <div className="flex justify-center gap-0.5 mb-5">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} size={13} className="fill-[#D4AF37] text-[#D4AF37]" />
-            ))}
-          </div>
-          <p className="text-gray-600 text-sm leading-relaxed font-light italic mb-6">
-            &ldquo;On cherchait quelqu&apos;un qui comprenne l&apos;âme du SoPi — ce mélange d&apos;authentique et de moderne. Patrick l&apos;a parfaitement cerné et a transformé notre appartement de la Rue des Martyrs en un espace élégant sans perdre son caractère parisien.&rdquo;
-          </p>
-          <div className="text-sm font-medium text-[#1C1C1C]">Aurélien & Chloé M.</div>
-          <div className="text-xs text-gray-400 font-light mt-0.5">Paris 9e · Rue des Martyrs</div>
         </div>
       </section>
 

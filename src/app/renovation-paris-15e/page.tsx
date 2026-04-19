@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Phone, ArrowRight, CheckCircle, Star } from 'lucide-react'
+import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Rénovation Appartement Paris 15e — Espace Design | Artisan Rénovateur',
@@ -120,35 +120,11 @@ export default function RenovationParis15e() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Quelques réalisations
+            Une réalisation dans le 15e
           </h2>
-          <div className="grid grid-cols-3 gap-3">
-            {[
-              { src: '/images/realisations/07-open-space-cuisine.jpg', alt: 'Open space cuisine Paris 15e' },
-              { src: '/images/realisations/12-salle-bain.jpg', alt: 'Salle de bain Paris 15e' },
-              { src: '/images/realisations/08-couloir-moderne.jpg', alt: 'Couloir moderne Paris 15e' },
-            ].map((img) => (
-              <div key={img.src} className="relative rounded-lg overflow-hidden h-44 sm:h-60">
-                <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="33vw" />
-              </div>
-            ))}
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/08-couloir-moderne.jpg" alt="Couloir moderne Paris 15e" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
-        </div>
-      </section>
-
-      {/* Témoignage */}
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-          <div className="flex justify-center gap-0.5 mb-5">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} size={13} className="fill-[#D4AF37] text-[#D4AF37]" />
-            ))}
-          </div>
-          <p className="text-gray-600 text-sm leading-relaxed font-light italic mb-6">
-            &ldquo;Patrick a rénové notre salon et notre cuisine. Un travail exceptionnel, des finitions parfaites. Je recommande sans hésiter à tous les habitants du 15e.&rdquo;
-          </p>
-          <div className="text-sm font-medium text-[#1C1C1C]">Sophie M.</div>
-          <div className="text-xs text-gray-400 font-light mt-0.5">Paris 15e · Rue de la Convention</div>
         </div>
       </section>
 

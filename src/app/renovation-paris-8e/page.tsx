@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Phone, ArrowRight, CheckCircle, Star } from 'lucide-react'
+import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Rénovation Appartement Paris 8e — Espace Design | Artisan Rénovateur',
@@ -120,35 +120,11 @@ export default function RenovationParis8e() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Quelques réalisations
+            Une réalisation dans le 8e
           </h2>
-          <div className="grid grid-cols-3 gap-3">
-            {[
-              { src: '/images/realisations/06-salon-eclairage-theatre.jpg', alt: 'Salon éclairage Paris 8e' },
-              { src: '/images/realisations/11-chambre-dressing.jpg', alt: 'Chambre dressing Paris 8e' },
-              { src: '/images/realisations/13-bureau-dressing.jpg', alt: 'Bureau dressing Paris 8e' },
-            ].map((img) => (
-              <div key={img.src} className="relative rounded-lg overflow-hidden h-44 sm:h-60">
-                <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="33vw" />
-              </div>
-            ))}
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/03-buffet-led.jpg" alt="Buffet LED Paris 8e" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
-        </div>
-      </section>
-
-      {/* Témoignage */}
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-          <div className="flex justify-center gap-0.5 mb-5">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} size={13} className="fill-[#D4AF37] text-[#D4AF37]" />
-            ))}
-          </div>
-          <p className="text-gray-600 text-sm leading-relaxed font-light italic mb-6">
-            &ldquo;Rénovation complète de notre appartement Boulevard Haussmann. Patrick a fait preuve d&apos;un professionnalisme exemplaire du premier jour jusqu&apos;à la réception. Finitions impeccables, délais respectés.&rdquo;
-          </p>
-          <div className="text-sm font-medium text-[#1C1C1C]">François L.</div>
-          <div className="text-xs text-gray-400 font-light mt-0.5">Paris 8e · Boulevard Haussmann</div>
         </div>
       </section>
 
