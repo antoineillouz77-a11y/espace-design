@@ -37,8 +37,53 @@ const villes = [
   { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
   { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
   { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
+  { href: '/renovation-courbevoie', label: 'Courbevoie' },
+  { href: '/renovation-asnieres-sur-seine', label: 'Asnières-sur-Seine' },
+  { href: '/renovation-suresnes', label: 'Suresnes' },
+  { href: '/renovation-puteaux', label: 'Puteaux' },
+  { href: '/renovation-nanterre', label: 'Nanterre' },
+  { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
+  { href: '/renovation-meudon', label: 'Meudon' },
+  { href: '/renovation-clamart', label: 'Clamart' },
+  { href: '/renovation-montrouge', label: 'Montrouge' },
+  { href: '/renovation-malakoff', label: 'Malakoff' },
+  { href: '/renovation-chatillon', label: 'Châtillon' },
+  { href: '/renovation-vanves', label: 'Vanves' },
+  { href: '/renovation-clichy', label: 'Clichy' },
+  { href: '/renovation-colombes', label: 'Colombes' },
+  { href: '/renovation-bagneux', label: 'Bagneux' },
+  { href: '/renovation-antony', label: 'Antony' },
+  { href: '/renovation-garches', label: 'Garches' },
+  { href: '/renovation-sevres', label: 'Sèvres' },
   { href: '/renovation-vincennes', label: 'Vincennes' },
+  { href: '/renovation-saint-mande', label: 'Saint-Mandé' },
+  { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
+  { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
+  { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
+  { href: '/renovation-maisons-alfort', label: 'Maisons-Alfort' },
+  { href: '/renovation-joinville-le-pont', label: 'Joinville-le-Pont' },
+  { href: '/renovation-charenton-le-pont', label: 'Charenton-le-Pont' },
+  { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
+  { href: '/renovation-gentilly', label: 'Gentilly' },
   { href: '/renovation-versailles', label: 'Versailles' },
+  { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
+  { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
+  { href: '/renovation-chatou', label: 'Chatou' },
+]
+
+const services = [
+  { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain', desc: 'Douche italienne, baignoire, faïence' },
+  { href: '/renovation-cuisine-paris', label: 'Cuisine', desc: 'Cuisine ouverte, plan de travail, crédence' },
+  { href: '/peinture-paris', label: 'Peinture', desc: 'Toutes surfaces, préparation, finitions' },
+  { href: '/parquet-paris', label: 'Parquet', desc: 'Pose, vitrification, rénovation parquet' },
+  { href: '/carrelage-paris', label: 'Carrelage', desc: 'Grand format, zellige, sol et mur' },
+  { href: '/electricite-paris', label: 'Électricité', desc: 'Mise aux normes NF C 15-100, tableau' },
+  { href: '/plomberie-paris', label: 'Plomberie', desc: 'Sanitaires, tuyauterie, chauffe-eau' },
+  { href: '/menuiserie-paris', label: 'Menuiserie', desc: 'Dressings, placards, portes sur mesure' },
+  { href: '/isolation-paris', label: 'Isolation', desc: 'Isolation thermique et acoustique' },
+  { href: '/platrererie-paris', label: 'Plâtrerie', desc: 'Cloisons, faux-plafonds, enduits' },
+  { href: '/decoration-interieure-paris', label: 'Décoration', desc: 'Conseil, mood board, matériaux' },
+  { href: '/amenagement-interieur-paris', label: 'Aménagement', desc: 'Mezzanine, verrière, optimisation espace' },
 ]
 
 const schemaBreadcrumb = {
@@ -215,16 +260,36 @@ export default function RenovationParis() {
         </div>
       </section>
 
-      {/* Arrondissements */}
+      {/* Services */}
       <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-bold text-[#1C1C1C] mb-3">Nos prestations de rénovation</h2>
+          <p className="text-gray-500 text-sm mb-8">Chaque corps de métier est réalisé avec soin. Cliquez pour découvrir les détails, prix et FAQ.</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {services.map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="bg-[#FAFAF8] rounded-lg p-4 border border-gray-100 hover:border-[#D4AF37]/50 hover:bg-white transition-all group"
+              >
+                <div className="font-semibold text-[#1C1C1C] text-sm mb-1 group-hover:text-[#B8960C] transition-colors">{s.label}</div>
+                <div className="text-gray-500 text-xs leading-relaxed font-light">{s.desc}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Arrondissements + Villes IDF */}
+      <section className="py-16 bg-[#F2F2EE]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl font-bold text-[#1C1C1C] mb-3">
             Rénovation dans tous les arrondissements
           </h2>
           <p className="text-gray-500 text-sm mb-8">
-            Nous intervenons dans tout Paris, sans supplément de déplacement.
+            Nous intervenons dans tout Paris et l&apos;Île-de-France, sans supplément de déplacement.
           </p>
-          <div className="flex flex-wrap gap-2 justify-center">
+          <div className="flex flex-wrap gap-2 justify-center mb-6">
             {arrondissements.map((arr) => (
               <Link
                 key={arr.href}
@@ -235,12 +300,13 @@ export default function RenovationParis() {
               </Link>
             ))}
           </div>
-          <div className="flex flex-wrap gap-2 justify-center mt-3">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Île-de-France</p>
+          <div className="flex flex-wrap gap-2 justify-center">
             {villes.map((v) => (
               <Link
                 key={v.href}
                 href={v.href}
-                className="border border-gray-100 rounded-full px-4 py-1.5 text-sm text-gray-500 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors"
+                className="border border-gray-200 rounded-full px-4 py-1.5 text-sm text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors"
               >
                 {v.label}
               </Link>

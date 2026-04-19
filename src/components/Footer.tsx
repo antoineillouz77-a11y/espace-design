@@ -14,6 +14,9 @@ const services = [
   { href: '/platrererie-paris', label: 'Plâtrerie' },
   { href: '/decoration-interieure-paris', label: 'Décoration' },
   { href: '/amenagement-interieur-paris', label: 'Aménagement' },
+  { href: '/renovation-studio-paris', label: 'Studio' },
+  { href: '/renovation-maison-paris', label: 'Maison IDF' },
+  { href: '/renovation-appartement-haussmannien-paris', label: 'Haussmannien' },
 ]
 
 const arrondissements = [
@@ -77,6 +80,14 @@ const villes = [
   { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
   { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
   { href: '/renovation-chatou', label: 'Chatou' },
+  { href: '/renovation-montreuil', label: 'Montreuil' },
+  { href: '/renovation-pantin', label: 'Pantin' },
+  { href: '/renovation-aubervilliers', label: 'Aubervilliers' },
+  { href: '/renovation-bagnolet', label: 'Bagnolet' },
+  { href: '/renovation-massy', label: 'Massy' },
+  { href: '/renovation-palaiseau', label: 'Palaiseau' },
+  { href: '/renovation-argenteuil', label: 'Argenteuil' },
+  { href: '/renovation-cergy', label: 'Cergy' },
 ]
 
 export default function Footer() {

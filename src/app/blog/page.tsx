@@ -138,6 +138,36 @@ const articles = [
     desc: 'Rénover pour louer à Paris — rentabilité, travaux prioritaires, DPE, fiscalité. Guide complet pour les investisseurs.',
     tag: 'Investissement',
   },
+  {
+    href: '/blog/renovation-maison-paris',
+    title: 'Rénovation Maison Paris & Île-de-France : prix & guide 2025',
+    desc: 'Rénover une maison en Île-de-France : prix au m², types de travaux, spécificités vs appartement. Guide complet Espace Design.',
+    tag: 'Guides',
+  },
+  {
+    href: '/blog/budget-renovation-paris-2025',
+    title: 'Budget Rénovation Paris 2025 : estimez votre projet au m²',
+    desc: "Comment établir un budget rénovation à Paris en 2025 ? Coûts par poste, marges d'erreur, aides disponibles. Guide pratique.",
+    tag: 'Prix & Budgets',
+  },
+  {
+    href: '/blog/verriere-interieure-paris',
+    title: 'Verrière Intérieure Paris : prix, styles acier & pose 2025',
+    desc: "Verrière intérieure (cloison vitrée style atelier) à Paris — prix, dimensions, acier noir, pose et réglementation. Guide complet.",
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/parquet-massif-paris',
+    title: 'Parquet Massif Paris : prix, essences, pose & entretien 2025',
+    desc: "Parquet massif à Paris — chêne, noyer, hêtre. Prix au m², pose, vitrification, rénovation des parquets anciens. Guide complet.",
+    tag: 'Sols & Parquet',
+  },
+  {
+    href: '/blog/home-staging-paris',
+    title: 'Home Staging Paris : valoriser son bien avant vente 2025',
+    desc: "Home staging à Paris : travaux de valorisation avant vente. Peinture, sol, cuisines, salles de bain — augmentez votre prix de vente.",
+    tag: 'Conseils',
+  },
 ]
 
 export default function BlogPage() {

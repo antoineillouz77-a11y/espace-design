@@ -117,5 +117,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/electricite-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-avant-achat-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/investissement-locatif-renovation-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-maison-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/budget-renovation-paris-2025`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/verriere-interieure-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/parquet-massif-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/home-staging-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
+    // Pages service spécialisées
+    { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-maison-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-appartement-haussmannien-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+
+    // Nouvelles villes — Seine-Saint-Denis (93)
+    { url: `${base}/renovation-montreuil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-pantin`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-aubervilliers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-bagnolet`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Essonne (91)
+    { url: `${base}/renovation-massy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-palaiseau`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Val-d'Oise (95)
+    { url: `${base}/renovation-argenteuil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-cergy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
   ]
 }

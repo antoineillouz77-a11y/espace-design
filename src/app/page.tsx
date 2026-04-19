@@ -76,6 +76,21 @@ const faqs = [
   },
 ]
 
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Espace Design Paris',
+  url: 'https://espacedesignparis.fr',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://espacedesignparis.fr/blog?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
@@ -83,10 +98,13 @@ const localBusinessSchema = {
   description: 'Artisan rénovateur et décorateur intérieur à Paris. Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr',
+  email: 'espacedesign92@gmail.com',
+  sameAs: ['https://espacedesignparis.fr'],
   priceRange: '€€€',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Paris',
+    addressRegion: 'Île-de-France',
     addressCountry: 'FR',
   },
   areaServed: [
@@ -98,6 +116,24 @@ const localBusinessSchema = {
     { '@type': 'City', name: 'Courbevoie' },
     { '@type': 'City', name: 'Issy-les-Moulineaux' },
     { '@type': 'City', name: 'Saint-Cloud' },
+    { '@type': 'City', name: 'Rueil-Malmaison' },
+    { '@type': 'City', name: 'Nanterre' },
+    { '@type': 'City', name: 'Suresnes' },
+    { '@type': 'City', name: 'Puteaux' },
+    { '@type': 'City', name: 'Clamart' },
+    { '@type': 'City', name: 'Meudon' },
+    { '@type': 'City', name: 'Montrouge' },
+    { '@type': 'City', name: 'Vanves' },
+    { '@type': 'City', name: 'Malakoff' },
+    { '@type': 'City', name: 'Antony' },
+    { '@type': 'City', name: 'Bagneux' },
+    { '@type': 'City', name: 'Vincennes' },
+    { '@type': 'City', name: 'Fontenay-sous-Bois' },
+    { '@type': 'City', name: 'Nogent-sur-Marne' },
+    { '@type': 'City', name: 'Saint-Maur-des-Fossés' },
+    { '@type': 'City', name: 'Charenton-le-Pont' },
+    { '@type': 'City', name: 'Saint-Germain-en-Laye' },
+    { '@type': 'City', name: 'Le Vésinet' },
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -158,6 +194,11 @@ function FAQItem({ faq }: { faq: { q: string; a: string } }) {
 export default function HomePage() {
   return (
     <>
+      {/* WebSite Schema JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       {/* LocalBusiness Schema JSON-LD */}
       <script
         type="application/ld+json"
