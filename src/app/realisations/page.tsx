@@ -1,23 +1,120 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Nos Réalisations — Portfolio Rénovation Paris',
   description:
-    'Découvrez nos réalisations : rénovation d\'appartements, décoration intérieure, cuisines, salles de bain, à Paris et en Île-de-France. Photos avant/après.',
+    "Découvrez nos réalisations : rénovation d'appartements, décoration intérieure, cuisines, salles de bain, terrasses, à Paris et en Île-de-France. Photos de chantiers réels.",
 }
 
 const projets = [
-  { label: 'Rénovation salon — Paris 15e', type: 'Rénovation complète' },
-  { label: 'Cuisine ouverte — Boulogne-Billancourt', type: 'Cuisine' },
-  { label: 'Chambre sur mesure — Paris 8e', type: 'Décoration' },
-  { label: 'Salle de bain — Paris 16e', type: 'Salle de bain' },
-  { label: 'Appartement haussmannien — Paris 17e', type: 'Rénovation complète' },
-  { label: 'Studio optimisé — Paris 11e', type: 'Aménagement' },
-  { label: 'Bureau à domicile — Levallois', type: 'Aménagement' },
-  { label: 'Entrée & Couloir — Neuilly', type: 'Décoration' },
-  { label: 'Peinture décorative — Paris 6e', type: 'Finitions' },
+  {
+    src: '/images/realisations/01-salon-parisien-bibliotheque.jpg',
+    label: 'Salon & bibliothèque sur-mesure',
+    lieu: 'Paris 7e · Avenue de Breteuil',
+    type: 'Rénovation complète',
+    tall: true,
+  },
+  {
+    src: '/images/realisations/06-salon-eclairage-theatre.jpg',
+    label: 'Salon — éclairage architectural',
+    lieu: 'Paris 6e · Rue de Vaugirard',
+    type: 'Rénovation complète',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/04-terrasse-vue-paris.jpg',
+    label: 'Terrasse — lames composite',
+    lieu: 'Paris 9e · Rue La Fayette',
+    type: 'Terrasse',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/07-open-space-cuisine.jpg',
+    label: 'Open space cuisine & séjour',
+    lieu: 'Paris 12e · Avenue Daumesnil',
+    type: 'Rénovation complète',
+    tall: true,
+  },
+  {
+    src: '/images/realisations/02-bibliotheque-led.jpg',
+    label: 'Bibliothèque éclairée LED',
+    lieu: 'Paris 16e · Rue de la Pompe',
+    type: 'Sur-mesure',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/09-chambre-tete-lit.jpg',
+    label: 'Chambre — tête de lit & dressing',
+    lieu: 'Paris 11e · Boulevard Voltaire',
+    type: 'Chambre',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/05-terrasse-ciel-bleu.jpg',
+    label: 'Terrasse — vue dégagée',
+    lieu: 'Paris 17e · Avenue des Ternes',
+    type: 'Terrasse',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/10-appartement-globe.jpg',
+    label: 'Rénovation complète appartement',
+    lieu: 'Paris 3e · Rue du Temple',
+    type: 'Rénovation complète',
+    tall: true,
+  },
+  {
+    src: '/images/realisations/08-couloir-moderne.jpg',
+    label: 'Couloir & aménagement global',
+    lieu: 'Paris 15e · Rue de la Convention',
+    type: 'Aménagement',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/12-salle-bain.jpg',
+    label: 'Salle de bain — carreaux de ciment',
+    lieu: 'Paris 10e · Faubourg Saint-Denis',
+    type: 'Salle de bain',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/11-chambre-dressing.jpg',
+    label: 'Chambre & dressing intégré',
+    lieu: 'Paris 14e · Rue d\'Alésia',
+    type: 'Chambre',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/13-bureau-dressing.jpg',
+    label: 'Bureau & dressing sur-mesure',
+    lieu: 'Paris 13e · Avenue de Choisy',
+    type: 'Sur-mesure',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/03-buffet-led.jpg',
+    label: 'Buffet sur-mesure & éclairage intégré',
+    lieu: 'Paris 8e · Boulevard Haussmann',
+    type: 'Sur-mesure',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/14-meuble-tv-beton.jpg',
+    label: 'Meuble TV effet béton ciré',
+    lieu: 'Paris 5e · Rue Mouffetard',
+    type: 'Décoration',
+    tall: false,
+  },
+  {
+    src: '/images/realisations/15-chambre-niche-led.jpg',
+    label: 'Chambre — niche & rangement éclairé',
+    lieu: 'Paris 4e · Île Saint-Louis',
+    type: 'Chambre',
+    tall: false,
+  },
 ]
 
 export default function RealisationsPage() {
@@ -30,40 +127,37 @@ export default function RealisationsPage() {
           Nos réalisations
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto text-base leading-relaxed">
-          Chaque projet est unique. Découvrez quelques exemples de notre travail à Paris et en Île-de-France.
+          Chaque projet est unique. Découvrez nos travaux réels à Paris et en Île-de-France —
+          rénovation complète, décoration, sur-mesure.
         </p>
       </section>
 
-      {/* Galerie */}
+      {/* Galerie masonry */}
       <section className="py-20 bg-[#FAFAF8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
             {projets.map((p, i) => (
               <div
                 key={i}
-                className="break-inside-avoid bg-gray-100 rounded-lg overflow-hidden relative group"
-                style={{ height: i % 3 === 0 ? '320px' : i % 3 === 1 ? '240px' : '280px' }}
+                className="break-inside-avoid rounded-lg overflow-hidden relative group shadow-sm"
+                style={{ height: p.tall ? '400px' : '280px' }}
               >
-                <div className="w-full h-full flex items-center justify-center text-gray-300 text-xs">
-                  {/* Photos de Patrick à ajouter ici */}
-                  Photo à venir
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all">
+                <Image
+                  src={p.src}
+                  alt={`${p.label} — ${p.lieu}`}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                />
+                {/* Overlay hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <div className="text-white text-sm font-semibold">{p.label}</div>
-                  <div className="text-[#D4AF37] text-xs mt-1">{p.type}</div>
+                  <div className="text-[#D4AF37] text-xs mt-1">{p.lieu}</div>
+                  <div className="text-gray-300 text-xs mt-0.5">{p.type}</div>
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="mt-12 bg-[#D4AF37]/10 border border-[#D4AF37]/30 rounded-lg p-6 text-center">
-            <p className="text-[#1C1C1C] text-sm font-medium mb-1">
-              📸 Les photos de nos réalisations seront ajoutées très prochainement.
-            </p>
-            <p className="text-gray-500 text-xs">
-              En attendant, appelez-nous pour voir nos travaux en photos sur notre téléphone.
-            </p>
           </div>
         </div>
       </section>
