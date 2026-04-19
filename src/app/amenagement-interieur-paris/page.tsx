@@ -232,10 +232,16 @@ export default function AmenagementInterieurParis() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones d'intervention</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-appartement-paris', label: 'Paris' },
               { href: '/renovation-paris-6e', label: 'Paris 6e' },
               { href: '/renovation-paris-7e', label: 'Paris 7e' },
+              { href: '/renovation-paris-8e', label: 'Paris 8e' },
               { href: '/renovation-paris-15e', label: 'Paris 15e' },
+              { href: '/renovation-paris-16e', label: 'Paris 16e' },
+              { href: '/renovation-paris-17e', label: 'Paris 17e' },
+              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
+              { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
+              { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
+              { href: '/renovation-versailles', label: 'Versailles' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -243,6 +249,25 @@ export default function AmenagementInterieurParis() {
                 className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
               >
                 {z.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Voir aussi */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Voir aussi</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/menuiserie-paris', label: 'Menuiserie sur mesure' },
+              { href: '/platrererie-paris', label: 'Plâtrerie & cloisons' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/blog/renovation-studio-paris', label: 'Guide rénovation studio Paris' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
               </Link>
             ))}
           </div>

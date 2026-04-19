@@ -213,10 +213,16 @@ export default function IsolationParis() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones d'intervention</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-appartement-paris', label: 'Paris' },
               { href: '/renovation-paris-6e', label: 'Paris 6e' },
               { href: '/renovation-paris-7e', label: 'Paris 7e' },
+              { href: '/renovation-paris-8e', label: 'Paris 8e' },
               { href: '/renovation-paris-15e', label: 'Paris 15e' },
+              { href: '/renovation-paris-16e', label: 'Paris 16e' },
+              { href: '/renovation-paris-17e', label: 'Paris 17e' },
+              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
+              { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
+              { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
+              { href: '/renovation-versailles', label: 'Versailles' },
             ].map((z) => (
               <Link
                 key={z.href}

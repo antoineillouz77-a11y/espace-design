@@ -45,11 +45,26 @@ const schemaLocalBusiness = {
   openingHours: 'Mo-Sa 08:00-19:00',
 }
 
+const servicePages = [
+  { href: '/renovation-salle-de-bain-paris', label: 'Rénovation Salle de bain', desc: 'Douche italienne, baignoire, faïence, sanitaires — de 5 000 à 25 000 €', tag: 'Salle de bain' },
+  { href: '/renovation-cuisine-paris', label: 'Rénovation Cuisine', desc: 'Cuisine ouverte, plan de travail, crédence, électroménager intégré — de 6 000 à 30 000 €', tag: 'Cuisine' },
+  { href: '/peinture-paris', label: 'Peinture Paris', desc: 'Toutes surfaces, préparation, peinture décorative — de 20 à 60 €/m²', tag: 'Peinture' },
+  { href: '/parquet-paris', label: 'Parquet Paris', desc: 'Parquet massif, contrecollé, vitrification, pose — de 50 à 150 €/m²', tag: 'Sols' },
+  { href: '/carrelage-paris', label: 'Carrelage Paris', desc: 'Grand format, zellige, pose sol et mur — de 40 à 150 €/m²', tag: 'Sols' },
+  { href: '/electricite-paris', label: 'Électricité Paris', desc: 'Mise aux normes NF C 15-100, tableau, prises — de 40 à 120 €/m²', tag: 'Électricité' },
+  { href: '/plomberie-paris', label: 'Plomberie Paris', desc: 'Canalisations, sanitaires, mise aux normes — de 150 à 10 000 €', tag: 'Plomberie' },
+  { href: '/menuiserie-paris', label: 'Menuiserie Sur Mesure', desc: 'Placards, dressings, bibliothèques, verrières — dès 800 €/ml', tag: 'Menuiserie' },
+  { href: '/isolation-paris', label: 'Isolation Paris', desc: "Thermique et acoustique, MaPrimeRénov' — de 30 à 150 €/m²", tag: 'Isolation' },
+  { href: '/platrererie-paris', label: 'Plâtrerie & Cloisons', desc: 'Cloisons placo, faux plafonds, enduits — de 40 à 120 €/m²', tag: 'Plâtrerie' },
+  { href: '/decoration-interieure-paris', label: 'Décoration Intérieure', desc: 'Conseil, mood board, coordination travaux — de 2 000 à 15 000 €', tag: 'Décoration' },
+  { href: '/amenagement-interieur-paris', label: 'Aménagement Sur Mesure', desc: 'Mezzanine, verrière, studio optimisé — de 3 000 à 30 000 €', tag: 'Aménagement' },
+]
+
 const services = [
   {
     title: 'Rénovation complète',
     icon: '🏗️',
-    desc: 'Nous prenons en charge l\'intégralité de votre projet de rénovation, du premier coup de marteau à la dernière finition.',
+    desc: "Nous prenons en charge l'intégralité de votre projet de rénovation, du premier coup de marteau à la dernière finition.",
     details: [
       'Démolition et dépose',
       'Cloisonnement et isolation',
@@ -64,12 +79,12 @@ const services = [
     icon: '🎨',
     desc: 'Conception et aménagement de votre intérieur selon vos goûts, votre mode de vie et votre budget.',
     details: [
-      'Conseil couleurs et matériaux',
-      'Plan d\'aménagement',
+      "Conseil couleurs et matériaux",
+      "Plan d'aménagement",
       'Choix mobilier et accessoires',
       'Éclairage sur mesure',
       'Coordination des travaux',
-      'Suivi jusqu\'à la livraison',
+      "Suivi jusqu'à la livraison",
     ],
   },
   {
@@ -88,7 +103,7 @@ const services = [
   {
     title: 'Cuisine & Salle de bain',
     icon: '🛁',
-    desc: 'Rénovation complète de vos pièces d\'eau et cuisine — les pièces maîtresses de votre logement.',
+    desc: "Rénovation complète de vos pièces d'eau et cuisine — les pièces maîtresses de votre logement.",
     details: [
       'Pose de cuisine équipée',
       'Rénovation salle de bain',
@@ -114,7 +129,7 @@ const services = [
   {
     title: 'Aménagement sur mesure',
     icon: '📐',
-    desc: 'Optimiser chaque mètre carré, c\'est notre métier. Nous créons des solutions d\'aménagement adaptées à votre espace.',
+    desc: "Optimiser chaque mètre carré, c'est notre métier. Nous créons des solutions d'aménagement adaptées à votre espace.",
     details: [
       'Dressing et rangements',
       'Bibliothèques et placards',
@@ -147,13 +162,43 @@ const zonesData = [
   { href: '/renovation-paris-18e', label: 'Paris 18e' },
   { href: '/renovation-paris-19e', label: 'Paris 19e' },
   { href: '/renovation-paris-20e', label: 'Paris 20e' },
-  { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
-  { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
-  { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
-  { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
+  { href: '/renovation-neuilly-sur-seine', label: 'Neuilly' },
+  { href: '/renovation-levallois-perret', label: 'Levallois' },
+  { href: '/renovation-boulogne-billancourt', label: 'Boulogne' },
+  { href: '/renovation-issy-les-moulineaux', label: 'Issy' },
   { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
+  { href: '/renovation-courbevoie', label: 'Courbevoie' },
+  { href: '/renovation-asnieres-sur-seine', label: 'Asnières' },
+  { href: '/renovation-suresnes', label: 'Suresnes' },
+  { href: '/renovation-puteaux', label: 'Puteaux' },
+  { href: '/renovation-nanterre', label: 'Nanterre' },
+  { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
+  { href: '/renovation-meudon', label: 'Meudon' },
+  { href: '/renovation-clamart', label: 'Clamart' },
+  { href: '/renovation-montrouge', label: 'Montrouge' },
+  { href: '/renovation-malakoff', label: 'Malakoff' },
+  { href: '/renovation-chatillon', label: 'Châtillon' },
+  { href: '/renovation-vanves', label: 'Vanves' },
+  { href: '/renovation-clichy', label: 'Clichy' },
+  { href: '/renovation-colombes', label: 'Colombes' },
+  { href: '/renovation-bagneux', label: 'Bagneux' },
+  { href: '/renovation-antony', label: 'Antony' },
+  { href: '/renovation-garches', label: 'Garches' },
+  { href: '/renovation-sevres', label: 'Sèvres' },
   { href: '/renovation-vincennes', label: 'Vincennes' },
+  { href: '/renovation-saint-mande', label: 'Saint-Mandé' },
+  { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
+  { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
+  { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
+  { href: '/renovation-maisons-alfort', label: 'Maisons-Alfort' },
+  { href: '/renovation-joinville-le-pont', label: 'Joinville-le-Pont' },
+  { href: '/renovation-charenton-le-pont', label: 'Charenton-le-Pont' },
+  { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
+  { href: '/renovation-gentilly', label: 'Gentilly' },
   { href: '/renovation-versailles', label: 'Versailles' },
+  { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
+  { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
+  { href: '/renovation-chatou', label: 'Chatou' },
 ]
 
 export default function ServicesPage() {
@@ -167,6 +212,7 @@ export default function ServicesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocalBusiness) }}
       />
+
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#1C1C1C] text-center px-4">
         <p className="text-[#D4AF37] text-sm font-medium uppercase tracking-widest mb-3">Nos prestations</p>
@@ -179,9 +225,46 @@ export default function ServicesPage() {
         </p>
       </section>
 
+      {/* Service pages — cartes cliquables */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <p className="text-[#B8960C] text-[10px] uppercase tracking-widest font-light mb-3">Pages dédiées</p>
+            <h2 className="font-display text-3xl font-bold text-[#1C1C1C] mb-3">Explorez nos services en détail</h2>
+            <p className="text-gray-500 text-sm font-light max-w-xl mx-auto">
+              Chaque prestation a sa page dédiée avec prix, conseils et FAQ
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {servicePages.map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="bg-white rounded-lg p-6 border border-gray-100 hover:border-[#D4AF37]/40 hover:shadow-md transition-all group block"
+              >
+                <span className="inline-block text-[10px] uppercase tracking-widest text-[#B8960C] font-light mb-3">
+                  {s.tag}
+                </span>
+                <h3 className="font-display text-lg font-semibold text-[#1C1C1C] leading-snug mb-2 group-hover:text-[#B8960C] transition-colors">
+                  {s.label}
+                </h3>
+                <p className="text-gray-500 text-sm leading-relaxed font-light mb-4">{s.desc}</p>
+                <span className="flex items-center gap-1 text-[#B8960C] text-xs font-light">
+                  Voir le détail <ArrowRight size={11} />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services grid */}
       <section className="py-20 bg-[#FAFAF8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <p className="text-[#B8960C] text-[10px] uppercase tracking-widest font-light mb-3">Nos prestations</p>
+            <h2 className="font-display text-3xl font-bold text-[#1C1C1C]">Ce que nous faisons</h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
               <div

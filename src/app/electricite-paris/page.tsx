@@ -218,23 +218,24 @@ export default function ElectriciteParis() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones d'intervention</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              'Paris 6e',
-              'Paris 7e',
-              'Paris 8e',
-              'Paris 15e',
-              'Paris 16e',
-              'Paris 17e',
-              'Neuilly-sur-Seine',
-              'Boulogne-Billancourt',
-              'Levallois-Perret',
-              'Versailles',
+              { label: 'Paris 6e', href: '/renovation-paris-6e' },
+              { label: 'Paris 7e', href: '/renovation-paris-7e' },
+              { label: 'Paris 8e', href: '/renovation-paris-8e' },
+              { label: 'Paris 15e', href: '/renovation-paris-15e' },
+              { label: 'Paris 16e', href: '/renovation-paris-16e' },
+              { label: 'Paris 17e', href: '/renovation-paris-17e' },
+              { label: 'Neuilly-sur-Seine', href: '/renovation-neuilly-sur-seine' },
+              { label: 'Boulogne-Billancourt', href: '/renovation-boulogne-billancourt' },
+              { label: 'Levallois-Perret', href: '/renovation-levallois-perret' },
+              { label: 'Versailles', href: '/renovation-versailles' },
             ].map((z) => (
-              <span
-                key={z}
-                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 font-light"
+              <Link
+                key={z.label}
+                href={z.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
               >
-                {z}
-              </span>
+                {z.label}
+              </Link>
             ))}
           </div>
         </div>

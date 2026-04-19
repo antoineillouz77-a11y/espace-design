@@ -1,6 +1,21 @@
 import Link from 'next/link'
 import { Phone, Mail, MapPin } from 'lucide-react'
 
+const services = [
+  { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
+  { href: '/renovation-cuisine-paris', label: 'Cuisine' },
+  { href: '/peinture-paris', label: 'Peinture' },
+  { href: '/parquet-paris', label: 'Parquet' },
+  { href: '/carrelage-paris', label: 'Carrelage' },
+  { href: '/electricite-paris', label: 'Électricité' },
+  { href: '/plomberie-paris', label: 'Plomberie' },
+  { href: '/menuiserie-paris', label: 'Menuiserie' },
+  { href: '/isolation-paris', label: 'Isolation' },
+  { href: '/platrererie-paris', label: 'Plâtrerie' },
+  { href: '/decoration-interieure-paris', label: 'Décoration' },
+  { href: '/amenagement-interieur-paris', label: 'Aménagement' },
+]
+
 const arrondissements = [
   { href: '/renovation-paris-1er', label: 'Paris 1er' },
   { href: '/renovation-paris-2e', label: 'Paris 2e' },
@@ -30,17 +45,47 @@ const villes = [
   { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
   { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
   { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
+  { href: '/renovation-courbevoie', label: 'Courbevoie' },
+  { href: '/renovation-asnieres-sur-seine', label: 'Asnières-sur-Seine' },
+  { href: '/renovation-suresnes', label: 'Suresnes' },
+  { href: '/renovation-puteaux', label: 'Puteaux' },
+  { href: '/renovation-nanterre', label: 'Nanterre' },
+  { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
+  { href: '/renovation-meudon', label: 'Meudon' },
+  { href: '/renovation-clamart', label: 'Clamart' },
+  { href: '/renovation-montrouge', label: 'Montrouge' },
+  { href: '/renovation-malakoff', label: 'Malakoff' },
+  { href: '/renovation-chatillon', label: 'Châtillon' },
+  { href: '/renovation-vanves', label: 'Vanves' },
+  { href: '/renovation-clichy', label: 'Clichy' },
+  { href: '/renovation-colombes', label: 'Colombes' },
+  { href: '/renovation-bagneux', label: 'Bagneux' },
+  { href: '/renovation-antony', label: 'Antony' },
+  { href: '/renovation-garches', label: 'Garches' },
+  { href: '/renovation-sevres', label: 'Sèvres' },
   { href: '/renovation-vincennes', label: 'Vincennes' },
+  { href: '/renovation-saint-mande', label: 'Saint-Mandé' },
+  { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
+  { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
+  { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
+  { href: '/renovation-maisons-alfort', label: 'Maisons-Alfort' },
+  { href: '/renovation-joinville-le-pont', label: 'Joinville-le-Pont' },
+  { href: '/renovation-charenton-le-pont', label: 'Charenton-le-Pont' },
+  { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
+  { href: '/renovation-gentilly', label: 'Gentilly' },
   { href: '/renovation-versailles', label: 'Versailles' },
+  { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
+  { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
+  { href: '/renovation-chatou', label: 'Chatou' },
 ]
 
 export default function Footer() {
   return (
     <footer className="bg-[#1C1C1C] text-gray-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
-          <div>
+          <div className="lg:col-span-1">
             <div className="font-display text-2xl font-bold text-white mb-1">
               ESPACE DESIGN
             </div>
@@ -70,10 +115,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Navigation */}
-          <div>
+          {/* Navigation + Services */}
+          <div className="lg:col-span-1">
             <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Navigation</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm mb-6">
               {[
                 { href: '/', label: 'Accueil' },
                 { href: '/services', label: 'Services' },
@@ -88,9 +133,9 @@ export default function Footer() {
               ))}
             </ul>
 
-            <h3 className="text-white font-semibold mt-8 mb-4 text-sm uppercase tracking-wider">Île-de-France</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Services</h3>
             <ul className="space-y-2 text-sm">
-              {villes.map((l) => (
+              {services.map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="hover:text-[#D4AF37] transition-colors">{l.label}</Link>
                 </li>
@@ -98,8 +143,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Arrondissements col 1 */}
-          <div>
+          {/* Paris 1er–10e */}
+          <div className="lg:col-span-1">
             <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Paris 1er–10e</h3>
             <ul className="space-y-2 text-sm">
               {arrondissements.slice(0, 10).map((l) => (
@@ -110,11 +155,23 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Arrondissements col 2 */}
-          <div>
+          {/* Paris 11e–20e */}
+          <div className="lg:col-span-1">
             <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Paris 11e–20e</h3>
             <ul className="space-y-2 text-sm">
               {arrondissements.slice(10).map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="hover:text-[#D4AF37] transition-colors">{l.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Île-de-France */}
+          <div className="lg:col-span-1">
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Île-de-France</h3>
+            <ul className="space-y-2 text-sm">
+              {villes.map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="hover:text-[#D4AF37] transition-colors">{l.label}</Link>
                 </li>

@@ -224,13 +224,13 @@ export default function RenovationCuisineParis() {
               { href: '/renovation-paris-6e', label: 'Paris 6e' },
               { href: '/renovation-paris-7e', label: 'Paris 7e' },
               { href: '/renovation-paris-8e', label: 'Paris 8e' },
-              { href: '/renovation-paris-9e', label: 'Paris 9e' },
-              { href: '/renovation-paris-10e', label: 'Paris 10e' },
-              { href: '/renovation-paris-11e', label: 'Paris 11e' },
+              { href: '/renovation-paris-15e', label: 'Paris 15e' },
               { href: '/renovation-paris-16e', label: 'Paris 16e' },
               { href: '/renovation-paris-17e', label: 'Paris 17e' },
               { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
               { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
+              { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
+              { href: '/renovation-versailles', label: 'Versailles' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -238,6 +238,25 @@ export default function RenovationCuisineParis() {
                 className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
               >
                 {z.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Voir aussi */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Voir aussi</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/blog/renovation-cuisine-ouverte-paris', label: 'Guide cuisine ouverte Paris' },
+              { href: '/carrelage-paris', label: 'Carrelage Paris' },
+              { href: '/plomberie-paris', label: 'Plomberie Paris' },
+              { href: '/menuiserie-paris', label: 'Menuiserie sur mesure' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
               </Link>
             ))}
           </div>
