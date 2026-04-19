@@ -15,7 +15,18 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-sm border-b border-gray-100/80">
+    <header className="fixed top-0 left-0 right-0 z-50">
+      {/* Barre appel mobile — visible dès l'arrivée */}
+      <div className="md:hidden bg-[#1C1C1C] text-white flex items-center justify-between px-4 py-2.5 gap-2">
+        <a href="tel:+33611783867" className="flex items-center gap-2 text-sm font-light tracking-wide">
+          <Phone size={14} />
+          <span>06 11 78 38 67</span>
+        </a>
+        <a href="/contact" className="bg-[#B8960C] text-white text-xs font-medium px-3 py-1.5 rounded tracking-wide">
+          Devis gratuit
+        </a>
+      </div>
+      <div className="bg-white/98 backdrop-blur-sm border-b border-gray-100/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
@@ -59,6 +70,8 @@ export default function Header() {
             {open ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
+      </div>
+
       </div>
 
       {/* Mobile nav */}
