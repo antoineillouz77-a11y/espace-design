@@ -1,65 +1,327 @@
-import Image from "next/image";
+import Link from 'next/link'
+import { Phone, Star, CheckCircle, ArrowRight, MapPin } from 'lucide-react'
 
-export default function Home() {
+const services = [
+  {
+    title: 'Rénovation complète',
+    desc: 'Transformation totale de votre appartement ou maison : gros œuvre, second œuvre, finitions. Un seul interlocuteur, du début à la fin.',
+    icon: '🏗️',
+  },
+  {
+    title: 'Décoration intérieure',
+    desc: 'Conception de votre espace selon vos goûts et votre budget. Agencement, matériaux, couleurs — un rendu professionnel et personnalisé.',
+    icon: '🎨',
+  },
+  {
+    title: 'Finitions haut de gamme',
+    desc: 'Notre spécialité : les finitions soignées qui font la différence. Peinture, revêtements, pose de carrelage, menuiserie — le détail compte.',
+    icon: '✨',
+  },
+]
+
+const atouts = [
+  'Devis gratuit et détaillé sous 48h',
+  'Artisan qualifié, 15+ ans d\'expérience',
+  'Belles finitions garanties',
+  'Respect des délais',
+  'Assurance décennale',
+  'Paris & toute l\'Île-de-France',
+]
+
+const temoignages = [
+  {
+    nom: 'Sophie M.',
+    quartier: 'Paris 15e',
+    note: 5,
+    texte: 'Patrick a rénové notre salon et notre cuisine. Un travail exceptionnel, des finitions parfaites. Je recommande sans hésiter.',
+  },
+  {
+    nom: 'Marc & Isabelle T.',
+    quartier: 'Boulogne-Billancourt',
+    note: 5,
+    texte: 'Rénovation complète de notre appartement en 3 semaines. Sérieux, propre, ponctuel. Le résultat dépasse nos attentes.',
+  },
+  {
+    nom: 'Karim B.',
+    quartier: 'Paris 17e',
+    note: 5,
+    texte: 'Excellent artisan. À l\'écoute, de bon conseil, et un sens du détail rare. Les finitions sont vraiment au top.',
+  },
+]
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      {/* Hero */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background gradient as placeholder until real photo */}
+        <div
+          className="absolute inset-0 bg-gradient-to-br from-[#1C1C1C] via-[#2d2d2d] to-[#1a1510]"
+          aria-hidden="true"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+        <div className="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center opacity-40" aria-hidden="true" />
+
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto pt-24">
+          <div className="inline-flex items-center gap-2 bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#D4AF37] text-xs font-medium tracking-widest uppercase px-4 py-2 rounded-full mb-6">
+            <MapPin size={12} />
+            Paris & Île-de-France
+          </div>
+          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+            Votre intérieur,{' '}
+            <span className="text-[#D4AF37]">réinventé.</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Artisan rénovateur et décorateur intérieur à Paris. Des finitions
+            haut de gamme, un travail soigné, un résultat qui vous ressemble.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="tel:+33611783867"
+              className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-8 py-4 rounded font-semibold text-base hover:bg-[#c9a030] transition-colors"
+            >
+              <Phone size={18} />
+              06 11 78 38 67
+            </a>
+            <Link
+              href="/contact"
+              className="flex items-center justify-center gap-2 border border-white/40 text-white px-8 py-4 rounded font-medium text-base hover:bg-white/10 transition-colors"
+            >
+              Demander un devis gratuit
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+          <p className="text-gray-500 text-sm mt-6">Réponse sous 24h — Devis gratuit</p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500">
+          <div className="w-px h-8 bg-gradient-to-b from-transparent to-gray-500" />
         </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      {/* Atouts rapides */}
+      <section className="bg-[#D4AF37] py-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
+            {['Devis gratuit 48h', 'Assurance décennale', '15+ ans d\'expérience', 'Paris & Île-de-France'].map((item) => (
+              <div key={item} className="flex items-center gap-2 text-[#1C1C1C] text-sm font-medium py-1">
+                <CheckCircle size={14} />
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-20 sm:py-28 bg-[#FAFAF8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-14">
+            <p className="text-[#B8960C] text-sm font-medium uppercase tracking-widest mb-3">Nos prestations</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C]">
+              Ce que nous faisons
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {services.map((s) => (
+              <div
+                key={s.title}
+                className="bg-white rounded-lg p-8 border border-gray-100 hover:border-[#D4AF37]/40 hover:shadow-md transition-all"
+              >
+                <div className="text-4xl mb-5">{s.icon}</div>
+                <h3 className="font-display text-xl font-bold text-[#1C1C1C] mb-3">{s.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 text-sm font-medium text-[#B8960C] hover:text-[#1C1C1C] transition-colors"
+            >
+              Voir tous nos services <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Réalisations preview */}
+      <section className="py-20 sm:py-28 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-14">
+            <p className="text-[#B8960C] text-sm font-medium uppercase tracking-widest mb-3">Portfolio</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C]">
+              Nos réalisations
+            </h2>
+            <p className="text-gray-500 mt-3 text-sm">Chaque chantier est unique — voici quelques exemples de notre travail.</p>
+          </div>
+
+          {/* Photo grid placeholder */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+            {[
+              { label: 'Salon — Paris 15e', h: 'h-64' },
+              { label: 'Cuisine — Boulogne', h: 'h-64' },
+              { label: 'Chambre — Paris 8e', h: 'h-64' },
+              { label: 'Salle de bain — Paris 16e', h: 'h-48' },
+              { label: 'Entrée — Levallois', h: 'h-48' },
+              { label: 'Bureau — Paris 17e', h: 'h-48' },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className={`${item.h} bg-gray-100 rounded-lg overflow-hidden relative group cursor-pointer`}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute bottom-3 left-3 text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  {item.label}
+                </div>
+                {/* Placeholder pattern */}
+                <div className="w-full h-full flex items-center justify-center text-gray-300 text-xs">
+                  Photo à venir
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/realisations"
+              className="inline-flex items-center gap-2 bg-[#1C1C1C] text-white px-6 py-3 rounded text-sm font-medium hover:bg-[#B8960C] transition-colors"
+            >
+              Voir toutes les réalisations <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Atouts */}
+      <section className="py-20 sm:py-28 bg-[#F2F2EE]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-[#B8960C] text-sm font-medium uppercase tracking-widest mb-3">Pourquoi nous choisir</p>
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C] mb-6">
+                L&apos;artisanat au service de vos rêves
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Espace Design, c&apos;est plus de 15 ans d&apos;expérience dans la rénovation et la
+                décoration intérieure à Paris et en Île-de-France. Notre signature : des finitions
+                irréprochables, un suivi personnalisé, et un respect total de votre espace et de votre budget.
+              </p>
+              <ul className="space-y-3">
+                {atouts.map((a) => (
+                  <li key={a} className="flex items-center gap-3 text-sm text-gray-700">
+                    <CheckCircle size={16} className="text-[#B8960C] flex-shrink-0" />
+                    {a}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <a
+                  href="tel:+33611783867"
+                  className="inline-flex items-center gap-2 bg-[#1C1C1C] text-white px-6 py-3 rounded text-sm font-medium hover:bg-[#B8960C] transition-colors"
+                >
+                  <Phone size={15} />
+                  Appeler Patrick
+                </a>
+              </div>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { value: '15+', label: 'années d\'expérience' },
+                { value: '200+', label: 'chantiers réalisés' },
+                { value: '40+', label: 'avis clients 5★' },
+                { value: '100%', label: 'clients satisfaits' },
+              ].map((stat) => (
+                <div key={stat.label} className="bg-white rounded-lg p-6 text-center border border-gray-100">
+                  <div className="font-display text-4xl font-bold text-[#B8960C] mb-2">{stat.value}</div>
+                  <div className="text-xs text-gray-500 leading-tight">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Témoignages */}
+      <section className="py-20 sm:py-28 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-14">
+            <p className="text-[#B8960C] text-sm font-medium uppercase tracking-widest mb-3">Avis clients</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C]">
+              Ils nous font confiance
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {temoignages.map((t, i) => (
+              <div key={i} className="bg-[#FAFAF8] rounded-lg p-6 border border-gray-100">
+                <div className="flex gap-0.5 mb-4">
+                  {Array.from({ length: t.note }).map((_, j) => (
+                    <Star key={j} size={14} className="fill-[#D4AF37] text-[#D4AF37]" />
+                  ))}
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed mb-5 italic">&ldquo;{t.texte}&rdquo;</p>
+                <div>
+                  <div className="font-semibold text-sm text-[#1C1C1C]">{t.nom}</div>
+                  <div className="text-xs text-gray-400">{t.quartier}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Zone intervention */}
+      <section className="py-14 bg-[#1C1C1C]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <div className="flex items-center justify-center gap-2 text-[#D4AF37] mb-4">
+            <MapPin size={16} />
+            <span className="text-sm font-medium uppercase tracking-widest">Zone d&apos;intervention</span>
+          </div>
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mb-4">
+            Paris & toute l&apos;Île-de-France
+          </h2>
+          <p className="text-gray-400 text-sm mb-6">
+            Nous intervenons dans tous les arrondissements de Paris ainsi que dans les communes
+            environnantes : Boulogne, Levallois, Neuilly, Vincennes, Saint-Denis, et toute la couronne parisienne.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-6 py-3 rounded text-sm font-semibold hover:bg-[#c9a030] transition-colors"
+          >
+            Demander un devis gratuit <ArrowRight size={16} />
+          </Link>
+        </div>
+      </section>
+
+      {/* CTA final */}
+      <section className="py-20 sm:py-28 bg-[#FAFAF8]">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C] mb-4">
+            Votre projet commence ici
+          </h2>
+          <p className="text-gray-600 mb-8 leading-relaxed">
+            Décrivez-nous votre projet — rénovation, décoration, aménagement — et recevez un devis
+            gratuit et détaillé sous 48h.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-8 py-4 rounded font-semibold hover:bg-[#B8960C] transition-colors"
+            >
+              Devis gratuit <ArrowRight size={16} />
+            </Link>
+            <a
+              href="tel:+33611783867"
+              className="flex items-center justify-center gap-2 border border-[#1C1C1C] text-[#1C1C1C] px-8 py-4 rounded font-medium hover:bg-[#1C1C1C] hover:text-white transition-colors"
+            >
+              <Phone size={16} />
+              06 11 78 38 67
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
+  )
 }
