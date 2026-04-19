@@ -67,10 +67,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-clichy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-vanves`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-colombes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-meudon`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-chatillon`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-clamart`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-sevres`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-garches`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-antony`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-bagneux`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Yvelines (78)
     { url: `${base}/renovation-versailles`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-saint-germain-en-laye`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-le-vesinet`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-chatou`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Val-de-Marne (94)
     { url: `${base}/renovation-vincennes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -83,6 +92,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-joinville-le-pont`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-saint-mande`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-gentilly`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-charenton-le-pont`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-ivry-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Blog
     { url: `${base}/blog`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
