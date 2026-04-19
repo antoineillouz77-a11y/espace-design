@@ -3,14 +3,48 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact — Devis Gratuit Rénovation Paris',
+  title: 'Contact — Devis Gratuit Rénovation Paris | Espace Design',
   description:
-    'Contactez Espace Design pour un devis gratuit. Rénovation et décoration intérieure à Paris et Île-de-France. Réponse sous 24h.',
+    'Contactez Espace Design pour un devis gratuit en 48h. Artisan rénovateur à Paris et Île-de-France. Déplacement gratuit et sans engagement. ☎ 06 11 78 38 67',
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://espacedesignparis.fr/contact' },
+  ],
+}
+
+const schemaContact = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Devis gratuit — Espace Design',
+  url: 'https://espacedesignparis.fr/contact',
+  description: 'Demandez votre devis gratuit à Espace Design, artisan rénovateur à Paris.',
+  mainEntity: {
+    '@type': 'HomeAndConstructionBusiness',
+    name: 'Espace Design',
+    telephone: '+33611783867',
+    email: 'espacedesign92@gmail.com',
+    url: 'https://espacedesignparis.fr',
+    openingHours: 'Mo-Sa 08:00-19:00',
+    areaServed: { '@type': 'City', name: 'Paris' },
+  },
 }
 
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaContact) }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#1C1C1C] text-center px-4">
         <p className="text-[#D4AF37] text-sm font-medium uppercase tracking-widest mb-3">Contactez-nous</p>

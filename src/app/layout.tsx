@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: {
     default: 'Espace Design — Rénovation & Décoration Intérieure Paris',
-    template: '%s | Espace Design Paris',
+    template: '%s',
   },
   description:
     'Espace Design — Artisan rénovateur et décorateur intérieur à Paris et en Île-de-France. Rénovation complète, aménagement sur mesure, finitions haut de gamme.',
@@ -29,6 +29,20 @@ export const metadata: Metadata = {
     title: 'Espace Design — Rénovation & Décoration Intérieure Paris',
     description:
       'Artisan rénovateur et décorateur intérieur à Paris et Île-de-France. Belles finitions garanties.',
+    images: [
+      {
+        url: 'https://espacedesignparis.fr/images/hero.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Espace Design — Rénovation et décoration intérieure Paris',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Espace Design — Rénovation & Décoration Intérieure Paris',
+    description: 'Artisan rénovateur et décorateur intérieur à Paris et Île-de-France.',
+    images: ['https://espacedesignparis.fr/images/hero.jpg'],
   },
   robots: {
     index: true,
@@ -51,14 +65,19 @@ const schemaOrg = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
+  legalName: 'Espace Design',
+  taxID: '90472826800015',
   description:
-    'Artisan rénovateur et décorateur intérieur à Paris et en Île-de-France.',
+    'Artisan rénovateur et décorateur intérieur à Paris et en Île-de-France. Rénovation complète, décoration sur-mesure, finitions haut de gamme. 15+ ans d\'expérience.',
   telephone: '+33611783867',
   email: 'espacedesign92@gmail.com',
   url: 'https://espacedesignparis.fr',
+  logo: 'https://espacedesignparis.fr/images/hero.jpg',
+  image: 'https://espacedesignparis.fr/images/hero.jpg',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Paris',
+    addressRegion: 'Île-de-France',
     addressCountry: 'FR',
   },
   geo: {
@@ -80,13 +99,18 @@ const schemaOrg = {
       closes: '17:00',
     },
   ],
-  areaServed: {
-    '@type': 'City',
-    name: 'Paris',
-  },
+  areaServed: [
+    { '@type': 'City', name: 'Paris' },
+    { '@type': 'City', name: 'Neuilly-sur-Seine' },
+    { '@type': 'City', name: 'Levallois-Perret' },
+    { '@type': 'City', name: 'Boulogne-Billancourt' },
+    { '@type': 'City', name: 'Versailles' },
+  ],
   hasMap: 'https://www.google.com/maps/place/Paris,+France',
-  sameAs: [],
+  currenciesAccepted: 'EUR',
+  paymentAccepted: 'Cash, Credit Card, Bank Transfer',
   priceRange: '€€€',
+  knowsAbout: ['Rénovation appartement', 'Décoration intérieure', 'Peinture', 'Carrelage', 'Parquet', 'Salle de bain', 'Cuisine sur-mesure'],
 }
 
 export default function RootLayout({

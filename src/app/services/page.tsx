@@ -1,11 +1,48 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { CheckCircle, ArrowRight, Phone } from 'lucide-react'
+import { CheckCircle, ArrowRight, Phone, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Nos Services — Rénovation, Décoration, Aménagement',
+  title: 'Services Rénovation Appartement Paris — Espace Design | Artisan Rénovateur',
   description:
-    'Espace Design intervient sur tous types de travaux : rénovation complète, décoration intérieure, peinture, carrelage, menuiserie, salle de bain, cuisine. Paris & Île-de-France.',
+    'Rénovation complète, décoration intérieure, peinture, carrelage, menuiserie, salle de bain, cuisine sur-mesure. Artisan rénovateur Paris & Île-de-France. Devis gratuit 48h.',
+  keywords: [
+    'rénovation appartement Paris',
+    'artisan rénovation Paris',
+    'décoration intérieure Paris',
+    'rénovation salle de bain Paris',
+    'peinture appartement Paris',
+    'carrelage Paris',
+    'parquet Paris',
+    'menuiserie sur-mesure Paris',
+  ],
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://espacedesignparis.fr/services' },
+  ],
+}
+
+const schemaLocalBusiness = {
+  '@context': 'https://schema.org',
+  '@type': 'HomeAndConstructionBusiness',
+  name: 'Espace Design',
+  description: 'Artisan rénovateur et décorateur intérieur à Paris et Île-de-France. Rénovation complète, décoration sur-mesure, finitions haut de gamme.',
+  telephone: '+33611783867',
+  email: 'espacedesign92@gmail.com',
+  url: 'https://espacedesignparis.fr',
+  areaServed: { '@type': 'City', name: 'Paris' },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Paris',
+    addressCountry: 'FR',
+  },
+  priceRange: '€€€',
+  openingHours: 'Mo-Sa 08:00-19:00',
 }
 
 const services = [
@@ -89,9 +126,47 @@ const services = [
   },
 ]
 
+const zonesData = [
+  { href: '/renovation-paris-1er', label: 'Paris 1er' },
+  { href: '/renovation-paris-2e', label: 'Paris 2e' },
+  { href: '/renovation-paris-3e', label: 'Paris 3e' },
+  { href: '/renovation-paris-4e', label: 'Paris 4e' },
+  { href: '/renovation-paris-5e', label: 'Paris 5e' },
+  { href: '/renovation-paris-6e', label: 'Paris 6e' },
+  { href: '/renovation-paris-7e', label: 'Paris 7e' },
+  { href: '/renovation-paris-8e', label: 'Paris 8e' },
+  { href: '/renovation-paris-9e', label: 'Paris 9e' },
+  { href: '/renovation-paris-10e', label: 'Paris 10e' },
+  { href: '/renovation-paris-11e', label: 'Paris 11e' },
+  { href: '/renovation-paris-12e', label: 'Paris 12e' },
+  { href: '/renovation-paris-13e', label: 'Paris 13e' },
+  { href: '/renovation-paris-14e', label: 'Paris 14e' },
+  { href: '/renovation-paris-15e', label: 'Paris 15e' },
+  { href: '/renovation-paris-16e', label: 'Paris 16e' },
+  { href: '/renovation-paris-17e', label: 'Paris 17e' },
+  { href: '/renovation-paris-18e', label: 'Paris 18e' },
+  { href: '/renovation-paris-19e', label: 'Paris 19e' },
+  { href: '/renovation-paris-20e', label: 'Paris 20e' },
+  { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
+  { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
+  { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
+  { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
+  { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
+  { href: '/renovation-vincennes', label: 'Vincennes' },
+  { href: '/renovation-versailles', label: 'Versailles' },
+]
+
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocalBusiness) }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#1C1C1C] text-center px-4">
         <p className="text-[#D4AF37] text-sm font-medium uppercase tracking-widest mb-3">Nos prestations</p>
@@ -149,6 +224,33 @@ export default function ServicesPage() {
                 <h3 className="font-semibold text-[#1C1C1C] mb-2">{step.title}</h3>
                 <p className="text-xs text-gray-500 leading-relaxed">{step.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Zones d'intervention */}
+      <section className="py-16 bg-[#F2F2EE]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center gap-2 text-[#B8960C] mb-3">
+            <MapPin size={14} />
+            <span className="text-[10px] font-light uppercase tracking-[0.25em]">Zone d&apos;intervention</span>
+          </div>
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-3">
+            Rénovation à Paris & en Île-de-France
+          </h2>
+          <p className="text-gray-500 text-sm font-light mb-6 max-w-2xl">
+            Nous intervenons dans tous les arrondissements de Paris et dans les villes limitrophes. Devis gratuit sur place sous 48h.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {zonesData.map((z) => (
+              <Link
+                key={z.href}
+                href={z.href}
+                className="text-xs text-gray-600 bg-white border border-gray-200 px-3 py-1.5 rounded hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors duration-200"
+              >
+                {z.label}
+              </Link>
             ))}
           </div>
         </div>

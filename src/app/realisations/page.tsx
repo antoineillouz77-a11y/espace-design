@@ -4,9 +4,34 @@ import Link from 'next/link'
 import { ArrowRight, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Nos Réalisations — Portfolio Rénovation Paris',
+  title: 'Nos Réalisations — Portfolio Rénovation Appartement Paris | Espace Design',
   description:
-    "Découvrez nos réalisations : rénovation d'appartements, décoration intérieure, cuisines, salles de bain, terrasses, à Paris et en Île-de-France. Photos de chantiers réels.",
+    "Photos réelles de nos chantiers : rénovation d'appartements haussmanniens, décoration intérieure, cuisines sur-mesure, salles de bain, terrasses à Paris et Île-de-France.",
+  keywords: [
+    'réalisations rénovation Paris',
+    'portfolio rénovation appartement Paris',
+    'photos chantier rénovation Paris',
+    'avant après rénovation Paris',
+    'exemples rénovation intérieure Paris',
+  ],
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Réalisations', item: 'https://espacedesignparis.fr/realisations' },
+  ],
+}
+
+const schemaGallery = {
+  '@context': 'https://schema.org',
+  '@type': 'ImageGallery',
+  name: 'Portfolio Rénovation — Espace Design Paris',
+  description: 'Photos de chantiers de rénovation et décoration intérieure à Paris et Île-de-France.',
+  url: 'https://espacedesignparis.fr/realisations',
+  author: { '@type': 'Organization', name: 'Espace Design' },
 }
 
 const projets = [
@@ -120,6 +145,14 @@ const projets = [
 export default function RealisationsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaGallery) }}
+      />
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#1C1C1C] text-center px-4">
         <p className="text-[#D4AF37] text-sm font-medium uppercase tracking-widest mb-3">Portfolio</p>
@@ -144,7 +177,7 @@ export default function RealisationsPage() {
               >
                 <Image
                   src={p.src}
-                  alt={`${p.label} — ${p.lieu}`}
+                  alt={`${p.label} — Rénovation ${p.type.toLowerCase()} ${p.lieu} | Espace Design`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
@@ -155,6 +188,51 @@ export default function RealisationsPage() {
                   <div className="text-gray-300 text-xs mt-0.5">{p.type}</div>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Zones */}
+      <section className="py-12 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-xl font-semibold text-[#1C1C1C] mb-4">
+            Nos interventions par arrondissement
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: '/renovation-paris-1er', label: 'Paris 1er' },
+              { href: '/renovation-paris-2e', label: 'Paris 2e' },
+              { href: '/renovation-paris-3e', label: 'Paris 3e' },
+              { href: '/renovation-paris-4e', label: 'Paris 4e' },
+              { href: '/renovation-paris-5e', label: 'Paris 5e' },
+              { href: '/renovation-paris-6e', label: 'Paris 6e' },
+              { href: '/renovation-paris-7e', label: 'Paris 7e' },
+              { href: '/renovation-paris-8e', label: 'Paris 8e' },
+              { href: '/renovation-paris-9e', label: 'Paris 9e' },
+              { href: '/renovation-paris-10e', label: 'Paris 10e' },
+              { href: '/renovation-paris-11e', label: 'Paris 11e' },
+              { href: '/renovation-paris-12e', label: 'Paris 12e' },
+              { href: '/renovation-paris-13e', label: 'Paris 13e' },
+              { href: '/renovation-paris-14e', label: 'Paris 14e' },
+              { href: '/renovation-paris-15e', label: 'Paris 15e' },
+              { href: '/renovation-paris-16e', label: 'Paris 16e' },
+              { href: '/renovation-paris-17e', label: 'Paris 17e' },
+              { href: '/renovation-paris-18e', label: 'Paris 18e' },
+              { href: '/renovation-paris-19e', label: 'Paris 19e' },
+              { href: '/renovation-paris-20e', label: 'Paris 20e' },
+              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
+              { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
+              { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
+              { href: '/renovation-versailles', label: 'Versailles' },
+            ].map((z) => (
+              <Link
+                key={z.href}
+                href={z.href}
+                className="text-xs text-gray-600 bg-[#FAFAF8] border border-gray-200 px-3 py-1.5 rounded hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors"
+              >
+                {z.label}
+              </Link>
             ))}
           </div>
         </div>

@@ -36,12 +36,69 @@ const schemaLocal = {
   },
 }
 
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Paris 7e', item: 'https://espacedesignparis.fr/renovation-paris-7e' },
+  ],
+}
+
+const schemaFaq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Quel est le délai pour obtenir un devis dans le 7e arrondissement ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Nous répondons à toutes les demandes de devis sous 48h. Le déplacement pour évaluer votre projet est gratuit et sans engagement dans tout le 7e arrondissement.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quel est le prix d\'une rénovation complète dans le 7e arrondissement ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Le coût d\'une rénovation complète à Paris varie généralement entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Avez-vous une assurance décennale ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quels types de travaux réalisez-vous dans le 7e arrondissement ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Nous intervenons sur tous types de projets : rénovation complète d\'appartement, peinture, carrelage, parquet, salle de bain, cuisine, aménagement sur-mesure, menuiseries, plâtrerie. Un seul artisan pour coordonner l\'ensemble du chantier.',
+      },
+    },
+  ],
+}
+
 export default function RenovationParis7e() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocal) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
       {/* Hero compact */}
@@ -103,7 +160,7 @@ export default function RenovationParis7e() {
             Une réalisation dans le 7e
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/01-salon-parisien-bibliotheque.jpg" alt="Bibliothèque sur-mesure Paris 7e" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/01-salon-parisien-bibliotheque.jpg" alt="Bibliothèque sur-mesure avec éclairage LED intégré — rénovation appartement Paris 7e arrondissement" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -124,6 +181,66 @@ export default function RenovationParis7e() {
                 <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0" />
                 {a}
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Questions fréquentes
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: 'Quel est le délai pour obtenir un devis dans le 7e ?',
+                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement dans tout le 7e arrondissement.',
+              },
+              {
+                q: 'Quel est le prix d\'une rénovation complète dans le 7e ?',
+                a: 'Le coût varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m². Devis personnalisé sous 48h.',
+              },
+              {
+                q: 'Avez-vous une assurance décennale ?',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans.',
+              },
+              {
+                q: 'Quels types de travaux réalisez-vous dans le 7e ?',
+                a: 'Rénovation complète, peinture, carrelage, parquet, salle de bain, cuisine, aménagement sur-mesure, menuiseries. Un seul artisan pour tout coordonner.',
+              },
+            ].map((item) => (
+              <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
+                <summary className="font-display text-base font-semibold text-[#1C1C1C] cursor-pointer list-none flex justify-between items-center">
+                  {item.q}
+                  <span className="text-[#D4AF37] text-lg ml-4 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-gray-500 text-sm leading-relaxed font-light">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Zones voisines */}
+      <section className="py-12 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { href: '/renovation-paris-6e', label: 'Paris 6e' },
+              { href: '/renovation-paris-8e', label: 'Paris 8e' },
+              { href: '/renovation-paris-15e', label: 'Paris 15e' },
+              { href: '/renovation-paris-16e', label: 'Paris 16e' },
+            ].map((z) => (
+              <Link
+                key={z.href}
+                href={z.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {z.label}
+              </Link>
             ))}
           </div>
         </div>

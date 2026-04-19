@@ -36,12 +36,69 @@ const schemaLocal = {
   },
 }
 
+const schemaFaq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Quel est le délai pour obtenir un devis dans le Xe arrondissement ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Nous répondons à toutes les demandes de devis sous 48h. Le déplacement pour évaluer votre projet est gratuit et sans engagement dans tout le Xe arrondissement.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quel est le prix d\'une rénovation complète dans le Xe arrondissement ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Le coût d\'une rénovation complète à Paris varie généralement entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Avez-vous une assurance décennale ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quels types de travaux réalisez-vous dans le Xe arrondissement ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Nous intervenons sur tous types de projets : rénovation complète d\'appartement, peinture, carrelage, parquet, salle de bain, cuisine, aménagement sur-mesure, menuiseries, plâtrerie. Un seul artisan pour coordonner l\'ensemble du chantier.',
+      },
+    },
+  ],
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Paris 10e', item: 'https://espacedesignparis.fr/renovation-paris-10e' },
+  ],
+}
+
 export default function RenovationParis10e() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocal) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
@@ -125,6 +182,69 @@ export default function RenovationParis10e() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Questions fréquentes
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: 'Quel est le délai pour obtenir un devis dans le 10e ?',
+                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement dans tout le 10e arrondissement.',
+              },
+              {
+                q: 'Quel est le prix d\'une rénovation complète dans le 10e ?',
+                a: 'Le coût varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m². Devis personnalisé sous 48h.',
+              },
+              {
+                q: 'Avez-vous une assurance décennale ?',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans.',
+              },
+              {
+                q: 'Quels types de travaux réalisez-vous dans le 10e ?',
+                a: 'Rénovation complète, peinture, carrelage, parquet, salle de bain, cuisine, aménagement sur-mesure, menuiseries. Un seul artisan pour tout coordonner.',
+              },
+            ].map((item) => (
+              <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
+                <summary className="font-display text-base font-semibold text-[#1C1C1C] cursor-pointer list-none flex justify-between items-center">
+                  {item.q}
+                  <span className="text-[#D4AF37] text-lg ml-4 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-gray-500 text-sm leading-relaxed font-light">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Zones voisines */}
+      <section className="py-12 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { href: '/renovation-paris-2e', label: 'Paris 2e' },
+              { href: '/renovation-paris-3e', label: 'Paris 3e' },
+              { href: '/renovation-paris-9e', label: 'Paris 9e' },
+              { href: '/renovation-paris-11e', label: 'Paris 11e' },
+              { href: '/renovation-paris-18e', label: 'Paris 18e' },
+              { href: '/renovation-paris-19e', label: 'Paris 19e' },
+            ].map((z) => (
+              <Link
+                key={z.href}
+                href={z.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {z.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">

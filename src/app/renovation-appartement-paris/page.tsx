@@ -9,9 +9,93 @@ export const metadata: Metadata = {
 }
 
 const arrondissements = [
-  '1er', '2e', '3e', '4e', '5e', '6e', '7e', '8e', '9e', '10e',
-  '11e', '12e', '13e', '14e', '15e', '16e', '17e', '18e', '19e', '20e',
+  { href: '/renovation-paris-1er', label: '1er' },
+  { href: '/renovation-paris-2e', label: '2e' },
+  { href: '/renovation-paris-3e', label: '3e' },
+  { href: '/renovation-paris-4e', label: '4e' },
+  { href: '/renovation-paris-5e', label: '5e' },
+  { href: '/renovation-paris-6e', label: '6e' },
+  { href: '/renovation-paris-7e', label: '7e' },
+  { href: '/renovation-paris-8e', label: '8e' },
+  { href: '/renovation-paris-9e', label: '9e' },
+  { href: '/renovation-paris-10e', label: '10e' },
+  { href: '/renovation-paris-11e', label: '11e' },
+  { href: '/renovation-paris-12e', label: '12e' },
+  { href: '/renovation-paris-13e', label: '13e' },
+  { href: '/renovation-paris-14e', label: '14e' },
+  { href: '/renovation-paris-15e', label: '15e' },
+  { href: '/renovation-paris-16e', label: '16e' },
+  { href: '/renovation-paris-17e', label: '17e' },
+  { href: '/renovation-paris-18e', label: '18e' },
+  { href: '/renovation-paris-19e', label: '19e' },
+  { href: '/renovation-paris-20e', label: '20e' },
 ]
+
+const villes = [
+  { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
+  { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
+  { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
+  { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
+  { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
+  { href: '/renovation-vincennes', label: 'Vincennes' },
+  { href: '/renovation-versailles', label: 'Versailles' },
+]
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation appartement Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+  ],
+}
+
+const schemaFaqPage = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Quel est le coût d\'une rénovation d\'appartement à Paris ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Le coût varie selon l\'état du bien et la nature des travaux : de 500 à 1 500 €/m² pour une rénovation partielle, et de 1 500 à 3 000 €/m² pour une rénovation complète. Espace Design établit un devis gratuit et précis après visite.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Combien de temps dure une rénovation d\'appartement ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Pour un appartement de 50 m², comptez 3 à 6 semaines selon l\'ampleur des travaux. Nous respectons les délais convenus et vous informons à chaque étape.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Intervenez-vous dans toute la région parisienne ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, nous intervenons dans tous les arrondissements de Paris ainsi que dans toute l\'Île-de-France : Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne et au-delà.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Avez-vous une assurance décennale ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Tous nos travaux sont garantis 10 ans.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Proposez-vous un accompagnement en décoration ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Absolument. En plus des travaux, nous vous conseillons sur les couleurs, matériaux, et l\'aménagement pour un résultat harmonieux et personnalisé.',
+      },
+    },
+  ],
+}
 
 const faq = [
   {
@@ -39,6 +123,14 @@ const faq = [
 export default function RenovationParis() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaqPage) }}
+      />
       {/* Hero SEO */}
       <section className="pt-32 pb-20 bg-[#1C1C1C] px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -134,17 +226,26 @@ export default function RenovationParis() {
           </p>
           <div className="flex flex-wrap gap-2 justify-center">
             {arrondissements.map((arr) => (
-              <span
-                key={arr}
-                className="border border-gray-200 rounded-full px-4 py-1.5 text-sm text-gray-700 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors cursor-default"
+              <Link
+                key={arr.href}
+                href={arr.href}
+                className="border border-gray-200 rounded-full px-4 py-1.5 text-sm text-gray-700 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors"
               >
-                Paris {arr}
-              </span>
+                Paris {arr.label}
+              </Link>
             ))}
           </div>
-          <p className="text-gray-400 text-xs mt-6">
-            + toute l&apos;Île-de-France : 92, 93, 94, 78, 91, 95, 77
-          </p>
+          <div className="flex flex-wrap gap-2 justify-center mt-3">
+            {villes.map((v) => (
+              <Link
+                key={v.href}
+                href={v.href}
+                className="border border-gray-100 rounded-full px-4 py-1.5 text-sm text-gray-500 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors"
+              >
+                {v.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -160,6 +261,40 @@ export default function RenovationParis() {
                 <h3 className="font-semibold text-[#1C1C1C] mb-2 text-sm">{item.q}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Blog links */}
+      <section className="py-12 bg-[#F2F2EE]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-xl font-semibold text-[#1C1C1C] mb-5">Guides & conseils rénovation</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { href: '/blog/prix-renovation-appartement-paris', title: 'Prix d\'une rénovation à Paris en 2025', tag: 'Prix' },
+              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénover un appartement haussmannien', tag: 'Guide' },
+              { href: '/blog/renovation-salle-de-bain-paris', title: 'Rénovation salle de bain à Paris', tag: 'Salle de bain' },
+              { href: '/blog/choisir-artisan-renovation-paris', title: 'Bien choisir son artisan rénovateur', tag: 'Conseils' },
+              { href: '/blog/renovation-cuisine-ouverte-paris', title: 'Créer une cuisine ouverte à Paris', tag: 'Cuisine' },
+              { href: '/blog/renovation-parquet-paris', title: 'Parquet : pose, rénovation, vitrification', tag: 'Sols' },
+              { href: '/blog/isolation-acoustique-appartement-paris', title: 'Isolation acoustique appartement Paris', tag: 'Isolation' },
+              { href: '/blog/peinture-appartement-paris', title: 'Peinture appartement Paris : prix et conseils', tag: 'Peinture' },
+              { href: '/blog/renovation-studio-paris', title: 'Rénovation studio Paris : prix et astuces', tag: 'Studios' },
+              { href: '/blog/carrelage-appartement-paris', title: 'Carrelage appartement Paris : prix et pose', tag: 'Carrelage' },
+              { href: '/blog/menuiserie-sur-mesure-paris', title: 'Menuiserie sur mesure à Paris', tag: 'Menuiserie' },
+              { href: '/blog/decoration-interieure-paris', title: 'Décoration intérieure Paris : guide complet', tag: 'Décoration' },
+              { href: '/blog/renovation-appartement-ancien-paris', title: 'Rénover un appartement ancien à Paris', tag: 'Ancien' },
+              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique Paris : prix et aides', tag: 'Isolation' },
+              { href: '/blog/renovation-2-pieces-paris', title: 'Rénovation 2 pièces Paris : budget et guide', tag: 'Budgets' },
+              { href: '/blog/renovation-3-pieces-paris', title: 'Rénovation 3 pièces Paris : prix et budget', tag: 'Budgets' },
+            ].map((a) => (
+              <Link key={a.href} href={a.href} className="flex items-start gap-3 bg-white rounded-lg p-4 border border-gray-100 hover:border-[#D4AF37]/40 transition-colors group">
+                <div>
+                  <span className="text-[10px] uppercase tracking-widest text-[#B8960C] font-light">{a.tag}</span>
+                  <p className="text-sm font-medium text-[#1C1C1C] mt-1 group-hover:text-[#B8960C] transition-colors leading-snug">{a.title}</p>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

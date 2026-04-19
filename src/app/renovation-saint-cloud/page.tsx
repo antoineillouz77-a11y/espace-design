@@ -36,12 +36,69 @@ const schemaLocal = {
   },
 }
 
+const schemaFaq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Quel est le délai pour obtenir un devis à Saint-Cloud ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Saint-Cloud et dans toute la région.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quel est le prix d\'une rénovation complète à Saint-Cloud ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Le coût d\'une rénovation complète varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Avez-vous une assurance décennale ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Intervenez-vous à Saint-Cloud ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, nous intervenons régulièrement à Saint-Cloud et dans toute l\'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.',
+      },
+    },
+  ],
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Saint-Cloud', item: 'https://espacedesignparis.fr/renovation-saint-cloud' },
+  ],
+}
+
 export default function RenovationSaintCloud() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocal) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
@@ -122,6 +179,64 @@ export default function RenovationSaintCloud() {
                 <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0" />
                 {a}
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Questions fréquentes
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: 'Quel est le délai pour obtenir un devis à Saint-Cloud ?',
+                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement à Saint-Cloud.',
+              },
+              {
+                q: 'Quel est le prix d\'une rénovation complète à Saint-Cloud ?',
+                a: 'Le coût varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².',
+              },
+              {
+                q: 'Avez-vous une assurance décennale ?',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans.',
+              },
+              {
+                q: 'Intervenez-vous à Saint-Cloud ?',
+                a: 'Oui, nous intervenons régulièrement à Saint-Cloud et dans toute l\'Île-de-France. Devis gratuit sous 48h.',
+              },
+            ].map((item) => (
+              <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
+                <summary className="font-display text-base font-semibold text-[#1C1C1C] cursor-pointer list-none flex justify-between items-center">
+                  {item.q}
+                  <span className="text-[#D4AF37] text-lg ml-4 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-gray-500 text-sm leading-relaxed font-light">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Zones voisines */}
+      <section className="py-12 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
+              { href: '/renovation-versailles', label: 'Versailles' },
+            ].map((z) => (
+              <Link
+                key={z.href}
+                href={z.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {z.label}
+              </Link>
             ))}
           </div>
         </div>

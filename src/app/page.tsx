@@ -160,7 +160,7 @@ export default function HomePage() {
             <div className="relative rounded-xl overflow-hidden h-48 sm:h-72 col-span-2">
               <Image
                 src="/images/hero.jpg"
-                alt="Salon rénovation Paris — Espace Design"
+                alt="Salon avec éclairage architectural sur-mesure — rénovation appartement Paris 6e arrondissement par Espace Design"
                 fill
                 className="object-cover object-center"
                 priority
@@ -175,7 +175,7 @@ export default function HomePage() {
               <div className="relative rounded-xl overflow-hidden flex-1">
                 <Image
                   src="/images/realisations/04-terrasse-vue-paris.jpg"
-                  alt="Terrasse Paris 9e — Espace Design"
+                  alt="Terrasse composite avec vue sur Paris — rénovation terrasse Paris 9e"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 640px) 33vw, 25vw"
@@ -187,7 +187,7 @@ export default function HomePage() {
               <div className="relative rounded-xl overflow-hidden flex-1">
                 <Image
                   src="/images/realisations/01-salon-parisien-bibliotheque.jpg"
-                  alt="Bibliothèque sur-mesure Paris — Espace Design"
+                  alt="Bibliothèque et salon parisien sur-mesure — rénovation appartement Paris 7e arrondissement"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 640px) 33vw, 25vw"
@@ -399,6 +399,61 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Blog teaser */}
+      <section className="py-20 bg-[#FAFAF8]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Conseils & Guides</p>
+            <span className="gold-line" />
+            <h2 className="section-title font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C]">
+              Nos guides rénovation
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {[
+              {
+                href: '/blog/prix-renovation-appartement-paris',
+                tag: 'Prix & Budgets',
+                title: 'Prix d\'une rénovation à Paris en 2025',
+                desc: 'Tarifs au m², exemples de budgets pour studio, 2 et 3 pièces.',
+              },
+              {
+                href: '/blog/renovation-appartement-haussmannien-paris',
+                tag: 'Guides',
+                title: 'Rénover un appartement haussmannien',
+                desc: 'Parquet, moulures, cheminées — préserver le cachet tout en modernisant.',
+              },
+              {
+                href: '/blog/choisir-artisan-renovation-paris',
+                tag: 'Conseils',
+                title: 'Choisir son artisan rénovateur à Paris',
+                desc: 'Les 8 critères pour ne pas se tromper : assurance, devis, références.',
+              },
+            ].map((a) => (
+              <Link
+                key={a.href}
+                href={a.href}
+                className="bg-white rounded-lg p-6 border border-gray-100 hover:border-[#D4AF37]/40 hover:shadow-sm transition-all group"
+              >
+                <span className="text-[10px] uppercase tracking-widest text-[#B8960C] font-light">{a.tag}</span>
+                <h3 className="font-display text-base font-semibold text-[#1C1C1C] leading-snug mt-2 mb-2 group-hover:text-[#B8960C] transition-colors">
+                  {a.title}
+                </h3>
+                <p className="text-gray-500 text-sm font-light leading-relaxed">{a.desc}</p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-[13px] font-light tracking-wide text-[#B8960C] hover:text-[#1C1C1C] transition-colors duration-300"
+            >
+              Tous nos guides <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Zone intervention */}
       <section className="py-14 bg-[#1C1C1C]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
@@ -413,6 +468,52 @@ export default function HomePage() {
             Nous intervenons dans tous les arrondissements de Paris ainsi que dans les communes
             environnantes : Boulogne, Levallois, Neuilly, Vincennes, Saint-Denis, et toute la couronne parisienne.
           </p>
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
+            {[
+              { href: '/renovation-paris-1er', label: '1er' },
+              { href: '/renovation-paris-2e', label: '2e' },
+              { href: '/renovation-paris-3e', label: '3e' },
+              { href: '/renovation-paris-4e', label: '4e' },
+              { href: '/renovation-paris-5e', label: '5e' },
+              { href: '/renovation-paris-6e', label: '6e' },
+              { href: '/renovation-paris-7e', label: '7e' },
+              { href: '/renovation-paris-8e', label: '8e' },
+              { href: '/renovation-paris-9e', label: '9e' },
+              { href: '/renovation-paris-10e', label: '10e' },
+              { href: '/renovation-paris-11e', label: '11e' },
+              { href: '/renovation-paris-12e', label: '12e' },
+              { href: '/renovation-paris-13e', label: '13e' },
+              { href: '/renovation-paris-14e', label: '14e' },
+              { href: '/renovation-paris-15e', label: '15e' },
+              { href: '/renovation-paris-16e', label: '16e' },
+              { href: '/renovation-paris-17e', label: '17e' },
+              { href: '/renovation-paris-18e', label: '18e' },
+              { href: '/renovation-paris-19e', label: '19e' },
+              { href: '/renovation-paris-20e', label: '20e' },
+            ].map((arr) => (
+              <Link
+                key={arr.href}
+                href={arr.href}
+                className="text-xs text-gray-400 border border-gray-700 px-3 py-1 rounded hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors duration-200"
+              >
+                Paris {arr.label}
+              </Link>
+            ))}
+            {[
+              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly' },
+              { href: '/renovation-levallois-perret', label: 'Levallois' },
+              { href: '/renovation-boulogne-billancourt', label: 'Boulogne' },
+              { href: '/renovation-versailles', label: 'Versailles' },
+            ].map((v) => (
+              <Link
+                key={v.href}
+                href={v.href}
+                className="text-xs text-gray-400 border border-gray-700 px-3 py-1 rounded hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors duration-200"
+              >
+                {v.label}
+              </Link>
+            ))}
+          </div>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 border border-[#D4AF37] text-[#D4AF37] px-6 py-3 rounded text-sm font-light tracking-wide hover:bg-[#D4AF37] hover:text-[#1C1C1C] transition-colors duration-300"
