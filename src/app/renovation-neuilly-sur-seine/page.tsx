@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -112,6 +113,18 @@ export default function RenovationNeuilly() {
         </div>
       </section>
 
+
+      {/* Photo */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
+            Une réalisation
+          </h2>
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/18-salon-renovation-complete.jpg" alt="Salon rénovation complète — Neuilly-sur-Seine" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+          </div>
+        </div>
+      </section>
 
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
