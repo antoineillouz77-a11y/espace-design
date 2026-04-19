@@ -84,7 +84,7 @@ const amenagements = [
   {
     num: '03',
     title: 'Cuisine ouverte',
-    desc: 'Abattement ou réduction d'une cloison pour ouvrir la cuisine sur le séjour. Agrandit visuellement l'espace de vie.',
+    desc: "Abattement ou réduction d'une cloison pour ouvrir la cuisine sur le séjour. Agrandit visuellement l'espace de vie.",
   },
   {
     num: '04',
@@ -99,7 +99,7 @@ const amenagements = [
   {
     num: '06',
     title: 'Cloisonnement flexible',
-    desc: 'Cloisons coulissantes ou amovibles pour moduler l'espace selon les usages. Jour comme nuit, bureau comme chambre.',
+    desc: "Cloisons coulissantes ou amovibles pour moduler l'espace selon les usages. Jour comme nuit, bureau comme chambre.",
   },
 ]
 

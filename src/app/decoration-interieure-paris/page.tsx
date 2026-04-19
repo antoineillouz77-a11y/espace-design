@@ -73,11 +73,11 @@ const schemaFaq = {
 const styles = [
   {
     title: 'Haussmannien revisité',
-    desc: 'Moulures et parquet d'époque rencontrent un mobilier contemporain. L'élégance parisienne réinterprétée avec modernité.',
+    desc: "Moulures et parquet d'époque rencontrent un mobilier contemporain. L'élégance parisienne réinterprétée avec modernité.",
   },
   {
     title: 'Minimalisme parisien',
-    desc: 'Palette neutre, matières nobles, lignes épurées. Chaque élément est choisi pour sa qualité, rien n'est superflu.',
+    desc: "Palette neutre, matières nobles, lignes épurées. Chaque élément est choisi pour sa qualité, rien n'est superflu.",
   },
   {
     title: 'Japandi',
@@ -85,11 +85,11 @@ const styles = [
   },
   {
     title: 'Éclectique vintage',
-    desc: 'Mélange d'époques et de styles assumé. Pièces chinées, couleurs profondes, personnalité affirmée.',
+    desc: "Mélange d'époques et de styles assumé. Pièces chinées, couleurs profondes, personnalité affirmée.",
   },
   {
     title: 'Quiet luxury',
-    desc: 'Matériaux premium (pierre, laiton, velours) sans ostentation. Le luxe discret qui se ressent mais ne s'exhibe pas.',
+    desc: "Matériaux premium (pierre, laiton, velours) sans ostentation. Le luxe discret qui se ressent mais ne s'exhibe pas.",
   },
 ]
 
