@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Star, CheckCircle, ArrowRight, MapPin } from 'lucide-react'
 
 const services = [
@@ -54,12 +55,15 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background gradient as placeholder until real photo */}
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-[#1C1C1C] via-[#2d2d2d] to-[#1a1510]"
-          aria-hidden="true"
+        <div className="absolute inset-0 bg-[#1C1C1C]" aria-hidden="true" />
+        <Image
+          src="/images/hero.jpg"
+          alt="Rénovation salon Paris — Espace Design"
+          fill
+          className="object-cover object-center opacity-45"
+          priority
+          sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center opacity-40" aria-hidden="true" />
 
         <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto pt-24">
           <div className="inline-flex items-center gap-2 bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#D4AF37] text-xs font-medium tracking-widest uppercase px-4 py-2 rounded-full mb-6">
@@ -156,27 +160,30 @@ export default function HomePage() {
             <p className="text-gray-500 mt-3 text-sm">Chaque chantier est unique — voici quelques exemples de notre travail.</p>
           </div>
 
-          {/* Photo grid placeholder */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
             {[
-              { label: 'Salon — Paris 15e', h: 'h-64' },
-              { label: 'Cuisine — Boulogne', h: 'h-64' },
-              { label: 'Chambre — Paris 8e', h: 'h-64' },
-              { label: 'Salle de bain — Paris 16e', h: 'h-48' },
-              { label: 'Entrée — Levallois', h: 'h-48' },
-              { label: 'Bureau — Paris 17e', h: 'h-48' },
+              { src: '/images/realisations/01-salon-parisien-bibliotheque.jpg', label: 'Salon & bibliothèque', lieu: 'Paris 7e', tall: true },
+              { src: '/images/realisations/04-terrasse-vue-paris.jpg', label: 'Terrasse vue Paris', lieu: 'Paris 9e', tall: false },
+              { src: '/images/realisations/09-chambre-tete-lit.jpg', label: 'Chambre sur-mesure', lieu: 'Paris 11e', tall: false },
+              { src: '/images/realisations/07-open-space-cuisine.jpg', label: 'Open space cuisine', lieu: 'Paris 12e', tall: false },
+              { src: '/images/realisations/12-salle-bain.jpg', label: 'Salle de bain', lieu: 'Paris 10e', tall: false },
+              { src: '/images/realisations/10-appartement-globe.jpg', label: 'Rénovation complète', lieu: 'Paris 3e', tall: false },
             ].map((item, i) => (
               <div
                 key={i}
-                className={`${item.h} bg-gray-100 rounded-lg overflow-hidden relative group cursor-pointer`}
+                className={`${item.tall ? 'h-72' : 'h-52'} rounded-lg overflow-hidden relative group cursor-pointer shadow-sm`}
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="absolute bottom-3 left-3 text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                  {item.label}
-                </div>
-                {/* Placeholder pattern */}
-                <div className="w-full h-full flex items-center justify-center text-gray-300 text-xs">
-                  Photo à venir
+                <Image
+                  src={item.src}
+                  alt={`${item.label} — ${item.lieu}`}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="text-white text-xs font-semibold">{item.label}</div>
+                  <div className="text-[#D4AF37] text-xs">{item.lieu}</div>
                 </div>
               </div>
             ))}
