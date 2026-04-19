@@ -1,22 +1,25 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Star, CheckCircle, ArrowRight, MapPin } from 'lucide-react'
+import { Phone, Star, CheckCircle, ArrowRight, MapPin, ChevronDown } from 'lucide-react'
 
 const services = [
   {
+    num: '01',
     title: 'Rénovation complète',
     desc: 'Transformation totale de votre appartement ou maison : gros œuvre, second œuvre, finitions. Un seul interlocuteur, du début à la fin.',
-    icon: '🏗️',
   },
   {
+    num: '02',
     title: 'Décoration intérieure',
     desc: 'Conception de votre espace selon vos goûts et votre budget. Agencement, matériaux, couleurs — un rendu professionnel et personnalisé.',
-    icon: '🎨',
   },
   {
+    num: '03',
     title: 'Finitions haut de gamme',
     desc: 'Notre spécialité : les finitions soignées qui font la différence. Peinture, revêtements, pose de carrelage, menuiserie — le détail compte.',
-    icon: '✨',
   },
 ]
 
@@ -50,44 +53,109 @@ const temoignages = [
   },
 ]
 
+const faqs = [
+  {
+    q: 'Quels types de travaux réalisez-vous ?',
+    a: 'Nous intervenons sur tous types de travaux intérieurs : rénovation complète d\'appartement ou de maison, décoration et aménagement d\'espace, cuisine sur-mesure, salle de bain, menuiserie sur-mesure, pose de parquet, et aménagement de terrasse.',
+  },
+  {
+    q: 'Intervenez-vous dans toute l\'Île-de-France ?',
+    a: 'Oui. Nous intervenons dans tous les arrondissements de Paris ainsi que dans les communes limitrophes : Boulogne-Billancourt, Levallois-Perret, Neuilly-sur-Seine, Vincennes, Saint-Denis, Issy-les-Moulineaux, et toute la couronne parisienne.',
+  },
+  {
+    q: 'Quel est le délai pour obtenir un devis ?',
+    a: 'Nous vous contactons sous 48h pour fixer un rendez-vous de visite gratuit et sans engagement. Le devis détaillé vous est remis en fin de visite ou dans les 48h suivantes.',
+  },
+  {
+    q: 'Avez-vous une assurance décennale ?',
+    a: 'Oui, Espace Design est couvert par une assurance décennale ainsi qu\'une responsabilité civile professionnelle. Ces garanties protègent vos travaux pendant 10 ans après la réception du chantier.',
+  },
+  {
+    q: 'Comment se déroule une rénovation complète ?',
+    a: 'Tout commence par une visite gratuite sur place. Nous établissons ensuite un devis détaillé et un planning précis. À chaque étape, vous êtes informé de l\'avancement du chantier. Nous procédons à une réception finale avec vous pour valider chaque détail avant de vous remettre les clés.',
+  },
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.a,
+    },
+  })),
+}
+
+function FAQItem({ faq }: { faq: { q: string; a: string } }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="border-b border-gray-100 last:border-0">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-start justify-between py-5 text-left gap-4"
+      >
+        <span className="text-[15px] font-light text-[#1C1C1C] leading-snug">{faq.q}</span>
+        <ChevronDown
+          size={18}
+          className={`flex-shrink-0 text-[#B8960C] mt-0.5 transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
+        />
+      </button>
+      {open && (
+        <div className="pb-5 pr-8">
+          <p className="text-sm text-gray-500 leading-relaxed font-light">{faq.a}</p>
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function HomePage() {
   return (
     <>
+      {/* FAQ Schema JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Hero — split layout */}
       <section className="pt-16 sm:pt-20 bg-[#FAFAF8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           {/* Texte intro */}
-          <div className="text-center py-10 sm:py-14">
-            <div className="inline-flex items-center gap-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#B8960C] text-xs font-medium tracking-widest uppercase px-4 py-2 rounded-full mb-5">
-              <MapPin size={12} />
+          <div className="text-center py-12 sm:py-16">
+            <div className="inline-flex items-center gap-2 bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#B8960C] text-[10px] font-light tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6">
+              <MapPin size={11} />
               Paris & Île-de-France
             </div>
-            <h1 className="font-display text-3xl sm:text-5xl font-bold text-[#1C1C1C] leading-tight mb-4">
+            <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
               Votre intérieur,{' '}
               <span className="text-[#B8960C]">réinventé.</span>
             </h1>
-            <p className="text-gray-600 max-w-xl mx-auto text-sm sm:text-base mb-8 leading-relaxed">
+            <p className="text-gray-500 max-w-lg mx-auto text-sm sm:text-[15px] mb-10 leading-relaxed font-light">
               Artisan rénovateur et décorateur intérieur à Paris.
               Finitions haut de gamme, travail soigné, résultat qui vous ressemble.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="tel:+33611783867"
-                className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-semibold text-sm hover:bg-[#B8960C] transition-colors"
+                className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#B8960C] transition-colors duration-300"
               >
-                <Phone size={16} />
+                <Phone size={15} />
                 06 11 78 38 67
               </a>
               <Link
                 href="/contact"
-                className="flex items-center justify-center gap-2 border border-[#1C1C1C] text-[#1C1C1C] px-7 py-3.5 rounded font-medium text-sm hover:bg-[#1C1C1C] hover:text-white transition-colors"
+                className="flex items-center justify-center gap-2 border border-[#1C1C1C] text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#1C1C1C] hover:text-white transition-colors duration-300"
               >
-                Devis gratuit <ArrowRight size={14} />
+                Devis gratuit <ArrowRight size={13} />
               </Link>
             </div>
           </div>
 
-          {/* Grille photos hero — 3 photos côte à côte */}
+          {/* Grille photos hero */}
           <div className="grid grid-cols-3 gap-2 sm:gap-3 pb-10">
             <div className="relative rounded-xl overflow-hidden h-48 sm:h-72 col-span-2">
               <Image
@@ -99,7 +167,7 @@ export default function HomePage() {
                 sizes="(max-width: 640px) 66vw, 50vw"
               />
               <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
-                <p className="text-white text-xs font-medium">Paris 6e · Rue de Vaugirard</p>
+                <p className="text-white text-xs font-light">Paris 6e · Rue de Vaugirard</p>
                 <p className="text-[#D4AF37] text-xs">Salon — éclairage architectural</p>
               </div>
             </div>
@@ -113,7 +181,7 @@ export default function HomePage() {
                   sizes="(max-width: 640px) 33vw, 25vw"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/60 to-transparent">
-                  <p className="text-white text-xs hidden sm:block">Paris 9e</p>
+                  <p className="text-white text-xs hidden sm:block font-light">Paris 9e</p>
                 </div>
               </div>
               <div className="relative rounded-xl overflow-hidden flex-1">
@@ -125,7 +193,7 @@ export default function HomePage() {
                   sizes="(max-width: 640px) 33vw, 25vw"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/60 to-transparent">
-                  <p className="text-white text-xs hidden sm:block">Paris 7e</p>
+                  <p className="text-white text-xs hidden sm:block font-light">Paris 7e</p>
                 </div>
               </div>
             </div>
@@ -134,12 +202,12 @@ export default function HomePage() {
       </section>
 
       {/* Atouts rapides */}
-      <section className="bg-[#D4AF37] py-4">
+      <section className="bg-[#1C1C1C] py-4">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
+          <div className="flex flex-wrap justify-center gap-x-10 gap-y-2">
             {['Devis gratuit 48h', 'Assurance décennale', '15+ ans d\'expérience', 'Paris & Île-de-France'].map((item) => (
-              <div key={item} className="flex items-center gap-2 text-[#1C1C1C] text-sm font-medium py-1">
-                <CheckCircle size={14} />
+              <div key={item} className="flex items-center gap-2 text-gray-300 text-xs font-light tracking-wide py-1">
+                <span className="w-1 h-1 rounded-full bg-[#D4AF37] flex-shrink-0" />
                 {item}
               </div>
             ))}
@@ -148,11 +216,12 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="py-20 sm:py-28 bg-[#FAFAF8]">
+      <section className="py-24 sm:py-32 bg-[#FAFAF8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-14">
-            <p className="text-[#B8960C] text-sm font-medium uppercase tracking-widest mb-3">Nos prestations</p>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C]">
+          <div className="text-center mb-16">
+            <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Nos prestations</p>
+            <span className="gold-line" />
+            <h2 className="section-title font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C]">
               Ce que nous faisons
             </h2>
           </div>
@@ -160,34 +229,36 @@ export default function HomePage() {
             {services.map((s) => (
               <div
                 key={s.title}
-                className="bg-white rounded-lg p-8 border border-gray-100 hover:border-[#D4AF37]/40 hover:shadow-md transition-all"
+                className="bg-white rounded-lg p-8 border border-gray-100 hover:border-[#D4AF37]/50 hover:shadow-sm transition-all duration-300"
               >
-                <div className="text-4xl mb-5">{s.icon}</div>
-                <h3 className="font-display text-xl font-bold text-[#1C1C1C] mb-3">{s.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+                <div className="service-number mb-5">{s.num}</div>
+                <div className="w-8 h-px bg-[#D4AF37]/60 mb-5" />
+                <h3 className="font-display text-xl font-semibold text-[#1C1C1C] mb-3">{s.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed font-light">{s.desc}</p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 text-sm font-medium text-[#B8960C] hover:text-[#1C1C1C] transition-colors"
+              className="inline-flex items-center gap-2 text-[13px] font-light tracking-wide text-[#B8960C] hover:text-[#1C1C1C] transition-colors duration-300"
             >
-              Voir tous nos services <ArrowRight size={16} />
+              Voir tous nos services <ArrowRight size={14} />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Réalisations preview */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-24 sm:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-14">
-            <p className="text-[#B8960C] text-sm font-medium uppercase tracking-widest mb-3">Portfolio</p>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C]">
+          <div className="text-center mb-16">
+            <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Portfolio</p>
+            <span className="gold-line" />
+            <h2 className="section-title font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C]">
               Nos réalisations
             </h2>
-            <p className="text-gray-500 mt-3 text-sm">Chaque chantier est unique — voici quelques exemples de notre travail.</p>
+            <p className="text-gray-400 mt-4 text-sm font-light">Chaque chantier est unique — voici quelques exemples de notre travail.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
@@ -201,79 +272,80 @@ export default function HomePage() {
             ].map((item, i) => (
               <div
                 key={i}
-                className={`${item.tall ? 'h-72' : 'h-52'} rounded-lg overflow-hidden relative group cursor-pointer shadow-sm`}
+                className={`${item.tall ? 'h-72' : 'h-52'} rounded-lg overflow-hidden relative group cursor-pointer`}
               >
                 <Image
                   src={item.src}
                   alt={`${item.label} — ${item.lieu}`}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 640px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
                 <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <div className="text-white text-xs font-semibold">{item.label}</div>
+                  <div className="text-white text-xs font-light">{item.label}</div>
                   <div className="text-[#D4AF37] text-xs">{item.lieu}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <Link
               href="/realisations"
-              className="inline-flex items-center gap-2 bg-[#1C1C1C] text-white px-6 py-3 rounded text-sm font-medium hover:bg-[#B8960C] transition-colors"
+              className="inline-flex items-center gap-2 border border-[#1C1C1C] text-[#1C1C1C] px-6 py-3 rounded text-sm font-light tracking-wide hover:bg-[#1C1C1C] hover:text-white transition-colors duration-300"
             >
-              Voir toutes les réalisations <ArrowRight size={16} />
+              Voir toutes les réalisations <ArrowRight size={14} />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Atouts */}
-      <section className="py-20 sm:py-28 bg-[#F2F2EE]">
+      <section className="py-24 sm:py-32 bg-[#F2F2EE]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-[#B8960C] text-sm font-medium uppercase tracking-widest mb-3">Pourquoi nous choisir</p>
-              <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C] mb-6">
-                L&apos;artisanat au service de vos rêves
+              <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Pourquoi nous choisir</p>
+              <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
+              <h2 className="section-title font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C] mb-6">
+                L&apos;excellence artisanale,<br />à votre service
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Espace Design, c&apos;est plus de 15 ans d&apos;expérience dans la rénovation et la
-                décoration intérieure à Paris et en Île-de-France. Notre signature : des finitions
-                irréprochables, un suivi personnalisé, et un respect total de votre espace et de votre budget.
+              <p className="text-gray-500 leading-relaxed mb-8 text-sm font-light">
+                Quinze ans à transformer des intérieurs parisiens. Notre engagement : chaque détail compte,
+                chaque finition est soignée, chaque client repart satisfait. Espace Design, c&apos;est
+                l&apos;exigence d&apos;un architecte avec la proximité d&apos;un artisan.
               </p>
               <ul className="space-y-3">
                 {atouts.map((a) => (
-                  <li key={a} className="flex items-center gap-3 text-sm text-gray-700">
-                    <CheckCircle size={16} className="text-[#B8960C] flex-shrink-0" />
+                  <li key={a} className="flex items-center gap-3 text-sm text-gray-600 font-light">
+                    <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0" />
                     {a}
                   </li>
                 ))}
               </ul>
-              <div className="mt-8">
+              <div className="mt-10">
                 <a
                   href="tel:+33611783867"
-                  className="inline-flex items-center gap-2 bg-[#1C1C1C] text-white px-6 py-3 rounded text-sm font-medium hover:bg-[#B8960C] transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#1C1C1C] text-white px-6 py-3 rounded text-sm font-light tracking-wide hover:bg-[#B8960C] transition-colors duration-300"
                 >
-                  <Phone size={15} />
+                  <Phone size={14} />
                   Appeler Patrick
                 </a>
               </div>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
+            {/* Stats — épuré */}
+            <div className="grid grid-cols-2 gap-px bg-gray-200 border border-gray-200 rounded-lg overflow-hidden">
               {[
                 { value: '15+', label: 'années d\'expérience' },
                 { value: '200+', label: 'chantiers réalisés' },
                 { value: '40+', label: 'avis clients 5★' },
                 { value: '100%', label: 'clients satisfaits' },
               ].map((stat) => (
-                <div key={stat.label} className="bg-white rounded-lg p-6 text-center border border-gray-100">
-                  <div className="font-display text-4xl font-bold text-[#B8960C] mb-2">{stat.value}</div>
-                  <div className="text-xs text-gray-500 leading-tight">{stat.label}</div>
+                <div key={stat.label} className="bg-white p-8 text-center">
+                  <div className="font-display text-4xl sm:text-5xl font-semibold text-[#B8960C] mb-2 leading-none">{stat.value}</div>
+                  <div className="text-[11px] text-gray-400 font-light tracking-wide uppercase leading-tight">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -282,28 +354,47 @@ export default function HomePage() {
       </section>
 
       {/* Témoignages */}
-      <section className="py-20 sm:py-28 bg-white">
+      <section className="py-24 sm:py-32 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-14">
-            <p className="text-[#B8960C] text-sm font-medium uppercase tracking-widest mb-3">Avis clients</p>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C]">
+          <div className="text-center mb-16">
+            <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Avis clients</p>
+            <span className="gold-line" />
+            <h2 className="section-title font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C]">
               Ils nous font confiance
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {temoignages.map((t, i) => (
-              <div key={i} className="bg-[#FAFAF8] rounded-lg p-6 border border-gray-100">
-                <div className="flex gap-0.5 mb-4">
+              <div key={i} className="py-8 px-2 border-t border-gray-100">
+                <div className="flex gap-0.5 mb-5">
                   {Array.from({ length: t.note }).map((_, j) => (
-                    <Star key={j} size={14} className="fill-[#D4AF37] text-[#D4AF37]" />
+                    <Star key={j} size={12} className="fill-[#D4AF37] text-[#D4AF37]" />
                   ))}
                 </div>
-                <p className="text-gray-700 text-sm leading-relaxed mb-5 italic">&ldquo;{t.texte}&rdquo;</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6 italic font-light">&ldquo;{t.texte}&rdquo;</p>
                 <div>
-                  <div className="font-semibold text-sm text-[#1C1C1C]">{t.nom}</div>
-                  <div className="text-xs text-gray-400">{t.quartier}</div>
+                  <div className="text-sm font-medium text-[#1C1C1C]">{t.nom}</div>
+                  <div className="text-xs text-gray-400 font-light mt-0.5">{t.quartier}</div>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 sm:py-32 bg-[#F2F2EE]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-14">
+            <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Questions fréquentes</p>
+            <span className="gold-line" />
+            <h2 className="section-title font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C]">
+              FAQ
+            </h2>
+          </div>
+          <div className="bg-white rounded-lg border border-gray-100 px-6 sm:px-8">
+            {faqs.map((faq, i) => (
+              <FAQItem key={i} faq={faq} />
             ))}
           </div>
         </div>
@@ -313,47 +404,49 @@ export default function HomePage() {
       <section className="py-14 bg-[#1C1C1C]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <div className="flex items-center justify-center gap-2 text-[#D4AF37] mb-4">
-            <MapPin size={16} />
-            <span className="text-sm font-medium uppercase tracking-widest">Zone d&apos;intervention</span>
+            <MapPin size={14} />
+            <span className="text-[10px] font-light uppercase tracking-[0.25em]">Zone d&apos;intervention</span>
           </div>
-          <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mb-4">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
             Paris & toute l&apos;Île-de-France
           </h2>
-          <p className="text-gray-400 text-sm mb-6">
+          <p className="text-gray-400 text-sm mb-8 font-light max-w-xl mx-auto leading-relaxed">
             Nous intervenons dans tous les arrondissements de Paris ainsi que dans les communes
             environnantes : Boulogne, Levallois, Neuilly, Vincennes, Saint-Denis, et toute la couronne parisienne.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-6 py-3 rounded text-sm font-semibold hover:bg-[#c9a030] transition-colors"
+            className="inline-flex items-center gap-2 border border-[#D4AF37] text-[#D4AF37] px-6 py-3 rounded text-sm font-light tracking-wide hover:bg-[#D4AF37] hover:text-[#1C1C1C] transition-colors duration-300"
           >
-            Demander un devis gratuit <ArrowRight size={16} />
+            Demander un devis gratuit <ArrowRight size={14} />
           </Link>
         </div>
       </section>
 
       {/* CTA final */}
-      <section className="py-20 sm:py-28 bg-[#FAFAF8]">
+      <section className="py-24 sm:py-32 bg-[#FAFAF8]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1C1C1C] mb-4">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Commencer</p>
+          <span className="gold-line" />
+          <h2 className="section-title font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C] mb-5">
             Votre projet commence ici
           </h2>
-          <p className="text-gray-600 mb-8 leading-relaxed">
+          <p className="text-gray-500 mb-10 leading-relaxed text-sm font-light">
             Décrivez-nous votre projet — rénovation, décoration, aménagement — et recevez un devis
             gratuit et détaillé sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-8 py-4 rounded font-semibold hover:bg-[#B8960C] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-8 py-4 rounded font-light text-sm tracking-wide hover:bg-[#B8960C] transition-colors duration-300"
             >
-              Devis gratuit <ArrowRight size={16} />
+              Devis gratuit <ArrowRight size={14} />
             </Link>
             <a
               href="tel:+33611783867"
-              className="flex items-center justify-center gap-2 border border-[#1C1C1C] text-[#1C1C1C] px-8 py-4 rounded font-medium hover:bg-[#1C1C1C] hover:text-white transition-colors"
+              className="flex items-center justify-center gap-2 border border-[#1C1C1C] text-[#1C1C1C] px-8 py-4 rounded font-light text-sm tracking-wide hover:bg-[#1C1C1C] hover:text-white transition-colors duration-300"
             >
-              <Phone size={16} />
+              <Phone size={15} />
               06 11 78 38 67
             </a>
           </div>

@@ -56,10 +56,36 @@ const schemaOrg = {
   telephone: '+33611783867',
   email: 'espacedesign92@gmail.com',
   url: 'https://espacedesignparis.fr',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Paris',
+    addressCountry: 'FR',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 48.8566,
+    longitude: 2.3522,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '19:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Saturday'],
+      opens: '09:00',
+      closes: '17:00',
+    },
+  ],
   areaServed: {
     '@type': 'City',
     name: 'Paris',
   },
+  hasMap: 'https://www.google.com/maps/place/Paris,+France',
+  sameAs: [],
   priceRange: '€€€',
 }
 
