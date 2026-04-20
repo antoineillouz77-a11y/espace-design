@@ -3,14 +3,16 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Charenton-le-Pont — Artisan & Devis | Espace Design',
+  title: 'Rénovation Charenton-le-Pont (94220) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Charenton-le-Pont (94220). Rénovation complète, salle de bain, cuisine, finitions haut de gamme. Devis gratuit 48h.',
+    'Artisan rénovateur à Charenton-le-Pont (94220). Ville charnière entre Paris et le 94, appartements haussmanniens et modernes. Devis gratuit 48h. Espace Design.',
   keywords: [
     'rénovation appartement Charenton-le-Pont',
     'artisan rénovation Charenton 94',
     'renovation Charenton 94220',
     'artisan Charenton Val-de-Marne',
+    'rénovation appartement haussmannien Charenton',
+    'entreprise renovation Charenton 94',
   ],
 }
 
@@ -38,8 +40,8 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Charenton-le-Pont', item: 'https://espacedesignparis.fr/renovation-charenton-le-pont' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
+    { '@type': 'ListItem', position: 3, name: 'Charenton-le-Pont', item: 'https://espacedesignparis.fr/renovation-charenton-le-pont' },
   ],
 }
 
@@ -101,13 +103,13 @@ export default function RenovationCharentonLePont() {
       {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Val-de-Marne — Charenton-le-Pont 94</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Charenton-le-Pont — 94220</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement Charenton-le-Pont
+            Rénovation Charenton-le-Pont
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Charenton-le-Pont. Rénovation complète, salle de bain, cuisine, finitions haut de gamme. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Charenton-le-Pont. Ville charnière entre Paris et le Val-de-Marne, nous intervenons dans vos appartements haussmanniens et immeubles modernes. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -217,7 +219,7 @@ export default function RenovationCharentonLePont() {
               { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
               { href: '/renovation-maisons-alfort', label: 'Maisons-Alfort' },
               { href: '/renovation-paris-12e', label: 'Paris 12e' },
-              { href: '/renovation-vincennes', label: 'Vincennes' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
             ].map((z) => (
               <Link
                 key={z.href}

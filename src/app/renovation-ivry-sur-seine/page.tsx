@@ -3,14 +3,16 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Ivry-sur-Seine — Artisan Rénovateur & Devis | Espace Design',
+  title: 'Rénovation Ivry-sur-Seine (94200) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Ivry-sur-Seine (94200). Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit 48h.',
+    'Artisan rénovateur à Ivry-sur-Seine (94200). Ville en forte rénovation, nombreux immeubles anciens et réhabilitations. Devis gratuit 48h. Espace Design.',
   keywords: [
     'rénovation appartement Ivry-sur-Seine',
     'artisan rénovation Ivry 94',
     'renovation Ivry-sur-Seine 94200',
     'artisan Ivry Val-de-Marne',
+    'réhabilitation immeuble Ivry-sur-Seine',
+    'entreprise renovation Ivry 94',
   ],
 }
 
@@ -38,8 +40,8 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Ivry-sur-Seine', item: 'https://espacedesignparis.fr/renovation-ivry-sur-seine' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
+    { '@type': 'ListItem', position: 3, name: 'Ivry-sur-Seine', item: 'https://espacedesignparis.fr/renovation-ivry-sur-seine' },
   ],
 }
 
@@ -101,13 +103,13 @@ export default function RenovationIvrySurSeine() {
       {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Val-de-Marne — Ivry-sur-Seine 94</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Ivry-sur-Seine — 94200</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement Ivry-sur-Seine
+            Rénovation Ivry-sur-Seine
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Ivry-sur-Seine. Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Ivry-sur-Seine. Ville en forte rénovation, nous accompagnons la réhabilitation de nombreux immeubles anciens et logements à remettre au goût du jour. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

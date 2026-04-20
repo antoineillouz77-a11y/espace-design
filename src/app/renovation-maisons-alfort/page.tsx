@@ -3,14 +3,16 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Maisons-Alfort — Artisan Rénovateur & Devis | Espace Design',
+  title: 'Rénovation Maisons-Alfort (94700) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Maisons-Alfort (94700). Rénovation complète, salle de bain, cuisine, peinture. Devis gratuit 48h. Espace Design.',
+    'Artisan rénovateur à Maisons-Alfort (94700). Rénovation appartements modernes et maisons années 60-70, salle de bain, cuisine. Devis gratuit 48h. Espace Design.',
   keywords: [
     'rénovation appartement Maisons-Alfort',
     'artisan rénovation Maisons-Alfort 94',
     'renovation Maisons-Alfort 94700',
-    'artisan Maisons-Alfort',
+    'artisan Maisons-Alfort Val-de-Marne',
+    'rénovation maison Maisons-Alfort',
+    'entreprise renovation Maisons-Alfort',
   ],
 }
 
@@ -38,8 +40,8 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Maisons-Alfort', item: 'https://espacedesignparis.fr/renovation-maisons-alfort' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
+    { '@type': 'ListItem', position: 3, name: 'Maisons-Alfort', item: 'https://espacedesignparis.fr/renovation-maisons-alfort' },
   ],
 }
 
@@ -101,13 +103,13 @@ export default function RenovationMaisonsAlfort() {
       {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Val-de-Marne — Maisons-Alfort 94</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Maisons-Alfort — 94700</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement Maisons-Alfort
+            Rénovation Maisons-Alfort
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Maisons-Alfort. Rénovation complète, salle de bain, cuisine, peinture. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Maisons-Alfort. Commune des écoles vétérinaires, nous intervenons dans vos appartements modernes et maisons des années 60-70. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -214,10 +216,10 @@ export default function RenovationMaisonsAlfort() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur' },
-              { href: '/renovation-charenton-le-pont', label: 'Charenton' },
-              { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
-              { href: '/renovation-paris-12e', label: 'Paris 12e' },
+              { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
+              { href: '/renovation-charenton-le-pont', label: 'Charenton-le-Pont' },
+              { href: '/renovation-ivry-sur-seine', label: 'Créteil / Ivry' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
             ].map((z) => (
               <Link
                 key={z.href}

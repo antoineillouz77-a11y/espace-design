@@ -360,6 +360,42 @@ const articles = [
     desc: "Rénover la cage d'escalier d'un immeuble parisien : peinture, sol, éclairage, autorisations copropriété. Prix et guide artisan 2025.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/renovation-parquet-abime-paris',
+    title: 'Rénover un Parquet Abîmé Paris : ponçage, vitrification & prix 2025',
+    desc: 'Parquet rayé, gondolé ou abîmé à Paris : ponçage, bouche-pores, vitrification, huilage. Prix au m² et guide artisan 2025.',
+    tag: 'Parquet',
+  },
+  {
+    href: '/blog/robinetterie-salle-de-bain-paris',
+    title: 'Robinetterie Salle de Bain Paris : choix, pose & prix 2025',
+    desc: 'Choisir et poser sa robinetterie de salle de bain à Paris : mitigeur, thermostat, douche, baignoire. Prix, marques, artisan plombier 2025.',
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/carrelage-grand-format-paris',
+    title: 'Carrelage Grand Format Paris : pose 60x60 120x60 & prix 2025',
+    desc: 'Poser du carrelage grand format à Paris (60×60, 120×60) : préparation chape, adhésif, joints minces. Prix au m² et artisan carreleur 2025.',
+    tag: 'Carrelage',
+  },
+  {
+    href: '/blog/renovation-cave-parking-paris',
+    title: 'Rénovation Cave & Parking Paris : humidité, peinture & prix 2025',
+    desc: 'Rénover sa cave ou parking à Paris : traitement humidité, peinture sols, rangements. Prix et guide complet 2025.',
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/renovation-sous-sol-paris',
+    title: 'Rénovation Sous-Sol Paris : aménagement, humidité & prix 2025',
+    desc: 'Aménager un sous-sol à Paris : traitement humidité, isolation, éclairage, cloisons. Prix et guide artisan 2025.',
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/renovation-fenetre-paris',
+    title: 'Rénovation Fenêtres Paris : double vitrage, PVC alu & prix 2025',
+    desc: 'Changer ses fenêtres à Paris : double vitrage, PVC, aluminium, bois. Autorisations ABF, prix et artisan 2025.',
+    tag: 'Menuiserie',
+  },
 ]
 
 export default function BlogPage() {
