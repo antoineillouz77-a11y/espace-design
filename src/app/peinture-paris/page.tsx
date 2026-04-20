@@ -248,6 +248,12 @@ export default function PeintureParis() {
             {[
               { href: '/tarifs', label: 'Nos tarifs 2025' },
               { href: '/faq', label: 'FAQ rénovation' },
+              { href: '/blog/peinture-appartement-paris', label: 'Guide peinture appartement' },
+              { href: '/blog/peinture-cuisine-paris', label: 'Peinture cuisine Paris' },
+              { href: '/blog/peinture-enduit-paris', label: 'Enduit & préparation murs' },
+              { href: '/blog/peinture-decorative-paris', label: 'Peinture décorative' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/platrererie-paris', label: 'Plâtrerie & enduits' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
