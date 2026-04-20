@@ -1518,6 +1518,12 @@ const articles = [
     desc: "Rénover un appartement à Saint-Denis (93). Ville en transformation, Stade de France. Devis 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/fenetre-pvc-aluminium-paris',
+    title: "Fenêtre PVC ou Aluminium Paris : remplacement & prix 2025",
+    desc: "Remplacement fenêtres PVC ou aluminium à Paris. Double/triple vitrage, isolation phonique. Devis 48h.",
+    tag: 'Travaux',
+  },
 ]
 
 export default function BlogPage() {
