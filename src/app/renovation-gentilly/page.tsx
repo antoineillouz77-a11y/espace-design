@@ -3,14 +3,17 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Gentilly — Artisan Rénovateur & Devis | Espace Design',
+  title: "Rénovation Gentilly (94250) — Artisan Rénovateur | Espace Design",
   description:
-    'Artisan rénovateur à Gentilly (94250). Rénovation complète, salle de bain, cuisine, peinture sur mesure. Devis gratuit 48h. Espace Design.',
+    "Artisan rénovateur à Gentilly (94250) : logements collectifs, résidences, commune dense adjacente à Paris 13e. Rénovation complète 800-2500€/m². Devis gratuit 48h.",
   keywords: [
     'rénovation appartement Gentilly',
-    'artisan rénovation Gentilly 94',
+    'artisan rénovation Gentilly',
+    'décoration intérieure Gentilly',
     'renovation Gentilly 94250',
+    'entreprise renovation Gentilly',
     'artisan Gentilly Val-de-Marne',
+    'rénovation logement collectif Gentilly',
   ],
 }
 
@@ -18,7 +21,7 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur à Gentilly.',
+  description: 'Artisan rénovateur et décorateur intérieur à Gentilly.',
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-gentilly',
   areaServed: {
@@ -31,16 +34,11 @@ const schemaLocal = {
     postalCode: '94250',
     addressCountry: 'FR',
   },
-}
-
-const schemaBreadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Gentilly', item: 'https://espacedesignparis.fr/renovation-gentilly' },
-  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
 }
 
 const schemaFaq = {
@@ -49,26 +47,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Gentilly ?',
+      name: "Quel est le prix d'une rénovation à Gentilly ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Gentilly varie entre 700 et 1 300 €/m². Gentilly est adjacente à Paris 13e et bénéficie de projets de rénovation croissants. Devis gratuit sous 48h.',
+        text: "Le coût d'une rénovation à Gentilly varie entre 800 et 1 500 €/m² pour une rénovation standard dans les logements collectifs. Pour une rénovation complète avec prestations haut de gamme, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Espace Design intervient-il à Gentilly ?',
+      name: 'Quel artisan contacter pour rénover un appartement à Gentilly ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. Nous intervenons à Gentilly et dans les communes voisines : Paris 13e, Montrouge, Le Kremlin-Bicêtre, Arcueil. Déplacement gratuit et sans engagement.',
+        text: "Espace Design intervient régulièrement à Gentilly pour des rénovations dans les résidences et logements collectifs. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h, un seul interlocuteur.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels travaux réalisez-vous à Gentilly ?',
+      name: 'Rénovez-vous les parties communes des résidences à Gentilly ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
+        text: "Oui, Espace Design intervient aussi bien dans les appartements privatifs que dans les parties communes des résidences de Gentilly : halls d'entrée, couloirs, cages d'escalier. Devis sur demande.",
       },
     },
     {
@@ -76,9 +74,19 @@ const schemaFaq = {
       name: 'Avez-vous une assurance décennale ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
       },
     },
+  ],
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
+    { '@type': 'ListItem', position: 3, name: 'Gentilly', item: 'https://espacedesignparis.fr/renovation-gentilly' },
   ],
 }
 
@@ -91,23 +99,22 @@ export default function RenovationGentilly() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
-      {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Val-de-Marne — Gentilly 94</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Gentilly — 94250</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement Gentilly
+            Rénovation appartement<br className="hidden sm:block" /> Gentilly
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Gentilly (94250). Rénovation complète, salle de bain, cuisine, peinture sur mesure. Devis gratuit sous 48h.
+            Artisan rénovateur à Gentilly (94250) : logements collectifs, résidences modernes, commune dense aux portes du 13e arrondissement. Rénovation complète et finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -127,7 +134,6 @@ export default function RenovationGentilly() {
         </div>
       </section>
 
-      {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
@@ -135,9 +141,9 @@ export default function RenovationGentilly() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan pour piloter l\'ensemble du chantier.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Conception et réalisation de salles de bain et cuisines soignées, adaptées à votre budget et vos envies.' },
-              { num: '03', title: 'Peinture sur mesure', desc: 'Peinture décorative, enduits, parquet, carrelage, menuiserie. Des finitions durables qui valorisent votre appartement à Gentilly.' },
+              { num: '01', title: 'Rénovation complète', desc: "Prise en charge intégrale de votre appartement à Gentilly : démolition, plomberie, électricité, peinture, revêtements. Un seul artisan pour tout gérer." },
+              { num: '02', title: 'Optimisation des espaces', desc: "Dans les logements collectifs de Gentilly, nous créons des aménagements intelligents pour maximiser chaque mètre carré : rangements intégrés, cloisons, ouvertures." },
+              { num: '03', title: 'Salles de bain & cuisines', desc: "Rénovation de salle de bain et de cuisine dans les résidences de Gentilly. Carrelage, robinetterie, meuble sur-mesure, pose de crédence. Finitions impeccables." },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -150,14 +156,58 @@ export default function RenovationGentilly() {
         </div>
       </section>
 
-      {/* Atouts */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Prix rénovation à Gentilly
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-[#F2F2EE]">
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {[
+                  ['Peinture appartement', '30 - 65 €/m²'],
+                  ['Rénovation salle de bain', '4 000 - 12 000 €'],
+                  ['Rénovation cuisine', '5 000 - 18 000 €'],
+                  ['Parquet (pose + fourniture)', '50 - 100 €/m²'],
+                  ['Rénovation complète standard', '800 - 1 500 €/m²'],
+                  ['Rénovation haut de gamme', '1 500 - 2 500 €/m²'],
+                ].map(([label, price]) => (
+                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
+                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-400 text-xs font-light mt-3">Tarifs indicatifs — devis gratuit personnalisé sous 48h.</p>
+        </div>
+      </section>
+
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <blockquote className="border-l-4 border-[#D4AF37] pl-6 py-2">
+            <p className="text-gray-600 text-sm sm:text-base font-light italic leading-relaxed mb-4">
+              "Patrick a rénové notre appartement dans une résidence de Gentilly en un mois. Ponctuel, soigné, et le résultat dépasse nos attentes. Je recommande sans hésiter."
+            </p>
+            <cite className="text-[#B8960C] text-xs font-light uppercase tracking-widest">— Mme Lefebvre, Gentilly 94250</cite>
+          </blockquote>
+        </div>
+      </section>
+
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -171,7 +221,6 @@ export default function RenovationGentilly() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -180,20 +229,20 @@ export default function RenovationGentilly() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Gentilly ?',
-                a: 'Le coût d\'une rénovation à Gentilly varie entre 700 et 1 300 €/m². Gentilly est adjacente à Paris 13e et bénéficie de projets de rénovation croissants. Devis gratuit sous 48h.',
+                q: "Quel est le prix d'une rénovation à Gentilly ?",
+                a: "Le coût d'une rénovation à Gentilly varie entre 800 et 1 500 €/m² pour une rénovation standard dans les logements collectifs. Pour une rénovation complète haut de gamme, comptez 1 500 à 2 500 €/m².",
               },
               {
-                q: 'Espace Design intervient-il à Gentilly ?',
-                a: 'Oui. Nous intervenons à Gentilly et dans les communes voisines : Paris 13e, Montrouge, Le Kremlin-Bicêtre, Arcueil. Déplacement gratuit et sans engagement.',
+                q: 'Quel artisan contacter pour rénover un appartement à Gentilly ?',
+                a: "Espace Design intervient régulièrement à Gentilly pour des rénovations dans les résidences et logements collectifs. Assuré décennale, devis gratuit sous 48h.",
               },
               {
-                q: 'Quels travaux réalisez-vous à Gentilly ?',
-                a: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
+                q: 'Rénovez-vous les parties communes des résidences à Gentilly ?',
+                a: "Oui, Espace Design intervient aussi bien dans les appartements privatifs que dans les parties communes des résidences de Gentilly : halls d'entrée, couloirs, cages d'escalier.",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -208,16 +257,16 @@ export default function RenovationGentilly() {
         </div>
       </section>
 
-      {/* Zones voisines */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-arcueil', label: 'Arcueil' },
+              { href: '/renovation-kremlin-bicetre', label: 'Kremlin-Bicêtre' },
               { href: '/renovation-montrouge', label: 'Montrouge' },
-              { href: '/renovation-paris-13e', label: 'Paris 13e' },
-              { href: '/renovation-paris-14e', label: 'Paris 14e' },
-              { href: '/renovation-malakoff', label: 'Malakoff' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -231,7 +280,6 @@ export default function RenovationGentilly() {
         </div>
       </section>
 
-      {/* Voir aussi */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -258,19 +306,17 @@ export default function RenovationGentilly() {
         </div>
       </section>
 
-      {/* CTA */}
-      {/* Articles liés */}
       <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-appartement-copropriete-paris', label: 'Rénover en copropriété' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
-              { href: '/blog/isolation-acoustique-appartement-paris', label: 'Isolation acoustique' },
-              { href: '/blog/renovation-2-pieces-paris', label: 'Budget 2 pièces Paris' },
-              { href: '/blog/peinture-appartement-paris', label: 'Peinture appartement Paris' },
-              { href: '/blog/renovation-cuisine-ouverte-paris', label: 'Cuisine ouverte Paris' },
+              { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain Paris' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant de vendre' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
+              { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
@@ -286,7 +332,7 @@ export default function RenovationGentilly() {
             Votre projet à Gentilly
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement à Gentilly et dans le Val-de-Marne.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Gentilly et alentours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

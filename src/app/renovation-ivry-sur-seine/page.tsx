@@ -3,16 +3,17 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Ivry-sur-Seine (94200) — Artisan Rénovateur | Espace Design',
+  title: "Rénovation Ivry-sur-Seine (94200) — Artisan Rénovateur | Espace Design",
   description:
-    'Artisan rénovateur à Ivry-sur-Seine (94200). Ville en forte rénovation, nombreux immeubles anciens et réhabilitations. Devis gratuit 48h. Espace Design.',
+    "Artisan rénovateur à Ivry-sur-Seine (94200) : anciens ateliers reconvertis en lofts, logements collectifs, quartier en forte mutation. Rénovation 800-2500€/m². Devis gratuit 48h.",
   keywords: [
     'rénovation appartement Ivry-sur-Seine',
-    'artisan rénovation Ivry 94',
+    'artisan rénovation Ivry-sur-Seine',
+    'rénovation loft Ivry-sur-Seine',
     'renovation Ivry-sur-Seine 94200',
+    'entreprise renovation Ivry-sur-Seine',
     'artisan Ivry Val-de-Marne',
-    'réhabilitation immeuble Ivry-sur-Seine',
-    'entreprise renovation Ivry 94',
+    'réhabilitation atelier Ivry-sur-Seine',
   ],
 }
 
@@ -20,7 +21,7 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur à Ivry-sur-Seine (94200). Rénovation complète, salle de bain, cuisine, décoration sur mesure.',
+  description: "Artisan rénovateur et décorateur intérieur à Ivry-sur-Seine.",
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-ivry-sur-seine',
   areaServed: {
@@ -33,6 +34,50 @@ const schemaLocal = {
     postalCode: '94200',
     addressCountry: 'FR',
   },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
+}
+
+const schemaFaq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: "Quel est le prix d'une rénovation à Ivry-sur-Seine ?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Le coût d'une rénovation à Ivry-sur-Seine varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour la transformation d'anciens ateliers en lofts ou appartements de standing, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Rénovez-vous des lofts et anciens ateliers à Ivry-sur-Seine ?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Oui, Espace Design est spécialisé dans la rénovation et la reconversion d'anciens ateliers industriels en lofts à Ivry-sur-Seine. Plancher en béton ciré, verrière, cuisine ouverte, cloisons en verre — nous réalisons des projets sur-mesure.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quel artisan contacter pour rénover un appartement à Ivry-sur-Seine ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Espace Design intervient régulièrement à Ivry-sur-Seine. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h, un seul interlocuteur pour tout le chantier.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Avez-vous une assurance décennale ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
+      },
+    },
+  ],
 }
 
 const schemaBreadcrumb = {
@@ -42,45 +87,6 @@ const schemaBreadcrumb = {
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
     { '@type': 'ListItem', position: 3, name: 'Ivry-sur-Seine', item: 'https://espacedesignparis.fr/renovation-ivry-sur-seine' },
-  ],
-}
-
-const schemaFaq = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Ivry-sur-Seine ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Ivry-sur-Seine varie entre 700 et 1 300 €/m² pour une rénovation standard. Ivry est en pleine transformation avec de nombreux programmes de réhabilitation. Devis gratuit sous 48h.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Espace Design intervient-il à Ivry-sur-Seine ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Oui, nous intervenons à Ivry-sur-Seine et dans les communes voisines : Charenton-le-Pont, Maisons-Alfort, Le Kremlin-Bicêtre, Paris 13e. Déplacement gratuit.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Quels travaux réalisez-vous à Ivry-sur-Seine ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Avez-vous une assurance décennale ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
-      },
-    },
   ],
 }
 
@@ -100,16 +106,15 @@ export default function RenovationIvrySurSeine() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
-      {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Ivry-sur-Seine — 94200</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation Ivry-sur-Seine
+            Rénovation appartement<br className="hidden sm:block" /> Ivry-sur-Seine
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Ivry-sur-Seine. Ville en forte rénovation, nous accompagnons la réhabilitation de nombreux immeubles anciens et logements à remettre au goût du jour. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
+            Artisan rénovateur à Ivry-sur-Seine (94200) : anciens ateliers reconvertis en lofts, logements collectifs, quartier en forte mutation. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -129,7 +134,6 @@ export default function RenovationIvrySurSeine() {
         </div>
       </section>
 
-      {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
@@ -137,9 +141,9 @@ export default function RenovationIvrySurSeine() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Conception et rénovation complète de votre salle de bain et cuisine. Carrelage, plomberie, menuiserie, électricité.' },
-              { num: '03', title: 'Décoration sur mesure', desc: 'Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique adaptée à votre appartement.' },
+              { num: '01', title: 'Reconversion lofts & ateliers', desc: "Transformation d'anciens ateliers industriels en lofts modernes : béton ciré, verrière, cuisine ouverte, cloisons en verre. Ivry-sur-Seine abrite de nombreux espaces à fort potentiel." },
+              { num: '02', title: 'Rénovation complète', desc: "Prise en charge intégrale de vos logements collectifs à Ivry : gros oeuvre, électricité, plomberie, finitions. Un seul interlocuteur du diagnostic au rendu." },
+              { num: '03', title: 'Décoration contemporaine', desc: "Agencement sur-mesure, matériaux bruts ou raffinés selon votre univers. Nous apportons une signature esthétique cohérente à chaque projet à Ivry-sur-Seine." },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -152,14 +156,58 @@ export default function RenovationIvrySurSeine() {
         </div>
       </section>
 
-      {/* Atouts */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Prix rénovation à Ivry-sur-Seine
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-[#F2F2EE]">
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {[
+                  ['Peinture appartement', '30 - 65 €/m²'],
+                  ['Rénovation salle de bain', '4 000 - 12 000 €'],
+                  ['Rénovation cuisine', '5 000 - 18 000 €'],
+                  ['Parquet / béton ciré', '50 - 120 €/m²'],
+                  ['Rénovation complète standard', '800 - 1 500 €/m²'],
+                  ['Reconversion loft / atelier', '1 500 - 2 500 €/m²'],
+                ].map(([label, price]) => (
+                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
+                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-400 text-xs font-light mt-3">Tarifs indicatifs — devis gratuit personnalisé sous 48h.</p>
+        </div>
+      </section>
+
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <blockquote className="border-l-4 border-[#D4AF37] pl-6 py-2">
+            <p className="text-gray-600 text-sm sm:text-base font-light italic leading-relaxed mb-4">
+              "Nous avons confié à Patrick la reconversion de notre ancien atelier en loft à Ivry. Le résultat est bluffant — béton ciré, verrière, cuisine ouverte. Tout a été fait avec soin et dans les délais."
+            </p>
+            <cite className="text-[#B8960C] text-xs font-light uppercase tracking-widest">— M. Dupré, Ivry-sur-Seine 94200</cite>
+          </blockquote>
+        </div>
+      </section>
+
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -173,7 +221,6 @@ export default function RenovationIvrySurSeine() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -182,20 +229,20 @@ export default function RenovationIvrySurSeine() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Ivry-sur-Seine ?',
-                a: 'Le coût d\'une rénovation à Ivry-sur-Seine varie entre 700 et 1 300 €/m² pour une rénovation standard. Ivry est en pleine transformation avec de nombreux programmes de réhabilitation. Devis gratuit sous 48h.',
+                q: "Quel est le prix d'une rénovation à Ivry-sur-Seine ?",
+                a: "Le coût d'une rénovation à Ivry-sur-Seine varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour la transformation d'anciens ateliers en lofts, comptez 1 500 à 2 500 €/m².",
               },
               {
-                q: 'Espace Design intervient-il à Ivry-sur-Seine ?',
-                a: 'Oui, nous intervenons à Ivry-sur-Seine et dans les communes voisines : Charenton-le-Pont, Maisons-Alfort, Le Kremlin-Bicêtre, Paris 13e. Déplacement gratuit.',
+                q: "Rénovez-vous des lofts et anciens ateliers à Ivry-sur-Seine ?",
+                a: "Oui, Espace Design est spécialisé dans la rénovation et la reconversion d'anciens ateliers industriels en lofts à Ivry-sur-Seine. Béton ciré, verrière, cuisine ouverte — projets sur-mesure.",
               },
               {
-                q: 'Quels travaux réalisez-vous à Ivry-sur-Seine ?',
-                a: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
+                q: 'Quel artisan contacter pour rénover un appartement à Ivry-sur-Seine ?',
+                a: "Espace Design intervient régulièrement à Ivry-sur-Seine. Assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -210,16 +257,16 @@ export default function RenovationIvrySurSeine() {
         </div>
       </section>
 
-      {/* Zones voisines */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-charenton-le-pont', label: 'Charenton-le-Pont' },
               { href: '/renovation-vitry-sur-seine', label: 'Vitry-sur-Seine' },
-              { href: '/renovation-paris-13e', label: 'Paris 13e' },
+              { href: '/renovation-choisy-le-roi', label: 'Choisy-le-Roi' },
+              { href: '/renovation-kremlin-bicetre', label: 'Kremlin-Bicêtre' },
               { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -233,7 +280,6 @@ export default function RenovationIvrySurSeine() {
         </div>
       </section>
 
-      {/* Voir aussi */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -260,19 +306,17 @@ export default function RenovationIvrySurSeine() {
         </div>
       </section>
 
-      {/* CTA */}
-      {/* Articles liés */}
       <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-appartement-copropriete-paris', label: 'Rénover en copropriété' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
-              { href: '/blog/isolation-acoustique-appartement-paris', label: 'Isolation acoustique' },
-              { href: '/blog/renovation-2-pieces-paris', label: 'Budget 2 pièces Paris' },
-              { href: '/blog/peinture-appartement-paris', label: 'Peinture appartement Paris' },
-              { href: '/blog/renovation-cuisine-ouverte-paris', label: 'Cuisine ouverte Paris' },
+              { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain Paris' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant de vendre' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
+              { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
@@ -288,7 +332,7 @@ export default function RenovationIvrySurSeine() {
             Votre projet à Ivry-sur-Seine
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement à Ivry-sur-Seine et dans tout le Val-de-Marne.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune d'Ivry-sur-Seine et alentours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

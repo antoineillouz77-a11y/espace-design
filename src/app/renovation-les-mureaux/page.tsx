@@ -265,7 +265,7 @@ export default function RenovationLesMureaux() {
             {[
               { href: '/renovation-yvelines', label: 'Yvelines (78)' },
               { href: '/renovation-meulan-en-yvelines', label: 'Meulan-en-Yvelines' },
-              { href: '/renovation-mantes-la-jolie', label: 'Mantes-la-Jolie' },
+              { href: '/renovation-conflans-sainte-honorine', label: 'Conflans-Sainte-Honorine' },
               { href: '/renovation-poissy', label: 'Poissy' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
