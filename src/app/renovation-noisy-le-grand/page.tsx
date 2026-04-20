@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Paris 12e — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Noisy-le-Grand — Appartement & Maison (93) | Espace Design',
   description:
-    'Artisan rénovateur et décorateur intérieur dans le 12e arrondissement de Paris. Rénovation complète, décoration haut de gamme, sur-mesure. Devis gratuit 48h. Daumesnil, Bercy, Nation.',
+    'Artisan rénovateur à Noisy-le-Grand (93). Rénovation appartement, maison, travaux intérieurs. Devis gratuit 48h. Espace Design.',
   keywords: [
-    'rénovation appartement Paris 12e',
-    'artisan rénovation Paris 12ème',
-    'décoration intérieure Paris 12e',
-    'renovation Paris 12 arrondissement',
-    'entreprise renovation Paris Bercy',
-    'artisan Paris 12e arrondissement',
+    'rénovation appartement Noisy-le-Grand',
+    'artisan rénovation Noisy-le-Grand',
+    'décoration intérieure Noisy-le-Grand',
+    'renovation Noisy-le-Grand 93160',
+    'entreprise renovation Noisy-le-Grand',
+    'artisan Noisy-le-Grand Seine-Saint-Denis',
   ],
 }
 
@@ -21,17 +21,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur dans le 12e arrondissement de Paris.',
+  description: 'Artisan rénovateur et décorateur intérieur à Noisy-le-Grand.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-paris-12e',
+  url: 'https://espacedesignparis.fr/renovation-noisy-le-grand',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Paris 12e arrondissement',
+    name: 'Noisy-le-Grand',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Paris',
-    postalCode: '75012',
+    addressLocality: 'Noisy-le-Grand',
+    postalCode: '93160',
     addressCountry: 'FR',
   },
 }
@@ -42,18 +42,18 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le délai pour obtenir un devis dans le XIIe arrondissement ?',
+      name: 'Quel est le délai pour obtenir un devis à Noisy-le-Grand ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nous répondons à toutes les demandes de devis sous 48h. Le déplacement pour évaluer votre projet est gratuit et sans engagement dans tout le XIIe arrondissement.',
+        text: "Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Noisy-le-Grand et dans toute la région.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation complète dans le XIIe arrondissement ?',
+      name: "Quel est le prix d'une rénovation complète à Noisy-le-Grand ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation complète à Paris varie généralement entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.',
+        text: "Le coût d'une rénovation complète varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.",
       },
     },
     {
@@ -61,15 +61,15 @@ const schemaFaq = {
       name: 'Avez-vous une assurance décennale ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.',
+        text: "Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels types de travaux réalisez-vous dans le XIIe arrondissement ?',
+      name: 'Intervenez-vous à Noisy-le-Grand ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nous intervenons sur tous types de projets : rénovation complète d\'appartement, peinture, carrelage, parquet, salle de bain, cuisine, aménagement sur-mesure, menuiseries, plâtrerie. Un seul artisan pour coordonner l\'ensemble du chantier.',
+        text: "Oui, nous intervenons régulièrement à Noisy-le-Grand et dans toute l'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.",
       },
     },
   ],
@@ -80,12 +80,12 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Paris 12e', item: 'https://espacedesignparis.fr/renovation-paris-12e' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Noisy-le-Grand', item: 'https://espacedesignparis.fr/renovation-noisy-le-grand' },
   ],
 }
 
-export default function RenovationParis12e() {
+export default function RenovationNoisyLeGrand() {
   return (
     <>
       <script
@@ -103,13 +103,13 @@ export default function RenovationParis12e() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Paris 12e arrondissement</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Noisy-le-Grand — 93160</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Paris 12e
+            Rénovation Noisy-le-Grand
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur dans le 12e arrondissement. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Noisy-le-Grand. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -132,7 +132,7 @@ export default function RenovationParis12e() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services dans le 12e
+            Nos services à Noisy-le-Grand
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
@@ -151,13 +151,45 @@ export default function RenovationParis12e() {
         </div>
       </section>
 
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Tous nos services
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {s.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Une réalisation dans le 12e
+            Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/07-open-space-cuisine.jpg" alt="Open space cuisine Paris 12e" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/25-wc-beton-cire.jpg" alt="Rénovation intérieure sur-mesure — Noisy-le-Grand" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -168,7 +200,7 @@ export default function RenovationParis12e() {
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -182,7 +214,6 @@ export default function RenovationParis12e() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -191,20 +222,20 @@ export default function RenovationParis12e() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le délai pour obtenir un devis dans le 12e ?',
-                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement dans tout le 12e arrondissement.',
+                q: 'Quel est le délai pour obtenir un devis à Noisy-le-Grand ?',
+                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement à Noisy-le-Grand.',
               },
               {
-                q: 'Quel est le prix d\'une rénovation complète dans le 12e ?',
-                a: 'Le coût varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m². Devis personnalisé sous 48h.',
+                q: "Quel est le prix d'une rénovation complète à Noisy-le-Grand ?",
+                a: "Le coût varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
                 a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans.',
               },
               {
-                q: 'Quels types de travaux réalisez-vous dans le 12e ?',
-                a: 'Rénovation complète, peinture, carrelage, parquet, salle de bain, cuisine, aménagement sur-mesure, menuiseries. Un seul artisan pour tout coordonner.',
+                q: 'Intervenez-vous à Noisy-le-Grand ?',
+                a: "Oui, nous intervenons régulièrement à Noisy-le-Grand et dans toute l'Île-de-France. Devis gratuit sous 48h.",
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -219,17 +250,17 @@ export default function RenovationParis12e() {
         </div>
       </section>
 
-      {/* Zones voisines */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-paris-4e', label: 'Paris 4e' },
-              { href: '/renovation-paris-11e', label: 'Paris 11e' },
-              { href: '/renovation-paris-13e', label: 'Paris 13e' },
-              { href: '/renovation-paris-20e', label: 'Paris 20e' },
-              { href: '/renovation-vincennes', label: 'Vincennes' },
+              { href: '/renovation-champs-sur-marne', label: 'Champs-sur-Marne' },
+              { href: '/renovation-noisiel', label: 'Noisiel' },
+              { href: '/renovation-croissy-beaubourg', label: 'Croissy-Beaubourg' },
+              { href: '/renovation-villiers-sur-marne', label: 'Villiers-sur-Marne' },
+              { href: '/renovation-bry-sur-marne', label: 'Bry-sur-Marne' },
+              { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -243,41 +274,13 @@ export default function RenovationParis12e() {
         </div>
       </section>
 
-      {/* Voir aussi */}
-      <section className="py-10 bg-white border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
-              { href: '/renovation-cuisine-paris', label: 'Cuisine' },
-              { href: '/peinture-paris', label: 'Peinture' },
-              { href: '/parquet-paris', label: 'Parquet' },
-              { href: '/carrelage-paris', label: 'Carrelage' },
-              { href: '/electricite-paris', label: 'Électricité' },
-              { href: '/plomberie-paris', label: 'Plomberie' },
-              { href: '/menuiserie-paris', label: 'Menuiserie' },
-              { href: '/isolation-paris', label: 'Isolation' },
-              { href: '/platrererie-paris', label: 'Plâtrerie' },
-              { href: '/decoration-interieure-paris', label: 'Décoration' },
-              { href: '/amenagement-interieur-paris', label: 'Aménagement' },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet dans le 12e
+            Votre projet à Noisy-le-Grand
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans tout le 12e arrondissement.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Noisy-le-Grand.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

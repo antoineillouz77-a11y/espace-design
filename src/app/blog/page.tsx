@@ -174,6 +174,18 @@ const articles = [
     desc: "Peinture décorative à Paris : enduit à la chaux, béton ciré, tadelakt, badigeon. Prix, applications, artisans. Guide complet.",
     tag: 'Peinture',
   },
+  {
+    href: '/blog/devis-renovation-paris',
+    title: 'Devis Rénovation Paris : obtenir et comparer 3 devis 2025',
+    desc: "Comment obtenir un bon devis de rénovation à Paris ? Que comparer, les pièges à éviter, les garanties à demander. Guide pratique.",
+    tag: 'Conseils',
+  },
+  {
+    href: '/blog/renovation-fenetre-paris',
+    title: 'Rénovation Fenêtres Paris : double vitrage, PVC, aluminium 2025',
+    desc: "Changer ses fenêtres à Paris : double vitrage, PVC, aluminium, bois. Prix, aides MaPrimeRénov', démarches copropriété. Guide complet.",
+    tag: 'Rénovation',
+  },
 ]
 
 export default function BlogPage() {

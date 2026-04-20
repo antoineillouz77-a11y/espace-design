@@ -80,6 +80,7 @@ const villes = [
   { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
   { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
   { href: '/renovation-chatou', label: 'Chatou' },
+  { href: '/renovation-saint-denis', label: 'Saint-Denis' },
   { href: '/renovation-montreuil', label: 'Montreuil' },
   { href: '/renovation-pantin', label: 'Pantin' },
   { href: '/renovation-aubervilliers', label: 'Aubervilliers' },

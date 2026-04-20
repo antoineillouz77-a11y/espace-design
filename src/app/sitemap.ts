@@ -123,6 +123,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/parquet-massif-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/home-staging-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/peinture-decorative-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/devis-renovation-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-fenetre-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
@@ -130,6 +132,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-appartement-haussmannien-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
 
     // Nouvelles villes — Seine-Saint-Denis (93)
+    { url: `${base}/renovation-saint-denis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-montreuil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-pantin`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-aubervilliers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
