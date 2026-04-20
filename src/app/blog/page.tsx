@@ -1782,6 +1782,102 @@ const articles = [
     desc: "Rénover un appartement à Gagny. Artisan qualifié en Seine-Saint-Denis, devis gratuit sous 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-gennevilliers',
+    title: "Rénovation Appartement Gennevilliers (92) — Guide 2025",
+    desc: "Artisan rénovateur à Gennevilliers. Cuisine, salle de bain, parquet, isolation. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-bondy',
+    title: "Rénovation Appartement Bondy (93) — Guide 2025",
+    desc: "Rénover un appartement à Bondy (93). Artisan qualifié, tous corps de métier. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-rosny-sous-bois',
+    title: "Rénovation Appartement Rosny-sous-Bois (93) — 2025",
+    desc: "Artisan rénovateur à Rosny-sous-Bois. Cuisine, salle de bain, parquet. Devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-sarcelles',
+    title: "Rénovation Appartement Sarcelles (95) — Guide 2025",
+    desc: "Rénover un appartement à Sarcelles (Val-d'Oise). Artisan qualifié. Devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-bobigny',
+    title: "Rénovation Appartement Bobigny (93) — Guide 2025",
+    desc: "Artisan rénovateur à Bobigny (93) : cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-drancy',
+    title: "Rénovation Appartement Drancy (93) — Guide 2025",
+    desc: "Rénover un appartement à Drancy (93). Cuisine, salle de bain, parquet, cloisons. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-saint-ouen',
+    title: "Rénovation Appartement Saint-Ouen (93) — Guide 2025",
+    desc: "Artisan rénovateur à Saint-Ouen : lofts, cuisines ouvertes, salles de bain. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-bagneux',
+    title: "Rénovation Appartement Bagneux (92) — Guide 2025",
+    desc: "Rénover un appartement à Bagneux. Artisan qualifié Hauts-de-Seine, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-montrouge',
+    title: "Rénovation Appartement Montrouge (92) — Guide 2025",
+    desc: "Artisan rénovateur à Montrouge : cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-antony',
+    title: "Rénovation Appartement Antony (92) — Guide 2025",
+    desc: "Rénover un appartement à Antony (92). Artisan qualifié, tous corps de métier. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-malakoff',
+    title: "Rénovation Appartement Malakoff (92) — Guide 2025",
+    desc: "Artisan rénovateur à Malakoff : cuisine, salle de bain, parquet, peinture. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-vanves',
+    title: "Rénovation Appartement Vanves (92) — Guide 2025",
+    desc: "Rénover un appartement à Vanves (92). Proche Paris, artisan qualifié. Devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-alfortville',
+    title: "Rénovation Appartement Alfortville (94) — Guide 2025",
+    desc: "Artisan rénovateur à Alfortville : cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-maisons-alfort',
+    title: "Rénovation Appartement Maisons-Alfort (94) — Guide 2025",
+    desc: "Rénover un appartement à Maisons-Alfort (94). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-joinville-le-pont',
+    title: "Rénovation Appartement Joinville-le-Pont (94) — 2025",
+    desc: "Artisan rénovateur à Joinville-le-Pont. Cuisine, salle de bain, parquet. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-cave-piece-de-vie-paris',
+    title: "Transformer une cave en pièce de vie à Paris — Guide 2025",
+    desc: "Comment aménager et rénover une cave en pièce de vie habitable à Paris. Réglementation, prix, conseils.",
+    tag: 'Travaux',
+  },
 ]
 
 export default function BlogPage() {
