@@ -822,6 +822,12 @@ const articles = [
     desc: "Rénover les parties communes d'un immeuble parisien : hall, cage d'escalier, façade. Décision en copropriété, qui paie, coûts 2025.",
     tag: 'Guides',
   },
+  {
+    href: '/blog/remise-aux-normes-electrique-paris',
+    title: 'Remise aux Normes Électrique Paris : NF C 15-100 & prix 2025',
+    desc: "Mise en conformité électrique à Paris : NF C 15-100, DDR 30mA, tableau électrique, diagnostic vente. Prix par surface 2025.",
+    tag: 'Électricité',
+  },
 ]
 
 export default function BlogPage() {

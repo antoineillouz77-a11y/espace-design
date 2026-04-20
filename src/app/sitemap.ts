@@ -378,6 +378,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/ouverture-cuisine-salon-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/revetement-sol-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-immeuble-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/remise-aux-normes-electrique-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
+    // Seine-et-Marne (77) — nouvelles villes
+    { url: `${base}/renovation-melun`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Val-d'Oise (95) — nouvelles villes
     { url: `${base}/renovation-bezons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
