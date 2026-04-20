@@ -1926,6 +1926,36 @@ const articles = [
     desc: "Aménager et rénover une chambre enfant à Paris. Rangements sur mesure, peinture, sol. Devis gratuit.",
     tag: 'Travaux',
   },
+  {
+    href: '/blog/renovation-appartement-arcueil',
+    title: "Rénovation Appartement Arcueil (94) — Guide 2025",
+    desc: "Artisan rénovateur à Arcueil (94). Cuisine, salle de bain, parquet, peinture. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-livry-gargan',
+    title: "Rénovation Appartement Livry-Gargan (93) — Guide 2025",
+    desc: "Rénover un appartement à Livry-Gargan (93). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-mantes-la-jolie',
+    title: "Rénovation Appartement Mantes-la-Jolie (78) — 2025",
+    desc: "Artisan rénovateur à Mantes-la-Jolie (Yvelines). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-massy',
+    title: "Rénovation Appartement Massy (91) — Guide & Prix 2025",
+    desc: "Rénover un appartement à Massy (Essonne). Artisan qualifié, déplacement gratuit. Devis sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-palaiseau',
+    title: "Rénovation Appartement Palaiseau (91) — Guide 2025",
+    desc: "Artisan rénovateur à Palaiseau (91). Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
