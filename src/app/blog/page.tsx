@@ -1710,6 +1710,30 @@ const articles = [
     desc: "Rénover un appartement à Pantin (93). Ville en pleine gentrification, anciens entrepôts. Devis 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/parquet-stratifie-vs-massif-paris',
+    title: "Parquet Stratifié vs Massif Paris : comparatif & prix 2025",
+    desc: "Parquet stratifié ou massif à Paris ? Comparatif durabilité, entretien, prix, pose. Guide 2025.",
+    tag: 'Parquet',
+  },
+  {
+    href: '/blog/renovation-appartement-aubervilliers',
+    title: "Rénovation Appartement Aubervilliers : artisan & prix 2025",
+    desc: "Rénover un appartement à Aubervilliers (93). Ville populaire en transformation rapide. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-ivry-sur-seine',
+    title: "Rénovation Appartement Ivry-sur-Seine : artisan & prix 2025",
+    desc: "Rénover un appartement à Ivry-sur-Seine (94). Anciens lofts industriels reconvertis. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-vitry-sur-seine',
+    title: "Rénovation Appartement Vitry-sur-Seine : artisan & prix 2025",
+    desc: "Rénover un appartement à Vitry-sur-Seine (94). Grande ville Val-de-Marne. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
