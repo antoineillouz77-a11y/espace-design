@@ -607,6 +607,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Val-d'Oise (95) — vague 23
     { url: `${base}/renovation-garges-les-gonesse`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Essonne (91) — vague 24
+    { url: `${base}/renovation-chilly-mazarin`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 21-22
+    { url: `${base}/blog/peinture-interieure-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-haussmannien-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Blog — vague 15 (plancher)
     { url: `${base}/blog/renovation-plancher-chauffant-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 

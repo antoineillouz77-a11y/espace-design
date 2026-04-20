@@ -75,6 +75,7 @@ const villes91 = [
   { href: '/renovation-igny', label: 'Igny' },
   { href: '/renovation-verrieres-le-buisson', label: 'Verrières-le-Buisson' },
   { href: '/renovation-wissous', label: 'Wissous' },
+  { href: '/renovation-chilly-mazarin', label: 'Chilly-Mazarin' },
 ]
 
 const services = [

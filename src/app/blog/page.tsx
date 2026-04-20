@@ -1158,6 +1158,18 @@ const articles = [
     desc: "Rénover un grand appartement de 200m² à Paris. Planification, corps de métier, budget estimatif au m², phasage. Guide 2025.",
     tag: 'Rénovation',
   },
+  {
+    href: '/blog/peinture-interieure-paris',
+    title: 'Peinture Intérieure Paris : types, finitions & prix artisan 2025',
+    desc: "Types de peinture intérieure à Paris. Mat, satin, brillant, marques, préparation des murs, prix au m² artisan. Devis gratuit 48h.",
+    tag: 'Peinture',
+  },
+  {
+    href: '/blog/renovation-haussmannien-paris',
+    title: "Rénovation Appartement Haussmannien Paris : guide complet artisan 2025",
+    desc: "Rénover un appartement haussmannien à Paris. Parquets, moulures, cheminées, réglementation, isolation, prix. Guide expert 2025.",
+    tag: 'Rénovation',
+  },
 ]
 
 export default function BlogPage() {
