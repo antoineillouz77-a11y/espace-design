@@ -425,6 +425,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-cave-amenagee-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/prix-renovation-cuisine-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/pose-parquet-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-parquet-chene-blanc-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Val-de-Marne (94) — nouvelles villes
     { url: `${base}/renovation-villejuif`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -440,6 +441,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-saint-gratien`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-villiers-le-bel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-franconville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-soisy-sous-montmorency`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-bezons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-taverny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 

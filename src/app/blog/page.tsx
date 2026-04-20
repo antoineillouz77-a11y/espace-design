@@ -864,6 +864,12 @@ const articles = [
     desc: "Poser un parquet à Paris : parquet massif cloué, contrecollé collé, flottant. Préparation, finitions, prix m² 2025.",
     tag: 'Parquet',
   },
+  {
+    href: '/blog/renovation-parquet-chene-blanc-paris',
+    title: 'Parquet Chêne Blanc Paris : naturel, blanchi & prix artisan 2025',
+    desc: "Parquet chêne blanc à Paris : bois naturel blanchi, huile blanche, vernis satiné. Tendances 2025, pose et entretien.",
+    tag: 'Parquet',
+  },
 ]
 
 export default function BlogPage() {
