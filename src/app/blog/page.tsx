@@ -2010,6 +2010,42 @@ const articles = [
     desc: "Rénover un appartement au Blanc-Mesnil (93). Artisan qualifié, devis gratuit sous 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-garges-les-gonesse',
+    title: "Rénovation Appartement Garges-lès-Gonesse (95) — 2025",
+    desc: "Artisan rénovateur à Garges-lès-Gonesse (Val-d'Oise). Cuisine, salle de bain. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-pierrefitte-sur-seine',
+    title: "Rénovation Appartement Pierrefitte-sur-Seine (93) — 2025",
+    desc: "Rénover un appartement à Pierrefitte-sur-Seine (93). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-savigny-sur-orge',
+    title: "Rénovation Appartement Savigny-sur-Orge (91) — 2025",
+    desc: "Artisan rénovateur à Savigny-sur-Orge (Essonne). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-stains',
+    title: "Rénovation Appartement Stains (93) — Guide 2025",
+    desc: "Rénover un appartement à Stains (93). Artisan qualifié Seine-Saint-Denis, devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-villiers-le-bel',
+    title: "Rénovation Appartement Villiers-le-Bel (95) — 2025",
+    desc: "Artisan rénovateur à Villiers-le-Bel (Val-d'Oise). Cuisine, salle de bain. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-viry-chatillon',
+    title: "Rénovation Appartement Viry-Châtillon (91) — 2025",
+    desc: "Rénover un appartement à Viry-Châtillon (Essonne). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
