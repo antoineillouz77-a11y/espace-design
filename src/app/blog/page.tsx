@@ -2358,6 +2358,30 @@ const articles = [
     desc: "Rénovation immeuble en pierre de taille à Paris : contraintes, techniques, matériaux, coûts. Guide complet.",
     tag: 'Guide',
   },
+  {
+    href: '/blog/renovation-appartement-convention-paris',
+    title: "Rénovation Appartement Convention Paris 15e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Convention, Paris 15e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-daumesnil-paris',
+    title: "Rénovation Appartement Daumesnil Paris 12e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Daumesnil, Paris 12e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-gobelins-paris',
+    title: "Rénovation Appartement Gobelins Paris 13e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier des Gobelins, Paris 13e. Immeubles mixtes, finitions soignées.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-pernety-paris',
+    title: "Rénovation Appartement Pernety Paris 14e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Pernety, Paris 14e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
 ]
 
 export default function BlogPage() {
