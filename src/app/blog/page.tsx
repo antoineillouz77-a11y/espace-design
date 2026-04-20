@@ -1236,6 +1236,18 @@ const articles = [
     desc: "Rénover un appartement près de République à Paris 10e/11e. Logements anciens et récents, prix artisan. Devis gratuit 48h.",
     tag: 'Quartier',
   },
+  {
+    href: '/blog/plafond-tendu-paris',
+    title: "Plafond Tendu Paris : pose, types & prix artisan 2025",
+    desc: "Faire poser un plafond tendu à Paris : types (laqué, satiné, acoustique), prix au m², délai de pose et artisan qualifié. Devis gratuit sous 48h.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/renovation-appartement-pigalle-paris',
+    title: "Rénovation Appartement Pigalle Paris 9e/18e : artisan & prix 2025",
+    desc: "Rénover un appartement à Pigalle (Paris 9e/18e) : immeubles haussmanniens, caves, combles aménageables. Prix artisan 2025.",
+    tag: 'Quartier',
+  },
 ]
 
 export default function BlogPage() {

@@ -624,6 +624,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-appartement-oberkampf-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-nation-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-republique-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/plafond-tendu-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-pigalle-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Blog — vague 15 (plancher)
     { url: `${base}/blog/renovation-plancher-chauffant-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
