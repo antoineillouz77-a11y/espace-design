@@ -48,6 +48,7 @@ const villes91 = [
   { href: '/renovation-corbeil-essonnes', label: 'Corbeil-Essonnes' },
   { href: '/renovation-sainte-genevieve-des-bois', label: 'Sainte-Geneviève-des-Bois' },
   { href: '/renovation-yerres', label: 'Yerres' },
+  { href: '/renovation-viry-chatillon', label: 'Viry-Châtillon' },
 ]
 
 const services = [
