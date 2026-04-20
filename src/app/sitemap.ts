@@ -566,6 +566,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-bussy-saint-georges`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-chessy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Blog — vague 15 (suite)
+    { url: `${base}/blog/carrelage-zellige-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/porte-blindee-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Blog — vague 14 (suite)
     { url: `${base}/blog/baignoire-ilot-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 

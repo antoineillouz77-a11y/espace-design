@@ -1032,6 +1032,18 @@ const articles = [
     desc: "Changer ses fenêtres à Paris. Double/triple vitrage, démarches syndic, CEE, prix 2025. Devis gratuit 48h.",
     tag: 'Menuiserie',
   },
+  {
+    href: '/blog/carrelage-zellige-paris',
+    title: 'Zellige Paris : pose, prix & entretien — guide artisan 2025',
+    desc: "Zellige à Paris : crédence cuisine, salle de bain, sol. Pose artisan, prix au m², entretien 2025. Devis gratuit 48h.",
+    tag: 'Carrelage',
+  },
+  {
+    href: '/blog/porte-blindee-paris',
+    title: 'Porte Blindée Paris : installation, certifications & prix 2025',
+    desc: "Installer une porte blindée à Paris. Certifications A2P, démarches copropriété, prix 2025. Devis gratuit 48h.",
+    tag: 'Menuiserie',
+  },
 ]
 
 export default function BlogPage() {
