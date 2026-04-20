@@ -1680,6 +1680,12 @@ const articles = [
     desc: "Rénover un appartement à Rueil-Malmaison (92). Ville résidentielle haut de gamme. Devis 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-maison-individuelle-paris',
+    title: "Rénovation Maison Individuelle Paris et IDF : prix 2025",
+    desc: "Rénover une maison individuelle à Paris ou en IDF. Spécificités, façade, toiture, cave. Devis 48h.",
+    tag: 'Maison',
+  },
 ]
 
 export default function BlogPage() {
