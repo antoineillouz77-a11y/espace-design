@@ -1956,6 +1956,48 @@ const articles = [
     desc: "Artisan rénovateur à Palaiseau (91). Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/pose-papier-peint-paris',
+    title: "Pose Papier Peint Paris — Prix & Guide 2025",
+    desc: "Poser du papier peint à Paris : prix au m², types de papier peint, conseils pour une pose parfaite.",
+    tag: 'Décoration',
+  },
+  {
+    href: '/blog/renovation-appartement-cergy',
+    title: "Rénovation Appartement Cergy (95) — Guide 2025",
+    desc: "Artisan rénovateur à Cergy (Val-d'Oise). Cuisine, salle de bain, parquet. Devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-chatou',
+    title: "Rénovation Appartement Chatou (78) — Guide 2025",
+    desc: "Rénover un appartement à Chatou (Yvelines). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-chelles',
+    title: "Rénovation Appartement Chelles (77) — Guide 2025",
+    desc: "Artisan rénovateur à Chelles (Seine-et-Marne). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-meaux',
+    title: "Rénovation Appartement Meaux (77) — Guide 2025",
+    desc: "Rénover un appartement à Meaux (77). Artisan qualifié, déplacement gratuit. Devis sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-pontault-combault',
+    title: "Rénovation Appartement Pontault-Combault (77) — 2025",
+    desc: "Artisan rénovateur à Pontault-Combault (77). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-villepinte',
+    title: "Rénovation Appartement Villepinte (93) — Guide 2025",
+    desc: "Rénover un appartement à Villepinte (93). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
