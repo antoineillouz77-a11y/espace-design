@@ -23,7 +23,7 @@ const schemaService = {
   '@type': 'Service',
   name: 'Rénovation Salle de Bain Paris',
   description: 'Rénovation complète de salle de bain à Paris : douche à l\'italienne, carrelage, plomberie, faïence, mobilier sur mesure.',
-  provider: { '@type': 'LocalBusiness', name: 'Espace Design', url: 'https://espacedesignparis.fr', telephone: '+33611783867' },
+  provider: { '@type': 'HomeAndConstructionBusiness', name: 'Espace Design', url: 'https://espacedesignparis.fr', telephone: '+33611783867', aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '47', bestRating: '5', worstRating: '1' } },
   areaServed: { '@type': 'City', name: 'Paris' },
   offers: { '@type': 'Offer', priceRange: '5000-25000', priceCurrency: 'EUR' },
 }

@@ -24,10 +24,11 @@ const schemaService = {
   name: 'Rénovation Cuisine Paris',
   description: 'Rénovation et aménagement de cuisine à Paris : cuisine ouverte, sur mesure, îlot central, plan de travail, électroménager intégré.',
   provider: {
-    '@type': 'LocalBusiness',
+    '@type': 'HomeAndConstructionBusiness',
     name: 'Espace Design',
     url: 'https://espacedesignparis.fr',
     telephone: '+33611783867',
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '47', bestRating: '5', worstRating: '1' },
   },
   areaServed: { '@type': 'City', name: 'Paris' },
   offers: { '@type': 'Offer', priceRange: '6000-30000', priceCurrency: 'EUR' },
