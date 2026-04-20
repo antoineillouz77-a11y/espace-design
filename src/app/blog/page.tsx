@@ -2202,6 +2202,24 @@ const articles = [
     desc: "Pourquoi faire un bilan avant vos travaux à Paris ? Diagnostic structure, électricité, plomberie.",
     tag: 'Guide',
   },
+  {
+    href: '/blog/renovation-appartement-conflans-sainte-honorine',
+    title: "Rénovation Appartement Conflans-Sainte-Honorine (78) — 2025",
+    desc: "Artisan rénovateur à Conflans-Sainte-Honorine (Yvelines). Cuisine, salle de bain. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-corbeil-essonnes',
+    title: "Rénovation Appartement Corbeil-Essonnes (91) — 2025",
+    desc: "Rénover un appartement à Corbeil-Essonnes (91). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-houilles',
+    title: "Rénovation Appartement Houilles (78) — Guide 2025",
+    desc: "Artisan rénovateur à Houilles (Yvelines). Cuisine, salle de bain, parquet. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
