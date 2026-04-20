@@ -525,6 +525,24 @@ export default function HomePage() {
                 title: 'Choisir son artisan rénovateur à Paris',
                 desc: 'Les 8 critères pour ne pas se tromper : assurance, devis, références.',
               },
+              {
+                href: '/blog/renovation-salle-de-bain-paris',
+                tag: 'Salle de bain',
+                title: 'Rénovation salle de bain à Paris : guide 2025',
+                desc: 'Prix, matériaux, durée des travaux, erreurs à éviter.',
+              },
+              {
+                href: '/blog/renovation-studio-paris',
+                tag: 'Studios',
+                title: 'Rénovation studio Paris : prix & astuces 2025',
+                desc: 'Optimisation de l\'espace, budget réaliste, matériaux adaptés.',
+              },
+              {
+                href: '/blog/devis-renovation-paris',
+                tag: 'Conseils',
+                title: 'Comment obtenir et comparer 3 devis à Paris',
+                desc: 'Les pièges à éviter et garanties à demander pour un bon devis.',
+              },
             ].map((a) => (
               <Link
                 key={a.href}

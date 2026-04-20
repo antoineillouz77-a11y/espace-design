@@ -176,6 +176,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-appartement-saint-germain-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-montmartre-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/renovation-aulnay-sous-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-tremblay-en-france`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-rosny-sous-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-drancy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
   ]
 }
