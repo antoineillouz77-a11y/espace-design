@@ -1194,6 +1194,18 @@ const articles = [
     desc: "Rénover un appartement à Belleville Paris 19e/20e. Immeubles anciens, lofts, rénovation totale, prix artisan. Devis gratuit 48h.",
     tag: 'Quartier',
   },
+  {
+    href: '/blog/store-interieur-paris',
+    title: 'Store Intérieur Paris : pose, types & prix artisan 2025',
+    desc: "Faire poser des stores intérieurs à Paris. Store enrouleur, vénitien, bateau, occultant, sur mesure. Prix artisan. Devis gratuit 48h.",
+    tag: 'Décoration',
+  },
+  {
+    href: '/blog/vmc-appartement-paris',
+    title: 'VMC Appartement Paris : installation, entretien & prix artisan 2025',
+    desc: "Installer une VMC dans son appartement à Paris. Simple flux, double flux, réglementation, prix artisan. Devis gratuit 48h.",
+    tag: 'Technique',
+  },
 ]
 
 export default function BlogPage() {
