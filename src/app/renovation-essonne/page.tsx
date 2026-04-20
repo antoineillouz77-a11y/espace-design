@@ -70,6 +70,7 @@ const villes91 = [
   { href: '/renovation-fleury-merogis', label: 'Fleury-Mérogis' },
   { href: '/renovation-courcouronnes', label: 'Courcouronnes' },
   { href: '/renovation-varennes-jarcy', label: 'Varennes-Jarcy' },
+  { href: '/renovation-morangis', label: 'Morangis' },
 ]
 
 const services = [

@@ -561,6 +561,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-viarmes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-luzarches`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Essonne (91) — vague 21
+    { url: `${base}/renovation-morangis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 15 (plancher)
+    { url: `${base}/blog/renovation-plancher-chauffant-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Blog — vague 16
     { url: `${base}/blog/credence-cuisine-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 

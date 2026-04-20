@@ -1045,6 +1045,12 @@ const articles = [
     tag: 'Menuiserie',
   },
   {
+    href: '/blog/renovation-plancher-chauffant-paris',
+    title: 'Plancher Chauffant Paris : installation, types & prix artisan 2025',
+    desc: "Plancher chauffant hydraulique ou électrique à Paris. Installation artisan, compatibilité revêtements, prix 2025. Devis gratuit 48h.",
+    tag: 'Chauffage',
+  },
+  {
     href: '/blog/credence-cuisine-paris',
     title: 'Crédence Cuisine Paris : matériaux, pose & prix artisan 2025',
     desc: "Choisir et faire poser sa crédence cuisine à Paris. Carrelage, verre, inox, zellige. Prix artisan 2025. Devis gratuit 48h.",
