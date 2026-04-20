@@ -63,6 +63,7 @@ const villes92 = [
   { href: '/renovation-chatenay-malabry', label: 'Châtenay-Malabry' },
   { href: '/renovation-la-garenne-colombes', label: 'La Garenne-Colombes' },
   { href: '/renovation-villeneuve-la-garenne', label: 'Villeneuve-la-Garenne' },
+  { href: '/renovation-marnes-la-coquette', label: 'Marnes-la-Coquette' },
 ]
 
 const services = [

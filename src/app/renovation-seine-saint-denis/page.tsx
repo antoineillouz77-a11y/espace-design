@@ -66,6 +66,7 @@ const villes93 = [
   { href: '/renovation-clichy-sous-bois', label: 'Clichy-sous-Bois' },
   { href: '/renovation-sevran', label: 'Sevran' },
   { href: '/renovation-le-raincy', label: 'Le Raincy' },
+  { href: '/renovation-villepinte', label: 'Villepinte' },
 ]
 
 const services = [

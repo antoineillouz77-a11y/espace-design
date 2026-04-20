@@ -774,6 +774,18 @@ const articles = [
     desc: "Installer une terrasse en bois à Paris : ipé, teck, composite. Permis de construire, copropriété, entretien. Artisan, prix 2025.",
     tag: 'Extérieur',
   },
+  {
+    href: '/blog/humidite-appartement-paris',
+    title: "Humidité Appartement Paris : causes, traitement & artisan 2025",
+    desc: "Traiter l'humidité dans un appartement parisien : remontées capillaires, condensation, infiltrations. Solutions et prix artisan 2025.",
+    tag: 'Guides',
+  },
+  {
+    href: '/blog/pose-carrelage-grand-format-paris',
+    title: 'Pose Carrelage Grand Format Paris : 120x60, 120x120 & prix 2025',
+    desc: "Poser un carrelage grand format à Paris : 120x60, rectifié, joints fins 1mm. Artisan carreleur, prix 2025.",
+    tag: 'Carrelage',
+  },
 ]
 
 export default function BlogPage() {

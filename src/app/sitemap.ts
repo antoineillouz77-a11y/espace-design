@@ -240,6 +240,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-le-raincy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-rungis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-villeneuve-la-garenne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-ablon-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-marnes-la-coquette`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-villepinte`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/blog/humidite-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/pose-carrelage-grand-format-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Seine-Saint-Denis (93) — le-blanc-mesnil, pierrefitte, stains
     { url: `${base}/renovation-le-blanc-mesnil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
