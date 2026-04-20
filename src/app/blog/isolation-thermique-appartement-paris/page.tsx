@@ -15,8 +15,8 @@ const schemaBreadcrumb = {
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Isolation Thermique Appartement Paris : murs, fenêtres & DPE 2025 | Espace Design',
-  description: "Isoler son appartement à Paris : ITI murs, fenêtres double vitrage, plancher. Impact DPE, aides MaPrimeRénov' et prix 2025.",
+  headline: 'Isolation Thermique Appartement Paris : ITI, fenêtres & DPE 2025 | Espace Design',
+  description: 'Isoler son appartement à Paris : isolation intérieure, fenêtres double vitrage, DPE. Aides MaPrimeRénov\' et prix au m² 2025.',
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,34 +33,34 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: "Quelle aide MaPrimeRénov' pour l'isolation d'un appartement à Paris ?",
+      name: 'Quel est le prix de l\'isolation thermique d\'un appartement à Paris ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "MaPrimeRénov' couvre l'isolation des murs (ITI et ITE), des fenêtres et du plancher. Le montant dépend des revenus du ménage : de 25% à 75% du coût des travaux selon les 4 profils (bleu, jaune, violet, rose). À Paris, les plafonds de revenus sont majorés. Cumulable avec les CEE et la TVA à 5,5%. Il est obligatoire de passer par un artisan RGE pour débloquer les aides.",
+        text: 'Le prix de l\'isolation thermique d\'un appartement à Paris dépend des travaux engagés. Pour l\'isolation intérieure des murs (ITI) : 60 à 120 €/m² posé. Pour le remplacement des fenêtres en double vitrage : 400 à 900 € par fenêtre selon le modèle. Pour l\'isolation du plancher bas sur cave : 30 à 70 €/m². Pour un appartement de 60 m² avec murs mitoyens à isoler et 5 fenêtres à remplacer, comptez entre 15 000 et 35 000 € de travaux. Ces coûts peuvent être significativement réduits par les aides MaPrimeRénov\' (jusqu\'à 75 % pour les ménages modestes), les CEE et la TVA à 5,5 % sur les travaux d\'isolation.',
       },
     },
     {
       '@type': 'Question',
-      name: "Combien de cm perd-on avec une isolation intérieure (ITI) à Paris ?",
+      name: 'Mon appartement est classé F ou G au DPE — suis-je obligé de faire des travaux ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Une isolation thermique par l'intérieur (ITI) avec doublage plâtre + laine de roche 60 mm entraîne une perte de 8 à 12 cm par mur traité. Dans un appartement parisien de 50 m² avec 2 murs extérieurs traités, la perte effective est de 1,6 à 2,4 m² de surface habitable. Ce compromis est à anticiper lors de la conception du projet.",
+        text: 'Depuis 2025, les logements classés G au DPE sont interdits à la location (contrats nouveaux et renouvelés). Les logements classés F seront à leur tour interdits à la location dès 2028. Si vous êtes propriétaire-bailleur, vous avez donc l\'obligation légale de réaliser des travaux de rénovation énergétique pour mettre votre bien en conformité. Si vous êtes propriétaire-occupant, aucune obligation légale n\'existe actuellement, mais les logements F et G sont de plus en plus difficiles à revendre à bonne valeur. L\'audit énergétique (obligatoire pour les classes F et G depuis 2023 en cas de vente) oriente vers les travaux prioritaires.',
       },
     },
     {
       '@type': 'Question',
-      name: "Quelle est la différence entre double vitrage et survitrage pour un appartement haussmannien ?",
+      name: 'Peut-on isoler les murs d\'un appartement en copropriété à Paris ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le double vitrage implique de changer les châssis : meilleure performance (Uw de 1,1 à 1,4 W/m².K) mais nécessite souvent l'accord de l'architecte des bâtiments de France (ABF). Le survitrage colle une vitre sur l'existant sans changer les menuiseries : moins performant (Uw 2,5 W/m².K) mais largement accepté en copropriété et par l'ABF. Prix : 200-400 €/fenêtre pour le survitrage vs 800-1 800 € pour le remplacement complet.",
+        text: 'Oui, l\'isolation par l\'intérieur (ITI) ne nécessite pas d\'autorisation de la copropriété car elle ne touche pas aux parties communes. En revanche, l\'isolation par l\'extérieur (ITE) — qui modifie la façade — nécessite un vote en assemblée générale à la majorité absolue. À Paris, l\'ITE est souvent impossible dans les immeubles haussmanniens ou soumise à des contraintes ABF très strictes. L\'ITI est donc la solution retenue dans 90 % des appartements parisiens. Attention : les copropriétés exigent parfois un sous-couche acoustique sous le sol lors de travaux, lisez votre règlement de copropriété avant de commencer.',
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: "Isolation Thermique Appartement Paris : murs, fenêtres & DPE 2025 | Espace Design",
-  description: "Isoler son appartement à Paris : ITI murs, fenêtres double vitrage, plancher. Impact DPE, aides MaPrimeRénov' et prix 2025.",
+  title: 'Isolation Thermique Appartement Paris : ITI, fenêtres & DPE 2025 | Espace Design',
+  description: 'Isoler son appartement à Paris : isolation intérieure, fenêtres double vitrage, DPE. Aides MaPrimeRénov\' et prix au m² 2025.',
 }
 
 export default function ArticleIsolationThermique() {
@@ -87,40 +87,40 @@ export default function ArticleIsolationThermique() {
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Isolation Thermique Appartement Paris : murs, fenêtres & DPE 2025
+            Isolation Thermique Appartement Paris : ITI, fenêtres &amp; DPE 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Chauffage trop coûteux, DPE F ou G, appartement interdit à la location dès 2028 : l&apos;isolation thermique est devenue un enjeu incontournable pour les propriétaires parisiens. Murs, fenêtres, plancher, ponts thermiques — guide complet avec prix et aides 2025.
+            Interdiction de louer les logements classés G depuis 2025, puis F dès 2028 : l&apos;isolation thermique est devenue une urgence pour de nombreux propriétaires parisiens. ITI, fenêtres double vitrage, MaPrimeRénov&apos; — guide complet avec les prix réels et les aides disponibles en 2025.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Pourquoi isoler */}
+      {/* Section 1 — DPE et enjeux légaux */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Pourquoi isoler son appartement parisien en 2025 ?
+              DPE et interdiction de location : ce qui change en 2025 et 2028
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Les immeubles parisiens anciens — haussmanniens, immeubles de rapport du XIXe ou constructions d&apos;après-guerre — présentent souvent de très mauvaises performances thermiques. Façades en pierre de taille non isolées, simple vitrage, planchers non traités : une passoire thermique consomme 3 à 5 fois plus d&apos;énergie qu&apos;un logement bien isolé.
+              Le calendrier de l&apos;interdiction de location des passoires thermiques est désormais en vigueur. Il concerne aussi bien les nouveaux contrats de location que les renouvellements.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Depuis la loi Climat et Résilience, les propriétaires parisiens sont soumis à un calendrier d&apos;interdiction progressive des locations : les logements classés G sont interdits à la location depuis janvier 2025, les F le seront en 2028. Pour les bailleurs comme pour les occupants, l&apos;isolation n&apos;est plus un choix de confort — c&apos;est une nécessité légale et économique.
+              À Paris, le parc locatif privé compte un nombre important de logements classés E, F ou G — des appartements haussmanniens souvent mal isolés, aux fenêtres anciennes et aux murs en pierre sans isolation intérieure. La mise aux normes est donc un enjeu massif pour les propriétaires bailleurs parisiens.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'DPE et interdictions de location',
-                  detail: "Un logement classé G est interdit à la mise en location depuis janvier 2025. Les F seront interdits en 2028, les E en 2034. À Paris, une grande partie du parc locatif privé est concernée. Améliorer le DPE de 2 lettres est souvent possible avec une isolation des murs et le remplacement des fenêtres.",
+                  enjeu: 'Logements G : interdits à la location depuis 2025',
+                  detail: 'Depuis le 1er janvier 2025, les logements dont la consommation énergétique dépasse 450 kWh/m²/an (classe G+) ne peuvent plus faire l\'objet d\'un nouveau contrat de location. En 2025, l\'ensemble des logements G sont concernés. Les contrats en cours ne sont pas immédiatement résiliables, mais le propriétaire ne peut pas augmenter le loyer à partir de 2022.',
                 },
                 {
-                  enjeu: 'Économies sur la facture de chauffage',
-                  detail: "Un appartement parisien mal isolé de 60 m² peut coûter 2 000 à 3 500 €/an en chauffage. Une isolation complète (murs + fenêtres) réduit la consommation de 40 à 60%, soit une économie annuelle de 800 à 2 000 €. Le retour sur investissement est généralement atteint en 7 à 12 ans.",
+                  enjeu: 'Logements F : interdits à la location dès 2028',
+                  detail: 'Les logements classés F (consommation entre 331 et 450 kWh/m²/an) seront interdits à la location en 2028. Les propriétaires bailleurs ont donc jusqu\'à cette date pour engager des travaux de rénovation énergétique. L\'audit énergétique (obligatoire depuis 2023 lors de la vente des biens F et G) permet d\'identifier les travaux prioritaires.',
                 },
                 {
-                  enjeu: 'Valorisation du bien immobilier',
-                  detail: "À Paris, un logement classé A ou B se vend en moyenne 15 à 20% plus cher qu'un logement équivalent classé E ou F. L'isolation est l'un des rares travaux qui valorise le bien à la revente tout en améliorant le quotidien des occupants.",
+                  enjeu: 'L\'audit énergétique : point de départ du projet',
+                  detail: 'Avant tout travaux d\'isolation, faire réaliser un audit énergétique par un professionnel certifié (300 à 600 €) permet d\'identifier les postes de déperditions les plus importants et de prioriser les travaux. L\'audit est obligatoire pour les biens classés F et G mis en vente. Il conditionne également certaines aides MaPrimeRénov\'.',
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -133,92 +133,42 @@ export default function ArticleIsolationThermique() {
         </div>
       </section>
 
-      {/* Section 2 — ITI murs */}
+      {/* Section 2 — Solutions d'isolation */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Isolation des murs par l&apos;intérieur (ITI) : doublage et solutions
+            Solutions d&apos;isolation pour un appartement parisien
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Dans un appartement parisien, l&apos;isolation par l&apos;extérieur (ITE) est quasi impossible sans accord unanime de la copropriété. L&apos;ITI — isolation par l&apos;intérieur — est donc la solution standard. Elle consiste à coller ou visser un doublage isolant sur les murs extérieurs.
+            Dans un appartement parisien, les options d&apos;isolation sont contraintes par la copropriété et les réglementations patrimoniales (ABF). Voici les solutions réalistes, du plus efficace au plus accessible.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Doublage plâtre + laine de roche',
-                solution: "Plaque de plâtre solidaire d'une laine de roche 45 à 100 mm. Solution la plus répandue : bonne performance, résistance au feu. Perte de surface : 7 à 12 cm par mur. Résistance thermique R = 1,5 à 3,5 m².K/W selon épaisseur.",
-                cout: '60 – 100 €/m²',
+                titre: 'ITI — Isolation thermique par l\'intérieur',
+                detail: 'Doublage des murs extérieurs avec laine de roche 100 mm + plaque de plâtre (BA13). Perte de surface : 10 à 12 cm par mur traité. Gain thermique important (résistance thermique R = 2,5 à 3 m²K/W). Solution adaptée à tous les appartements parisiens. Éligible TVA 5,5 % et MaPrimeRénov\'.',
+                cout: '60 – 120 €/m²',
               },
               {
-                titre: 'Doublage avec isolant mince (mousse PIR)',
-                solution: "Polyisocyanurate rigide collé en panneau. Très bonne performance pour une faible épaisseur (40 mm = laine de roche 100 mm). Idéal pour les pièces aux cotes réduites. Classement feu à vérifier.",
-                cout: '80 – 130 €/m²',
+                titre: 'Remplacement des fenêtres',
+                detail: 'Double vitrage 4/16/4 ou triple vitrage selon orientation. Cadres PVC (économique) ou aluminium thermolaqué (esthétique). En secteur ABF : cadres bois imposés en façade sur rue. Survitrage collé sur l\'existant possible si le cadre est en bon état (200 à 400 € par fenêtre). Éligible MaPrimeRénov\'.',
+                cout: '400 – 900 €/fenêtre',
               },
               {
-                titre: 'Enduit isolant projeté',
-                solution: "Mortier isolant projeté mécaniquement sur le mur. Moins performant (R = 0,5 à 1,0 m².K/W) mais sans perte de surface significative. Solution de confort thermique pour des appartements sans fort enjeu DPE.",
-                cout: '40 – 70 €/m²',
+                titre: 'Isolation du plancher bas sur cave',
+                detail: 'Pose de panneaux XPS (polystyrène extrudé) ou laine de roche sous le plancher en contact avec une cave ou un vide sanitaire. Gain de 10 à 15 % sur la facture de chauffage. Travaux rapides (1 à 2 jours pour un appartement de 60 m²). Éligible MaPrimeRénov\'.',
+                cout: '30 – 70 €/m²',
               },
               {
-                titre: 'Sarking intérieur (laine soufflée)',
-                solution: "Laine soufflée entre ossature bois légère. Solution écologique, sans pont thermique sur l'ossature. Bonne régulation hygroscopique. Idéale pour les rénovations globales cherchant performance et matériaux biosourcés.",
-                cout: '90 – 140 €/m²',
+                titre: 'Isolation du plafond (sous combles)',
+                detail: 'Pour les appartements en dernier étage, l\'isolation du plancher des combles perdus est le geste le plus rentable : jusqu\'à 25 % d\'économies sur le chauffage. Soufflage de laine de verre (R = 7 à 10) dans les combles perdus. Éligible à l\'aide "Coup de pouce isolation" et MaPrimeRénov\'.',
+                cout: '20 – 40 €/m²',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
                   <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
-                </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
-              </div>
-            ))}
-          </div>
-          <div className="bg-[#1C1C1C] rounded-lg p-5 text-sm">
-            <div className="text-[#D4AF37] font-medium mb-2">Ponts thermiques : le point clé souvent négligé</div>
-            <div className="text-gray-300 font-light leading-relaxed">
-              Un doublage isolant parfait peut être annulé par des ponts thermiques non traités : dalles de plancher traversantes, ébrasements de fenêtres non isolés, liaisons mur-plafond. Dans un appartement parisien, les ponts thermiques représentent jusqu&apos;à 30% des déperditions totales. Ils doivent être traités en même temps que les murs.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3 — Fenêtres */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Fenêtres : double vitrage, survitrage et contraintes haussmanniennes
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les fenêtres représentent 10 à 15% des déperditions thermiques d&apos;un logement, mais leur remplacement est soumis à des contraintes architecturales strictes dans de nombreux immeubles parisiens. L&apos;architecte des bâtiments de France (ABF) peut imposer le maintien des menuiseries bois d&apos;origine.
-          </p>
-          <div className="space-y-4 mb-6">
-            {[
-              {
-                type: 'Double vitrage avec remplacement des châssis',
-                prix: '800 – 1 800 €/fenêtre',
-                detail: "Solution la plus performante : Uw de 1,1 à 1,4 W/m².K. Châssis PVC (moins accepté par l'ABF), aluminium ou bois (privilégiés dans les immeubles haussmanniens). Nécessite souvent l'accord de l'assemblée générale de copropriété.",
-              },
-              {
-                type: 'Survitrage (vitrage additionnel)',
-                prix: '200 – 400 €/fenêtre',
-                detail: "Vitre supplémentaire collée sur le châssis existant, sans remplacement des menuiseries. Performance moindre (Uw de 2,0 à 2,5 W/m².K) mais largement acceptée par les ABF et les copropriétés. Bonne solution de compromis pour les immeubles classés.",
-              },
-              {
-                type: 'Remplacement des joints et calfeutrage',
-                prix: '50 – 150 €/fenêtre',
-                detail: "Première étape avant tout investissement plus lourd. Des joints défaillants peuvent générer des infiltrations d'air équivalentes à un trou de 10 cm². Remplacement des joints, pose de boudins d'étanchéité, calfeutrage des ébrasements : gains de confort immédiats à faible coût.",
-              },
-              {
-                type: 'Double vitrage intégré (menuiseries d\'origine conservées)',
-                prix: '1 200 – 2 500 €/fenêtre',
-                detail: "Conservation des menuiseries bois d'origine avec intégration d'un double vitrage dans le châssis existant. Solution patrimoniale acceptée dans les immeubles classés. Performance proche du double vitrage neuf.",
-              },
-            ].map((el) => (
-              <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-4 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
-                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
                 </div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
@@ -227,41 +177,36 @@ export default function ArticleIsolationThermique() {
         </div>
       </section>
 
-      {/* Section 4 — Aides 2025 */}
-      <section className="py-16 bg-[#FAFAF8]">
+      {/* Section 3 — Aides financières */}
+      <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
             Aides financières 2025 : MaPrimeRénov&apos;, CEE et TVA réduite
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les travaux d&apos;isolation ouvrent droit à plusieurs aides cumulables en 2025. La condition sine qua non : faire appel à un artisan certifié RGE (Reconnu Garant de l&apos;Environnement).
+            Plusieurs dispositifs permettent de réduire significativement le coût des travaux d&apos;isolation. Ils sont cumulables sous conditions.
           </p>
-          <div className="space-y-4 mb-6">
+          <div className="space-y-4 mb-8">
             {[
               {
-                aide: "MaPrimeRénov'",
-                montant: '25% à 75% du coût des travaux',
-                detail: "Subvention de l'ANAH versée après travaux. Montant selon profil de revenus (4 couleurs : bleu, jaune, violet, rose). À Paris, les plafonds de revenus sont majorés de 40% par rapport aux zones rurales. Cumulable avec les CEE. Demande à effectuer avant le début des travaux.",
+                type: 'MaPrimeRénov\' — selon couleur du ménage',
+                detail: 'L\'aide varie selon les revenus du ménage (4 catégories : bleu, jaune, violet, rose). Pour l\'isolation des murs (ITI) : jusqu\'à 75 €/m² pour les ménages très modestes (bleu), 40 €/m² pour les ménages modestes (jaune), 20 €/m² pour les classes moyennes (violet). Les ménages aisés (rose) ne sont plus éligibles à MaPrimeRénov\' geste par geste depuis 2024.',
+                montant: 'Jusqu\'à 75 €/m²',
               },
               {
-                aide: 'CEE (Certificats d\'Économies d\'Énergie)',
-                montant: '500 – 3 000 € selon travaux',
-                detail: "Prime versée par les fournisseurs d'énergie obligés (EDF, TotalEnergies, Engie...). Cumulable avec MaPrimeRénov'. Pour l'isolation des murs (BAR-EN-102) ou des fenêtres (BAR-EN-104), les montants restent significatifs en 2025.",
+                type: 'CEE — Certificats d\'Économies d\'Énergie',
+                detail: 'Les CEE permettent d\'obtenir une prime versée par les fournisseurs d\'énergie (EDF, Total Energies, Engie...) en échange de travaux d\'économies d\'énergie. Cumulables avec MaPrimeRénov\'. Pour l\'isolation des murs : 2 à 6 €/m² selon les offres. Démarche gratuite via des plateformes agréées ou directement auprès du fournisseur d\'énergie.',
+                montant: '2 – 6 €/m²',
               },
               {
-                aide: 'TVA à 5,5%',
-                montant: 'Au lieu de 10% ou 20%',
-                detail: "Taux réduit applicable sur les travaux d'amélioration de la performance énergétique réalisés par un professionnel sur un logement de plus de 2 ans. S'applique à la main d'oeuvre et aux matériaux sans démarche particulière.",
-              },
-              {
-                aide: 'Éco-PTZ (prêt à taux zéro)',
-                montant: "Jusqu'à 50 000 € sans intérêts",
-                detail: "Prêt sans intérêts pour financer les travaux de rénovation énergétique. Cumulable avec MaPrimeRénov'. Durée de remboursement jusqu'à 20 ans. Accessible sans condition de revenus pour les propriétaires occupants et bailleurs.",
+                type: 'TVA réduite à 5,5 %',
+                detail: 'Tous les travaux d\'isolation thermique réalisés dans un logement achevé depuis plus de 2 ans bénéficient automatiquement du taux réduit de TVA à 5,5 % (au lieu de 10 % pour la rénovation classique et 20 % en standard). Cette réduction s\'applique sur les matériaux ET la main d\'œuvre. Elle s\'applique de plein droit, sans demande préalable.',
+                montant: 'TVA 5,5 % auto',
               },
             ].map((el) => (
-              <div key={el.aide} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
                 <div className="flex items-start justify-between gap-4 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.aide}</div>
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
                   <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.montant}</div>
                 </div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
@@ -271,38 +216,61 @@ export default function ArticleIsolationThermique() {
         </div>
       </section>
 
-      {/* Section 5 — Budget */}
-      <section className="py-16 bg-white">
+      {/* Section 4 — Tableau des prix */}
+      <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix des travaux d&apos;isolation à Paris : tableau récapitulatif 2025
+            Tableau des prix d&apos;isolation thermique à Paris : 2025
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les prix s&apos;entendent main d&apos;oeuvre et matériaux, TVA à 5,5% incluse. Les aides (MaPrimeRénov&apos; + CEE) peuvent réduire le reste à charge de 30 à 70%.
+            Prix moyens constatés en Île-de-France, fourniture et pose incluses, hors aides.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
                   <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Travaux</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix brut</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Reste apres aides</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Gain DPE</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix unitaire</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Aide max (bleu)</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { travaux: 'ITI murs (laine de roche, 60 mm)', prix: '60 – 100 €/m²', reste: '20 – 50 €/m²', gain: '1 à 2 lettres' },
-                  { travaux: 'Double vitrage (remplacement châssis)', prix: '800 – 1 800 €/fenêtre', reste: '400 – 1 200 €/fenêtre', gain: '0,5 à 1 lettre' },
-                  { travaux: 'Survitrage (sans remplacement)', prix: '200 – 400 €/fenêtre', reste: '150 – 300 €/fenêtre', gain: '0,2 à 0,5 lettre' },
-                  { travaux: 'Isolation plancher bas', prix: '30 – 60 €/m²', reste: '10 – 30 €/m²', gain: '0,5 lettre' },
-                  { travaux: 'Traitement ponts thermiques', prix: '40 – 80 €/ml', reste: '20 – 50 €/ml', gain: 'Inclus dans murs' },
+                  {
+                    travaux: 'ITI murs extérieurs (laine de roche + BA13)',
+                    prix: '60 – 120 €/m²',
+                    aide: 'Jusqu\'à 75 €/m²',
+                  },
+                  {
+                    travaux: 'Fenêtre double vitrage (PVC)',
+                    prix: '400 – 650 €/unité',
+                    aide: 'Jusqu\'à 100 €/fenêtre',
+                  },
+                  {
+                    travaux: 'Fenêtre double vitrage (bois, imposé ABF)',
+                    prix: '650 – 900 €/unité',
+                    aide: 'Jusqu\'à 100 €/fenêtre',
+                  },
+                  {
+                    travaux: 'Plancher bas sur cave (XPS)',
+                    prix: '30 – 70 €/m²',
+                    aide: 'Jusqu\'à 20 €/m²',
+                  },
+                  {
+                    travaux: 'Isolation combles perdus (soufflage)',
+                    prix: '20 – 40 €/m²',
+                    aide: 'Jusqu\'à 25 €/m²',
+                  },
+                  {
+                    travaux: 'Survitrage collé (sans changement de cadre)',
+                    prix: '200 – 400 €/unité',
+                    aide: 'Non éligible',
+                  },
                 ].map((row, i) => (
                   <tr key={row.travaux} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
                     <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.travaux}</td>
                     <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prix}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.reste}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.gain}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.aide}</td>
                   </tr>
                 ))}
               </tbody>
@@ -311,16 +279,16 @@ export default function ArticleIsolationThermique() {
 
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Conseils pour bien piloter son projet d&apos;isolation
+              Points de vigilance pour l&apos;isolation dans un appartement parisien
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "Commencer par un audit énergétique pour identifier les postes de déperdition prioritaires",
-                "Déposer la demande MaPrimeRénov' avant le début des travaux — condition obligatoire",
-                "Choisir un artisan RGE — sans cette certification, les aides ne sont pas débloquées",
-                "Traiter les ponts thermiques en même temps que les murs pour ne pas annuler le bénéfice",
-                "Anticiper la ventilation : une maison bien isolée doit être bien ventilée (VMC double flux)",
-                "Dans un immeuble haussmannien, consulter l'ABF avant de choisir les nouvelles menuiseries",
+                'Vérifier si l\'immeuble est en secteur ABF avant de commander des fenêtres',
+                'Lire le règlement de copropriété : certains imposent une sous-couche acoustique sous le sol',
+                'Ne pas isoler les murs sans traiter la ventilation (risque de moisissures)',
+                'Faire réaliser un audit énergétique avant les travaux pour optimiser les aides',
+                'Faire appel à une entreprise certifiée RGE (obligatoire pour MaPrimeRénov\')',
+                'Déposer la demande de MaPrimeRénov\' avant le démarrage des travaux',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -333,12 +301,12 @@ export default function ArticleIsolationThermique() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -348,15 +316,15 @@ export default function ArticleIsolationThermique() {
       </section>
 
       {/* Voir aussi */}
-      <section className="py-12 bg-white border-t border-gray-100">
+      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/isolation-paris', title: 'Isolation Paris' },
               { href: '/blog/isolation-phonique-paris', title: 'Isolation phonique Paris' },
-              { href: '/blog/renovation-appartement-haussmannien', title: 'Rénovation appartement haussmannien' },
-              { href: '/blog/renovation-bureau-paris', title: 'Rénovation bureau Paris' },
+              { href: '/blog/renovation-maison-ancienne-paris', title: 'Rénovation maison ancienne Paris' },
+              { href: '/blog/isolation-combles-subvention-paris', title: 'Isolation combles Paris' },
+              { href: '/blog/renovation-fenetre-paris', title: 'Rénovation fenêtre Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -371,19 +339,19 @@ export default function ArticleIsolationThermique() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
               { href: '/renovation-paris-8e', label: 'Paris 8e' },
               { href: '/renovation-paris-9e', label: 'Paris 9e' },
-              { href: '/renovation-paris-10e', label: 'Paris 10e' },
-              { href: '/renovation-paris-11e', label: 'Paris 11e' },
+              { href: '/renovation-paris-15e', label: 'Paris 15e' },
+              { href: '/renovation-paris-17e', label: 'Paris 17e' },
               { href: '/renovation-levallois-perret', label: 'Levallois' },
+              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly' },
               { href: '/renovation-courbevoie', label: 'Courbevoie' },
-              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
-              { href: '/renovation-pantin', label: 'Pantin' },
+              { href: '/renovation-boulogne-billancourt', label: 'Boulogne' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -400,10 +368,10 @@ export default function ArticleIsolationThermique() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Isolez votre appartement parisien et améliorez votre DPE
+          Améliorez le DPE de votre appartement parisien
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Artisan RGE. Devis gratuit sous 48h. Nous gérons les dossiers d&apos;aides MaPrimeRénov&apos; pour vous.
+          Artisan certifié RGE. Aide au montage MaPrimeRénov&apos;. Devis gratuit sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

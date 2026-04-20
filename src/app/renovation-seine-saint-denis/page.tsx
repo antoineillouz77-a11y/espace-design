@@ -59,6 +59,7 @@ const villes93 = [
   { href: '/renovation-le-blanc-mesnil', label: 'Le Blanc-Mesnil' },
   { href: '/renovation-pierrefitte-sur-seine', label: 'Pierrefitte-sur-Seine' },
   { href: '/renovation-stains', label: 'Stains' },
+  { href: '/renovation-la-courneuve', label: 'La Courneuve' },
 ]
 
 const services = [

@@ -207,11 +207,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/choisir-carrelage-salle-de-bain`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-parquet-massif-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-cuisine-americaine-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-paris-4e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Seine-Saint-Denis (93) — le-blanc-mesnil, pierrefitte, stains
     { url: `${base}/renovation-le-blanc-mesnil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-pierrefitte-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-stains`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-la-courneuve`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Yvelines (78) — autres villes
     { url: `${base}/renovation-sartrouville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

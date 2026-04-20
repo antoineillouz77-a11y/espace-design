@@ -684,6 +684,12 @@ const articles = [
     desc: "Aménager une cuisine américaine à Paris : mur porteur, IPN, hotte sans gaine. Copropriété, budget et artisan 2025.",
     tag: 'Cuisine',
   },
+  {
+    href: '/blog/renovation-appartement-paris-4e',
+    title: 'Rénovation Appartement Paris 4e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 4e arrondissement de Paris : Marais, Île Saint-Louis, Beaubourg. ABF, parquet, moulures. Devis 48h.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {
