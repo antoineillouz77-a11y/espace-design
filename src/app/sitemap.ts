@@ -502,6 +502,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-paris-9e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/renovation-paris-10e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/renovation-paris-12e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-appartement-paris-9e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-appartement-paris-10e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-appartement-paris-12e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
 
     // Seine-Saint-Denis (93) — vague 9
     { url: `${base}/renovation-livry-gargan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
