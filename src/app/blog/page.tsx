@@ -540,6 +540,18 @@ const articles = [
     desc: "Mettre aux normes l'électricité d'un appartement à Paris : tableau, prises, éclairage. Prix et artisan RGE. Devis gratuit 48h.",
     tag: 'Électricité',
   },
+  {
+    href: '/blog/plomberie-renovation-paris',
+    title: 'Plomberie Rénovation Paris : remplacement tuyaux, chasse & prix 2025',
+    desc: "Rénover la plomberie d'un appartement à Paris : tuyaux plomb, chasse d'eau, siphon, robinetterie. Prix artisan plombier 2025.",
+    tag: 'Plomberie',
+  },
+  {
+    href: '/blog/renovation-4-pieces-paris',
+    title: 'Rénovation 4 Pièces Paris : budget, planning & conseils 2025',
+    desc: "Budget rénovation 4 pièces à Paris : de 80 000 à 160 000 € selon les finitions. Tableau des postes, exemple clé en main, délais.",
+    tag: 'Prix & Budgets',
+  },
 ]
 
 export default function BlogPage() {

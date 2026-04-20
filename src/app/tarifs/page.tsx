@@ -308,6 +308,10 @@ export default function TarifsPage() {
               { href: '/blog/renovation-3-pieces-paris', label: 'Budget 3 pièces Paris' },
               { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
               { href: '/blog/menuiserie-sur-mesure-paris', label: 'Prix menuiserie sur mesure' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Budget salle de bain détaillé' },
+              { href: '/blog/renovation-4-pieces-paris', label: 'Budget 4 pièces Paris' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénovation avant vente' },
+              { href: '/blog/devis-renovation-en-ligne-paris', label: 'Comment obtenir un bon devis' },
             ].map((l) => (
               <Link
                 key={l.href}
