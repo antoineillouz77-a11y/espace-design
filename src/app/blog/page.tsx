@@ -552,6 +552,24 @@ const articles = [
     desc: "Budget rénovation 4 pièces à Paris : de 80 000 à 160 000 € selon les finitions. Tableau des postes, exemple clé en main, délais.",
     tag: 'Prix & Budgets',
   },
+  {
+    href: '/blog/creation-cloison-separation-paris',
+    title: 'Créer une Cloison de Séparation Paris : pose, isolation & prix 2025',
+    desc: 'Créer une cloison pour séparer deux espaces à Paris : cloison placo, vitrage, coulissante. Prix et démarches artisan 2025.',
+    tag: 'Plâtrerie',
+  },
+  {
+    href: '/blog/parquet-flottant-vs-colle-paris',
+    title: 'Parquet Flottant vs Collé Paris : quel choix pour votre appartement 2025',
+    desc: 'Parquet flottant ou collé à Paris ? Avantages, inconvénients, isolation acoustique, prix. Guide complet artisan 2025.',
+    tag: 'Parquet',
+  },
+  {
+    href: '/blog/renovation-salle-de-bain-prix-paris',
+    title: 'Prix Rénovation Salle de Bain Paris : budget détaillé 2025',
+    desc: 'Budget pour rénover une salle de bain à Paris : carrelage, douche, vasque, plomberie. Prix détaillés par poste artisan 2025.',
+    tag: 'Prix & Budgets',
+  },
 ]
 
 export default function BlogPage() {

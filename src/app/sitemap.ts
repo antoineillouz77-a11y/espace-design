@@ -185,6 +185,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/travaux-electricite-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/plomberie-renovation-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-4-pieces-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/creation-cloison-separation-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/parquet-flottant-vs-colle-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-salle-de-bain-prix-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

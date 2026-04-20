@@ -8,15 +8,15 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Devis Rénovation Paris', item: 'https://espacedesignparis.fr/blog/devis-renovation-en-ligne-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Devis Rénovation en Ligne Paris', item: 'https://espacedesignparis.fr/blog/devis-renovation-en-ligne-paris' },
   ],
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Devis Rénovation Paris : comment obtenir un bon devis en 2025 | Espace Design',
-  description: 'Obtenir un devis de rénovation à Paris : comment comparer artisans, questions à poser, pièges à éviter. Guide pratique 2025.',
+  headline: 'Devis Rénovation en Ligne Paris : comment obtenir & comparer 2025 | Espace Design',
+  description: 'Obtenir un devis rénovation à Paris : que doit contenir un bon devis, comment comparer, pièges à éviter. Guide artisan 2025.',
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,37 +33,37 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Combien de devis demander pour une rénovation à Paris ?',
+      name: 'Que doit obligatoirement contenir un devis de rénovation à Paris ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le minimum recommandé est 3 devis pour toute rénovation dépassant 3 000 €. Pour des travaux importants (15 000 € et plus), demandez 4 à 5 devis. Pourquoi 3 minimum ? Le premier devis vous donne une référence de prix, le deuxième permet de valider ou d'infirmer cette référence, le troisième révèle les écarts importants qui signalent soit une sous-traitance à prévoir, soit une incompréhension du cahier des charges. À Paris, les écarts de prix entre artisans peuvent atteindre 40 à 80 % pour des prestations identiques — comparer est indispensable.",
+        text: "Un devis de rénovation valide doit obligatoirement mentionner : les coordonnées complètes de l'artisan (raison sociale, SIRET, assurance décennale), la date d'émission et la durée de validité du devis, la description détaillée de chaque prestation avec le détail fourniture et main d'oeuvre séparés, les quantités et unités (m², ml, forfait), le montant HT et TTC avec le taux de TVA applicable (10% pour la rénovation, 20% pour les constructions neuves), et le délai prévisionnel d'exécution des travaux.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel délai pour recevoir un devis de rénovation à Paris ?',
+      name: 'Comment comparer plusieurs devis de rénovation sans se faire piéger ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Un artisan sérieux répond à une demande de devis sous 7 à 14 jours ouvrables. Un devis bâclé reçu en 24h sans visite du chantier est un signal d'alarme — un bon devis nécessite une visite sur place pour mesurer et évaluer correctement l'état du support. Si vous n'avez pas de retour sous 3 semaines, l'artisan n'est probablement pas disponible dans votre délai souhaité. En haute saison (mai-septembre à Paris), les carnets de commandes sont pleins et certains artisans refusent de nouveaux chantiers — prévoir 3 à 6 mois à l'avance.",
+        text: "Pour comparer correctement des devis de rénovation parisiens : vérifiez que chaque poste est décrit de façon identique (même matériaux, mêmes surfaces), méfiez-vous du moins-disant qui peut omettre des prestations essentielles (dépose, évacuation des gravats, protection des sols), vérifiez que les matériaux sont nommés précisément (marque, référence, épaisseur), et assurez-vous que chaque artisan est couvert par une assurance décennale et une garantie de parfait achèvement. Un devis 30% moins cher que les autres est souvent un signal d'alerte.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Un devis de rénovation est-il gratuit à Paris ?',
+      name: 'Quelle est la différence entre arrhes et acompte dans un devis travaux ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, le devis de rénovation est légalement gratuit en France, sauf si l'artisan vous l'indique explicitement à l'avance (ce qui est très rare). En pratique, la visite sur place est incluse dans la démarche de devis sans facturation. Certains architectes d'intérieur ou maîtres d'oeuvre peuvent facturer une prestation de conseil ou d'esquisse en amont de la réalisation du devis — c'est une pratique normale et légitime qui doit être annoncée clairement. Pour un artisan (peintre, carreleur, plombier), la visite et le devis sont systématiquement gratuits.",
+        text: "Les arrhes et l'acompte ont des régimes juridiques opposés. Les arrhes permettent à chaque partie de renoncer au contrat : le client perd ses arrhes s'il se désiste, l'artisan rembourse le double s'il annule. L'acompte, en revanche, engage définitivement les deux parties : le contrat est formé dès le versement. Pour des travaux de rénovation, l'acompte est la pratique standard. Un acompte de 30% au démarrage est courant et protège l'artisan pour l'achat des matériaux. Ne jamais verser plus de 30% avant le démarrage des travaux.",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Devis Rénovation Paris : comment obtenir un bon devis en 2025 | Espace Design',
-  description: 'Obtenir un devis de rénovation à Paris : comment comparer artisans, questions à poser, pièges à éviter. Guide pratique 2025.',
+  title: 'Devis Rénovation en Ligne Paris : comment obtenir & comparer 2025 | Espace Design',
+  description: 'Obtenir un devis rénovation à Paris : que doit contenir un bon devis, comment comparer, pièges à éviter. Guide artisan 2025.',
 }
 
-export default function ArticleDevisRenovation() {
+export default function ArticleDevisRenovationEnLigne() {
   return (
     <>
       <script
@@ -83,41 +83,48 @@ export default function ArticleDevisRenovation() {
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Prix &amp; Budgets
+            Conseils
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Devis Rénovation Paris : comment obtenir un bon devis en 2025
+            Devis Rénovation en Ligne Paris : comment obtenir et comparer 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Obtenir un devis de rénovation à Paris sans se faire piéger demande de la méthode. Nombre de devis à comparer, éléments à vérifier, questions à poser à l&apos;artisan, red flags à identifier : guide pratique complet pour bien choisir votre prestataire en 2025.
+            Obtenir un devis de rénovation à Paris n&apos;est pas difficile — le comprendre et le comparer correctement, c&apos;est une autre histoire. Que doit contenir un bon devis ? Comment détecter un devis incomplet ou trompeur ? Guide complet pour éviter les pièges et choisir le bon artisan en 2025.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Nombre de devis */}
+      {/* Section 1 */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Combien de devis demander et comment organiser la consultation ?
+              Les éléments indispensables d&apos;un devis de rénovation à Paris
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              À Paris, le marché artisanal est très hétérogène : les écarts de prix entre entreprises peuvent atteindre 50 à 80 % pour des prestations identiques. Comparer sérieusement est la seule façon d&apos;éviter de payer trop cher — ou de choisir un prestataire sous-dimensionné pour votre chantier.
+              Un devis de rénovation n&apos;est pas un simple chiffrage — c&apos;est un document contractuel qui engage l&apos;artisan. En France, le devis doit respecter des mentions légales obligatoires. À Paris, où les chantiers sont souvent complexes (copropriété, appartements anciens, accès difficile), un devis détaillé est votre meilleure protection.
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+              Un devis vague avec des formules comme &quot;rénovation complète appartement — forfait 15 000 €&quot; ne vaut rien juridiquement. En cas de litige, vous ne pourrez pas prouver ce qui était inclus ou non.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: '3 devis minimum (obligatoire au-dessus de 3 000 €)',
-                  detail: 'Trois devis permettent d\'identifier la médiane de marché, de repérer les prestataires qui se sous-évaluent (risque de malfaçon ou de surcoûts en cours de chantier) et ceux qui surfacturent. Pour des travaux entre 3 000 et 15 000 €, 3 devis sont suffisants. Pour les chantiers importants, 4 à 5 prestataires consultés permettent une comparaison encore plus robuste.',
+                  enjeu: "Identification de l'artisan",
+                  detail: "Raison sociale, adresse, numéro SIRET, numéro d'assurance décennale avec nom de l'assureur et numéro de police. Sans ces informations, impossible de vérifier la légalité de l'entreprise ni de faire jouer les garanties en cas de problème après travaux.",
                 },
                 {
-                  enjeu: 'Remettre un cahier des charges écrit à chaque artisan',
-                  detail: 'Pour comparer des devis, il faut que tous les artisans consultés aient répondu au même besoin. Préparez un document décrivant précisément les travaux : surface à traiter, matériaux souhaités, contraintes d\'accès, calendrier souhaité. Sans ce document, chaque artisan interprétera différemment le chantier et les devis seront incomparables.',
+                  enjeu: 'Description détaillée de chaque prestation',
+                  detail: "Chaque poste doit détailler : nature exacte des travaux, matériaux utilisés (marque, référence, épaisseur), quantités précises (m², ml, unité), et distinction fourniture / pose. Exemple : \"Pose parquet stratifié AC4 — 12 mm — fourniture + pose : 65 €/m² — surface : 45 m²\".",
                 },
                 {
-                  enjeu: 'Imposer une visite sur place avant le devis',
-                  detail: 'Refusez tout devis établi sans visite du chantier. Sans visite, l\'artisan ne peut pas évaluer l\'état du support, les contraintes d\'accès (étage, ascenseur, monte-charge), les éventuels travaux préparatoires nécessaires. Un devis sans visite est incomplet et constitue souvent un premier prix d\'appel qui sera majoré en cours de chantier.',
+                  enjeu: 'Prix HT, TVA et TTC',
+                  detail: "Le taux de TVA applicable dépend de la nature des travaux : 10% pour la rénovation de logements de plus de 2 ans, 20% pour les constructions neuves et certains travaux d'amélioration. Le devis doit mentionner le taux appliqué à chaque ligne pour que vous puissiez vérifier sa cohérence.",
+                },
+                {
+                  enjeu: "Délai d'exécution et conditions de paiement",
+                  detail: "Date de début des travaux, durée prévisionnelle, jalons de paiement (acompte au démarrage, appels de fonds à l'avancement, solde à la réception). Un échéancier clair protège les deux parties et permet un suivi rigoureux du chantier.",
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -130,42 +137,42 @@ export default function ArticleDevisRenovation() {
         </div>
       </section>
 
-      {/* Section 2 — Éléments d'un bon devis */}
+      {/* Section 2 */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Les éléments d&apos;un bon devis de rénovation
+            Comment comparer des devis de rénovation parisiens sans se tromper
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Un devis professionnel et complet doit permettre de comprendre exactement ce qui est inclus et ce qui ne l&apos;est pas. Un devis vague ou en forfait global sans détail est un signal d&apos;alarme important.
+            Comparer des devis de rénovation est un exercice délicat : deux devis au même prix peuvent cacher des prestations très différentes. Voici les points de vigilance essentiels pour une comparaison fiable.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Détail poste par poste',
-                solution: 'Chaque type de travail doit apparaître sur une ligne distincte avec quantité (m², unité, ml), prix unitaire et prix total. Ex : "Peinture murs : 45 m² × 18 €/m² = 810 €". Cette décomposition permet de comparer artisan par artisan et d\'identifier les postes où l\'un est moins cher que l\'autre.',
-                obligatoire: 'Obligatoire',
+                titre: 'Attention au moins-disant',
+                solution: "Un devis 30 à 40% moins cher que la concurrence cache presque toujours quelque chose : matériaux bon marché non mentionnés, prestations omises (dépose, évacuation des gravats, protection des sols), ou main d'oeuvre non déclarée. Le moins-disant est rarement une bonne affaire sur un chantier parisien.",
+                cout: "Signal d'alerte",
               },
               {
-                titre: 'TVA mentionnée et calculée',
-                solution: 'Vérifiez le taux de TVA appliqué : 10 % pour les travaux d\'amélioration dans un logement de plus de 2 ans, 20 % pour les constructions neuves ou extensions. Un artisan qui propose un devis HT sans TVA alors que votre bien est éligible à 10 % peut vous induire en erreur sur le prix final.',
-                obligatoire: 'Légalement requis',
+                titre: 'Vérifier le périmètre exact',
+                solution: "Chaque artisan inclut ou exclut des postes différents. L'un inclut l'évacuation des gravats, l'autre non. L'un inclut les finitions (baguettes, plinthes, joints), l'autre non. Toujours lister les exclusions explicites et les comparer entre devis avant de conclure.",
+                cout: 'Point critique',
               },
               {
-                titre: 'Délais et planning indicatif',
-                solution: 'Un bon devis mentionne la durée prévisionnelle du chantier et la date de démarrage souhaitée. Sans engagement de délai, vous n\'avez aucun levier si le chantier traîne. Exigez une mention de pénalités de retard pour les chantiers importants.',
-                obligatoire: 'Fortement recommandé',
+                titre: 'Identifier les matériaux précisément',
+                solution: 'Un devis doit nommer les matériaux : "peinture acrylique mate" est insuffisant. Pour les revêtements de sol, exiger la marque, la référence et les caractéristiques techniques (classe d\'usure, épaisseur). La précision des matériaux garantit la qualité finale.',
+                cout: 'Point critique',
               },
               {
-                titre: 'Références assurances',
-                solution: 'Le devis ou les documents annexes doivent mentionner : numéro de SIRET, assurance responsabilité civile professionnelle, assurance décennale pour les travaux de bâtiment. Sans ces éléments, vous n\'avez aucun recours en cas de dommage. Vérifiez la validité de l\'attestation décennale sur le site de l\'assureur.',
-                obligatoire: 'Indispensable',
+                titre: "Vérifier l'assurance décennale",
+                solution: "L'assurance décennale couvre les dommages structurels pendant 10 ans après la réception des travaux. Sans elle, vous n'avez aucun recours en cas de malfaçon grave. Demandez la copie de l'attestation et vérifiez qu'elle couvre bien les travaux prévus.",
+                cout: 'Obligatoire',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.obligatoire}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
               </div>
@@ -174,36 +181,36 @@ export default function ArticleDevisRenovation() {
         </div>
       </section>
 
-      {/* Section 3 — Questions à poser */}
+      {/* Section 3 */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Questions à poser à l&apos;artisan lors de la visite
+            Arrhes, acompte et garanties légales : ce que vous devez savoir
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            La visite de devis est l&apos;occasion d&apos;évaluer non seulement le prix mais aussi la sérieux, l&apos;expérience et la fiabilité de l&apos;artisan. Ces questions vous permettront de faire la différence entre un prestataire de qualité et un opportuniste.
+            Avant de signer un devis de rénovation à Paris, comprendre les notions d&apos;arrhes, d&apos;acompte et de garanties légales vous permettra d&apos;éviter des litiges coûteux et de connaître vos droits en cas de problème.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Sur l\'expérience et les références',
-                prix: 'Évaluation qualitative',
-                detail: '"Avez-vous des références de chantiers similaires à Paris ?" / "Pouvez-vous me montrer des photos de réalisations récentes ?" / "Depuis combien d\'années exercez-vous ?" Un artisan solide propose spontanément ses références. Un refus de communiquer des exemples de travaux passés est un signal d\'alerte.',
+                type: 'Arrhes vs acompte',
+                prix: 'Distinction juridique clé',
+                detail: "Les arrhes permettent à chacun de renoncer au contrat (le client perd ses arrhes, l'artisan rembourse le double). L'acompte engage définitivement les deux parties. Dans la rénovation, l'acompte est la pratique standard. Ne jamais verser plus de 30% avant le démarrage des travaux.",
               },
               {
-                type: 'Sur l\'assurance décennale',
-                prix: 'Vérification obligatoire',
-                detail: '"Pouvez-vous me remettre une attestation d\'assurance décennale à jour ?" L\'attestation doit mentionner les travaux couverts (peinture, carrelage, plomberie, etc.), la période de validité, et le nom de l\'assureur. Vérifiez en appelant l\'assureur que la police est bien active. Refus ou hésitation = refus de ce prestataire.',
+                type: 'Délai de rétractation',
+                prix: '14 jours',
+                detail: "Pour tout contrat signé à votre domicile (devis signé lors d'une visite), vous bénéficiez d'un délai de rétractation de 14 jours sans pénalité (loi Hamon). L'artisan doit vous remettre un formulaire de rétractation. Pour les devis signés en agence ou par voie électronique, vérifiez les conditions du contrat.",
               },
               {
-                type: 'Sur la sous-traitance',
-                prix: 'Transparence requise',
-                detail: '"Allez-vous sous-traiter une partie des travaux ?" Si oui, qui, et à quel taux ? La sous-traitance n\'est pas un problème en soi — les grands chantiers l\'utilisent systématiquement. Mais vous devez savoir qui interviendra dans votre logement. Un artisan qui refuse de répondre à cette question clairement mérite d\'être écarté.',
+                type: 'Garantie de parfait achèvement',
+                prix: '1 an',
+                detail: "Pendant 1 an après la réception des travaux, l'artisan est tenu de corriger gratuitement tous les désordres signalés par le client. Cette garantie couvre les malfaçons visibles et les défauts de conformité signalés à la réception ou notifiés par courrier recommandé dans l'année suivante.",
               },
               {
-                type: 'Sur le calendrier et les impératifs',
-                prix: 'Planning chantier',
-                detail: '"Quelle est votre disponibilité ?" / "Combien d\'équipes interviendront en même temps ?" / "Comment gérez-vous les inévitables aléas de chantier (découverte de dégâts cachés, délai fournisseur) ?" Un artisan expérimenté a une réponse claire à ces questions — il les gère régulièrement.',
+                type: 'Garantie décennale',
+                prix: '10 ans',
+                detail: "La garantie décennale couvre les dommages compromettant la solidité de l'ouvrage ou le rendant impropre à sa destination (fissures structurelles, infiltrations, effondrement). Elle est obligatoire pour tous les artisans du bâtiment intervenant sur le gros oeuvre, l'étanchéité et les éléments indissociables.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -218,115 +225,27 @@ export default function ArticleDevisRenovation() {
         </div>
       </section>
 
-      {/* Section 4 — Red flags et délais */}
+      {/* Section 4 — Checklist */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Red flags à éviter et délais de réponse attendus
+            Checklist : les 10 points à vérifier avant de signer un devis
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le marché parisien de la rénovation est traversé par de nombreux prestataires peu scrupuleux. Ces signaux d&apos;alarme vous permettront d&apos;éviter les mauvaises surprises avant même de signer.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-            <div>
-              <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-3">Signaux d&apos;alarme</h3>
-              <div className="space-y-3">
-                {[
-                  'Devis anormalement bas (30-40 % sous les autres) — sous-évaluation ou matériaux de mauvaise qualité',
-                  'Demande de paiement en espèces ou acompte total avant démarrage',
-                  'Pas d\'assurance décennale ou refus de la communiquer',
-                  'Devis sans visite du chantier ni mesures précises',
-                  'Pression pour signer rapidement ("offre valable 48h")',
-                  'Absence de SIRET ou numéro de TVA non vérifiable',
-                  'Réponse en moins de 24h sans visite — devis générique non personnalisé',
-                  'Démarchage à domicile non sollicité',
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                    <div className="w-3.5 h-3.5 rounded-full border border-red-300 flex-shrink-0 mt-0.5" />
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-3">Bons signes</h3>
-              <div className="space-y-3">
-                {[
-                  'Visite sur place proposée spontanément avant le devis',
-                  'Attestation décennale remise sans hésitation',
-                  'Devis détaillé poste par poste avec quantités et prix unitaires',
-                  'Références clients disponibles sur demande',
-                  'Délai de réponse devis : 7-14 jours (signe qu\'il est bien chargé)',
-                  'Demande d\'acompte de 20-30 % maximum au démarrage',
-                  'Mention claire des travaux non inclus et des éventuels suppléments',
-                  'Artisan posant des questions sur vos contraintes et votre calendrier',
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                    <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-            Délais habituels pour un devis de rénovation à Paris
-          </h3>
-          <div className="grid grid-cols-1 gap-3">
-            {[
-              {
-                niveau: 'Petits travaux (peinture, carrelage)',
-                prestations: 'Visite rapide, devis court.',
-                delai: '5 – 10 jours ouvrables',
-              },
-              {
-                niveau: 'Rénovation partielle (cuisine ou SDB)',
-                prestations: 'Visite détaillée, plans et calculs.',
-                delai: '10 – 15 jours ouvrables',
-              },
-              {
-                niveau: 'Rénovation complète d\'appartement',
-                prestations: 'Plusieurs visites, métrés, consultation fournisseurs.',
-                delai: '15 – 21 jours ouvrables',
-              },
-              {
-                niveau: 'Chantier multi-corps d\'état',
-                prestations: 'Coordination de plusieurs artisans, planning global.',
-                delai: '3 – 5 semaines',
-              },
-            ].map((row) => (
-              <div key={row.niveau} className="bg-white rounded-lg p-4 border border-gray-100 flex gap-4 items-start">
-                <div className="flex-1">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-1">{row.niveau}</div>
-                  <div className="text-gray-600 text-xs font-light">{row.prestations}</div>
-                </div>
-                <div className="text-[#B8960C] text-sm font-semibold flex-shrink-0 text-right">{row.delai}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5 — Comment comparer */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Comment comparer efficacement les devis reçus
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Comparer des devis de rénovation n&apos;est pas aussi simple que comparer le total final. Un devis moins cher peut inclure des matériaux bas de gamme ou exclure des travaux que les autres ont intégrés. Voici la méthode pour une comparaison rigoureuse.
+            Avant de signer votre devis de rénovation parisien, passez cette checklist en revue. Chaque point manquant est une raison de demander une précision ou un avenant avant de vous engager.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              'Créer un tableau comparatif poste par poste — ne comparez jamais seulement le total',
-              'Vérifier que chaque devis inclut les mêmes prestations (dépose, évacuation déchets, protection des sols)',
-              'Comparer les marques et références de matériaux — une peinture haut de gamme coûte 3x plus qu\'une entrée de gamme',
-              'Demander des précisions écrites sur les postes flous ("fournitures comprises" — lesquelles ?)',
-              'Vérifier les conditions de paiement : éviter les artisans demandant 50 % ou plus d\'acompte',
-              'Ne pas choisir automatiquement le moins cher — prendre le meilleur rapport qualité/prix/références',
-              'Négocier sans honte : 5 à 10 % de marge est habituelle, au-delà vous risquez de dégrader la qualité',
-              'Exiger que les modifications négociées soient inscrites par écrit avant signature',
+              'SIRET et assurance décennale présents et vérifiables',
+              'Chaque prestation décrite avec matériaux, quantités et unités',
+              'Fourniture et main d\'oeuvre détaillées séparément',
+              'TVA à 10% appliquée (rénovation de plus de 2 ans)',
+              "Délai d'exécution et date de démarrage mentionnés",
+              'Acompte inférieur ou égal à 30% du montant total',
+              'Modalités de paiement et jalons définis',
+              'Exclusions et travaux non prévus listés explicitement',
+              'Durée de validité du devis précisée (généralement 3 mois)',
+              'Délai de rétractation mentionné si signature à domicile',
             ].map((item) => (
               <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                 <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -358,10 +277,11 @@ export default function ArticleDevisRenovation() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
+              { href: '/blog/budget-renovation-paris-2025', title: 'Budget rénovation Paris 2025' },
+              { href: '/blog/choisir-artisan-renovation-paris', title: 'Choisir son artisan à Paris' },
               { href: '/blog/renovation-avant-vente-paris', title: 'Rénovation avant vente Paris' },
-              { href: '/blog/peinture-beton-cire-paris', title: 'Béton ciré Paris' },
-              { href: '/blog/renovation-cuisine-studio-paris', title: 'Cuisine studio Paris' },
-              { href: '/blog/renovation-bureau-paris', title: 'Rénovation bureau Paris' },
+              { href: '/contact', title: 'Obtenir un devis gratuit' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -405,17 +325,17 @@ export default function ArticleDevisRenovation() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Obtenez un devis rénovation sérieux à Paris
+          Obtenez un devis de rénovation détaillé à Paris
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Visite sur place gratuite. Devis détaillé poste par poste sous 10 jours. Assurance décennale incluse.
+          Devis gratuit et détaillé sous 48h. Descriptif poste par poste. Artisan certifié, assurance décennale incluse.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact"
             className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-black transition-colors"
           >
-            Demander un devis <ArrowRight size={13} />
+            Devis gratuit <ArrowRight size={13} />
           </Link>
           <a
             href="tel:+33611783867"

@@ -4,17 +4,16 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Versailles — Artisan & Devis Gratuit | Espace Design',
+  title: 'Rénovation Poissy — Artisan & Devis Gratuit | Espace Design',
   description:
-    'Artisan rénovateur à Versailles (78000) : maisons de ville, appartements bourgeois, immeubles de standing proches château. Rénovation 800-3000€/m². Devis gratuit 48h.',
+    'Artisan rénovateur à Poissy (78300) : pavillons des années 60-80, maisons individuelles, résidences collectives. Rénovation complète. Devis gratuit sous 48h.',
   keywords: [
-    'rénovation appartement Versailles',
-    'artisan rénovation Versailles',
-    'décoration intérieure Versailles',
-    'renovation Versailles 78000',
-    'entreprise renovation Versailles',
-    'artisan Versailles Yvelines',
-    'rénovation appartement prestige Versailles',
+    'rénovation Poissy',
+    'artisan Poissy',
+    'rénovation appartement Poissy',
+    'prix rénovation Poissy',
+    'entreprise rénovation Poissy 78300',
+    'artisan rénovation Yvelines',
   ],
 }
 
@@ -22,23 +21,23 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Versailles.',
+  description: 'Artisan rénovateur à Poissy, dans les Yvelines.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-versailles',
-  areaServed: {
-    '@type': 'AdministrativeArea',
-    name: 'Versailles',
-  },
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Versailles',
-    postalCode: '78000',
-    addressCountry: 'FR',
-  },
+  url: 'https://espacedesignparis.fr/renovation-poissy',
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
     reviewCount: '47',
+  },
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: 'Poissy',
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Poissy',
+    postalCode: '78300',
+    addressCountry: 'FR',
   },
 }
 
@@ -48,34 +47,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Versailles ?',
+      name: 'Quel est le prix d\'une rénovation à Poissy ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Versailles varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les appartements de prestige et les maisons bourgeoises proches du château, comptez 1 500 à 3 000 €/m². Devis gratuit sous 48h.',
+        text: 'Le prix d\'une rénovation à Poissy varie entre 700 et 1 400 €/m² pour une rénovation complète selon l\'état du logement et les matériaux. Pour un appartement en résidence collective, comptez 800 à 1 200 €/m². Contactez-nous pour un devis gratuit sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel artisan contacter pour rénover un appartement à Versailles ?',
+      name: 'Avez-vous un artisan disponible à Poissy ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Espace Design intervient régulièrement à Versailles pour des rénovations dans les immeubles de standing et les maisons de ville. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur.',
+        text: 'Oui, Espace Design intervient régulièrement à Poissy et dans toutes les Yvelines. Déplacement gratuit et sans engagement, réponse sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment rénover un appartement de prestige à Versailles ?',
+      name: 'Rénovation appartement à Poissy : par où commencer ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pour les appartements de prestige à Versailles, nous recommandons des matériaux nobles : parquet en point de Hongrie, marbre, boiseries sur mesure, peinture à la chaux. Chaque projet est traité sur mesure avec un suivi rigoureux.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Avez-vous une assurance décennale ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
+        text: 'Tout commence par une visite gratuite sur place. Patrick évalue l\'état du logement, définit les priorités et vous remet un devis détaillé. Rénovation complète, salle de bain, cuisine ou simple rafraîchissement — nous adaptons le projet à votre budget.',
       },
     },
   ],
@@ -87,11 +78,11 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Rénovation Yvelines', item: 'https://espacedesignparis.fr/renovation-yvelines' },
-    { '@type': 'ListItem', position: 3, name: 'Versailles', item: 'https://espacedesignparis.fr/renovation-versailles' },
+    { '@type': 'ListItem', position: 3, name: 'Poissy', item: 'https://espacedesignparis.fr/renovation-poissy' },
   ],
 }
 
-export default function RenovationVersailles() {
+export default function RenovationPoissy() {
   return (
     <>
       <script
@@ -109,13 +100,13 @@ export default function RenovationVersailles() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Versailles — 78000</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Poissy — 78300</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Versailles
+            Rénovation appartement<br className="hidden sm:block" /> Poissy
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Versailles (78000) : maisons de ville, immeubles de standing, appartements bourgeois proches du château. Rénovation complète et finitions de prestige. Devis gratuit sous 48h.
+            Artisan rénovateur à Poissy (78300). Spécialiste des pavillons des années 60-80, maisons individuelles et résidences collectives. Rénovation complète, cuisine, salle de bain, finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -138,13 +129,13 @@ export default function RenovationVersailles() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Versailles
+            Nos services à Poissy
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation patrimoniale', desc: 'Restauration des éléments d\'origine — moulures, parquets anciens, cheminées — tout en modernisant le confort de votre appartement à Versailles.' },
-              { num: '02', title: 'Décoration intérieure', desc: 'Agencement sur-mesure dans le respect du caractère historique des lieux — matériaux nobles, harmonie classique ou contemporaine.' },
-              { num: '03', title: 'Finitions de prestige', desc: 'Boiseries, parquet en point de Hongrie, salle de bain en marbre, peinture à la chaux. L\'artisanat d\'exception au service de votre bien versaillais.' },
+              { num: '01', title: 'Rénovation complète', desc: 'Rénovation totale de pavillons et appartements : gros oeuvre, électricité, plomberie, cloisons, finitions. Un seul artisan du début à la fin.' },
+              { num: '02', title: 'Cuisine & salle de bain', desc: 'Cuisine équipée sur mesure et salle de bain rénovée. Conception, pose, plomberie, carrelage et faïences inclus.' },
+              { num: '03', title: 'Rafraîchissement & finitions', desc: 'Peinture, parquet, carrelage, menuiserie. Pour redonner vie à votre intérieur sans tout casser.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -157,47 +148,13 @@ export default function RenovationVersailles() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Versailles
-          </h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
-              <thead>
-                <tr className="bg-[#F2F2EE]">
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {[
-                  ['Peinture appartement', '30 - 70 €/m²'],
-                  ['Rénovation salle de bain', '4 000 - 15 000 €'],
-                  ['Rénovation cuisine', '5 000 - 20 000 €'],
-                  ['Parquet (pose + fourniture)', '50 - 110 €/m²'],
-                  ['Rénovation complète', '800 - 1 500 €/m²'],
-                  ['Rénovation prestige', '1 500 - 3 000 €/m²'],
-                ].map(([label, price]) => (
-                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
-                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
-                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-gray-400 text-xs font-light mt-3">Tarifs indicatifs — devis gratuit personnalisé sous 48h.</p>
-        </div>
-      </section>
-
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Salle de bain mosaïque bleue — rénovation appartement prestige Versailles 78000" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/18-salon-renovation-complete.jpg" alt="Salon rénové avec finitions soignées — rénovation appartement Poissy" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -208,7 +165,7 @@ export default function RenovationVersailles() {
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              "15+ ans d'expérience",
+              '15+ ans d\'expérience',
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -230,20 +187,16 @@ export default function RenovationVersailles() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Versailles ?',
-                a: 'Le coût d\'une rénovation à Versailles varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les appartements de prestige proches du château, comptez 1 500 à 3 000 €/m².',
+                q: 'Quel est le prix d\'une rénovation à Poissy ?',
+                a: 'Le prix varie entre 700 et 1 400 €/m² selon l\'état du logement et les matériaux. Pour un appartement en résidence, comptez 800 à 1 200 €/m². Devis gratuit sous 48h.',
               },
               {
-                q: 'Quel artisan contacter pour rénover un appartement à Versailles ?',
-                a: 'Espace Design intervient régulièrement à Versailles pour des rénovations dans les immeubles de standing et les maisons de ville. Assuré décennale, devis gratuit sous 48h.',
+                q: 'Avez-vous un artisan disponible à Poissy ?',
+                a: 'Oui. Espace Design intervient à Poissy et dans toutes les Yvelines. Déplacement gratuit et sans engagement, réponse sous 48h.',
               },
               {
-                q: 'Comment rénover un appartement de prestige à Versailles ?',
-                a: 'Pour les appartements de prestige à Versailles, nous recommandons des matériaux nobles : parquet en point de Hongrie, marbre, boiseries sur mesure, peinture à la chaux. Chaque projet est traité sur mesure.',
-              },
-              {
-                q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
+                q: 'Rénovation appartement à Poissy : par où commencer ?',
+                a: 'Tout commence par une visite gratuite. Patrick évalue l\'état du logement, définit les priorités et vous remet un devis détaillé. Un seul interlocuteur du début à la fin.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -264,13 +217,13 @@ export default function RenovationVersailles() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-yvelines', label: 'Yvelines (78)' },
-              { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
               { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
               { href: '/renovation-chatou', label: 'Chatou' },
-              { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
-              { href: '/renovation-sevres', label: 'Sèvres' },
-              { href: '/renovation-meudon', label: 'Meudon' },
+              { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
+              { href: '/renovation-versailles', label: 'Versailles' },
+              { href: '/renovation-cergy', label: 'Cergy' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
+              { href: '/contact', label: 'Nous contacter' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -313,10 +266,10 @@ export default function RenovationVersailles() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Versailles
+            Votre projet à Poissy
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Versailles.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement à Poissy et dans toutes les Yvelines.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -1,16 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Chatou — Artisan Rénovateur & Devis | Espace Design',
+  title: 'Rénovation Chatou — Artisan & Devis Gratuit | Espace Design',
   description:
-    'Artisan rénovateur à Chatou (78400). Rénovation complète, maison, salle de bain, cuisine. Devis gratuit 48h. Espace Design.',
+    'Artisan rénovateur à Chatou (78400) : maisons individuelles, résidences pavillonnaires. Rénovation complète, cuisine, salle de bain. Devis gratuit sous 48h.',
   keywords: [
-    'rénovation appartement Chatou',
-    'artisan rénovation Chatou 78',
-    'renovation Chatou 78400',
-    'artisan Chatou Yvelines',
+    'rénovation Chatou',
+    'artisan Chatou',
+    'rénovation maison Chatou',
+    'prix rénovation Chatou',
+    'entreprise rénovation Chatou 78400',
+    'artisan rénovation Yvelines',
   ],
 }
 
@@ -21,6 +24,11 @@ const schemaLocal = {
   description: 'Artisan rénovateur à Chatou, commune des bords de Seine dans les Yvelines.',
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-chatou',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
   areaServed: {
     '@type': 'AdministrativeArea',
     name: 'Chatou',
@@ -38,7 +46,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Yvelines', item: 'https://espacedesignparis.fr/renovation-yvelines' },
     { '@type': 'ListItem', position: 3, name: 'Rénovation Chatou', item: 'https://espacedesignparis.fr/renovation-chatou' },
   ],
 }
@@ -52,31 +60,23 @@ const schemaFaq = {
       name: 'Quel est le prix d\'une rénovation à Chatou ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Chatou varie entre 800 et 1 600 €/m². Chatou est une commune agréable des bords de Seine dans les Yvelines. Devis gratuit sous 48h.',
+        text: 'Le coût d\'une rénovation à Chatou varie entre 800 et 1 600 €/m² selon l\'état du bien et les matériaux. Pour une rénovation complète avec finitions soignées, comptez en moyenne 1 000 à 1 400 €/m². Contactez-nous pour un devis personnalisé gratuit.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Espace Design intervient-il à Chatou ?',
+      name: 'Avez-vous un artisan disponible à Chatou ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. Nous intervenons à Chatou et dans les communes voisines : Le Vésinet, Rueil-Malmaison, Croissy-sur-Seine. Déplacement gratuit et sans engagement.',
+        text: 'Oui. Espace Design intervient à Chatou et dans les communes voisines des Yvelines : Le Vésinet, Rueil-Malmaison, Croissy-sur-Seine, Poissy. Déplacement gratuit et sans engagement.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels travaux réalisez-vous à Chatou ?',
+      name: 'Comment rénover une maison à Chatou ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Avez-vous une assurance décennale ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+        text: 'Après un diagnostic gratuit sur place, Patrick établit un devis détaillé et un planning de chantier. Rénovation complète, salle de bain, cuisine, parquet, peinture — un seul interlocuteur du début à la fin.',
       },
     },
   ],
@@ -101,13 +101,13 @@ export default function RenovationChatou() {
       {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Yvelines — Chatou 78</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Chatou — 78400</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement Chatou
+            Rénovation maison<br className="hidden sm:block" /> Chatou
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Chatou. Rénovation complète, salle de bain, cuisine, peinture et parquet. Devis gratuit sous 48h.
+            Artisan rénovateur à Chatou (78400). Spécialiste des maisons individuelles, résidences pavillonnaires et immeubles collectifs des bords de Seine. Rénovation complète, cuisine, salle de bain, finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -135,9 +135,9 @@ export default function RenovationChatou() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Salle de bain et cuisine rénovées sur mesure. Conception, pose, plomberie et carrelage inclus.' },
-              { num: '03', title: 'Finitions sur mesure', desc: 'Menuiserie, parquet, carrelage, peinture décorative. Les détails qui font la différence dans votre intérieur.' },
+              { num: '01', title: 'Rénovation complète', desc: 'Rénovation complète de maisons individuelles et pavillons : gros oeuvre, second oeuvre, finitions. Un seul artisan, un seul chantier, un seul interlocuteur.' },
+              { num: '02', title: 'Cuisine & salle de bain', desc: 'Cuisine sur mesure et salle de bain haut de gamme. Conception, pose, plomberie, carrelage et faïences inclus.' },
+              { num: '03', title: 'Finitions & décoration', desc: 'Parquet, peinture décorative, menuiserie, carrelage. Des finitions soignées qui transforment votre intérieur.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -146,6 +146,18 @@ export default function RenovationChatou() {
                 <p className="text-gray-500 text-sm leading-relaxed font-light">{s.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Photo */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
+            Une réalisation
+          </h2>
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/18-salon-renovation-complete.jpg" alt="Salon rénové avec finitions soignées — rénovation maison Chatou" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -181,19 +193,15 @@ export default function RenovationChatou() {
             {[
               {
                 q: 'Quel est le prix d\'une rénovation à Chatou ?',
-                a: 'Le coût d\'une rénovation à Chatou varie entre 800 et 1 600 €/m². Chatou est une commune agréable des bords de Seine dans les Yvelines. Devis gratuit sous 48h.',
+                a: 'Le coût varie entre 800 et 1 600 €/m² selon l\'état du bien et les matériaux. Pour une rénovation complète avec finitions soignées, comptez en moyenne 1 000 à 1 400 €/m². Devis gratuit sous 48h.',
               },
               {
-                q: 'Espace Design intervient-il à Chatou ?',
-                a: 'Oui. Nous intervenons à Chatou et dans les communes voisines : Le Vésinet, Rueil-Malmaison, Croissy-sur-Seine. Déplacement gratuit et sans engagement.',
+                q: 'Avez-vous un artisan disponible à Chatou ?',
+                a: 'Oui. Espace Design intervient à Chatou et dans les communes voisines des Yvelines : Le Vésinet, Rueil-Malmaison, Croissy-sur-Seine, Poissy. Déplacement gratuit et sans engagement.',
               },
               {
-                q: 'Quels travaux réalisez-vous à Chatou ?',
-                a: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
-              },
-              {
-                q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+                q: 'Comment rénover une maison à Chatou ?',
+                a: 'Après un diagnostic gratuit sur place, Patrick établit un devis détaillé et un planning de chantier. Rénovation complète, salle de bain, cuisine, parquet, peinture — un seul interlocuteur.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -214,10 +222,14 @@ export default function RenovationChatou() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
               { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
+              { href: '/renovation-poissy', label: 'Poissy' },
               { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
               { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
               { href: '/renovation-versailles', label: 'Versailles' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
+              { href: '/contact', label: 'Nous contacter' },
             ].map((z) => (
               <Link
                 key={z.href}

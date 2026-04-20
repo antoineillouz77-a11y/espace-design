@@ -101,13 +101,13 @@ export default function RenovationLeVesinet() {
       {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Yvelines — Le Vésinet 78</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Le Vésinet — 78110</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation Le Vésinet
+            Rénovation villa<br className="hidden sm:block" /> Le Vésinet
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur au Vésinet. Rénovation complète de villas et appartements, salle de bain haut de gamme, cuisine sur mesure. Devis gratuit sous 48h.
+            Artisan rénovateur au Vésinet (78110). Spécialiste des villas bourgeoises, pavillons et maisons de caractère dans un cadre verdoyant. Rénovation complète, décoration sur-mesure, finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -135,9 +135,9 @@ export default function RenovationLeVesinet() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Salle de bain haut de gamme et cuisine sur mesure. Conception, pose, plomberie et carrelage inclus.' },
-              { num: '03', title: 'Finitions sur mesure', desc: 'Menuiserie, parquet massif, peinture décorative. Les détails qui transforment un intérieur en espace d\'exception.' },
+              { num: '01', title: 'Rénovation de villa', desc: 'Rénovation complète de villas bourgeoises et maisons de caractère : structure, second oeuvre, finitions soignées dans le respect de l\'architecture d\'origine.' },
+              { num: '02', title: 'Décoration intérieure', desc: 'Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique adaptée à l\'élégance des demeures du Vésinet.' },
+              { num: '03', title: 'Finitions & détails', desc: 'Parquet massif, boiseries, peinture décorative, salle de bain sur-mesure. Chaque détail est soigné pour valoriser votre bien.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -146,6 +146,18 @@ export default function RenovationLeVesinet() {
                 <p className="text-gray-500 text-sm leading-relaxed font-light">{s.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Photo */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
+            Une réalisation
+          </h2>
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/18-salon-renovation-complete.jpg" alt="Salon rénové avec finitions soignées — rénovation villa Le Vésinet" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -181,19 +193,15 @@ export default function RenovationLeVesinet() {
             {[
               {
                 q: 'Quel est le prix d\'une rénovation au Vésinet ?',
-                a: 'Le prix d\'une rénovation au Vésinet varie entre 900 et 1 800 €/m² pour du standard, et jusqu\'à 3 000 €/m² pour du prestige. Le Vésinet est une commune haut de gamme des Yvelines réputée pour ses villas et maisons de caractère. Devis gratuit sous 48h.',
+                a: 'Le prix varie entre 900 et 1 800 €/m² pour du standard, et jusqu\'à 3 000 €/m² pour du prestige. Le Vésinet est une commune haut de gamme des Yvelines réputée pour ses villas et maisons de caractère. Devis gratuit sous 48h.',
               },
               {
-                q: 'Espace Design intervient-il au Vésinet ?',
-                a: 'Oui. Nous intervenons au Vésinet et dans les communes voisines : Chatou, Saint-Germain-en-Laye, Rueil-Malmaison. Déplacement gratuit et sans engagement.',
+                q: 'Avez-vous un artisan disponible au Vésinet ?',
+                a: 'Oui. Espace Design intervient régulièrement au Vésinet et dans toutes les Yvelines. Déplacement gratuit et sans engagement, réponse sous 48h.',
               },
               {
-                q: 'Quels travaux réalisez-vous au Vésinet ?',
-                a: 'Rénovation complète de villas et appartements, salle de bain haut de gamme, cuisine sur mesure, parquet massif, menuiserie, décoration intérieure.',
-              },
-              {
-                q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+                q: 'Comment rénover une villa au Vésinet ?',
+                a: 'Un diagnostic sur place, puis un plan de travaux complet : gros oeuvre, second oeuvre, finitions. Patrick vous accompagne de A à Z avec un seul interlocuteur.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -214,10 +222,14 @@ export default function RenovationLeVesinet() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
+              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
               { href: '/renovation-chatou', label: 'Chatou' },
+              { href: '/renovation-poissy', label: 'Poissy' },
+              { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
               { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
               { href: '/renovation-versailles', label: 'Versailles' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
+              { href: '/contact', label: 'Nous contacter' },
             ].map((z) => (
               <Link
                 key={z.href}

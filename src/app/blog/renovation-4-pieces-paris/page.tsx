@@ -1,17 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
-
-export const metadata: Metadata = {
-  title: 'Rénovation 4 Pièces Paris : Prix, Budget & Guide Complet 2025',
-  description:
-    'Budget rénovation 4 pièces à Paris : de 80 000 à 160 000 € selon les finitions. Tableau des postes, exemple clé en main, délais.',
-  keywords: [
-    'rénovation 4 pièces Paris',
-    'prix rénovation 4 pièces Paris',
-    'budget travaux 4 pièces Paris',
-  ],
-}
+import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 const schemaBreadcrumb = {
   '@context': 'https://schema.org',
@@ -19,26 +8,23 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation 4 pièces Paris', item: 'https://espacedesignparis.fr/blog/renovation-4-pieces-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Rénovation 4 Pièces Paris', item: 'https://espacedesignparis.fr/blog/renovation-4-pieces-paris' },
   ],
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation 4 Pièces Paris : Prix, Budget & Guide Complet 2025',
-  description: 'Tout savoir pour rénover un 4 pièces à Paris : budget selon le niveau de travaux, exemple concret clé en main, délais et conseils de coordination.',
+  headline: 'Rénovation 4 Pièces Paris : budget, planning & conseils 2025 | Espace Design',
+  description: 'Budget rénovation 4 pièces à Paris : prix par poste (salle de bain, cuisine, parquet), planning des travaux. Guide 2025.',
   datePublished: '2025-04-20',
-  dateModified: '2025-04-20',
-  inLanguage: 'fr-FR',
-  author: { '@type': 'Organization', name: 'Espace Design', url: 'https://espacedesignparis.fr' },
+  author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
     name: 'Espace Design',
     url: 'https://espacedesignparis.fr',
-    logo: { '@type': 'ImageObject', url: 'https://espacedesignparis.fr/images/logo.png' },
   },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://espacedesignparis.fr/blog/renovation-4-pieces-paris' },
+  url: 'https://espacedesignparis.fr/blog/renovation-4-pieces-paris',
 }
 
 const schemaFaq = {
@@ -47,250 +33,354 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation complète d\'un 4 pièces à Paris ?',
+      name: 'Quel est le budget pour rénover un 4 pièces à Paris ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'La rénovation complète d\'un 4 pièces parisien (80-100 m²) coûte entre 80 000 et 150 000 € selon le niveau de finitions. En rénovation standard (1 000 €/m²), comptez 80 000-100 000 €. En haut de gamme (1 500 €/m²), de 120 000 à 150 000 €.',
+        text: "La rénovation complète d'un 4 pièces à Paris (80 à 100 m²) coûte entre 40 000 et 120 000 € selon l'état du bien et le niveau de finition souhaité. Un rafraîchissement léger (peinture, sol, cuisine légère) se situe entre 400 et 600 €/m², soit 32 000 à 60 000 €. Une rénovation lourde avec refonte électrique, plomberie, salle de bain et cuisine complètes dépasse 800 €/m², soit 64 000 à 120 000 €.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien de temps prend la rénovation d\'un 4 pièces à Paris ?',
+      name: 'Combien de temps dure la rénovation d\'un 4 pièces à Paris ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Un rafraîchissement prend 4-6 semaines. Une rénovation partielle (cuisine + salle de bain) dure 8-14 semaines. Une rénovation complète avec électricité, plomberie, cloisons et menuiserie sur mesure nécessite 16 à 24 semaines.',
+        text: "Une rénovation complète d'un 4 pièces à Paris dure entre 2 et 4 mois selon l'ampleur des travaux. Les étapes critiques sont la démolition (1 à 2 semaines), électricité et plomberie (2 à 4 semaines), carrelage et parquet (2 à 3 semaines), peinture (1 à 2 semaines), puis cuisine et salle de bain (2 à 4 semaines). La coordination des corps de métier est la clé pour éviter les délais supplémentaires.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment gérer la coordination des artisans pour un grand appartement parisien ?',
+      name: 'Quel est le rôle du coordinateur de travaux pour un 4 pièces ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'La coordination de plusieurs corps de métier (électricien, plombier, carreleur, peintre, menuisier) est le point le plus critique d\'une rénovation de 4 pièces. Chaque retard d\'un corps de métier retarde les suivants. C\'est pourquoi Espace Design propose une gestion de chantier intégrée avec un chef de chantier dédié.',
+        text: "La rénovation d'un 4 pièces fait intervenir au minimum 5 à 7 corps de métier (démolition, électricité, plomberie, carrelage, parquet, peinture, cuisine). Sans coordination, les délais s'accumulent et le budget dérape. Le coordinateur de travaux établit le planning, interface avec la copropriété, contrôle la qualité sur chantier et constitue le dossier de réception. C'est le chef d'orchestre indispensable à partir de 2 corps de métier ou plus.",
       },
     },
   ],
 }
 
-export default function Renovation4PiecesParis() {
+export const metadata: Metadata = {
+  title: 'Rénovation 4 Pièces Paris : budget, planning & conseils 2025 | Espace Design',
+  description: 'Budget rénovation 4 pièces à Paris : prix par poste (salle de bain, cuisine, parquet), planning des travaux. Guide 2025.',
+}
+
+export default function ArticleRenovation4Pieces() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
+      />
 
       {/* Hero */}
-      <section className="pt-32 pb-14 bg-[#1C1C1C] text-center px-4">
-        <nav className="text-xs text-gray-500 mb-6 flex justify-center gap-2">
-          <Link href="/" className="hover:text-[#D4AF37]">Accueil</Link>
-          <span>/</span>
-          <Link href="/blog" className="hover:text-[#D4AF37]">Blog</Link>
-          <span>/</span>
-          <span className="text-gray-400">Rénovation 4 pièces Paris</span>
-        </nav>
-        <p className="text-[#D4AF37] text-sm font-medium uppercase tracking-widest mb-3">Prix & Budgets</p>
-        <h1 className="font-display text-3xl sm:text-5xl font-bold text-white mb-5 max-w-3xl mx-auto leading-tight">
-          Rénovation 4 pièces Paris :<br className="hidden sm:block" /> prix, budget & guide 2025
-        </h1>
-        <p className="text-gray-400 max-w-2xl mx-auto text-base leading-relaxed">
-          Budget réaliste pour rénover un 4 pièces parisien, tableau des postes, exemple clé en main et conseils pour coordonner les artisans. Guide complet par Espace Design.
-        </p>
-        <p className="text-gray-500 text-xs mt-4">Publié le 20 avril 2025</p>
+      <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
+            Prix &amp; Budgets
+          </p>
+          <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
+          <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
+            Rénovation 4 Pièces Paris : budget, planning &amp; conseils 2025
+          </h1>
+          <p className="text-gray-400 text-sm font-light leading-relaxed">
+            Un 4 pièces à Paris représente généralement entre 80 et 100 m² — une surface qui permet une rénovation ambitieuse mais dont le budget peut varier du simple au triple selon les postes engagés. Décomposition par poste, planning type et conseils pour bien piloter votre projet en 2025.
+          </p>
+        </div>
       </section>
 
-      {/* Article */}
-      <article className="py-16 bg-white">
+      {/* Section 1 — Surface et scénarios */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
+          <div>
+            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+              Le 4 pièces parisien : surface et niveaux de rénovation
+            </h2>
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
+              À Paris, un 4 pièces correspond typiquement à un appartement de 80 à 100 m² comprenant un séjour, deux ou trois chambres, une cuisine, une salle de bain et parfois une salle d&apos;eau. Cette configuration est fréquente dans les immeubles haussmanniens des 6e, 7e, 8e, 9e et 16e arrondissements.
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+              La configuration structurelle conditionne le coût : un appartement avec de nombreux murs porteurs limite les suppressions de cloisons et augmente le coût des ouvertures, tandis qu&apos;une structure poteaux-dalles offre plus de liberté d&apos;aménagement.
+            </p>
+            <div className="space-y-4">
+              {[
+                {
+                  enjeu: 'Rénovation légère — état correct, finitions à rafraîchir',
+                  detail: 'Peinture intégrale, remplacement des sols (parquet flottant ou carrelage), réfection de la cuisine légère (façades, plan de travail), mise aux normes électrique partielle. Budget indicatif : 400 à 600 €/m², soit 32 000 à 60 000 € pour 80 m².',
+                },
+                {
+                  enjeu: 'Rénovation intermédiaire — travaux significatifs sur 2 à 3 postes',
+                  detail: 'Refonte complète de la salle de bain, nouvelle cuisine, parquet massif posé, peinture soignée. Peut inclure l&apos;ouverture d&apos;une cloison pour créer un séjour-cuisine ouvert. Budget : 600 à 900 €/m², soit 48 000 à 90 000 € pour 80 m².',
+                },
+                {
+                  enjeu: 'Rénovation complète — remise à neuf intégrale',
+                  detail: 'Refonte totale : électricité mise aux normes NF C 15-100, plomberie reprise, isolation, nouvelles cloisons, carrelage, parquet, salle de bain, cuisine, menuiseries intérieures. Budget : 900 à 1 200 €/m², soit 72 000 à 120 000 € pour 80 m².',
+                },
+              ].map((el) => (
+                <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.enjeu}</div>
+                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2 — Décomposition par poste */}
+      <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-
-          <p className="text-gray-600 text-base leading-relaxed mb-8">
-            Rénover un 4 pièces à Paris est un projet d&apos;envergure. Avec des surfaces de 80 à 110 m², ces appartements — souvent haussmanniens ou des années 60 — concentrent tous les enjeux d&apos;une rénovation complète : multiplicité des corps de métier, coordination des plannings, préservation du caractère ancien. Voici comment budgéter et organiser votre projet.
-          </p>
-
-          {/* Budget par scénario */}
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mt-10 mb-4">
-            Budget de rénovation d&apos;un 4 pièces à Paris : 3 scénarios
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Budget par poste : décomposition d&apos;une rénovation 4 pièces à Paris
           </h2>
-
-          <div className="space-y-5 mb-8">
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Pour un budget global de 80 000 € (rénovation intermédiaire d&apos;un 90 m²), voici la répartition typique par poste, avec la fourchette de prix observée à Paris en 2025.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                niveau: 'Rafraîchissement',
-                desc: 'Peinture, sols, remplacement des équipements vétustes. L\'électricité et la structure restent en place.',
-                prix_m2: '300 – 500 €/m²',
-                budget_80: '24 000 – 40 000 €',
-                budget_100: '30 000 – 50 000 €',
-                delai: '4 – 6 semaines',
-                color: 'border-green-200 bg-green-50',
+                titre: 'Salle de bain (10 à 20 % du budget)',
+                solution: 'Refonte complète (carrelage, douche italienne ou baignoire, vasque, WC suspendu, robinetterie, ventilation) : 8 000 à 18 000 € selon la surface et les matériaux. La plomberie seule représente 30 à 40 % du coût salle de bain.',
+                cout: '8 000 – 18 000 €',
               },
               {
-                niveau: 'Rénovation partielle',
-                desc: 'Cuisine + salle de bain + salle d\'eau + peinture + sols. L\'électricité et la plomberie principale restent.',
-                prix_m2: '600 – 900 €/m²',
-                budget_80: '48 000 – 72 000 €',
-                budget_100: '60 000 – 90 000 €',
-                delai: '8 – 14 semaines',
-                color: 'border-amber-200 bg-amber-50',
+                titre: 'Cuisine (20 à 30 % du budget)',
+                solution: 'Cuisine équipée de qualité avec électroménager intégré, plan de travail en quartz ou granit, et crédence carrelée : 15 000 à 25 000 €. La plomberie et l&apos;électricité cuisine sont incluses dans ce poste.',
+                cout: '15 000 – 25 000 €',
               },
               {
-                niveau: 'Rénovation complète',
-                desc: 'Tout est refait : électricité, plomberie, cloisons, salle de bain, salle d\'eau, cuisine, revêtements, menuiseries.',
-                prix_m2: '1 000 – 1 500 €/m²',
-                budget_80: '80 000 – 120 000 €',
-                budget_100: '100 000 – 150 000 €',
-                delai: '16 – 24 semaines',
-                color: 'border-blue-200 bg-blue-50',
+                titre: 'Parquet (10 à 15 % du budget)',
+                solution: 'Parquet massif posé à la française ou en point de Hongrie : 80 à 150 €/m² fourni-posé. Pour 60 m² de parquet dans un 4 pièces, comptez 5 000 à 9 000 €. Le ragréage préalable peut ajouter 10 à 20 €/m².',
+                cout: '5 000 – 9 000 €',
               },
-            ].map((s) => (
-              <div key={s.niveau} className={`rounded-lg border p-5 ${s.color}`}>
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="font-semibold text-[#1C1C1C] text-sm">{s.niveau}</h3>
-                  <span className="text-xs text-gray-500 font-light">{s.delai}</span>
+              {
+                titre: 'Électricité (10 à 15 % du budget)',
+                solution: 'Mise aux normes NF C 15-100 d&apos;un appartement de 90 m² : 8 000 à 15 000 € selon la vétusté de l&apos;installation. Inclut tableau électrique, circuits séparés, prises, interrupteurs et éclairage.',
+                cout: '8 000 – 15 000 €',
+              },
+              {
+                titre: 'Peinture & enduits (8 à 12 % du budget)',
+                solution: 'Peinture professionnelle (2 couches) + enduits de finition sur 250 m² de surface murale (murs + plafonds d&apos;un 90 m²) : 6 000 à 10 000 €. Inclut la préparation des supports (rebouchage, ponçage, impression).',
+                cout: '6 000 – 10 000 €',
+              },
+              {
+                titre: 'Cloisons & démolition (5 à 10 % du budget)',
+                solution: 'Ouverture d&apos;une cloison non porteuse : 500 à 1 500 €. Création d&apos;une ouverture avec linteau dans un mur porteur : 3 000 à 8 000 € (études et renforcement inclus). Création de nouvelles cloisons en placo : 60 à 120 €/m².',
+                cout: '2 000 – 8 000 €',
+              },
+            ].map((el) => (
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
-                <p className="text-gray-500 text-sm font-light mb-3">{s.desc}</p>
-                <div className="grid grid-cols-3 gap-3 text-xs">
-                  <div>
-                    <span className="text-gray-400 block">Prix/m²</span>
-                    <span className="font-semibold text-[#1C1C1C]">{s.prix_m2}</span>
-                  </div>
-                  <div>
-                    <span className="text-gray-400 block">4p de 80 m²</span>
-                    <span className="font-semibold text-[#1C1C1C]">{s.budget_80}</span>
-                  </div>
-                  <div>
-                    <span className="text-gray-400 block">4p de 100 m²</span>
-                    <span className="font-semibold text-[#1C1C1C]">{s.budget_100}</span>
-                  </div>
-                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Postes détaillés */}
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mt-10 mb-4">
-            Détail des postes de travaux dans un 4 pièces parisien
+      {/* Section 3 — Planning */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Planning type : 2 à 4 mois pour un 4 pièces parisien
           </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le planning d&apos;une rénovation de 4 pièces dépend directement de la coordination des corps de métier. À Paris, les délais sont souvent allongés par les contraintes d&apos;accès (monte-charge, livraisons, autorisation de benne) et par les règles de copropriété limitant les horaires de travaux.
+          </p>
+          <div className="space-y-4 mb-6">
+            {[
+              {
+                type: 'Semaines 1 à 2 — Démolition et préparation',
+                prix: 'J+0',
+                detail: 'Dépose des revêtements existants (carrelage, parquet, papiers peints), démolition des cloisons à supprimer, dépose de la cuisine et de la salle de bain. C&apos;est la phase la plus contraignante pour les voisins — prévenir la copropriété en amont est indispensable.',
+              },
+              {
+                type: 'Semaines 3 à 6 — Gros œuvre & réseaux',
+                prix: 'J+14',
+                detail: 'Création des ouvertures dans les murs porteurs si nécessaire, pose des nouvelles cloisons, passage des gaines électriques et des tuyaux de plomberie. Ces deux corps de métier doivent être coordonnés précisément pour éviter les reprises coûteuses.',
+              },
+              {
+                type: 'Semaines 7 à 10 — Carrelage & parquet',
+                prix: 'J+42',
+                detail: 'Ragréage des sols, pose du carrelage (salle de bain, cuisine, entrée), pose du parquet dans les pièces de vie et les chambres. Le parquet doit reposer 48 à 72h après pose avant de circuler dessus.',
+              },
+              {
+                type: 'Semaines 11 à 13 — Peinture & finitions',
+                prix: 'J+70',
+                detail: 'Enduits, impression, peinture 2 couches sur murs et plafonds. Les plinthes, baguettes de finition et les petits détails (prises, interrupteurs définitifs) sont posés en toute fin de chantier.',
+              },
+              {
+                type: 'Semaines 14 à 16 — Cuisine, salle de bain & réception',
+                prix: 'J+91',
+                detail: 'Installation de la cuisine (mobilier, électroménager, crédence), pose de la robinetterie et des sanitaires en salle de bain, réglages électriques définitifs. Visite de réception avec le coordinateur de travaux.',
+              },
+            ].map((el) => (
+              <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
+                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — Coordinateur de travaux */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Le rôle du coordinateur de travaux pour un 4 pièces
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            La rénovation d&apos;un 4 pièces fait intervenir au minimum 5 à 7 corps de métier différents (démolition, maçonnerie, électricité, plomberie, carrelage, parquet, peinture, cuisine). Sans coordination, les délais s&apos;accumulent et le budget dérape. Le coordinateur est le chef d&apos;orchestre qui évite ces écueils.
+          </p>
+          <div className="space-y-4 mb-6">
+            {[
+              {
+                type: 'Planning et séquencement des corps de métier',
+                prix: 'Inclus',
+                detail: 'Le coordinateur établit un planning précis avec des dates d&apos;intervention pour chaque corps de métier, en tenant compte des délais d&apos;approvisionnement (cuisine : 6 à 12 semaines de délai fabricant, carrelage : 2 à 4 semaines). Il anticipe les conflits de planning et réorganise en temps réel.',
+              },
+              {
+                type: 'Interface avec la copropriété',
+                prix: 'Inclus',
+                detail: 'À Paris, chaque chantier nécessite une autorisation de la copropriété, le dépôt d&apos;une benne ou d&apos;un camion en zone de livraison, et le respect des horaires de travaux (généralement 8h-18h en semaine). Le coordinateur gère ces démarches administratives.',
+              },
+              {
+                type: 'Contrôle qualité et gestion des malfaçons',
+                prix: 'Inclus',
+                detail: 'Le coordinateur effectue des visites de chantier régulières (2 à 3 fois par semaine) pour contrôler la qualité des travaux et détecter les malfaçons avant qu&apos;elles soient recouvertes. Il constitue le dossier de réception avec réserves et suit leur levée.',
+              },
+            ].map((el) => (
+              <div key={el.type} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
+                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Tableau budget */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Tableau récapitulatif : budget rénovation 4 pièces Paris 2025
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Prix indicatifs pour un appartement de 90 m² à Paris, main d&apos;œuvre et matériaux inclus.
+          </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-[#FAFAF8]">
-                  <th className="text-left p-3 border border-gray-200 font-semibold text-[#1C1C1C]">Poste</th>
-                  <th className="text-left p-3 border border-gray-200 font-semibold text-[#1C1C1C]">Prix indicatif</th>
+                <tr className="bg-[#1C1C1C] text-white">
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Postes inclus</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix / m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Total 90 m²</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { poste: 'Mise aux normes électriques complète', prix: '8 000 – 15 000 €' },
-                  { poste: 'Rénovation plomberie / canalisations', prix: '5 000 – 12 000 €' },
-                  { poste: 'Rénovation salle de bain principale', prix: '8 000 – 18 000 €' },
-                  { poste: 'Rénovation salle d\'eau (2e SDB)', prix: '5 000 – 12 000 €' },
-                  { poste: 'Cuisine équipée sur mesure', prix: '10 000 – 30 000 €' },
-                  { poste: 'Parquet (ponçage + vitrification 80 m²)', prix: '4 000 – 8 000 €' },
-                  { poste: 'Parquet neuf (fourniture + pose)', prix: '8 000 – 18 000 €' },
-                  { poste: 'Peinture complète (murs + plafonds)', prix: '7 000 – 14 000 €' },
-                  { poste: 'Menuiseries intérieures sur mesure', prix: '8 000 – 20 000 €' },
-                  { poste: 'Création ou suppression de cloisons', prix: '2 000 – 8 000 €' },
+                  {
+                    niveau: 'Rafraîchissement',
+                    prestations: 'Peinture + sol + petites réparations',
+                    prixM2: '400 – 600 €',
+                    total: '36 000 – 54 000 €',
+                  },
+                  {
+                    niveau: 'Intermédiaire',
+                    prestations: 'Salle de bain + cuisine légère + sol + peinture',
+                    prixM2: '600 – 900 €',
+                    total: '54 000 – 81 000 €',
+                  },
+                  {
+                    niveau: 'Complet',
+                    prestations: 'Électricité + plomberie + cuisine + SDB + sol + peinture',
+                    prixM2: '900 – 1 100 €',
+                    total: '81 000 – 99 000 €',
+                  },
+                  {
+                    niveau: 'Haut de gamme',
+                    prestations: 'Rénovation totale avec matériaux premium et menuiseries sur mesure',
+                    prixM2: '1 100 – 1 400 €',
+                    total: '99 000 – 126 000 €',
+                  },
                 ].map((row, i) => (
-                  <tr key={row.poste} className={i % 2 === 1 ? 'bg-[#FAFAF8]' : ''}>
-                    <td className="p-3 border border-gray-200 text-gray-600">{row.poste}</td>
-                    <td className="p-3 border border-gray-200 text-gray-600">{row.prix}</td>
+                  <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.niveau}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.prestations}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prixM2}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.total}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          {/* Exemple concret */}
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mt-10 mb-4">
-            Exemple concret : rénovation complète d&apos;un 4 pièces de 90 m² à Paris 16e
-          </h2>
-          <div className="bg-[#FAFAF8] border border-gray-100 rounded-lg p-6 mb-8">
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
-              <strong className="text-[#1C1C1C]">Contexte :</strong> Appartement haussmannien de 90 m², construit en 1890. Parquet Point de Hongrie à restaurer, deux salles d&apos;eau vétustes, électricité à fusibles, cuisine fermée à ouvrir et équiper.
-            </p>
-            <div className="space-y-2">
+          <div>
+            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
+              Conseils pour maîtriser son budget
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                { poste: 'Mise aux normes électriques (14 circuits + tableau)', cout: '11 000 €' },
-                { poste: 'Salle de bain principale (8 m²)', cout: '14 000 €' },
-                { poste: 'Salle d\'eau (4 m²)', cout: '7 500 €' },
-                { poste: 'Cuisine ouverte avec îlot central', cout: '22 000 €' },
-                { poste: 'Réfection plomberie (canalisations cuivre)', cout: '7 000 €' },
-                { poste: 'Ponçage + vitrification parquet (90 m²)', cout: '6 800 €' },
-                { poste: 'Peinture (murs + plafonds, 2 couches)', cout: '11 000 €' },
-                { poste: 'Menuiseries intérieures sur mesure (x5 portes)', cout: '9 500 €' },
-                { poste: 'Suppression cloison cuisine + rebouchage', cout: '3 200 €' },
-                { poste: 'Divers (finitions, nettoyage, imprévus)', cout: '4 000 €' },
-              ].map((row) => (
-                <div key={row.poste} className="flex justify-between text-sm">
-                  <span className="text-gray-600 font-light">{row.poste}</span>
-                  <span className="text-[#1C1C1C] font-semibold ml-4 flex-shrink-0">{row.cout}</span>
+                'Obtenir 3 devis pour chaque corps de métier avant de s\'engager',
+                'Prévoir une réserve de 10 à 15 % pour les imprévus de chantier',
+                'Traiter l\'électricité et la plomberie en premier — toujours avant les finitions',
+                'Commander la cuisine dès le début du chantier (délai fabricant : 6 à 12 semaines)',
+                'Vérifier les autorisations copropriété avant le démarrage pour éviter les arrêts',
+                'Regrouper les corps de métier sous un seul coordinateur pour éviter les retards',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                  {item}
                 </div>
               ))}
-              <div className="border-t border-gray-200 pt-3 flex justify-between text-sm font-semibold">
-                <span className="text-[#1C1C1C]">Total</span>
-                <span className="text-[#B8960C]">96 000 €</span>
-              </div>
             </div>
-            <p className="text-xs text-gray-400 italic mt-3">Durée du chantier : 20 semaines. Livraison clé en main. Chef de chantier dédié.</p>
           </div>
+        </div>
+      </section>
 
-          {/* Coordination */}
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mt-10 mb-4">
-            La coordination des artisans : le nerf de la guerre
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed mb-4">
-            Dans un 4 pièces, on mobilise généralement 5 à 7 corps de métier différents. L&apos;ordre d&apos;intervention est strict et tout décalage se répercute en cascade :
-          </p>
-          <div className="space-y-3 mb-8">
-            {[
-              { n: '1', t: 'Démolition et gros œuvre', d: 'Suppression de cloisons, réservations pour plomberie et électricité. Rien ne peut commencer avant que ce soit fini.' },
-              { n: '2', t: 'Électricité et plomberie', d: 'Ces deux corps de métier travaillent en parallèle, mais doivent se coordonner dans les mêmes espaces. Un planning précis est indispensable.' },
-              { n: '3', t: 'Carrelage salle de bain', d: 'Intervient après la plomberie brute. Un retard ici décale la pose du mobilier de salle de bain.' },
-              { n: '4', t: 'Menuiseries et placards', d: 'Posés après les peintures ou avant selon les matériaux. Un bon conducteur de travaux anticipe ces interdépendances.' },
-              { n: '5', t: 'Peinture', d: 'Toujours en dernier après tous les travaux "sales". Une peinture faite trop tôt sera à refaire.' },
-            ].map((item) => (
-              <div key={item.n} className="flex gap-4 items-start">
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#D4AF37]/20 text-[#B8960C] text-xs font-semibold flex items-center justify-center mt-0.5">{item.n}</span>
-                <div>
-                  <p className="font-semibold text-[#1C1C1C] text-sm mb-1">{item.t}</p>
-                  <p className="text-gray-500 text-sm leading-relaxed font-light">{item.d}</p>
-                </div>
+      {/* FAQ */}
+      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
+          <div className="space-y-6">
+            {schemaFaq.mainEntity.map((q) => (
+              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
             ))}
           </div>
-
-          {/* Espace Design */}
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mt-10 mb-4">
-            Espace Design : rénovation de 4 pièces à Paris, clé en main
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed mb-4">
-            Espace Design réalise des rénovations de grands appartements parisiens avec un chef de chantier dédié. Vous n&apos;avez qu&apos;un seul interlocuteur pour coordonner l&apos;ensemble des corps de métier — de la démolition à la livraison clé en main.
-          </p>
-          <ul className="space-y-2 mb-6">
-            {[
-              'Chef de chantier dédié pour les projets de 4 pièces et plus',
-              'Planning détaillé remis avant le démarrage',
-              'Assurance décennale et RC professionnelle',
-              'Devis gratuit et détaillé sous 48h',
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-2 text-sm text-gray-600">
-                <span className="text-[#D4AF37] mt-1">✓</span>
-                {item}
-              </li>
-            ))}
-          </ul>
         </div>
-      </article>
+      </section>
 
       {/* Voir aussi */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/blog/prix-renovation-appartement-paris', title: 'Prix d\'une rénovation à Paris en 2025' },
-              { href: '/blog/renovation-3-pieces-paris', title: 'Rénovation 3 pièces Paris : prix & guide' },
-              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénover un appartement haussmannien' },
-              { href: '/blog/electricite-appartement-paris', title: 'Électricité appartement Paris : mise aux normes' },
+              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
+              { href: '/blog/renovation-3-pieces-paris', title: 'Rénovation 3 pièces Paris' },
+              { href: '/blog/renovation-salle-de-bain-paris', title: 'Rénovation salle de bain Paris' },
+              { href: '/blog/prix-renovation-appartement-paris', title: 'Prix rénovation appartement Paris' },
+              { href: '/electricite-paris', title: 'Électricité Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -305,21 +395,19 @@ export default function Renovation4PiecesParis() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-white border-t border-gray-100">
+      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
-              { href: '/renovation-paris-6e', label: '6e' },
-              { href: '/renovation-paris-7e', label: '7e' },
-              { href: '/renovation-paris-8e', label: '8e' },
-              { href: '/renovation-paris-15e', label: '15e' },
-              { href: '/renovation-paris-16e', label: '16e' },
-              { href: '/renovation-paris-17e', label: '17e' },
+              { href: '/renovation-paris-6e', label: 'Paris 6e' },
+              { href: '/renovation-paris-7e', label: 'Paris 7e' },
+              { href: '/renovation-paris-8e', label: 'Paris 8e' },
+              { href: '/renovation-paris-16e', label: 'Paris 16e' },
+              { href: '/renovation-paris-17e', label: 'Paris 17e' },
               { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
-              { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
-              { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
-              { href: '/renovation-versailles', label: 'Versailles' },
+              { href: '/renovation-levallois-perret', label: 'Levallois' },
+              { href: '/renovation-boulogne-billancourt', label: 'Boulogne' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -334,19 +422,28 @@ export default function Renovation4PiecesParis() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#1C1C1C] text-center px-4">
-        <h2 className="font-display text-2xl font-semibold text-white mb-3">
-          Votre 4 pièces à rénover à Paris ?
+      <section className="py-16 bg-[#D4AF37] text-center px-4">
+        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
+          Estimez le budget de votre 4 pièces à Paris
         </h2>
-        <p className="text-gray-400 text-sm font-light mb-6 max-w-lg mx-auto">
-          Devis gratuit sous 48h — chef de chantier dédié pour les projets d&apos;envergure.
+        <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
+          Diagnostic gratuit. Devis détaillé sous 48h. Coordination complète des travaux.
         </p>
-        <Link
-          href="/contact"
-          className="inline-flex items-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#c9a030] transition-colors duration-300"
-        >
-          Demander un devis <ArrowRight size={13} />
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/contact"
+            className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-black transition-colors"
+          >
+            Devis gratuit <ArrowRight size={13} />
+          </Link>
+          <a
+            href="tel:+33611783867"
+            className="flex items-center justify-center gap-2 border border-[#1C1C1C]/30 text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-[#1C1C1C] transition-colors"
+          >
+            <Phone size={14} />
+            06 11 78 38 67
+          </a>
+        </div>
       </section>
     </>
   )
