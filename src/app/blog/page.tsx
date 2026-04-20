@@ -1590,6 +1590,48 @@ const articles = [
     desc: "Pose de miroir sur mesure à Paris. Salle de bain, dressing, salon. Miroir encadré et sur mesure.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/agencement-cuisine-ilot-central-paris',
+    title: "Cuisine Îlot Central Paris : agencement & prix artisan 2025",
+    desc: "Cuisine avec îlot central à Paris. Conception, dimensions, plomberie intégrée. Devis gratuit 48h.",
+    tag: 'Cuisine',
+  },
+  {
+    href: '/blog/chaudiere-condensation-paris',
+    title: "Chaudière à Condensation Paris : installation & prix 2025",
+    desc: "Remplacement chaudière à condensation à Paris. Gaz, entretien, économies d'énergie. Devis 48h.",
+    tag: 'Énergie',
+  },
+  {
+    href: '/blog/escalier-metal-paris',
+    title: "Escalier Métal Paris : fabrication & prix artisan 2025",
+    desc: "Escalier métal et acier à Paris. Limon central, marches bois, garde-corps. Devis gratuit 48h.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/garde-corps-terrasse-paris',
+    title: "Garde-Corps Terrasse Paris : métal, verre & prix 2025",
+    desc: "Pose garde-corps terrasse à Paris. Métal, verre, inox, aluminium. Normes et prix artisan 2025.",
+    tag: 'Extérieur',
+  },
+  {
+    href: '/blog/isolation-sol-appartement-paris',
+    title: "Isolation Sol Appartement Paris : chape & prix 2025",
+    desc: "Isolation sol appartement Paris. Chape, plancher chauffant, sous-couche isolante. Devis 48h.",
+    tag: 'Isolation',
+  },
+  {
+    href: '/blog/pompe-a-chaleur-paris',
+    title: "Pompe à Chaleur Paris : installation & prix artisan 2025",
+    desc: "Installation pompe à chaleur (PAC) à Paris. Air/air, air/eau, subventions disponibles. Devis 48h.",
+    tag: 'Énergie',
+  },
+  {
+    href: '/blog/renovation-appartement-compiegne',
+    title: "Rénovation Appartement Compiègne : artisan & prix 2025",
+    desc: "Rénover un appartement à Compiègne. Ville historique proche IDF, immeubles anciens. Devis 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
