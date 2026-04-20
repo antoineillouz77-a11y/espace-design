@@ -50,6 +50,7 @@ const villes78 = [
   { href: '/renovation-rambouillet', label: 'Rambouillet' },
   { href: '/renovation-mantes-la-ville', label: 'Mantes-la-Ville' },
   { href: '/renovation-meulan-en-yvelines', label: 'Meulan-en-Yvelines' },
+  { href: '/renovation-les-mureaux', label: 'Les Mureaux' },
 ]
 
 const services = [

@@ -361,10 +361,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Essonne (91) — nouvelles villes
     { url: `${base}/renovation-ris-orangis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Yvelines (78) — nouvelles villes
+    { url: `${base}/renovation-les-mureaux`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Essonne (91) — nouvelles villes
+    { url: `${base}/renovation-savigny-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-athis-mons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Val-de-Marne (94) — nouvelles villes
+    { url: `${base}/renovation-valenton`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     // Blog — nouveaux articles
     { url: `${base}/blog/mur-porteur-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-copropriete-travaux-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-paris-18e-montmartre`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/ouverture-cuisine-salon-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/revetement-sol-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Pages hub département
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

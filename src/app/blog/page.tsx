@@ -804,6 +804,18 @@ const articles = [
     desc: "Rénovation appartement dans le 18e arrondissement de Paris : Montmartre, Pigalle, Château Rouge, Clignancourt. Artisan local, devis 48h.",
     tag: 'Arrondissements',
   },
+  {
+    href: '/blog/ouverture-cuisine-salon-paris',
+    title: 'Ouvrir Cuisine sur Salon Paris : verrière, IPN & prix 2025',
+    desc: "Ouvrir cuisine sur salon à Paris : verrière, abattage mur porteur, IPN, prix par scénario. Guide pratique artisan 2025.",
+    tag: 'Cuisine',
+  },
+  {
+    href: '/blog/revetement-sol-appartement-paris',
+    title: 'Revêtement Sol Appartement Paris : parquet, carrelage, béton ciré 2025',
+    desc: "Choisir son revêtement sol à Paris : parquet massif, carrelage, béton ciré, LVT. Comparatif prix et conseils artisan 2025.",
+    tag: 'Parquet',
+  },
 ]
 
 export default function BlogPage() {

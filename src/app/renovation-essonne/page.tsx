@@ -53,6 +53,8 @@ const villes91 = [
   { href: '/renovation-juvisy-sur-orge', label: 'Juvisy-sur-Orge' },
   { href: '/renovation-montgeron', label: 'Montgeron' },
   { href: '/renovation-ris-orangis', label: 'Ris-Orangis' },
+  { href: '/renovation-savigny-sur-orge', label: 'Savigny-sur-Orge' },
+  { href: '/renovation-athis-mons', label: 'Athis-Mons' },
 ]
 
 const services = [
