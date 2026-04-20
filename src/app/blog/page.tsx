@@ -420,6 +420,12 @@ const articles = [
     desc: 'Ouvrir sa cuisine sur le salon à Paris : abattre mur porteur, verrière, îlot central, hotte décorative. Autorisations et prix 2025.',
     tag: 'Cuisine',
   },
+  {
+    href: '/blog/peinture-plafond-paris',
+    title: 'Peinture Plafond Paris : blanc mat, rosace & prix 2025',
+    desc: 'Peindre son plafond à Paris : préparation, peinture blanc mat, plafond tendu, rosace décorative. Prix au m² et artisan peintre 2025.',
+    tag: 'Peinture',
+  },
 ]
 
 export default function BlogPage() {
