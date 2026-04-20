@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Courbevoie — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Courbevoie (92400) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Courbevoie. Rénovation complète, décoration sur-mesure, parquet, salle de bain. Devis gratuit 48h. La Défense, Faubourg de l\'Arche.',
+    'Artisan rénovateur à Courbevoie (92400). Rénovation appartement, salle de bain, cuisine. Cœur de La Défense, appartements modernes et tours résidentielles. Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Courbevoie',
     'artisan rénovation Courbevoie',
@@ -25,7 +25,7 @@ const schemaLocal = {
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-courbevoie',
   areaServed: {
-    '@type': 'AdministrativeArea',
+    '@type': 'City',
     name: 'Courbevoie',
   },
   address: {
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
     { '@type': 'ListItem', position: 3, name: 'Courbevoie', item: 'https://espacedesignparis.fr/renovation-courbevoie' },
   ],
 }
@@ -109,7 +109,7 @@ export default function RenovationCourbevoie() {
             Rénovation appartement<br className="hidden sm:block" /> Courbevoie
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Courbevoie. Rénovation complète, décoration sur-mesure, finitions haut de gamme. La Défense, Faubourg de l&apos;Arche, Belvédère. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Courbevoie, au cœur de La Défense. Rénovation complète d&apos;appartements modernes et tours résidentielles, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -223,10 +223,11 @@ export default function RenovationCourbevoie() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
-              { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
-              { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
-              { href: '/renovation-paris-17e', label: 'Paris 17e' },
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
+              { href: '/renovation-nanterre', label: 'Nanterre' },
+              { href: '/renovation-puteaux', label: 'Puteaux' },
+              { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
+              { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
             ].map((z) => (
               <Link
                 key={z.href}

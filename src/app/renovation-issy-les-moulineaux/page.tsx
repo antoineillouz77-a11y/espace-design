@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Issy-les-Moulineaux — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Issy-les-Moulineaux (92130) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur et décorateur intérieur à Issy-les-Moulineaux. Rénovation complète, décoration haut de gamme, sur-mesure. Devis gratuit 48h. Corentin Celton, Fort, Manufacture.',
+    'Artisan rénovateur à Issy-les-Moulineaux (92130). Rénovation appartement, salle de bain, cuisine. Ville dynamique, pavillons et appartements modernes. Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Issy-les-Moulineaux',
     'artisan rénovation Issy',
@@ -25,7 +25,7 @@ const schemaLocal = {
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-issy-les-moulineaux',
   areaServed: {
-    '@type': 'AdministrativeArea',
+    '@type': 'City',
     name: 'Issy-les-Moulineaux',
   },
   address: {
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
     { '@type': 'ListItem', position: 3, name: 'Issy-les-Moulineaux', item: 'https://espacedesignparis.fr/renovation-issy-les-moulineaux' },
   ],
 }
@@ -109,7 +109,7 @@ export default function RenovationIssy() {
             Rénovation appartement<br className="hidden sm:block" /> Issy-les-Moulineaux
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Issy-les-Moulineaux. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Issy-les-Moulineaux. Ville dynamique aux portes de Paris 15e, nous intervenons dans vos pavillons et appartements modernes. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -227,10 +227,11 @@ export default function RenovationIssy() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-paris-14e', label: 'Paris 14e' },
-              { href: '/renovation-paris-15e', label: 'Paris 15e' },
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
               { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
-              { href: '/renovation-versailles', label: 'Versailles' },
+              { href: '/renovation-meudon', label: 'Meudon' },
+              { href: '/renovation-paris-15e', label: 'Paris 15e' },
+              { href: '/renovation-montrouge', label: 'Montrouge' },
             ].map((z) => (
               <Link
                 key={z.href}

@@ -348,6 +348,18 @@ const articles = [
     desc: 'Amiante dans un appartement parisien : diagnostic obligatoire, matériaux concernés, coût du désamiantage. Guide complet avant travaux 2025.',
     tag: 'Réglementation',
   },
+  {
+    href: '/blog/moulures-paris',
+    title: 'Restauration Moulures Paris : corniche, rosace & prix 2025',
+    desc: 'Restaurer ou poser des moulures dans un appartement parisien : corniche au plafond, rosace, parquet moulure. Prix artisan plâtrier 2025.',
+    tag: 'Plâtrerie',
+  },
+  {
+    href: '/blog/renovation-cage-escalier-paris',
+    title: "Rénovation Cage d'Escalier Paris : peinture, carrelage & prix 2025",
+    desc: "Rénover la cage d'escalier d'un immeuble parisien : peinture, sol, éclairage, autorisations copropriété. Prix et guide artisan 2025.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
