@@ -241,11 +241,24 @@ export default function IsolationParis() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet d'isolation à Paris
+            Votre projet isolation à Paris
           </h2>
-          <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. MaPrimeRénov' pris en charge. Déplacement sans engagement.
+          <p className="text-gray-400 text-sm font-light mb-6 leading-relaxed">
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. MaPrimeRénov pris en charge. Déplacement sans engagement.
           </p>
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
+            {[
+              { href: '/blog/isolation-thermique-appartement-paris', label: 'Guide isolation thermique' },
+              { href: '/blog/isolation-acoustique-appartement-paris', label: 'Isolation acoustique' },
+              { href: '/blog/isolation-phonique-paris', label: 'Isolation phonique' },
+              { href: '/blog/amenagement-combles-perdus-paris', label: 'Combles perdus' },
+              { href: '/blog/isolation-combles-subvention-paris', label: 'Aides MaPrimeRénov' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-600 text-gray-400 px-3 py-1.5 rounded hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors font-light">
+                {l.label}
+              </Link>
+            ))}
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"

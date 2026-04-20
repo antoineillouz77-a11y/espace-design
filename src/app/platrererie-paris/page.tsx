@@ -244,9 +244,21 @@ export default function PlatrererieParis() {
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
             Votre projet de plâtrerie à Paris
           </h2>
-          <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
+          <p className="text-gray-400 text-sm font-light mb-6 leading-relaxed">
             Cloisons, faux plafonds, enduits — décrivez votre projet et recevez un devis gratuit sous 48h. Déplacement sans engagement dans tout Paris.
           </p>
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
+            {[
+              { href: '/blog/moulures-paris', label: 'Restauration moulures' },
+              { href: '/blog/faux-plafond-paris', label: 'Faux plafond Paris' },
+              { href: '/blog/peinture-enduit-paris', label: 'Enduit & peinture' },
+              { href: '/peinture-paris', label: 'Peinture Paris' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-600 text-gray-400 px-3 py-1.5 rounded hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors font-light">
+                {l.label}
+              </Link>
+            ))}
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
