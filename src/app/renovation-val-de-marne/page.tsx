@@ -172,10 +172,11 @@ export default function ValDeMarnePage() {
             {[
               { href: '/renovation-appartement-paris', label: 'Rénovation Paris' },
               { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
+              { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
+              { href: '/renovation-essonne', label: 'Essonne (91)' },
               { href: '/tarifs', label: 'Nos tarifs' },
               { href: '/faq', label: 'FAQ rénovation' },
               { href: '/avis', label: 'Avis clients' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

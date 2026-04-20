@@ -181,11 +181,13 @@ export default function HautsDeSeinePage() {
           <div className="flex flex-wrap gap-3">
             {[
               { href: '/renovation-appartement-paris', label: 'Rénovation Paris' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
+              { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
+              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
               { href: '/tarifs', label: 'Nos tarifs' },
               { href: '/faq', label: 'FAQ rénovation' },
               { href: '/avis', label: 'Avis clients' },
               { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
-              { href: '/blog/choisir-artisan-renovation-paris', label: 'Choisir son artisan' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
