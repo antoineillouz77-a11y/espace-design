@@ -1344,6 +1344,66 @@ const articles = [
     desc: "Rénover un T3/T4 de 80m2 à Paris. Budget estimé selon niveau de travaux, prix artisan 2025.",
     tag: 'Budget',
   },
+  {
+    href: '/blog/renovation-appartement-150m2-paris',
+    title: "Rénovation Grand Appartement 150m2 Paris : budget & prix 2025",
+    desc: "Rénover un grand appartement de 150m2 à Paris. Budget rénovation partielle à complète, artisan qualifié.",
+    tag: 'Budget',
+  },
+  {
+    href: '/blog/prix-renovation-loft-paris',
+    title: "Prix Rénovation Loft Paris : budget & coûts au m2 2025",
+    desc: "Rénover un loft à Paris : budget au m², niveaux de rénovation, aménagement open space. Devis 48h.",
+    tag: 'Budget',
+  },
+  {
+    href: '/blog/stuc-venitien-paris',
+    title: "Stuc Vénitien Paris : application & prix artisan 2025",
+    desc: "Application stuc vénitien et marmorino à Paris. Finition brillante, résistance humidité, couleurs sur mesure.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/beton-decoratif-paris',
+    title: "Béton Décoratif Paris : béton ciré murs & sols 2025",
+    desc: "Béton décoratif et béton ciré à Paris : murs et sols. Durabilité, entretien, prix artisan 2025.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/parquet-bois-flotte-paris',
+    title: "Parquet Bois Flotté Paris : pose & prix artisan 2025",
+    desc: "Parquet bois flotté et bois vieilli à Paris. Effet naturel, teintes grises, entretien. Devis gratuit 48h.",
+    tag: 'Parquet',
+  },
+  {
+    href: '/blog/radiateur-design-paris',
+    title: "Radiateur Design Paris : installation & prix artisan 2025",
+    desc: "Radiateurs design et sèche-serviettes décoratifs à Paris. Acier, fonte, inertie. Devis gratuit 48h.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/prix-artisan-renovation-paris',
+    title: "Prix Artisan Rénovation Paris : tarifs & coûts 2025",
+    desc: "Tarifs des artisans rénovation à Paris. Prix horaire, devis au m², TVA, garanties. Comparatif 2025.",
+    tag: 'Budget',
+  },
+  {
+    href: '/blog/renovation-appartement-neuilly-paris',
+    title: "Rénovation Appartement Neuilly-sur-Seine : artisan & prix 2025",
+    desc: "Rénover un appartement à Neuilly-sur-Seine. Haussmannien haut de gamme, finitions premium. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-vincennes',
+    title: "Rénovation Appartement Vincennes : artisan & prix 2025",
+    desc: "Rénover un appartement à Vincennes. Proche Paris 12e, fort de Vincennes. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-saint-lazare-paris',
+    title: "Rénovation Appartement Saint-Lazare Paris 8e/9e : artisan & prix 2025",
+    desc: "Rénover un appartement au quartier Saint-Lazare (Paris 8e/9e). Investissement locatif, standing. Devis 48h.",
+    tag: 'Quartier',
+  },
 ]
 
 export default function BlogPage() {
