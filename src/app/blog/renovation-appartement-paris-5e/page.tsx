@@ -15,9 +15,9 @@ const schemaBreadcrumb = {
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Appartement Paris 5e : Quartier Latin & prix 2025 | Espace Design',
-  description: 'Rénover dans le 5e arrondissement à Paris : immeubles anciens, étudiants et familles, contraintes copropriété. Prix 2025.',
-  datePublished: '2025-04-20',
+  headline: 'Rénovation Appartement Paris 5e : Latin, Contrescarpe & artisan 2025 | Espace Design',
+  description: "Artisan rénovation Paris 5e arrondissement, Quartier Latin, Mouffetard, Contrescarpe. Vieux bâti, caves, prix 2025.",
+  datePublished: '2025-01-15',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
@@ -33,34 +33,43 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation au m² dans le 5e arrondissement de Paris ?',
+      name: "Quel est le prix d'une rénovation d'appartement dans le 5e arrondissement de Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Dans le 5e arrondissement, le prix d'une rénovation d'appartement se situe entre 1 500 et 2 500 €/m² selon l'ampleur des travaux et l'état initial du logement. Une rénovation légère (peinture, sol, salle de bain) se situe autour de 800 à 1 200 €/m². Une rénovation complète d'un appartement haussmannien de 60 m² dans le Quartier Latin, incluant remise aux normes électriques, plomberie, parquet, menuiseries, peinture décorative et cuisine, peut atteindre 80 000 à 120 000 €. Les contraintes ABF (Architectes des Bâtiments de France) et les délais de copropriété peuvent allonger les délais et renchérir les coûts de 10 à 20 %.",
+        text: "Dans le 5e arrondissement, le prix d'une rénovation varie entre 1 200 et 2 800 €/m² selon l'ampleur des travaux et l'état du bien. Une rénovation légère (peinture, parquet ponçage, salle de bain partielle) tourne autour de 800 à 1 200 €/m². Une rénovation complète d'un appartement de 50 m² dans le Quartier Latin — incluant remise aux normes électrique NF C 15-100, plomberie, parquet, cuisine, salle de bain refaite et isolation des murs en pierre — se situe entre 70 000 et 120 000 €. Les contraintes des immeubles très anciens (17e-18e siècles) et les prescriptions des ABF peuvent allonger les délais et renchérir les coûts de 10 à 20 %.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quelles sont les contraintes spécifiques pour rénover dans le 5e arrondissement de Paris ?',
+      name: "Quelles sont les contraintes ABF pour rénover dans le 5e arrondissement ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le 5e arrondissement est l'un des plus réglementés de Paris. Plusieurs zones sont soumises à l'avis des Architectes des Bâtiments de France (ABF) — notamment autour du Panthéon, de la rue Mouffetard et des abords de Notre-Dame. Tout changement de façade, de menuiserie extérieure (couleur des fenêtres, volets) ou de balcon nécessite une déclaration préalable de travaux et peut être refusé ou modifié par l'ABF. En copropriété, les travaux de parties communes (cage d'escalier, façade, toiture) nécessitent un vote en assemblée générale. Les immeubles des 17e et 18e siècles comportent souvent des murs en pierre de taille qui nécessitent des techniques d'isolation spécifiques.",
+        text: "Une grande partie du 5e arrondissement est couverte par le périmètre de protection des Monuments Historiques (Panthéon, Notre-Dame, Jardin des Plantes, Arènes de Lutèce). Les Architectes des Bâtiments de France doivent approuver tout changement visible depuis la rue : menuiseries extérieures, couleur de façade, volets, travaux sur balcons. La déclaration préalable de travaux est obligatoire et le délai d'instruction peut atteindre 2 mois. Pour les travaux intérieurs (peinture, sol, cuisine, salle de bain), aucune autorisation n'est nécessaire. Les copropriétés du secteur ont souvent des règlements stricts sur les horaires de chantier.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment isoler un appartement en pierre dans le 5e arrondissement de Paris ?',
+      name: "Comment isoler un appartement avec des murs en pierre de taille dans le 5e arrondissement ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "L'isolation d'un appartement en pierre de taille dans le 5e est un sujet délicat. La pierre a une bonne inertie thermique mais une isolation médiocre. Deux approches existent : l'isolation par l'intérieur (doublage en laine de roche ou laine de bois sur ossature, avec pare-vapeur adapté) réduit la surface habitable de 8 à 12 cm par mur traité mais est la seule option en appartement. L'isolation par l'extérieur (ITE) n'est possible qu'en façade et nécessite l'accord de la copropriété et de l'ABF — rarement accordé dans les immeubles anciens du 5e. Il faut éviter les isolants trop étanches sur un mur en pierre pour ne pas piéger l'humidité : préférer des matériaux respirants (chanvre, liège expansé, laine de bois).",
+        text: "L'isolation d'un appartement en pierre de taille dans le 5e est délicate. La pierre a une bonne inertie thermique mais une très mauvaise résistance thermique (R très faible). L'isolation par l'intérieur (ITI) est la seule option possible en appartement : doublage sur ossature métallique avec laine de bois, chanvre ou liège expansé (matériaux respirants indispensables sur mur en pierre). Les matériaux synthétiques fermés (polystyrène, mousse polyuréthane) sont à proscrire : ils piègent l'humidité dans la paroi et provoquent des dégâts à moyen terme. Gain thermique : 50 à 60 % sur les déperditions par les murs pour un doublage de 8 à 10 cm. Perte de surface : 6 à 9 cm par mur traité.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Peut-on rénover une cave dans un immeuble du 5e arrondissement de Paris ?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Les caves des immeubles anciens du 5e sont souvent en pierre de taille, voûtées ou à plafond bas (1,80 à 2,20 m). Leur rénovation est possible pour des usages de rangement, de cave à vin ou de local technique. Attention : les caves parisiennes sont fréquemment soumises à des remontées capillaires (humidité structurelle) et à des problèmes de moisissures. Avant tout aménagement, un traitement anti-humidité par injection de résine est souvent nécessaire. Les caves situées sous le niveau de la nappe phréatique (fréquent dans le 5e près de la Seine) nécessitent des systèmes de cuvelage étanche. Coût de rénovation d'une cave : 500 à 1 500 €/m² selon les travaux.",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Paris 5e : Quartier Latin & prix 2025 | Espace Design',
-  description: 'Rénover dans le 5e arrondissement à Paris : immeubles anciens, étudiants et familles, contraintes copropriété. Prix 2025.',
+  title: 'Rénovation Appartement Paris 5e : Latin, Contrescarpe & artisan 2025 | Espace Design',
+  description: "Artisan rénovation Paris 5e arrondissement, Quartier Latin, Mouffetard, Contrescarpe. Vieux bâti, caves, prix 2025.",
+  keywords: 'rénovation appartement Paris 5e, artisan Paris 5e, rénovation Quartier Latin',
 }
 
 export default function ArticleRenovationParis5e() {
@@ -83,44 +92,44 @@ export default function ArticleRenovationParis5e() {
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Quartiers
+            Arrondissements
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Appartement Paris 5e : Quartier Latin &amp; prix 2025
+            Rénovation Appartement Paris 5e : Quartier Latin, Contrescarpe et artisan 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Le 5e arrondissement est l&apos;un des plus anciens et des plus protégés de Paris. Autour du Panthéon, de la rue Mouffetard et des bords de Seine, les immeubles des 17e et 18e siècles imposent leurs contraintes spécifiques. Planchers anciens, murs en pierre, copropriétés exigeantes : guide complet pour rénover dans le Quartier Latin en 2025.
+            Le 5e arrondissement est l&apos;un des plus anciens et des plus protégés de Paris. Panthéon, rue Mouffetard, place de la Contrescarpe, Jardin des Plantes : les immeubles des 17e et 18e siècles imposent leurs contraintes. Murs en pierre, parquets anciens, caves voûtées, ABF : guide complet pour rénover dans le Quartier Latin en 2025.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Spécificités du 5e */}
+      {/* Section 1 — Portrait du 5e */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les spécificités du 5e arrondissement pour les travaux de rénovation
+              Portrait immobilier du 5e arrondissement : vieux bâti et contraintes patrimoniales
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le 5e arrondissement abrite le Quartier Latin, l&apos;un des quartiers les plus anciens de Paris, avec une densité exceptionnelle de bâtiments classés ou inscrits aux Monuments Historiques. La rue Mouffetard, les abords du Panthéon, l&apos;Île Saint-Louis voisine et les berges de Seine sont autant de zones où les travaux de façade font l&apos;objet d&apos;une surveillance architecturale particulière.
+              Le 5e arrondissement abrite le Quartier Latin, l&apos;un des quartiers les plus anciens de Paris. Son parc immobilier est dominé par des immeubles de rapport des 17e et 18e siècles, avec quelques constructions haussmanniennes du 19e siècle. La densité de bâtiments classés ou inscrits aux Monuments Historiques est parmi les plus élevées de Paris.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Le parc immobilier du 5e est dominé par des immeubles de rapport des 17e et 18e siècles, avec quelques constructions haussmanniennes du 19e siècle. On y trouve aussi une proportion importante de studios et de petits appartements liés à la forte présence universitaire (Sorbonne, École normale supérieure, Paris-IV).
+              On trouve dans le 5e une forte proportion de studios et petits appartements liés à la présence universitaire (Sorbonne, École normale supérieure, UPMC, Sciences Po). Ces biens, souvent peu rénovés depuis des décennies, offrent un fort potentiel de valorisation après travaux — à condition de maîtriser les contraintes du bâti ancien.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Immeubles des 17e-18e siècles : contraintes spécifiques',
-                  detail: "Les immeubles les plus anciens du 5e arrondissement ont des structures en pierre de taille, avec des planchers en bois et des murs porteurs épais. La hauteur sous plafond est souvent remarquable (2,80 à 3,20 m), mais les distributions sont parfois complexes avec des couloirs étroits et des escaliers en bois sans ascenseur. Les travaux de plomberie et d'électricité nécessitent une attention particulière pour ne pas endommager les structures existantes.",
+                  enjeu: 'Immeubles des 17e-18e siècles : structure et contraintes',
+                  detail: 'Les immeubles les plus anciens du 5e ont des murs porteurs en pierre de taille de 40 à 70 cm d\'épaisseur. Les planchers sont en bois sur lambourdes — souvent en bon état mais susceptibles d\'être fragilisés par l\'humidité. Les hauteurs sous plafond varient de 2,60 à 3,20 m. Les distributions intérieures peuvent être complexes (couloirs étroits, demi-niveaux, escaliers sans ascenseur). La plomberie et l\'électricité de ces immeubles sont souvent très anciennes.',
                 },
                 {
-                  enjeu: 'Contraintes ABF et déclaration préalable',
-                  detail: "Une grande partie du 5e arrondissement est couverte par le périmètre de protection des Monuments Historiques. Les Architectes des Bâtiments de France (ABF) doivent approuver tout changement visible depuis la rue : menuiseries extérieures, volets, couleur de façade, travaux sur balcons. La déclaration préalable de travaux est obligatoire et le délai d'instruction peut atteindre 2 mois.",
+                  enjeu: 'Quartier Latin et Mouffetard : secteurs protégés',
+                  detail: 'La rue Mouffetard, la place de la Contrescarpe et leurs abords sont classés dans le périmètre de protection de plusieurs Monuments Historiques. Les ABF ont un droit de regard sur tout changement visible depuis la rue. Les façades, devantures et menuiseries extérieures (fenêtres, volets) sont réglementées. Une déclaration préalable est obligatoire pour tout remplacement de fenêtres ou modification de balcon.',
                 },
                 {
-                  enjeu: 'Rue Mouffetard et secteurs protégés',
-                  detail: "La rue Mouffetard et ses abords font l'objet d'une protection particulière au titre du Plan Local d'Urbanisme de Paris. Les devantures, enseignes et façades sont réglementées. Pour les appartements en étages, les travaux intérieurs sont libres, mais toute modification de l'aspect extérieur (y compris les fenêtres) doit être conforme aux prescriptions de l'ABF.",
+                  enjeu: 'Secteur Panthéon et bords de Seine',
+                  detail: 'Le secteur autour du Panthéon et des quais de Seine (boulevard Saint-Germain, quai de la Tournelle) concentre des immeubles haussmanniens de belle qualité. Les appartements y sont souvent grands (80 à 200 m²) avec de beaux parquets en point de Hongrie, des cheminées et des moulures. La rénovation de ces biens réclame un savoir-faire artisanal pointu pour préserver leur caractère patrimonial.',
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -133,36 +142,36 @@ export default function ArticleRenovationParis5e() {
         </div>
       </section>
 
-      {/* Section 2 — Planchers et sols anciens */}
+      {/* Section 2 — Parquets anciens */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Planchers anciens du 5e : pont de bateau, point de Hongrie et rénovation
+            Parquets et planchers anciens du 5e : restaurer plutôt que remplacer
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les planchers en bois des immeubles anciens du 5e arrondissement sont souvent des pièces maîtresses de l&apos;appartement. Deux motifs dominent : le point de Hongrie (lames en chevrons, typique des appartements bourgeois du 19e siècle) et le plancher à bâtons rompus, ou pont de bateau (lames parallèles posées en quinconce). Ces parquets anciens méritent d&apos;être préservés et rénovés plutôt que remplacés.
+            Les planchers bois des immeubles anciens du 5e sont souvent des pièces maîtresses de l&apos;appartement. Point de Hongrie, bâtons rompus, plancher à lames droites : ces parquets massifs anciens méritent d&apos;être préservés et restaurés plutôt que recouverts ou remplacés.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Point de Hongrie',
-                detail: 'Motif en chevrons caractéristique des appartements bourgeois parisiens des 17e-19e siècles. Les lames sont coupées en biseau et assemblées à 45 ou 90 degrés. La rénovation nécessite un ponçage soigneux pour respecter les angles. Incompatible avec une pose de parquet collé par-dessus sans préparation spécifique.',
-                cout: 'Rénovation : 40 – 80 €/m²',
+                titre: 'Parquet point de Hongrie',
+                detail: 'Motif en chevrons caractéristique des appartements bourgeois parisiens des 17e-19e siècles. Les lames sont assemblées à 45 degrés. La rénovation nécessite un ponçage soigneux et directionnel pour respecter les angles. Coût : 40 à 80 €/m² pour ponçage + vitrification. Incompatible avec une pose par-dessus sans préparation spécifique.',
+                cout: '40 – 80 €/m²',
               },
               {
-                titre: 'Plancher point de Hongrie',
-                detail: 'Les lames droites posées en alternance décalée (bâtons rompus) sont le plancher le plus courant dans les immeubles de la fin du 19e et du début du 20e siècle dans le 5e. Souvent en chêne massif épais, il supporte plusieurs ponçages. Vérifier l\'état des lambourdes (poutrelles support) avant de rénover : elles peuvent être fragilisées par l\'humidité ou les insectes.',
-                cout: 'Rénovation : 35 – 70 €/m²',
+                titre: 'Plancher bâtons rompus',
+                detail: 'Lames droites posées en alternance décalée — le parquet le plus répandu dans les immeubles de la fin du 19e siècle. Souvent en chêne massif épais (22 à 28 mm), il supporte 3 à 4 ponçages successifs au cours de sa vie. Avant tout travaux, vérifier l\'état des lambourdes (poutrelles support) : fragilisation possible par l\'humidité ou les insectes xylophages.',
+                cout: '35 – 70 €/m²',
               },
               {
-                titre: 'Diagnostic parquet avant travaux',
-                detail: 'Avant toute rénovation de parquet ancien dans le 5e, un diagnostic de l\'état des lambourdes et des lames est indispensable. Certains parquets présentent des trous de vrillette (insecte xylophage) ou des moisissures en sous-face. Le remplacement des lames abîmées à l\'identique est possible avec du bois de récupération ou des lames neuves en chêne assorties.',
-                cout: 'Diagnostic : gratuit à 200 €',
+                titre: 'Diagnostic parquet avant intervention',
+                detail: 'Indispensable avant toute décision : sondage de l\'état des lambourdes et des lames, recherche de vrillette ou de moisissures en sous-face, vérification de l\'épaisseur résiduelle de bois après ponçages précédents. Certains parquets anciens ont déjà été poncés trop fin : un ponçage supplémentaire est impossible. Le parqueteur qualifié peut substituer des lames manquantes avec du bois de récupération assorti.',
+                cout: 'Gratuit à 200 €',
               },
               {
-                titre: 'Isolation acoustique sous parquet ancien',
-                detail: 'Les planchers anciens sur lambourdes laissent passer les sons par les interstices. Une rénovation complète permet d\'intercaler une laine minérale entre les lambourdes pour améliorer l\'isolation acoustique et thermique. Gain acoustique : 10 à 20 dB selon la technique. Obligatoire à mentionner au règlement de copropriété.',
-                cout: 'Isolation : 20 – 40 €/m² en plus',
+                titre: 'Isolation acoustique sous parquet',
+                detail: 'Les planchers anciens sur lambourdes laissent passer les bruits par les interstices. Une rénovation complète permet d\'intercaler une laine minérale ou du liège entre les lambourdes pour améliorer l\'isolation acoustique et thermique. Gain : 10 à 20 dB de réduction des bruits d\'impact. À mentionner au syndic de copropriété avant travaux.',
+                cout: '20 – 40 €/m² en plus',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -177,31 +186,31 @@ export default function ArticleRenovationParis5e() {
         </div>
       </section>
 
-      {/* Section 3 — Murs en pierre et isolation */}
+      {/* Section 3 — Murs en pierre */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Murs en pierre de taille : isolation et finition dans le 5e
+            Murs en pierre de taille : isolation thermique et finitions dans le 5e
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les murs en pierre de taille des immeubles anciens du 5e sont magnifiques à voir mais thermiquement inefficaces. Les traiter sans endommager le bâti ni créer de problèmes d&apos;humidité est un vrai savoir-faire artisanal.
+            Les murs en pierre de taille des immeubles anciens du 5e sont magnifiques mais thermiquement peu efficaces. Les traiter sans endommager le bâti ni créer de problèmes d&apos;humidité est un savoir-faire qui ne s&apos;improvise pas.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Isolation par l\'intérieur sur mur en pierre',
+                type: 'Isolation par l\'intérieur avec matériaux respirants',
                 prix: '80 – 150 €/m²',
-                detail: "La seule option possible en appartement, l'isolation intérieure (ITI) consiste à poser un doublage isolant sur la face intérieure des murs en pierre. Pour un mur en pierre, il faut impérativement utiliser des matériaux respirants (laine de bois, chanvre, liège) pour éviter la condensation dans la paroi. Les matériaux synthétiques fermés (polystyrène) sont à proscrire sur un mur en pierre car ils piègent l'humidité et provoquent des dégâts à terme.",
+                detail: 'Seule option possible en appartement, l\'ITI consiste à poser un doublage isolant sur la face intérieure des murs en pierre. Sur un mur en pierre, les matériaux respirants sont impératifs : laine de bois (λ = 0,038), chanvre (λ = 0,040), liège expansé (λ = 0,037). Ces matériaux permettent à la vapeur d\'eau de migrer à travers la paroi sans se condenser. Le polystyrène et le polyuréthane sont à proscrire — ils créent un effet "bouchon" qui piège l\'humidité.',
               },
               {
-                type: 'Enduits de finition sur pierre',
+                type: 'Enduits à la chaux et pierre apparente',
                 prix: '30 – 60 €/m²',
-                detail: "Si vous souhaitez conserver l'aspect pierre apparente (très prisé dans le 5e), un traitement à la chaux naturelle assure l'étanchéité tout en laissant le mur respirer. La chaux naturelle est le matériau traditionnel des immeubles anciens de Paris : compatible avec la pierre calcaire, elle régule naturellement l'humidité et n'emprisonne pas les sels.",
+                detail: 'Si vous souhaitez conserver l\'aspect pierre apparente (très prisé dans le 5e, grande valeur esthétique), un traitement à la chaux naturelle aérienne NHL3.5 assure l\'étanchéité à l\'eau tout en laissant le mur respirer. La chaux est le matériau traditionnel des immeubles parisiens anciens — compatible avec la pierre calcaire, elle régule l\'humidité et protège sans emprisonner.',
               },
               {
-                type: 'Mise aux normes électriques (murs en pierre)',
-                prix: '4 000 – 12 000 €/logement',
-                detail: "Faire passer des câbles électriques dans des murs en pierre de 40 à 60 cm d'épaisseur est complexe. L'électricien doit utiliser des goulottes en saillie (habillées en menuiserie pour un rendu esthétique) ou créer des saignées dans le joint de mortier (jamais dans la pierre elle-même). Un appartement dans le 5e antérieur à 1980 nécessite souvent une mise aux normes NF C 15-100 complète (tableau, prises de terre, circuit dédié cuisine).",
+                type: 'Électricité dans les murs en pierre',
+                prix: '30 – 60 €/ml de goulotte',
+                detail: 'Passer des câbles électriques dans des murs en pierre de 40 à 70 cm impose soit des saignées dans les joints de mortier (jamais dans la pierre elle-même), soit des goulottes en saillie habillées en bois peint ou en PVC peint assorti. Dans les appartements en cours de rénovation complète, les câbles sont passés dans les nouveaux doublages isolants — solution la plus propre.',
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -216,14 +225,58 @@ export default function ArticleRenovationParis5e() {
         </div>
       </section>
 
-      {/* Section 4 — Budget et prix */}
+      {/* Section 4 — Caves */}
       <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Caves et sous-sols du 5e arrondissement : humidité et potentiel d&apos;aménagement
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Les caves des immeubles anciens du 5e sont souvent voûtées en pierre de taille, remarquables et sous-exploitées. Leur aménagement en cave à vin, espace de rangement ou local technique peut ajouter de la valeur — à condition de traiter d&apos;abord l&apos;humidité structurelle.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            {[
+              {
+                titre: 'Remontées capillaires dans les caves',
+                detail: 'Les caves des immeubles parisiens anciens sont exposées aux remontées capillaires : l\'eau du sol monte dans les murs en pierre par capillarité. Traitement : injection de résine hydrofuge sous pression dans les joints (150 à 300 €/ml de mur traité) + enduit assainissant à la chaux. Sans traitement de la source, tout aménagement sera dégradé en quelques années.',
+                cout: '150 – 300 €/ml',
+              },
+              {
+                titre: 'Cave à vin voûtée',
+                detail: 'La cave voûtée en pierre du 5e offre des conditions naturellement favorables à la conservation du vin (température stable, hygrométrie naturelle). Après traitement anti-humidité, l\'aménagement en cave à vin consiste à poser des casiers bois ou métal, un éclairage LED basse chaleur et un système de ventilation passive. Coût : 2 000 à 8 000 €.',
+                cout: '2 000 – 8 000 €',
+              },
+              {
+                titre: 'Cuvelage contre la nappe phréatique',
+                detail: 'Les caves situées près de la Seine (quais du 5e) peuvent être soumises à des infiltrations liées à la nappe phréatique. Le cuvelage (étanchéité par membranes drainantes + pompe de relevage) est la seule solution durable. Coût : 200 à 400 €/m² de surface traitée.',
+                cout: '200 – 400 €/m²',
+              },
+              {
+                titre: 'Extension de surface habitable',
+                detail: 'Dans les immeubles du 5e avec des caves à hauteur suffisante (1,80 m minimum), il est parfois possible de transformer une cave en surface habitable (chambre de bonne déclassée, bureau, salle de sport). Cette opération nécessite un permis de construire si la surface est augmentée de plus de 20 m², et un traitement complet de l\'humidité et de l\'aération.',
+                cout: 'Sur devis',
+              },
+            ].map((el) => (
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Budget */}
+      <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
             Prix de rénovation dans le 5e arrondissement de Paris : budget 2025
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les prix ci-dessous s&apos;entendent pour un appartement ancien du 5e arrondissement (immeuble 17e-19e siècle), main d&apos;oeuvre et matériaux inclus.
+            Les prix ci-dessous s&apos;entendent pour un appartement ancien du 5e arrondissement (immeuble 17e-19e siècle), main d&apos;œuvre et matériaux inclus, hors mobilier.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
@@ -239,25 +292,25 @@ export default function ArticleRenovationParis5e() {
                 {[
                   {
                     type: 'Légère',
-                    travaux: 'Peinture + parquet ponçage + salle de bain',
+                    travaux: 'Peinture + parquet ponçage + salle de bain partielle',
                     prixM2: '800 – 1 200 €',
                     budget: '40 000 – 60 000 €',
                   },
                   {
                     type: 'Standard',
-                    travaux: 'Peinture + parquet + cuisine + électricité partielle',
+                    travaux: 'Peinture + parquet + cuisine + électricité partielle + SdB',
                     prixM2: '1 200 – 1 800 €',
                     budget: '60 000 – 90 000 €',
                   },
                   {
                     type: 'Complète',
-                    travaux: 'Tout corps d\'état : électricité NF C 15-100, plomberie, sol, murs, menuiseries',
+                    travaux: "Tout corps d'état : électricité NF C 15-100, plomberie, sol, murs, cuisine, SdB, isolation",
                     prixM2: '1 800 – 2 500 €',
                     budget: '90 000 – 125 000 €',
                   },
                   {
                     type: 'Haut de gamme',
-                    travaux: 'Complète + isolation, matériaux premium, parquet sur mesure, cuisine sur mesure',
+                    travaux: 'Complète + matériaux premium, parquet sur mesure, cuisine sur mesure, pierre apparente',
                     prixM2: '2 500 – 4 000 €',
                     budget: '125 000 – 200 000 €',
                   },
@@ -272,37 +325,45 @@ export default function ArticleRenovationParis5e() {
               </tbody>
             </table>
           </div>
+        </div>
+      </section>
 
-          <div>
-            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Conseils pour rénover dans le 5e arrondissement
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                'Vérifier si votre immeuble est en zone ABF avant de commander des fenêtres ou des volets',
-                'Faire un diagnostic parquet avant toute décision — il vaut souvent mieux rénover que remplacer',
-                'Utiliser des matériaux respirants pour l\'isolation des murs en pierre (chaux, chanvre, liège)',
-                'Anticiper les délais de copropriété pour les travaux de parties communes (assemblée générale)',
-                'Prévoir une mise aux normes électrique complète dans les appartements antérieurs à 1980',
-                'Conserver les éléments authentiques (moulures, cheminées, parquet ancien) : ils ont une vraie valeur',
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                  {item}
-                </div>
-              ))}
-            </div>
+      {/* Section 6 — Conseils pratiques */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Conseils pratiques pour rénover dans le 5e arrondissement
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le 5e est l&apos;un des arrondissements où les erreurs de rénovation coûtent le plus cher — à cause des contraintes du bâti ancien et des spécificités réglementaires. Quelques règles d&apos;or pour réussir son projet.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            {[
+              'Vérifier si votre immeuble est dans un périmètre ABF avant de commander des fenêtres ou des volets — délais et contraintes supplémentaires',
+              'Faire un diagnostic parquet avant toute décision : il vaut souvent mieux rénover que remplacer (30 à 80 €/m² de rénovation contre 120 à 200 €/m² de remplacement)',
+              'Utiliser des matériaux respirants pour l\'isolation des murs en pierre (chaux, chanvre, liège) — jamais de polystyrène',
+              'Traiter l\'humidité de la cave avant tout aménagement, même partiel : les remontées capillaires reviennent si la source n\'est pas colmatée',
+              'Anticiper les délais de copropriété pour les travaux de parties communes : les AG dans le 5e ont souvent plusieurs mois d\'attente',
+              'Prévoir une mise aux normes électrique complète (NF C 15-100) dans les appartements antérieurs à 1980 — investissement rentable à la vente',
+              'Conserver absolument les éléments d\'authenticité : moulures, cheminées, chêne massif ancien. Ils ont une valeur marchande considérable dans le 5e',
+              'Planifier les travaux hors période universitaire (juillet-août) pour faciliter les accès et minimiser les nuisances dans les copropriétés densément habitées',
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -311,17 +372,18 @@ export default function ArticleRenovationParis5e() {
         </div>
       </section>
 
-      {/* Voir aussi */}
-      <section className="py-12 bg-white border-t border-gray-100">
+      {/* Guides connexes */}
+      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Guides connexes</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
-              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénovation appartement haussmannien' },
+              { href: '/blog/renovation-appartement-paris-4e', title: 'Rénovation appartement Paris 4e' },
+              { href: '/blog/renovation-appartement-paris-6e', title: 'Rénovation appartement Paris 6e' },
+              { href: '/blog/renovation-appartement-ancien-paris', title: 'Rénovation appartement ancien Paris' },
+              { href: '/blog/humidite-appartement-paris', title: 'Humidité appartement Paris' },
+              { href: '/blog/renovation-cave-paris', title: 'Rénovation cave Paris' },
               { href: '/blog/renovation-parquet-paris', title: 'Rénovation parquet Paris' },
-              { href: '/blog/renovation-appartement-paris-9e', title: 'Rénovation appartement Paris 9e' },
-              { href: '/contact', title: 'Demander un devis gratuit' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -335,40 +397,13 @@ export default function ArticleRenovationParis5e() {
         </div>
       </section>
 
-      {/* Zones */}
-      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {[
-              { href: '/renovation-paris-8e', label: 'Paris 8e' },
-              { href: '/renovation-paris-9e', label: 'Paris 9e' },
-              { href: '/renovation-paris-10e', label: 'Paris 10e' },
-              { href: '/renovation-paris-11e', label: 'Paris 11e' },
-              { href: '/renovation-levallois-perret', label: 'Levallois' },
-              { href: '/renovation-courbevoie', label: 'Courbevoie' },
-              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
-              { href: '/renovation-pantin', label: 'Pantin' },
-            ].map((z) => (
-              <Link
-                key={z.href}
-                href={z.href}
-                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
-              >
-                {z.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
           Rénovez votre appartement dans le 5e arrondissement
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Artisans spécialisés en immeubles anciens et Quartier Latin. Devis gratuit sous 48h.
+          Artisan spécialisé en immeubles anciens, bâti en pierre et Quartier Latin. Devis gratuit sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

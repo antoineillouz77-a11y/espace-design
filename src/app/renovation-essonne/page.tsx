@@ -55,6 +55,7 @@ const villes91 = [
   { href: '/renovation-ris-orangis', label: 'Ris-Orangis' },
   { href: '/renovation-savigny-sur-orge', label: 'Savigny-sur-Orge' },
   { href: '/renovation-athis-mons', label: 'Athis-Mons' },
+  { href: '/renovation-draveil', label: 'Draveil' },
 ]
 
 const services = [
