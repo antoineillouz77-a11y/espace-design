@@ -8,22 +8,16 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Appartement Bastille Paris 11e-12e', item: 'https://espacedesignparis.fr/blog/renovation-appartement-bastille-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Rénovation Appartement Bastille Paris 11e 12e', item: 'https://espacedesignparis.fr/blog/renovation-appartement-bastille-paris' },
   ],
-}
-
-export const metadata: Metadata = {
-  title: 'Rénovation Appartement Bastille Paris 11e-12e : prix & guide 2025 | Espace Design',
-  description:
-    'Rénover un appartement autour de la Bastille (Paris 11e-12e) : prix, artisans, appartements anciens et contemporains. Guide complet 2025.',
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Appartement Bastille Paris 11e-12e : prix & guide 2025',
-  description:
-    'Rénover un appartement autour de la Bastille (Paris 11e-12e) : prix, artisans, appartements anciens et contemporains. Guide complet 2025.',
+  headline: 'Rénovation Appartement Bastille Paris 11e 12e : loft & style 2025 | Espace Design',
+  description: 'Rénover dans le quartier Bastille (11e-12e) : anciens ateliers, lofts, immeubles ouvriers. Style industriel, prix 2025.',
+  datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
@@ -42,26 +36,31 @@ const schemaFaq = {
       name: 'Quels types de biens trouve-t-on autour de la Bastille (11e-12e) ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le quartier Bastille (Paris 11e et 12e arrondissements) présente un parc immobilier très varié : appartements anciens du XIXe siècle avec parquets et moulures, lofts issus de la reconversion d\'anciens ateliers ou entrepôts industriels, et immeubles contemporains des années 1980-2000. Cette diversité permet de trouver des biens à rénover à des prix encore accessibles pour Paris intramuros, avec un fort potentiel de valorisation.',
+        text: "Le quartier Bastille (Paris 11e et 12e) présente un parc immobilier très varié : appartements anciens du XIXe siècle avec parquets et moulures, anciens ateliers et entrepôts industriels reconvertis en lofts (passages et cours intérieures), et immeubles de rapport construits entre 1880 et 1920. Ce secteur est moins contraint que le centre historique par les règles ABF, ce qui laisse plus de liberté dans les projets de transformation.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien coûte une rénovation autour de la Bastille en 2025 ?',
+      name: 'Combien coûte la rénovation d\'un loft dans le secteur Bastille ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Les prix de rénovation dans le 11e et le 12e sont généralement plus accessibles que dans les arrondissements du centre-ouest parisien. Comptez 1 200 à 2 200 €/m² pour une rénovation complète standard, et 2 200 à 3 000 €/m² pour un projet loft avec décloisonnement, verrière intérieure et finitions industrielles. Un rafraîchissement simple (peinture, sol, éclairage) revient à 400 à 700 €/m².',
+        text: "Un projet loft complet dans le secteur Bastille (11e-12e) — comprenant décloisonnement, verrière intérieure, mezzanine, béton ciré, cuisine ouverte et mise aux normes électriques — coûte entre 2 000 et 3 000 €/m² selon les finitions choisies. Pour un 70 m², comptez 140 000 à 210 000 €. La rénovation d'un appartement ancien standard (sans configuration loft) se situe entre 1 000 et 1 800 €/m².",
       },
     },
     {
       '@type': 'Question',
-      name: 'Peut-on créer un loft dans un ancien entrepôt autour de la Bastille ?',
+      name: 'Le quartier Bastille est-il soumis aux contraintes ABF ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui — le 11e et le 12e abritent d\'anciens ateliers et entrepôts transformés en logements qui se prêtent idéalement à l\'esprit loft : grands volumes, hauteurs sous plafond de 3,50 m à 6 m, dalles béton brut, métal apparent. Ces espaces permettent des projets de décloisonnement ambitieux (cuisine ouverte, mezzanine, verrière intérieure). Le budget pour un projet loft complet dans le secteur Bastille est de l\'ordre de 2 000 à 3 000 €/m² selon les finitions.',
+        text: "Le quartier Bastille (11e et 12e arrondissements) est moins contraint que les secteurs sauvegardés du centre de Paris (Marais, Saint-Germain). La plupart des travaux intérieurs et même certaines modifications extérieures sont libres ou soumis à simple déclaration préalable. C'est l'un des avantages de ce secteur pour les projets ambitieux de transformation : moins de délais administratifs, plus de liberté d'aménagement.",
       },
     },
   ],
+}
+
+export const metadata: Metadata = {
+  title: 'Rénovation Appartement Bastille Paris 11e 12e : loft & style 2025 | Espace Design',
+  description: 'Rénover dans le quartier Bastille (11e-12e) : anciens ateliers, lofts, immeubles ouvriers. Style industriel, prix 2025.',
 }
 
 export default function ArticleBastille() {
@@ -80,239 +79,204 @@ export default function ArticleBastille() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
       />
 
-      {/* Hero article */}
-      <section className="pt-28 sm:pt-36 pb-12 bg-[#FAFAF8]">
+      {/* Hero */}
+      <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Guides
+          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
+            Quartiers
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
-          <h1 className="font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement Bastille — Paris 11e & 12e
+          <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
+            Rénovation Appartement Bastille Paris 11e 12e : loft &amp; style 2025
           </h1>
-          <p className="text-gray-500 text-sm font-light leading-relaxed">
-            Le quartier Bastille concentre une offre immobilière exceptionnellement variée : appartements
-            anciens du XIXe siècle, lofts issus d&apos;anciens ateliers et entrepôts industriels, immeubles
-            contemporains. Les prix y sont encore plus accessibles que dans le centre-ouest parisien,
-            avec un fort potentiel de valorisation après rénovation. Ce guide vous aide à préparer
-            votre projet dans le 11e ou le 12e arrondissement.
+          <p className="text-gray-400 text-sm font-light leading-relaxed">
+            Le quartier Bastille concentre une offre immobilière exceptionnellement variée : appartements anciens du XIXe siècle, lofts dans d&apos;anciens ateliers et entrepôts industriels, immeubles de rapport construits entre 1880 et 1920. Moins contraint que le centre historique par les règles ABF, ce secteur offre une grande liberté pour les projets ambitieux. Ce guide vous aide à préparer votre rénovation dans le 11e ou le 12e.
           </p>
         </div>
       </section>
 
-      {/* Contenu article */}
+      {/* Section 1 — Profil du quartier */}
       <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-12">
-
-          {/* Section 1 */}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Un quartier au parc immobilier mixte et en pleine évolution
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              Le secteur Bastille (11e et 12e arrondissements) a connu une profonde mutation
-              depuis les années 1990. D&apos;anciens quartiers artisanaux et industriels se sont
-              transformés en secteurs résidentiels recherchés, portés par la rénovation de
-              friches et la création de logements atypiques. Aujourd&apos;hui, on y trouve trois
-              grandes typologies de biens, chacune avec ses spécificités de rénovation.
-            </p>
-
-            <div className="space-y-5">
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Les appartements anciens du XIXe siècle
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Le 11e arrondissement regorge d&apos;immeubles construits entre 1850 et 1930 :
-                  plafonds à 2,90 m - 3,20 m, parquets en bois massif, moulures simples,
-                  cheminées de fonte. Ces appartements sont souvent vendus à rénover et
-                  présentent un excellent rapport qualité-prix une fois rénovés. Leur
-                  rénovation suit les mêmes règles que dans n&apos;importe quel immeuble
-                  ancien parisien : mise aux normes électrique, réfection plomberie,
-                  restauration du parquet.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Les lofts dans d&apos;anciens ateliers et entrepôts
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  La spécialité du quartier Bastille : d&apos;anciens ateliers de menuiserie,
-                  de métal ou d&apos;imprimerie ont été transformés en lofts, souvent dans les
-                  passages et cours intérieures (passage de la Bonne Graine, passage
-                  Louis-Philippe, cour de la Maison Brûlée). Ces espaces offrent des
-                  hauteurs sous plafond spectaculaires (4 à 6 m), des verrières et des
-                  volumes industriels uniques à Paris.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Les immeubles contemporains des années 1980-2000
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Notamment dans le 12e autour de Bercy et de la Promenade Plantée,
-                  des immeubles plus récents offrent des appartements avec balcons,
-                  double vitrage d&apos;origine et ascenseurs. Moins atypiques mais souvent
-                  bien configurés, ils se prêtent à des rénovations plus standard :
-                  cuisine ouverte, salle de bain contemporaine, parquet flottant ou collé.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section 2 */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Prix d&apos;une rénovation autour de la Bastille en 2025
+              Un quartier au parc immobilier mixte : anciens ateliers, lofts et immeubles ouvriers
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Avec des prix au m² plus accessibles que dans les arrondissements du centre-ouest,
-              le 11e et le 12e offrent un excellent potentiel de valorisation après rénovation.
-              Le budget dépend fortement du type de bien et du niveau de finition souhaité.
+              Le secteur Bastille (11e et 12e arrondissements) a connu une profonde mutation depuis les années 1990. D&apos;anciens quartiers artisanaux et industriels se sont transformés en secteurs résidentiels recherchés, portés par la rénovation de friches et la création de logements atypiques.
             </p>
-            <ul className="space-y-3">
-              {[
-                {
-                  poste: 'Rafraîchissement (peinture, sol, éclairage)',
-                  fourchette: '400 à 700 €/m²',
-                  detail: 'Pour un appartement en bon état général. Peinture murs et plafonds, remplacement du sol, éclairage LED. Sans modification des installations existantes.',
-                },
-                {
-                  poste: 'Rénovation partielle (cuisine ou salle de bain)',
-                  fourchette: '8 000 à 20 000 €',
-                  detail: 'Rénovation d\'une pièce d\'eau ou création d\'une cuisine ouverte. Budget selon la surface et les finitions choisies.',
-                },
-                {
-                  poste: 'Rénovation complète — appartement ancien standard',
-                  fourchette: '1 200 à 2 200 €/m²',
-                  detail: 'Électricité, plomberie, cuisine, salle de bain, parquet, peintures. Configuration standard dans un immeuble ancien du 11e ou 12e.',
-                },
-                {
-                  poste: 'Projet loft — décloisonnement et finitions industrielles',
-                  fourchette: '2 200 à 3 000 €/m²',
-                  detail: 'Création d\'espaces ouverts, verrière intérieure, mezzanine, cuisine ouverte, béton ciré, métal apparent. Finitions inspirées du style industriel.',
-                },
-              ].map((item) => (
-                <li key={item.poste} className="bg-[#FAFAF8] rounded-lg p-4 border border-gray-100">
-                  <div className="flex justify-between items-start mb-1">
-                    <div className="font-medium text-[#1C1C1C] text-sm">{item.poste}</div>
-                    <div className="text-[#B8960C] text-sm font-medium whitespace-nowrap ml-4">{item.fourchette}</div>
-                  </div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{item.detail}</div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Section 3 */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Projets phares dans le secteur Bastille : loft, cuisine ouverte, décloisonnement
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              Le 11e et le 12e sont particulièrement propices aux projets de transformation ambitieux.
-              Voici les travaux les plus courants et ce qu&apos;il faut savoir avant de les engager.
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+              L&apos;atout majeur du secteur Bastille pour les propriétaires : moins de contraintes ABF qu&apos;ailleurs à Paris. La plupart des travaux intérieurs sont libres, et les modifications extérieures sont soumises à une simple déclaration préalable dans la majorité des cas — sans délais d&apos;instruction de l&apos;ABF.
             </p>
-            <ul className="space-y-3">
-              {[
-                {
-                  flag: 'Décloisonnement et cuisine ouverte',
-                  detail: 'Ouvrir la cuisine sur le salon est le projet le plus demandé dans le secteur Bastille. Si la cloison est non porteuse : 2 000 à 5 000 €. Si c\'est un mur porteur : étude de structure + IPN, soit 8 000 à 16 000 €. Un artisan expérimenté peut évaluer la faisabilité en visite.',
-                },
-                {
-                  flag: 'Création d\'une verrière intérieure',
-                  detail: 'La verrière intérieure (entre salon et chambre, ou entre cuisine et salon) est une signature des rénovations Bastille. Comptez 3 000 à 8 000 € pour une verrière standard en métal et verre feuilleté, posée par un menuisier métallier spécialisé.',
-                },
-                {
-                  flag: 'Mezzanine dans un appartement à hauteur sous plafond élevée',
-                  detail: 'Avec 3,50 m ou plus sous plafond, la mezzanine est une solution intelligente pour gagner une chambre ou un espace de travail. Budget : 8 000 à 18 000 € selon la superficie et les matériaux (bois, métal, mixte).',
-                },
-                {
-                  flag: 'Béton ciré et finitions industrielles',
-                  detail: 'Sol en béton ciré, mur en enduit béton, métal brut — ces finitions s\'accordent parfaitement avec l\'esprit des lofts Bastille. Le béton ciré coûte 80 à 150 €/m² fourni et posé, soit plus que le parquet mais moins qu\'un carrelage grand format posé.',
-                },
-                {
-                  flag: 'Mise aux normes électrique',
-                  detail: 'Dans les appartements anciens non rénovés du 11e, l\'électricité est souvent à refaire intégralement : tableau, fils, prises, éclairage. Budget : 7 000 à 14 000 € pour un 70-80 m².',
-                },
-              ].map((item) => (
-                <li key={item.flag} className="flex gap-3">
-                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <span className="text-[#1C1C1C] text-sm font-medium">{item.flag} : </span>
-                    <span className="text-gray-600 text-sm font-light">{item.detail}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Section 4 */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Choisir son artisan pour rénover dans le 11e ou le 12e
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              La diversité du parc immobilier autour de la Bastille exige des artisans polyvalents :
-              capables de rénover un appartement ancien classique aussi bien que de transformer
-              un ancien atelier en loft contemporain. Ce n&apos;est pas la même technicité ni les
-              mêmes matériaux.
-            </p>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Pour un projet loft, vérifiez spécifiquement : les références en décloisonnement
-              et pose de verrières, la maîtrise des finitions industrielles (béton ciré, métal),
-              et la capacité à coordonner menuisiers, plombiers et électriciens sur un plateau
-              ouvert. Pour un appartement ancien standard, les critères habituels s&apos;appliquent :
-              assurance décennale, références en immeubles anciens, coordination multi-corps de
-              métier.
-            </p>
-            <p className="text-gray-600 text-sm leading-relaxed font-light">
-              Espace Design intervient régulièrement dans le 11e et le 12e arrondissement, ainsi
-              que dans les quartiers voisins (3e, 4e, 10e, 13e). Notre équipe maîtrise aussi
-              bien la rénovation classique d&apos;appartements anciens que les projets loft et de
-              transformation. Consultez nos{' '}
-              <Link href="/realisations" className="text-[#B8960C] hover:underline">
-                réalisations
-              </Link>{' '}
-              ou{' '}
-              <Link href="/contact" className="text-[#B8960C] hover:underline">
-                demandez un devis gratuit
-              </Link>
-              .
-            </p>
-          </div>
-
-          {/* FAQ */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-6">
-              Questions fréquentes — Rénovation autour de la Bastille
-            </h2>
             <div className="space-y-4">
-              {schemaFaq.mainEntity.map((item) => (
-                <div key={item.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{item.name}</div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{item.acceptedAnswer.text}</div>
+              {[
+                {
+                  enjeu: 'Anciens ateliers et entrepôts convertis en lofts',
+                  detail: 'La spécialité du quartier Bastille : d&apos;anciens ateliers de menuiserie, de métal ou d&apos;imprimerie ont été transformés en lofts dans les passages et cours intérieures (passage de la Bonne Graine, passage Louis-Philippe, cour de la Maison Brûlée). Ces espaces offrent des hauteurs sous plafond de 4 à 6 m, des verrières et des volumes industriels uniques à Paris.',
+                },
+                {
+                  enjeu: 'Immeubles de rapport construits entre 1880 et 1920',
+                  detail: 'Le 11e arrondissement regorge d&apos;immeubles construits entre 1880 et 1920 : plafonds à 2,90 m - 3,20 m, parquets en bois massif, moulures simples, cheminées de fonte. Ces appartements sont souvent vendus à rénover et présentent un excellent rapport qualité-prix une fois rénovés.',
+                },
+                {
+                  enjeu: 'Terrasses et cours intérieures',
+                  detail: 'De nombreux immeubles du 11e et du 12e possèdent des cours intérieures lumineuses et des appartements avec terrasse ou accès jardin — atouts rares à Paris. La rénovation doit intégrer ces espaces extérieurs pour créer une continuité intérieur-extérieur (baie vitrée, porte-fenêtre, béton ciré terrasse).',
+                },
+              ].map((el) => (
+                <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.enjeu}</div>
+                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
                 </div>
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* Section 2 — Style industriel et projets loft */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Style industriel et projets loft : les spécialités du secteur Bastille
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le 11e et le 12e sont particulièrement propices aux projets de transformation ambitieux. La hauteur sous plafond importante et l&apos;esprit industriel du quartier inspirent des projets que l&apos;on ne retrouve pas ailleurs à Paris.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            {[
+              {
+                titre: 'Verrière intérieure',
+                solution: 'La verrière intérieure (entre salon et chambre, ou entre cuisine et salon) est une signature des rénovations Bastille. En métal et verre feuilleté, posée par un menuisier métallier spécialisé, elle apporte lumière et séparation visuelle sans couper l&apos;espace.',
+                cout: '3 000 – 8 000 €',
+              },
+              {
+                titre: 'Mezzanine',
+                solution: 'Avec 3,50 m ou plus sous plafond, la mezzanine est une solution intelligente pour gagner une chambre ou un espace de travail. Budget selon la superficie et les matériaux (bois, métal, mixte). Nécessite une étude de résistance du plancher existant.',
+                cout: '8 000 – 18 000 €',
+              },
+              {
+                titre: 'Béton ciré et finitions industrielles',
+                solution: 'Sol en béton ciré, mur en enduit béton, métal brut — ces finitions s&apos;accordent parfaitement avec l&apos;esprit des lofts Bastille. Le béton ciré coûte 80 à 150 €/m² fourni et posé, compatible avec un plancher chauffant.',
+                cout: '80 – 150 €/m²',
+              },
+              {
+                titre: 'Décloisonnement et cuisine ouverte',
+                solution: 'Ouvrir la cuisine sur le salon est le projet le plus demandé dans le secteur Bastille. Cloison non porteuse : 2 000 à 5 000 €. Mur porteur avec IPN : 8 000 à 16 000 €. La liberté ABF du quartier simplifie les démarches par rapport au Marais ou au 6e.',
+                cout: '2 000 – 16 000 €',
+              },
+            ].map((el) => (
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 — Prix */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Prix d&apos;une rénovation autour de la Bastille en 2025
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Avec des prix au m² plus accessibles que dans les arrondissements du centre-ouest, le 11e et le 12e offrent un excellent potentiel de valorisation après rénovation. Les prix dépendent fortement du type de bien et du niveau de finition.
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#1C1C1C] text-white">
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Description</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix / m²</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    niveau: 'Rafraîchissement',
+                    prestations: 'Peinture, sol, éclairage — sans modifier les installations',
+                    prixM2: '400 – 700 €',
+                  },
+                  {
+                    niveau: 'Rénovation complète standard',
+                    prestations: 'Électricité, plomberie, cuisine, SDB, sols, peintures',
+                    prixM2: '1 000 – 1 800 €',
+                  },
+                  {
+                    niveau: 'Projet loft — décloisonnement',
+                    prestations: 'Verrière, mezzanine, béton ciré, cuisine ouverte',
+                    prixM2: '2 000 – 3 000 €',
+                  },
+                  {
+                    niveau: 'Haut de gamme — finitions premium',
+                    prestations: 'Matériaux nobles, menuiseries sur mesure, domotique',
+                    prixM2: '2 500 – 3 500 €',
+                  },
+                ].map((row, i) => (
+                  <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.niveau}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.prestations}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prixM2}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
+              Avantages du 11e et 12e pour votre projet de rénovation
+            </h3>
+            <div className="space-y-3">
+              {[
+                'Moins de contraintes ABF qu\'ailleurs — plus de liberté de transformation sans délais administratifs',
+                'Prix au m² plus accessibles que le centre-ouest parisien — potentiel de valorisation important',
+                'Hauteurs sous plafond importantes dans les anciens ateliers — idéal pour les projets loft et mezzanine',
+                'Nombreuses cours intérieures lumineuses — lumière naturelle abondante souvent sous-exploitée',
+                'Quartier en pleine évolution — investissement immobilier à fort potentiel',
+                'Artisans spécialisés disponibles — secteur actif pour les projets de rénovation ambitieux',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
+          <div className="space-y-6">
+            {schemaFaq.mainEntity.map((q) => (
+              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Voir aussi */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/renovation-paris-11e', title: 'Rénovation Paris 11e — Espace Design' },
-              { href: '/renovation-paris-12e', title: 'Rénovation Paris 12e — Espace Design' },
+              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
               { href: '/blog/renovation-loft-paris', title: 'Rénovation loft Paris — guide complet 2025' },
-              { href: '/blog/verriere-interieure-paris', title: 'Verrière intérieure Paris — prix & pose' },
-              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris — Espace Design' },
+              { href: '/blog/verriere-interieure-paris', title: 'Verrière intérieure Paris : prix & pose' },
+              { href: '/blog/renovation-appartement-marais-paris', title: 'Rénovation appartement Marais Paris' },
+              { href: '/blog/sol-beton-cire-paris', title: 'Sol béton ciré Paris — prix & pose' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -327,7 +291,7 @@ export default function ArticleBastille() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-white border-t border-gray-100">
+      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
@@ -340,8 +304,6 @@ export default function ArticleBastille() {
               { href: '/renovation-paris-13e', label: 'Paris 13e' },
               { href: '/renovation-vincennes', label: 'Vincennes' },
               { href: '/renovation-montreuil', label: 'Montreuil' },
-              { href: '/renovation-charenton-le-pont', label: 'Charenton-le-Pont' },
-              { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -356,23 +318,23 @@ export default function ArticleBastille() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#1C1C1C] text-center px-4">
-        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
+      <section className="py-16 bg-[#D4AF37] text-center px-4">
+        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
           Vous rénovez un appartement autour de la Bastille ?
         </h2>
-        <p className="text-gray-400 text-sm font-light mb-8">
+        <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
           Appartement ancien, loft, projet de décloisonnement — devis gratuit sous 48h dans le 11e et 12e.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact"
-            className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#c9a030] transition-colors"
+            className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-black transition-colors"
           >
             Devis gratuit <ArrowRight size={13} />
           </Link>
           <a
             href="tel:+33611783867"
-            className="flex items-center justify-center gap-2 border border-gray-600 text-gray-300 px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-white hover:text-white transition-colors"
+            className="flex items-center justify-center gap-2 border border-[#1C1C1C]/30 text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-[#1C1C1C] transition-colors"
           >
             <Phone size={14} />
             06 11 78 38 67
