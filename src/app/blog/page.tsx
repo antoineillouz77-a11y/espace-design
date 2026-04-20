@@ -708,6 +708,18 @@ const articles = [
     desc: "Rénovation appartement dans le 14e arrondissement de Paris : Montparnasse, Alésia, Plaisance. Artisan, devis 48h.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-paris-6e',
+    title: 'Rénovation Appartement Paris 6e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 6e arrondissement de Paris : Saint-Germain-des-Prés, Luxembourg. Haussmannien, ABF. Devis 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/renovation-appartement-paris-7e',
+    title: 'Rénovation Appartement Paris 7e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 7e arrondissement de Paris : Invalides, Eiffel, Saint-Thomas-d'Aquin. Haussmannien prestige. Devis 48h.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {

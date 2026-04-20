@@ -211,7 +211,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-appartement-paris-11e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-paris-3e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-paris-14e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-paris-6e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-paris-7e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/renovation-gagny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-montfermeil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-rambouillet`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Seine-Saint-Denis (93) — le-blanc-mesnil, pierrefitte, stains
     { url: `${base}/renovation-le-blanc-mesnil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

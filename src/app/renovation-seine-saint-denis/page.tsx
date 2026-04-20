@@ -61,6 +61,7 @@ const villes93 = [
   { href: '/renovation-stains', label: 'Stains' },
   { href: '/renovation-la-courneuve', label: 'La Courneuve' },
   { href: '/renovation-gagny', label: 'Gagny' },
+  { href: '/renovation-montfermeil', label: 'Montfermeil' },
 ]
 
 const services = [
