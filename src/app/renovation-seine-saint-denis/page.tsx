@@ -69,6 +69,7 @@ const villes93 = [
   { href: '/renovation-villepinte', label: 'Villepinte' },
   { href: '/renovation-vaujours', label: 'Vaujours' },
   { href: '/renovation-coubron', label: 'Coubron' },
+  { href: '/renovation-neuilly-sur-marne', label: 'Neuilly-sur-Marne' },
 ]
 
 const services = [

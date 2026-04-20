@@ -16,7 +16,7 @@ const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: "Rénovation Loft Paris : aménagement industriel & prix 2025 | Espace Design",
-  description: "Rénover un loft ou atelier parisien : style industriel, béton ciré, verrière, acier noir. Artisan spécialisé, prix 2025.",
+  description: "Rénover un loft ou atelier parisien : style industriel, béton ciré, verrière atelier, acier noir, poutres apparentes. Artisan spécialisé, prix 2025.",
   datePublished: '2025-01-15',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,34 +33,34 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: "Quel est le prix de rénovation d'un loft à Paris en 2025 ?",
+      name: "Quel est le prix d'une rénovation de loft à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La rénovation d'un loft parisien coûte en moyenne entre 800 et 2 500 €/m² selon l'état de départ et le niveau de finition. Un loft brut de 100 m² à rénover complètement (électricité, plomberie, isolation, sols, cloisons vitrées) représente un budget de 80 000 à 200 000 €. Les postes les plus coûteux sont la création de verrières (2 000 à 8 000 € l'unité), les sols en béton ciré (60 à 120 €/m²) et la cuisine ouverte sur-mesure (10 000 à 30 000 €).",
+        text: "La rénovation d'un loft parisien est généralement plus coûteuse qu'un appartement standard, du fait de la hauteur sous plafond, des surfaces de béton à traiter et des matériaux industriels (acier, verre, béton ciré). Comptez entre 1 200 et 2 500 €/m² pour une rénovation complète avec béton ciré au sol, verrière, cuisine ouverte sur-mesure et salles de bain de qualité. Pour un loft de 80 m², le budget total oscille entre 96 000 et 200 000 € selon le niveau de finition.",
       },
     },
     {
       '@type': 'Question',
-      name: "Comment chauffer et isoler un loft parisien à hauts plafonds ?",
+      name: "Faut-il un permis de construire pour rénover un loft parisien ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Un loft avec des plafonds de 3,50 m ou plus présente un défi thermique important : le volume d'air à chauffer est bien supérieur à un appartement standard. Les solutions les plus adaptées sont le plancher chauffant hydraulique (idéal sous béton ciré, répartition homogène), les radiateurs à inertie en acier (design cohérent avec le style industriel), ou le poêle à bois (appoint décoratif efficace). L'isolation doit porter sur le toit (30 à 40 cm de laine minérale) et les murs si ce sont des parois extérieures. Un VMC double flux est indispensable dans les grands volumes.",
+        text: "Un loft issu d'une ancienne usine ou d'un entrepôt a souvent subi un changement de destination (activité vers habitation) qui nécessite un permis de construire. Si le changement de destination a déjà été réalisé, les travaux intérieurs de rénovation ne nécessitent généralement pas de permis, sauf si vous modifiez la façade, créez des fenêtres ou modifiez la structure porteuse. En revanche, si votre loft est en zone ABF (Architectes des Bâtiments de France) ou en secteur sauvegardé, toute modification extérieure requiert une autorisation spécifique.",
       },
     },
     {
       '@type': 'Question',
-      name: "Faut-il un permis de construire pour créer des cloisons dans un loft parisien ?",
+      name: "Le béton ciré est-il vraiment pratique dans un loft parisien ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La création de cloisons intérieures légères dans un loft ne nécessite pas de permis de construire, sauf si elles modifient la structure du bâtiment (murs porteurs) ou la façade (nouvelles ouvertures). En revanche, un changement de destination (d'entrepôt ou local commercial en logement) nécessite un permis de construire et peut requérir l'accord de la copropriété. Pour les lofts en immeubles classés ou situés dans des secteurs sauvegardés parisiens, l'avis de l'Architecte des Bâtiments de France peut être requis.",
+        text: "Le béton ciré est esthétiquement très apprécié dans les lofts industriels mais impose quelques contraintes pratiques. Il est sensible aux taches acides (jus de citron, vin) si mal protégé, et peut fissuler sur des supports insuffisamment rigides. Bien réalisé avec un produit de protection adapté (cire ou résine époxy), il résiste bien à l'usage quotidien. Son principal avantage : continuité parfaite entre les pièces, sans joint, ce qui amplifie l'effet d'espace et de volume. Prix de pose : 80 à 180 €/m² selon l'épaisseur et la finition.",
       },
     },
     {
       '@type': 'Question',
-      name: "Comment créer une chambre dans un loft open space sans perdre l'esprit industriel ?",
+      name: "Peut-on installer une verrière atelier dans n'importe quel loft parisien ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La cloison vitrée style atelier (acier noir + verre clair ou dépoli) est la solution la plus cohérente avec l'esthétique industrielle. Elle sépare la chambre du séjour sans fermer l'espace et laisse passer la lumière. Autres options : la mezzanine métallique (lit en hauteur, séjour en bas), le rideau industriel sur rail plafond (velours épais ou cuir), ou le dressing ouvert en acier comme séparateur. Éviter les cloisons en plaque de plâtre banales qui cassent l'esprit du loft.",
+        text: "Une verrière atelier peut s'installer dans la plupart des lofts, sous réserve que le mur ou cloison d'appui ne soit pas porteur (ou que la structure soit reprise par un ingénieur structure). Dans les lofts avec hauteur sous plafond de 3,50 m et plus, les verrières monumentales (2,50 m × 2,50 m et plus) sont particulièrement spectaculaires. En acier noir thermolaqué avec vitrage feuilleté, comptez 400 à 900 €/m² selon les dimensions et le profil choisi. La verrière doit respecter la réglementation thermique si elle remplace une paroi extérieure.",
       },
     },
   ],
@@ -68,11 +68,11 @@ const schemaFaq = {
 
 export const metadata: Metadata = {
   title: "Rénovation Loft Paris : aménagement industriel & prix 2025 | Espace Design",
-  description: "Rénover un loft ou atelier parisien : style industriel, béton ciré, verrière, acier noir. Artisan spécialisé, prix 2025.",
+  description: "Rénover un loft ou atelier parisien : style industriel, béton ciré, verrière atelier, acier noir, poutres apparentes. Artisan spécialisé, prix 2025.",
   keywords: "rénovation loft Paris, aménagement loft Paris, loft industriel Paris",
 }
 
-export default function ArticleRenovationLoft() {
+export default function ArticleRenovationLoftParis() {
   return (
     <>
       <script
@@ -96,40 +96,44 @@ export default function ArticleRenovationLoft() {
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Loft Paris : aménagement industriel et prix 2025
+            Rénovation Loft Paris : aménagement industriel &amp; prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Les lofts et ateliers parisiens ont une âme unique : hauts plafonds, béton brut, grandes baies vitrées, volumes ouverts. Rénover un loft, c&apos;est préserver ce caractère tout en y intégrant le confort d&apos;un logement moderne. Béton ciré, verrières, acier noir, cuisine ouverte : guide complet 2025.
+            Anciens ateliers d&apos;artistes, entrepôts reconvertis, usines réhabilitées : le loft parisien incarne une esthétique industrielle unique. Béton ciré, poutres métalliques apparentes, verrière atelier, acier noir et bois massif — voici le guide complet pour rénover votre loft avec succès en 2025.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Spécificités */}
+      {/* Section 1 — Qu'est-ce qu'un loft parisien */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les spécificités d&apos;un loft parisien : volume, lumière et contraintes
+              Qu&apos;est-ce qu&apos;un loft à Paris ? Origines et spécificités
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Un loft parisien est généralement un ancien espace industriel (atelier, entrepôt, imprimerie) ou commercial reconverti en logement. Il se caractérise par des plafonds hauts (3 à 5 m), un plan ouvert, des matériaux bruts (béton, acier, brique) et de grandes ouvertures. Rénover un loft, c&apos;est gérer des défis spécifiques que les appartements standard n&apos;ont pas.
+              À Paris, le terme &quot;loft&quot; désigne généralement un espace initialement à usage industriel ou artisanal converti en logement : anciens ateliers d&apos;artistes (Montmartre, Belleville), entrepôts reconvertis (13e arrondissement, bords de Seine), manufactures (11e, 20e) ou même des combles industriels transformés.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              À Paris, les lofts se concentrent dans certains arrondissements : 10e, 11e, 13e, 19e, 20e (anciennes zones industrielles), ainsi que dans certains quartiers du 18e (Goutte d&apos;Or, La Chapelle) et du 9e. Les prix de rénovation sont souvent plus élevés que pour un appartement standard, en raison des volumes à traiter et de la complexité des installations techniques.
+              Leurs caractéristiques communes : grande hauteur sous plafond (3 à 6 m), volumes ouverts sans cloisons intermédiaires, poutres ou structure métallique apparente, grandes baies vitrées (anciennement ateliers lumineux pour artisans) et béton ou tomettes au sol. Ces caractéristiques créent une architecture que l&apos;on ne peut pas recréer dans un appartement classique.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: "Volume et thermique : un défi spécifique",
-                  detail: "Un loft de 100 m² avec 4 m de hauteur représente 400 m³ d'air à chauffer — soit presque le double d'un appartement standard de même surface. La stratification thermique (l'air chaud monte) est un problème réel : les pieds ont froid, les têtes ont chaud. Solution : plancher chauffant + VMC double flux pour homogénéiser la température.",
+                  enjeu: 'Hauteur sous plafond exceptionnelle (3 à 6 m)',
+                  detail: "La hauteur sous plafond est le premier atout d'un loft parisien. Elle permet de créer des mezzanines habitables, d'exposer des poutres IPN ou des fermes métalliques, et de jouer sur des volumes que l'appartement classique ne permet pas. Elle impose aussi une isolation thermique et acoustique spécifique : la surface de mur à traiter est bien supérieure à la normale.",
                 },
                 {
-                  enjeu: "Acoustique : absorber le son dans les grands volumes",
-                  detail: "Les surfaces dures (béton, acier, verre) créent une réverbération importante dans les lofts. L'acoustique doit être traitée avec des matériaux absorbants : tapis épais, rideaux lourds, panneaux acoustiques décoratifs, mobilier rembourré. Ne pas négliger l'isolation des murs mitoyens : les voisins sont souvent dans des espaces similaires (peu absorbants).",
+                  enjeu: "Plan ouvert : l'espace comme matériau",
+                  detail: "L'absence de cloisons dans un loft est à la fois son principal atout et sa principale difficulté. La rénovation doit créer des zones distinctes (cuisine, salon, chambre, bureau) sans fermer l'espace. Les outils : verrières intérieures, différences de niveau de sol ou de plafond, mobilier en îlot, claustra métallique ou en bois, rideau industriel.",
                 },
                 {
-                  enjeu: "Technique : gaines, colonnes et normes logement",
-                  detail: "Un ancien local industriel n'est pas équipé pour un logement : il faut créer l'ensemble de la distribution électrique (tableau, circuits, prises, éclairage), la plomberie (eau chaude, évacuations, VMC), et parfois installer une chaudière ou une pompe à chaleur. Ces travaux représentent souvent 30 à 40 % du budget total.",
+                  enjeu: 'Structure existante à conserver ou valoriser',
+                  detail: "Les éléments structurels d'un loft (poutres IPN, piliers béton, plancher acier) sont souvent les éléments les plus intéressants architecturalement. Avant de les masquer, un artisan compétent évalue leur état, leur solidité, et les possibilités de mise en valeur : sablage, peinture noire mat, éclairage indirect rasant pour souligner les reliefs.",
+                },
+                {
+                  enjeu: 'Isolation hors normes : toitures et murs non standard',
+                  detail: "Dans un loft issu d'un entrepôt ou d'une usine, l'isolation thermique et phonique est rarement aux normes habitation. La toiture-terrasse, les murs épais en brique ou béton, les planchers industriels imposent des solutions spécifiques que tous les artisans ne maîtrisent pas. C'est souvent le poste le plus coûteux et le plus important pour le confort final.",
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -146,86 +150,76 @@ export default function ArticleRenovationLoft() {
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Le style industriel parisien : matériaux, couleurs et codes esthétiques
+            Les éléments clés du style industriel dans un loft parisien
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le style industriel ne se résume pas à des canalisations apparentes et de l&apos;acier brut. À Paris, il s&apos;est considérablement affiné : on parle aujourd&apos;hui d&apos;un style &quot;loft parisien&quot; qui mêle brut et raffinement, matière et lumière.
+            Le style industriel n&apos;est pas un simple effet de mode : il est la conséquence naturelle de l&apos;origine des lofts. Bien exécuté, il tire parti des matériaux existants (béton, brique, métal) en les valorisant plutôt qu&apos;en les cachant.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                elem: "Béton ciré (sols et murs)",
-                detail: "Le béton ciré est le sol de référence du loft industriel. Continu, sans joint, il unifie l'espace et s'accorde avec tous les matériaux. Il peut s'appliquer aussi en mural (cuisine, salle de bain) pour un effet monolithique. Entretien : cirer tous les 2 à 3 ans.",
-                prix: "60 – 120 €/m²",
+                titre: 'Béton ciré : sol et murs en continuité',
+                solution: "Le béton ciré est le matériau signature du loft industriel. Appliqué en 2 à 3 mm d'épaisseur sur le support existant, il crée une surface continue sans joint, en gris, blanc cassé ou coloré. Sur les murs, il remplace avantageusement le carrelage dans les salles de bain. Il nécessite un support rigide et une application par un artisan expérimenté.",
+                cout: '80 – 180 €/m²',
               },
               {
-                elem: "Acier noir mat (verrières, portes, mobilier)",
-                detail: "L'acier noir est l'élément signature du loft parisien contemporain. Il structure l'espace (verrières, garde-corps de mezzanine, portes coulissantes) sans l'alourdir. Sa finition mate évite les reflets et s'harmonise avec le béton et le bois brut.",
-                prix: "200 – 400 €/ml",
+                titre: 'Brique apparente : murs bruts mis en valeur',
+                solution: "Les murs en brique rouge ou meulière sont fréquents dans les anciens entrepôts du 13e ou les manufactures du 11e. Plutôt que de les enduire, les nettoyer (sablage léger), consolider les joints dégradés et appliquer une résine de protection transparente permet de préserver l'authenticité du lieu.",
+                cout: '25 – 60 €/m²',
               },
               {
-                elem: "Brique apparente",
-                detail: "La brique apparente (rouge, beige, blanche) apporte chaleur et texture dans un loft. Elle peut être existante (nettoyage + traitement) ou créée avec des briques de placage collées. Effet garanti sur un seul pan de mur, sans excès.",
-                prix: "30 – 80 €/m²",
+                titre: 'Acier noir : menuiseries, verrières, bibliothèques',
+                solution: "L'acier thermolaqué noir mat est l'élément unificateur du style industriel : cadres de verrières, bibliothèques sur-mesure, garde-corps de mezzanine, robinetterie industrielle, suspensions. Il se combine parfaitement avec le bois massif (chêne naturel ou en teinte fumée) pour réchauffer l'ambiance.",
+                cout: '400 – 900 €/m² (verrière)',
               },
               {
-                elem: "Bois massif et métal rouillé",
-                detail: "La juxtaposition du bois massif brut (chêne, pin vieilli) avec le métal rouillé ou patiné crée la tension visuelle propre au style industriel. Plateaux de tables en bois massif, étagères sur cornières métal, tabourets en fonte : un vocabulaire cohérent.",
-                prix: "Variable selon mobilier",
-              },
-              {
-                elem: "Luminaires industriels",
-                detail: "Les suspensions en métal brossé ou noir mat (style usine, cage, abat-jour émaillé) sont indispensables dans un loft. Préférer des ampoules à filament Edison (2700K) pour une lumière chaude et ambrée qui contraste avec le béton froid. Rails de spots orientables pour les zones de travail.",
-                prix: "50 – 500 €/pièce",
-              },
-              {
-                elem: "Palette de couleurs",
-                detail: "La palette du loft industriel parisien : gris béton, noir mat, blanc cassé, bois naturel. Les touches de couleur vive (vert anglais, bleu de Prusse, terracotta) s'utilisent en accents sur les portes, la crédence ou un meuble. Éviter les couleurs pastels qui s'accordent mal avec l'esprit du lieu.",
-                prix: "—",
+                titre: 'Poutres et structure apparente',
+                solution: "Les fermes ou poutres IPN existantes sont à conserver et valoriser autant que possible. Sablage pour retrouver l'acier brut, peinture noire pour unifier, ou acier Corten pour une patine rouille contrôlée. En cas de nécessité de structure supplémentaire (mezzanine), intégrer les nouvelles poutres dans la composition existante.",
+                cout: '1 500 – 5 000 € (sablage + traitement)',
               },
             ].map((el) => (
-              <div key={el.elem} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="flex items-start justify-between gap-2 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.elem}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.prix}</div>
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 3 — Verrières */}
+      {/* Section 3 — Verrière et volumes */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Verrières et cloisons vitrées : créer des zones sans fermer l&apos;espace
+            Verrière intérieure et optimisation des volumes en open space
           </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Dans un loft open space, la question de la délimitation des espaces (chambre, bureau, salon, cuisine) est centrale. La verrière intérieure est la solution qui respecte le mieux l&apos;esprit du lieu : elle sépare sans fermer, laisse passer la lumière et structure visuellement le volume.
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
+            La verrière intérieure est la pièce maîtresse de l&apos;aménagement d&apos;un loft. Elle permet de délimiter des espaces (chambre, bureau, salle de bain) tout en préservant la circulation de la lumière naturelle et la sensation de volume propre au loft.
           </p>
-          <div className="space-y-4">
+          <div className="space-y-4 mb-6">
             {[
               {
-                type: "Verrière fixe (cloison vitrée pleine hauteur)",
-                prix: "2 000 – 6 000 €",
-                detail: "La verrière fixe pleine hauteur (du sol au plafond) avec profils acier noir et verre clair 6 mm est la solution la plus impressionnante. Elle sépare parfaitement deux espaces (chambre/séjour, bureau/séjour) tout en maintenant la continuité visuelle. L'entretien est simple : nettoyage au chiffon humide.",
+                type: "Verrière atelier fixe : séparation chambre ou bureau",
+                prix: '400 – 700 €/m²',
+                detail: "La verrière fixe (sans partie ouvrante) est la solution la plus économique et la plus graphique. En acier thermolaqué noir avec petits carreaux (style atelier d'artiste) ou en grand vitrage feuilleté, elle sépare visuellement deux espaces sans les isoler acoustiquement. Idéale pour séparer bureau/salon ou créer une entrée lumineuse.",
               },
               {
-                type: "Verrière avec porte coulissante",
-                prix: "3 000 – 8 000 €",
-                detail: "La verrière avec porte coulissante intégrée permet d'ouvrir ou de fermer l'espace à la demande. La porte coulisse sur un rail plafond (apparent, finition métal brossé) et disparaît dans le pan de la verrière. Solution idéale pour une chambre qui peut s'ouvrir sur le séjour.",
+                type: "Verrière à la française avec parties ouvrantes",
+                prix: '600 – 1 000 €/m²',
+                detail: "Si l'espace séparé (chambre, bureau) nécessite une isolation acoustique et thermique, les parties ouvrantes (battantes ou à galandage) permettent de moduler la séparation. Le joint de vitrage doit être soigné pour garantir l'isolation. Pour une chambre, prévoir un vitrage feuilleté acoustique (Rw ≥ 38 dB) afin de garantir un sommeil correct.",
               },
               {
-                type: "Cloison mixte acier-verre-bois",
-                prix: "2 500 – 7 000 €",
-                detail: "Pour adoucir l'effet 100 % industriel, on intègre des panneaux de bois dans la cloison (soubassement, remplissage partiel). L'alliance acier noir + bois massif + verre crée un rendu plus chaleureux, très prisé dans les lofts parisiens rénovés avec goût.",
+                type: "Mezzanine avec garde-corps acier",
+                prix: '800 – 1 800 €/m²',
+                detail: "Dans un loft avec hauteur sous plafond de 4 m et plus, la mezzanine crée un niveau supplémentaire habitable (chambre, bureau, bibliothèque) sans cloisonner le volume. Le garde-corps en acier noir avec câbles tendus ou verre feuilleté préserve la transparence visuelle. La structure de la mezzanine doit être calculée par un ingénieur structure (charge 250 kg/m² minimum).",
               },
               {
-                type: "Verrière de toit (fenêtre de toit style atelier)",
-                prix: "3 000 – 10 000 €",
-                detail: "Dans les lofts en dernier étage, une verrière de toit (lanterneau) ou une fenêtre de toit grande dimension apporte une lumière zénithale incomparable. Les modèles à ouverture motorisée permettent de ventiler naturellement les grands volumes. Nécessite l'accord de la copropriété.",
+                type: "Différences de niveau et de matériaux pour zoner l'espace",
+                prix: '60 – 150 €/m²',
+                detail: "Sans cloison ni verrière, il est possible de créer des zones distinctes grâce aux matériaux de sol différents (béton ciré zone vie, parquet chêne zone nuit, carrelage grand format cuisine), à de légères variations de niveau (estrade de 10 à 15 cm), ou à des poutres au plafond qui délimitent les zones visuellement.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -240,39 +234,82 @@ export default function ArticleRenovationLoft() {
         </div>
       </section>
 
-      {/* Section 4 — Budget */}
+      {/* Section 4 — Coûts spécifiques loft */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Budget rénovation loft Paris 2025 : tableau des prix par poste
+            Coûts spécifiques à la rénovation d&apos;un loft parisien
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
+            La rénovation d&apos;un loft parisien comporte plusieurs postes de coûts qui n&apos;existent pas (ou peu) dans une rénovation classique. Ces spécificités expliquent pourquoi le budget au m² d&apos;un loft est systématiquement supérieur à celui d&apos;un appartement haussmannien de même surface.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            {[
+              {
+                titre: 'Dalle béton existante à traiter ou reprendre',
+                solution: "La dalle béton d'un entrepôt est souvent dégradée (fissures, huile de machine, peinture époxy industrielle). Avant de poser le béton ciré ou tout autre revêtement, elle doit être préparée : ragréage, renforcement des fissures, application d'une résine d'accrochage. Dans certains cas, une nouvelle dalle de 6 cm est nécessaire.",
+                cout: '40 – 120 €/m²',
+              },
+              {
+                titre: 'Isolation hors normes des murs industriels',
+                solution: "Les murs d'entrepôt (brique pleine, parpaing, béton banché) ont une inertie thermique intéressante mais une isolation insuffisante. L'isolation par l'intérieur (laine de roche + placo) est souvent la seule option sans toucher à la façade. Sur des hauteurs de 4 à 5 m, le coût par m² de surface murale est significatif.",
+                cout: '80 – 180 €/m² de mur',
+              },
+              {
+                titre: 'Toiture-terrasse ou sheds à étancher',
+                solution: "Les lofts issus de bâtiments industriels ont souvent des toitures-terrasses ou des sheds (toits en dents de scie) dont l'étanchéité est dégradée. La réfection d'étanchéité est un préalable indispensable avant tout aménagement intérieur. Selon la surface et l'accès, le budget peut représenter 15 à 25% du budget total.",
+                cout: '80 – 200 €/m² toiture',
+              },
+              {
+                titre: 'Électricité et plomberie entièrement à reprendre',
+                solution: "Un ancien atelier ou entrepôt n'a pas de distribution électrique ni de plomberie adaptée à l'habitation. Tout est à créer : tableau électrique aux normes résidentiel, réseau triphasé à adapter, plomberie chauffage + eau sanitaire + VMC. Ce poste représente souvent 20 à 30% du budget total d'un loft.",
+                cout: '20 000 – 60 000 €',
+              },
+            ].map((el) => (
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Tableau prix loft vs appartement */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Prix rénovation loft Paris 2025 : loft vs appartement classique
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Prix indicatifs pour un loft parisien de 80 à 120 m², main d&apos;oeuvre et matériaux inclus. Un loft brut nécessite généralement des travaux plus importants qu&apos;un appartement habité.
+            Comparatif des coûts de rénovation par poste entre un loft industriel parisien et un appartement haussmannien de même surface. Les prix s&apos;entendent main d&apos;œuvre + matériaux inclus.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Poste</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix unitaire</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget 100 m²</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Poste de travaux</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Loft industriel</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Appartement classique</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { poste: 'Électricité complète (tableau + distribution)', unite: 'Forfait', budget: '8 000 – 20 000 €' },
-                  { poste: 'Plomberie (cuisine + salle de bain)', unite: 'Forfait', budget: '6 000 – 15 000 €' },
-                  { poste: 'Chauffage (PAC ou plancher chauffant)', unite: 'Forfait', budget: '8 000 – 20 000 €' },
-                  { poste: 'Sol béton ciré', unite: '60 – 120 €/m²', budget: '6 000 – 12 000 €' },
-                  { poste: 'Verrières intérieures', unite: '2 000 – 8 000 €/u', budget: '4 000 – 16 000 €' },
-                  { poste: 'Isolation (murs + toit)', unite: '40 – 100 €/m²', budget: '6 000 – 15 000 €' },
-                  { poste: 'Cuisine ouverte sur-mesure', unite: 'Forfait', budget: '10 000 – 30 000 €' },
-                  { poste: 'Salle de bain industrielle', unite: 'Forfait', budget: '5 000 – 15 000 €' },
+                  { poste: 'Sol (béton ciré vs parquet)', loft: '80 – 180 €/m²', appart: '40 – 120 €/m²' },
+                  { poste: 'Isolation murs et toiture', loft: '80 – 200 €/m²', appart: '40 – 100 €/m²' },
+                  { poste: "Électricité complète", loft: '8 000 – 25 000 €', appart: '5 000 – 15 000 €' },
+                  { poste: 'Plomberie + chauffage', loft: '10 000 – 30 000 €', appart: '6 000 – 18 000 €' },
+                  { poste: 'Verrière(s) intérieure(s)', loft: '3 000 – 15 000 €', appart: '0 – 6 000 €' },
+                  { poste: 'Cuisine ouverte sur-mesure', loft: '8 000 – 25 000 €', appart: '5 000 – 15 000 €' },
+                  { poste: 'Budget total 80 m²', loft: '96 000 – 200 000 €', appart: '60 000 – 130 000 €' },
                 ].map((row, i) => (
                   <tr key={row.poste} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
                     <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.poste}</td>
-                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.unite}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.budget}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.loft}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.appart}</td>
                   </tr>
                 ))}
               </tbody>
@@ -281,16 +318,16 @@ export default function ArticleRenovationLoft() {
 
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Points de vigilance avant d&apos;acheter un loft parisien
+              Les erreurs à éviter dans la rénovation d&apos;un loft
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "Vérifier le changement de destination : est-il légalement un logement ou encore un local commercial ?",
-                "Contrôler l'état de la toiture et des verrières existantes : fuite = chantier coûteux",
-                "Vérifier la présence d'amiante (avant 1997) avant tout travaux de démolition",
-                "S'assurer que le DPE a bien été fait (les lofts bruts sont souvent mal isolés, DPE F ou G)",
-                "Anticiper les travaux de plomberie : les évacuations d'un local industriel ne correspondent pas à un logement",
-                "Vérifier les autorisations de copropriété pour les modifications envisagées (verrière de toit, façade)",
+                "Ne pas faire appel à un ingénieur structure avant de créer une mezzanine ou de percer la structure",
+                "Ne pas négliger l'isolation phonique : un loft avec plancher béton brut transmet tous les bruits d'impact",
+                "Ne pas poser du béton ciré sur un support non préparé : fissures et décollements garantis",
+                "Ne pas oublier la VMC : un loft avec grande hauteur accumule l'humidité en partie haute",
+                "Ne pas sous-estimer le budget électricité : tout est à reprendre depuis le tableau général",
+                "Ne pas choisir uniquement sur critère esthétique : l'acoustique d'un loft ouvert peut être problématique",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -302,85 +339,13 @@ export default function ArticleRenovationLoft() {
         </div>
       </section>
 
-      {/* Section 5 — Cuisine loft */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Cuisine de loft : l&apos;îlot central comme pièce maîtresse
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Dans un loft open space, la cuisine n&apos;est pas cachée : elle est exposée, elle fait partie du décor. L&apos;îlot central est l&apos;élément fédérateur autour duquel s&apos;organisent le séjour et la salle à manger. Il doit être à la fois fonctionnel et beau.
-          </p>
-          <div className="space-y-4">
-            {[
-              {
-                option: "Îlot central en béton ciré ou pierre de lave",
-                prix: "5 000 – 15 000 €",
-                detail: "Le plan de travail en béton ciré ou en pierre de lave (Pyrolave émaillée) est le must du loft industriel. Résistant à la chaleur, imperméable, il s'adapte à toutes les configurations. L'évier sous-encastré en inox brossé complète parfaitement l'ensemble.",
-              },
-              {
-                option: "Façades de meubles en métal brossé ou bois massif",
-                prix: "3 000 – 10 000 €",
-                detail: "Les façades en acier inoxydable brossé (esprit restauration professionnelle) ou en bois massif (chêne, noyer) s'associent idéalement avec les plans de travail en béton. Éviter les façades laquées brillantes qui jurent avec l'ambiance industrielle.",
-              },
-              {
-                option: "Hotte de chef suspendue",
-                prix: "1 500 – 5 000 €",
-                detail: "Dans un loft open space, l'aspiration des odeurs est un enjeu crucial. La hotte de chef suspendue (cylindrique en acier, cubique en verre) ou la hotte à recyclage (sans évacuation extérieure) sont les solutions adaptées. Choisir un modèle silencieux (< 45 dB) pour le confort du séjour.",
-              },
-            ].map((el) => (
-              <div key={el.option} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-4 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.option}</div>
-                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
-                </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6 — Mezzanine */}
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Mezzanine métallique : gagner un niveau dans votre loft
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Dans un loft avec des plafonds de plus de 3,50 m, la mezzanine métallique est l&apos;une des options les plus efficaces pour créer une chambre ou un bureau supplémentaire sans partition fermée.
-          </p>
-          <div className="space-y-4">
-            {[
-              {
-                point: "Structure acier : robuste et esthétique",
-                detail: "La mezzanine est portée par une structure en acier soudé (poutres IPN, colonnes HEA) reposant sur le plancher existant, sans perçage de dalle porteuse dans la plupart des cas. La finition métal noir mat ou acier brut verni est la plus cohérente avec le style industriel. Un plancher en chêne massif ou en grille caillebotis complète la structure.",
-              },
-              {
-                point: "Garde-corps : sécurité et design",
-                detail: "Le garde-corps de mezzanine est un élément décoratif fort : câbles inox tendus (esprit naval), barres acier horizontales, verre trempé (pour la transparence) ou grille en métal laqué. Hauteur réglementaire : 1 mètre minimum. C'est aussi l'élément qui finit le caractère du lieu.",
-              },
-              {
-                point: "Escalier : droit, quart tournant ou colimaçon",
-                detail: "L'escalier droit à crémaillère métal (marches bois + limon acier) est la solution la plus compacte et la plus design. L'escalier colimaçon (diamètre 120 cm) convient aux espaces plus contraints. Un escalier-rangement (tiroirs intégrés sous les marches) maximise l'utilisation de l'espace.",
-              },
-            ].map((el) => (
-              <div key={el.point} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.point}</div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -390,17 +355,17 @@ export default function ArticleRenovationLoft() {
       </section>
 
       {/* Guides connexes */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Guides connexes</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/blog/renovation-studio-paris', title: 'Rénovation studio Paris' },
-              { href: '/blog/creation-verriere-interieure-paris', title: 'Verrière intérieure Paris' },
+              { href: '/blog/creation-verriere-interieure-paris', title: 'Création verrière intérieure Paris' },
               { href: '/blog/sol-beton-cire-paris', title: 'Sol béton ciré Paris' },
-              { href: '/blog/renovation-appartement-ancien-paris', title: 'Rénovation appartement ancien Paris' },
-              { href: '/blog/isolation-thermique-paris', title: 'Isolation thermique Paris' },
+              { href: '/blog/renovation-studio-paris', title: 'Rénovation studio Paris' },
+              { href: '/blog/isolation-phonique-paris', title: 'Isolation phonique Paris' },
               { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénovation appartement haussmannien Paris' },
+              { href: '/blog/renovation-duplex-paris', title: 'Rénovation duplex Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -417,10 +382,10 @@ export default function ArticleRenovationLoft() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Rénovez votre loft parisien avec un artisan spécialisé
+          Rénovez votre loft parisien avec Espace Design
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Visite du lieu gratuite. Conception du projet incluse. Devis détaillé sous 48h.
+          Artisan spécialisé lofts et espaces atypiques. Diagnostic gratuit. Devis détaillé sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

@@ -70,6 +70,9 @@ const villes94 = [
   { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
   { href: '/renovation-le-perreux-sur-marne', label: 'Le Perreux-sur-Marne' },
   { href: '/renovation-bonneuil-sur-marne', label: 'Bonneuil-sur-Marne' },
+  { href: '/renovation-villejuif', label: 'Villejuif' },
+  { href: '/renovation-arcueil', label: 'Arcueil' },
+  { href: '/renovation-cachan', label: 'Cachan' },
 ]
 
 const services = [

@@ -834,6 +834,18 @@ const articles = [
     desc: "Améliorer l'isolation thermique d'un appartement parisien : combles, murs, fenêtres, DPE, MaPrimeRénov'. Prix 2025.",
     tag: 'Isolation',
   },
+  {
+    href: '/blog/renovation-appartement-paris-11e-bastille',
+    title: 'Rénovation Appartement Paris 11e Bastille : artisan & prix 2025',
+    desc: "Artisan rénovation Paris 11e : Bastille, Oberkampf, Nation, Charonne. Quartier branché, forte demande locative, prix 2025.",
+    tag: 'Arrondissements',
+  },
+  {
+    href: '/blog/renovation-salle-de-bain-italienne-paris',
+    title: "Salle de Bain Italienne Paris : douche à l'italienne & prix 2025",
+    desc: "Installer une douche à l'italienne à Paris : bac extra-plat, paroi vitrée, contraintes plancher. Prix et artisan 2025.",
+    tag: 'Salle de bain',
+  },
 ]
 
 export default function BlogPage() {

@@ -410,6 +410,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Blog — nouvel article
     { url: `${base}/blog/isolation-thermique-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-paris-11e-bastille`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-salle-de-bain-italienne-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
+    // Val-de-Marne (94) — nouvelles villes
+    { url: `${base}/renovation-villejuif`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-arcueil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-cachan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-Saint-Denis (93) — nouvelles villes
+    { url: `${base}/renovation-neuilly-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-vaires-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Val-d'Oise (95) — nouvelles villes
