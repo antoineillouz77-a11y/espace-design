@@ -15,9 +15,9 @@ const schemaBreadcrumb = {
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Appartement Paris 19e : artisan & prix 2025 | Espace Design',
-  description: "Rénovation appartement dans le 19e arrondissement de Paris : Buttes-Chaumont, Belleville, Villette. Artisan local, devis gratuit 48h.",
-  datePublished: '2025-04-20',
+  headline: 'Rénovation Appartement Paris 19e : Buttes-Chaumont, Belleville & prix 2025 | Espace Design',
+  description: 'Artisan rénovation Paris 19e arrondissement. Buttes-Chaumont, Belleville, La Villette, quartiers en mutation. Prix 2025, devis sous 48h.',
+  datePublished: '2025-01-15',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
@@ -33,37 +33,54 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quels types de biens trouve-t-on dans le 19e arrondissement ?',
+      name: 'Quel est le prix au m² pour rénover un appartement dans le 19e arrondissement de Paris ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le 19e arrondissement présente un mix très varié entre quartiers populaires d'origine et zones en cours de gentrification. Autour des Buttes-Chaumont, on trouve des immeubles anciens des années 1900-1930, très prisés et en cours de rénovation intensive. Le secteur Belleville-Jourdain est plus bohème avec des ateliers d'artistes et des appartements anciens. Le quartier La Villette, en pleine transformation depuis l'arrivée des studios Hermès et de nombreux projets culturels, concentre des lofts et des espaces reconvertis très recherchés.",
+        text: 'Dans le 19e arrondissement, les prix de rénovation varient de 400 à 600 €/m² pour un simple rafraîchissement et de 1 000 à 1 900 €/m² pour une rénovation complète. Le 19e étant l\'un des arrondissements les moins chers de Paris (prix d\'achat 8 000–10 500 €/m²), les investisseurs réalisent souvent des rénovations complètes pour maximiser la valeur locative. Le ratio rénovation/valorisation est parmi les meilleurs de Paris dans les secteurs Buttes-Chaumont et Crimée.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien coûte une rénovation dans le 19e arrondissement en 2025 ?',
+      name: 'Le 19e est-il un bon arrondissement pour investir et rénover ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le 19e reste l'un des arrondissements les plus accessibles de Paris à l'achat, ce qui en fait un marché très actif pour la rénovation. Un rafraîchissement coûte entre 400 et 800 €/m². Une rénovation complète d'un appartement ancien se situe entre 900 et 1 600 €/m² — légèrement en dessous de la moyenne parisienne. Pour un 2 pièces de 45 m² à rénover entièrement, comptez entre 40 000 et 72 000 €.",
+        text: 'Le 19e arrondissement est l\'un des secteurs les plus dynamiques de Paris pour l\'investissement avec rénovation. Les prix d\'achat sont parmi les plus bas de Paris intra-muros (8 000–10 500 €/m²) et la demande locative est forte, portée par les étudiants, les jeunes actifs et les familles attirées par les espaces verts (Buttes-Chaumont, La Villette). La gentrification accélérée du 19e (notamment autour de Belleville et du canal de l\'Ourcq) fait monter les prix post-rénovation significativement.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Le 19e arrondissement est-il intéressant pour l\'investissement locatif rénové ?',
+      name: 'Quels sont les types d\'immeubles qu\'on trouve dans le 19e arrondissement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, le 19e est l'un des meilleurs arrondissements parisiens pour l'investissement locatif rénové en 2025. Les prix d'acquisition restent inférieurs à la moyenne parisienne (environ 8 000 à 10 000 €/m² selon le secteur), le quartier est en forte valorisation (Buttes-Chaumont, Villette, Jourdain), et la demande locative est soutenue. La stratégie optimale est d'acquérir un bien vétuste à prix bas, le rénover complètement (1 000 à 1 600 €/m²) et le louer meublé (LMNP). Le rendement brut peut atteindre 5 à 7 %.",
+        text: 'Le 19e présente une grande diversité architecturale : immeubles haussmanniens dans les secteurs Buttes-Chaumont et Bolivar, immeubles de faubourg populaires (3–5 étages sans ascenseur) dans Belleville et Crimée, quelques HLM et cités de la fin des années 60, et quelques opérations récentes le long du canal de l\'Ourcq. Les appartements dans les immeubles anciens (avant 1948) sont souvent dans un état nécessitant une rénovation complète, représentant les meilleures opportunités d\'investissement.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quelles aides financières peut-on obtenir pour rénover dans le 19e arrondissement ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Le 19e arrondissement est éligible à toutes les aides nationales de rénovation énergétique : MaPrimeRénov (jusqu\'à 70 % du coût de l\'isolation pour les ménages modestes), CEE (Certificats d\'Économies d\'Énergie) sur l\'isolation et le chauffage, éco-PTZ (prêt à taux zéro jusqu\'à 50 000 €), TVA à 5,5 % sur les travaux d\'amélioration de la performance énergétique. Certains logements situés dans des Quartiers Prioritaires de la Ville (QPV) peuvent bénéficier d\'aides complémentaires de la Ville de Paris.',
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Paris 19e : artisan & prix 2025 | Espace Design',
-  description: "Rénovation appartement dans le 19e arrondissement de Paris : Buttes-Chaumont, Belleville, Villette. Artisan local, devis gratuit 48h.",
+  title: 'Rénovation Appartement Paris 19e : Buttes-Chaumont, Belleville & prix 2025 | Espace Design',
+  description: 'Artisan rénovation Paris 19e arrondissement. Buttes-Chaumont, Belleville, La Villette, prix 2025. Devis gratuit sous 48h.',
+  keywords: [
+    'rénovation appartement paris 19e',
+    'artisan rénovation 19e arrondissement',
+    'rénovation buttes-chaumont paris',
+    'travaux appartement belleville 19e',
+    'prix rénovation paris 19e 2025',
+    'rénovation la villette paris',
+    'entrepreneur rénovation paris 19',
+  ],
 }
 
-export default function ArticleParis19e() {
+export default function ArticleRenovationParis19() {
   return (
     <>
       <script
@@ -83,44 +100,41 @@ export default function ArticleParis19e() {
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Paris
+            Paris 19e arrondissement
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Appartement Paris 19e : artisan &amp; prix 2025
+            Rénovation Appartement Paris 19e : Buttes-Chaumont, Belleville &amp; prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Le 19e arrondissement est en pleine transformation. Entre la quiétude bourgeoise des Buttes-Chaumont, l&apos;effervescence créative de Belleville et la renaissance du bassin de la Villette, le 19e attire de plus en plus de propriétaires souhaitant rénover. C&apos;est l&apos;un des arrondissements les plus dynamiques pour la rénovation en 2025.
+            Buttes-Chaumont, Belleville, La Villette, Crimée, canal de l&apos;Ourcq : le 19e arrondissement est l&apos;un des quartiers parisiens en mutation les plus rapides. Anciens faubourgs populaires en pleine gentrification, mix d&apos;immeubles anciens et de constructions modernes, forte demande locative et prix d&apos;achat encore accessibles. Espace Design intervient dans tout le 19e, devis sous 48h.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Profil du quartier */}
+      {/* Section 1 — Quartiers */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              19e arrondissement : mix populaire, bobo et bassin de la Villette en pleine transformation
+              Le parc immobilier du 19e : anciens faubourgs en pleine transformation
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le 19e est un arrondissement de contrastes. Historiquement ouvrier et populaire, il connaît depuis une dizaine d&apos;années une transformation profonde portée par plusieurs facteurs : la valorisation du bassin de la Villette (désormais la plus grande plage de Paris), l&apos;attractivité du parc des Buttes-Chaumont, l&apos;arrivée de nombreux créatifs et artisans dans le secteur Belleville-Jourdain.
-            </p>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Ce mouvement de fond se traduit par une activité de rénovation intense. Les prix d&apos;achat restent encore en dessous de la moyenne parisienne, ce qui en fait l&apos;un des marchés les plus actifs pour la rénovation en vue de la location ou de la revente.
+              Le 19e arrondissement présente l&apos;un des parcs immobiliers les plus hétérogènes de Paris. Ancienne commune de Belleville annexée en 1860, le 19e a longtemps été un arrondissement populaire et ouvrier. Il connaît depuis les années 2010 une gentrification accélérée, notamment autour des Buttes-Chaumont, de Belleville et du canal de l&apos;Ourcq, qui en fait l&apos;un des meilleurs secteurs pour l&apos;investissement immobilier avec rénovation.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Buttes-Chaumont — le quartier le plus valorisé du 19e',
-                  detail: "Le secteur Buttes-Chaumont (autour du parc, rue de Crimée, rue Manin) est le plus prisé du 19e. Les immeubles anciens des années 1900-1930 y sont très recherchés. La rénovation y est souvent haut de gamme (parquet massif, cuisine ouverte, salle de bain moderne) en raison du niveau de prix élevé des biens à l'achat.",
+                  enjeu: 'Buttes-Chaumont – Bolivar : le secteur le plus valorisé du 19e',
+                  detail: 'Le quartier des Buttes-Chaumont est le plus prisé du 19e. Les immeubles y sont principalement haussmanniens et de rapport des années 1890–1930, avec des appartements familiaux (60–100 m²) en bon état général. La proximité du parc des Buttes-Chaumont, l\'un des plus grands de Paris, constitue un attrait majeur. Les prix post-rénovation peuvent atteindre 10 500–12 000 €/m², justifiant des rénovations complètes ambitieuses.',
                 },
                 {
-                  enjeu: 'Belleville et Jourdain — esprit bobo et ateliers d\'artistes',
-                  detail: "Le secteur Belleville-Jourdain est le coeur créatif du 19e. Ateliers d'artistes, appartements anciens mal distribués, petites cours intérieures — ces biens ont un fort potentiel de transformation. La rénovation y est souvent orientée vers l'optimisation de l'espace (décloisonnement, cuisine ouverte) et la création d'un esprit atelier.",
+                  enjeu: 'Belleville – Jourdain : gentrification et mix culturel',
+                  detail: 'Belleville est à cheval sur les 19e et 20e arrondissements. Le secteur est en pleine transformation, attirant artistes, bobos et jeunes actifs. Le parc immobilier mêle immeubles de faubourg populaires (souvent sans ascenseur, 3–5 étages), quelques haussmanniens tardifs et des opérations récentes. Les appartements dans leur jus sont encore nombreux et représentent d\'excellentes opportunités d\'investissement.',
                 },
                 {
-                  enjeu: 'La Villette — lofts et espaces reconvertis',
-                  detail: "Le secteur La Villette connaît une transformation spectaculaire. D'anciennes friches industrielles et entrepôts sont convertis en lofts et appartements atypiques. Ces espaces nécessitent des rénovations complètes incluant isolation, plomberie et électricité from scratch — mais offrent un potentiel architectural unique.",
+                  enjeu: 'La Villette – Crimée – canal de l\'Ourcq : renouveau urbain',
+                  detail: 'Le secteur La Villette et les bords du canal de l\'Ourcq connaissent une transformation urbaine profonde depuis la réhabilitation des anciens entrepôts. Le tissu résidentiel est varié : logements sociaux, immeubles de rapport des années 50–70, et quelques constructions récentes. C\'est le secteur le plus abordable du 19e (8 000–9 500 €/m²) et celui avec le plus fort potentiel de hausse à moyen terme.',
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -133,36 +147,46 @@ export default function ArticleParis19e() {
         </div>
       </section>
 
-      {/* Section 2 — Spécificités techniques */}
+      {/* Section 2 — Travaux courants */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Travaux les plus fréquents dans le 19e arrondissement
+            Types de travaux les plus demandés dans le 19e arrondissement
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le 19e concentre beaucoup de biens anciens vétustes à fort potentiel. Voici les travaux les plus fréquemment réalisés.
+            Le profil du 19e génère une forte demande de rénovation complète, notamment de la part des investisseurs attirés par les prix d&apos;achat encore accessibles et la demande locative soutenue.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Rénovation complète appartement vétuste',
-                solution: "La rénovation complète (électricité, plomberie, cuisine, salle de bain, sols, peintures) est le scénario le plus courant dans le 19e, notamment pour les appartements acquis dans le cadre d'un investissement locatif. Durée : 6 à 12 semaines selon la surface.",
-                cout: '900 – 1 600 €/m²',
+                titre: 'Rénovation complète investisseur (logement dans son jus)',
+                solution: 'Le 19e est l\'arrondissement des appartements dans leur jus : papier peint d\'origine, cuisine 1970, plomberie en plomb, électricité hors normes. Rénovation totale en vue de mise en location ou revente : dépose complète, remplacement tous réseaux, cuisine, salle de bain, sols, peinture. Livraison clé en main.',
+                cout: '1 000 – 1 800 €/m²',
               },
               {
-                titre: 'Décloisonnement et cuisine ouverte',
-                solution: "Les appartements anciens du 19e sont souvent très découpés avec des couloirs et des chambres sans lumière naturelle. L'abattement des murs non porteurs et la création d'une cuisine ouverte sur le séjour transforment radicalement la luminosité et le volume perçu.",
-                cout: '3 000 – 8 000 €',
+                titre: 'Réfection plomberie complète (plomb et acier)',
+                solution: 'Les immeubles d\'avant 1949 du 19e ont souvent des canalisations en plomb à remplacer (obligatoire pour la mise en location). Les immeubles des années 50–70 ont des colonnes en acier galvanisé corrodées. Remplacement complet par du cuivre ou du PER, mise aux normes des évacuations, nouveau chauffe-eau.',
+                cout: '5 000 – 15 000 €',
               },
               {
-                titre: 'Mise aux normes électrique et plomberie',
-                solution: "Indispensable dans tous les biens construits avant 1985. Tableau électrique, câblage, prises de terre, remplacement des canalisations en plomb ou en fonte. Ce poste représente souvent 15 à 20 % du budget total de rénovation.",
-                cout: '5 000 – 12 000 €',
+                titre: 'Création salle de bain dans les petits appartements',
+                solution: 'Nombreux sont les studios et 2 pièces du 19e sans salle de bain indépendante (WC sur palier hérité des immeubles ouvriers). Création d\'une salle d\'eau ex nihilo dans un espace dédié : gestion hydraulique, aération, isolation. Transformation radicale de la valeur locative.',
+                cout: '7 000 – 16 000 €',
               },
               {
-                titre: 'Isolation thermique et phonique',
-                solution: "Les immeubles anciens du 19e sont peu ou pas isolés. L'isolation par l'intérieur des murs en contact avec l'extérieur (ITI) améliore significativement le confort thermique. L'isolation phonique des planchers réduit la transmission des bruits d'impact entre appartements.",
-                cout: '60 – 150 €/m²',
+                titre: 'Réfection électrique complète',
+                solution: 'Remplacement des installations électriques vétustes (fils en coton, absence de mise à la terre) dans les immeubles anciens du 19e. Nouveau tableau aux normes NF C 15-100, circuits dédiés cuisine et salle de bain, prises USB, préparation VMC. Incontournable avant toute mise en location.',
+                cout: '4 000 – 11 000 €',
+              },
+              {
+                titre: 'Rénovation partielle pour bailleur (optimisation DPE)',
+                solution: 'Pour les bailleurs dont le bien est classé F ou G, rénovation ciblée sur la performance énergétique : isolation des murs (doublage intérieur), remplacement des fenêtres, nouveau système de chauffage (pompe à chaleur). Objectif : passer en classe D ou C pour continuer à louer après 2025.',
+                cout: '700 – 1 400 €/m²',
+              },
+              {
+                titre: 'Rafraîchissement pour vente rapide',
+                solution: 'Mise en valeur d\'un appartement avant vente : peinture toutes pièces (couleurs neutres), remplacement du sol (stratifié ou parquet flottant), nettoyage et relooking de la cuisine et salle de bain. Résultat : appartement présentable, vendu 10 à 15 % plus cher qu\'en l\'état.',
+                cout: '400 – 600 €/m²',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -177,51 +201,101 @@ export default function ArticleParis19e() {
         </div>
       </section>
 
-      {/* Section 3 — Prix */}
+      {/* Section 3 — Contraintes */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix d&apos;une rénovation dans le 19e arrondissement en 2025
+            Contraintes et spécificités de la rénovation dans le 19e arrondissement
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le 19e offre les prix de rénovation les plus accessibles parmi les arrondissements parisiens du nord et de l&apos;est. C&apos;est l&apos;un des meilleurs rapports achat + rénovation / valeur finale de tout Paris.
+            La rénovation dans le 19e présente des défis liés à l&apos;état du bâti ancien et aux contraintes logistiques des immeubles sans ascenseur. Voici les points à anticiper.
+          </p>
+          <div className="space-y-4 mb-6">
+            {[
+              {
+                type: 'Immeubles sans ascenseur : logistique de chantier',
+                prix: 'Surcoût 10 – 20 %',
+                detail: 'La majorité des immeubles anciens de Belleville et Crimée n\'ont pas d\'ascenseur. La livraison des matériaux lourds (carrelage, baignoire, chauffe-eau) et l\'évacuation des gravats se font à la main dans les escaliers étroits. Ce surcoût logistique est anticipé dans nos devis et inclus dans le prix final.',
+              },
+              {
+                type: 'Plomb, amiante et diagnostics obligatoires',
+                prix: '200 – 600 € (diagnostics)',
+                detail: 'Les immeubles anciens du 19e (très nombreux bâtiments d\'avant 1949) sont soumis au diagnostic plomb (CREP) et amiante avant travaux. La présence de plomb dans les peintures et les canalisations est fréquente. En cas de détection, les modes opératoires de démolition sont stricts. Ces diagnostics sont à réaliser avant tout démarrage de chantier.',
+              },
+              {
+                type: 'Copropriétés en difficulté : syndics bénévoles',
+                prix: 'Délai variable',
+                detail: 'Certaines copropriétés du 19e (notamment les petits immeubles de faubourg) fonctionnent avec des syndics bénévoles peu disponibles. Les délais d\'obtention des autorisations de travaux peuvent être longs. Notre coordinateur de travaux vous accompagne dans ces démarches et peut relancer le syndic si nécessaire.',
+              },
+              {
+                type: 'Réseaux collectifs partagés et colonnes montantes',
+                prix: 'Coordination syndic obligatoire',
+                detail: 'Dans les petits immeubles anciens du 19e, les colonnes montantes d\'eau et les évacuations collectives sont souvent partagées entre plusieurs appartements. Toute intervention sur ces réseaux nécessite une coordination avec les voisins et le syndic, et parfois une coupure d\'eau pour toute la colonne. Cette contrainte est anticipée dans notre planning de chantier.',
+              },
+            ].map((el) => (
+              <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
+                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — Budget */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Prix rénovation appartement Paris 19e : tableau récapitulatif 2025
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Estimations main d&apos;œuvre et matériaux inclus, pour des appartements type du 19e arrondissement de Paris.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau de prestation</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Description</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prestations</th>
                   <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix / m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Total 50 m²</th>
                 </tr>
               </thead>
               <tbody>
                 {[
                   {
                     niveau: 'Rafraîchissement',
-                    prestations: 'Peinture, sol, luminaires — sans modification des installations',
-                    prixM2: '400 – 800 €',
+                    prestations: 'Peinture + sol + petites réparations',
+                    prixM2: '400 – 600 €',
+                    total: '20 000 – 30 000 €',
                   },
                   {
-                    niveau: 'Rénovation partielle (SDB ou cuisine)',
-                    prestations: 'Refonte d\'une pièce humide avec mise aux normes',
-                    prixM2: '700 – 1 100 €',
+                    niveau: 'Rénovation partielle',
+                    prestations: 'Cuisine ou SDB + peinture + sol',
+                    prixM2: '650 – 1 100 €',
+                    total: '32 000 – 55 000 €',
                   },
                   {
-                    niveau: 'Rénovation complète appartement ancien',
-                    prestations: 'Électricité, plomberie, cuisine, SDB, sols, peintures',
-                    prixM2: '900 – 1 600 €',
+                    niveau: 'Rénovation complète',
+                    prestations: 'Cuisine + SDB + électricité + plomberie + sols',
+                    prixM2: '1 000 – 1 700 €',
+                    total: '50 000 – 85 000 €',
                   },
                   {
-                    niveau: 'Rénovation loft ou espace reconverti',
-                    prestations: 'Rénovation from scratch d\'un ancien entrepôt ou atelier',
-                    prixM2: '1 500 – 2 500 €',
+                    niveau: 'Haut de gamme',
+                    prestations: 'Tout compris + matériaux premium + isolation',
+                    prixM2: '1 700 – 2 400 €',
+                    total: '85 000 – 120 000 €',
                   },
                 ].map((row, i) => (
                   <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
                     <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.niveau}</td>
                     <td className="px-4 py-3 text-center text-gray-600 font-light">{row.prestations}</td>
                     <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prixM2}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.total}</td>
                   </tr>
                 ))}
               </tbody>
@@ -230,16 +304,16 @@ export default function ArticleParis19e() {
 
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Conseils spécifiques pour rénover dans le 19e
+              Checklist avant de démarrer une rénovation dans le 19e
             </h3>
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                'Viser la rénovation complète d\'un coup pour maximiser la valorisation — éviter les rafraîchissements partiels sur des biens vétustes',
-                'Prioriser le secteur Buttes-Chaumont pour les projets à forte valeur ajoutée — le prix de sortie le justifie',
-                'Remplacer systématiquement les canalisations en plomb ou en fonte lors de toute rénovation',
-                'Traiter l\'isolation thermique des murs en façade — les immeubles anciens du 19e sont très peu isolés',
-                'Décloisonner pour créer des espaces ouverts lumineux — fort impact sur la valeur locative et vénale',
-                'Consulter le PLU du 19e avant tout projet de création de fenêtres ou velux en façade',
+                'Commander le diagnostic plomb (CREP) et amiante avant travaux',
+                'Vérifier la présence d\'un ascenseur et anticiper le surcoût logistique',
+                'Consulter le règlement de copropriété et identifier le syndic responsable',
+                'Prévoir la coordination pour les coupures d\'eau sur colonnes communes',
+                'Vérifier la classe DPE et l\'éligibilité aux aides MaPrimeRénov',
+                'Anticiper 15 % de budget pour les imprévus dans les immeubles anciens',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -251,13 +325,90 @@ export default function ArticleParis19e() {
         </div>
       </section>
 
+      {/* Section 5 — Exemples chantiers */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Exemples de chantiers réalisés dans le 19e arrondissement
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Quelques réalisations représentatives dans les différents secteurs du 19e.
+          </p>
+          <div className="space-y-4">
+            {[
+              {
+                titre: '3 pièces 65 m² Buttes-Chaumont — rénovation investisseur',
+                description: 'Rénovation complète d\'un appartement dans son jus pour investisseur : dépose complète, remplacement canalisations en plomb, électricité aux normes, cuisine neuve ouverte sur séjour, salle de bain complète avec douche italienne, parquet flottant chêne, peinture. Mis en location 3 semaines après livraison. Budget : 78 000 €. Durée : 9 semaines.',
+                highlight: 'Loyer +35 % par rapport au bien non rénové',
+              },
+              {
+                titre: 'Studio 28 m² Belleville — optimisation locative',
+                description: 'Rénovation totale d\'un studio pour LMNP : création salle d\'eau (WC sur palier intégré), cuisine compacte équipée, lit escamotable avec rangements, peinture, stratifié. Travaux réalisés en 4e étage sans ascenseur, avec monte-matériaux en façade. Budget : 26 000 €. Durée : 5 semaines.',
+                highlight: 'Immeuble sans ascenseur géré — livraison en 5 semaines',
+              },
+              {
+                titre: 'Appartement familial 80 m² Crimée — rénovation énergétique',
+                description: 'Rénovation complète axée DPE : isolation des murs par doublage intérieur, remplacement des fenêtres simple vitrage, pompe à chaleur air/air, sol isolant, peinture. Passage de classe G à classe C. Aides MaPrimeRénov déduites. Budget net : 68 000 €. Durée : 11 semaines.',
+                highlight: 'Classe G → C — bien relancé en location légalement',
+              },
+            ].map((ex) => (
+              <div key={ex.titre} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{ex.titre}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed mb-3">{ex.description}</div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle size={13} className="text-[#B8960C] flex-shrink-0" />
+                  <span className="text-[#B8960C] text-xs font-medium">{ex.highlight}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6 — Avantages artisan local */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Pourquoi choisir Espace Design pour rénover dans le 19e arrondissement ?
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le 19e arrondissement est l&apos;un de nos secteurs de prédilection. Nous y intervenons régulièrement pour des investisseurs, des primo-accédants et des bailleurs souhaitant mettre leur bien aux normes.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                titre: 'Spécialiste des immeubles anciens sans ascenseur',
+                detail: 'Nos équipes sont rodées aux chantiers dans les immeubles sans ascenseur : monte-matériaux, organisation logistique, horaires de livraison. Le surcoût est anticipé dans le devis, sans mauvaise surprise.',
+              },
+              {
+                titre: 'Accompagnement aides MaPrimeRénov',
+                detail: 'Nous accompagnons nos clients dans le montage des dossiers d\'aides pour la rénovation énergétique (MaPrimeRénov, CEE, éco-PTZ). Nos devis précisent le coût net après aides pour vous permettre de décider en toute connaissance.',
+              },
+              {
+                titre: 'Expertise investisseur : rentabilité maximisée',
+                detail: 'Nous avons accompagné des dizaines d\'investisseurs dans le 19e. Notre approche : maximiser l\'attractivité locative pour le budget investi. Matériaux durables, finitions soignées, délais tenus.',
+              },
+              {
+                titre: 'Chantier clé en main, zéro gestion',
+                detail: 'Un seul interlocuteur pour tous les corps de métier. Nous coordonnons tout : plombier, électricien, carreleur, peintre, menuisier. Vous recevez les clés du bien rénové, sans avoir géré le moindre artisan.',
+              },
+            ].map((a) => (
+              <div key={a.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{a.titre}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{a.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -266,17 +417,20 @@ export default function ArticleParis19e() {
         </div>
       </section>
 
-      {/* Voir aussi */}
-      <section className="py-12 bg-white border-t border-gray-100">
+      {/* Guides connexes */}
+      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Guides connexes</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
-              { href: '/blog/renovation-appartement-investissement-paris', title: 'Rénovation investissement locatif Paris' },
-              { href: '/blog/renovation-appartement-ancien-paris', title: 'Rénover un appartement ancien à Paris' },
+              { href: '/blog/renovation-appartement-paris-18e', title: 'Rénovation appartement Paris 18e' },
+              { href: '/blog/renovation-appartement-paris-20e', title: 'Rénovation appartement Paris 20e' },
+              { href: '/blog/renovation-appartement-paris-10e', title: 'Rénovation appartement Paris 10e' },
+              { href: '/blog/investissement-locatif-renovation-paris', title: 'Investissement locatif rénovation Paris' },
               { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique appartement Paris' },
-              { href: '/blog/renovation-appartement-montmartre-paris', title: 'Rénovation Montmartre Paris 18e' },
+              { href: '/blog/renovation-appartement-ancien-paris', title: 'Rénovation appartement ancien Paris' },
+              { href: '/blog/prix-renovation-appartement-paris', title: 'Prix rénovation appartement Paris' },
+              { href: '/renovation-paris', title: 'Rénovation appartement Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -291,19 +445,17 @@ export default function ArticleParis19e() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention proches</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
-              { href: '/renovation-paris-19e', label: 'Paris 19e' },
               { href: '/renovation-paris-18e', label: 'Paris 18e' },
               { href: '/renovation-paris-20e', label: 'Paris 20e' },
               { href: '/renovation-paris-10e', label: 'Paris 10e' },
-              { href: '/renovation-paris-17e', label: 'Paris 17e' },
-              { href: '/renovation-paris-11e', label: 'Paris 11e' },
-              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
               { href: '/renovation-pantin', label: 'Pantin' },
+              { href: '/renovation-aubervilliers', label: 'Aubervilliers' },
+              { href: '/renovation-pre-saint-gervais', label: 'Pré-Saint-Gervais' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -320,10 +472,10 @@ export default function ArticleParis19e() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Vous rénovez un bien dans le 19e arrondissement ?
+          Rénover votre appartement dans le 19e arrondissement
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Buttes-Chaumont, Belleville, La Villette — devis gratuit sous 48h dans le 19e.
+          Diagnostic gratuit. Devis sous 48h. Expertise investisseurs et rénovation complète.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
