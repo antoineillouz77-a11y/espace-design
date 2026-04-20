@@ -882,6 +882,12 @@ const articles = [
     desc: "Installer une verrière intérieure style atelier à Paris : séparation cuisine-salon, cloison vitrée. Prix pose 2025.",
     tag: 'Décoration',
   },
+  {
+    href: '/blog/salle-de-bain-italienne-sans-receveur-paris',
+    title: 'Douche Italienne sans Receveur Paris : installation & prix 2025',
+    desc: "Douche italienne sans receveur à Paris : chape hydrofuge, étanchéité SPEC, carrelage antidérapant. Prix 2025.",
+    tag: 'Salle de bain',
+  },
 ]
 
 export default function BlogPage() {
