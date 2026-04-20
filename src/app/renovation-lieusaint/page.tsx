@@ -6,15 +6,15 @@ import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 export const metadata: Metadata = {
   title: "Rénovation Lieusaint (77127) — Artisan Rénovateur | Espace Design",
   description:
-    "Artisan rénovateur à Lieusaint (77127) : logements collectifs et pavillons récents de Sénart, près du Carré Sénart. Rénovation intérieure, cuisine, salle de bain. Devis gratuit 48h.",
+    "Artisan rénovateur à Lieusaint (77127) : logements collectifs et pavillons de la ville nouvelle de Sénart, Carré Sénart. Rénovation 800-2500€/m². Devis gratuit 48h.",
   keywords: [
-    'rénovation Lieusaint',
+    'rénovation appartement Lieusaint',
     'artisan rénovation Lieusaint',
-    'rénovation appartement Lieusaint 77127',
-    'rénovation Sénart Seine-et-Marne',
-    'entreprise rénovation 77127',
-    'artisan Lieusaint 77',
-    'rénovation intérieure Lieusaint',
+    'décoration intérieure Lieusaint',
+    'renovation Lieusaint 77127',
+    'entreprise renovation Lieusaint',
+    'artisan Lieusaint Seine-et-Marne',
+    'rénovation logement Sénart Lieusaint',
   ],
 }
 
@@ -51,31 +51,31 @@ const schemaFaq = {
       name: "Quel est le prix d'une rénovation à Lieusaint ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le coût d'une rénovation à Lieusaint varie entre 800 et 1 400 €/m² pour une rénovation standard. Pour les appartements collectifs de Sénart ou les pavillons récents, comptez 1 000 à 1 800 €/m² selon les prestations. Devis gratuit sous 48h.",
+        text: "Le coût d'une rénovation à Lieusaint varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons et logements collectifs de Sénart, comptez 1 500 à 2 500 €/m² pour une rénovation complète. Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel artisan contacter pour rénover à Lieusaint (Sénart) ?',
+      name: "Quel artisan contacter pour rénover un logement à Lieusaint ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Espace Design intervient à Lieusaint et dans toute la ville nouvelle de Sénart pour la rénovation de logements collectifs et de pavillons récents. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
+        text: "Espace Design intervient régulièrement à Lieusaint pour des rénovations de pavillons et d'appartements dans la ville nouvelle de Sénart. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: "Peut-on rénover un appartement récent à Lieusaint ?",
+      name: "Intervenez-vous sur les logements collectifs de Sénart ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, même les logements récents bénéficient de rénovations : mise à jour de la salle de bain, nouvelle cuisine, peinture personnalisée, pose de parquet. Nous intervenons sur tous types de biens à Lieusaint et Sénart.",
+        text: "Oui, Espace Design est habitué aux logements collectifs et aux pavillons de la ville nouvelle de Sénart à Lieusaint. Rénovation complète, peinture, salle de bain, cuisine — un seul interlocuteur du devis à la livraison.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Avez-vous une assurance décennale ?',
+      name: "Avez-vous une assurance décennale ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
+        text: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.",
       },
     },
   ],
@@ -112,10 +112,10 @@ export default function RenovationLieusaint() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Lieusaint — 77127</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Lieusaint — Sénart
+            Rénovation appartement<br className="hidden sm:block" /> Lieusaint
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Lieusaint (77127), ville nouvelle de Sénart : logements collectifs et pavillons récents, près du Carré Sénart. Rénovation intérieure, cuisine, salle de bain, peinture. Devis gratuit sous 48h.
+            Artisan rénovateur à Lieusaint (77127) : logements collectifs et pavillons de la ville nouvelle de Sénart, quartier Carré Sénart. Rénovation complète pour jeunes familles. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -142,9 +142,9 @@ export default function RenovationLieusaint() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation logement collectif', desc: "Rénovation d'appartements dans les résidences de Sénart : rafraîchissement peinture, pose de parquet, remplacement des revêtements. Adaptation aux contraintes de copropriété gérée avec soin." },
-              { num: '02', title: 'Cuisine & salle de bain', desc: "Modernisation de votre cuisine ou salle de bain à Lieusaint : nouvelles faïences, robinetterie, meuble vasque, plan de travail. Des espaces repensés pour correspondre à votre mode de vie." },
-              { num: '03', title: 'Aménagement intérieur', desc: "Optimisation des espaces dans les logements de ville nouvelle : rangements intégrés, cloisons, agencement sur mesure. Profitez au maximum de votre surface habitable à Sénart." },
+              { num: '01', title: 'Rénovation logement collectif', desc: "Personnalisation et rafraîchissement des logements collectifs de Sénart — peinture, revêtements, aménagement intérieur sur mesure pour jeunes familles." },
+              { num: '02', title: 'Rénovation pavillons', desc: "Extension, redistribution des espaces, modernisation des pavillons de Lieusaint. Un projet clé en main avec un seul interlocuteur du devis à la livraison." },
+              { num: '03', title: 'Salle de bain & cuisine', desc: "Rénovation complète salle de bain et cuisine dans les logements de Sénart. Carrelage, plomberie, menuiserie — tout en une seule intervention." },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -174,10 +174,10 @@ export default function RenovationLieusaint() {
                 {[
                   ['Peinture appartement', '25 - 60 €/m²'],
                   ['Rénovation salle de bain', '3 500 - 12 000 €'],
-                  ['Rénovation cuisine', '4 000 - 15 000 €'],
+                  ['Rénovation cuisine', '4 500 - 15 000 €'],
                   ['Parquet (pose + fourniture)', '45 - 100 €/m²'],
-                  ['Rénovation complète appartement', '800 - 1 400 €/m²'],
-                  ['Rénovation avec aménagement', '1 200 - 1 800 €/m²'],
+                  ['Rénovation complète', '800 - 1 500 €/m²'],
+                  ['Rénovation haut de gamme', '1 500 - 2 500 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -191,14 +191,14 @@ export default function RenovationLieusaint() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#FAFAF8]">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <blockquote className="border-l-2 border-[#D4AF37] pl-6">
-            <p className="text-gray-600 text-base font-light italic leading-relaxed mb-4">
-              "Nous avons fait rénover notre appartement à Lieusaint — cuisine et salle de bain refaites à neuf. Patrick est ponctuel, professionnel et les finitions sont vraiment soignées."
-            </p>
-            <cite className="text-[#B8960C] text-xs font-light uppercase tracking-widest not-italic">— Famille Morin, Lieusaint (77127)</cite>
-          </blockquote>
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
+            Une réalisation
+          </h2>
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — logement Lieusaint Sénart 77127" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+          </div>
         </div>
       </section>
 
@@ -231,19 +231,19 @@ export default function RenovationLieusaint() {
             {[
               {
                 q: "Quel est le prix d'une rénovation à Lieusaint ?",
-                a: "Le coût d'une rénovation à Lieusaint varie entre 800 et 1 400 €/m² pour une rénovation standard. Pour une rénovation complète avec cuisine et salle de bain, comptez 1 000 à 1 800 €/m².",
+                a: "Le coût d'une rénovation à Lieusaint varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons et logements collectifs de Sénart, comptez 1 500 à 2 500 €/m² pour une rénovation complète.",
               },
               {
-                q: 'Quel artisan contacter pour rénover à Lieusaint (Sénart) ?',
-                a: "Espace Design intervient à Lieusaint et dans toute la ville nouvelle de Sénart. Assuré décennale, devis gratuit sous 48h, un seul interlocuteur du début à la fin.",
+                q: "Quel artisan contacter pour rénover un logement à Lieusaint ?",
+                a: "Espace Design intervient régulièrement à Lieusaint pour des rénovations de pavillons et d'appartements dans la ville nouvelle de Sénart. Assuré décennale, devis gratuit sous 48h.",
               },
               {
-                q: "Peut-on rénover un appartement récent à Lieusaint ?",
-                a: "Oui, nous intervenons sur tous types de biens à Lieusaint : salle de bain, cuisine, peinture, parquet. Même les logements récents méritent une mise à jour personnalisée.",
+                q: "Intervenez-vous sur les logements collectifs de Sénart ?",
+                a: "Oui, Espace Design est habitué aux logements collectifs et aux pavillons de Sénart à Lieusaint. Rénovation complète, peinture, salle de bain, cuisine — un seul interlocuteur.",
               },
               {
-                q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
+                q: "Avez-vous une assurance décennale ?",
+                a: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.",
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -333,7 +333,7 @@ export default function RenovationLieusaint() {
             Votre projet à Lieusaint
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la ville nouvelle de Sénart (77).
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Lieusaint et la ville nouvelle de Sénart.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

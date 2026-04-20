@@ -6,15 +6,15 @@ import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 export const metadata: Metadata = {
   title: "Rénovation Andrésy (78570) — Artisan Rénovateur | Espace Design",
   description:
-    "Artisan rénovateur à Andrésy (78570) : maisons individuelles et pavillons en bords de Seine, cadre naturel et verdure proche Paris. Rénovation complète, cuisine, salle de bain. Devis gratuit 48h.",
+    "Artisan rénovateur à Andrésy (78570) : maisons individuelles et pavillons en bords de Seine, cadre naturel proche Paris. Rénovation 800-2500€/m². Devis gratuit 48h.",
   keywords: [
-    'rénovation Andrésy',
+    'rénovation maison Andrésy',
     'artisan rénovation Andrésy',
-    'rénovation maison Andrésy 78570',
-    'rénovation pavillon bords de Seine',
-    'entreprise rénovation 78570',
-    'artisan Andrésy Yvelines 78',
-    'rénovation intérieure Andrésy',
+    'décoration intérieure Andrésy',
+    'renovation Andrésy 78570',
+    'entreprise renovation Andrésy',
+    'artisan Andrésy Yvelines',
+    'rénovation pavillon bords de Seine Andrésy',
   ],
 }
 
@@ -51,15 +51,15 @@ const schemaFaq = {
       name: "Quel est le prix d'une rénovation à Andrésy ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le coût d'une rénovation à Andrésy varie entre 900 et 1 600 €/m² pour une rénovation standard. Pour les maisons de bords de Seine avec finitions haut de gamme, comptez 1 400 à 2 500 €/m². Devis gratuit sous 48h.",
+        text: "Le coût d'une rénovation à Andrésy varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons individuelles et pavillons en bords de Seine, comptez 1 500 à 2 500 €/m² pour une rénovation complète avec finitions soignées. Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel artisan contacter pour rénover une maison à Andrésy ?',
+      name: "Quel artisan contacter pour rénover une maison à Andrésy ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Espace Design intervient à Andrésy pour la rénovation de maisons individuelles et pavillons en bords de Seine. Artisan assuré décennale, 15 ans d'expérience, clientèle exigeante, devis gratuit sous 48h.",
+        text: "Espace Design intervient régulièrement à Andrésy pour des rénovations de maisons individuelles et pavillons en bords de Seine. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
       },
     },
     {
@@ -67,15 +67,15 @@ const schemaFaq = {
       name: "Quels types de travaux réalisez-vous à Andrésy ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Nous réalisons tous types de travaux à Andrésy : rénovation complète, cuisine, salle de bain, peinture, parquet, carrelage, isolation, électricité, plomberie. Un seul interlocuteur du devis à la livraison.",
+        text: "À Andrésy, Espace Design réalise des rénovations complètes de maisons individuelles : cuisine, salle de bain, parquet, peinture, menuiserie, isolation. Aussi bien pour les pavillons anciens que pour les constructions récentes en bords de Seine.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Avez-vous une assurance décennale ?',
+      name: "Avez-vous une assurance décennale ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
+        text: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.",
       },
     },
   ],
@@ -112,10 +112,10 @@ export default function RenovationAndresy() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Andrésy — 78570</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation maison<br className="hidden sm:block" /> Andrésy — Bords de Seine
+            Rénovation maison<br className="hidden sm:block" /> Andrésy
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Andrésy (78570) : maisons individuelles et pavillons en bords de Seine, cadre naturel et verdure à proximité de Paris. Rénovation intérieure complète, finitions soignées. Devis gratuit sous 48h.
+            Artisan rénovateur à Andrésy (78570) : maisons individuelles et pavillons en bords de Seine, cadre naturel verdoyant proche Paris. Rénovation complète pour une clientèle cherchant la qualité de vie. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -142,9 +142,9 @@ export default function RenovationAndresy() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation de maison bourgeoise', desc: "Rénovation haut de gamme des maisons individuelles d'Andrésy : parquet massif, boiseries, salle de bain en marbre, cuisine sur mesure. Des finitions d'exception pour une clientèle exigeante en bords de Seine." },
-              { num: '02', title: 'Décoration intérieure', desc: "Agencement et décoration sur mesure pour valoriser votre maison d'Andrésy : harmonie des matériaux, choix des couleurs, mobilier intégré. Un cadre de vie cohérent qui reflète votre personnalité." },
-              { num: '03', title: 'Rénovation complète clé en main', desc: "Du diagnostic initial à la livraison finale, nous coordonnons tous les corps de métier pour votre maison à Andrésy. Un interlocuteur unique, un planning maîtrisé, zéro stress pour vous." },
+              { num: '01', title: 'Rénovation maisons bords de Seine', desc: "Rénovation complète des maisons individuelles et pavillons en bords de Seine à Andrésy — modernisation, extension, redistribution des espaces." },
+              { num: '02', title: 'Décoration intérieure naturelle', desc: "Aménagement en harmonie avec le cadre naturel d'Andrésy — matériaux nobles, bois, pierre, lumière naturelle optimisée pour un intérieur serein." },
+              { num: '03', title: 'Salle de bain & cuisine', desc: "Rénovation complète salle de bain et cuisine pour les maisons d'Andrésy. Finitions soignées, carrelage, menuiserie sur mesure, plomberie complète." },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -172,12 +172,12 @@ export default function RenovationAndresy() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture maison', '30 - 70 €/m²'],
-                  ['Rénovation salle de bain', '4 000 - 15 000 €'],
-                  ['Rénovation cuisine', '5 000 - 20 000 €'],
-                  ['Parquet (pose + fourniture)', '50 - 110 €/m²'],
-                  ['Rénovation complète maison', '900 - 1 600 €/m²'],
-                  ['Rénovation prestige bords de Seine', '1 400 - 2 500 €/m²'],
+                  ['Peinture maison', '25 - 65 €/m²'],
+                  ['Rénovation salle de bain', '3 500 - 12 000 €'],
+                  ['Rénovation cuisine', '4 500 - 16 000 €'],
+                  ['Parquet (pose + fourniture)', '45 - 105 €/m²'],
+                  ['Rénovation complète', '800 - 1 500 €/m²'],
+                  ['Rénovation haut de gamme', '1 500 - 2 500 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -191,14 +191,14 @@ export default function RenovationAndresy() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#FAFAF8]">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <blockquote className="border-l-2 border-[#D4AF37] pl-6">
-            <p className="text-gray-600 text-base font-light italic leading-relaxed mb-4">
-              "Nous avons confié à Patrick la rénovation complète de notre maison en bord de Seine à Andrésy. Résultat superbe, finitions haut de gamme, et un suivi de chantier sans faille. Recommandé sans réserve."
-            </p>
-            <cite className="text-[#B8960C] text-xs font-light uppercase tracking-widest not-italic">— M. et Mme Desmarais, Andrésy (78570)</cite>
-          </blockquote>
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
+            Une réalisation
+          </h2>
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — maison Andrésy bords de Seine 78570" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+          </div>
         </div>
       </section>
 
@@ -231,19 +231,19 @@ export default function RenovationAndresy() {
             {[
               {
                 q: "Quel est le prix d'une rénovation à Andrésy ?",
-                a: "Le coût d'une rénovation à Andrésy varie entre 900 et 1 600 €/m² pour une rénovation standard. Pour les maisons de bords de Seine avec finitions haut de gamme, comptez 1 400 à 2 500 €/m².",
+                a: "Le coût d'une rénovation à Andrésy varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons individuelles et pavillons en bords de Seine, comptez 1 500 à 2 500 €/m² pour une rénovation complète.",
               },
               {
-                q: 'Quel artisan contacter pour rénover une maison à Andrésy ?',
-                a: "Espace Design intervient à Andrésy pour la rénovation de maisons individuelles en bords de Seine. Assuré décennale, clientèle exigeante, devis gratuit sous 48h.",
+                q: "Quel artisan contacter pour rénover une maison à Andrésy ?",
+                a: "Espace Design intervient régulièrement à Andrésy pour des rénovations de maisons individuelles et pavillons. Assuré décennale, devis gratuit sous 48h.",
               },
               {
                 q: "Quels types de travaux réalisez-vous à Andrésy ?",
-                a: "Nous réalisons tous types de travaux à Andrésy : rénovation complète, cuisine, salle de bain, peinture, parquet, carrelage, isolation, électricité, plomberie. Un seul interlocuteur du devis à la livraison.",
+                a: "À Andrésy, Espace Design réalise des rénovations complètes de maisons individuelles : cuisine, salle de bain, parquet, peinture, menuiserie, isolation — aussi bien pour les pavillons anciens que récents.",
               },
               {
-                q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
+                q: "Avez-vous une assurance décennale ?",
+                a: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.",
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -333,7 +333,7 @@ export default function RenovationAndresy() {
             Votre projet à Andrésy
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune d&apos;Andrésy et alentours (78).
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune d'Andrésy et les bords de Seine.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

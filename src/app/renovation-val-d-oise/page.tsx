@@ -57,6 +57,7 @@ const villes95 = [
   { href: '/renovation-montmorency', label: 'Montmorency' },
   { href: '/renovation-gonesse', label: 'Gonesse' },
   { href: '/renovation-herblay-sur-seine', label: 'Herblay-sur-Seine' },
+  { href: '/renovation-marines', label: 'Marines' },
 ]
 
 const services = [

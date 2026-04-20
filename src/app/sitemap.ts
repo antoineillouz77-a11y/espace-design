@@ -472,6 +472,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-bois-colombes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-gennevilliers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Essonne (91) — vague 6
+    { url: `${base}/renovation-arpajon`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-saint-michel-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-et-Marne (77) — vague 6
+    { url: `${base}/renovation-moissy-cramayel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-marines`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 3
+    { url: `${base}/blog/escalier-interieur-renovation-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Pages hub département
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/renovation-val-de-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

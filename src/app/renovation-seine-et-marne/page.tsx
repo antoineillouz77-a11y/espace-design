@@ -52,6 +52,7 @@ const villes77 = [
   { href: '/renovation-saint-thibault-des-vignes', label: 'Saint-Thibault-des-Vignes' },
   { href: '/renovation-mitry-mory', label: 'Mitry-Mory' },
   { href: '/renovation-roissy-en-brie', label: 'Roissy-en-Brie' },
+  { href: '/renovation-moissy-cramayel', label: 'Moissy-Cramayel' },
 ]
 
 const services = [

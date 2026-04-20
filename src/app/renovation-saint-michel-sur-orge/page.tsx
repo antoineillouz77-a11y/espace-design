@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Rénovation Les Clayes-sous-Bois (78340) — Artisan Rénovateur | Espace Design",
+  title: "Rénovation Saint-Michel-sur-Orge (91240) — Artisan Rénovateur | Espace Design",
   description:
-    "Artisan rénovateur aux Clayes-sous-Bois (78340) : pavillons et maisons dans commune résidentielle boisée, accès A13. Rénovation 800-2500€/m². Devis gratuit 48h.",
+    "Artisan rénovateur à Saint-Michel-sur-Orge (91240) : commune pavillonnaire, maisons années 70, résidentiel familial en bords de l'Orge. Rénovation 700-1600€/m². Devis gratuit 48h.",
   keywords: [
-    'rénovation maison Les Clayes-sous-Bois',
-    'artisan rénovation Les Clayes-sous-Bois',
-    'décoration intérieure Les Clayes-sous-Bois',
-    'renovation Les Clayes-sous-Bois 78340',
-    'entreprise renovation Les Clayes-sous-Bois',
-    'artisan Les Clayes-sous-Bois Yvelines',
-    'rénovation pavillon Les Clayes-sous-Bois',
+    'rénovation Saint-Michel-sur-Orge',
+    'artisan rénovation Saint-Michel-sur-Orge',
+    'renovation maison Saint-Michel-sur-Orge 91240',
+    'entreprise renovation Saint-Michel-sur-Orge',
+    'artisan Saint-Michel-sur-Orge Essonne',
+    'rénovation maison années 70 Saint-Michel-sur-Orge',
+    'rénovation pavillon Saint-Michel-sur-Orge',
   ],
 }
 
@@ -22,17 +22,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur aux Clayes-sous-Bois.',
+  description: 'Artisan rénovateur et décorateur intérieur à Saint-Michel-sur-Orge.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-les-clayes-sous-bois',
+  url: 'https://espacedesignparis.fr/renovation-saint-michel-sur-orge',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Les Clayes-sous-Bois',
+    name: 'Saint-Michel-sur-Orge',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Les Clayes-sous-Bois',
-    postalCode: '78340',
+    addressLocality: 'Saint-Michel-sur-Orge',
+    postalCode: '91240',
     addressCountry: 'FR',
   },
   aggregateRating: {
@@ -48,34 +48,34 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: "Quel est le prix d'une rénovation aux Clayes-sous-Bois ?",
+      name: "Quel est le prix d'une rénovation à Saint-Michel-sur-Orge ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le coût d'une rénovation aux Clayes-sous-Bois varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons et pavillons résidentiels boisés, comptez 1 500 à 2 500 €/m² pour une rénovation complète avec finitions haut de gamme. Devis gratuit sous 48h.",
+        text: "Le coût d'une rénovation à Saint-Michel-sur-Orge varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour les maisons des années 70 avec remise aux normes complète, comptez 1 200 à 1 600 €/m². Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: "Quel artisan contacter pour rénover un pavillon aux Clayes-sous-Bois ?",
+      name: 'Quel artisan contacter pour rénover une maison à Saint-Michel-sur-Orge ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Espace Design intervient régulièrement aux Clayes-sous-Bois pour des rénovations de pavillons et maisons individuelles. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
+        text: "Espace Design intervient régulièrement à Saint-Michel-sur-Orge pour des rénovations de pavillons et maisons individuelles, notamment des maisons des années 70. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: "Intervenez-vous dans les communes proches des Clayes-sous-Bois ?",
+      name: 'Comment rénover une maison des années 70 à Saint-Michel-sur-Orge ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, Espace Design intervient aux Clayes-sous-Bois et dans les communes voisines : Plaisir, Versailles, Vélizy-Villacoublay. Déplacement gratuit pour l'établissement du devis dans toutes les Yvelines.",
+        text: "La rénovation d'une maison des années 70 à Saint-Michel-sur-Orge implique généralement : isolation thermique, mise aux normes électricité, remplacement des menuiseries, modernisation de la salle de bain et de la cuisine. Nous établissons un plan de rénovation sur mesure.",
       },
     },
     {
       '@type': 'Question',
-      name: "Avez-vous une assurance décennale ?",
+      name: 'Avez-vous une assurance décennale ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.",
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
       },
     },
   ],
@@ -86,12 +86,12 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Yvelines', item: 'https://espacedesignparis.fr/renovation-yvelines' },
-    { '@type': 'ListItem', position: 3, name: 'Les Clayes-sous-Bois', item: 'https://espacedesignparis.fr/renovation-les-clayes-sous-bois' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Essonne', item: 'https://espacedesignparis.fr/renovation-essonne' },
+    { '@type': 'ListItem', position: 3, name: 'Saint-Michel-sur-Orge', item: 'https://espacedesignparis.fr/renovation-saint-michel-sur-orge' },
   ],
 }
 
-export default function RenovationLesClayes() {
+export default function RenovationSaintMichelSurOrge() {
   return (
     <>
       <script
@@ -109,13 +109,13 @@ export default function RenovationLesClayes() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Les Clayes-sous-Bois — 78340</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Saint-Michel-sur-Orge — 91240</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation maison<br className="hidden sm:block" /> Les Clayes-sous-Bois
+            Rénovation maison<br className="hidden sm:block" /> Saint-Michel-sur-Orge
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur aux Clayes-sous-Bois (78340) : pavillons et maisons dans cette commune résidentielle boisée des Yvelines. Cadre calme, accès A13. Rénovation complète et finitions soignées. Devis gratuit sous 48h.
+            Artisan rénovateur à Saint-Michel-sur-Orge (91240) : commune pavillonnaire familiale, maisons des années 70, bords de l'Orge. Forte demande en rénovation complète et modernisation. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -138,13 +138,13 @@ export default function RenovationLesClayes() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services aux Clayes-sous-Bois
+            Nos services à Saint-Michel-sur-Orge
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation pavillons', desc: "Rénovation complète des pavillons et maisons individuelles des Clayes-sous-Bois — extension, redistribution des pièces, modernisation énergétique." },
-              { num: '02', title: 'Décoration intérieure', desc: "Aménagement sur mesure en harmonie avec l'environnement boisé et résidentiel — matériaux naturels, couleurs apaisantes, menuiserie fine." },
-              { num: '03', title: 'Salle de bain & cuisine', desc: "Rénovation complète salle de bain et cuisine pour les maisons des Clayes-sous-Bois. Carrelage, faïence, mobilier sur mesure, plomberie." },
+              { num: '01', title: 'Rénovation maisons années 70', desc: "Remise au goût du jour et aux normes de vos maisons des années 70 à Saint-Michel-sur-Orge : isolation, électricité, plomberie, salle de bain, cuisine, parquet." },
+              { num: '02', title: 'Isolation et performance', desc: "Amélioration de l'isolation thermique et phonique de votre pavillon à Saint-Michel-sur-Orge — combles, murs, planchers. Réduisez vos factures d'énergie durablement." },
+              { num: '03', title: 'Rénovation complète', desc: "Prise en charge globale de votre projet de rénovation à Saint-Michel-sur-Orge — de la conception au suivi de chantier, un seul interlocuteur pour tous les corps de métier." },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -160,7 +160,7 @@ export default function RenovationLesClayes() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation aux Clayes-sous-Bois
+            Prix rénovation à Saint-Michel-sur-Orge
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
@@ -172,12 +172,12 @@ export default function RenovationLesClayes() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture maison', '25 - 65 €/m²'],
+                  ['Peinture maison', '30 - 70 €/m²'],
                   ['Rénovation salle de bain', '3 500 - 12 000 €'],
-                  ['Rénovation cuisine', '4 500 - 16 000 €'],
-                  ['Parquet (pose + fourniture)', '45 - 105 €/m²'],
-                  ['Rénovation complète', '800 - 1 500 €/m²'],
-                  ['Rénovation haut de gamme', '1 500 - 2 500 €/m²'],
+                  ['Rénovation cuisine', '4 000 - 18 000 €'],
+                  ['Parquet (pose + fourniture)', '45 - 100 €/m²'],
+                  ['Isolation thermique', '20 - 80 €/m²'],
+                  ['Rénovation complète', '700 - 1 600 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -197,7 +197,7 @@ export default function RenovationLesClayes() {
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — maison Les Clayes-sous-Bois 78340" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — pavillon Saint-Michel-sur-Orge 91240" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -230,20 +230,20 @@ export default function RenovationLesClayes() {
           <div className="space-y-4">
             {[
               {
-                q: "Quel est le prix d'une rénovation aux Clayes-sous-Bois ?",
-                a: "Le coût d'une rénovation aux Clayes-sous-Bois varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons et pavillons, comptez 1 500 à 2 500 €/m² pour une rénovation complète avec finitions haut de gamme.",
+                q: "Quel est le prix d'une rénovation à Saint-Michel-sur-Orge ?",
+                a: "Le coût d'une rénovation à Saint-Michel-sur-Orge varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour les maisons des années 70 avec remise aux normes complète, comptez 1 200 à 1 600 €/m².",
               },
               {
-                q: "Quel artisan contacter pour rénover un pavillon aux Clayes-sous-Bois ?",
-                a: "Espace Design intervient régulièrement aux Clayes-sous-Bois pour des rénovations de pavillons et maisons individuelles. Assuré décennale, devis gratuit sous 48h.",
+                q: 'Quel artisan contacter pour rénover une maison à Saint-Michel-sur-Orge ?',
+                a: "Espace Design intervient régulièrement à Saint-Michel-sur-Orge pour des rénovations de pavillons, notamment des maisons des années 70. Assuré décennale, devis gratuit sous 48h.",
               },
               {
-                q: "Intervenez-vous dans les communes proches des Clayes-sous-Bois ?",
-                a: "Oui, Espace Design intervient aux Clayes-sous-Bois et dans les communes voisines : Plaisir, Versailles, Vélizy-Villacoublay. Déplacement gratuit pour l'établissement du devis.",
+                q: 'Comment rénover une maison des années 70 à Saint-Michel-sur-Orge ?',
+                a: "La rénovation d'une maison des années 70 inclut généralement : isolation thermique, mise aux normes électricité, modernisation salle de bain et cuisine, remplacement menuiseries. Nous établissons un plan sur mesure.",
               },
               {
-                q: "Avez-vous une assurance décennale ?",
-                a: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.",
+                q: 'Avez-vous une assurance décennale ?',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -263,10 +263,10 @@ export default function RenovationLesClayes() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
-              { href: '/renovation-plaisir', label: 'Plaisir' },
-              { href: '/renovation-versailles', label: 'Versailles' },
-              { href: '/renovation-velizy-villacoublay', label: 'Vélizy-Villacoublay' },
+              { href: '/renovation-essonne', label: 'Essonne (91)' },
+              { href: '/renovation-sainte-genevieve-des-bois', label: 'Sainte-Geneviève-des-Bois' },
+              { href: '/renovation-epinay-sur-orge', label: 'Épinay-sur-Orge' },
+              { href: '/renovation-morsang-sur-orge', label: 'Morsang-sur-Orge' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
@@ -330,10 +330,10 @@ export default function RenovationLesClayes() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet aux Clayes-sous-Bois
+            Votre projet à Saint-Michel-sur-Orge
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune des Clayes-sous-Bois et les Yvelines.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Saint-Michel-sur-Orge.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

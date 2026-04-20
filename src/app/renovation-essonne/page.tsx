@@ -61,6 +61,8 @@ const villes91 = [
   { href: '/renovation-grigny', label: 'Grigny' },
   { href: '/renovation-morsang-sur-orge', label: 'Morsang-sur-Orge' },
   { href: '/renovation-bruyeres-le-chatel', label: 'Bruyères-le-Châtel' },
+  { href: '/renovation-arpajon', label: 'Arpajon' },
+  { href: '/renovation-saint-michel-sur-orge', label: 'Saint-Michel-sur-Orge' },
 ]
 
 const services = [
