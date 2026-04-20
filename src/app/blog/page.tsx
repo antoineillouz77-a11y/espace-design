@@ -1998,6 +1998,18 @@ const articles = [
     desc: "Rénover un appartement à Villepinte (93). Artisan qualifié, devis gratuit sous 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-gif-sur-yvette',
+    title: "Rénovation Appartement Gif-sur-Yvette (91) — 2025",
+    desc: "Artisan rénovateur à Gif-sur-Yvette (Essonne). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-le-blanc-mesnil',
+    title: "Rénovation Appartement Le Blanc-Mesnil (93) — 2025",
+    desc: "Rénover un appartement au Blanc-Mesnil (93). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
