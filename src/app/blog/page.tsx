@@ -288,6 +288,12 @@ const articles = [
     desc: "Rénover une chambre à Paris : parquet, peinture, placards sur mesure, isolation phonique. Prix au m² et guide complet 2025.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/sol-beton-cire-paris',
+    title: 'Sol Béton Ciré Paris : prix, pose & finitions 2025',
+    desc: "Béton ciré à Paris : cuisine, salle de bain, séjour. Prix au m², application, entretien, comparatif avec carrelage. Guide complet 2025.",
+    tag: 'Sols & Parquet',
+  },
 ]
 
 export default function BlogPage() {
