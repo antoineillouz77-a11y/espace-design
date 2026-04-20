@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Boulogne-Billancourt (92100) — Artisan Rénovateur | Espace Design',
+  title: 'Rénovation Villeneuve-la-Garenne (92390) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Boulogne-Billancourt (92100) : appartements haussmanniens, lofts anciens usines Renault, logements premium. Rénovation 800-3000€/m². Devis gratuit 48h.',
+    'Artisan rénovateur à Villeneuve-la-Garenne (92390) : immeubles résidentiels, appartements, pavillons en bord de Seine. Rénovation 800-2500€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation Boulogne-Billancourt',
-    'artisan rénovation Boulogne-Billancourt',
-    'rénovation appartement Boulogne-Billancourt',
-    'renovation Boulogne-Billancourt 92100',
-    'entreprise renovation Boulogne',
-    'artisan Boulogne-Billancourt Hauts-de-Seine',
-    'rénovation loft Boulogne-Billancourt',
+    'rénovation appartement Villeneuve-la-Garenne',
+    'artisan rénovation Villeneuve-la-Garenne',
+    'décoration intérieure Villeneuve-la-Garenne',
+    'renovation Villeneuve-la-Garenne 92390',
+    'entreprise renovation Villeneuve-la-Garenne',
+    'artisan Villeneuve-la-Garenne Hauts-de-Seine',
+    'rénovation appartement bord de Seine 92',
   ],
 }
 
@@ -22,17 +22,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Boulogne-Billancourt.',
+  description: 'Artisan rénovateur et décorateur intérieur à Villeneuve-la-Garenne.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-boulogne-billancourt',
+  url: 'https://espacedesignparis.fr/renovation-villeneuve-la-garenne',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Boulogne-Billancourt',
+    name: 'Villeneuve-la-Garenne',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Boulogne-Billancourt',
-    postalCode: '92100',
+    addressLocality: 'Villeneuve-la-Garenne',
+    postalCode: '92390',
     addressCountry: 'FR',
   },
   aggregateRating: {
@@ -48,26 +48,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Boulogne-Billancourt ?',
+      name: 'Quel est le prix d\'une rénovation à Villeneuve-la-Garenne ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Boulogne-Billancourt varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les lofts et appartements premium (anciens immeubles Renault, haussmannien), comptez 1 500 à 3 000 €/m². Devis gratuit sous 48h.',
+        text: 'Le coût d\'une rénovation à Villeneuve-la-Garenne varie entre 800 et 1 500 €/m² pour une rénovation standard dans un appartement. Pour les pavillons en bord de Seine avec finitions soignées, comptez 1 200 à 2 500 €/m². Devis gratuit sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment rénover un loft à Boulogne-Billancourt ?',
+      name: 'Quel artisan contacter pour rénover un appartement à Villeneuve-la-Garenne ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Les lofts dans les anciens bâtiments industriels de Boulogne nécessitent une attention particulière : isolation acoustique et thermique renforcée, béton ciré, verrières, cloisons Placoplatre. Espace Design maîtrise ces chantiers atypiques.',
+        text: 'Espace Design intervient régulièrement à Villeneuve-la-Garenne pour des rénovations d\'appartements et de pavillons. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur du début à la fin du chantier.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Rénovez-vous les appartements haussmanniens à Boulogne-Billancourt ?',
+      name: 'Peut-on rénover un appartement en immeuble résidentiel à Villeneuve-la-Garenne ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design rénove régulièrement des appartements haussmanniens à Boulogne-Billancourt : parquet point de Hongrie, moulures, peinture à la chaux, salle de bain en marbre. Devis gratuit, chantier clé en main.',
+        text: 'Oui, nous intervenons dans les immeubles résidentiels de Villeneuve-la-Garenne pour tous types de travaux : salle de bain, cuisine, peinture, parquet. Nous respectons le règlement de copropriété et nous coordonnons avec le syndic si nécessaire.',
       },
     },
     {
@@ -87,11 +87,11 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Rénovation Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
-    { '@type': 'ListItem', position: 3, name: 'Boulogne-Billancourt', item: 'https://espacedesignparis.fr/renovation-boulogne-billancourt' },
+    { '@type': 'ListItem', position: 3, name: 'Villeneuve-la-Garenne', item: 'https://espacedesignparis.fr/renovation-villeneuve-la-garenne' },
   ],
 }
 
-export default function RenovationBoulogne() {
+export default function RenovationVilleneuvelaGarenne() {
   return (
     <>
       <script
@@ -109,13 +109,13 @@ export default function RenovationBoulogne() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Boulogne-Billancourt — 92100</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Villeneuve-la-Garenne — 92390</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Boulogne-Billancourt
+            Rénovation appartement<br className="hidden sm:block" /> Villeneuve-la-Garenne
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Boulogne-Billancourt (92100) : appartements haussmanniens et immeubles 1930-70, lofts dans les anciennes usines Renault, logements premium. Rénovation complète et finitions de prestige. Devis gratuit sous 48h.
+            Artisan rénovateur à Villeneuve-la-Garenne (92390) : immeubles résidentiels, appartements, pavillons en bord de Seine. Rénovation complète et finitions de qualité. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -138,13 +138,13 @@ export default function RenovationBoulogne() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Boulogne-Billancourt
+            Nos services à Villeneuve-la-Garenne
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation salle de bain', desc: 'Transformation complète de votre salle de bain dans vos appartements de Boulogne-Billancourt — marbre, carrelage grand format, douche italienne, baignoire îlot. Finitions premium garanties.' },
-              { num: '02', title: 'Rénovation cuisine', desc: 'Cuisine ouverte, plan de travail en quartz, îlot central, électroménager intégré. Rénovation cuisine sur-mesure pour vos logements premium de Boulogne-Billancourt.' },
-              { num: '03', title: 'Peinture et finitions', desc: "Peinture à la chaux, enduits décoratifs, boiseries, verrières d'atelier. Des finitions haut de gamme qui subliment vos appartements haussmanniens et lofts industriels à Boulogne." },
+              { num: '01', title: 'Rénovation salle de bain', desc: 'Transformation complète de votre salle de bain : douche à l\'italienne, baignoire îlot, carrelage grand format, robinetterie design. Intervention dans les appartements et pavillons de Villeneuve-la-Garenne.' },
+              { num: '02', title: 'Rénovation cuisine', desc: 'Cuisine ouverte ou fermée, agencement sur mesure, plan de travail, credence, carrelage. Nous rénovons vos cuisines dans les immeubles résidentiels et maisons en bord de Seine.' },
+              { num: '03', title: 'Peinture et finitions', desc: 'Peinture intérieure, enduits lisses, papiers peints, parquet. Des finitions soignées pour valoriser votre bien à Villeneuve-la-Garenne et séduire les futurs acheteurs ou locataires.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -157,11 +157,10 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Boulogne-Billancourt
+            Prix rénovation à Villeneuve-la-Garenne
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
@@ -174,11 +173,11 @@ export default function RenovationBoulogne() {
               <tbody className="divide-y divide-gray-100">
                 {[
                   ['Peinture appartement', '30 - 70 €/m²'],
-                  ['Rénovation salle de bain', '4 000 - 15 000 €'],
-                  ['Rénovation cuisine', '5 000 - 20 000 €'],
+                  ['Rénovation salle de bain', '4 000 - 12 000 €'],
+                  ['Rénovation cuisine', '5 000 - 18 000 €'],
                   ['Parquet (pose + fourniture)', '50 - 110 €/m²'],
-                  ['Rénovation complète', '800 - 1 500 €/m²'],
-                  ['Rénovation prestige / loft', '1 500 - 3 000 €/m²'],
+                  ['Rénovation complète appartement', '800 - 1 500 €/m²'],
+                  ['Rénovation pavillon bord de Seine', '1 200 - 2 500 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -192,14 +191,13 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* Photo */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/17-sdb-mosaique-douche.jpg" alt="Salle de bain avec carrelage mosaïque et douche à l'italienne — rénovation appartement Boulogne-Billancourt" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Salle de bain rénovée — rénovation appartement Villeneuve-la-Garenne 92390" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -210,7 +208,7 @@ export default function RenovationBoulogne() {
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -224,7 +222,6 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -233,16 +230,16 @@ export default function RenovationBoulogne() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Boulogne-Billancourt ?',
-                a: 'Le coût d\'une rénovation à Boulogne-Billancourt varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les lofts et appartements premium, comptez 1 500 à 3 000 €/m².',
+                q: 'Quel est le prix d\'une rénovation à Villeneuve-la-Garenne ?',
+                a: 'Le coût d\'une rénovation à Villeneuve-la-Garenne varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons en bord de Seine, comptez 1 200 à 2 500 €/m² selon le niveau de finition.',
               },
               {
-                q: 'Comment rénover un loft à Boulogne-Billancourt ?',
-                a: 'Les lofts dans les anciens bâtiments industriels de Boulogne nécessitent une attention particulière : isolation acoustique et thermique renforcée, béton ciré, verrières, cloisons sur-mesure. Espace Design maîtrise ces chantiers atypiques.',
+                q: 'Quel artisan contacter pour rénover un appartement à Villeneuve-la-Garenne ?',
+                a: 'Espace Design intervient régulièrement à Villeneuve-la-Garenne pour des rénovations d\'appartements et de pavillons. Assuré décennale, devis gratuit sous 48h, un seul interlocuteur.',
               },
               {
-                q: 'Rénovez-vous les appartements haussmanniens à Boulogne-Billancourt ?',
-                a: 'Oui, Espace Design rénove régulièrement des appartements haussmanniens à Boulogne-Billancourt : parquet point de Hongrie, moulures, peinture à la chaux, salle de bain en marbre. Devis gratuit, chantier clé en main.',
+                q: 'Peut-on rénover un appartement en immeuble résidentiel à Villeneuve-la-Garenne ?',
+                a: 'Oui, nous intervenons dans les immeubles résidentiels de Villeneuve-la-Garenne pour tous types de travaux. Nous respectons le règlement de copropriété et coordonnons avec le syndic si nécessaire.',
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -261,18 +258,17 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* Zones voisines */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
-              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
-              { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
-              { href: '/renovation-sevres', label: 'Sèvres' },
-              { href: '/renovation-appartement-paris', label: 'Paris 16e' },
-              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine' },
+              { href: '/renovation-gennevilliers', label: 'Gennevilliers' },
+              { href: '/renovation-asnieres-sur-seine', label: 'Asnières-sur-Seine' },
+              { href: '/renovation-colombes', label: 'Colombes' },
+              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -286,7 +282,6 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* Voir aussi */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -313,7 +308,6 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* Articles liés */}
       <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
@@ -337,10 +331,10 @@ export default function RenovationBoulogne() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Boulogne-Billancourt
+            Votre projet à Villeneuve-la-Garenne
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Boulogne-Billancourt.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Villeneuve-la-Garenne.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

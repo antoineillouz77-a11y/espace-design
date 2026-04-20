@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Boulogne-Billancourt (92100) — Artisan Rénovateur | Espace Design',
+  title: 'Rénovation Rungis (94150) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Boulogne-Billancourt (92100) : appartements haussmanniens, lofts anciens usines Renault, logements premium. Rénovation 800-3000€/m². Devis gratuit 48h.',
+    'Artisan rénovateur à Rungis (94150) : maisons individuelles, pavillons résidentiels, commune calme proche du MIN. Rénovation 800-2500€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation Boulogne-Billancourt',
-    'artisan rénovation Boulogne-Billancourt',
-    'rénovation appartement Boulogne-Billancourt',
-    'renovation Boulogne-Billancourt 92100',
-    'entreprise renovation Boulogne',
-    'artisan Boulogne-Billancourt Hauts-de-Seine',
-    'rénovation loft Boulogne-Billancourt',
+    'rénovation maison Rungis',
+    'artisan rénovation Rungis',
+    'rénovation Rungis 94150',
+    'entreprise renovation Rungis',
+    'artisan Rungis Val-de-Marne',
+    'rénovation pavillon Rungis',
+    'travaux rénovation Rungis',
   ],
 }
 
@@ -22,17 +22,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Boulogne-Billancourt.',
+  description: 'Artisan rénovateur et décorateur intérieur à Rungis.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-boulogne-billancourt',
+  url: 'https://espacedesignparis.fr/renovation-rungis',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Boulogne-Billancourt',
+    name: 'Rungis',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Boulogne-Billancourt',
-    postalCode: '92100',
+    addressLocality: 'Rungis',
+    postalCode: '94150',
     addressCountry: 'FR',
   },
   aggregateRating: {
@@ -48,26 +48,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Boulogne-Billancourt ?',
+      name: 'Quel est le prix d\'une rénovation à Rungis ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Boulogne-Billancourt varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les lofts et appartements premium (anciens immeubles Renault, haussmannien), comptez 1 500 à 3 000 €/m². Devis gratuit sous 48h.',
+        text: 'Le coût d\'une rénovation à Rungis varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons individuelles et pavillons haut de gamme, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment rénover un loft à Boulogne-Billancourt ?',
+      name: 'Quel artisan contacter pour rénover une maison à Rungis ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Les lofts dans les anciens bâtiments industriels de Boulogne nécessitent une attention particulière : isolation acoustique et thermique renforcée, béton ciré, verrières, cloisons Placoplatre. Espace Design maîtrise ces chantiers atypiques.',
+        text: 'Espace Design intervient régulièrement à Rungis pour des rénovations de maisons individuelles et de pavillons résidentiels. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Rénovez-vous les appartements haussmanniens à Boulogne-Billancourt ?',
+      name: 'Quels travaux de rénovation réalisez-vous à Rungis ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design rénove régulièrement des appartements haussmanniens à Boulogne-Billancourt : parquet point de Hongrie, moulures, peinture à la chaux, salle de bain en marbre. Devis gratuit, chantier clé en main.',
+        text: 'Nous réalisons tous types de travaux à Rungis : rénovation de salle de bain, cuisine, peinture, parquet, carrelage, isolation, électricité et décoration intérieure. Chaque projet est géré de A à Z par un seul artisan.',
       },
     },
     {
@@ -86,12 +86,12 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
-    { '@type': 'ListItem', position: 3, name: 'Boulogne-Billancourt', item: 'https://espacedesignparis.fr/renovation-boulogne-billancourt' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
+    { '@type': 'ListItem', position: 3, name: 'Rungis', item: 'https://espacedesignparis.fr/renovation-rungis' },
   ],
 }
 
-export default function RenovationBoulogne() {
+export default function RenovationRungis() {
   return (
     <>
       <script
@@ -109,13 +109,13 @@ export default function RenovationBoulogne() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Boulogne-Billancourt — 92100</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Rungis — 94150</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Boulogne-Billancourt
+            Rénovation maison<br className="hidden sm:block" /> Rungis
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Boulogne-Billancourt (92100) : appartements haussmanniens et immeubles 1930-70, lofts dans les anciennes usines Renault, logements premium. Rénovation complète et finitions de prestige. Devis gratuit sous 48h.
+            Artisan rénovateur à Rungis (94150) : maisons individuelles, pavillons résidentiels, commune calme proche du MIN. Rénovation complète et finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -138,13 +138,13 @@ export default function RenovationBoulogne() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Boulogne-Billancourt
+            Nos services à Rungis
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation salle de bain', desc: 'Transformation complète de votre salle de bain dans vos appartements de Boulogne-Billancourt — marbre, carrelage grand format, douche italienne, baignoire îlot. Finitions premium garanties.' },
-              { num: '02', title: 'Rénovation cuisine', desc: 'Cuisine ouverte, plan de travail en quartz, îlot central, électroménager intégré. Rénovation cuisine sur-mesure pour vos logements premium de Boulogne-Billancourt.' },
-              { num: '03', title: 'Peinture et finitions', desc: "Peinture à la chaux, enduits décoratifs, boiseries, verrières d'atelier. Des finitions haut de gamme qui subliment vos appartements haussmanniens et lofts industriels à Boulogne." },
+              { num: '01', title: 'Rénovation salle de bain', desc: 'Transformation complète de votre salle de bain à Rungis : faïence, douche à l\'italienne, vasque suspendue, robinetterie de qualité. Résultat soigné, délais respectés.' },
+              { num: '02', title: 'Rénovation cuisine', desc: 'Cuisine rénovée de fond en comble : plan de travail, crédence, peinture, éclairage. Nous adaptons l\'aménagement à votre maison individuelle ou pavillon.' },
+              { num: '03', title: 'Peinture et finitions', desc: 'Peinture intérieure, enduits décoratifs, revêtements muraux et plafonds. Des finitions haut de gamme pour sublimer l\'intérieur de votre habitation à Rungis.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -157,11 +157,10 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Boulogne-Billancourt
+            Prix rénovation à Rungis
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
@@ -173,12 +172,12 @@ export default function RenovationBoulogne() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture appartement', '30 - 70 €/m²'],
+                  ['Peinture maison', '30 - 70 €/m²'],
                   ['Rénovation salle de bain', '4 000 - 15 000 €'],
                   ['Rénovation cuisine', '5 000 - 20 000 €'],
                   ['Parquet (pose + fourniture)', '50 - 110 €/m²'],
                   ['Rénovation complète', '800 - 1 500 €/m²'],
-                  ['Rénovation prestige / loft', '1 500 - 3 000 €/m²'],
+                  ['Rénovation haut de gamme', '1 500 - 2 500 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -192,14 +191,13 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* Photo */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/17-sdb-mosaique-douche.jpg" alt="Salle de bain avec carrelage mosaïque et douche à l'italienne — rénovation appartement Boulogne-Billancourt" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — maison individuelle Rungis 94150" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -210,7 +208,7 @@ export default function RenovationBoulogne() {
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -224,7 +222,6 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -233,16 +230,16 @@ export default function RenovationBoulogne() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Boulogne-Billancourt ?',
-                a: 'Le coût d\'une rénovation à Boulogne-Billancourt varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les lofts et appartements premium, comptez 1 500 à 3 000 €/m².',
+                q: 'Quel est le prix d\'une rénovation à Rungis ?',
+                a: 'Le coût d\'une rénovation à Rungis varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons et maisons haut de gamme, comptez 1 500 à 2 500 €/m².',
               },
               {
-                q: 'Comment rénover un loft à Boulogne-Billancourt ?',
-                a: 'Les lofts dans les anciens bâtiments industriels de Boulogne nécessitent une attention particulière : isolation acoustique et thermique renforcée, béton ciré, verrières, cloisons sur-mesure. Espace Design maîtrise ces chantiers atypiques.',
+                q: 'Quel artisan contacter pour rénover une maison à Rungis ?',
+                a: 'Espace Design intervient régulièrement à Rungis pour des rénovations de maisons individuelles et de pavillons résidentiels. Assuré décennale, devis gratuit sous 48h.',
               },
               {
-                q: 'Rénovez-vous les appartements haussmanniens à Boulogne-Billancourt ?',
-                a: 'Oui, Espace Design rénove régulièrement des appartements haussmanniens à Boulogne-Billancourt : parquet point de Hongrie, moulures, peinture à la chaux, salle de bain en marbre. Devis gratuit, chantier clé en main.',
+                q: 'Quels travaux de rénovation réalisez-vous à Rungis ?',
+                a: 'Nous réalisons tous types de travaux à Rungis : rénovation de salle de bain, cuisine, peinture, parquet, carrelage, isolation, électricité et décoration intérieure.',
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -261,18 +258,17 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* Zones voisines */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
-              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
-              { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
-              { href: '/renovation-sevres', label: 'Sèvres' },
-              { href: '/renovation-appartement-paris', label: 'Paris 16e' },
-              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
+              { href: '/renovation-chevilly-larue', label: 'Chevilly-Larue' },
+              { href: '/renovation-fresnes', label: 'Fresnes' },
+              { href: '/renovation-orly', label: 'Orly' },
+              { href: '/renovation-thiais', label: 'Thiais' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -286,7 +282,6 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* Voir aussi */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -313,7 +308,6 @@ export default function RenovationBoulogne() {
         </div>
       </section>
 
-      {/* Articles liés */}
       <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
@@ -337,10 +331,10 @@ export default function RenovationBoulogne() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Boulogne-Billancourt
+            Votre projet à Rungis
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Boulogne-Billancourt.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Rungis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
