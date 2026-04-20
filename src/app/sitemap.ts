@@ -196,6 +196,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/sol-stratifie-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-paris-5e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-paris-13e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-paris-9e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-paris-15e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
+    // Yvelines (78) — sartrouville
+    { url: `${base}/renovation-sartrouville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

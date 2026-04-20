@@ -618,6 +618,18 @@ const articles = [
     desc: "Rénovation appartement dans le 13e arrondissement de Paris : Butte-aux-Cailles, Gobelins, Chinatown. Artisan local, devis gratuit 48h.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-paris-9e',
+    title: 'Rénovation Appartement Paris 9e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 9e arrondissement de Paris : Pigalle, Opéra, SoPi. Artisan local, devis gratuit 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/renovation-appartement-paris-15e',
+    title: 'Rénovation Appartement Paris 15e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 15e arrondissement de Paris : Beaugrenelle, Convention, Vaugirard. Artisan local, devis gratuit 48h.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {
