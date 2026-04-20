@@ -253,13 +253,15 @@ export default function ParquetParis() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Voir aussi</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/tarifs', label: 'Nos tarifs 2025' },
-              { href: '/faq', label: 'FAQ rénovation' },
               { href: '/blog/parquet-massif-paris', label: 'Guide parquet massif Paris' },
               { href: '/blog/parquet-chene-paris', label: 'Parquet chêne à Paris' },
               { href: '/blog/renovation-parquet-paris', label: 'Rénover son parquet' },
+              { href: '/blog/renovation-parquet-abime-paris', label: 'Parquet abîmé Paris' },
+              { href: '/blog/pose-parquet-sur-carrelage-paris', label: 'Parquet sur carrelage' },
+              { href: '/blog/renovation-parquet-contrecolle-paris', label: 'Parquet contrecollé' },
               { href: '/blog/sol-beton-cire-paris', label: 'Béton ciré Paris' },
               { href: '/carrelage-paris', label: 'Carrelage Paris' },
+              { href: '/tarifs', label: 'Nos tarifs 2025' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

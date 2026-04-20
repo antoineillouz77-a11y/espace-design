@@ -252,6 +252,9 @@ export default function RenovationCuisineParis() {
           <div className="flex flex-wrap gap-3">
             {[
               { href: '/blog/renovation-cuisine-ouverte-paris', label: 'Guide cuisine ouverte Paris' },
+              { href: '/blog/renovation-cuisine-studio-paris', label: 'Cuisine studio Paris' },
+              { href: '/blog/carrelage-grand-format-paris', label: 'Carrelage grand format' },
+              { href: '/blog/faux-plafond-paris', label: 'Faux plafond cuisine' },
               { href: '/carrelage-paris', label: 'Carrelage Paris' },
               { href: '/plomberie-paris', label: 'Plomberie Paris' },
               { href: '/menuiserie-paris', label: 'Menuiserie sur mesure' },

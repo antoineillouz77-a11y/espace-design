@@ -242,6 +242,27 @@ export default function ElectriciteParis() {
         </div>
       </section>
 
+      {/* Articles liés */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Articles liés</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/blog/electricite-appartement-paris', label: 'Guide électricité appartement' },
+              { href: '/blog/domotique-renovation-paris', label: 'Domotique rénovation Paris' },
+              { href: '/blog/faux-plafond-paris', label: 'Faux plafond avec spots' },
+              { href: '/blog/diagnostic-amiante-paris', label: 'Diagnostic avant travaux' },
+              { href: '/isolation-paris', label: 'Isolation Paris' },
+              { href: '/platrererie-paris', label: 'Plâtrerie Paris' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">

@@ -242,11 +242,14 @@ export default function RenovationSalleDeBainParis() {
           <div className="flex flex-wrap gap-3">
             {[
               { href: '/blog/renovation-salle-de-bain-paris', label: 'Guide rénovation salle de bain Paris' },
+              { href: '/blog/renovation-salle-de-bain-petite-surface-paris', label: 'Petite salle de bain Paris' },
               { href: '/blog/carrelage-appartement-paris', label: 'Carrelage appartement Paris' },
+              { href: '/blog/carrelage-grand-format-paris', label: 'Carrelage grand format' },
+              { href: '/blog/douche-italienne-paris', label: 'Douche italienne Paris' },
+              { href: '/blog/robinetterie-salle-de-bain-paris', label: 'Robinetterie salle de bain' },
               { href: '/carrelage-paris', label: 'Nos services carrelage' },
               { href: '/plomberie-paris', label: 'Nos services plomberie' },
               { href: '/tarifs', label: 'Nos tarifs 2025' },
-              { href: '/faq', label: 'FAQ rénovation' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
