@@ -1686,6 +1686,18 @@ const articles = [
     desc: "Rénover une maison individuelle à Paris ou en IDF. Spécificités, façade, toiture, cave. Devis 48h.",
     tag: 'Maison',
   },
+  {
+    href: '/blog/renovation-appartement-hors-dair-eau',
+    title: "Rénovation Hors d'Air Hors d'Eau Paris : charpente & toiture 2025",
+    desc: "Mise hors d'air hors d'eau avant rénovation intérieure. Charpente, couverture, zinguerie. Devis 48h.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/soubassement-mural-paris',
+    title: "Soubassement Mural Paris : lambris bas de mur & prix 2025",
+    desc: "Soubassement mural à Paris. Lambris bois, PVC, carrelage, boiseries bas de mur. Devis 48h.",
+    tag: 'Travaux',
+  },
 ]
 
 export default function BlogPage() {
