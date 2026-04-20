@@ -185,6 +185,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/renovation-val-de-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/renovation-seine-saint-denis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-yvelines`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-val-d-oise`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-essonne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
 
   ]
 }
