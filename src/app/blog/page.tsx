@@ -678,6 +678,12 @@ const articles = [
     desc: "Poser ou rénover un parquet massif à Paris : chêne, frêne, exotique. Pose clouée, collée ou flottante. Artisan parqueteur, devis 48h.",
     tag: 'Parquet',
   },
+  {
+    href: '/blog/renovation-cuisine-americaine-paris',
+    title: 'Cuisine Américaine Paris : ouverte, semi-ouverte & prix 2025',
+    desc: "Aménager une cuisine américaine à Paris : mur porteur, IPN, hotte sans gaine. Copropriété, budget et artisan 2025.",
+    tag: 'Cuisine',
+  },
 ]
 
 export default function BlogPage() {
