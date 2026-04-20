@@ -2184,6 +2184,24 @@ const articles = [
     desc: "Comment obtenir un devis de rénovation à Paris ? Ce qu'il doit contenir, pièges à éviter, conseils.",
     tag: 'Guide',
   },
+  {
+    href: '/blog/amenagement-combles-paris',
+    title: "Aménagement Combles Paris — Prix & Guide 2025",
+    desc: "Transformer vos combles en espace habitable à Paris : réglementation, Velux, isolation, prix au m².",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/assurance-decennale-paris',
+    title: "Assurance Décennale Paris — Pourquoi c'est essentiel ? 2025",
+    desc: "Comprendre l'assurance décennale à Paris : ce qu'elle couvre, comment la vérifier, vos droits.",
+    tag: 'Guide',
+  },
+  {
+    href: '/blog/bilan-avant-travaux-paris',
+    title: "Bilan Avant Travaux Paris — Audit et Diagnostic 2025",
+    desc: "Pourquoi faire un bilan avant vos travaux à Paris ? Diagnostic structure, électricité, plomberie.",
+    tag: 'Guide',
+  },
 ]
 
 export default function BlogPage() {
