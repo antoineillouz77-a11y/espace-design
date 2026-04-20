@@ -2304,6 +2304,18 @@ const articles = [
     desc: "Rénover un appartement à Saint-Gratien (Val-d'Oise). Artisan qualifié, devis gratuit.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-montmorency',
+    title: "Rénovation Appartement Montmorency (95) — Guide 2025",
+    desc: "Artisan rénovateur à Montmorency (Val-d'Oise). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-taverny',
+    title: "Rénovation Appartement Taverny (95) — Guide 2025",
+    desc: "Rénover un appartement à Taverny (Val-d'Oise). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
