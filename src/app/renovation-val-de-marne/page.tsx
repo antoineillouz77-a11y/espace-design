@@ -76,6 +76,7 @@ const villes94 = [
   { href: '/renovation-orly', label: 'Orly' },
   { href: '/renovation-rungis', label: 'Rungis' },
   { href: '/renovation-ormesson-sur-marne', label: 'Ormesson-sur-Marne' },
+  { href: '/renovation-santeny', label: 'Santeny' },
 ]
 
 const services = [
