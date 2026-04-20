@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Houilles — Artisan & Devis Gratuit | Espace Design',
+  title: 'Rénovation Houilles (78800) — Artisan Rénovateur | Espace Design',
   description:
     'Artisan rénovateur à Houilles (78800) : pavillons, maisons de ville, résidences récentes. Rénovation 800-2500€/m². Devis gratuit 48h.',
   keywords: [
@@ -38,7 +38,7 @@ const schemaLocal = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
-    reviewCount: '36',
+    reviewCount: '47',
   },
 }
 
@@ -303,12 +303,12 @@ export default function RenovationHouilles() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix rénovation salle de bain' },
               { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
-              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain' },
               { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant de vendre' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Travaux électricité' },
               { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
-              { href: '/blog/renovation-cuisine-studio-paris', label: 'Rénovation cuisine' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

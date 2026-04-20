@@ -188,39 +188,52 @@ export default function RenovationSarcelles() {
         </div>
       </section>
 
+      {/* Quartiers */}
+      <section className="py-16 bg-[#F2F2EE]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Quartiers et communes desservis autour de Sarcelles
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              'Grand Ensemble de Sarcelles',
+              'Lochères',
+              'Résidence des Flanades',
+              'Villiers-le-Bel',
+              'Garges-lès-Gonesse',
+              'Gonesse',
+              'Arnouville',
+              'Saint-Brice-sous-Forêt',
+              'Ermont',
+              'Deuil-la-Barre',
+            ].map((q) => (
+              <span key={q} className="text-xs text-gray-600 border border-gray-200 rounded px-3 py-1.5 font-light bg-white">
+                {q}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Questions fréquentes
+            Questions fréquentes — Rénovation à Sarcelles
           </h2>
-          <div className="space-y-4">
-            {[
-              {
-                q: 'Quel est le prix d\'une rénovation à Sarcelles ?',
-                a: 'Le coût varie entre 600 et 1 200 €/m² selon l\'état du bien et les matériaux. Pour les appartements des grands ensembles, un devis personnalisé est recommandé.',
-              },
-              {
-                q: 'Comment trouver un artisan de confiance à Sarcelles ?',
-                a: 'Espace Design intervient régulièrement à Sarcelles avec assurance décennale et 15 ans d\'expérience. Devis gratuit sous 48h.',
-              },
-              {
-                q: 'Comment rénover un appartement à Sarcelles ?',
-                a: 'Après une visite gratuite sur place, nous établissons un devis détaillé et coordonnons tous les corps de métier pour une rénovation complète et sereine.',
-              },
-              {
-                q: 'Intervenez-vous à Sarcelles ?',
-                a: 'Oui, nous intervenons régulièrement à Sarcelles et dans toute l\'Île-de-France. Déplacement gratuit et sans engagement.',
-              },
-            ].map((item) => (
-              <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
-                <summary className="font-display text-base font-semibold text-[#1C1C1C] cursor-pointer list-none flex justify-between items-center">
-                  {item.q}
-                  <span className="text-[#D4AF37] text-lg ml-4 group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <p className="mt-3 text-gray-500 text-sm leading-relaxed font-light">{item.a}</p>
-              </details>
-            ))}
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">Quel est le prix d&apos;une rénovation à Sarcelles ?</h3>
+              <p className="text-gray-500 text-sm leading-relaxed font-light">Le coût varie entre 600 et 1 200 €/m² selon l&apos;état du bien et les matériaux. Pour les appartements des grands ensembles des années 60, un devis personnalisé est recommandé. Contactez-nous pour un devis gratuit sous 48h.</p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">Comment trouver un artisan sérieux à Sarcelles ?</h3>
+              <p className="text-gray-500 text-sm leading-relaxed font-light">Espace Design intervient régulièrement à Sarcelles et dans le Val-d&apos;Oise. Assurance décennale, RC pro, 15 ans d&apos;expérience et un seul interlocuteur pour piloter votre rénovation de A à Z.</p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">Comment rénover un appartement à Sarcelles ?</h3>
+              <p className="text-gray-500 text-sm leading-relaxed font-light">Après une visite gratuite sur place, nous établissons un devis détaillé. Cuisine, salle de bain, sols, peinture, électricité et plomberie : tout est géré par notre équipe pour une rénovation clés en main.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -285,12 +298,12 @@ export default function RenovationSarcelles() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-appartement-copropriete-paris', label: 'Rénover en copropriété' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
-              { href: '/blog/isolation-acoustique-appartement-paris', label: 'Isolation acoustique' },
-              { href: '/blog/renovation-2-pieces-paris', label: 'Budget 2 pièces Paris' },
-              { href: '/blog/peinture-appartement-paris', label: 'Peinture appartement Paris' },
-              { href: '/blog/renovation-cuisine-ouverte-paris', label: 'Cuisine ouverte Paris' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix rénovation salle de bain' },
+              { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
+              { href: '/blog/plomberie-renovation-paris', label: 'Plomberie rénovation Paris' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Travaux électricité appartement' },
+              { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénover pour investir' },
+              { href: '/blog/sol-stratifie-paris', label: 'Sol stratifié Paris' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

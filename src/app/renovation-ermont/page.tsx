@@ -298,12 +298,12 @@ export default function RenovationErmont() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-appartement-copropriete-paris', label: 'Rénover en copropriété' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
-              { href: '/blog/isolation-acoustique-appartement-paris', label: 'Isolation acoustique' },
-              { href: '/blog/renovation-2-pieces-paris', label: 'Budget 2 pièces Paris' },
-              { href: '/blog/peinture-appartement-paris', label: 'Peinture appartement Paris' },
-              { href: '/blog/renovation-cuisine-ouverte-paris', label: 'Cuisine ouverte Paris' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix rénovation salle de bain' },
+              { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Travaux électricité appartement' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant de vendre' },
+              { href: '/blog/sol-stratifie-paris', label: 'Sol stratifié Paris' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

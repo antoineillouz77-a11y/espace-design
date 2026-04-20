@@ -8,15 +8,15 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Cage d\'Escalier Paris', item: 'https://espacedesignparis.fr/blog/renovation-cage-escalier-paris' },
+    { '@type': 'ListItem', position: 3, name: "Rénovation Cage d'Escalier Paris", item: 'https://espacedesignparis.fr/blog/renovation-cage-escalier-paris' },
   ],
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Cage d\'Escalier Paris : peinture, carrelage & prix 2025 | Espace Design',
-  description: 'Rénover la cage d\'escalier d\'un immeuble parisien : peinture, sol, éclairage, autorisations copropriété. Prix et guide artisan 2025.',
+  headline: "Rénovation Cage d'Escalier Paris : peinture, carrelage & éclairage 2025 | Espace Design",
+  description: "Rénover la cage d'escalier d'un immeuble parisien : peinture, carrelage, rampe, éclairage. Démarches copropriété et prix 2025.",
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,34 +33,34 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Faut-il un vote en assemblée générale pour rénover la cage d\'escalier ?',
+      name: "Faut-il une autorisation en copropriété pour rénover la cage d'escalier ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, dans la grande majorité des cas. Les travaux sur les parties communes (cage d\'escalier, couloirs, hall d\'entrée) nécessitent un vote en AG. Pour les travaux d\'entretien courants (peinture de rafraîchissement à l\'identique), une majorité simple (article 24) suffit. Pour des travaux plus importants modifiant l\'aspect ou les matériaux (changement de carrelage, réfection complète), une majorité absolue (article 25) est généralement requise. Le syndic doit inscrire le point à l\'ordre du jour et présenter au moins 3 devis.',
+        text: "Oui, la cage d'escalier est une partie commune de l'immeuble. Tout travail de rénovation (peinture, carrelage, rampe, éclairage) nécessite un vote en assemblée générale de copropriété. La majorité requise dépend de la nature des travaux : majorité simple (article 24) pour les travaux d'entretien et de conservation, majorité absolue (article 25) pour les travaux plus importants comme le remplacement du carrelage ou de la rampe. Prévoyez la demande au syndic au moins 21 jours avant l'AG pour l'inscription à l'ordre du jour.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation de cage d\'escalier à Paris ?',
+      name: "Quel est le prix pour rénover une cage d'escalier à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le prix varie selon l\'ampleur des travaux et le nombre d\'étages. Pour un immeuble parisien de 5 étages : peinture seule entre 2 000 et 6 000 €, remplacement du carrelage de 4 000 à 12 000 €, réfection complète (peinture + sol + éclairage) de 8 000 à 20 000 €. Ces prix sont partagés entre les copropriétaires selon les tantièmes de chacun.',
+        text: "Le coût de rénovation d'une cage d'escalier parisienne dépend du nombre d'étages, de la surface et des travaux réalisés. Pour un immeuble de 5 étages avec une cage de 60 à 100 m² de surface développée : peinture seule (toutes les parois) : 4 000 à 10 000 € ; carrelage sol des paliers + peinture : 8 000 à 20 000 € ; rénovation complète (sol, murs, plafond, rampe, éclairage LED) : 15 000 à 35 000 €. Ces montants sont répartis entre copropriétaires selon leurs tantièmes de parties communes.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Peut-on rénover sa cage d\'escalier sans accord de la copropriété ?',
+      name: "Combien de temps dure la rénovation d'une cage d'escalier parisienne ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Non, sauf pour des interventions ponctuelles de nettoyage ou de petites réparations. La cage d\'escalier est une partie commune : aucun copropriétaire ne peut y réaliser des travaux de façon unilatérale. Même une simple pose de papier peint ou de peinture d\'une couleur différente de l\'existant doit être soumise au vote. Agir sans autorisation expose à une obligation de remise en état aux frais du contrevenant.',
+        text: "La durée dépend de l'ampleur des travaux et du nombre d'étages. Pour une peinture seule (5 étages) : 3 à 5 jours. Pour un carrelage sol des paliers + peinture : 8 à 15 jours. Pour une rénovation complète : 3 à 5 semaines. Dans un immeuble occupé, le chantier est organisé étage par étage ou palier par palier pour maintenir l'accès permanent aux logements. Les travaux bruyants sont limités aux horaires réglementaires (8h – 20h en semaine en Île-de-France).",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Rénovation Cage d\'Escalier Paris : peinture, carrelage & prix 2025 | Espace Design',
-  description: 'Rénover la cage d\'escalier d\'un immeuble parisien : peinture, sol, éclairage, autorisations copropriété. Prix et guide artisan 2025.',
+  title: "Rénovation Cage d'Escalier Paris : peinture, carrelage & éclairage 2025 | Espace Design",
+  description: "Rénover la cage d'escalier d'un immeuble parisien : peinture, carrelage, rampe, éclairage. Démarches copropriété et prix 2025.",
 }
 
 export default function ArticleRenovationCageEscalier() {
@@ -82,54 +82,49 @@ export default function ArticleRenovationCageEscalier() {
       {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <nav aria-label="Breadcrumb" className="mb-6">
-            <ol className="flex items-center gap-2 text-[11px] text-gray-500 font-light">
-              <li><Link href="/" className="hover:text-[#D4AF37] transition-colors">Accueil</Link></li>
-              <li className="text-gray-600">/</li>
-              <li><Link href="/blog" className="hover:text-[#D4AF37] transition-colors">Blog</Link></li>
-              <li className="text-gray-600">/</li>
-              <li className="text-gray-400">Cage d&apos;escalier</li>
-            </ol>
-          </nav>
           <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Aménagement
+            Copropriété
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Cage d&apos;Escalier Paris : peinture, carrelage &amp; prix 2025
+            Rénovation Cage d&apos;Escalier Paris : peinture, carrelage &amp; éclairage 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            La cage d&apos;escalier est la première impression que les visiteurs ont d&apos;un immeuble parisien. Souvent négligée faute d&apos;accord entre copropriétaires, elle peut pourtant être rénovée efficacement avec les bonnes démarches : vote en AG, choix des artisans, peinture, carrelage et éclairage LED. Guide complet et prix 2025.
+            La cage d&apos;escalier est l&apos;épine dorsale d&apos;un immeuble parisien : c&apos;est l&apos;espace que tous les résidents empruntent plusieurs fois par jour. Sa rénovation améliore l&apos;image de l&apos;immeuble, la sécurité des passages et valorise l&apos;ensemble des lots. Guide complet 2025 : travaux, démarches en copropriété et prix.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Copropriété et démarches */}
+      {/* Section 1 — Pourquoi rénover */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Copropriété : démarches et autorisations obligatoires
+              Pourquoi rénover la cage d&apos;escalier : valeur, sécurité et confort
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              La cage d&apos;escalier étant une partie commune de l&apos;immeuble, toute rénovation doit impérativement être votée en assemblée générale des copropriétaires (AG). Le syndic est chargé de l&apos;inscription du point à l&apos;ordre du jour et de la mise en concurrence des artisans. En règle générale, au moins 3 devis doivent être présentés aux copropriétaires avant le vote.
+              Une cage d&apos;escalier rénovée n&apos;est pas un luxe : c&apos;est un investissement collectif qui bénéficie à tous les copropriétaires. Elle améliore la première impression de l&apos;immeuble, facilite la revente des lots et garantit la sécurité des passages quotidiens.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Le régime de majorité applicable dépend de la nature des travaux. Mieux vaut bien le connaître avant l&apos;AG pour éviter de mauvaises surprises le jour du vote.
+              À Paris, de nombreuses cages d&apos;escalier n&apos;ont pas été rénovées depuis plusieurs décennies. Peinture écaillée, carrelage fissura, rampe rouillée, éclairage défaillant : les signaux d&apos;une rénovation nécessaire sont souvent visibles de tous mais difficiles à faire voter. Voici comment convaincre vos copropriétaires.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Travaux d\'entretien courant — Majorité article 24',
-                  detail: 'Peinture de rafraîchissement à l\'identique (même couleur, même finition), nettoyage des murs ou des sols. Ces travaux ne modifient pas l\'aspect général de la cage d\'escalier : une majorité simple suffit (plus de 50 % des voix des copropriétaires présents ou représentés).',
+                  enjeu: 'Valorisation de tous les lots',
+                  detail: "Une cage d'escalier rénovée améliore l'image de l'immeuble et peut influencer positivement le prix de vente des appartements. Les agents immobiliers parisiens confirment qu'un hall et une cage d'escalier en bon état facilitent et accélèrent les transactions.",
                 },
                 {
-                  enjeu: 'Travaux modificatifs — Majorité article 25',
-                  detail: 'Changement de couleur de peinture, remplacement du revêtement de sol (carrelage par un autre type), installation d\'un nouvel éclairage modifiant l\'aspect des parties communes. Ces travaux nécessitent la majorité absolue (plus de 50 % des voix de TOUS les copropriétaires, présents ou non).',
+                  enjeu: "Sécurité des passages",
+                  detail: "Un carrelage fissuré ou décollé, une rampe instable, un éclairage insuffisant ou défaillant sont des sources d'accidents. La copropriété a une obligation légale d'entretien des parties communes en bon état de sécurité. Un accident dans une cage mal entretenue peut engager la responsabilité du syndicat.",
                 },
                 {
-                  enjeu: 'Rôle du syndic et du gestionnaire',
-                  detail: 'Le syndic coordonne l\'ensemble du processus : convocation AG, recueil des devis, notification du vote, sélection de l\'artisan et suivi du chantier. Il est l\'interlocuteur principal. En pratique, il vaut mieux contacter le syndic en amont pour lui proposer des artisans qualifiés susceptibles d\'être retenus.',
+                  enjeu: 'Confort quotidien des résidents',
+                  detail: "Passer chaque jour dans un espace propre, bien éclairé et esthétique améliore la qualité de vie. Les familles avec enfants apprécient particulièrement un espace bien entretenu, propre et sécurisé. C'est aussi un argument fort pour attirer de bons locataires dans un immeuble de rapport.",
+                },
+                {
+                  enjeu: "Conformité réglementaire",
+                  detail: "Depuis 2017, les immeubles sont soumis à des obligations renforcées en matière d'accessibilité (rampe d'accès, largeur de passage) et de sécurité incendie (portes coupe-feu, balisage lumineux, désenfumage). La rénovation de la cage est souvent l'occasion de se mettre en conformité.",
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -142,36 +137,46 @@ export default function ArticleRenovationCageEscalier() {
         </div>
       </section>
 
-      {/* Section 2 — Peinture */}
+      {/* Section 2 — Travaux possibles */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Peinture cage d&apos;escalier : techniques et finitions
+            Travaux possibles : peinture, carrelage, rampe et éclairage
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            La peinture est le poste de travaux le plus fréquent dans les cages d&apos;escalier parisiennes. Elle redonne immédiatement de la luminosité et de la propreté à l&apos;espace, pour un budget maîtrisé. Mais dans une cage d&apos;escalier, la préparation des surfaces est déterminante : fissures, décollements, traces d&apos;humidité ou plinthes abîmées doivent être traités avant toute application de peinture.
+            La rénovation d&apos;une cage d&apos;escalier parisienne peut être abordée poste par poste ou dans le cadre d&apos;une réfection globale. Voici les principaux travaux, leurs caractéristiques techniques et leurs coûts indicatifs.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Préparation des surfaces',
-                detail: 'Rebouchage des fissures, ponçage, application d\'un primaire d\'accrochage sur les surfaces friables. Dans les immeubles haussmanniens, les moulures et corniches doivent être nettoyées à la brosse avant la mise en peinture.',
-                cout: 'Inclus dans le prix peinture',
+                titre: 'Enduit et peinture des parois',
+                solution: "Décapage ou égrenage de l'ancienne peinture, rebouchage des fissures, application d'une sous-couche puis de deux couches de peinture lessivable résistante aux chocs. Dans les immeubles haussmanniens, mise en valeur des moulures et des corniches par un travail bi-ton.",
+                cout: '40 – 80 €/m²',
               },
               {
-                titre: 'Peinture mate ou satinée ?',
-                detail: 'La finition mate est esthétiquement préférable (moins de reflets, cache les imperfections) mais la finition satinée ou satin doux est recommandée dans les cages d\'escalier car elle résiste mieux au frottement et aux traces de mains.',
-                cout: '15 – 30 €/m²',
+                titre: 'Carrelage sol des paliers',
+                solution: "Dépose de l'existant (carrelage, parquet, moquette), ragréage du support, pose d'un carrelage adapté aux zones de passage intensif (grès cérame antidérapant, pierre naturelle). Format grand carreaux pour les paliers spacieux, format classique 30×30 pour les paliers étroits.",
+                cout: '80 – 180 €/m²',
               },
               {
-                titre: 'Couleurs recommandées pour les parties communes',
-                detail: 'Les tons clairs (blanc cassé, gris perle, lin clair) agrandissent visuellement la cage et maximisent la réflexion de la lumière. Dans les immeubles haussmanniens, une teinte légèrement colorée sur les moulures apporte du caractère sans surcharger.',
-                cout: 'Variable selon peinture',
+                titre: 'Rampe et garde-corps',
+                solution: "Rénovation de la rampe existante (décapage, peinture, remplacement des éléments abîmés) ou remplacement complet par une rampe en métal laqué, inox brossé ou bois massif. Vérification de la conformité aux normes de sécurité (hauteur min. 90 cm, pas de jours supérieurs à 18 cm).",
+                cout: '150 – 400 €/mL',
               },
               {
-                titre: 'Spécificités des immeubles parisiens',
-                detail: 'Les cages d\'escalier haussmanniennes comportent souvent des moulures en plâtre, des corniches, des rambardes en fer forgé et des sols en pierres naturelles. Ces éléments requièrent des artisans expérimentés pour éviter les bavures et respecter le caractère du bâtiment.',
-                cout: 'Supplément 20 – 40 %',
+                titre: 'Éclairage LED automatique',
+                solution: "Remplacement de tous les luminaires par des LED à détecteur de présence et minuterie. Économies d'énergie immédiates (jusqu'à 80 %), meilleure qualité de lumière, maintenance réduite (durée de vie LED : 15 à 20 ans). Option : éclairage de sécurité balisage lumineux en cas de coupure de courant.",
+                cout: '200 – 600 € par niveau',
+              },
+              {
+                titre: 'Digicode et interphone de palier',
+                solution: "Installation ou remplacement de la centrale d'interphone de cage avec combinés par appartement, digicode à l'entrée. Les systèmes connectés wifi permettent de recevoir les visiteurs depuis son smartphone. Renforce la sécurité et le confort de tous les résidents.",
+                cout: '800 – 3 000 €',
+              },
+              {
+                titre: 'Nettoyage et traitement des murs',
+                solution: "Pour les cages d'escalier en pierre (immeubles anciens), nettoyage par projection de sable fin ou nettoyage chimique, traitement anti-salissures et consolidation des joints. Préserve le caractère authentique du bâtiment tout en l'assainissant et en le protégeant.",
+                cout: '30 – 70 €/m²',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -179,43 +184,43 @@ export default function ArticleRenovationCageEscalier() {
                   <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
                   <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 3 — Sol et carrelage */}
+      {/* Section 3 — Contraintes chantier */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Revêtement de sol des parties communes : carrelage et options
+          <h2 className="font-display text-2xl font-semibond text-[#1C1C1C] mb-4">
+            Contraintes d&apos;accès : chantier en immeuble occupé
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le sol de la cage d&apos;escalier subit un trafic important et doit allier résistance, sécurité (antidérapant) et esthétique. À Paris, les options varient selon le style de l&apos;immeuble et le budget de la copropriété.
+            Rénover une cage d&apos;escalier en immeuble habité est l&apos;un des chantiers les plus contraignants techniquement. L&apos;accès aux logements doit être maintenu à tout moment, ce qui impose une organisation rigoureuse étage par étage.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Carrelage grès cérame',
-                prix: '40 – 80 €/m² posé',
-                detail: 'Solution la plus répandue pour les parties communes. Résistant, facile à entretenir, disponible en nombreux formats et couleurs. Choisir un carrelage classé R10 ou R11 (antidérapant) pour les escaliers. Format 30x30 ou 60x60 cm selon la taille des paliers.',
+                type: 'Travail par demi-journées par palier',
+                prix: 'Organisation standard',
+                detail: "Pour les travaux de peinture : intervention palier par palier avec séchage rapide (peinture acrylique) permettant le passage des résidents après 2 à 3 heures. Les travaux de nuit sont proscrit, les matinées tôt (7h30) peuvent être autorisées avec accord préalable des résidents.",
               },
               {
-                type: 'Pierre naturelle (Burgundy, Comblanchien)',
-                prix: '80 – 180 €/m² posé',
-                detail: 'Option haut de gamme, cohérente avec l\'architecture haussmannienne. La pierre calcaire donne un aspect très élégant mais nécessite un traitement hydrofuge et un entretien régulier. Adaptée aux immeubles classés ou de standing.',
+                type: 'Protection anti-poussière et anti-salissures',
+                prix: 'Inclus dans le devis',
+                detail: "Pose de bâches de protection sur les paliers et les escaliers, protections sur les portes palières, aspiration continue des poussières lors du ponçage et de la découpe. Nettoyage quotidien des zones de passage en fin de journée.",
               },
               {
-                type: 'Réfection des marches d\'escalier',
-                prix: '60 – 150 €/marche',
-                detail: 'Les marches abîmées ou ébréchées peuvent être réparées avec du mortier de réfection, recouvertes d\'un nez-de-marche en inox ou remplacées par des carreaux spéciaux. Chaque marche doit répondre aux normes de sécurité (hauteur max 18 cm, profondeur min 25 cm).',
+                type: "Gestion des nuisances sonores",
+                prix: 'Horaires réglementaires',
+                detail: "Les travaux bruyants (découpe carrelage, ponçage mécanique) sont limités aux horaires réglementaires : 8h – 20h en semaine, 9h – 12h le samedi. Un planning de chantier détaillé est communiqué aux résidents en amont. En cas de travaux particulièrement bruyants, un courrier préalable d'information est envoyé dans les boîtes.",
               },
               {
-                type: 'Plinthe et raccords',
-                prix: '15 – 35 €/ml posé',
-                detail: 'Les plinthes assurent la jonction propre entre le sol et le mur. Dans les parties communes, les plinthes en grès cérame ou en pierre assortie au sol sont préférables aux plinthes en PVC, plus fragiles en cas de trafic intense.',
+                type: 'Accès livraisons et évacuation gravats',
+                prix: 'À prévoir',
+                detail: "La logistique de livraison des matériaux (carrelage, enduits) et d'évacuation des gravats doit être coordonnée pour éviter l'encombrement du hall et de l'escalier. Benne extérieure si possible, évacuation par sacs étanches avec monte-charge si nécessaire.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -230,116 +235,42 @@ export default function ArticleRenovationCageEscalier() {
         </div>
       </section>
 
-      {/* Section 4 — Éclairage LED */}
+      {/* Section 4 — Copropriété et vote */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Éclairage LED : moderniser la cage d&apos;escalier et réduire les charges
+            Démarches en copropriété : de l&apos;AG au chantier
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            L&apos;éclairage des parties communes représente une part significative des charges de copropriété. Le remplacement des anciens luminaires par des LED avec détecteur de présence permet de réduire la consommation électrique de 70 à 80 %, tout en améliorant la sécurité et le confort. Ce poste est souvent le premier à déclencher l&apos;accord des copropriétaires car le retour sur investissement est rapide.
+            Voici les étapes clés pour faire voter et réaliser des travaux de rénovation de cage d&apos;escalier dans votre copropriété parisienne.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
             {[
-              {
-                titre: 'LED avec détecteur de présence',
-                detail: 'S\'allume automatiquement au passage et s\'éteint après un délai réglable (30 s à 5 min). Économie : 75 à 85 % vs ampoules classiques. Durée de vie : 25 000 à 50 000 heures.',
-                cout: '80 – 200 € / niveau',
-              },
-              {
-                titre: 'LED avec minuterie',
-                detail: 'Solution plus simple et moins coûteuse. La lumière reste allumée un temps fixe après activation. Moins économique que le détecteur de présence mais suffisante dans les cages d\'escalier peu fréquentées.',
-                cout: '50 – 120 € / niveau',
-              },
-              {
-                titre: 'Éclairage de sécurité (BAES)',
-                detail: 'Bloc autonome d\'éclairage de sécurité obligatoire dans les immeubles collectifs. S\'active automatiquement en cas de coupure de courant. Réglementation ERP (établissement recevant du public) pour les immeubles de grande hauteur (IGH).',
-                cout: '150 – 300 € / bloc',
-              },
-              {
-                titre: 'Éclairage décoratif de palier',
-                detail: 'Appliques murales LED de design, luminaires suspendus dans les halls d\'entrée. Valorise l\'immeuble et crée une identité visuelle. Budget supplémentaire à prévoir pour les prises de courant ou alimentations dédiées.',
-                cout: '200 – 600 € / palier',
-              },
-            ].map((el) => (
-              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-2 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
-                </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              "Contacter le syndic pour inscrire les travaux à l'ordre du jour de la prochaine AG (21 jours de délai minimum)",
+              "Solliciter au moins 3 devis d'artisans qualifiés à soumettre lors de l'AG pour comparaison",
+              "Préparer une note explicative pour les copropriétaires : pourquoi, quels travaux, quel coût par lot",
+              "Voter les travaux en AG : majorité article 24 (entretien) ou article 25 (travaux importants)",
+              "Signer le devis du prestataire retenu et définir le planning de chantier avec les artisans",
+              "Informer les résidents du planning avant démarrage : dates, travaux par étage, accès",
+              "Réceptionner les travaux avec le syndic et le représentant du conseil syndical",
+              "Vérifier la garantie décennale pour les travaux structurants (rampe, carrelage)",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                {item}
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5 — Prix tableau */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix de rénovation d&apos;une cage d&apos;escalier à Paris en 2025
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les estimations ci-dessous concernent un immeuble parisien de 5 étages avec 5 paliers. Les prix incluent main d&apos;œuvre et fournitures.
-          </p>
-
-          {/* Price grid */}
-          <div className="mb-8 space-y-2">
-            <div className="grid grid-cols-3 bg-[#1C1C1C] text-white rounded-t-lg px-4 py-3 text-xs font-light uppercase tracking-wider">
-              <div>Prestation</div>
-              <div className="text-center">Prix unitaire</div>
-              <div className="text-right">Total estimé</div>
-            </div>
-            {[
-              { prestation: 'Peinture murs (rafraîchissement)', unite: '15 – 25 €/m²', total: '1 500 – 4 000 €' },
-              { prestation: 'Peinture complète avec préparation', unite: '25 – 40 €/m²', total: '3 000 – 6 000 €' },
-              { prestation: 'Carrelage sols paliers', unite: '40 – 80 €/m²', total: '2 000 – 6 000 €' },
-              { prestation: 'Réfection marches escalier', unite: '60 – 150 €/marche', total: '1 500 – 5 000 €' },
-              { prestation: 'Éclairage LED avec détecteurs', unite: '80 – 200 €/niveau', total: '400 – 1 200 €' },
-              { prestation: 'Rénovation complète (peinture + sol + lumière)', unite: '—', total: '8 000 – 20 000 €' },
-            ].map((row, i) => (
-              <div
-                key={row.prestation}
-                className={`grid grid-cols-3 px-4 py-3 text-sm ${i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'} border border-gray-100`}
-              >
-                <div className="text-[#1C1C1C] font-light">{row.prestation}</div>
-                <div className="text-center text-[#B8960C] font-medium">{row.unite}</div>
-                <div className="text-right text-gray-600 font-light">{row.total}</div>
-              </div>
-            ))}
-          </div>
-
-          <div>
-            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Points de vigilance avant de voter les travaux
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                'Exiger des artisans certifiés RGE ou qualifiés Qualibat pour les travaux importants',
-                'Prévoir une retenue de garantie de 5 % pendant 12 mois après réception des travaux',
-                'Vérifier que les artisans sont couverts par une assurance décennale et RC professionnelle',
-                'Planifier les travaux hors vacances scolaires pour limiter la gêne des résidents',
-                'Faire protéger les boîtes aux lettres, interphones et vitres avant le démarrage',
-                'Demander un planning précis avec phasage par étage pour maintenir l\'accès permanent',
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                  {item}
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -354,11 +285,11 @@ export default function ArticleRenovationCageEscalier() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/peinture-paris', title: 'Peinture Paris — artisan peintre' },
-              { href: '/carrelage-paris', title: 'Carrelage Paris — pose et réfection' },
-              { href: '/platrererie-paris', title: 'Plâtrerie Paris — enduits et doublage' },
-              { href: '/blog/renovation-couloir-paris', title: 'Rénovation couloir Paris' },
-              { href: '/blog/faux-plafond-paris', title: 'Faux plafond Paris — guide complet' },
+              { href: '/blog/renovation-hall-immeuble-paris', title: 'Rénovation hall immeuble Paris' },
+              { href: '/blog/renovation-balcon-terrasse-immeuble-paris', title: 'Rénovation balcon terrasse Paris' },
+              { href: '/blog/renovation-escalier-paris', title: 'Rénovation escalier Paris' },
+              { href: '/peinture-paris', title: 'Peinture Paris' },
+              { href: '/carrelage-paris', title: 'Carrelage Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -402,10 +333,10 @@ export default function ArticleRenovationCageEscalier() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Rénovez la cage d&apos;escalier de votre immeuble à Paris
+          Rénovez la cage d&apos;escalier de votre immeuble parisien
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Devis gratuit pour syndics et copropriétés. Peinture, carrelage, éclairage LED. Intervention sous 2 semaines.
+          Devis gratuit pour copropriété. Présentation en AG sur demande. Chantier propre et organisé, immeuble occupé.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

@@ -324,12 +324,12 @@ export default function RenovationCorbeilEssonnes() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix rénovation salle de bain' },
               { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
-              { href: '/blog/renovation-cuisine-studio-paris', label: 'Rénovation cuisine studio' },
-              { href: '/blog/plomberie-renovation-paris', label: 'Plomberie rénovation Paris' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain' },
               { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant de vendre' },
-              { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénover pour investir' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Travaux électricité' },
+              { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

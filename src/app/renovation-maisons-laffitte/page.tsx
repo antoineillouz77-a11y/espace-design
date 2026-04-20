@@ -6,15 +6,15 @@ import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Rénovation Maisons-Laffitte (78600) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Maisons-Laffitte (78600) : villas, maisons de caractère, pavillons haut de gamme près du château et du parc. Rénovation 800-3500€/m². Devis gratuit 48h.',
+    'Artisan rénovateur à Maisons-Laffitte (78600) : villas de prestige, maisons de caractère, pavillons haut de gamme proches du château et du parc. Rénovation 800-3000€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation villa Maisons-Laffitte',
+    'rénovation Maisons-Laffitte',
     'artisan rénovation Maisons-Laffitte',
-    'décoration intérieure Maisons-Laffitte',
+    'rénovation villa Maisons-Laffitte',
     'renovation Maisons-Laffitte 78600',
     'entreprise renovation Maisons-Laffitte',
-    'artisan Maisons Laffitte Yvelines',
-    'rénovation maison de caractère Maisons-Laffitte',
+    'artisan Maisons-Laffitte Yvelines',
+    'rénovation maison prestige Maisons-Laffitte',
   ],
 }
 
@@ -38,7 +38,7 @@ const schemaLocal = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
-    reviewCount: '43',
+    reviewCount: '47',
   },
 }
 
@@ -51,15 +51,15 @@ const schemaFaq = {
       name: 'Quel est le prix d\'une rénovation à Maisons-Laffitte ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Maisons-Laffitte varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les villas et maisons de caractère proches du château et du parc, comptez 1 500 à 3 500 €/m² avec des matériaux nobles. Devis gratuit sous 48h.',
+        text: 'Le coût d\'une rénovation à Maisons-Laffitte varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les villas de prestige et les maisons de caractère proches du château, comptez 1 500 à 3 000 €/m². Devis gratuit sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel artisan contacter pour rénover une villa à Maisons-Laffitte ?',
+      name: 'Quel artisan contacter pour rénover à Maisons-Laffitte ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Espace Design intervient régulièrement à Maisons-Laffitte pour des rénovations de villas, maisons de caractère et pavillons haut de gamme. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur.',
+        text: 'Espace Design intervient régulièrement à Maisons-Laffitte pour des rénovations de villas de prestige et pavillons haut de gamme. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur.',
       },
     },
     {
@@ -67,7 +67,15 @@ const schemaFaq = {
       name: 'Comment rénover une villa à Maisons-Laffitte ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pour une villa à Maisons-Laffitte, nous recommandons des matériaux nobles : parquet massif, carrelage grand format, salle de bain en marbre, boiseries sur mesure, peinture à la chaux. Chaque projet est traité sur mesure avec un suivi rigoureux du chantier.',
+        text: 'Pour les villas de Maisons-Laffitte, nous recommandons des matériaux nobles adaptés aux maisons de caractère : parquet massif, menuiseries sur mesure, enduits à la chaux, carrelage de qualité. Chaque projet est traité sur mesure avec un suivi rigoureux.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Avez-vous une assurance décennale ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
       },
     },
   ],
@@ -107,7 +115,7 @@ export default function RenovationMaisonsLaffitte() {
             Rénovation villa<br className="hidden sm:block" /> Maisons-Laffitte
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Maisons-Laffitte (78600) : villas, maisons de caractère, pavillons haut de gamme près du château et du parc. Rénovation de prestige et finitions nobles. Devis gratuit sous 48h.
+            Artisan rénovateur à Maisons-Laffitte (78600) : villas de prestige, maisons de caractère, pavillons haut de gamme proches du château et du parc. Rénovation complète et finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -134,9 +142,9 @@ export default function RenovationMaisonsLaffitte() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation villa et maison de caractère', desc: 'Restauration et modernisation de villas et maisons de caractère à Maisons-Laffitte. Nous préservons l\'âme du lieu tout en apportant le confort contemporain.' },
-              { num: '02', title: 'Décoration intérieure haut de gamme', desc: 'Agencement sur mesure, harmonie des matières et des couleurs, conseils en décoration. Chaque espace est pensé pour sublimer votre villa dans un esprit élégant et raffiné.' },
-              { num: '03', title: 'Finitions de prestige', desc: 'Parquet massif, marbre, boiseries sur mesure, peinture à la chaux, faïence artisanale. L\'artisanat d\'excellence au service des belles propriétés de Maisons-Laffitte.' },
+              { num: '01', title: 'Rénovation de villas', desc: 'Réhabilitation complète de villas et maisons de caractère — réaménagement des volumes, modernisation du confort, valorisation du bâti existant pour votre bien à Maisons-Laffitte.' },
+              { num: '02', title: 'Décoration intérieure', desc: 'Agencement sur-mesure respectant le caractère bourgeois des maisons — matériaux nobles, harmonie classique ou contemporaine adaptée à chaque villa du parc.' },
+              { num: '03', title: 'Finitions haut de gamme', desc: 'Parquet massif, menuiseries bois sur mesure, salle de bain de prestige, peinture à la chaux. Un artisanat exigeant au service de votre propriété de Maisons-Laffitte.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -164,12 +172,12 @@ export default function RenovationMaisonsLaffitte() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture villa', '35 - 75 €/m²'],
-                  ['Rénovation salle de bain prestige', '6 000 - 20 000 €'],
-                  ['Rénovation cuisine haut de gamme', '8 000 - 25 000 €'],
-                  ['Parquet massif (pose + fourniture)', '60 - 130 €/m²'],
-                  ['Rénovation complète villa', '800 - 1 500 €/m²'],
-                  ['Rénovation prestige', '1 500 - 3 500 €/m²'],
+                  ['Peinture intérieure', '30 - 70 €/m²'],
+                  ['Rénovation salle de bain', '4 000 - 15 000 €'],
+                  ['Rénovation cuisine', '5 000 - 20 000 €'],
+                  ['Parquet (pose + fourniture)', '50 - 110 €/m²'],
+                  ['Rénovation complète', '800 - 1 500 €/m²'],
+                  ['Rénovation prestige villa', '1 500 - 3 000 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -189,7 +197,7 @@ export default function RenovationMaisonsLaffitte() {
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain prestige — villa Maisons-Laffitte 78600" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Salle de bain mosaïque — rénovation villa prestige Maisons-Laffitte 78600" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -223,15 +231,19 @@ export default function RenovationMaisonsLaffitte() {
             {[
               {
                 q: 'Quel est le prix d\'une rénovation à Maisons-Laffitte ?',
-                a: 'Le coût d\'une rénovation à Maisons-Laffitte varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les villas et maisons de caractère proches du château et du parc, comptez 1 500 à 3 500 €/m² avec des matériaux nobles.',
+                a: 'Le coût d\'une rénovation à Maisons-Laffitte varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les villas de prestige proches du château et du parc, comptez 1 500 à 3 000 €/m².',
               },
               {
-                q: 'Quel artisan contacter pour rénover une villa à Maisons-Laffitte ?',
-                a: 'Espace Design intervient régulièrement à Maisons-Laffitte pour des rénovations de villas, maisons de caractère et pavillons haut de gamme. Assuré décennale, devis gratuit sous 48h.',
+                q: 'Quel artisan contacter pour rénover à Maisons-Laffitte ?',
+                a: 'Espace Design intervient régulièrement à Maisons-Laffitte pour des rénovations de villas de prestige et pavillons haut de gamme. Assuré décennale, devis gratuit sous 48h.',
               },
               {
                 q: 'Comment rénover une villa à Maisons-Laffitte ?',
-                a: 'Pour une villa à Maisons-Laffitte, nous recommandons des matériaux nobles : parquet massif, carrelage grand format, salle de bain en marbre, boiseries sur mesure, peinture à la chaux. Chaque projet est traité sur mesure avec un suivi rigoureux du chantier.',
+                a: 'Pour les villas de Maisons-Laffitte, nous recommandons des matériaux nobles adaptés aux maisons de caractère : parquet massif, menuiseries sur mesure, enduits à la chaux. Chaque projet est traité sur mesure.',
+              },
+              {
+                q: 'Avez-vous une assurance décennale ?',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -252,11 +264,10 @@ export default function RenovationMaisonsLaffitte() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-yvelines', label: 'Yvelines (78)' },
-              { href: '/renovation-houilles', label: 'Houilles' },
               { href: '/renovation-sartrouville', label: 'Sartrouville' },
               { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
+              { href: '/renovation-conflans-sainte-honorine', label: 'Conflans' },
               { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
-              { href: '/renovation-chatou', label: 'Chatou' },
               { href: '/renovation-versailles', label: 'Versailles' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
@@ -303,12 +314,12 @@ export default function RenovationMaisonsLaffitte() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix rénovation salle de bain' },
               { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénovation avant vente' },
               { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
-              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant de vendre' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
               { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
-              { href: '/blog/renovation-cuisine-studio-paris', label: 'Rénovation cuisine' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

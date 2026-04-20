@@ -16,7 +16,7 @@ const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Rénovation Appartement Paris 17e : artisan & prix 2025 | Espace Design',
-  description: "Rénovation appartement dans le 17e arrondissement de Paris : Batignolles, Ternes, Pereire. Artisan local, devis gratuit 48h.",
+  description: "Rénovation appartement dans le 17e arrondissement de Paris : Batignolles, Ternes, Épinettes. Artisan local, devis gratuit 48h.",
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -60,7 +60,7 @@ const schemaFaq = {
 
 export const metadata: Metadata = {
   title: 'Rénovation Appartement Paris 17e : artisan & prix 2025 | Espace Design',
-  description: "Rénovation appartement dans le 17e arrondissement de Paris : Batignolles, Ternes, Pereire. Artisan local, devis gratuit 48h.",
+  description: "Rénovation appartement dans le 17e arrondissement de Paris : Batignolles, Ternes, Épinettes. Artisan local, devis gratuit 48h.",
 }
 
 export default function ArticleParis17e() {

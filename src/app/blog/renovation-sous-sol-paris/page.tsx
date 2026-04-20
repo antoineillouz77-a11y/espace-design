@@ -8,15 +8,15 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Sous-Sol Paris', item: 'https://espacedesignparis.fr/blog/renovation-sous-sol-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Aménagement Sous-Sol Paris', item: 'https://espacedesignparis.fr/blog/renovation-sous-sol-paris' },
   ],
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Sous-Sol Paris : aménagement, humidité & prix 2025 | Espace Design',
-  description: 'Aménager un sous-sol à Paris : traitement humidité, isolation, éclairage, cloisons. Prix et guide artisan 2025.',
+  headline: 'Aménagement Sous-Sol Paris : cave, parking & buanderie 2025 | Espace Design',
+  description: 'Aménager son sous-sol à Paris : cave en buanderie, local vélos, isolation, humidité. Contraintes copropriété, prix et conseils 2025.',
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,34 +33,34 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix pour aménager un sous-sol à Paris ?',
+      name: "Faut-il un accord de copropriété pour aménager sa cave à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "L'aménagement d'un sous-sol à Paris varie de 2 000 à 20 000 € selon l'état du local et les travaux nécessaires. Un nettoyage + peinture basique peut se limiter à 2 000–4 000 €. Un aménagement complet avec traitement humidité, isolation, cloisons et éclairage coûte 8 000–15 000 €. Pour une transformation en pièce de vie ou studio, comptez 12 000–20 000 €.",
+        text: "Tout dépend de la nature des travaux. Aménager l'intérieur de votre cave privative (peinture, étagères, sol, éclairage) ne nécessite généralement pas l'accord de la copropriété. En revanche, tout travail touchant les murs porteurs, la ventilation, l'électricité commune ou modifiant l'aspect des parties communes requiert un vote en assemblée générale. Si vous souhaitez transformer une cave en espace habitable (bureau, chambre), un permis de construire peut être exigé car cela crée de la surface de plancher. Consultez le règlement de copropriété et un architecte avant de commencer.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment traiter l\'humidité dans un sous-sol parisien ?',
+      name: "Comment traiter l'humidité dans une cave parisienne ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le traitement de l'humidité dans un sous-sol parisien dépend de la source d'eau. Pour une humidité de condensation : améliorer la ventilation (VMC) et isoler les parois froides. Pour une humidité par capillarité (remontées depuis le sol) : cuvelage des murs avec mortier d'étanchéité ou membrane, et drainage périphérique. Pour des infiltrations par les joints ou fissures : injection de résine ou colmatage. Le cuvelage complet d'un sous-sol de 20 m² coûte entre 3 000 et 8 000 €.",
+        text: "L'humidité d'une cave parisienne peut venir de plusieurs sources : remontées capillaires par le sol et les murs (eau du sol qui monte par capillarité), infiltrations latérales (joints de fondation défaillants), ou condensation (air humide en contact avec des surfaces froides). Le traitement dépend de la cause : cuvelage par injection de résine hydrophobe (60 à 150 €/m²) pour les remontées capillaires, drainage périphérique avec pompe de relevage (3 000 à 8 000 €) pour les infiltrations importantes, et ventilation mécanique (VMC) pour la condensation. Un diagnostic humidité préalable (200 à 500 €) est fortement recommandé avant tout aménagement.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Faut-il un permis de construire pour aménager son sous-sol à Paris ?',
+      name: "Quel est le prix pour aménager un sous-sol à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Pour un simple réaménagement intérieur sans création de surface habitable supplémentaire, aucun permis n'est nécessaire. Si vous créez de nouvelles fenêtres ou modifiez l'aspect extérieur, une déclaration préalable de travaux est requise. En copropriété, une autorisation de l'assemblée générale est indispensable pour tout travaux touchant les parties communes ou la structure de l'immeuble. Renseignez-vous auprès de votre syndic et de la mairie de Paris.",
+        text: "Le coût d'aménagement d'un sous-sol parisien varie selon l'état initial et l'usage final. Pour une cave en buanderie fonctionnelle (éclairage, prises, lave-linge) : 2 000 à 5 000 €. Pour un espace cave à vin aménagé avec isolation thermique et hygrométrie contrôlée : 3 000 à 8 000 €. Pour un local vélos sécurisé avec éclairage et revêtement de sol : 1 500 à 4 000 €. Pour la transformation en bureau ou pièce habitable (si autorisée) avec traitement complet humidité + isolation + électricité : 15 000 à 40 000 € selon la surface et la complexité du traitement humidité.",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Rénovation Sous-Sol Paris : aménagement, humidité & prix 2025 | Espace Design',
-  description: 'Aménager un sous-sol à Paris : traitement humidité, isolation, éclairage, cloisons. Prix et guide artisan 2025.',
+  title: 'Aménagement Sous-Sol Paris : cave, parking & buanderie 2025 | Espace Design',
+  description: 'Aménager son sous-sol à Paris : cave en buanderie, local vélos, isolation, humidité. Contraintes copropriété, prix et conseils 2025.',
 }
 
 export default function ArticleRenovationSousSol() {
@@ -87,10 +87,10 @@ export default function ArticleRenovationSousSol() {
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Sous-Sol Paris : aménagement, humidité &amp; prix 2025
+            Aménagement Sous-Sol Paris : cave, parking &amp; buanderie 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Cave voutée, parking converti, local technique : les sous-sols parisiens recèlent un potentiel souvent inexploité. Humidité, obscurité, isolation défaillante — guide complet pour transformer votre sous-sol en espace fonctionnel en 2025.
+            Cave humide, parking inutilisé, local commun vétuste : le sous-sol parisien est souvent un espace négligé qui recèle pourtant un vrai potentiel. Traitement de l&apos;humidité, contraintes de copropriété, aménagement en buanderie ou cave à vin — guide complet 2025 pour transformer votre sous-sol en atout.
           </p>
         </div>
       </section>
@@ -100,27 +100,31 @@ export default function ArticleRenovationSousSol() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les types de sous-sols parisiens et leurs contraintes
+              Types de sous-sols parisiens et leur potentiel d&apos;aménagement
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Paris possède une grande diversité de sous-sols, héritage de siècles de construction. Chaque configuration implique des contraintes spécifiques et des solutions adaptées. Avant tout projet, un diagnostic complet du local est indispensable.
+              Les immeubles parisiens, qu&apos;ils soient haussmanniens ou de construction plus récente, disposent de sous-sols très variés. Leur configuration initiale conditionne fortement ce qu&apos;il est possible d&apos;y faire — et à quel coût.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              La proximité de la nappe phréatique (variable selon les arrondissements), la nature des fondations de l&apos;immeuble et l&apos;état des murs de pierres ou de béton conditionnent directement la faisabilité et le budget des travaux.
+              Avant tout projet, il convient d&apos;identifier précisément le statut juridique de l&apos;espace (privatif ou commun), son état structurel et les contraintes techniques liées à la profondeur, à l&apos;humidité et à la ventilation.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Cave voutée en pierre (immeubles haussmanniens)',
-                  detail: 'Configuration la plus répandue dans Paris intra-muros. Murs en moellons calcaires, voûte en brique ou pierre, sol en terre battue ou carrelage ancien. Humidité naturellement présente. Hauteur sous plafond souvent limitée à 2,00–2,20 m. Potentiel : cave à vin, salle de sport, buanderie ou atelier.',
+                  enjeu: 'Cave privative',
+                  detail: "Espace attribué à un lot de copropriété, généralement délimité par des cloisons ou du grillage. Surface typique : 3 à 15 m². Aménagements courants : buanderie, cave à vin, rangement optimisé, local vélos personnel. Les travaux intérieurs ne nécessitent pas d'accord de copropriété si aucune partie commune n'est touchée.",
                 },
                 {
-                  enjeu: 'Sous-sol béton (immeubles des années 1960–1980)',
-                  detail: 'Murs et plafond en béton brut, sol en béton. Humidité par condensation fréquente. Hauteur sous plafond généralement plus confortable (2,20–2,50 m). Accès souvent collectif par couloirs ou parkings. Potentiel d\'aménagement plus large (bureau, chambre d\'appoint, salle de jeux).',
+                  enjeu: 'Parking en sous-sol',
+                  detail: "Box fermé ou place de stationnement en sous-sol. Peut être aménagé en atelier, local de stockage ou espace de rangement structuré si le règlement de copropriété l'autorise. La hauteur sous plafond (souvent 2,10 à 2,40 m) et la ventilation sont les principales contraintes.",
                 },
                 {
-                  enjeu: 'Local technique ou parking privatif',
-                  detail: 'Box ou place de parking reconvertie en espace de rangement ou de vie. Accès direct depuis l\'immeuble ou depuis la rue. Attention aux réglementations de copropriété sur le changement de destination. Isolation thermique et phonique vis-à-vis du reste du parking collectif est un enjeu majeur.',
+                  enjeu: 'Local commun (chaufferie, poussettes, vélos)',
+                  detail: "Espace appartenant à la copropriété dans son ensemble. Tout réaménagement requiert un vote en assemblée générale. Les projets courants : création d'un local vélos sécurisé, modernisation de la buanderie commune, amélioration de l'éclairage et de la signalétique.",
+                },
+                {
+                  enjeu: 'Cave voûtée haussmannienne',
+                  detail: "Caractéristique des immeubles du XIXe siècle, ces caves en pierre de taille offrent un cachet architectural indéniable. Leur structure en voûte impose des contraintes spécifiques pour l'isolation et l'installation de cloisons. Elles se prêtent particulièrement bien à l'aménagement en cave à vin ou en espace de dégustation.",
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -137,32 +141,32 @@ export default function ArticleRenovationSousSol() {
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Traitement de l&apos;humidité : cuvelage, drainage et ventilation
+            Traitement de l&apos;humidité : étape indispensable avant tout aménagement
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            L&apos;humidité est la problématique numéro un des sous-sols parisiens. Elle peut prendre plusieurs formes : condensation liée à un défaut de ventilation, remontées capillaires depuis le sol ou les fondations, ou infiltrations par les joints et fissures. Chaque source nécessite une solution différente.
+            L&apos;humidité est l&apos;ennemi numéro un des sous-sols parisiens. Elle se manifeste sous trois formes principales, chacune nécessitant une solution différente. Un diagnostic préalable est toujours recommandé avant de lancer des travaux d&apos;aménagement.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Cuvelage des murs',
-                solution: 'Application d\'un mortier d\'étanchéité ou d\'une membrane imperméabilisante sur les parois. Traite les remontées capillaires et les infiltrations latérales. Solution la plus pérenne pour les sous-sols proches de la nappe phréatique.',
-                cout: '80 – 180 €/m²',
+                titre: 'Remontées capillaires',
+                solution: "L'eau du sol remonte dans les murs par capillarité. Solution : injection de résine hydrophobe dans les murs ou cuvelage intérieur avec enduit étanche. Symptômes : auréoles, efflorescences blanches (salpêtre), peinture qui cloque en bas des murs.",
+                cout: '60 – 150 €/m²',
               },
               {
-                titre: 'Drainage périphérique',
-                solution: 'Pose d\'un drain en pied de mur relié à une pompe de relevage. Évacue les eaux d\'infiltration avant qu\'elles n\'atteignent la surface habitable. Recommandé pour les sous-sols très humides ou en zone inondable.',
-                cout: '3 000 – 7 000 € (forfait)',
+                titre: 'Infiltrations latérales',
+                solution: "Eau qui s'infiltre par les joints de fondation ou les fissures. Solution : drainage périphérique extérieur (si accessible) avec membrane d'étanchéité, ou drainage intérieur avec collecte vers une pompe de relevage. Intervention lourde mais durable.",
+                cout: '3 000 – 8 000 €',
               },
               {
-                titre: 'VMC et ventilation',
-                solution: 'Installation d\'une ventilation mécanique contrôlée (VMC) pour renouveler l\'air et évacuer l\'humidité de condensation. Indispensable dans tout sous-sol aménagé. Réduit drastiquement l\'apparition de moisissures.',
-                cout: '800 – 2 000 €',
+                titre: 'Condensation',
+                solution: "Air chaud et humide se refroidit sur les surfaces froides du sous-sol. Solution : ventilation mécanique (VMC ou extracteur hygroréglable), isolation thermique des parois pour élever leur température de surface, et contrôle de l'hygrométrie.",
+                cout: '800 – 2 500 €',
               },
               {
-                titre: 'Injection de résine (fissures)',
-                solution: 'Injection de résine expansive dans les fissures des murs ou du plancher pour stopper les infiltrations ponctuelles. Intervention rapide, peu invasive. Efficace pour les sous-sols béton avec défauts de joints.',
-                cout: '150 – 400 € par point',
+                titre: 'Cuvelage complet',
+                solution: "Pour les caves destinées à un usage régulier (buanderie, cave à vin, bureau), un cuvelage complet (murs + sol + angles) avec enduit drainant et membrane d'étanchéité garantit une protection durable. Solution la plus fiable pour les zones très humides.",
+                cout: '100 – 200 €/m²',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -181,32 +185,32 @@ export default function ArticleRenovationSousSol() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Isolation thermique et phonique d&apos;un sous-sol parisien
+            Isolation thermique et phonique du sous-sol parisien
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Un sous-sol non isolé est naturellement froid (10–14 °C en hiver) et peut transmettre les bruits des espaces de vie supérieurs. L&apos;isolation est donc un prérequis avant tout aménagement, que ce soit pour le confort thermique ou acoustique.
+            Un sous-sol non isolé perd une partie de la chaleur de l&apos;appartement situé au-dessus et transmet les bruits entre les niveaux. L&apos;isolation du sous-sol, même partielle, améliore sensiblement le confort et réduit les factures énergétiques.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Isolation des murs par l\'intérieur',
+                type: "Isolation du plafond de cave (plancher bas du rez-de-chaussée)",
+                prix: '25 – 60 €/m²',
+                detail: "Pose de panneaux rigides en laine de roche ou polystyrène expansé (PSE) contre le plafond de la cave. Réduit les pertes de chaleur vers le bas depuis l'appartement du dessus. Solution simple, rapide et peu coûteuse. Gain thermique significatif si le sol du rez-de-chaussée est froid.",
+              },
+              {
+                type: 'Isolation des murs périphériques',
                 prix: '40 – 100 €/m²',
-                detail: 'Doublage avec panneau de laine de roche ou polystyrène extrudé (XPS) + plaque de plâtre hydrofuge. Le XPS est recommandé en sous-sol car il résiste à l\'humidité. Perte de 8 à 12 cm sur la largeur de la pièce. Résistance thermique visée : R ≥ 3,7 m².K/W.',
+                detail: "Doublage des murs extérieurs en contact avec la terre par des panneaux isolants. Attention : l'isolant choisi doit être adapté aux environnements humides (laine de roche hydrophobe, polystyrène extrudé XPS). Éviter la laine de verre classique qui se dégrade en présence d'humidité.",
               },
               {
-                type: 'Isolation du sol (chape isolante)',
+                type: 'Isolation phonique plafond',
+                prix: '60 – 130 €/m²',
+                detail: "Faux-plafond désolidarisé avec laine minérale haute densité pour réduire les bruits d'impact transmis entre le sous-sol et l'appartement. Particulièrement utile si le sous-sol est aménagé en espace actif (buanderie, atelier) sous une pièce de vie.",
+              },
+              {
+                type: 'Isolation du sol contre terre',
                 prix: '30 – 70 €/m²',
-                detail: 'Pose d\'un panneau XPS sous une chape flottante ou un carrelage. Évite le contact direct avec le béton froid et supprime les ponts thermiques au sol. Indispensable pour un usage bureau, gym ou chambre d\'appoint.',
-              },
-              {
-                type: 'Isolation du plafond (faux-plafond)',
-                prix: '60 – 120 €/m²',
-                detail: 'Faux-plafond en plaques de plâtre avec laine minérale au-dessus. Améliore l\'isolation thermique et réduit les bruits d\'impact depuis l\'appartement du dessus. Permet également d\'intégrer discrètement l\'électricité et la ventilation.',
-              },
-              {
-                type: 'Isolation phonique entre sous-sol et logement',
-                prix: '80 – 150 €/m²',
-                detail: 'Si le sous-sol est directement sous un appartement, un faux-plafond désolidarisé avec suspentes anti-vibrations est indispensable pour éviter de transmettre les bruits d\'une salle de sport ou d\'un atelier vers les espaces de vie.',
+                detail: "Dalle béton avec rupteur thermique ou chape sèche sur panneaux XPS. Élimine l'effet de sol froid caractéristique des caves et réduit les remontées d'humidité par le sol. Indispensable pour tout aménagement à usage régulier.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -221,36 +225,36 @@ export default function ArticleRenovationSousSol() {
         </div>
       </section>
 
-      {/* Section 4 — Éclairage et cloisons */}
+      {/* Section 4 — Aménagements possibles */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Éclairage artificiel et création de pièces supplémentaires
+            Aménagements possibles : buanderie, cave à vin, bureau
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Sans lumière naturelle (ou très peu), l&apos;éclairage artificiel d&apos;un sous-sol est un enjeu central. Bien conçu, il peut rendre le lieu agréable et fonctionnel. La création de cloisons permet de compartimenter l&apos;espace selon les usages.
+            Une fois l&apos;humidité traitée et l&apos;isolation réalisée, le sous-sol parisien peut accueillir de nombreux usages qui soulagent l&apos;appartement principal. Voici les aménagements les plus demandés et les conditions à réunir.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Éclairage LED encastré (spots)',
-                prix: '50 – 120 € / spot installé',
-                detail: 'Les spots encastrés dans le faux-plafond créent un éclairage homogène et éliminent les zones d\'ombre. Préférer des LED à température de couleur variable (2 700–4 000 K) pour adapter l\'ambiance selon l\'usage (gym vs. salle de détente).',
+                type: 'Buanderie en cave',
+                prix: '2 500 – 6 000 €',
+                detail: "Installation d'un lave-linge (et éventuellement sèche-linge) avec arrivée et évacuation d'eau, circuit électrique dédié (20 A minimum), éclairage, ventilation et étagères de rangement. Nécessite un accès à une colonne d'eau et une évacuation — vérifier la faisabilité avec un plombier. Libère de la place dans la salle de bains.",
               },
               {
-                type: 'Puits de lumière et soupiraux agrandis',
-                prix: '1 500 – 4 000 € par ouverture',
-                detail: 'L\'agrandissement des soupiraux existants ou la création de petits puits de lumière apporte une lumière naturelle précieuse et améliore la perception de l\'espace. Travaux soumis à autorisation (mairie + copropriété).',
+                type: 'Cave à vin aménagée',
+                prix: '3 000 – 10 000 €',
+                detail: "Isolation thermique renforcée (température stable entre 12 et 14 °C), hygrométrie contrôlée (70 à 80 %), éclairage LED basse chaleur, casiers à bouteilles bois ou métal, sol en pierre naturelle ou carrelage. Pour les caves voûtées haussmanniennes, l'environnement naturel est souvent déjà favorable : froid constant et légère humidité.",
               },
               {
-                type: 'Cloisons légères (placo sur ossature)',
-                prix: '80 – 150 €/m²',
-                detail: 'La pose de cloisons en plaque de plâtre hydrofuge permet de diviser un grand sous-sol en plusieurs espaces : cave de rangement + salle de sport + buanderie. Les cloisons légères ne modifient pas la structure porteuse et sont réversibles.',
+                type: 'Local vélos sécurisé',
+                prix: '1 500 – 4 000 €',
+                detail: "Revêtement de sol antidérapant, anneaux d'accrochage muraux ou supports vélos verticaux, éclairage automatique (détecteur de présence), porte sécurisée avec serrure à code ou badge. Si c'est une partie commune, le vote en AG est nécessaire — mais ce type de projet est souvent bien accueilli par les copropriétaires.",
               },
               {
-                type: 'Revêtements de sol adaptés',
-                prix: '30 – 80 €/m²',
-                detail: 'Carrelage ou béton ciré pour les espaces utilitaires (résistance à l\'humidité). Parquet flottant ou vinyle LVT pour les espaces de vie (sur chape + sous-couche). Éviter le parquet massif collé en sous-sol (risque de gonflement).',
+                type: 'Bureau ou espace de travail',
+                prix: '15 000 – 40 000 €',
+                detail: "Transformation d'une cave en espace habitable : traitement complet humidité + cuvelage, isolation thermique et phonique, faux-plafond, revêtement de sol, électricité, Internet, ventilation VMC. Attention : si cette transformation crée de la surface de plancher, un permis de construire est obligatoire. À Paris, la mairie peut refuser si la hauteur sous plafond est insuffisante (minimum légal : 2,20 m).",
               },
             ].map((el) => (
               <div key={el.type} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -265,69 +269,29 @@ export default function ArticleRenovationSousSol() {
         </div>
       </section>
 
-      {/* Section 5 — Budget */}
+      {/* Section 5 — Contraintes réglementaires */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Budget complet : prix de rénovation d&apos;un sous-sol à Paris
+            Contraintes réglementaires et copropriété
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les prix ci-dessous s&apos;entendent pour un sous-sol de 20 m² à Paris, main d&apos;œuvre et matériaux inclus. Hors traitement humidité si déjà réalisé.
+            Avant tout aménagement de sous-sol à Paris, il est essentiel de vérifier le règlement de copropriété et les règles d&apos;urbanisme applicables. Des erreurs réglementaires peuvent entraîner l&apos;obligation de remettre les lieux en état à vos frais.
           </p>
-
-          <div className="space-y-3 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
             {[
-              {
-                niveau: 'Basique',
-                prestations: 'Nettoyage + peinture hydrofuge murs + sol époxy + éclairage',
-                total: '2 000 – 4 000 €',
-              },
-              {
-                niveau: 'Intermédiaire',
-                prestations: 'Traitement humidité + isolation sol + carrelage + éclairage LED + VMC',
-                total: '5 000 – 9 000 €',
-              },
-              {
-                niveau: 'Complet',
-                prestations: 'Cuvelage + isolation murs et plafond + cloisons + électricité + éclairage + sol',
-                total: '9 000 – 15 000 €',
-              },
-              {
-                niveau: 'Pièce de vie',
-                prestations: 'Aménagement complet (bureau, chambre d\'appoint, studio) avec finitions haut de gamme',
-                total: '12 000 – 20 000 €',
-              },
-            ].map((row, i) => (
-              <div
-                key={row.niveau}
-                className={`rounded-lg p-5 border border-gray-100 grid grid-cols-1 sm:grid-cols-3 gap-2 items-start ${i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}`}
-              >
-                <div className="font-medium text-[#1C1C1C] text-sm">{row.niveau}</div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed sm:col-span-1">{row.prestations}</div>
-                <div className="text-[#B8960C] text-sm font-medium sm:text-right">{row.total}</div>
+              "Vérifier le règlement de copropriété avant tout projet (destination des lots, usages autorisés)",
+              "Travaux sur parties communes : vote en AG à la majorité de l'article 25 ou 24 selon la nature",
+              "Transformation en espace habitable : permis de construire obligatoire si création de surface de plancher",
+              "Hauteur sous plafond minimale pour un espace habitable : 2,20 m (code de la construction)",
+              "Raccordement eau et électricité : vérifier la capacité du tableau général et les colonnes montantes",
+              "Ventilation obligatoire pour tout usage (buanderie, bureau) : VMC ou grille de ventilation réglementaire",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                {item}
               </div>
             ))}
-          </div>
-
-          <div>
-            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Points de vigilance avant de commencer
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                'Toujours traiter l\'humidité avant d\'isoler — isoler un mur humide l\'aggrave',
-                'Vérifier la hauteur sous plafond : minimum 2,20 m pour une pièce habitable',
-                'Contrôler le règlement de copropriété avant tout changement de destination',
-                'Prévoir une VMC dès le départ — impossible à ajouter sans casser',
-                'Dimensionner le tableau électrique pour les usages envisagés (gym, bureau)',
-                'Tester l\'étanchéité après cuvelage avant de poser les revêtements',
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                  {item}
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -353,11 +317,11 @@ export default function ArticleRenovationSousSol() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/isolation-paris', title: 'Isolation Paris' },
+              { href: '/blog/isolation-phonique-paris', title: 'Isolation phonique Paris' },
+              { href: '/blog/renovation-hall-immeuble-paris', title: 'Rénovation hall immeuble Paris' },
+              { href: '/blog/renovation-cage-escalier-paris', title: "Rénovation cage d'escalier Paris" },
+              { href: '/plomberie-paris', title: 'Plomberie Paris' },
               { href: '/electricite-paris', title: 'Électricité Paris' },
-              { href: '/blog/amenagement-combles-perdus-paris', title: 'Aménagement combles perdus Paris' },
-              { href: '/blog/renovation-bureau-paris', title: 'Rénovation bureau Paris' },
-              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -401,10 +365,10 @@ export default function ArticleRenovationSousSol() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Transformez votre sous-sol parisien
+          Transformez votre sous-sol parisien en espace utile
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Diagnostic gratuit. Devis détaillé sous 48h. Artisans spécialisés en rénovation de sous-sols à Paris.
+          Diagnostic gratuit. Devis détaillé sous 48h. Artisans spécialisés en aménagement et traitement humidité.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
