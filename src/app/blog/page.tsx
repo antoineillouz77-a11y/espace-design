@@ -2046,6 +2046,24 @@ const articles = [
     desc: "Rénover un appartement à Viry-Châtillon (Essonne). Artisan qualifié, devis gratuit sous 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-bourg-la-reine',
+    title: "Rénovation Appartement Bourg-la-Reine (92) — 2025",
+    desc: "Artisan rénovateur à Bourg-la-Reine (92). Cuisine, salle de bain, parquet. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-fontenay-aux-roses',
+    title: "Rénovation Appartement Fontenay-aux-Roses (92) — 2025",
+    desc: "Rénover un appartement à Fontenay-aux-Roses (92). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-la-courneuve',
+    title: "Rénovation Appartement La Courneuve (93) — 2025",
+    desc: "Artisan rénovateur à La Courneuve (93). Cuisine, salle de bain, parquet. Devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
