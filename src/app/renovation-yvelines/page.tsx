@@ -56,6 +56,8 @@ const villes78 = [
   { href: '/renovation-velizy-villacoublay', label: 'Vélizy-Villacoublay' },
   { href: '/renovation-buc', label: 'Buc' },
   { href: '/renovation-le-chesnay-rocquencourt', label: 'Le Chesnay-Rocquencourt' },
+  { href: '/renovation-fontenay-le-fleury', label: 'Fontenay-le-Fleury' },
+  { href: '/renovation-trappes', label: 'Trappes' },
 ]
 
 const services = [

@@ -337,6 +337,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-livry-gargan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Yvelines (78) — nouvelles villes
+    { url: `${base}/renovation-fontenay-le-fleury`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-conflans-sainte-honorine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-mantes-la-jolie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
@@ -403,6 +404,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-crosne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-epinay-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-pontault-combault`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-ozoir-la-ferriere`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-trappes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Hauts-de-Seine (92) — nouvelles villes
     { url: `${base}/renovation-le-plessis-robinson`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -414,6 +417,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-appartement-paris-11e-bastille`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-salle-de-bain-italienne-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-cave-amenagee-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/prix-renovation-cuisine-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Val-de-Marne (94) — nouvelles villes
     { url: `${base}/renovation-villejuif`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -427,6 +431,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Val-d'Oise (95) — nouvelles villes
     { url: `${base}/renovation-saint-gratien`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-villiers-le-bel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-bezons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-taverny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 

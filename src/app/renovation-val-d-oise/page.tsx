@@ -51,6 +51,7 @@ const villes95 = [
   { href: '/renovation-bezons', label: 'Bezons' },
   { href: '/renovation-taverny', label: 'Taverny' },
   { href: '/renovation-saint-gratien', label: 'Saint-Gratien' },
+  { href: '/renovation-villiers-le-bel', label: 'Villiers-le-Bel' },
 ]
 
 const services = [

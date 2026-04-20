@@ -852,6 +852,12 @@ const articles = [
     desc: "Aménager une cave parisienne : traitement humidité, isolation, électricité, usages (cave à vin, home cinéma). Prix 2025.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/prix-renovation-cuisine-paris',
+    title: 'Prix Rénovation Cuisine Paris : budget, matériaux & devis 2025',
+    desc: "Quel budget pour rénover une cuisine à Paris ? Cuisine équipée, plan de travail, carrelage, électroménager. Prix m² 2025.",
+    tag: 'Cuisine',
+  },
 ]
 
 export default function BlogPage() {
