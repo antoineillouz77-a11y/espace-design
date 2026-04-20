@@ -2322,6 +2322,12 @@ const articles = [
     desc: "Adapter votre appartement à Paris pour l'accessibilité PMR : largeur portes, rampes, douche. Prix.",
     tag: 'Guide',
   },
+  {
+    href: '/blog/renovation-premiere-fois-paris',
+    title: "Première Rénovation à Paris — Guide Complet 2025",
+    desc: "Tout ce qu'il faut savoir pour votre première rénovation à Paris : étapes, budget, artisans, pièges.",
+    tag: 'Guide',
+  },
 ]
 
 export default function BlogPage() {
