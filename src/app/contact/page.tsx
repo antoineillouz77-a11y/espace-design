@@ -56,6 +56,20 @@ export default function ContactPage() {
         </p>
       </section>
 
+      {/* Google Maps */}
+      <section className="bg-white">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167952.24919173858!2d2.182604!3d48.85888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C+France!5e0!3m2!1sfr!2sfr!4v1713000000000!5m2!1sfr!2sfr"
+          width="100%"
+          height="320"
+          style={{ border: 0, display: 'block' }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Zone d'intervention Espace Design — Paris & Île-de-France"
+        />
+      </section>
+
       <section className="py-20 bg-[#FAFAF8]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
