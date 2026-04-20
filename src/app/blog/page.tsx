@@ -1632,6 +1632,24 @@ const articles = [
     desc: "Rénover un appartement à Compiègne. Ville historique proche IDF, immeubles anciens. Devis 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/peinture-boiseries-paris',
+    title: "Peinture Boiseries Paris : volets, portes & prix 2025",
+    desc: "Peinture boiseries, volets et portes à Paris. Décapage, laque, finitions. Devis gratuit 48h.",
+    tag: 'Peinture',
+  },
+  {
+    href: '/blog/renovation-appartement-meuble-paris',
+    title: "Rénovation Appartement Meublé Paris : investissement 2025",
+    desc: "Rénover un appartement meublé à Paris (location meublée). Mobilier intégré, optimisation, standing.",
+    tag: 'Investissement',
+  },
+  {
+    href: '/blog/renovation-colocation-paris',
+    title: "Aménagement Colocation Paris : rénovation & prix 2025",
+    desc: "Aménager un appartement en colocation à Paris. Chambres indépendantes, SDB partagée. Devis 48h.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
