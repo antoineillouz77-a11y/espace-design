@@ -3,17 +3,18 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Saint-Germain-en-Laye (78100) — Artisan Rénovateur | Espace Design',
+  title: 'Rénovation Meaux (77100) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Saint-Germain-en-Laye (78100) : belles demeures, appartements haussmanniens proches château, maisons de standing. Rénovation prestige 1200-3500€/m². Devis gratuit 48h.',
+    'Artisan rénovateur à Meaux (77100), Seine-et-Marne : centre historique médiéval, pavillons, résidences. Rénovation 700-2500€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation appartement Saint-Germain-en-Laye',
-    'artisan rénovation Saint-Germain-en-Laye',
-    'rénovation Saint-Germain-en-Laye 78100',
-    'entreprise renovation Saint-Germain-en-Laye',
-    'artisan Saint-Germain-en-Laye Yvelines',
-    'rénovation demeure standing Saint-Germain',
-    'rénovation appartement haussmannien Saint-Germain-en-Laye',
+    'rénovation appartement Meaux',
+    'artisan rénovation Meaux',
+    'décoration intérieure Meaux',
+    'renovation Meaux 77100',
+    'entreprise renovation Meaux',
+    'artisan Meaux Seine-et-Marne',
+    'rénovation maison Meaux 77',
+    'rénovation pavillon Meaux',
   ],
 }
 
@@ -21,17 +22,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Saint-Germain-en-Laye (Yvelines).',
+  description: 'Artisan rénovateur et décorateur intérieur à Meaux, ville historique de Seine-et-Marne.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-saint-germain-en-laye',
+  url: 'https://espacedesignparis.fr/renovation-meaux',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Saint-Germain-en-Laye',
+    name: 'Meaux',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Saint-Germain-en-Laye',
-    postalCode: '78100',
+    addressLocality: 'Meaux',
+    postalCode: '77100',
     addressCountry: 'FR',
   },
   aggregateRating: {
@@ -47,34 +48,34 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Saint-Germain-en-Laye ?',
+      name: 'Quel est le prix d\'une rénovation à Meaux ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'À Saint-Germain-en-Laye, le coût d\'une rénovation varie entre 1 200 et 2 000 €/m² pour un appartement haussmannien ou une belle demeure. Pour les biens de prestige proches du château, comptez 2 000 à 3 500 €/m². Devis gratuit sous 48h.',
+        text: 'À Meaux, le coût d\'une rénovation varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour les maisons de ville du centre historique ou les pavillons en développement, comptez 1 200 à 2 500 €/m² selon les finitions. Devis gratuit sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Rénovez-vous les appartements haussmanniens à Saint-Germain-en-Laye ?',
+      name: 'Intervenez-vous dans les nouveaux quartiers de Meaux en développement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design intervient régulièrement dans les appartements haussmanniens et immeubles de standing de Saint-Germain-en-Laye. Nous restaurons les éléments d\'origine — moulures, parquets anciens, cheminées — tout en modernisant les équipements.',
+        text: 'Oui, Espace Design intervient dans toute la ville de Meaux, des maisons de ville du centre médiéval aux résidences neuves ou récentes en périphérie. Nous travaillons aussi à Lagny-sur-Marne, Chelles et Torcy à proximité.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment rénover une belle demeure à Saint-Germain-en-Laye ?',
+      name: 'Comment rénover une maison de ville dans le centre historique de Meaux ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pour les belles demeures de Saint-Germain-en-Laye, nous proposons une approche sur mesure : restauration du patrimoine architectural, matériaux nobles (marbre, parquet chêne massif, boiseries), décoration intérieure haut de gamme. Chaque projet est traité avec soin.',
+        text: 'Pour les maisons de ville du centre historique de Meaux, nous recommandons une approche respectueuse du bâti ancien : conservation des éléments d\'origine, peinture à la chaux, parquet massif, menuiseries en bois. Devis personnalisé sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Avez-vous une assurance décennale pour les travaux à Saint-Germain-en-Laye ?',
+      name: 'Avez-vous une assurance décennale pour les travaux à Meaux ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux à Saint-Germain-en-Laye sont garantis 10 ans après la livraison.',
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Tous vos travaux à Meaux sont garantis 10 ans après la livraison.',
       },
     },
   ],
@@ -85,12 +86,12 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Yvelines', item: 'https://espacedesignparis.fr/renovation-yvelines' },
-    { '@type': 'ListItem', position: 3, name: 'Saint-Germain-en-Laye', item: 'https://espacedesignparis.fr/renovation-saint-germain-en-laye' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Seine-et-Marne', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Meaux', item: 'https://espacedesignparis.fr/renovation-meaux' },
   ],
 }
 
-export default function RenovationSaintGermainEnLaye() {
+export default function RenovationMeaux() {
   return (
     <>
       <script
@@ -108,13 +109,13 @@ export default function RenovationSaintGermainEnLaye() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Saint-Germain-en-Laye — 78100 — Yvelines</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Meaux — 77100 — Seine-et-Marne</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement & demeure<br className="hidden sm:block" /> Saint-Germain-en-Laye
+            Rénovation appartement<br className="hidden sm:block" /> Meaux
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Saint-Germain-en-Laye (78100) : belles demeures, appartements haussmanniens proches du château, maisons de standing. Rénovation prestige et finitions d'exception. Devis gratuit sous 48h.
+            Artisan rénovateur à Meaux (77100) : maisons de ville du centre historique médiéval, pavillons résidentiels, résidences en développement. Rénovation complète, finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -137,13 +138,13 @@ export default function RenovationSaintGermainEnLaye() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Saint-Germain-en-Laye
+            Nos services à Meaux
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation patrimoniale', desc: 'Restauration des appartements haussmanniens et belles demeures proches du château de Saint-Germain : moulures, parquets anciens, cheminées, boiseries — préservation du cachet d\'origine.' },
-              { num: '02', title: 'Maisons de standing', desc: 'Rénovation complète de maisons de standing à Saint-Germain-en-Laye : cuisine sur mesure, salle de bain wellness, suite parentale, décoration intérieure haut de gamme.' },
-              { num: '03', title: 'Finitions d\'exception', desc: 'Parquet chêne massif, marbre, peinture à la chaux, plafonds ornementaux, verrières intérieures. Espace Design sublime vos intérieurs avec l\'artisanat le plus exigeant.' },
+              { num: '01', title: 'Rénovation maisons historiques', desc: 'Restauration des maisons de ville du centre médiéval de Meaux : conservation des éléments anciens, peinture à la chaux, parquet massif, menuiseries en bois. Respect du caractère historique du bâti.' },
+              { num: '02', title: 'Rénovation résidences neuves', desc: 'Aménagement et personnalisation des appartements et pavillons des quartiers en développement : revêtements, salles de bain, cuisines équipées, cloisonnement sur-mesure.' },
+              { num: '03', title: 'Finitions & décoration', desc: 'Harmonie des matériaux, carrelage, enduits, peinture décorative. Nous apportons à votre intérieur à Meaux une identité propre, élégante et durable.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -159,7 +160,7 @@ export default function RenovationSaintGermainEnLaye() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Saint-Germain-en-Laye
+            Prix rénovation à Meaux
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
@@ -171,12 +172,12 @@ export default function RenovationSaintGermainEnLaye() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture appartement', '35 - 80 €/m²'],
-                  ['Rénovation salle de bain', '6 000 - 20 000 €'],
-                  ['Rénovation cuisine', '8 000 - 30 000 €'],
-                  ['Parquet chêne massif (pose + fourniture)', '70 - 150 €/m²'],
-                  ['Rénovation complète appartement', '1 200 - 2 000 €/m²'],
-                  ['Rénovation prestige demeure', '2 000 - 3 500 €/m²'],
+                  ['Peinture appartement', '25 - 60 €/m²'],
+                  ['Rénovation salle de bain', '3 500 - 12 000 €'],
+                  ['Rénovation cuisine', '4 000 - 15 000 €'],
+                  ['Parquet (pose + fourniture)', '45 - 100 €/m²'],
+                  ['Rénovation complète appartement', '700 - 1 200 €/m²'],
+                  ['Rénovation maison de ville', '900 - 2 500 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -190,13 +191,13 @@ export default function RenovationSaintGermainEnLaye() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#FAFAF8]">
+      <section className="py-14 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <blockquote className="border-l-2 border-[#D4AF37] pl-6">
             <p className="text-gray-600 text-base font-light italic leading-relaxed mb-4">
-              "Patrick a entièrement rénové notre appartement haussmannien à Saint-Germain-en-Laye. Il a su préserver les moulures et la cheminée d'époque tout en créant une salle de bain contemporaine magnifique. Un artisan rare, passionné et rigoureux."
+              "Patrick a entièrement rénové notre maison de ville près de la cathédrale de Meaux. Travail soigné, respect du cachet ancien, aucune mauvaise surprise. Nous sommes ravis du résultat et du sérieux de l'artisan."
             </p>
-            <cite className="text-[#B8960C] text-xs font-light uppercase tracking-widest not-italic">Isabelle T. — Saint-Germain-en-Laye (78100)</cite>
+            <cite className="text-[#B8960C] text-xs font-light uppercase tracking-widest not-italic">M. et Mme Garnier — Meaux centre (77100)</cite>
           </blockquote>
         </div>
       </section>
@@ -229,20 +230,20 @@ export default function RenovationSaintGermainEnLaye() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Saint-Germain-en-Laye ?',
-                a: 'À Saint-Germain-en-Laye, le coût d\'une rénovation varie entre 1 200 et 2 000 €/m² pour un appartement haussmannien. Pour les biens de prestige proches du château, comptez 2 000 à 3 500 €/m².',
+                q: 'Quel est le prix d\'une rénovation à Meaux ?',
+                a: 'À Meaux, le coût d\'une rénovation varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour les maisons de ville du centre historique ou les pavillons en développement, comptez 1 200 à 2 500 €/m² selon les finitions.',
               },
               {
-                q: 'Rénovez-vous les appartements haussmanniens à Saint-Germain-en-Laye ?',
-                a: 'Oui, Espace Design intervient régulièrement dans les appartements haussmanniens de Saint-Germain-en-Laye. Nous restaurons les éléments d\'origine — moulures, parquets anciens, cheminées — tout en modernisant les équipements.',
+                q: 'Intervenez-vous dans les nouveaux quartiers de Meaux en développement ?',
+                a: 'Oui, Espace Design intervient dans toute la ville de Meaux, des maisons de ville du centre médiéval aux résidences récentes en périphérie. Nous travaillons aussi à Lagny-sur-Marne, Chelles et Torcy à proximité.',
               },
               {
-                q: 'Comment rénover une belle demeure à Saint-Germain-en-Laye ?',
-                a: 'Pour les belles demeures de Saint-Germain-en-Laye, nous proposons une approche sur mesure : restauration du patrimoine, matériaux nobles (marbre, parquet massif, boiseries), décoration haut de gamme. Chaque projet est traité avec soin.',
+                q: 'Comment rénover une maison de ville dans le centre historique de Meaux ?',
+                a: 'Pour les maisons de ville du centre historique de Meaux, nous recommandons une approche respectueuse du bâti ancien : conservation des éléments d\'origine, peinture à la chaux, parquet massif, menuiseries en bois.',
               },
               {
-                q: 'Avez-vous une assurance décennale pour les travaux à Saint-Germain-en-Laye ?',
-                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux à Saint-Germain-en-Laye sont garantis 10 ans après la livraison.',
+                q: 'Avez-vous une assurance décennale pour les travaux à Meaux ?',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Tous vos travaux à Meaux sont garantis 10 ans après la livraison.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -262,12 +263,11 @@ export default function RenovationSaintGermainEnLaye() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
-              { href: '/renovation-le-pecq', label: 'Le Pecq' },
-              { href: '/renovation-chambourcy', label: 'Chambourcy' },
-              { href: '/renovation-versailles', label: 'Versailles' },
-              { href: '/renovation-maisons-laffitte', label: 'Maisons-Laffitte' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
+              { href: '/renovation-chelles', label: 'Chelles' },
+              { href: '/renovation-lagny-sur-marne', label: 'Lagny-sur-Marne' },
+              { href: '/renovation-torcy', label: 'Torcy' },
+              { href: '/renovation-melun', label: 'Melun' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -314,9 +314,9 @@ export default function RenovationSaintGermainEnLaye() {
             {[
               { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
               { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain' },
-              { href: '/blog/renovation-avant-vente-paris', label: 'Rénovation avant vente' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant de vendre' },
               { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
-              { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Travaux électricité' },
               { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
@@ -330,10 +330,10 @@ export default function RenovationSaintGermainEnLaye() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Saint-Germain-en-Laye
+            Votre projet à Meaux
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Saint-Germain-en-Laye et les Yvelines.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Meaux et ses environs (Lagny-sur-Marne, Chelles, Torcy).
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
