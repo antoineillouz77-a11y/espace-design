@@ -2124,6 +2124,30 @@ const articles = [
     desc: "Artisan rénovateur à Noisy-le-Sec (93). Cuisine, salle de bain, parquet. Devis gratuit 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-eaubonne',
+    title: "Rénovation Appartement Éaubonne (95) — Guide 2025",
+    desc: "Rénover un appartement à Éaubonne (Val-d'Oise). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-le-perreux-sur-marne',
+    title: "Rénovation Appartement Le Perreux-sur-Marne (94) — 2025",
+    desc: "Artisan rénovateur au Perreux-sur-Marne (94). Cuisine, salle de bain. Devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-romainville',
+    title: "Rénovation Appartement Romainville (93) — Guide 2025",
+    desc: "Rénover un appartement à Romainville (93). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-sevres',
+    title: "Rénovation Appartement Sèvres (92) — Guide 2025",
+    desc: "Artisan rénovateur à Sèvres (Hauts-de-Seine). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
