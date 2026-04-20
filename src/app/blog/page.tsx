@@ -1878,6 +1878,54 @@ const articles = [
     desc: "Comment aménager et rénover une cave en pièce de vie habitable à Paris. Réglementation, prix, conseils.",
     tag: 'Travaux',
   },
+  {
+    href: '/blog/renovation-appartement-aulnay-sous-bois',
+    title: "Rénovation Appartement Aulnay-sous-Bois (93) — 2025",
+    desc: "Artisan rénovateur à Aulnay-sous-Bois. Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-epinay-sur-seine',
+    title: "Rénovation Appartement Épinay-sur-Seine (93) — 2025",
+    desc: "Rénover un appartement à Épinay-sur-Seine (93). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-evry',
+    title: "Rénovation Appartement Évry (91) — Guide & Prix 2025",
+    desc: "Artisan rénovateur à Évry-Courcouronnes (91). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-poissy',
+    title: "Rénovation Appartement Poissy (78) — Guide 2025",
+    desc: "Rénover un appartement à Poissy (Yvelines). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-villejuif',
+    title: "Rénovation Appartement Villejuif (94) — Guide 2025",
+    desc: "Artisan rénovateur à Villejuif (94). Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-charenton-le-pont',
+    title: "Rénovation Appartement Charenton-le-Pont (94) — 2025",
+    desc: "Rénover un appartement à Charenton-le-Pont (94). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-chatillon',
+    title: "Rénovation Appartement Châtillon (92) — Guide 2025",
+    desc: "Artisan rénovateur à Châtillon (92). Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-chambre-enfant-paris',
+    title: "Rénovation Chambre Enfant Paris — Idées & Prix 2025",
+    desc: "Aménager et rénover une chambre enfant à Paris. Rangements sur mesure, peinture, sol. Devis gratuit.",
+    tag: 'Travaux',
+  },
 ]
 
 export default function BlogPage() {
