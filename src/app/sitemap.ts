@@ -435,6 +435,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/verriere-interieure-atelier-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/salle-de-bain-italienne-sans-receveur-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/isolation-murs-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/cloison-separation-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Val-de-Marne (94) — nouvelles villes
     { url: `${base}/renovation-villejuif`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

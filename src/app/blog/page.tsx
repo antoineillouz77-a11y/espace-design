@@ -894,6 +894,12 @@ const articles = [
     desc: "Isoler les murs d'un appartement à Paris : ITI, ITE, aides MaPrimeRénov'. Prix m² 2025 par technique.",
     tag: 'Isolation',
   },
+  {
+    href: '/blog/cloison-separation-appartement-paris',
+    title: 'Cloison Séparation Appartement Paris : types, prix & pose 2025',
+    desc: "Créer une cloison dans un appartement parisien : placo, brique, verre, amovible. Prix pose artisan Paris 2025.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
