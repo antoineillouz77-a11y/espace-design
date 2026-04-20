@@ -756,6 +756,12 @@ const articles = [
     desc: "Comment obtenir et comparer un devis de rénovation à Paris : CGV, prix au m², délais, assurance décennale. Guide 2025.",
     tag: 'Guides',
   },
+  {
+    href: '/blog/renovation-appartement-paris-16e',
+    title: 'Rénovation Appartement Paris 16e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 16e arrondissement de Paris : Passy, Auteuil, Trocadéro. Prestige, haussmannien, artisan 2025.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {
