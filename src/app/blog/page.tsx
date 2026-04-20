@@ -1110,6 +1110,24 @@ const articles = [
     desc: "Comment réceptionner ses travaux à Paris. PV de réception, réserves, garantie parfait achèvement, droits du client. Guide 2025.",
     tag: 'Administratif',
   },
+  {
+    href: '/blog/assurance-decennale-renovation-paris',
+    title: "Assurance Décennale Rénovation Paris : guide complet artisan 2025",
+    desc: "Tout savoir sur l'assurance décennale pour vos travaux de rénovation à Paris. Garanties, vérifications, recours. Guide 2025.",
+    tag: 'Administratif',
+  },
+  {
+    href: '/blog/renovation-salon-paris',
+    title: 'Rénovation Salon Paris : idées, matériaux & prix artisan 2025',
+    desc: "Rénover son salon à Paris. Ouverture cloison, parquet, peinture, cheminée, éclairage. Prix artisan 2025. Devis gratuit 48h.",
+    tag: 'Rénovation',
+  },
+  {
+    href: '/blog/verriere-atelier-paris',
+    title: "Verrière Atelier Paris : pose, styles & prix artisan 2025",
+    desc: "Installer une verrière atelier à Paris. Acier, aluminium, vitrages, prix, démarches copropriété. Devis gratuit 48h.",
+    tag: 'Menuiserie',
+  },
 ]
 
 export default function BlogPage() {

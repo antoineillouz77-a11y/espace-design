@@ -1,355 +1,57 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
-import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
+import { ArrowRight, Phone, CheckCircle, Star } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Stains (93240) — Artisan Rénovateur | Espace Design',
-  description:
-    'Artisan rénovateur à Stains (93240) : pavillons, maisons individuelles, logements collectifs Seine-Saint-Denis. Rénovation maison Stains 700-2500€/m². Devis gratuit 48h.',
-  keywords: [
-    'rénovation maison Stains',
-    'artisan rénovation Stains',
-    'rénovation Stains 93240',
-    'entreprise rénovation Stains',
-    'artisan Stains Seine-Saint-Denis',
-    'rénovation pavillon Stains',
-    'rénovation appartement 93',
-  ],
+  title: "Rénovation Stains (93240) — Artisan Rénovateur | Espace Design",
+  description: "Artisan rénovateur à Stains (93240) — rénovation appartement, salle de bain, cuisine, peinture, parquet. Devis gratuit sous 48h.",
+  keywords: ["rénovation Stains", "artisan rénovation Stains", "rénovation appartement 93240"],
 }
-
-const schemaLocal = {
-  '@context': 'https://schema.org',
-  '@type': 'HomeAndConstructionBusiness',
-  name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Stains.',
-  telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-stains',
-  areaServed: {
-    '@type': 'AdministrativeArea',
-    name: 'Stains',
-  },
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Stains',
-    postalCode: '93240',
-    addressCountry: 'FR',
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '47',
-  },
-}
-
-const schemaFaq = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: "Quel est le prix d'une rénovation à Stains ?",
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "Le coût d'une rénovation à Stains varie entre 700 et 1 200 €/m² pour une rénovation standard d'un pavillon ou d'un appartement. Pour une rénovation complète avec mise aux normes et finitions haut de gamme, comptez 1 200 à 2 500 €/m². Devis gratuit sous 48h.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Quel artisan contacter pour rénover une maison à Stains ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "Espace Design intervient régulièrement à Stains pour des rénovations de pavillons et de maisons individuelles. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h, un seul interlocuteur du diagnostic à la livraison.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Comment rénover un pavillon en Seine-Saint-Denis ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "La rénovation d'un pavillon en Seine-Saint-Denis nécessite souvent une mise aux normes électrique et de plomberie, une isolation des combles et des murs, le remplacement des menuiseries et la rénovation des revêtements intérieurs. Espace Design prend en charge tous ces corps de métier.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Avez-vous une assurance décennale ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
-      },
-    },
-  ],
-}
-
-const schemaBreadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Seine-Saint-Denis', item: 'https://espacedesignparis.fr/renovation-seine-saint-denis' },
-    { '@type': 'ListItem', position: 3, name: 'Stains', item: 'https://espacedesignparis.fr/renovation-stains' },
-  ],
-}
-
-export default function RenovationStains() {
+const schemaBreadcrumb = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' }, { '@type': 'ListItem', position: 2, name: "Rénovation Stains", item: "https://espacedesignparis.fr/renovation-stains" }] }
+const schemaLocalBusiness = { '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness', name: 'Espace Design', description: "Artisan rénovateur à Stains.", telephone: '+33611783867', email: 'espacedesign92@gmail.com', url: 'https://espacedesignparis.fr', address: { '@type': 'PostalAddress', addressLocality: 'Stains', postalCode: '93240', addressCountry: 'FR' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '47' }, priceRange: '€€€' }
+const schemaFAQ = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: "Délai devis à Stains ?", acceptedAnswer: { '@type': 'Answer', text: "Devis gratuit sous 48h à Stains." } }, { '@type': 'Question', name: "Quels travaux à Stains ?", acceptedAnswer: { '@type': 'Answer', text: "Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage." } }] }
+const services = [
+  { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
+  { href: '/renovation-cuisine-paris', label: 'Cuisine' },
+  { href: '/peinture-paris', label: 'Peinture' },
+  { href: '/parquet-paris', label: 'Parquet' },
+  { href: '/carrelage-paris', label: 'Carrelage' },
+  { href: '/electricite-paris', label: 'Électricité' },
+  { href: '/plomberie-paris', label: 'Plomberie' },
+  { href: '/menuiserie-paris', label: 'Menuiserie' },
+  { href: '/isolation-paris', label: 'Isolation' },
+  { href: '/platrererie-paris', label: 'Plâtrerie' },
+]
+export default function StainsPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocal) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
-      />
-
-      <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Stains — 93240</p>
-          <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
-          <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation maison<br className="hidden sm:block" /> Stains
-          </h1>
-          <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Stains (93240) : pavillons, maisons individuelles et logements collectifs en Seine-Saint-Denis. Rénovation complète, mise aux normes et finitions soignées. Devis gratuit sous 48h.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="tel:+33611783867"
-              className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#B8960C] transition-colors duration-300"
-            >
-              <Phone size={15} />
-              06 11 78 38 67
-            </a>
-            <Link
-              href="/contact"
-              className="flex items-center justify-center gap-2 border border-[#1C1C1C] text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#1C1C1C] hover:text-white transition-colors duration-300"
-            >
-              Devis gratuit <ArrowRight size={13} />
-            </Link>
-          </div>
-        </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocalBusiness) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
+      <section className="pt-32 pb-16 bg-[#1C1C1C] text-center px-4">
+        <p className="text-[#D4AF37] text-sm font-medium uppercase tracking-widest mb-3">Seine-Saint-Denis (93)</p>
+        <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">Rénovation Stains</h1>
+        <p className="text-gray-400 max-w-xl mx-auto text-sm">Artisan rénovateur à Stains — devis gratuit sous 48h.</p>
       </section>
-
-      <section className="py-20 bg-[#F2F2EE]">
+      <section className="py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Stains
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {[
-              { num: '01', title: 'Rénovation de pavillons', desc: "Remise à neuf complète de maisons individuelles et pavillons à Stains : électricité, plomberie, isolation des combles et des murs, revêtements sols et murs, menuiseries intérieures et extérieures." },
-              { num: '02', title: 'Logements collectifs', desc: "Modernisation des appartements des ensembles collectifs : tableau électrique, plomberie, isolation phonique et thermique, salle de bain et cuisine refaites à neuf." },
-              { num: '03', title: 'Finitions et décoration', desc: 'Peinture, parquet, carrelage, salle de bain clé en main, cuisine — un résultat soigné pour valoriser durablement votre bien à Stains et dans le 93.' },
-            ].map((s) => (
-              <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
-                <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
-                <div className="w-6 h-px bg-[#D4AF37]/50 mb-4" />
-                <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-2">{s.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed font-light">{s.desc}</p>
-              </div>
-            ))}
-          </div>
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">Votre artisan à Stains</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">Stains, commune de la Seine-Saint-Denis au riche passé industriel, connaît un renouveau urbain qui stimule la demande en rénovation résidentielle. Espace Design intervient à Stains pour transformer appartements et maisons avec des travaux de qualité et des finitions durables.</p>
+          <div className="flex flex-wrap gap-3 mb-8">{services.map(s => <Link key={s.href} href={s.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors">{s.label}</Link>)}</div>
+          <div className="grid grid-cols-2 gap-2">{['Devis gratuit 48h', 'Artisan qualifié', 'Assurance décennale', 'Finitions soignées'].map(e => <div key={e} className="flex items-center gap-2"><CheckCircle size={13} className="text-[#B8960C]" /><span className="text-xs text-gray-600">{e}</span></div>)}</div>
         </div>
       </section>
-
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Stains
-          </h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
-              <thead>
-                <tr className="bg-[#F2F2EE]">
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100">
-                {[
-                  ['Peinture appartement / maison', '25 - 60 €/m²'],
-                  ['Rénovation salle de bain', '3 500 - 12 000 €'],
-                  ['Rénovation cuisine', '4 000 - 15 000 €'],
-                  ['Parquet (pose + fourniture)', '45 - 100 €/m²'],
-                  ['Rénovation complète appartement', '700 - 1 200 €/m²'],
-                  ['Rénovation complète pavillon', '1 200 - 2 500 €/m²'],
-                ].map(([label, price]) => (
-                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
-                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
-                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-gray-400 text-xs font-light mt-3">Tarifs indicatifs — devis gratuit personnalisé sous 48h.</p>
+          <div className="flex items-center gap-2 mb-4">{[1,2,3,4,5].map(i => <Star key={i} size={14} className="fill-[#D4AF37] text-[#D4AF37]" />)}<span className="text-sm text-gray-600 ml-1">4,9/5 · 47 avis clients</span></div>
+          <p className="text-gray-600 text-sm italic">"Excellent travail, très professionnel et respectueux des délais. Je recommande vivement Espace Design."</p>
         </div>
       </section>
-
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Une réalisation
-          </h2>
-          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — pavillon Stains 93240" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {[
-              'Devis gratuit sous 48h',
-              'Assurance décennale',
-              "15+ ans d'expérience",
-              'Respect des délais',
-              'Finitions haut de gamme',
-              'Un seul interlocuteur',
-            ].map((a) => (
-              <div key={a} className="flex items-center gap-2 text-sm text-gray-600 font-light">
-                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0" />
-                {a}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Questions fréquentes
-          </h2>
-          <div className="space-y-4">
-            {[
-              {
-                q: "Quel est le prix d'une rénovation à Stains ?",
-                a: "Le coût d'une rénovation à Stains varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour une rénovation complète avec mise aux normes et finitions haut de gamme, comptez 1 200 à 2 500 €/m².",
-              },
-              {
-                q: 'Quel artisan contacter pour rénover une maison à Stains ?',
-                a: "Espace Design intervient régulièrement à Stains pour des rénovations de pavillons et de maisons individuelles. Assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
-              },
-              {
-                q: 'Comment rénover un pavillon en Seine-Saint-Denis ?',
-                a: "La rénovation d'un pavillon en Seine-Saint-Denis nécessite souvent une mise aux normes électrique et plomberie, une isolation des combles et des murs, le remplacement des menuiseries et la rénovation des revêtements. Espace Design prend en charge tous ces corps de métier.",
-              },
-              {
-                q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
-              },
-            ].map((item) => (
-              <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
-                <summary className="font-display text-base font-semibold text-[#1C1C1C] cursor-pointer list-none flex justify-between items-center">
-                  {item.q}
-                  <span className="text-[#D4AF37] text-lg ml-4 group-open:rotate-45 transition-transform">+</span>
-                </summary>
-                <p className="mt-3 text-gray-500 text-sm leading-relaxed font-light">{item.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 bg-white border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
-              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
-              { href: '/renovation-pierrefitte-sur-seine', label: 'Pierrefitte-sur-Seine' },
-              { href: '/renovation-epinay-sur-seine', label: 'Épinay-sur-Seine' },
-              { href: '/renovation-appartement-paris', label: 'Paris' },
-            ].map((z) => (
-              <Link
-                key={z.href}
-                href={z.href}
-                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
-              >
-                {z.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-10 bg-white border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
-              { href: '/renovation-cuisine-paris', label: 'Cuisine' },
-              { href: '/peinture-paris', label: 'Peinture' },
-              { href: '/parquet-paris', label: 'Parquet' },
-              { href: '/carrelage-paris', label: 'Carrelage' },
-              { href: '/electricite-paris', label: 'Électricité' },
-              { href: '/plomberie-paris', label: 'Plomberie' },
-              { href: '/menuiserie-paris', label: 'Menuiserie' },
-              { href: '/isolation-paris', label: 'Isolation' },
-              { href: '/platrererie-paris', label: 'Plâtrerie' },
-              { href: '/decoration-interieure-paris', label: 'Décoration' },
-              { href: '/amenagement-interieur-paris', label: 'Aménagement' },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
-              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain' },
-              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant vente' },
-              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
-              { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
-              { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-[#1C1C1C]">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Stains
-          </h2>
-          <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Stains et la Seine-Saint-Denis.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#c9a030] transition-colors duration-300"
-            >
-              Devis gratuit <ArrowRight size={13} />
-            </Link>
-            <a
-              href="tel:+33611783867"
-              className="flex items-center justify-center gap-2 border border-gray-600 text-gray-300 px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-white hover:text-white transition-colors duration-300"
-            >
-              <Phone size={14} />
-              06 11 78 38 67
-            </a>
-          </div>
+      <section className="py-16 bg-[#1C1C1C] text-center px-4">
+        <h2 className="font-display text-3xl font-bold text-white mb-4">Votre projet à Stains</h2>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/contact" className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-8 py-4 rounded font-bold hover:bg-[#c9a030] transition-colors">Devis gratuit <ArrowRight size={16} /></Link>
+          <a href="tel:+33611783867" className="flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 rounded font-medium hover:bg-white/10 transition-colors"><Phone size={16} />06 11 78 38 67</a>
         </div>
       </section>
     </>
