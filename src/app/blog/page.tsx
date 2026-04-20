@@ -630,6 +630,12 @@ const articles = [
     desc: "Rénovation appartement dans le 15e arrondissement de Paris : Beaugrenelle, Convention, Vaugirard. Artisan local, devis gratuit 48h.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-paris-17e',
+    title: 'Rénovation Appartement Paris 17e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 17e arrondissement de Paris : Batignolles, Ternes, Épinettes. Artisan local, devis gratuit 48h.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {

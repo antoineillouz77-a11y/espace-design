@@ -45,6 +45,7 @@ const villes78 = [
   { href: '/renovation-conflans-sainte-honorine', label: 'Conflans-Sainte-Honorine' },
   { href: '/renovation-mantes-la-jolie', label: 'Mantes-la-Jolie' },
   { href: '/renovation-sartrouville', label: 'Sartrouville' },
+  { href: '/renovation-houilles', label: 'Houilles' },
 ]
 
 const services = [
