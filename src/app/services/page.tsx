@@ -347,11 +347,12 @@ export default function ServicesPage() {
             {[
               { href: '/tarifs', label: 'Nos tarifs 2025' },
               { href: '/faq', label: 'FAQ rénovation' },
-              { href: '/avis', label: 'Avis clients' },
-              { href: '/realisations', label: 'Nos réalisations' },
               { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
               { href: '/blog/choisir-artisan-renovation-paris', label: 'Choisir son artisan' },
               { href: '/blog/devis-renovation-paris', label: 'Obtenir un devis' },
+              { href: '/blog/diagnostic-amiante-paris', label: 'Diagnostic avant travaux' },
+              { href: '/blog/renovation-appartement-copropriete-paris', label: 'Rénover en copropriété' },
+              { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
