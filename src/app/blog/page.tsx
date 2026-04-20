@@ -1068,6 +1068,48 @@ const articles = [
     desc: "Faire installer une cuisine équipée à Paris. Choix des marques, coût de pose artisan, délais. Devis gratuit 48h.",
     tag: 'Cuisine',
   },
+  {
+    href: '/blog/pose-parquet-flottant-paris',
+    title: 'Pose Parquet Flottant Paris : technique, coût & artisan 2025',
+    desc: "Faire poser un parquet flottant à Paris. Préparation du support, sous-couche, prix au m², marques recommandées. Devis gratuit 48h.",
+    tag: 'Parquet',
+  },
+  {
+    href: '/blog/cloison-placo-paris',
+    title: 'Cloison Placo Paris : pose, isolation & prix artisan 2025',
+    desc: "Faire poser une cloison en placo à Paris. Types de cloisons, isolation phonique, prix au m², délais. Devis gratuit 48h.",
+    tag: 'Plâtrerie',
+  },
+  {
+    href: '/blog/renovation-entree-appartement-paris',
+    title: "Rénovation Entrée Appartement Paris : idées & prix artisan 2025",
+    desc: "Rénover son entrée à Paris. Aménagement couloir, miroirs, rangements, revêtements, luminaires. Devis gratuit 48h.",
+    tag: 'Décoration',
+  },
+  {
+    href: '/blog/autorisation-copropriete-paris',
+    title: "Autorisation Copropriété Paris : travaux et démarches 2025",
+    desc: "Obtenir une autorisation de copropriété à Paris. AG, travaux nécessitant autorisation, délais, rôle du syndic. Guide complet.",
+    tag: 'Administratif',
+  },
+  {
+    href: '/blog/autorisation-travaux-copropriete-paris',
+    title: "Autorisation Travaux Copropriété Paris : guide complet 2025",
+    desc: "Quels travaux nécessitent une autorisation en copropriété à Paris ? Démarches, formulaires, délais. Guide artisan 2025.",
+    tag: 'Administratif',
+  },
+  {
+    href: '/blog/assurance-decennale-artisan-paris',
+    title: "Assurance Décennale Paris : pourquoi l'exiger à votre artisan 2025",
+    desc: "Vérifier l'assurance décennale de votre artisan à Paris. Garantie décennale, travaux couverts, responsabilité, 10 ans. Guide 2025.",
+    tag: 'Administratif',
+  },
+  {
+    href: '/blog/reception-travaux-paris',
+    title: 'Réception des Travaux Paris : checklist et conseils artisan 2025',
+    desc: "Comment réceptionner ses travaux à Paris. PV de réception, réserves, garantie parfait achèvement, droits du client. Guide 2025.",
+    tag: 'Administratif',
+  },
 ]
 
 export default function BlogPage() {

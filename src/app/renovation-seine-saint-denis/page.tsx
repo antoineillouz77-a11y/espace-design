@@ -71,9 +71,7 @@ const villes93 = [
   { href: '/renovation-coubron', label: 'Coubron' },
   { href: '/renovation-neuilly-sur-marne', label: 'Neuilly-sur-Marne' },
   { href: '/renovation-gournay-sur-marne', label: 'Gournay-sur-Marne' },
-  { href: '/renovation-livry-gargan', label: 'Livry-Gargan' },
-  { href: '/renovation-tremblay-en-france', label: 'Tremblay-en-France' },
-  { href: '/renovation-aulnay-sous-bois', label: 'Aulnay-sous-Bois' },
+  { href: '/renovation-le-pre-saint-gervais', label: 'Le Pré-Saint-Gervais' },
 ]
 
 const services = [

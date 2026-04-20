@@ -3,13 +3,13 @@ import Link from 'next/link'
 import { ArrowRight, Phone, CheckCircle, Star } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Rénovation Bagnolet (93170) — Artisan Rénovateur | Espace Design",
-  description: "Artisan rénovateur à Bagnolet (93170) — rénovation appartement, salle de bain, cuisine, peinture, parquet. Devis gratuit sous 48h.",
-  keywords: ["rénovation Bagnolet", "artisan rénovation Bagnolet", "rénovation appartement 93170"],
+  title: "Rénovation Le Pré-Saint-Gervais (93310) — Artisan Rénovateur | Espace Design",
+  description: "Artisan rénovateur au Pré-Saint-Gervais (93310) — rénovation appartement, salle de bain, cuisine, peinture, parquet. Devis gratuit sous 48h.",
+  keywords: ["rénovation Le Pré-Saint-Gervais", "artisan rénovation Pré-Saint-Gervais", "rénovation appartement 93310"],
 }
-const schemaBreadcrumb = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' }, { '@type': 'ListItem', position: 2, name: "Rénovation Bagnolet", item: "https://espacedesignparis.fr/renovation-bagnolet" }] }
-const schemaLocalBusiness = { '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness', name: 'Espace Design', description: "Artisan rénovateur à Bagnolet.", telephone: '+33611783867', email: 'espacedesign92@gmail.com', url: 'https://espacedesignparis.fr', address: { '@type': 'PostalAddress', addressLocality: 'Bagnolet', postalCode: '93170', addressCountry: 'FR' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '47' }, priceRange: '€€€' }
-const schemaFAQ = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: "Délai devis à Bagnolet ?", acceptedAnswer: { '@type': 'Answer', text: "Devis gratuit sous 48h à Bagnolet." } }, { '@type': 'Question', name: "Quels travaux à Bagnolet ?", acceptedAnswer: { '@type': 'Answer', text: "Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage." } }] }
+const schemaBreadcrumb = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' }, { '@type': 'ListItem', position: 2, name: "Rénovation Le Pré-Saint-Gervais", item: "https://espacedesignparis.fr/renovation-le-pre-saint-gervais" }] }
+const schemaLocalBusiness = { '@context': 'https://schema.org', '@type': 'HomeAndConstructionBusiness', name: 'Espace Design', description: "Artisan rénovateur au Pré-Saint-Gervais.", telephone: '+33611783867', email: 'espacedesign92@gmail.com', url: 'https://espacedesignparis.fr', address: { '@type': 'PostalAddress', addressLocality: 'Le Pré-Saint-Gervais', postalCode: '93310', addressCountry: 'FR' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '47' }, priceRange: '€€€' }
+const schemaFAQ = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: "Délai devis au Pré-Saint-Gervais ?", acceptedAnswer: { '@type': 'Answer', text: "Devis gratuit sous 48h au Pré-Saint-Gervais." } }, { '@type': 'Question', name: "Quels travaux au Pré-Saint-Gervais ?", acceptedAnswer: { '@type': 'Answer', text: "Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage." } }] }
 const services = [
   { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
   { href: '/renovation-cuisine-paris', label: 'Cuisine' },
@@ -22,7 +22,7 @@ const services = [
   { href: '/isolation-paris', label: 'Isolation' },
   { href: '/platrererie-paris', label: 'Plâtrerie' },
 ]
-export default function BagnoletPage() {
+export default function LePreSaintGervaisPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
@@ -30,13 +30,13 @@ export default function BagnoletPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <section className="pt-32 pb-16 bg-[#1C1C1C] text-center px-4">
         <p className="text-[#D4AF37] text-sm font-medium uppercase tracking-widest mb-3">Seine-Saint-Denis (93)</p>
-        <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">Rénovation Bagnolet</h1>
-        <p className="text-gray-400 max-w-xl mx-auto text-sm">Artisan rénovateur à Bagnolet — devis gratuit sous 48h.</p>
+        <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">Rénovation Le Pré-Saint-Gervais</h1>
+        <p className="text-gray-400 max-w-xl mx-auto text-sm">Artisan rénovateur au Pré-Saint-Gervais — devis gratuit sous 48h.</p>
       </section>
       <section className="py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">Votre artisan à Bagnolet</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">Bagnolet, ville en pleine mutation aux portes de Paris, attire de nombreux propriétaires souhaitant rénover leur logement pour profiter du dynamisme du secteur. Espace Design intervient à Bagnolet pour des rénovations complètes ou partielles avec un souci du détail et des matériaux de qualité.</p>
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">Votre artisan au Pré-Saint-Gervais</h2>
+          <p className="text-gray-600 leading-relaxed mb-6">Le Pré-Saint-Gervais, commune prisée jouxtant les 19e et 20e arrondissements de Paris, bénéficie d&apos;un marché immobilier en plein essor où la rénovation de qualité est très recherchée. Espace Design accompagne les propriétaires du Pré-Saint-Gervais dans leurs projets de rénovation avec expertise et rigueur.</p>
           <div className="flex flex-wrap gap-3 mb-8">{services.map(s => <Link key={s.href} href={s.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors">{s.label}</Link>)}</div>
           <div className="grid grid-cols-2 gap-2">{['Devis gratuit 48h', 'Artisan qualifié', 'Assurance décennale', 'Finitions soignées'].map(e => <div key={e} className="flex items-center gap-2"><CheckCircle size={13} className="text-[#B8960C]" /><span className="text-xs text-gray-600">{e}</span></div>)}</div>
         </div>
@@ -48,7 +48,7 @@ export default function BagnoletPage() {
         </div>
       </section>
       <section className="py-16 bg-[#1C1C1C] text-center px-4">
-        <h2 className="font-display text-3xl font-bold text-white mb-4">Votre projet à Bagnolet</h2>
+        <h2 className="font-display text-3xl font-bold text-white mb-4">Votre projet au Pré-Saint-Gervais</h2>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/contact" className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-8 py-4 rounded font-bold hover:bg-[#c9a030] transition-colors">Devis gratuit <ArrowRight size={16} /></Link>
           <a href="tel:+33611783867" className="flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 rounded font-medium hover:bg-white/10 transition-colors"><Phone size={16} />06 11 78 38 67</a>

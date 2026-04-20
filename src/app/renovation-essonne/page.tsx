@@ -71,6 +71,10 @@ const villes91 = [
   { href: '/renovation-courcouronnes', label: 'Courcouronnes' },
   { href: '/renovation-varennes-jarcy', label: 'Varennes-Jarcy' },
   { href: '/renovation-morangis', label: 'Morangis' },
+  { href: '/renovation-villemoisson-sur-orge', label: 'Villemoisson-sur-Orge' },
+  { href: '/renovation-igny', label: 'Igny' },
+  { href: '/renovation-verrieres-le-buisson', label: 'Verrières-le-Buisson' },
+  { href: '/renovation-wissous', label: 'Wissous' },
 ]
 
 const services = [

@@ -73,6 +73,10 @@ const villes78 = [
   { href: '/renovation-jouy-en-josas', label: 'Jouy-en-Josas' },
   { href: '/renovation-saint-quentin-en-yvelines', label: 'Saint-Quentin-en-Yvelines' },
   { href: '/renovation-andrezy', label: 'Andrésy' },
+  { href: '/renovation-sartrouville', label: 'Sartrouville' },
+  { href: '/renovation-houilles', label: 'Houilles' },
+  { href: '/renovation-maisons-laffitte', label: 'Maisons-Laffitte' },
+  { href: '/renovation-le-pecq', label: 'Le Pecq' },
 ]
 
 const services = [

@@ -572,6 +572,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/declaration-travaux-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-cuisine-equipee-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
+    // Seine-Saint-Denis (93) — vague 22
+    { url: `${base}/renovation-le-pre-saint-gervais`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Essonne (91) — vague 22
+    { url: `${base}/renovation-villemoisson-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-igny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-verrieres-le-buisson`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-wissous`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Yvelines (78) — vague 22
+    { url: `${base}/renovation-le-pecq`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 18-19
+    { url: `${base}/blog/pose-parquet-flottant-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/cloison-placo-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-entree-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/autorisation-copropriete-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/autorisation-travaux-copropriete-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/assurance-decennale-artisan-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/reception-travaux-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Blog — vague 15 (plancher)
     { url: `${base}/blog/renovation-plancher-chauffant-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
