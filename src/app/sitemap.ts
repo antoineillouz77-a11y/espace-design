@@ -544,6 +544,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-santeny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-noiseau`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Blog — vague 14
+    { url: `${base}/blog/tendances-deco-appartement-paris-2025`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Blog — vague 13 (suite)
     { url: `${base}/blog/travaux-renovation-locatif-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 

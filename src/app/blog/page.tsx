@@ -1009,6 +1009,12 @@ const articles = [
     tag: 'Budget & Prix',
   },
   {
+    href: '/blog/tendances-deco-appartement-paris-2025',
+    title: 'Tendances Déco Appartement Paris 2025 : styles & couleurs de l\'année',
+    desc: "Couleurs tendance, japandi, arches, matériaux naturels — les grandes tendances déco pour vos appartements parisiens en 2025.",
+    tag: 'Décoration',
+  },
+  {
     href: '/blog/travaux-renovation-locatif-paris',
     title: 'Rénovation Appartement Locatif Paris : travaux déductibles & rentabilité 2025',
     desc: "Optimiser la rentabilité de votre bien locatif à Paris. Travaux déductibles, valorisation après rénovation, DPE et loyer.",
