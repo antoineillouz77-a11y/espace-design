@@ -2328,6 +2328,36 @@ const articles = [
     desc: "Tout ce qu'il faut savoir pour votre première rénovation à Paris : étapes, budget, artisans, pièges.",
     tag: 'Guide',
   },
+  {
+    href: '/blog/artisan-agree-paris',
+    title: "Artisan Agréé Paris — Comment Choisir un Professionnel Qualifié",
+    desc: "Guide complet pour trouver un artisan agréé à Paris : labels RGE, qualibat, assurance décennale, garanties.",
+    tag: 'Guide',
+  },
+  {
+    href: '/blog/renovation-appartement-alesia-paris',
+    title: "Rénovation Appartement Alésia Paris 14e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Alésia, Paris 14e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-gambetta-paris',
+    title: "Rénovation Appartement Gambetta Paris 20e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Gambetta, Paris 20e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-temple-paris',
+    title: "Rénovation Appartement Temple Paris 3e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier du Temple, Paris 3e. Lofts, espaces atypiques, finitions haut de gamme.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-immeuble-pierre-de-taille-paris',
+    title: "Rénovation Immeuble Pierre de Taille Paris — Guide Expert 2025",
+    desc: "Rénovation immeuble en pierre de taille à Paris : contraintes, techniques, matériaux, coûts. Guide complet.",
+    tag: 'Guide',
+  },
 ]
 
 export default function BlogPage() {
