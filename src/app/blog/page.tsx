@@ -1128,6 +1128,12 @@ const articles = [
     desc: "Installer une verrière atelier à Paris. Acier, aluminium, vitrages, prix, démarches copropriété. Devis gratuit 48h.",
     tag: 'Menuiserie',
   },
+  {
+    href: '/blog/chape-beton-paris',
+    title: 'Chape Béton Paris : chape sèche, liquide & prix artisan 2025',
+    desc: "Faire poser une chape béton à Paris. Chape sèche, liquide, traditionnelle. Épaisseur, séchage, prix au m². Devis gratuit 48h.",
+    tag: 'Gros œuvre',
+  },
 ]
 
 export default function BlogPage() {
