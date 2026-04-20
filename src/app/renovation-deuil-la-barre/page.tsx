@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Montfermeil (93370) — Artisan Rénovateur | Espace Design',
+  title: 'Rénovation Deuil-la-Barre (95170) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Montfermeil (93370) : maisons individuelles, pavillons anciens, résidences. Rénovation 800-2500€/m². Devis gratuit 48h.',
+    'Artisan rénovateur à Deuil-la-Barre (95170) : pavillons résidentiels, maisons des années 50-70, commune calme du Val-d\'Oise. Rénovation 800-2000€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation maison Montfermeil',
-    'artisan rénovation Montfermeil',
-    'rénovation appartement Montfermeil',
-    'renovation Montfermeil 93370',
-    'entreprise renovation Montfermeil',
-    'artisan Montfermeil Seine-Saint-Denis',
-    'rénovation pavillon Montfermeil 93',
+    'rénovation appartement Deuil-la-Barre',
+    'artisan rénovation Deuil-la-Barre',
+    'décoration intérieure Deuil-la-Barre',
+    'renovation Deuil-la-Barre 95170',
+    'entreprise renovation Deuil-la-Barre',
+    'artisan Deuil-la-Barre Val-d\'Oise',
+    'rénovation pavillon Deuil-la-Barre',
   ],
 }
 
@@ -22,17 +22,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Montfermeil.',
+  description: 'Artisan rénovateur et décorateur intérieur à Deuil-la-Barre.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-montfermeil',
+  url: 'https://espacedesignparis.fr/renovation-deuil-la-barre',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Montfermeil',
+    name: 'Deuil-la-Barre',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Montfermeil',
-    postalCode: '93370',
+    addressLocality: 'Deuil-la-Barre',
+    postalCode: '95170',
     addressCountry: 'FR',
   },
   aggregateRating: {
@@ -48,26 +48,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: "Quel est le prix d'une rénovation à Montfermeil ?",
+      name: 'Quel est le prix d\'une rénovation à Deuil-la-Barre ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le coût d'une rénovation à Montfermeil varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons individuelles et pavillons anciens avec des finitions soignées, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
+        text: 'Le coût d\'une rénovation à Deuil-la-Barre varie entre 800 et 1 400 €/m² pour une rénovation standard. Pour les pavillons des années 50-70 avec remise aux normes électriques et isolation, comptez 1 400 à 2 000 €/m². Devis gratuit sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Rénovez-vous les pavillons anciens à Montfermeil ?',
+      name: 'Quel artisan contacter pour rénover un pavillon à Deuil-la-Barre ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, Espace Design intervient régulièrement dans les maisons individuelles et les pavillons anciens de Montfermeil. Rénovation complète ou partielle, mise aux normes, modernisation de l'intérieur — devis gratuit sous 48h.",
+        text: 'Espace Design intervient à Deuil-la-Barre pour des rénovations de pavillons résidentiels et maisons des années 50-70. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels travaux réalisez-vous à Montfermeil ?',
+      name: 'Intervenez-vous à Argenteuil, Ermont et Enghien-les-Bains ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Nous réalisons tous types de travaux à Montfermeil : peinture, rénovation salle de bain, réfection cuisine, pose de parquet, carrelage, électricité, plomberie, isolation et aménagement intérieur complet.",
+        text: 'Oui, Espace Design intervient dans tout le Val-d\'Oise et les communes voisines : Argenteuil, Ermont, Enghien-les-Bains, Sarcelles. Un seul artisan pour tous vos projets de rénovation dans le 95.',
       },
     },
     {
@@ -86,12 +86,12 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Seine-Saint-Denis', item: 'https://espacedesignparis.fr/renovation-seine-saint-denis' },
-    { '@type': 'ListItem', position: 3, name: 'Montfermeil', item: 'https://espacedesignparis.fr/renovation-montfermeil' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-d\'Oise', item: 'https://espacedesignparis.fr/renovation-val-d-oise' },
+    { '@type': 'ListItem', position: 3, name: 'Deuil-la-Barre', item: 'https://espacedesignparis.fr/renovation-deuil-la-barre' },
   ],
 }
 
-export default function RenovationMontfermeil() {
+export default function RenovationDeuilLaBarre() {
   return (
     <>
       <script
@@ -109,13 +109,13 @@ export default function RenovationMontfermeil() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Montfermeil — 93370</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Deuil-la-Barre — 95170</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation maison &amp; pavillon<br className="hidden sm:block" /> à Montfermeil
+            Rénovation pavillon<br className="hidden sm:block" /> Deuil-la-Barre
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Montfermeil (93370) : maisons individuelles, pavillons anciens et résidences en Seine-Saint-Denis. Rénovation intérieure complète et finitions soignées. Devis gratuit sous 48h.
+            Artisan rénovateur à Deuil-la-Barre (95170) : pavillons résidentiels, maisons des années 50-70, commune calme du Val-d'Oise. Rénovation complète et finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -138,25 +138,13 @@ export default function RenovationMontfermeil() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Montfermeil
+            Nos services à Deuil-la-Barre
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              {
-                num: '01',
-                title: 'Rénovation salle de bain',
-                desc: "Réfection complète de votre salle de bain à Montfermeil : carrelage, douche à l'italienne, baignoire, meuble vasque, plomberie. Résultat clé en main pour maisons et pavillons.",
-              },
-              {
-                num: '02',
-                title: 'Rénovation cuisine',
-                desc: "Modernisation de la cuisine dans votre maison individuelle à Montfermeil : carrelage, crédence, plan de travail, peinture. Travaux propres et livrés dans les délais convenus.",
-              },
-              {
-                num: '03',
-                title: 'Peinture & décoration',
-                desc: "Peinture intérieure, enduits décoratifs, parquet, pose de revêtements — nous intervenons dans toutes les pièces de vos maisons et pavillons anciens à Montfermeil pour valoriser votre bien.",
-              },
+              { num: '01', title: 'Rénovation salle de bain', desc: 'Réfection complète de salle de bain dans vos pavillons de Deuil-la-Barre — carrelage, douche à l\'italienne, baignoire, mobilier sur mesure, remise aux normes plomberie.' },
+              { num: '02', title: 'Rénovation cuisine', desc: 'Aménagement et rénovation de cuisine dans vos maisons des années 50-70 : plans de travail, crédences, mobilier intégré, électroménager encastré.' },
+              { num: '03', title: 'Peinture et finitions', desc: 'Peinture intérieure, revêtements muraux, enduits décoratifs, plafonds. Finitions soignées pour moderniser et valoriser votre maison à Deuil-la-Barre.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -172,33 +160,30 @@ export default function RenovationMontfermeil() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Montfermeil
+            Prix rénovation à Deuil-la-Barre
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-[#F2F2EE]">
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Petit travaux</th>
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Moyen travaux</th>
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Grand travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
-                <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
-                  <td className="px-5 py-3 text-gray-700 font-light">Peinture pièce : 300–800 €</td>
-                  <td className="px-5 py-3 text-gray-700 font-light">Salle de bain : 4 000–10 000 €</td>
-                  <td className="px-5 py-3 text-gray-700 font-light">Rénovation complète : 800–1 500 €/m²</td>
-                </tr>
-                <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
-                  <td className="px-5 py-3 text-gray-700 font-light">Pose parquet : 45–100 €/m²</td>
-                  <td className="px-5 py-3 text-gray-700 font-light">Cuisine : 5 000–15 000 €</td>
-                  <td className="px-5 py-3 text-gray-700 font-light">Rénovation pavillon ancien : 1 500–2 500 €/m²</td>
-                </tr>
-                <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
-                  <td className="px-5 py-3 text-gray-700 font-light">Carrelage : 45–90 €/m²</td>
-                  <td className="px-5 py-3 text-gray-700 font-light">Électricité maison : 3 000–8 000 €</td>
-                  <td className="px-5 py-3 text-gray-700 font-light">Maison entière : sur devis</td>
-                </tr>
+                {[
+                  ['Peinture maison', '30 - 65 €/m²'],
+                  ['Rénovation salle de bain', '3 500 - 12 000 €'],
+                  ['Rénovation cuisine', '4 500 - 16 000 €'],
+                  ['Parquet (pose + fourniture)', '45 - 95 €/m²'],
+                  ['Rénovation complète', '800 - 1 400 €/m²'],
+                  ['Rénovation pavillon années 50-70', '1 400 - 2 000 €/m²'],
+                ].map(([label, price]) => (
+                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
+                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
@@ -212,13 +197,7 @@ export default function RenovationMontfermeil() {
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image
-              src="/images/realisations/19-sdb-mosaique-lavabo.jpg"
-              alt="Rénovation salle de bain — maison individuelle Montfermeil 93370"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 896px"
-            />
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — pavillon Deuil-la-Barre 95170" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -251,16 +230,16 @@ export default function RenovationMontfermeil() {
           <div className="space-y-4">
             {[
               {
-                q: "Quel est le prix d'une rénovation à Montfermeil ?",
-                a: "Le coût d'une rénovation à Montfermeil varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons individuelles et pavillons anciens avec finitions soignées, comptez 1 500 à 2 500 €/m².",
+                q: 'Quel est le prix d\'une rénovation à Deuil-la-Barre ?',
+                a: 'Le coût d\'une rénovation à Deuil-la-Barre varie entre 800 et 1 400 €/m² pour une rénovation standard. Pour les pavillons des années 50-70 avec remise aux normes, comptez 1 400 à 2 000 €/m².',
               },
               {
-                q: 'Rénovez-vous les pavillons anciens à Montfermeil ?',
-                a: "Oui, Espace Design intervient régulièrement dans les maisons individuelles et les pavillons anciens de Montfermeil. Rénovation complète ou partielle, mise aux normes, modernisation de l'intérieur.",
+                q: 'Quel artisan contacter pour rénover un pavillon à Deuil-la-Barre ?',
+                a: 'Espace Design intervient à Deuil-la-Barre pour des rénovations de pavillons résidentiels et maisons des années 50-70. Assuré décennale, devis gratuit sous 48h.',
               },
               {
-                q: 'Quels travaux réalisez-vous à Montfermeil ?',
-                a: "Nous réalisons tous types de travaux à Montfermeil : peinture, rénovation salle de bain, réfection cuisine, pose de parquet, carrelage, électricité, plomberie, isolation et aménagement intérieur complet.",
+                q: 'Intervenez-vous à Argenteuil, Ermont et Enghien-les-Bains ?',
+                a: 'Oui, Espace Design intervient dans tout le Val-d\'Oise : Argenteuil, Ermont, Enghien-les-Bains, Sarcelles. Un seul artisan pour tous vos projets de rénovation dans le 95.',
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -284,11 +263,12 @@ export default function RenovationMontfermeil() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
-              { href: '/renovation-clichy-sous-bois', label: 'Clichy-sous-Bois' },
-              { href: '/renovation-livry-gargan', label: 'Livry-Gargan' },
-              { href: '/renovation-gagny', label: 'Gagny' },
-              { href: '/renovation-noisy-le-grand', label: 'Noisy-le-Grand' },
+              { href: '/renovation-val-d-oise', label: 'Val-d\'Oise (95)' },
+              { href: '/renovation-argenteuil', label: 'Argenteuil' },
+              { href: '/renovation-ermont', label: 'Ermont' },
+              { href: '/renovation-enghien-les-bains', label: 'Enghien-les-Bains' },
+              { href: '/renovation-sarcelles', label: 'Sarcelles' },
+              { href: '/renovation-goussainville', label: 'Goussainville' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
@@ -335,8 +315,8 @@ export default function RenovationMontfermeil() {
           <div className="flex flex-wrap gap-3">
             {[
               { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
-              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain Paris' },
-              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant de vendre' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant vente' },
               { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
               { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
               { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
@@ -352,10 +332,10 @@ export default function RenovationMontfermeil() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Montfermeil
+            Votre projet à Deuil-la-Barre
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Montfermeil et alentours en Seine-Saint-Denis.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Deuil-la-Barre.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

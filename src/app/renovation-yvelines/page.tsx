@@ -48,6 +48,7 @@ const villes78 = [
   { href: '/renovation-houilles', label: 'Houilles' },
   { href: '/renovation-maisons-laffitte', label: 'Maisons-Laffitte' },
   { href: '/renovation-rambouillet', label: 'Rambouillet' },
+  { href: '/renovation-mantes-la-ville', label: 'Mantes-la-Ville' },
 ]
 
 const services = [

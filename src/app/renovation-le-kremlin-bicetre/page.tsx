@@ -1,18 +1,20 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Le Kremlin-Bicêtre — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Le Kremlin-Bicêtre (94270) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur au Kremlin-Bicêtre (94270). Rénovation complète, parquet, salle de bain, cuisine, peinture. Devis gratuit 48h. Proche Paris 13e, Ivry-sur-Seine.',
+    'Artisan rénovateur au Kremlin-Bicêtre (94270) : appartements anciens proches Paris 13e, pavillons en fond de cour. Rénovation 800-2500€/m². Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Le Kremlin-Bicêtre',
-    'artisan rénovation Kremlin-Bicêtre',
-    'renovation Kremlin-Bicêtre 94270',
-    'entreprise renovation Kremlin Bicetre',
-    'artisan Kremlin-Bicêtre val-de-marne',
-    'décoration intérieure Kremlin-Bicêtre',
+    'artisan rénovation Le Kremlin-Bicêtre',
+    'décoration intérieure Le Kremlin-Bicêtre',
+    'renovation Le Kremlin-Bicêtre 94270',
+    'entreprise renovation Le Kremlin-Bicêtre',
+    'artisan Le Kremlin-Bicêtre Val-de-Marne',
+    'rénovation appartement ancien Le Kremlin-Bicêtre',
   ],
 }
 
@@ -33,6 +35,50 @@ const schemaLocal = {
     postalCode: '94270',
     addressCountry: 'FR',
   },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
+}
+
+const schemaFaq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: "Quel est le prix d'une rénovation au Kremlin-Bicêtre ?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Le coût d'une rénovation au Kremlin-Bicêtre varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les appartements anciens proches du Paris 13e et les pavillons en fond de cour, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quel artisan contacter pour rénover un appartement ancien au Kremlin-Bicêtre ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Espace Design intervient régulièrement au Kremlin-Bicêtre pour des rénovations d'appartements anciens et de pavillons. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h, un seul interlocuteur.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Peut-on rénover un appartement en copropriété au Kremlin-Bicêtre ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Oui, Espace Design réalise régulièrement des rénovations en copropriété au Kremlin-Bicêtre. Nous respectons les règlements de copropriété et coordonnons les travaux pour minimiser les nuisances. Devis gratuit sous 48h.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Avez-vous une assurance décennale ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
+      },
+    },
+  ],
 }
 
 const schemaBreadcrumb = {
@@ -40,7 +86,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
     { '@type': 'ListItem', position: 3, name: 'Le Kremlin-Bicêtre', item: 'https://espacedesignparis.fr/renovation-le-kremlin-bicetre' },
   ],
 }
@@ -51,6 +97,10 @@ export default function RenovationLeKremlinBicetre() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocal) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
       />
       <script
         type="application/ld+json"
@@ -65,7 +115,7 @@ export default function RenovationLeKremlinBicetre() {
             Rénovation appartement<br className="hidden sm:block" /> Le Kremlin-Bicêtre
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur au Kremlin-Bicêtre. Rénovation complète, parquet, salle de bain, cuisine, peinture. Porte d&apos;Italie, proche Paris 13e et 14e, Ivry-sur-Seine, Gentilly. Devis gratuit sous 48h.
+            Artisan rénovateur au Kremlin-Bicêtre (94270) : appartements anciens proches Paris 13e, pavillons en fond de cour en Val-de-Marne. Rénovation complète, cuisine, salle de bain, peinture. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -92,9 +142,9 @@ export default function RenovationLeKremlinBicetre() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Rénovation clé en main au Kremlin-Bicêtre. Un seul interlocuteur pour coordonner plomberie, électricité, carrelage, peinture et parquet. Livraison dans les délais.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Rénovation de salle de bain et cuisine avec carrelage grand format, faïence, mobilier sur-mesure et robinetterie de qualité. Résultat impeccable garanti.' },
-              { num: '03', title: 'Parquet & décoration', desc: 'Pose de parquet massif ou contrecollé. Peinture, enduits décoratifs, menuiserie intérieure sur-mesure. Aménagement intérieur pensé pour valoriser votre bien.' },
+              { num: '01', title: 'Rénovation salle de bain', desc: "Transformation de votre salle de bain au Kremlin-Bicêtre : douche à l'italienne, faïence, plomberie, électricité. Modernisation complète des appartements anciens proches du Paris 13e." },
+              { num: '02', title: 'Rénovation cuisine', desc: "Rénovation ou création complète de cuisine dans vos appartements et pavillons du Kremlin-Bicêtre : plan de travail, crédence, carrelage, peinture. Fonctionnel et esthétique." },
+              { num: '03', title: 'Peinture et finitions', desc: "Rafraîchissement complet ou rénovation profonde : peinture, enduits, plafonds, boiseries, parquet. Finitions soignées pour valoriser votre bien au Kremlin-Bicêtre." },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -107,13 +157,64 @@ export default function RenovationLeKremlinBicetre() {
         </div>
       </section>
 
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Prix rénovation au Kremlin-Bicêtre
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-[#F2F2EE]">
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {[
+                  ['Peinture appartement', '30 - 70 €/m²'],
+                  ['Rénovation salle de bain', '4 000 - 12 000 €'],
+                  ['Rénovation cuisine', '5 000 - 18 000 €'],
+                  ['Parquet (pose + fourniture)', '50 - 100 €/m²'],
+                  ['Rénovation complète', '800 - 1 500 €/m²'],
+                  ['Rénovation appartement ancien', '1 500 - 2 500 €/m²'],
+                ].map(([label, price]) => (
+                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
+                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-400 text-xs font-light mt-3">Tarifs indicatifs — devis gratuit personnalisé sous 48h.</p>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
+            Une réalisation
+          </h2>
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image
+              src="/images/realisations/19-sdb-mosaique-lavabo.jpg"
+              alt="Rénovation salle de bain — appartement ancien Le Kremlin-Bicêtre 94270"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -127,17 +228,53 @@ export default function RenovationLeKremlinBicetre() {
         </div>
       </section>
 
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Questions fréquentes
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: "Quel est le prix d'une rénovation au Kremlin-Bicêtre ?",
+                a: "Le coût d'une rénovation au Kremlin-Bicêtre varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les appartements anciens et pavillons en fond de cour, comptez 1 500 à 2 500 €/m².",
+              },
+              {
+                q: 'Quel artisan contacter pour rénover un appartement ancien au Kremlin-Bicêtre ?',
+                a: "Espace Design intervient régulièrement au Kremlin-Bicêtre pour des rénovations d'appartements anciens et de pavillons. Assuré décennale, devis gratuit sous 48h.",
+              },
+              {
+                q: 'Peut-on rénover un appartement en copropriété au Kremlin-Bicêtre ?',
+                a: "Oui, Espace Design réalise régulièrement des rénovations en copropriété au Kremlin-Bicêtre. Nous respectons les règlements de copropriété et coordonnons les travaux pour minimiser les nuisances.",
+              },
+              {
+                q: 'Avez-vous une assurance décennale ?',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
+              },
+            ].map((item) => (
+              <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
+                <summary className="font-display text-base font-semibold text-[#1C1C1C] cursor-pointer list-none flex justify-between items-center">
+                  {item.q}
+                  <span className="text-[#D4AF37] text-lg ml-4 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-gray-500 text-sm leading-relaxed font-light">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-paris-13e', label: 'Paris 13e' },
-              { href: '/renovation-paris-14e', label: 'Paris 14e' },
-              { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
               { href: '/renovation-gentilly', label: 'Gentilly' },
-              { href: '/renovation-vitry-sur-seine', label: 'Vitry-sur-Seine' },
-              { href: '/renovation-choisy-le-roi', label: 'Choisy-le-Roi' },
+              { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
+              { href: '/renovation-villejuif', label: 'Villejuif' },
+              { href: '/renovation-paris-13e', label: 'Paris 13e' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -179,36 +316,15 @@ export default function RenovationLeKremlinBicetre() {
 
       <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Voir aussi</p>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { href: '/tarifs', label: 'Nos tarifs' },
-              { href: '/faq', label: 'FAQ rénovation' },
-              { href: '/avis', label: 'Avis clients' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation 2025' },
-              { href: '/blog/choisir-artisan-renovation-paris', label: 'Choisir son artisan' },
-              { href: '/blog/renovation-appartement-haussmannien-paris', label: 'Rénovation haussmannienne' },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Articles liés */}
-      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-appartement-copropriete-paris', label: 'Rénover en copropriété' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
-              { href: '/blog/isolation-acoustique-appartement-paris', label: 'Isolation acoustique' },
-              { href: '/blog/renovation-2-pieces-paris', label: 'Budget 2 pièces Paris' },
-              { href: '/blog/peinture-appartement-paris', label: 'Peinture appartement Paris' },
-              { href: '/blog/renovation-cuisine-ouverte-paris', label: 'Cuisine ouverte Paris' },
+              { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain Paris' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénovation avant vente' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
+              { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
@@ -224,7 +340,7 @@ export default function RenovationLeKremlinBicetre() {
             Votre projet au Kremlin-Bicêtre
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune du Kremlin-Bicêtre.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune du Kremlin-Bicêtre et ses alentours en Val-de-Marne.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

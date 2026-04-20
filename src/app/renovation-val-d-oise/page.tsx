@@ -44,6 +44,8 @@ const villes95 = [
   { href: '/renovation-ermont', label: 'Ermont' },
   { href: '/renovation-sarcelles', label: 'Sarcelles' },
   { href: '/renovation-cergy-pontoise', label: 'Cergy-Pontoise' },
+  { href: '/renovation-goussainville', label: 'Goussainville' },
+  { href: '/renovation-deuil-la-barre', label: 'Deuil-la-Barre' },
 ]
 
 const services = [

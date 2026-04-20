@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Montfermeil (93370) — Artisan Rénovateur | Espace Design',
+  title: 'Rénovation Villeparisis (77270) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Montfermeil (93370) : maisons individuelles, pavillons anciens, résidences. Rénovation 800-2500€/m². Devis gratuit 48h.',
+    'Artisan rénovateur à Villeparisis (77270) : maisons de ville, pavillons, lotissements récents proches du 93. Rénovation 800-2500€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation maison Montfermeil',
-    'artisan rénovation Montfermeil',
-    'rénovation appartement Montfermeil',
-    'renovation Montfermeil 93370',
-    'entreprise renovation Montfermeil',
-    'artisan Montfermeil Seine-Saint-Denis',
-    'rénovation pavillon Montfermeil 93',
+    'rénovation maison Villeparisis',
+    'artisan rénovation Villeparisis',
+    'rénovation appartement Villeparisis',
+    'renovation Villeparisis 77270',
+    'entreprise renovation Villeparisis',
+    'artisan Villeparisis Seine-et-Marne',
+    'rénovation pavillon Villeparisis 77',
   ],
 }
 
@@ -22,17 +22,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Montfermeil.',
+  description: 'Artisan rénovateur et décorateur intérieur à Villeparisis.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-montfermeil',
+  url: 'https://espacedesignparis.fr/renovation-villeparisis',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Montfermeil',
+    name: 'Villeparisis',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Montfermeil',
-    postalCode: '93370',
+    addressLocality: 'Villeparisis',
+    postalCode: '77270',
     addressCountry: 'FR',
   },
   aggregateRating: {
@@ -48,26 +48,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: "Quel est le prix d'une rénovation à Montfermeil ?",
+      name: "Quel est le prix d'une rénovation à Villeparisis ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le coût d'une rénovation à Montfermeil varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons individuelles et pavillons anciens avec des finitions soignées, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
+        text: "Le coût d'une rénovation à Villeparisis varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons de ville et les pavillons avec finitions haut de gamme, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Rénovez-vous les pavillons anciens à Montfermeil ?',
+      name: 'Rénovez-vous les maisons et lotissements à Villeparisis ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, Espace Design intervient régulièrement dans les maisons individuelles et les pavillons anciens de Montfermeil. Rénovation complète ou partielle, mise aux normes, modernisation de l'intérieur — devis gratuit sous 48h.",
+        text: "Oui, Espace Design intervient dans les maisons de ville, les pavillons et les lotissements récents de Villeparisis. Nous traitons tous types de projets, de la rénovation partielle à la refonte intérieure complète.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels travaux réalisez-vous à Montfermeil ?',
+      name: 'Quels travaux réalisez-vous à Villeparisis ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Nous réalisons tous types de travaux à Montfermeil : peinture, rénovation salle de bain, réfection cuisine, pose de parquet, carrelage, électricité, plomberie, isolation et aménagement intérieur complet.",
+        text: "Nous réalisons tous types de travaux à Villeparisis : peinture, rénovation salle de bain, réfection cuisine, pose de parquet, carrelage, électricité, plomberie, isolation et aménagement intérieur complet.",
       },
     },
     {
@@ -87,11 +87,11 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Rénovation Seine-Saint-Denis', item: 'https://espacedesignparis.fr/renovation-seine-saint-denis' },
-    { '@type': 'ListItem', position: 3, name: 'Montfermeil', item: 'https://espacedesignparis.fr/renovation-montfermeil' },
+    { '@type': 'ListItem', position: 3, name: 'Villeparisis', item: 'https://espacedesignparis.fr/renovation-villeparisis' },
   ],
 }
 
-export default function RenovationMontfermeil() {
+export default function RenovationVilleparisis() {
   return (
     <>
       <script
@@ -109,13 +109,13 @@ export default function RenovationMontfermeil() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Montfermeil — 93370</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Villeparisis — 77270</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation maison &amp; pavillon<br className="hidden sm:block" /> à Montfermeil
+            Rénovation maison &amp; pavillon<br className="hidden sm:block" /> à Villeparisis
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Montfermeil (93370) : maisons individuelles, pavillons anciens et résidences en Seine-Saint-Denis. Rénovation intérieure complète et finitions soignées. Devis gratuit sous 48h.
+            Artisan rénovateur à Villeparisis (77270) : maisons de ville, pavillons et lotissements récents en Seine-et-Marne, à deux pas du 93. Rénovation intérieure complète et finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -138,24 +138,24 @@ export default function RenovationMontfermeil() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Montfermeil
+            Nos services à Villeparisis
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               {
                 num: '01',
                 title: 'Rénovation salle de bain',
-                desc: "Réfection complète de votre salle de bain à Montfermeil : carrelage, douche à l'italienne, baignoire, meuble vasque, plomberie. Résultat clé en main pour maisons et pavillons.",
+                desc: "Réfection complète de votre salle de bain à Villeparisis : douche à l'italienne, carrelage, faïence, meuble vasque, plomberie. Résultat clé en main pour maisons de ville et pavillons.",
               },
               {
                 num: '02',
                 title: 'Rénovation cuisine',
-                desc: "Modernisation de la cuisine dans votre maison individuelle à Montfermeil : carrelage, crédence, plan de travail, peinture. Travaux propres et livrés dans les délais convenus.",
+                desc: "Modernisation de la cuisine dans votre maison ou pavillon à Villeparisis : crédence, plan de travail, carrelage au sol, peinture. Devis détaillé, travaux propres et dans les délais.",
               },
               {
                 num: '03',
-                title: 'Peinture & décoration',
-                desc: "Peinture intérieure, enduits décoratifs, parquet, pose de revêtements — nous intervenons dans toutes les pièces de vos maisons et pavillons anciens à Montfermeil pour valoriser votre bien.",
+                title: 'Peinture & aménagement',
+                desc: "Peinture intérieure, parquet, carrelage, décoration sur mesure — nous intervenons dans toutes les pièces de vos maisons de ville, pavillons et lotissements récents à Villeparisis.",
               },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
@@ -172,7 +172,7 @@ export default function RenovationMontfermeil() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Montfermeil
+            Prix rénovation à Villeparisis
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
@@ -192,12 +192,12 @@ export default function RenovationMontfermeil() {
                 <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
                   <td className="px-5 py-3 text-gray-700 font-light">Pose parquet : 45–100 €/m²</td>
                   <td className="px-5 py-3 text-gray-700 font-light">Cuisine : 5 000–15 000 €</td>
-                  <td className="px-5 py-3 text-gray-700 font-light">Rénovation pavillon ancien : 1 500–2 500 €/m²</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Rénovation maison de ville : 1 500–2 500 €/m²</td>
                 </tr>
                 <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
                   <td className="px-5 py-3 text-gray-700 font-light">Carrelage : 45–90 €/m²</td>
                   <td className="px-5 py-3 text-gray-700 font-light">Électricité maison : 3 000–8 000 €</td>
-                  <td className="px-5 py-3 text-gray-700 font-light">Maison entière : sur devis</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Pavillon entier : sur devis</td>
                 </tr>
               </tbody>
             </table>
@@ -214,7 +214,7 @@ export default function RenovationMontfermeil() {
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
             <Image
               src="/images/realisations/19-sdb-mosaique-lavabo.jpg"
-              alt="Rénovation salle de bain — maison individuelle Montfermeil 93370"
+              alt="Rénovation salle de bain — maison Villeparisis 77270"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 896px"
@@ -251,16 +251,16 @@ export default function RenovationMontfermeil() {
           <div className="space-y-4">
             {[
               {
-                q: "Quel est le prix d'une rénovation à Montfermeil ?",
-                a: "Le coût d'une rénovation à Montfermeil varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons individuelles et pavillons anciens avec finitions soignées, comptez 1 500 à 2 500 €/m².",
+                q: "Quel est le prix d'une rénovation à Villeparisis ?",
+                a: "Le coût d'une rénovation à Villeparisis varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons de ville et pavillons avec finitions haut de gamme, comptez 1 500 à 2 500 €/m².",
               },
               {
-                q: 'Rénovez-vous les pavillons anciens à Montfermeil ?',
-                a: "Oui, Espace Design intervient régulièrement dans les maisons individuelles et les pavillons anciens de Montfermeil. Rénovation complète ou partielle, mise aux normes, modernisation de l'intérieur.",
+                q: 'Rénovez-vous les maisons et lotissements à Villeparisis ?',
+                a: "Oui, Espace Design intervient dans les maisons de ville, les pavillons et les lotissements récents de Villeparisis. Nous traitons tous types de projets, de la rénovation partielle à la refonte intérieure complète.",
               },
               {
-                q: 'Quels travaux réalisez-vous à Montfermeil ?',
-                a: "Nous réalisons tous types de travaux à Montfermeil : peinture, rénovation salle de bain, réfection cuisine, pose de parquet, carrelage, électricité, plomberie, isolation et aménagement intérieur complet.",
+                q: 'Quels travaux réalisez-vous à Villeparisis ?',
+                a: "Nous réalisons tous types de travaux à Villeparisis : peinture, rénovation salle de bain, réfection cuisine, pose de parquet, carrelage, électricité, plomberie, isolation et aménagement intérieur complet.",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -285,10 +285,9 @@ export default function RenovationMontfermeil() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
-              { href: '/renovation-clichy-sous-bois', label: 'Clichy-sous-Bois' },
-              { href: '/renovation-livry-gargan', label: 'Livry-Gargan' },
-              { href: '/renovation-gagny', label: 'Gagny' },
-              { href: '/renovation-noisy-le-grand', label: 'Noisy-le-Grand' },
+              { href: '/renovation-tremblay-en-france', label: 'Tremblay-en-France' },
+              { href: '/renovation-aulnay-sous-bois', label: 'Aulnay-sous-Bois' },
+              { href: '/renovation-mitry-mory', label: 'Mitry-Mory' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
@@ -352,10 +351,10 @@ export default function RenovationMontfermeil() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Montfermeil
+            Votre projet à Villeparisis
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Montfermeil et alentours en Seine-Saint-Denis.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Villeparisis et alentours en Seine-et-Marne et Seine-Saint-Denis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -15,8 +15,8 @@ const schemaBreadcrumb = {
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Maison Ancienne Paris : meulière, pierres & contraintes 2025 | Espace Design',
-  description: 'Rénover une maison ancienne à Paris : meulière, pierres de taille, poutres. Contraintes ABF, amiante, surcoûts. Guide artisan 2025.',
+  headline: 'Rénovation Maison Ancienne Paris : pierres, poutres & contraintes 2025 | Espace Design',
+  description: 'Rénover une maison ancienne à Paris : contraintes ABF, pierres de taille, poutres apparentes, amiante. Guide artisan 2025.',
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,37 +33,37 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix de rénovation d\'une maison ancienne à Paris et en Île-de-France ?',
+      name: "Quel est le surcoût lié à l'amiante lors de la rénovation d'une maison ancienne à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le prix de rénovation d\'une maison ancienne (meulière, maison de ville, haussmannienne) varie entre 1 200 et 3 500 €/m² selon l\'état du bien, le type de travaux et les contraintes patrimoniales. Pour une maison meulière de 120 m² en rénovation complète, comptez entre 150 000 et 300 000 €. Les surcoûts liés à la présence d\'amiante (désamiantage : 5 000 à 30 000 €), au traitement des murs en pierre (isolation ITI, enduit chaux) et aux prescriptions ABF peuvent représenter 20 à 40 % du budget initial.',
+        text: "Le surcoût lié à la présence d'amiante dans une maison ancienne à Paris dépend de la quantité et de la localisation des matériaux amiantés. Le diagnostic amiante avant travaux (obligatoire pour toute maison dont le permis de construire est antérieur au 1er juillet 1997) coûte entre 150 et 400 €. Si de l'amiante est détecté, le désamiantage représente un surcoût de 50 à 200 €/m² pour les surfaces traitées — soit 5 000 à 30 000 € pour une maison moyenne selon l'ampleur de la contamination. Ce coût est souvent sous-estimé lors du budget de rénovation. Le désamiantage doit être réalisé par une entreprise certifiée amiante (mention SS4).",
       },
     },
     {
       '@type': 'Question',
-      name: 'Faut-il isoler les murs en pierre par l\'intérieur ou l\'extérieur ?',
+      name: "Peut-on isoler les murs en pierre d'une maison ancienne à Paris sans les abîmer ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pour une maison ancienne à murs en pierre à Paris et en Île-de-France, l\'isolation par l\'extérieur (ITE) est généralement impossible ou très contrainte par l\'ABF (aspect de façade modifié). L\'isolation par l\'intérieur (ITI) est donc la solution retenue dans la grande majorité des cas. Deux options : le doublage plâtre sur ossature avec laine de roche (perte de 10 à 14 cm sur la largeur de la pièce, coût : 60 à 100 €/m²) ou l\'enduit chaux-chanvre projeté (plus respirant, compatible avec les murs anciens, coût : 80 à 140 €/m²). L\'enduit chaux est recommandé sur les murs en pierre car il laisse respirer le mur et évite les problèmes d\'humidité par condensation.',
+        text: "Oui, mais avec les bons matériaux. Les murs en pierre de taille ou en moellons des maisons anciennes parisiennes sont des matériaux respirants : ils absorbent et restituent l'humidité naturellement. Pour les isoler sans créer de désordres (condensation, moisissures, efflorescence), il faut impérativement utiliser des matériaux compatibles avec la vapeur d'eau : laine de bois, chanvre, liège expansé ou chaux-chanvre. Les isolants synthétiques à cellules fermées (polystyrène, polyuréthane) sont à proscrire car ils piègent l'humidité dans la paroi et provoquent des dégâts à terme. L'isolation doit être posée sur une ossature bois légère avec un pare-vapeur hygrovariable.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels délais prévoir pour la rénovation d\'une maison ancienne à Paris ?',
+      name: "Faut-il des autorisations spéciales pour rénover une maison ancienne à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Une rénovation complète de maison ancienne à Paris prend entre 4 et 10 mois selon la surface et la complexité du projet. À ce délai s\'ajoutent : 1 à 3 mois pour les diagnostics obligatoires (amiante, plomb, DPE) et les démarches administratives, 2 à 4 mois pour l\'obtention des autorisations ABF si nécessaire, et 1 à 2 mois pour la conception et la sélection des entreprises. Au total, entre la décision de rénover et la livraison, comptez 8 à 18 mois pour un projet complet. Les découvertes en cours de chantier (amiante, structure dégradée, réseaux anciens) peuvent allonger ces délais.',
+        text: "Cela dépend de la localisation et de la nature des travaux. Si la maison est dans un secteur protégé (périmètre de 500 m autour d'un monument historique) ou dans un site patrimonial remarquable, l'avis de l'Architecte des Bâtiments de France est requis pour toute modification visible depuis l'extérieur : façade, fenêtres, volets, toiture, couleur de peinture, balcons. Pour les travaux intérieurs (isolation, plomberie, électricité, cloisons), aucune autorisation spécifique n'est nécessaire sauf si vous créez de la surface (permis de construire au-delà de 20 m²) ou si la maison est elle-même classée aux Monuments Historiques.",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Rénovation Maison Ancienne Paris : meulière, pierres & contraintes 2025 | Espace Design',
-  description: 'Rénover une maison ancienne à Paris : meulière, pierres de taille, poutres. Contraintes ABF, amiante, surcoûts. Guide artisan 2025.',
+  title: 'Rénovation Maison Ancienne Paris : pierres, poutres & contraintes 2025 | Espace Design',
+  description: 'Rénover une maison ancienne à Paris : contraintes ABF, pierres de taille, poutres apparentes, amiante. Guide artisan 2025.',
 }
 
-export default function ArticleRenovationMaisonAncienne() {
+export default function ArticleRenovationMaisonAncienneParis() {
   return (
     <>
       <script
@@ -87,37 +87,37 @@ export default function ArticleRenovationMaisonAncienne() {
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Maison Ancienne Paris : meulière, pierres &amp; contraintes 2025
+            Rénovation Maison Ancienne Paris : pierres, poutres &amp; contraintes 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Meulière d&apos;Île-de-France, maison de ville parisienne, haussmannienne : chaque type de maison ancienne présente ses propres contraintes techniques, réglementaires et budgétaires. Guide complet pour rénover dans les règles en 2025, avec les vrais prix et les surcoûts à anticiper.
+            Rénover une maison ancienne à Paris est un projet à la fois passionnant et complexe. Murs en pierre de taille, poutres apparentes, parquets d&apos;époque, présence possible d&apos;amiante, contraintes ABF et surcoûts spécifiques au bâti ancien : ce guide vous prépare à chaque étape de votre chantier en 2025.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Types de maisons */}
+      {/* Section 1 — Types de maisons anciennes */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les types de maisons anciennes à Paris et en Île-de-France
+              Types de maisons anciennes à Paris : meulière, haussmannienne, de ville
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Avant d&apos;engager des travaux, il est essentiel d&apos;identifier le type de construction de votre maison. Chaque type présente des matériaux, des pathologies et des contraintes de rénovation spécifiques.
+              Paris et la petite couronne concentrent plusieurs typologies de maisons anciennes, chacune avec ses caractéristiques constructives et ses enjeux de rénovation spécifiques.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'La meulière d\'Île-de-France',
-                  detail: 'Construite entre 1870 et 1930, la meulière est caractérisée par ses murs en pierre de meulière (roche siliceuse irrégulière), ses volets en bois et ses toitures à forte pente. Elle se rencontre surtout en proche banlieue (Vincennes, Fontenay, Boulogne, Saint-Cloud, Le Perreux). Ses murs en pierre non isolés (U = 1,5 à 2 W/m²K) sont la principale source de déperditions thermiques. L\'enduit extérieur à la chaux est souvent dégradé et la toiture en ardoise ou en tuile mecanique nécessite une attention particulière.',
+                  enjeu: 'Maison meulière (fin 19e – début 20e siècle)',
+                  detail: "La maison meulière, construite en moellons de meulière (roche siliceuse grise-beige), est typique de la petite couronne parisienne (Vincennes, Nogent, Montreuil, Saint-Maur). Ses murs épais (50 à 60 cm) offrent une bonne inertie thermique mais une isolation médiocre. Les planchers sont souvent en bois sur solives, les charpentes en bois avec une couverture en ardoise ou en tuile. Le risque amiante est élevé dans les maisons meulières rénovées entre 1950 et 1997.",
                 },
                 {
-                  enjeu: 'La maison de ville parisienne intra-muros',
-                  detail: 'Rare mais présente dans les arrondissements périphériques (13e, 14e, 15e, 20e), la maison de ville parisienne est souvent construite en brique et pierre meulière. Mitoyenne sur 2 ou 3 côtés, elle présente peu de façades exposées mais souffre souvent d\'une mauvaise ventilation. La rénovation doit intégrer un système de ventilation mécanique contrôlée (VMC) dès le départ.',
+                  enjeu: 'Maison haussmannienne de ville (milieu 19e siècle)',
+                  detail: "Les maisons de ville de l'époque haussmannienne (1850-1880) ont des murs en pierre de taille calcaire, des planchers en bois avec lambourdes et parquet en chêne massif, des hauteurs sous plafond de 2,80 à 3,50 m et des éléments décoratifs soignés (moulures, cheminées en marbre, ferronneries). La rénovation de ces maisons nécessite une attention particulière à la préservation des éléments patrimoniaux.",
                 },
                 {
-                  enjeu: 'La maison haussmannienne avec jardin',
-                  detail: 'Dans certains secteurs de Paris (16e, ouest parisien), des maisons individuelles de style haussmannien coexistent avec les immeubles de rapport. Pierre de taille en façade, hauts plafonds, moulures, parquets point de Hongrie : les matériaux nobles sont présents mais nécessitent une restauration experte. Les contraintes ABF sont maximales pour les travaux extérieurs.',
+                  enjeu: 'Maison de ville ancienne (17e-18e siècle)',
+                  detail: "Les maisons les plus anciennes de Paris intra-muros (Marais, Montmartre) ont des structures en pans de bois (colombages) ou en pierre de taille, des planchers sur solives très épaisses, des escaliers en bois sculptés et des caves voûtées. Ces maisons sont souvent partiellement ou totalement classées aux Monuments Historiques. La rénovation est très encadrée et nécessite des artisans spécialisés.",
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -134,32 +134,32 @@ export default function ArticleRenovationMaisonAncienne() {
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Murs en pierre, poutres et charpente : traitement et conservation
+            Murs en pierre et poutres apparentes : traitement et conservation
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les maisons anciennes regorgent de matériaux nobles qui méritent d&apos;être conservés et mis en valeur. Mais leur traitement nécessite des compétences spécifiques et des délais à ne pas sous-estimer.
+            Les deux éléments les plus emblématiques d&apos;une maison ancienne parisienne — les murs en pierre et les poutres apparentes — méritent une attention particulière, tant pour leur aspect esthétique que pour leur traitement technique.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Isolation intérieure des murs en pierre (ITI)',
-                detail: 'Doublage plâtre + laine de roche 100 mm sur ossature désolidarisée, ou enduit chaux-chanvre projeté (plus respirant). L\'enduit chaux est recommandé car il régule l\'humidité et ne piège pas la vapeur d\'eau dans le mur. Perte en surface : 10 à 14 cm par mur traité.',
-                cout: '60 – 140 €/m²',
+                titre: "Isolation des murs en pierre par l'intérieur",
+                detail: "L'isolation par l'intérieur (ITI) est la seule option dans une maison ancienne sans modifier l'aspect extérieur. Il faut impérativement utiliser des matériaux respirants (laine de bois, chanvre, liège) pour éviter la condensation dans la paroi. Un pare-vapeur hygrovariable est obligatoire. L'épaisseur du doublage (8 à 14 cm) réduit légèrement la surface habitable.",
+                cout: '80 – 160 €/m²',
               },
               {
-                titre: 'Enduit chaux sur façade',
-                detail: 'Dépose de l\'enduit dégradé, ragréage de la meulière ou de la pierre, application d\'un enduit à la chaux teinté dans la masse. Traitement hydrofuge si nécessaire. L\'enduit chaux respire et s\'entretient facilement. À faire valider par l\'ABF pour les façades sur rue.',
-                cout: '80 – 150 €/m²',
+                titre: 'Enduit chaux sur murs en pierre',
+                detail: "Si vous souhaitez conserver l'aspect pierre apparente ou un enduit traditionnel, la chaux naturelle est le matériau de référence : compatible avec la pierre calcaire ou la meulière, elle régule naturellement l'humidité et ne piège pas les sels. Un enduit chaux bien réalisé dure plusieurs décennies.",
+                cout: '30 – 70 €/m²',
               },
               {
-                titre: 'Poutres apparentes : conservation et traitement',
-                detail: 'Les poutres en chêne ou en sapin des maisons anciennes sont un atout décoratif. Avant mise en valeur : traitement fongicide et insecticide (curatif si infestation détectée), sablage ou décapage chimique pour retrouver le bois naturel, puis huilage ou lasure. Coût : 80 à 200 €/ml selon section et état.',
-                cout: '80 – 200 €/ml',
+                titre: 'Traitement des poutres en bois',
+                detail: "Les poutres apparentes d'une maison ancienne peuvent être en chêne massif, en sapin ou en châtaignier. Avant tout traitement esthétique, il faut vérifier leur état structurel (absence de pourriture, de trous de vrillette) et les traiter contre les insectes xylophages. Un traitement curatif (injection ou badigeon) est ensuite appliqué avant la finition (brou de noix, huile, lasure ou peinture).",
+                cout: '20 – 60 €/ml',
               },
               {
-                titre: 'Charpente et toiture',
-                detail: 'La charpente en bois des maisons de plus de 50 ans doit être inspectée par un charpentier avant tout projet de rénovation. Merrain, capricorne des maisons, anobium : les insectes xylophages peuvent fragiliser la structure. Un traitement préventif coûte 20 à 40 €/m² de surface traitée. Le remplacement d\'une charpente complète : 10 000 à 30 000 €.',
-                cout: '20 – 40 €/m² traité',
+                titre: 'Conservation vs remplacement des poutres',
+                detail: "Une poutre ancienne en chêne massif de qualité vaut bien plus qu'une poutre neuve en pin. Avant de la remplacer, faire évaluer son état par un charpentier : une poutre saine peut souvent être conservée et traitée. Si le remplacement est inévitable (pourriture profonde, section insuffisante), choisir une essence similaire (chêne, châtaignier) pour respecter l'authenticité du bâtiment.",
+                cout: 'Remplacement : 200 – 600 €/ml',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -174,31 +174,31 @@ export default function ArticleRenovationMaisonAncienne() {
         </div>
       </section>
 
-      {/* Section 3 — Diagnostics et réglementation */}
+      {/* Section 3 — Amiante et diagnostics */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Diagnostics obligatoires et réglementation : ce qu&apos;il faut savoir avant les travaux
+            Diagnostic amiante et surcoûts avant travaux dans une maison ancienne
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Pour toute maison construite avant 1997, les diagnostics amiante et plomb sont obligatoires avant d&apos;engager des travaux. Leur résultat conditionne le budget et les délais du chantier.
+            Toute maison dont le permis de construire est antérieur au 1er juillet 1997 peut contenir de l&apos;amiante. Le diagnostic amiante avant travaux est obligatoire et conditionne le budget de rénovation.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Diagnostic amiante avant travaux (DAAT)',
-                prix: '300 – 800 €',
-                detail: 'Obligatoire pour tout bien construit avant le 1er juillet 1997. Le diagnostiqueur recherche la présence d\'amiante dans les matériaux susceptibles d\'être impactés par les travaux (colles de carrelage, dalles vinyle, enduits projetés, calorifugeage des tuyaux). En cas de détection, le désamiantage doit être réalisé par une entreprise certifiée avant le démarrage du chantier. Coût du désamiantage : 5 000 à 30 000 € selon la surface et les zones concernées.',
+                type: 'Diagnostic amiante avant travaux (obligatoire)',
+                prix: '150 – 400 €',
+                detail: "Le diagnostic amiante avant travaux (DAAT) est obligatoire avant tout chantier dans un bien dont le permis de construire est antérieur au 1er juillet 1997. Il est réalisé par un diagnostiqueur certifié et porte sur tous les matériaux susceptibles de contenir de l'amiante : dalles de sol vinyle, colles, flocages, calorifugeages, enduits à la perle, toitures en fibrociment. Le rapport liste les matériaux avec amiante et leur état de conservation.",
               },
               {
-                type: 'Diagnostic plomb (CREP)',
-                prix: '150 – 500 €',
-                detail: 'Le Constat de Risque d\'Exposition au Plomb (CREP) est obligatoire pour les biens construits avant 1949 (vente ou location). Les peintures au plomb sont fréquentes dans les maisons de cette période. Si la concentration en plomb dépasse le seuil réglementaire, des travaux d\'encapsulage ou de décapage doivent être réalisés avant les travaux de rénovation.',
+                type: 'Désamiantage — surcoût selon ampleur',
+                prix: '50 – 200 €/m²',
+                detail: "Si de l'amiante est détecté, le désamiantage est obligatoire avant les travaux. Il doit être réalisé par une entreprise certifiée amiante (mention SS4). Le coût dépend du type de matériau (friable ou non) et de la surface à traiter. Les dalles vinyle amiantées (fréquentes dans les maisons des années 1960-1980) coûtent 30 à 80 €/m² à retirer.",
               },
               {
-                type: 'Contraintes ABF et autorisations',
-                prix: 'Variable',
-                detail: 'Les maisons situées dans un rayon de 500 m autour d\'un monument historique ou dans un Site Patrimonial Remarquable sont soumises à l\'avis de l\'Architecte des Bâtiments de France pour les travaux extérieurs. Cela concerne notamment les fenêtres, le ravalement de façade, la toiture et les extensions. Un refus peut bloquer un projet entier. Délai d\'instruction : 2 à 4 mois.',
+                type: 'Autres diagnostics obligatoires avant travaux',
+                prix: 'Pack : 400 – 800 €',
+                detail: "Avant de rénover une maison ancienne à Paris, plusieurs diagnostics sont recommandés ou obligatoires : diagnostic plomb (sur les peintures dans les logements construits avant 1949), diagnostic termites (dans les zones déclarées par arrêté préfectoral), état de l'installation intérieure de gaz (si plus de 15 ans) et diagnostic de performance énergétique (DPE).",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -213,61 +213,57 @@ export default function ArticleRenovationMaisonAncienne() {
         </div>
       </section>
 
-      {/* Section 4 — Budget et surcoûts */}
+      {/* Section 4 — Budget et prix */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Budget rénovation maison ancienne : prix 2025 et surcoûts à anticiper
+            Prix de rénovation d&apos;une maison ancienne à Paris : budget 2025
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            La rénovation d&apos;une maison ancienne est souvent ponctuée de découvertes imprévues en cours de chantier. Prévoir une réserve de 20 à 40 % sur le budget initial est une règle d&apos;or.
+            Les prix ci-dessous s&apos;entendent pour une maison ancienne parisienne (meulière ou pierre de taille), main d&apos;oeuvre et matériaux inclus. Les surcoûts spécifiques au bâti ancien (amiante, poutres, pierres, contraintes ABF) peuvent représenter 15 à 30 % du budget total.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Poste de travaux</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix unitaire</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Surcoût potentiel</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Type de rénovation</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Travaux inclus</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix /m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget 90 m²</th>
                 </tr>
               </thead>
               <tbody>
                 {[
                   {
-                    poste: 'Isolation des murs (ITI)',
-                    prix: '60 – 140 €/m²',
-                    surcout: '+20 % si murs irréguliers',
+                    type: 'Légère',
+                    travaux: 'Peinture + parquet + salle de bain + cuisine',
+                    prixM2: '800 – 1 300 €',
+                    budget: '72 000 – 117 000 €',
                   },
                   {
-                    poste: 'Toiture et charpente',
-                    prix: '150 – 300 €/m²',
-                    surcout: '+30 % si charpente à traiter',
+                    type: 'Standard',
+                    travaux: 'Peinture + sol + cuisine + électricité + plomberie partielles',
+                    prixM2: '1 300 – 2 000 €',
+                    budget: '117 000 – 180 000 €',
                   },
                   {
-                    poste: 'Désamiantage',
-                    prix: '5 000 – 30 000 €',
-                    surcout: 'Non prévisible sans diagnostic',
+                    type: 'Complète',
+                    travaux: "Tout corps d'état : électricité NF C 15-100, plomberie, sol, isolation, murs, cuisine, salle de bain",
+                    prixM2: '2 000 – 3 000 €',
+                    budget: '180 000 – 270 000 €',
                   },
                   {
-                    poste: 'Mise aux normes électricité',
-                    prix: '8 000 – 25 000 €',
-                    surcout: '+15 % si faux-plafonds à déposer',
-                  },
-                  {
-                    poste: 'Plomberie complète',
-                    prix: '5 000 – 18 000 €',
-                    surcout: '+20 % si tuyaux en plomb',
-                  },
-                  {
-                    poste: 'Rénovation façade (enduit chaux)',
-                    prix: '80 – 150 €/m²',
-                    surcout: '+25 % si échafaudage obligatoire',
+                    type: 'Avec désamiantage',
+                    travaux: 'Complète + diagnostics + désamiantage + surcoûts bâti ancien',
+                    prixM2: '2 500 – 4 500 €',
+                    budget: '225 000 – 405 000 €',
                   },
                 ].map((row, i) => (
-                  <tr key={row.poste} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.poste}</td>
-                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prix}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.surcout}</td>
+                  <tr key={row.type} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.type}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.travaux}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prixM2}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.budget}</td>
                   </tr>
                 ))}
               </tbody>
@@ -276,16 +272,16 @@ export default function ArticleRenovationMaisonAncienne() {
 
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Conseils pour maîtriser son budget sur une maison ancienne
+              Conseils pour rénover une maison ancienne à Paris
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                'Réaliser tous les diagnostics obligatoires avant de signer un devis d\'entreprise',
-                'Faire appel à un architecte ou maître d\'œuvre pour les projets de plus de 100 000 €',
-                'Prévoir 20 à 40 % de réserve pour les imprévus de chantier',
-                'Traiter la toiture et les réseaux (électricité, plomberie) en priorité avant les finitions',
-                'Ne pas supprimer les poutres ou les cheminées sans avis d\'un expert en patrimoine',
-                'Vérifier les aides disponibles : MaPrimeRénov\', éco-PTZ, aides de l\'ANAH pour l\'isolation',
+                "Faire réaliser le diagnostic amiante avant travaux dès l'achat — il peut modifier le budget significativement",
+                "Ne jamais isoler des murs en pierre avec du polystyrène ou du polyuréthane — utiliser des matériaux respirants",
+                "Faire évaluer les poutres par un charpentier avant de décider de les garder ou les remplacer",
+                "Vérifier si la maison est en zone ABF avant tout projet de modification de façade ou de fenêtres",
+                "Conserver les éléments authentiques (carreaux de ciment, tommettes, garde-corps forgés) — ils ont de la valeur",
+                "Prévoir une réserve de budget de 15 à 20 % pour les imprévus, fréquents dans le bâti ancien",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -298,12 +294,12 @@ export default function ArticleRenovationMaisonAncienne() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -313,15 +309,16 @@ export default function ArticleRenovationMaisonAncienne() {
       </section>
 
       {/* Voir aussi */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique appartement Paris' },
-              { href: '/blog/renovation-appartement-paris-1er', title: 'Rénovation appartement Paris 1er' },
-              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénovation haussmannien Paris' },
-              { href: '/blog/diagnostic-amiante-paris', title: 'Diagnostic amiante Paris' },
+              { href: '/renovation-maison-paris', title: 'Rénovation maison Paris' },
+              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique Paris' },
+              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénovation appartement haussmannien' },
+              { href: '/blog/renovation-parquet-paris', title: 'Rénovation parquet Paris' },
+              { href: '/contact', title: 'Demander un devis gratuit' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -336,19 +333,19 @@ export default function ArticleRenovationMaisonAncienne() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-white border-t border-gray-100">
+      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
               { href: '/renovation-vincennes', label: 'Vincennes' },
-              { href: '/renovation-boulogne-billancourt', label: 'Boulogne' },
-              { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
-              { href: '/renovation-levallois-perret', label: 'Levallois' },
-              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly' },
-              { href: '/renovation-courbevoie', label: 'Courbevoie' },
-              { href: '/renovation-pantin', label: 'Pantin' },
               { href: '/renovation-montreuil', label: 'Montreuil' },
+              { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur' },
+              { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
+              { href: '/renovation-levallois-perret', label: 'Levallois' },
+              { href: '/renovation-courbevoie', label: 'Courbevoie' },
+              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
+              { href: '/renovation-pantin', label: 'Pantin' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -365,10 +362,10 @@ export default function ArticleRenovationMaisonAncienne() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Votre projet de rénovation de maison ancienne
+          Rénovez votre maison ancienne à Paris
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Meulière, maison de ville, haussmannienne — expertise bâti ancien. Devis gratuit sous 48h.
+          Artisans spécialisés en bâti ancien, pierres de taille et poutres apparentes. Devis gratuit sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

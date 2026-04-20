@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Châtenay-Malabry — Appartement (92) | Espace Design',
+  title: 'Rénovation Châtenay-Malabry (92290) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Châtenay-Malabry (92). Rénovation appartement, maison, salle de bain. Devis gratuit 48h. Espace Design.',
+    'Artisan rénovateur à Châtenay-Malabry (92290) : pavillons, maisons individuelles, résidences calmes aux portes de la forêt. Rénovation 800-2500€/m². Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Châtenay-Malabry',
     'artisan rénovation Châtenay-Malabry',
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     'renovation Châtenay-Malabry 92290',
     'entreprise renovation Châtenay-Malabry',
     'artisan Châtenay-Malabry Hauts-de-Seine',
+    'rénovation maison Châtenay-Malabry',
   ],
 }
 
@@ -34,6 +35,11 @@ const schemaLocal = {
     postalCode: '92290',
     addressCountry: 'FR',
   },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
 }
 
 const schemaFaq = {
@@ -42,18 +48,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le délai pour obtenir un devis à Châtenay-Malabry ?',
+      name: "Quel est le prix d'une rénovation à Châtenay-Malabry ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Châtenay-Malabry et dans toute la région.",
+        text: "Le coût d'une rénovation à Châtenay-Malabry varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons et maisons individuelles aux portes de la forêt, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: "Quel est le prix d'une rénovation complète à Châtenay-Malabry ?",
+      name: 'Quel artisan contacter pour rénover une maison à Châtenay-Malabry ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le coût d'une rénovation complète varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.",
+        text: "Espace Design intervient régulièrement à Châtenay-Malabry pour des rénovations de maisons individuelles et pavillons. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h, un seul interlocuteur.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Faut-il un permis de construire pour rénover à Châtenay-Malabry ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Pour les travaux intérieurs (peinture, salle de bain, cuisine, parquet), aucun permis n'est requis. Pour les travaux impactant la structure ou la façade, une déclaration préalable ou un permis de construire peut être nécessaire. Nous vous conseillons lors du devis.",
       },
     },
     {
@@ -61,15 +75,7 @@ const schemaFaq = {
       name: 'Avez-vous une assurance décennale ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Intervenez-vous à Châtenay-Malabry ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "Oui, nous intervenons régulièrement à Châtenay-Malabry et dans toute l'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.",
+        text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
       },
     },
   ],
@@ -80,7 +86,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
     { '@type': 'ListItem', position: 3, name: 'Châtenay-Malabry', item: 'https://espacedesignparis.fr/renovation-chatenay-malabry' },
   ],
 }
@@ -106,10 +112,10 @@ export default function RenovationChatenayMalabry() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Châtenay-Malabry — 92290</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation Châtenay-Malabry
+            Rénovation maison<br className="hidden sm:block" /> Châtenay-Malabry
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Châtenay-Malabry. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
+            Artisan rénovateur à Châtenay-Malabry (92290) : pavillons, maisons individuelles, résidences calmes aux portes de la forêt de Verrières. Rénovation complète, cuisine, salle de bain, peinture. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -136,9 +142,9 @@ export default function RenovationChatenayMalabry() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier maîtrisé.' },
-              { num: '02', title: 'Décoration intérieure', desc: 'Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique adaptée à votre appartement.' },
-              { num: '03', title: 'Sur-mesure & finitions', desc: 'Menuiserie, parquet, carrelage, peinture décorative. Les détails qui transforment un intérieur ordinaire en espace exceptionnel.' },
+              { num: '01', title: 'Rénovation salle de bain', desc: "Douche à l'italienne, baignoire îlot, faïence effet marbre, meubles vasque suspendus. Transformation complète de votre salle de bain dans votre maison de Châtenay-Malabry." },
+              { num: '02', title: 'Rénovation cuisine', desc: "Cuisine ouverte ou fermée, plan de travail en quartz, îlot central, hotte décorative. Aménagement sur-mesure adapté aux maisons individuelles et pavillons de Châtenay-Malabry." },
+              { num: '03', title: 'Peinture et finitions', desc: "Peinture intérieure, ravalement de façade, isolation par l'intérieur, parquet. Toutes les finitions pour sublimer votre maison aux portes de la forêt de Verrières." },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -154,32 +160,34 @@ export default function RenovationChatenayMalabry() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Tous nos services
+            Prix rénovation à Châtenay-Malabry
           </h2>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
-              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
-              { href: '/peinture-paris', label: 'Peinture' },
-              { href: '/parquet-paris', label: 'Parquet' },
-              { href: '/carrelage-paris', label: 'Carrelage' },
-              { href: '/electricite-paris', label: 'Électricité' },
-              { href: '/plomberie-paris', label: 'Plomberie' },
-              { href: '/menuiserie-paris', label: 'Menuiserie' },
-              { href: '/isolation-paris', label: 'Isolation' },
-              { href: '/platrererie-paris', label: 'Plâtrerie' },
-              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
-              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
-            ].map((s) => (
-              <Link
-                key={s.href}
-                href={s.href}
-                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
-              >
-                {s.label}
-              </Link>
-            ))}
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-[#F2F2EE]">
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {[
+                  ['Peinture maison', '30 - 70 €/m²'],
+                  ['Rénovation salle de bain', '4 000 - 12 000 €'],
+                  ['Rénovation cuisine', '5 000 - 18 000 €'],
+                  ['Parquet (pose + fourniture)', '50 - 100 €/m²'],
+                  ['Rénovation complète', '800 - 1 500 €/m²'],
+                  ['Rénovation pavillon', '1 500 - 2 500 €/m²'],
+                ].map(([label, price]) => (
+                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
+                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
+          <p className="text-gray-400 text-xs font-light mt-3">Tarifs indicatifs — devis gratuit personnalisé sous 48h.</p>
         </div>
       </section>
 
@@ -189,7 +197,13 @@ export default function RenovationChatenayMalabry() {
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/25-wc-beton-cire.jpg" alt="Rénovation intérieure sur-mesure — Châtenay-Malabry" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image
+              src="/images/realisations/19-sdb-mosaique-lavabo.jpg"
+              alt="Rénovation salle de bain — maison individuelle Châtenay-Malabry 92290"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 896px"
+            />
           </div>
         </div>
       </section>
@@ -222,20 +236,20 @@ export default function RenovationChatenayMalabry() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le délai pour obtenir un devis à Châtenay-Malabry ?',
-                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement à Châtenay-Malabry.',
+                q: "Quel est le prix d'une rénovation à Châtenay-Malabry ?",
+                a: "Le coût d'une rénovation à Châtenay-Malabry varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons et maisons individuelles, comptez 1 500 à 2 500 €/m².",
               },
               {
-                q: "Quel est le prix d'une rénovation complète à Châtenay-Malabry ?",
-                a: "Le coût varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².",
+                q: 'Quel artisan contacter pour rénover une maison à Châtenay-Malabry ?',
+                a: "Espace Design intervient régulièrement à Châtenay-Malabry pour des rénovations de maisons individuelles et pavillons. Assuré décennale, devis gratuit sous 48h.",
+              },
+              {
+                q: 'Faut-il un permis de construire pour rénover à Châtenay-Malabry ?',
+                a: "Pour les travaux intérieurs (peinture, salle de bain, cuisine, parquet), aucun permis n'est requis. Pour les travaux impactant la structure ou la façade, une déclaration préalable peut être nécessaire.",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans.',
-              },
-              {
-                q: 'Intervenez-vous à Châtenay-Malabry ?',
-                a: "Oui, nous intervenons régulièrement à Châtenay-Malabry et dans toute l'Île-de-France. Devis gratuit sous 48h.",
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après la livraison.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -255,12 +269,12 @@ export default function RenovationChatenayMalabry() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
               { href: '/renovation-antony', label: 'Antony' },
-              { href: '/renovation-bagneux', label: 'Bagneux' },
-              { href: '/renovation-bourg-la-reine', label: 'Bourg-la-Reine' },
-              { href: '/renovation-le-plessis-robinson', label: 'Le Plessis-Robinson' },
               { href: '/renovation-clamart', label: 'Clamart' },
+              { href: '/renovation-bagneux', label: 'Bagneux' },
               { href: '/renovation-massy', label: 'Massy' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -274,18 +288,43 @@ export default function RenovationChatenayMalabry() {
         </div>
       </section>
 
-      {/* Articles liés */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-appartement-copropriete-paris', label: 'Rénover en copropriété' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
-              { href: '/blog/isolation-acoustique-appartement-paris', label: 'Isolation acoustique' },
-              { href: '/blog/renovation-2-pieces-paris', label: 'Budget 2 pièces Paris' },
-              { href: '/blog/peinture-appartement-paris', label: 'Peinture appartement Paris' },
-              { href: '/blog/renovation-cuisine-ouverte-paris', label: 'Cuisine ouverte Paris' },
+              { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain Paris' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénovation avant vente' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
+              { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
@@ -301,7 +340,7 @@ export default function RenovationChatenayMalabry() {
             Votre projet à Châtenay-Malabry
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Châtenay-Malabry.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Châtenay-Malabry et ses alentours en Hauts-de-Seine.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -720,6 +720,30 @@ const articles = [
     desc: "Rénovation appartement dans le 7e arrondissement de Paris : Invalides, Eiffel, Saint-Thomas-d'Aquin. Haussmannien prestige. Devis 48h.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-paris-8e',
+    title: 'Rénovation Appartement Paris 8e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 8e arrondissement de Paris : Champs-Élysées, Monceau, Faubourg Saint-Honoré. Prestige, devis 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/renovation-appartement-paris-10e',
+    title: 'Rénovation Appartement Paris 10e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 10e arrondissement de Paris : Canal Saint-Martin, République, Gare du Nord. Artisan, devis 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/renovation-appartement-paris-18e',
+    title: 'Rénovation Appartement Paris 18e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 18e arrondissement de Paris : Montmartre, Goutte-d'Or, Clignancourt. Artisan local, devis 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/prix-renovation-salle-de-bain-paris',
+    title: 'Prix Rénovation Salle de Bain Paris : tarifs détaillés 2025',
+    desc: "Prix rénovation salle de bain à Paris : petite surface 3m², carrelage mural, meuble vasque, douche italienne. Tarifs artisan 2025.",
+    tag: 'Salle de bain',
+  },
 ]
 
 export default function BlogPage() {
