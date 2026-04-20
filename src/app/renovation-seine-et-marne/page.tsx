@@ -59,6 +59,7 @@ const villes77 = [
   { href: '/renovation-coulommiers', label: 'Coulommiers' },
   { href: '/renovation-montereau-fault-yonne', label: 'Montereau-Fault-Yonne' },
   { href: '/renovation-provins', label: 'Provins' },
+  { href: '/renovation-fontainebleau', label: 'Fontainebleau' },
 ]
 
 const services = [

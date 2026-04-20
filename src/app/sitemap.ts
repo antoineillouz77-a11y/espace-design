@@ -524,6 +524,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-montereau-fault-yonne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-provins`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Yvelines (78) — vague 13
+    { url: `${base}/renovation-bougival`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Essonne (91) — vague 13
+    { url: `${base}/renovation-etampes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-et-Marne (77) — vague 13
+    { url: `${base}/renovation-fontainebleau`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 9
+    { url: `${base}/blog/renovation-energetique-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/moisissures-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/sol-vinyle-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Blog — vague 4-5
     { url: `${base}/blog/beton-cire-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/robinetterie-salle-de-bain-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },

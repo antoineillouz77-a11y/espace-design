@@ -960,6 +960,24 @@ const articles = [
     desc: "Béton ciré sol, mur, salle de bain à Paris. Pose artisan, prix au m², entretien 2025. Devis gratuit 48h.",
     tag: 'Sol & Revêtements',
   },
+  {
+    href: '/blog/renovation-energetique-appartement-paris',
+    title: 'Rénovation Énergétique Appartement Paris : DPE, aides & artisan 2025',
+    desc: "Améliorer le DPE de votre appartement à Paris : isolation, fenêtres, chauffage. MaPrimeRénov', CEE, artisan RGE. Devis gratuit 48h.",
+    tag: 'Rénovation Énergétique',
+  },
+  {
+    href: '/blog/moisissures-appartement-paris',
+    title: 'Moisissures Appartement Paris : causes, traitement & prévention 2025',
+    desc: "Traitement moisissures appartement à Paris. Causes humidité, solutions durables, artisan spécialisé. Devis gratuit 48h.",
+    tag: 'Humidité & Isolation',
+  },
+  {
+    href: '/blog/sol-vinyle-paris',
+    title: 'Sol Vinyle Paris : pose, prix & conseils — artisan 2025',
+    desc: "Sol vinyle à Paris : LVT, dalle, lame. Pose artisan, prix au m², entretien 2025. Devis gratuit 48h.",
+    tag: 'Sol & Revêtements',
+  },
 ]
 
 export default function BlogPage() {

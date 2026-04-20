@@ -64,6 +64,7 @@ const villes91 = [
   { href: '/renovation-arpajon', label: 'Arpajon' },
   { href: '/renovation-saint-michel-sur-orge', label: 'Saint-Michel-sur-Orge' },
   { href: '/renovation-bretigny-sur-orge', label: 'Brétigny-sur-Orge' },
+  { href: '/renovation-etampes', label: 'Étampes' },
 ]
 
 const services = [

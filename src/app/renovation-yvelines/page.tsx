@@ -68,6 +68,7 @@ const villes78 = [
   { href: '/renovation-aubergenville', label: 'Aubergenville' },
   { href: '/renovation-limay', label: 'Limay' },
   { href: '/renovation-buchelay', label: 'Buchelay' },
+  { href: '/renovation-bougival', label: 'Bougival' },
 ]
 
 const services = [
