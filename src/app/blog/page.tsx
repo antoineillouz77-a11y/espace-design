@@ -846,6 +846,12 @@ const articles = [
     desc: "Installer une douche à l'italienne à Paris : bac extra-plat, paroi vitrée, contraintes plancher. Prix et artisan 2025.",
     tag: 'Salle de bain',
   },
+  {
+    href: '/blog/renovation-cave-amenagee-paris',
+    title: 'Cave Aménagée Paris : sous-sol, rangement & prix 2025',
+    desc: "Aménager une cave parisienne : traitement humidité, isolation, électricité, usages (cave à vin, home cinéma). Prix 2025.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
