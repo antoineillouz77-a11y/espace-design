@@ -1560,6 +1560,30 @@ const articles = [
     desc: "Rénover un appartement à Argenteuil (95). Grande ville du Val-d'Oise, parc varié. Devis 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/peinture-effet-matiere-paris',
+    title: "Peinture Effet Matière Paris : chaux, ardoise & prix 2025",
+    desc: "Peinture effet matière à Paris (chaux, ardoise, rouille, craie). Techniques et prix artisan 2025.",
+    tag: 'Peinture',
+  },
+  {
+    href: '/blog/renovation-appartement-location-saisonniere-paris',
+    title: "Rénovation Appartement Location Saisonnière Paris : Airbnb 2025",
+    desc: "Rénover un appartement pour location saisonnière Airbnb à Paris. Design, matériaux résistants, budget.",
+    tag: 'Investissement',
+  },
+  {
+    href: '/blog/renovation-appartement-melun',
+    title: "Rénovation Appartement Melun : artisan & prix 2025",
+    desc: "Rénover un appartement à Melun (77). Préfecture Seine-et-Marne, bord de Seine. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-facade-maison-paris',
+    title: "Rénovation Façade Maison Paris : ravalement & prix 2025",
+    desc: "Ravalement et rénovation façade maison à Paris. Enduit, peinture façade, isolation extérieure. Devis 48h.",
+    tag: 'Extérieur',
+  },
 ]
 
 export default function BlogPage() {
