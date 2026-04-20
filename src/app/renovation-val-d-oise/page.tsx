@@ -43,6 +43,7 @@ const villes95 = [
   { href: '/renovation-pontoise', label: 'Pontoise' },
   { href: '/renovation-ermont', label: 'Ermont' },
   { href: '/renovation-sarcelles', label: 'Sarcelles' },
+  { href: '/renovation-cergy-pontoise', label: 'Cergy-Pontoise' },
 ]
 
 const services = [
