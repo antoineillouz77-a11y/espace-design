@@ -2238,6 +2238,42 @@ const articles = [
     desc: "Artisan rénovateur à Vélizy-Villacoublay (Yvelines). Cuisine, salle de bain. Devis gratuit.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-guyancourt',
+    title: "Rénovation Appartement Guyancourt (78) — Guide 2025",
+    desc: "Rénover un appartement à Guyancourt (Yvelines). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-le-chesnay',
+    title: "Rénovation Appartement Le Chesnay (78) — Guide 2025",
+    desc: "Artisan rénovateur au Chesnay-Rocquencourt (Yvelines). Cuisine, salle de bain. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-longjumeau',
+    title: "Rénovation Appartement Longjumeau (91) — Guide 2025",
+    desc: "Rénover un appartement à Longjumeau (Essonne). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-montigny-le-bretonneux',
+    title: "Rénovation Appartement Montigny-le-Bretonneux (78) — 2025",
+    desc: "Artisan rénovateur à Montigny-le-Bretonneux (78). Cuisine, salle de bain. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-ris-orangis',
+    title: "Rénovation Appartement Ris-Orangis (91) — Guide 2025",
+    desc: "Rénover un appartement à Ris-Orangis (Essonne). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-yerres',
+    title: "Rénovation Appartement Yerres (91) — Guide 2025",
+    desc: "Artisan rénovateur à Yerres (Essonne). Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
