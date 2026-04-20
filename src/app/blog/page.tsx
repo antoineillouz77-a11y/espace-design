@@ -828,6 +828,12 @@ const articles = [
     desc: "Mise en conformité électrique à Paris : NF C 15-100, DDR 30mA, tableau électrique, diagnostic vente. Prix par surface 2025.",
     tag: 'Électricité',
   },
+  {
+    href: '/blog/isolation-thermique-paris',
+    title: 'Isolation Thermique Paris : combles, murs & prix artisan 2025',
+    desc: "Améliorer l'isolation thermique d'un appartement parisien : combles, murs, fenêtres, DPE, MaPrimeRénov'. Prix 2025.",
+    tag: 'Isolation',
+  },
 ]
 
 export default function BlogPage() {

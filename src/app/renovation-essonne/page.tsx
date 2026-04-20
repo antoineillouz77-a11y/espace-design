@@ -57,6 +57,7 @@ const villes91 = [
   { href: '/renovation-athis-mons', label: 'Athis-Mons' },
   { href: '/renovation-draveil', label: 'Draveil' },
   { href: '/renovation-crosne', label: 'Crosne' },
+  { href: '/renovation-epinay-sur-orge', label: 'Épinay-sur-Orge' },
 ]
 
 const services = [

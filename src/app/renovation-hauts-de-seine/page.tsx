@@ -65,6 +65,9 @@ const villes92 = [
   { href: '/renovation-villeneuve-la-garenne', label: 'Villeneuve-la-Garenne' },
   { href: '/renovation-marnes-la-coquette', label: 'Marnes-la-Coquette' },
   { href: '/renovation-vaucresson', label: 'Vaucresson' },
+  { href: '/renovation-le-plessis-robinson', label: 'Le Plessis-Robinson' },
+  { href: '/renovation-fontenay-aux-roses', label: 'Fontenay-aux-Roses' },
+  { href: '/renovation-sceaux', label: 'Sceaux' },
 ]
 
 const services = [

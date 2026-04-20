@@ -390,6 +390,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-lognes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-draveil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-crosne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-epinay-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Hauts-de-Seine (92) — nouvelles villes
+    { url: `${base}/renovation-le-plessis-robinson`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-fontenay-aux-roses`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-sceaux`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — nouvel article
+    { url: `${base}/blog/isolation-thermique-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/renovation-vaires-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Val-d'Oise (95) — nouvelles villes
