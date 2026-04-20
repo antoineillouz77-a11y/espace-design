@@ -1662,6 +1662,24 @@ const articles = [
     desc: "Installer une pergola à Paris (terrasse, jardin). Bois, aluminium, bioclimatique. Devis gratuit 48h.",
     tag: 'Extérieur',
   },
+  {
+    href: '/blog/renovation-appartement-colombes',
+    title: "Rénovation Appartement Colombes : artisan & prix 2025",
+    desc: "Rénover un appartement à Colombes (92). Ville reconvertie proche Paris, forte demande. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-sartrouville',
+    title: "Rénovation Appartement Sartrouville : artisan & prix 2025",
+    desc: "Rénover un appartement à Sartrouville (78). Yvelines, proche Paris. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-rueil-malmaison',
+    title: "Rénovation Appartement Rueil-Malmaison : artisan & prix 2025",
+    desc: "Rénover un appartement à Rueil-Malmaison (92). Ville résidentielle haut de gamme. Devis 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
