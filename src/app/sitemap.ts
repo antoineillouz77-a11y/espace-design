@@ -475,10 +475,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Essonne (91) — vague 6
     { url: `${base}/renovation-arpajon`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-saint-michel-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-bretigny-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Seine-et-Marne (77) — vague 6
     { url: `${base}/renovation-moissy-cramayel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-marines`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-emerainville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-claye-souilly`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-nangis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Val-d'Oise (95) — vague 7
+    { url: `${base}/renovation-ecouen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Yvelines (78) — vague 7
+    { url: `${base}/renovation-triel-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-aubergenville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-limay`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Blog — vague 3
     { url: `${base}/blog/escalier-interieur-renovation-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },

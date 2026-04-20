@@ -53,6 +53,9 @@ const villes77 = [
   { href: '/renovation-mitry-mory', label: 'Mitry-Mory' },
   { href: '/renovation-roissy-en-brie', label: 'Roissy-en-Brie' },
   { href: '/renovation-moissy-cramayel', label: 'Moissy-Cramayel' },
+  { href: '/renovation-emerainville', label: 'Émerainville' },
+  { href: '/renovation-claye-souilly', label: 'Claye-Souilly' },
+  { href: '/renovation-nangis', label: 'Nangis' },
 ]
 
 const services = [

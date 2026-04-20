@@ -63,6 +63,7 @@ const villes91 = [
   { href: '/renovation-bruyeres-le-chatel', label: 'Bruyères-le-Châtel' },
   { href: '/renovation-arpajon', label: 'Arpajon' },
   { href: '/renovation-saint-michel-sur-orge', label: 'Saint-Michel-sur-Orge' },
+  { href: '/renovation-bretigny-sur-orge', label: 'Brétigny-sur-Orge' },
 ]
 
 const services = [

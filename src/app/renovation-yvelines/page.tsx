@@ -64,6 +64,9 @@ const villes78 = [
   { href: '/renovation-andresy', label: 'Andrésy' },
   { href: '/renovation-carrieres-sous-poissy', label: 'Carrières-sous-Poissy' },
   { href: '/renovation-acheres', label: 'Achères' },
+  { href: '/renovation-triel-sur-seine', label: 'Triel-sur-Seine' },
+  { href: '/renovation-aubergenville', label: 'Aubergenville' },
+  { href: '/renovation-limay', label: 'Limay' },
 ]
 
 const services = [
