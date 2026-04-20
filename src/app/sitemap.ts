@@ -415,6 +415,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-roissy-en-brie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-lieusaint`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-les-clayes-sous-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-andresy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-brie-comte-robert`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Hauts-de-Seine (92) — nouvelles villes
@@ -450,6 +451,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-villiers-le-bel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-franconville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-soisy-sous-montmorency`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-montmorency`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-bezons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-taverny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 

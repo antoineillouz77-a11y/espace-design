@@ -54,6 +54,7 @@ const villes95 = [
   { href: '/renovation-villiers-le-bel', label: 'Villiers-le-Bel' },
   { href: '/renovation-franconville', label: 'Franconville' },
   { href: '/renovation-soisy-sous-montmorency', label: 'Soisy-sous-Montmorency' },
+  { href: '/renovation-montmorency', label: 'Montmorency' },
 ]
 
 const services = [
