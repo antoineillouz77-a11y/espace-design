@@ -954,6 +954,12 @@ const articles = [
     desc: "Murs en meulière, planchers bois, charpente : rénover une maison ancienne à Paris. Artisan Paris, devis 48h.",
     tag: 'Rénovation',
   },
+  {
+    href: '/blog/beton-cire-paris',
+    title: 'Béton Ciré Paris : pose, prix & entretien — guide artisan 2025',
+    desc: "Béton ciré sol, mur, salle de bain à Paris. Pose artisan, prix au m², entretien 2025. Devis gratuit 48h.",
+    tag: 'Sol & Revêtements',
+  },
 ]
 
 export default function BlogPage() {
