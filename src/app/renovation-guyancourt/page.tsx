@@ -3,17 +3,17 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Rénovation Joinville-le-Pont (94340) — Artisan Rénovateur | Espace Design",
+  title: "Rénovation Guyancourt (78280) — Artisan Rénovateur | Espace Design",
   description:
-    "Artisan rénovateur à Joinville-le-Pont (94340) : villas et maisons bords de Marne, pavillons résidentiels, commune animée du Val-de-Marne. Rénovation 800-2500€/m². Devis gratuit 48h.",
+    "Artisan rénovateur à Guyancourt (78280) : logements collectifs modernes ville nouvelle, résidences dynamiques près du siège de Renault. Rénovation 800-2000€/m². Devis gratuit 48h.",
   keywords: [
-    'rénovation appartement Joinville-le-Pont',
-    'artisan rénovation Joinville-le-Pont',
-    'rénovation maison Joinville-le-Pont',
-    'renovation Joinville-le-Pont 94340',
-    'entreprise renovation Joinville Val-de-Marne',
-    'artisan Joinville-le-Pont 94',
-    'rénovation villa bords de Marne Joinville',
+    'rénovation appartement Guyancourt',
+    'artisan rénovation Guyancourt',
+    'rénovation logement Guyancourt',
+    'renovation Guyancourt 78280',
+    'entreprise renovation Guyancourt Yvelines',
+    'artisan Guyancourt 78',
+    'rénovation ville nouvelle Guyancourt',
   ],
 }
 
@@ -21,17 +21,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: "Artisan rénovateur et décorateur intérieur à Joinville-le-Pont.",
+  description: "Artisan rénovateur et décorateur intérieur à Guyancourt.",
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-joinville-le-pont',
+  url: 'https://espacedesignparis.fr/renovation-guyancourt',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Joinville-le-Pont',
+    name: 'Guyancourt',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Joinville-le-Pont',
-    postalCode: '94340',
+    addressLocality: 'Guyancourt',
+    postalCode: '78280',
     addressCountry: 'FR',
   },
   aggregateRating: {
@@ -47,34 +47,34 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: "Quel est le prix d'une rénovation à Joinville-le-Pont ?",
+      name: "Quel est le prix d'une rénovation à Guyancourt ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le coût d'une rénovation à Joinville-le-Pont varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les villas et maisons de caractère bords de Marne, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
+        text: "Le coût d'une rénovation à Guyancourt varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les logements collectifs modernes nécessitant isolation et remise à neuf complète, comptez 1 200 à 2 000 €/m². Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: "Quel artisan contacter pour rénover une villa à Joinville-le-Pont ?",
+      name: "Quel artisan contacter pour rénover un appartement à Guyancourt ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Espace Design intervient régulièrement à Joinville-le-Pont pour des rénovations de villas, pavillons et maisons de caractère bords de Marne. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
+        text: "Espace Design intervient régulièrement à Guyancourt pour des rénovations dans les résidences de la ville nouvelle Saint-Quentin-en-Yvelines. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: "Comment rénover un pavillon à Joinville-le-Pont ?",
+      name: "Comment rénover un logement collectif à Guyancourt ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Pour les pavillons de Joinville-le-Pont, nous proposons une rénovation globale : isolation thermique, redistribution des espaces, modernisation des installations électriques et sanitaires, finitions sur mesure.",
+        text: "Pour les logements collectifs modernes de Guyancourt, nous réalisons des rénovations complètes : isolation phonique et thermique, refonte des pièces d'eau, cuisine ouverte, nouveaux sols et peintures. Un résultat contemporain, durable et valorisant.",
       },
     },
     {
       '@type': 'Question',
-      name: "Avez-vous une assurance décennale pour les travaux à Joinville-le-Pont ?",
+      name: "Avez-vous une assurance décennale pour les travaux à Guyancourt ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux à Joinville-le-Pont sont garantis 10 ans après la livraison.",
+        text: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux à Guyancourt sont garantis 10 ans après la livraison.",
       },
     },
   ],
@@ -85,12 +85,12 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
-    { '@type': 'ListItem', position: 3, name: 'Joinville-le-Pont', item: 'https://espacedesignparis.fr/renovation-joinville-le-pont' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Yvelines', item: 'https://espacedesignparis.fr/renovation-yvelines' },
+    { '@type': 'ListItem', position: 3, name: 'Guyancourt', item: 'https://espacedesignparis.fr/renovation-guyancourt' },
   ],
 }
 
-export default function RenovationJoinvilleLePont() {
+export default function RenovationGuyancourt() {
   return (
     <>
       <script
@@ -109,13 +109,13 @@ export default function RenovationJoinvilleLePont() {
       {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Joinville-le-Pont — 94340</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Guyancourt — 78280</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation maison<br className="hidden sm:block" /> Joinville-le-Pont
+            Rénovation appartement<br className="hidden sm:block" /> Guyancourt
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Joinville-le-Pont (94340) : villas et maisons bords de Marne, pavillons résidentiels dans cette commune animée du Val-de-Marne. Rénovation complète, isolation, décoration intérieure. Devis gratuit sous 48h.
+            Artisan rénovateur à Guyancourt (78280) : logements collectifs modernes de la ville nouvelle Saint-Quentin-en-Yvelines, résidences dynamiques dans une commune économiquement active. Rénovation complète, isolation, décoration intérieure contemporaine. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -139,24 +139,24 @@ export default function RenovationJoinvilleLePont() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Joinville-le-Pont
+            Nos services à Guyancourt
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               {
                 num: '01',
-                title: 'Villas bords de Marne',
-                desc: "Rénovation des villas et maisons de caractère en bordure de Marne à Joinville. Valorisation du patrimoine bâti, modernisation des installations, agencement intérieur sur mesure.",
+                title: 'Rénovation logements collectifs',
+                desc: "Rénovation complète des appartements modernes de Guyancourt : refonte des pièces d'eau, ouverture sur séjour, nouveaux revêtements de sols et murs, mise aux normes électrique. Un intérieur repensé de A à Z.",
               },
               {
                 num: '02',
-                title: 'Pavillons résidentiels',
-                desc: "Rénovation complète de pavillons : isolation des combles et murs, mise aux normes électrique, refonte de salles de bain et cuisines, choix de matériaux durables pour votre confort.",
+                title: 'Isolation thermique et phonique',
+                desc: "Traitement de l'isolation pour améliorer le confort acoustique et thermique de votre logement dans les résidences de Guyancourt. Économies d'énergie et qualité de vie renforcée.",
               },
               {
                 num: '03',
-                title: 'Décoration et finitions',
-                desc: "Parquet massif ou stratifié, carrelage grand format, peinture soignée, boiseries intérieures. Chaque détail est pensé pour sublimer votre intérieur joinvillais.",
+                title: 'Décoration intérieure moderne',
+                desc: "Cuisine ouverte et fonctionnelle, salle de bain épurée, parquet contrecollé ou vinyle design, peinture contemporaine. Un style actuel adapté aux logements de la ville nouvelle.",
               },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
@@ -174,7 +174,7 @@ export default function RenovationJoinvilleLePont() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Joinville-le-Pont
+            Prix rénovation à Guyancourt
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
@@ -186,12 +186,12 @@ export default function RenovationJoinvilleLePont() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture maison / appartement', '30 - 70 €/m²'],
-                  ['Rénovation salle de bain', '4 000 - 15 000 €'],
-                  ['Rénovation cuisine', '5 000 - 20 000 €'],
-                  ['Parquet (pose + fourniture)', '50 - 110 €/m²'],
+                  ['Peinture appartement', '30 - 70 €/m²'],
+                  ['Rénovation salle de bain', '4 000 - 12 000 €'],
+                  ['Rénovation cuisine', '4 000 - 15 000 €'],
+                  ['Sol stratifié / vinyle design', '35 - 80 €/m²'],
                   ['Rénovation complète appartement', '800 - 1 500 €/m²'],
-                  ['Rénovation villa bords de Marne', '1 500 - 2 500 €/m²'],
+                  ['Rénovation avec isolation renforcée', '1 200 - 2 000 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -210,10 +210,10 @@ export default function RenovationJoinvilleLePont() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <blockquote className="border-l-2 border-[#D4AF37] pl-6">
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-light italic mb-4">
-              "Nous avons fait appel à Espace Design pour la rénovation complète de notre villa à Joinville-le-Pont. Travail soigné, délais respectés, équipe réactive. Salle de bain et cuisine entièrement refaites, nous sommes ravis du résultat."
+              "Patrick a transformé notre appartement à Guyancourt en un espace moderne et lumineux. Isolation améliorée, cuisine ouverte, salle de bain refaite. Un artisan professionnel et à l'écoute, que nous recommandons vivement."
             </p>
             <cite className="text-[#B8960C] text-xs font-light uppercase tracking-widest not-italic">
-              Marc & Julie T. — Joinville-le-Pont, 94340
+              Karim L. — Guyancourt, 78280
             </cite>
           </blockquote>
         </div>
@@ -249,20 +249,20 @@ export default function RenovationJoinvilleLePont() {
           <div className="space-y-4">
             {[
               {
-                q: "Quel est le prix d'une rénovation à Joinville-le-Pont ?",
-                a: "Le coût d'une rénovation à Joinville-le-Pont varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les villas et maisons de caractère bords de Marne, comptez 1 500 à 2 500 €/m².",
+                q: "Quel est le prix d'une rénovation à Guyancourt ?",
+                a: "Le coût d'une rénovation à Guyancourt varie entre 800 et 1 500 €/m² pour une rénovation standard. Avec isolation renforcée pour les logements collectifs modernes, comptez 1 200 à 2 000 €/m².",
               },
               {
-                q: "Quel artisan contacter pour rénover une villa à Joinville-le-Pont ?",
-                a: "Espace Design intervient régulièrement à Joinville-le-Pont pour des rénovations de villas, pavillons et maisons bords de Marne. Assuré décennale, devis gratuit sous 48h.",
+                q: "Quel artisan contacter pour rénover un appartement à Guyancourt ?",
+                a: "Espace Design intervient régulièrement à Guyancourt et dans les communes de la ville nouvelle Saint-Quentin-en-Yvelines. Assuré décennale, devis gratuit sous 48h, un seul interlocuteur.",
               },
               {
-                q: "Comment rénover un pavillon à Joinville-le-Pont ?",
-                a: "Pour les pavillons joinvillais, nous proposons une rénovation globale : isolation, mise aux normes électrique, refonte des pièces d'eau, finitions sur mesure selon votre budget.",
+                q: "Comment rénover un logement collectif à Guyancourt ?",
+                a: "Pour les logements collectifs modernes de Guyancourt, nous proposons une rénovation complète : isolation phonique et thermique, refonte des pièces d'eau, cuisine ouverte, nouveaux sols et peintures.",
               },
               {
-                q: "Avez-vous une assurance décennale pour les travaux à Joinville-le-Pont ?",
-                a: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux à Joinville-le-Pont sont garantis 10 ans après la livraison.",
+                q: "Avez-vous une assurance décennale pour les travaux à Guyancourt ?",
+                a: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux à Guyancourt sont garantis 10 ans après la livraison.",
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -283,11 +283,11 @@ export default function RenovationJoinvilleLePont() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
-              { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
-              { href: '/renovation-champigny-sur-marne', label: 'Champigny-sur-Marne' },
-              { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
-              { href: '/renovation-vincennes', label: 'Vincennes' },
+              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
+              { href: '/renovation-montigny-le-bretonneux', label: 'Montigny-le-Bretonneux' },
+              { href: '/renovation-versailles', label: 'Versailles' },
+              { href: '/renovation-meudon', label: 'Meudon' },
+              { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
@@ -354,10 +354,10 @@ export default function RenovationJoinvilleLePont() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Joinville-le-Pont
+            Votre projet à Guyancourt
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Joinville-le-Pont et le Val-de-Marne.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Guyancourt et les Yvelines.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

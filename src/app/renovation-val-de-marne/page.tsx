@@ -65,6 +65,9 @@ const villes94 = [
   { href: '/renovation-valenton', label: 'Valenton' },
   { href: '/renovation-limeil-brevannes', label: 'Limeil-Brévannes' },
   { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
+  { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
+  { href: '/renovation-joinville-le-pont', label: 'Joinville-le-Pont' },
+  { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
 ]
 
 const services = [

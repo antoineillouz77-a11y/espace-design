@@ -3,16 +3,17 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Nogent-sur-Marne — Artisan & Devis Gratuit | Espace Design',
+  title: "Rénovation Nogent-sur-Marne (94130) — Artisan Rénovateur | Espace Design",
   description:
-    'Artisan rénovateur à Nogent-sur-Marne (94130) : maisons bourgeoises, villas, immeubles résidentiels. Rénovation 800-1500€/m². Devis gratuit 48h.',
+    "Artisan rénovateur à Nogent-sur-Marne (94130) : appartements haussmanniens, maisons bourgeoises bords de Marne, commune résidentielle aisée. Rénovation 800-2500€/m². Devis gratuit 48h.",
   keywords: [
     'rénovation appartement Nogent-sur-Marne',
-    'artisan rénovation Nogent 94',
+    'artisan rénovation Nogent-sur-Marne',
+    'rénovation maison Nogent-sur-Marne',
     'renovation Nogent-sur-Marne 94130',
-    'artisan Nogent Val-de-Marne',
-    'rénovation villa Nogent-sur-Marne',
-    'rénovation maison Nogent',
+    'entreprise renovation Nogent Val-de-Marne',
+    'artisan Nogent-sur-Marne 94',
+    'rénovation appartement haussmannien Nogent-sur-Marne',
   ],
 }
 
@@ -20,7 +21,7 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur à Nogent-sur-Marne (94130). Rénovation complète, salle de bain, cuisine, décoration haut de gamme.',
+  description: "Artisan rénovateur et décorateur intérieur à Nogent-sur-Marne.",
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-nogent-sur-marne',
   areaServed: {
@@ -40,52 +41,52 @@ const schemaLocal = {
   },
 }
 
-const schemaBreadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Nogent-sur-Marne', item: 'https://espacedesignparis.fr/renovation-nogent-sur-marne' },
-  ],
-}
-
 const schemaFaq = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Nogent-sur-Marne ?',
+      name: "Quel est le prix d'une rénovation à Nogent-sur-Marne ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le prix d\'une rénovation à Nogent-sur-Marne se situe entre 800 et 1 500 €/m² pour une rénovation complète. Pour les villas et maisons bourgeoises avec finitions haut de gamme, comptez 1 500 à 3 000 €/m². Devis gratuit sous 48h.',
+        text: "Le coût d'une rénovation à Nogent-sur-Marne varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les appartements haussmanniens et les maisons bourgeoises bords de Marne, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Espace Design intervient-il à Nogent-sur-Marne ?',
+      name: "Quel artisan contacter pour rénover un appartement haussmannien à Nogent-sur-Marne ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. Nous intervenons à Nogent-sur-Marne et dans les communes voisines : Vincennes, Fontenay-sous-Bois, Saint-Maur-des-Fossés, Joinville-le-Pont. Déplacement gratuit.',
+        text: "Espace Design intervient régulièrement à Nogent-sur-Marne pour des rénovations dans les immeubles haussmanniens et les maisons bourgeoises bords de Marne. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Rénovez-vous les villas et maisons bourgeoises à Nogent-sur-Marne ?',
+      name: "Comment rénover une maison bourgeoise bords de Marne à Nogent-sur-Marne ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Nogent-sur-Marne est une commune résidentielle prisée avec de nombreuses villas et maisons de caractère. Nous intervenons pour des rénovations complètes ou partielles avec des finitions haut de gamme adaptées au prestige de ces biens.',
+        text: "Pour les maisons bourgeoises de Nogent-sur-Marne, nous préservons les éléments d'époque (moulures, parquet, cheminées) tout en modernisant le confort. Matériaux nobles, finitions soignées, chaque projet est traité sur mesure.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Avez-vous une assurance décennale ?',
+      name: "Avez-vous une assurance décennale pour les travaux à Nogent-sur-Marne ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+        text: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux à Nogent-sur-Marne sont garantis 10 ans après la livraison.",
       },
     },
+  ],
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
+    { '@type': 'ListItem', position: 3, name: 'Nogent-sur-Marne', item: 'https://espacedesignparis.fr/renovation-nogent-sur-marne' },
   ],
 }
 
@@ -105,15 +106,16 @@ export default function RenovationNogentSurMarne() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
+      {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Val-de-Marne — Nogent-sur-Marne 94130</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Nogent-sur-Marne — 94130</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation Nogent-sur-Marne
+            Rénovation appartement<br className="hidden sm:block" /> Nogent-sur-Marne
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Nogent-sur-Marne (94130) : maisons bourgeoises, villas, immeubles résidentiels. Rénovation complète, salle de bain, cuisine, décoration haut de gamme. Devis gratuit sous 48h.
+            Artisan rénovateur à Nogent-sur-Marne (94130) : appartements haussmanniens, maisons bourgeoises bords de Marne, résidences de standing dans cette commune résidentielle aisée du Val-de-Marne. Rénovation complète et finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -133,6 +135,7 @@ export default function RenovationNogentSurMarne() {
         </div>
       </section>
 
+      {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
@@ -140,9 +143,21 @@ export default function RenovationNogentSurMarne() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros oeuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier à Nogent-sur-Marne.' },
-              { num: '02', title: 'Villas et maisons', desc: 'Rénovation complète de villas et maisons bourgeoises : extension, isolation, cuisine, salle de bain, aménagement de combles.' },
-              { num: '03', title: 'Finitions haut de gamme', desc: 'Menuiserie, parquet, carrelage, peinture décorative. Les détails qui transforment un intérieur en espace d\'exception à Nogent.' },
+              {
+                num: '01',
+                title: 'Rénovation haussmannienne',
+                desc: "Restauration des éléments d'époque — moulures, parquets chêne, cheminées — dans les immeubles haussmanniens de Nogent-sur-Marne, tout en modernisant le confort sans altérer le caractère du bien.",
+              },
+              {
+                num: '02',
+                title: 'Maisons bourgeoises bords de Marne',
+                desc: "Rénovation sur mesure des villas et maisons de caractère en bordure de Marne. Agencement intérieur, isolation thermique et décoration adaptés aux constructions bourgeoises nogentaises.",
+              },
+              {
+                num: '03',
+                title: 'Finitions et décoration',
+                desc: "Parquet point de Hongrie, salle de bain en pierre naturelle, peinture à la chaux, boiseries sur mesure. Des finitions haut de gamme pour valoriser votre appartement ou maison à Nogent-sur-Marne.",
+              },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -155,6 +170,7 @@ export default function RenovationNogentSurMarne() {
         </div>
       </section>
 
+      {/* Pricing table */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -170,12 +186,12 @@ export default function RenovationNogentSurMarne() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture appartement ou maison', '25 - 65 €/m²'],
-                  ['Rénovation salle de bain', '4 000 - 12 000 €'],
-                  ['Rénovation cuisine', '5 000 - 18 000 €'],
-                  ['Parquet (pose + fourniture)', '50 - 100 €/m²'],
-                  ['Rénovation complète appartement', '800 - 1 500 €/m²'],
-                  ['Rénovation villa ou maison', '900 - 3 000 €/m²'],
+                  ['Peinture appartement', '30 - 70 €/m²'],
+                  ['Rénovation salle de bain', '4 000 - 15 000 €'],
+                  ['Rénovation cuisine', '5 000 - 20 000 €'],
+                  ['Parquet (pose + fourniture)', '50 - 110 €/m²'],
+                  ['Rénovation complète', '800 - 1 500 €/m²'],
+                  ['Rénovation maison bourgeoise', '1 500 - 2 500 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -189,6 +205,21 @@ export default function RenovationNogentSurMarne() {
         </div>
       </section>
 
+      {/* Client quote */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <blockquote className="border-l-2 border-[#D4AF37] pl-6">
+            <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-light italic mb-4">
+              "Patrick a rénové notre appartement haussmannien à Nogent-sur-Marne avec un soin du détail remarquable. Moulures restaurées, parquet remis à neuf, salle de bain entièrement repensée. Un artisan sérieux, disponible et de confiance."
+            </p>
+            <cite className="text-[#B8960C] text-xs font-light uppercase tracking-widest not-italic">
+              Sophie M. — Nogent-sur-Marne, 94130
+            </cite>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Checkmarks */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -209,6 +240,7 @@ export default function RenovationNogentSurMarne() {
         </div>
       </section>
 
+      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -217,20 +249,20 @@ export default function RenovationNogentSurMarne() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Nogent-sur-Marne ?',
-                a: 'Le prix d\'une rénovation à Nogent-sur-Marne se situe entre 800 et 1 500 €/m² pour une rénovation complète. Pour les villas et maisons bourgeoises avec finitions haut de gamme, comptez 1 500 à 3 000 €/m².',
+                q: "Quel est le prix d'une rénovation à Nogent-sur-Marne ?",
+                a: "Le coût d'une rénovation à Nogent-sur-Marne varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les appartements haussmanniens et les maisons bourgeoises bords de Marne, comptez 1 500 à 2 500 €/m².",
               },
               {
-                q: 'Espace Design intervient-il à Nogent-sur-Marne ?',
-                a: 'Oui. Nous intervenons à Nogent-sur-Marne et dans les communes voisines : Vincennes, Fontenay-sous-Bois, Saint-Maur-des-Fossés, Joinville-le-Pont. Déplacement gratuit.',
+                q: "Quel artisan contacter pour rénover un appartement haussmannien à Nogent-sur-Marne ?",
+                a: "Espace Design intervient régulièrement à Nogent-sur-Marne pour des rénovations dans les immeubles haussmanniens et les maisons bourgeoises. Assuré décennale, devis gratuit sous 48h, un seul interlocuteur.",
               },
               {
-                q: 'Rénovez-vous les villas et maisons bourgeoises à Nogent-sur-Marne ?',
-                a: 'Oui, nous intervenons pour des rénovations complètes ou partielles avec des finitions haut de gamme adaptées au prestige des villas et maisons de Nogent-sur-Marne.',
+                q: "Comment rénover une maison bourgeoise bords de Marne à Nogent-sur-Marne ?",
+                a: "Pour les maisons bourgeoises nogentaises, nous préservons les éléments d'origine tout en modernisant les installations. Matériaux nobles, finitions soignées, suivi rigoureux du chantier.",
               },
               {
-                q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+                q: "Avez-vous une assurance décennale pour les travaux à Nogent-sur-Marne ?",
+                a: "Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux à Nogent-sur-Marne sont garantis 10 ans après la livraison.",
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -245,18 +277,17 @@ export default function RenovationNogentSurMarne() {
         </div>
       </section>
 
+      {/* Nearby cities */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
-              { href: '/renovation-vincennes', label: 'Vincennes' },
               { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
-              { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
+              { href: '/renovation-vincennes', label: 'Vincennes' },
               { href: '/renovation-joinville-le-pont', label: 'Joinville-le-Pont' },
-              { href: '/renovation-champigny-sur-marne', label: 'Champigny-sur-Marne' },
-              { href: '/renovation-paris-12e', label: 'Paris 12e' },
+              { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
@@ -271,6 +302,7 @@ export default function RenovationNogentSurMarne() {
         </div>
       </section>
 
+      {/* Service links */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -297,18 +329,18 @@ export default function RenovationNogentSurMarne() {
         </div>
       </section>
 
-      {/* Articles liés */}
+      {/* Guides utiles */}
       <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-appartement-copropriete-paris', label: 'Rénover en copropriété' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
-              { href: '/blog/isolation-acoustique-appartement-paris', label: 'Isolation acoustique' },
-              { href: '/blog/renovation-2-pieces-paris', label: 'Budget 2 pièces Paris' },
-              { href: '/blog/peinture-appartement-paris', label: 'Peinture appartement Paris' },
-              { href: '/blog/renovation-cuisine-ouverte-paris', label: 'Cuisine ouverte Paris' },
+              { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
+              { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain Paris' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénovation avant vente' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
+              { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
@@ -318,13 +350,14 @@ export default function RenovationNogentSurMarne() {
         </div>
       </section>
 
+      {/* Dark CTA */}
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
             Votre projet à Nogent-sur-Marne
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement à Nogent-sur-Marne et dans tout le Val-de-Marne.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Nogent-sur-Marne et le Val-de-Marne.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

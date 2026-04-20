@@ -51,6 +51,8 @@ const villes78 = [
   { href: '/renovation-mantes-la-ville', label: 'Mantes-la-Ville' },
   { href: '/renovation-meulan-en-yvelines', label: 'Meulan-en-Yvelines' },
   { href: '/renovation-les-mureaux', label: 'Les Mureaux' },
+  { href: '/renovation-montigny-le-bretonneux', label: 'Montigny-le-Bretonneux' },
+  { href: '/renovation-guyancourt', label: 'Guyancourt' },
 ]
 
 const services = [

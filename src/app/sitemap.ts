@@ -363,6 +363,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Yvelines (78) — nouvelles villes
     { url: `${base}/renovation-les-mureaux`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-montigny-le-bretonneux`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-guyancourt`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Essonne (91) — nouvelles villes
     { url: `${base}/renovation-savigny-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
