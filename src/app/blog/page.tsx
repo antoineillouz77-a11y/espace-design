@@ -2076,6 +2076,54 @@ const articles = [
     desc: "Artisan rénovateur à Pontoise (Val-d'Oise). Cuisine, salle de bain, parquet. Devis gratuit 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-bagnolet',
+    title: "Rénovation Appartement Bagnolet (93) — Guide 2025",
+    desc: "Rénover un appartement à Bagnolet (93). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-cachan',
+    title: "Rénovation Appartement Cachan (94) — Guide 2025",
+    desc: "Artisan rénovateur à Cachan (94). Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-chatenay-malabry',
+    title: "Rénovation Appartement Châtenay-Malabry (92) — 2025",
+    desc: "Rénover un appartement à Châtenay-Malabry (92). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-choisy-le-roi',
+    title: "Rénovation Appartement Choisy-le-Roi (94) — Guide 2025",
+    desc: "Artisan rénovateur à Choisy-le-Roi (94). Cuisine, salle de bain, parquet. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-franconville',
+    title: "Rénovation Appartement Franconville (95) — Guide 2025",
+    desc: "Rénover un appartement à Franconville (Val-d'Oise). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-herblay',
+    title: "Rénovation Appartement Herblay (95) — Guide 2025",
+    desc: "Artisan rénovateur à Herblay (95). Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-montfermeil',
+    title: "Rénovation Appartement Montfermeil (93) — Guide 2025",
+    desc: "Rénover un appartement à Montfermeil (93). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-noisy-le-sec',
+    title: "Rénovation Appartement Noisy-le-Sec (93) — Guide 2025",
+    desc: "Artisan rénovateur à Noisy-le-Sec (93). Cuisine, salle de bain, parquet. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
