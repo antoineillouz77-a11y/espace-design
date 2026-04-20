@@ -377,6 +377,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-appartement-paris-18e-montmartre`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/ouverture-cuisine-salon-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/revetement-sol-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-immeuble-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
+    // Val-d'Oise (95) — nouvelles villes
+    { url: `${base}/renovation-bezons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-taverny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Val-de-Marne (94) — nouvelles villes
+    { url: `${base}/renovation-limeil-brevannes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Pages hub département
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

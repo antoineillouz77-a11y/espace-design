@@ -816,6 +816,12 @@ const articles = [
     desc: "Choisir son revêtement sol à Paris : parquet massif, carrelage, béton ciré, LVT. Comparatif prix et conseils artisan 2025.",
     tag: 'Parquet',
   },
+  {
+    href: '/blog/renovation-immeuble-paris',
+    title: 'Rénovation Immeuble Paris : parties communes, façade & copropriété 2025',
+    desc: "Rénover les parties communes d'un immeuble parisien : hall, cage d'escalier, façade. Décision en copropriété, qui paie, coûts 2025.",
+    tag: 'Guides',
+  },
 ]
 
 export default function BlogPage() {

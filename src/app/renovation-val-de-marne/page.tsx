@@ -63,6 +63,7 @@ const villes94 = [
   { href: '/renovation-ablon-sur-seine', label: 'Ablon-sur-Seine' },
   { href: '/renovation-villeneuve-le-roi', label: 'Villeneuve-le-Roi' },
   { href: '/renovation-valenton', label: 'Valenton' },
+  { href: '/renovation-limeil-brevannes', label: 'Limeil-Brévannes' },
 ]
 
 const services = [

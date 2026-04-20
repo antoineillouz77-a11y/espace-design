@@ -48,6 +48,8 @@ const villes95 = [
   { href: '/renovation-deuil-la-barre', label: 'Deuil-la-Barre' },
   { href: '/renovation-enghien-les-bains', label: 'Enghien-les-Bains' },
   { href: '/renovation-osny', label: 'Osny' },
+  { href: '/renovation-bezons', label: 'Bezons' },
+  { href: '/renovation-taverny', label: 'Taverny' },
 ]
 
 const services = [
