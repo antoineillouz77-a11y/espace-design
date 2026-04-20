@@ -50,6 +50,9 @@ const villes93 = [
   { href: '/renovation-bondy', label: 'Bondy' },
   { href: '/renovation-epinay-sur-seine', label: 'Épinay-sur-Seine' },
   { href: '/renovation-noisy-le-grand', label: 'Noisy-le-Grand' },
+  { href: '/renovation-noisy-le-sec', label: 'Noisy-le-Sec' },
+  { href: '/renovation-romainville', label: 'Romainville' },
+  { href: '/renovation-les-lilas', label: 'Les Lilas' },
 ]
 
 const services = [
