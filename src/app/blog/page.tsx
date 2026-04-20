@@ -690,6 +690,12 @@ const articles = [
     desc: "Rénovation appartement dans le 4e arrondissement de Paris : Marais, Île Saint-Louis, Beaubourg. ABF, parquet, moulures. Devis 48h.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-paris-11e',
+    title: 'Rénovation Appartement Paris 11e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 11e arrondissement de Paris : Bastille, Oberkampf, Nation. Artisan local, devis 48h.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {

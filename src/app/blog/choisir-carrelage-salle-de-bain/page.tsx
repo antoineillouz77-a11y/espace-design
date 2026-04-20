@@ -8,15 +8,15 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Choisir Carrelage Salle de Bain Paris', item: 'https://espacedesignparis.fr/blog/choisir-carrelage-salle-de-bain' },
+    { '@type': 'ListItem', position: 3, name: 'Choisir son Carrelage Salle de Bain', item: 'https://espacedesignparis.fr/blog/choisir-carrelage-salle-de-bain' },
   ],
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Choisir son Carrelage Salle de Bain Paris : guide & prix 2025 | Espace Design',
-  description: 'Comment choisir le bon carrelage pour sa salle de bain à Paris : format, matière, adhérence, joints. Guide artisan et prix 2025.',
+  headline: 'Choisir son Carrelage Salle de Bain : format, matière & prix 2025 | Espace Design',
+  description: 'Comment choisir le carrelage pour sa salle de bain : 60x60, grès cérame, zellige. Anti-dérapant, joints époxy. Guide et prix 2025.',
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,37 +33,37 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel format de carrelage pour une petite salle de bain parisienne ?',
+      name: 'Quel carrelage choisir pour le sol de la salle de bain ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Pour une petite salle de bain parisienne (moins de 5 m²), les formats 30x60 ou 60x60 cm sont un excellent compromis : ils agrandissent visuellement l'espace grâce à peu de joints, sans être aussi encombrants que les grands formats 120x60. Les petits formats (20x20, mosaïque) peuvent convenir au sol pour leur adhérence naturelle mais alourdissent visuellement l'espace. Évitez les formats 120x60 dans les petites surfaces car la coupe et la pose deviennent très délicates dans des espaces anguleux.",
+        text: "Pour le sol de la salle de bain, il faut impérativement choisir un carrelage antidérapant classé R9 minimum (R10 recommandé pour les douches à l'italienne). Le grès cérame est le matériau de référence : dur, imperméable et facile d'entretien. Pour les petites salles de bain, les formats 20x20 ou 30x30 sont plus adaptés car ils permettent de multiplier les joints (qui jouent un rôle antidérapant). Pour les grandes salles de bain, les 60x60 ou 120x60 agrandissent visuellement l'espace.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Peut-on poser du carrelage sur de l\'ancien carrelage dans une salle de bain ?',
+      name: 'Peut-on poser du carrelage sur un ancien carrelage en salle de bain ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, sous conditions. L'ancien carrelage doit être solidement ancré (aucun carreau décollé ou sonnant creux), parfaitement plan (écarts inférieurs à 3 mm sous la règle de 2 m) et propre et dégraissé. La pose sur ancien carrelage augmente le sol de 10 à 15 mm, ce qui peut poser problème pour les seuils de porte et les évacuations. Un ragréage fin est parfois nécessaire pour corriger la planéité. En appartement parisien, cette solution évite la dépose et l'évacuation des gravats, ce qui est un avantage logistique non négligeable.",
+        text: "Oui, la pose de carrelage sur carrelage existant est possible si le support est sain, solidement fixé et plan. Avantages : pas de dépose (gain de temps et de budget, moins de poussière), plancher non abaissé. Contraintes : surélévation du sol de 8 à 15 mm (à vérifier avec les portes et les seuils), impossibilité de poser du grand format (la planéité du support doit être parfaite), et nécessité d'utiliser une colle spéciale carrelage sur carrelage. Budget économisé sur la dépose : 20 à 40 €/m².",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel joint choisir pour un carrelage de salle de bain à Paris ?',
+      name: 'Quels joints choisir pour la salle de bain : ciment ou époxy ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Pour une salle de bain parisienne, le joint époxy est la meilleure option : imperméable, anti-moisissures, résistant aux produits ménagers et aux chocs thermiques. Il est plus difficile à poser que le joint ciment (séchage rapide, nettoyage immédiat obligatoire) mais dure 2 à 3 fois plus longtemps. Le joint ciment blanc est acceptable mais jaunit avec le temps et nécessite une application de résine hydrofuge. Le joint de résine (polyuréthane) est une alternative mi-gamme entre ciment et époxy.",
+        text: "En salle de bain, les joints époxy sont nettement supérieurs aux joints ciment : imperméables, résistants aux moisissures, aux produits ménagers et aux chocs thermiques, ils ne se colorent pas et ne s'abîment pas. Inconvénient : pose plus technique et coût plus élevé (20 à 35 €/m² contre 8 à 15 €/m² pour le ciment). Les joints ciment restent acceptables pour les murs mais sont déconseillés au sol et dans la douche. En règle générale, un artisan qualifié posera systématiquement de l'époxy dans les zones humides.",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Choisir son Carrelage Salle de Bain Paris : guide & prix 2025 | Espace Design',
-  description: 'Comment choisir le bon carrelage pour sa salle de bain à Paris : format, matière, adhérence, joints. Guide artisan et prix 2025.',
+  title: 'Choisir son Carrelage Salle de Bain : format, matière & prix 2025 | Espace Design',
+  description: 'Comment choisir le carrelage pour sa salle de bain : 60x60, grès cérame, zellige. Anti-dérapant, joints époxy. Guide et prix 2025.',
 }
 
-export default function ArticleCarrelageSalleDeBain() {
+export default function ArticleChoisirCarrelageSDB() {
   return (
     <>
       <script
@@ -87,10 +87,10 @@ export default function ArticleCarrelageSalleDeBain() {
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Choisir son Carrelage Salle de Bain Paris : guide & prix 2025
+            Choisir son Carrelage Salle de Bain : format, matière &amp; prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Format, matière, adhérence au sol, joints : choisir le bon carrelage pour une salle de bain parisienne est un exercice qui combine technique et esthétique. Guide complet par un artisan carreleur parisien, avec les prix 2025.
+            Grès cérame 60x60, zellige artisanal, chevron en faïence, marbre : le choix du carrelage de salle de bain est décisif — esthétiquement et techniquement. Antidérapant, joints époxy, pose sur ancien carrelage : guide complet pour faire le bon choix en 2025.
           </p>
         </div>
       </section>
@@ -100,38 +100,32 @@ export default function ArticleCarrelageSalleDeBain() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Formats de carrelage : de la mosaïque au grand format
+              Choisir le bon format de carrelage selon la taille de la pièce
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le format du carrelage modifie profondément l&apos;apparence d&apos;une salle de bain. Les petits formats créent un effet rythmé et vintage, les grands formats donnent une impression d&apos;espace et de modernité. En pratique, le format doit aussi être adapté à la taille de la pièce et à la complexité des découpes.
+              Le format du carrelage influence directement la perception de l&apos;espace. Dans les salles de bain parisiennes, souvent petites, le choix du format est stratégique : un grand format dans une petite pièce peut paraître écrasant, un petit format dans une grande salle de bain manque de modernité.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  format: 'Petits formats (10x10, 20x20, mosaïque)',
-                  usage: 'Sol douche, niche, fond de baignoire',
-                  detail: "Nombreux joints qui augmentent naturellement l'adhérence au sol. Idéaux pour les zones humides (douche à l'italienne) où le coefficient R est une priorité. Tendance rétro ou méditerranéenne. Pose plus longue et plus coûteuse (plus de découpes, plus de joints à remplir).",
-                  prix: 'Pose : 55 – 80 €/m²',
+                  enjeu: 'Petits formats (20x20, 30x30, mosaïque)',
+                  detail: "Idéaux pour les salles de bain de moins de 5 m². Les petits formats suivent mieux les courbes (receveurs ronds, niche de douche) et augmentent la surface de joints, ce qui améliore l'adhérence au sol. Le carrelage mosaïque (2x2 ou 5x5 cm) est particulièrement adapté aux douches à l'italienne avec pente. Prix fourniture : 15 – 60 €/m².",
                 },
                 {
-                  format: 'Formats intermédiaires (30x60, 60x60)',
-                  usage: 'Sol et murs, toutes tailles de SdB',
-                  detail: "Le format 60x60 est aujourd'hui le plus demandé à Paris pour les salles de bain modernes : peu de joints, facilité d'entretien, aspect contemporain. Le 30x60 en pose décalée donne un effet allongé très apprécié dans les petites surfaces. Bon compromis entre facilité de pose et esthétique.",
-                  prix: 'Pose : 45 – 65 €/m²',
+                  enjeu: 'Formats moyens (45x45, 60x60)',
+                  detail: "Le 60x60 est le format le plus polyvalent : adapté aux salles de bain de 4 à 15 m², il agrandit visuellement l'espace sans être difficile à poser. C'est le format de référence des rénovations parisiennes standard. Disponible en grès cérame, faïence ou imitation marbre. Prix fourniture : 20 – 80 €/m².",
                 },
                 {
-                  format: 'Grands formats (80x80, 120x60, 120x120)',
-                  usage: 'Grandes salles de bain, douches à l\'italienne',
-                  detail: "Le 120x60 est la tendance forte des salles de bain haut de gamme parisiennes : joints quasi invisibles, effet marbre ou béton ciré très réaliste. Pose plus complexe (support parfaitement plan obligatoire, cales de nivellement) et chutes importantes. Nécessite souvent un ragréage préalable.",
-                  prix: 'Pose : 60 – 90 €/m²',
+                  enjeu: 'Grands formats (120x60, 120x120)',
+                  detail: "Les grands formats sont réservés aux salles de bain de 8 m² minimum. Ils donnent un effet luxueux et contemporain, réduisent le nombre de joints (donc l'entretien) mais exigent un support parfaitement plan. Peu adaptés aux petites salles de bain parisiennes. Prix fourniture : 40 – 150 €/m².",
+                },
+                {
+                  enjeu: 'Formats atypiques (zellige, chevron, subway)',
+                  detail: "Le zellige artisanal marocain (format 10x10 irrégulier), la brique subway (7,5x15 ou 10x30) et le carrelage en chevron connaissent un engouement fort. Effet authentique et chaleureux, mais pose plus longue (forme complexe ou irrégularité du zellige) et entretien spécifique pour le zellige non vitrifié. Prix fourniture : 40 – 180 €/m².",
                 },
               ].map((el) => (
-                <div key={el.format} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                  <div className="flex items-start justify-between gap-4 mb-1">
-                    <div className="font-medium text-[#1C1C1C] text-sm">{el.format}</div>
-                    <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.prix}</div>
-                  </div>
-                  <div className="text-[10px] text-gray-400 font-light mb-2">{el.usage}</div>
+                <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.enjeu}</div>
                   <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
                 </div>
               ))}
@@ -144,87 +138,76 @@ export default function ArticleCarrelageSalleDeBain() {
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Matières : grès cérame, faïence, marbre et zellige
+            Matières : grès cérame, faïence, marbre, zellige — comparatif
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le choix de la matière détermine la durabilité, l&apos;entretien et l&apos;esthétique du carrelage. En salle de bain, toutes les matières ne conviennent pas au sol — l&apos;adhérence (coefficient R) est le critère technique prioritaire.
+            Chaque matière a ses avantages et ses contraintes. Le grès cérame domine le marché pour sa solidité, mais le zellige ou le marbre apportent une dimension esthétique incomparable dans une salle de bain haut de gamme.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                matiere: 'Grès cérame',
-                usage: 'Sol + murs',
-                detail: "Matière de référence pour les salles de bain : très résistant, imperméable, disponible en finition mate, satinée ou polie. Imite parfaitement le marbre, le béton ou le bois. Coefficient anti-glisse R9 à R11 selon finition. Poids élevé (format 120x60 : 20 kg/m²) — vérifier la résistance du plancher.",
-                prix: '15 – 80 €/m² fourniture',
+                titre: 'Grès cérame (R9 / R10)',
+                solution: "Matériau de référence pour le sol et les murs. Imperméable (porosité quasi nulle), très résistant à l'abrasion et aux chocs. Disponible en finition mate, satinée ou brillante, en imitation bois, marbre ou béton. Le R9 convient au sol standard, le R10 est recommandé pour la douche. Entretien minimal.",
+                cout: '20 – 80 €/m²',
               },
               {
-                matiere: 'Faïence',
-                usage: 'Murs uniquement',
-                detail: "Carrelage émaillé traditionnel. Léger, facile à poser, grande variété de couleurs et de motifs. Réservé aux murs : trop fragile pour le sol (résistance à l'usure insuffisante). La faïence de salle de bain reste très présente dans les appartements parisiens des années 1970-1990.",
-                prix: '10 – 40 €/m² fourniture',
+                titre: 'Faïence émaillée',
+                solution: "Matériau classique pour les murs. Légère, facile à couper et moins coûteuse que le grès cérame. Surface émaillée brillante ou mate. Attention : la faïence est plus fragile (onglet cassant, sensible aux chocs) et moins adaptée au sol. Idéale pour les murs et les crédences de douche.",
+                cout: '10 – 40 €/m²',
               },
               {
-                matiere: 'Marbre naturel',
-                usage: 'Sol + murs',
-                detail: "Matériau noble, présent dans de nombreux hôtels particuliers et appartements haussmanniens parisiens. Nécessite un traitement hydrofuge régulier (sensible aux taches et à l'acidité). Froid au toucher, poids élevé. Coefficient anti-glisse faible en finition poli — à utiliser sur les murs ou avec traitement antidérapant.",
-                prix: '60 – 200 €/m² fourniture',
+                titre: 'Marbre naturel',
+                solution: "Le marbre confère un aspect luxueux inégalable. Froid au toucher, il convient aux salles de bain chauffées au sol. Contraintes importantes : porosité naturelle (imperméabiliser avec une résine), sensibilité aux acides (produits de nettoyage), et entretien régulier. Réservé aux projets haut de gamme avec artisan spécialisé.",
+                cout: '60 – 250 €/m²',
               },
               {
-                matiere: 'Zellige',
-                usage: 'Murs, crédences, niches',
-                detail: "Carrelage marocain artisanal en terre cuite émaillée. Irrégularités de surface et de couleur qui lui donnent un caractère unique. Très tendance dans les salles de bain et cuisines parisiennes branchées. Pose délicate (joints larges, niveaux irréguliers). Réservé aux murs — trop fragile pour le sol.",
-                prix: '50 – 150 €/m² fourniture',
+                titre: 'Zellige artisanal',
+                solution: "Carrelage émaillé marocain aux reflets irisés et aux légères irrégularités de surface caractéristiques. Très tendance, il apporte chaleur et authenticité. Pose délicate (format irrégulier, joints larges). Entretien plus contraignant : imperméabilisation des joints obligatoire, nettoyage doux uniquement. Idéal en mur ou niche de douche.",
+                cout: '40 – 180 €/m²',
               },
             ].map((el) => (
-              <div key={el.matiere} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-2 mb-1">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.matiere}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.prix}</div>
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
-                <div className="text-[10px] text-gray-400 font-light mb-2">{el.usage}</div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
               </div>
             ))}
-          </div>
-          <div className="bg-[#1C1C1C] rounded-lg p-5 text-sm">
-            <div className="text-[#D4AF37] font-medium mb-2">Coefficient anti-glisse (R) : ce que vous devez savoir</div>
-            <div className="text-gray-300 font-light leading-relaxed">
-              Pour le sol d&apos;une salle de bain, la norme impose un coefficient R9 minimum. R10 est recommandé pour les douches à l&apos;italienne, R11 pour les douches extérieures ou espaces balnéo. Les carrelages polis (marbre, grès cérame brillant) ont souvent un coefficient R6 ou R7 — dangereux au sol mouillé. Toujours vérifier la fiche technique avant achat.
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 3 — Joints */}
+      {/* Section 3 — Joints et pose */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Joints de carrelage : ciment, époxy et résine
+            Joints, antidérapant et pose sur ancien carrelage
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le joint est souvent le parent pauvre d&apos;un chantier de carrelage — pourtant c&apos;est lui qui détermine la longévité de la salle de bain. En milieu humide, un joint de mauvaise qualité ou mal appliqué devient une source de moisissures et d&apos;infiltrations en quelques mois.
+            Le choix des joints et la préparation du support sont souvent négligés — pourtant, ils conditionnent la durabilité et l&apos;entretien de votre carrelage sur le long terme.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Joint ciment gris ou blanc',
-                prix: 'Inclus dans le prix de pose',
-                detail: "Joint traditionnel, facile à poser. Le blanc jaunit avec le temps et capte les moisissures en zone humide. Le gris est plus neutre et plus masquant. À protéger obligatoirement avec une résine hydrofuge après pose. Durée de vie : 5 à 10 ans avant rejointoiement.",
+                type: 'Joints époxy : la solution durable en zone humide',
+                prix: '20 – 35 €/m²',
+                detail: "Les joints époxy sont imperméables, résistants aux moisissures et aux produits ménagers agressifs. Ils ne se colorent pas avec le temps et ne nécessitent aucun traitement. Leur pose est plus technique (temps ouvert court, nettoyage immédiat) mais leur durabilité justifie amplement l'investissement. Recommandés pour le sol et la douche.",
               },
               {
-                type: 'Joint époxy',
-                prix: '+ 5 à 10 €/m² par rapport au ciment',
-                detail: "Référence technique pour les salles de bain : imperméable, anti-moisissures, résistant aux détergents et aux chocs thermiques. Durée de vie 3 fois supérieure au ciment. Pose difficile (séchage très rapide, nettoyage immédiat obligatoire) — réservée aux artisans carreleurs expérimentés. À privilégier absolument en douche.",
+                type: 'Joints ciment : économiques mais à éviter en douche',
+                prix: '8 – 15 €/m²',
+                detail: "Les joints ciment sont plus simples à poser et moins coûteux, mais ils absorbent l'humidité et peuvent se tacher, se fissurer ou développer des moisissures en zone très humide. Acceptables sur les murs de salle de bain mais déconseillés dans la douche ou au sol.",
               },
               {
-                type: 'Joint résine (polyuréthane)',
-                prix: '+ 3 à 6 €/m² par rapport au ciment',
-                detail: "Solution intermédiaire entre ciment et époxy. Flexibilité supérieure au ciment (absorbe les micro-mouvements du support). Résistance à l'humidité correcte. Pose plus simple que l'époxy. Idéal pour les baignoires et douches à fiable trafic.",
+                type: 'Antidérapance : classement R et obligation réglementaire',
+                prix: 'Inclus dans le matériau',
+                detail: "En France, le sol d'une salle de bain doit être antidérapant. Le classement R (R9 à R13) mesure la résistance au glissement : R9 est le minimum légal pour un sol intérieur, R10 est recommandé pour la douche à l'italienne, R11-R13 pour les espaces extérieurs. Attention : un carrelage mural brillant peut être magnifique mais ne doit jamais être utilisé au sol sans vérification du classement.",
               },
               {
-                type: 'Joint de fractionnement (silicone)',
-                prix: '5 – 15 € par joint linéaire',
-                detail: "Obligatoire aux jonctions mur-sol et autour des équipements sanitaires (baignoire, douche, lavabo). Le silicone neutre absorbe les dilatations différentielles entre le carrelage et les équipements. À renouveler tous les 5 à 8 ans en zone humide.",
+                type: 'Pose sur ancien carrelage : quand et comment',
+                prix: 'Économie de 20 – 40 €/m²',
+                detail: "La pose sur carrelage existant est possible si le support est parfaitement adhérent et plan. Elle évite la dépose (dusty, bruyante, plus longue) et économise 20 à 40 €/m². Contraintes : surélévation du sol de 8 à 15 mm, format limité (60x60 maximum recommandé), colle spécifique carrelage-sur-carrelage obligatoire. À éviter si le support est décollé, fissuré ou présentant des désaffleurs importants.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -239,37 +222,39 @@ export default function ArticleCarrelageSalleDeBain() {
         </div>
       </section>
 
-      {/* Section 4 — Budget */}
+      {/* Section 4 — Prix */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix de pose du carrelage à Paris : tableau 2025
+            Tableau des prix : carrelage salle de bain fourni et posé en 2025
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les prix s&apos;entendent main d&apos;oeuvre pose uniquement, fourniture carrelage non incluse, pour un carreleur parisien.
+            Les prix ci-dessous incluent la fourniture du carrelage, la colle, les joints, et la main d&apos;oeuvre de pose à Paris.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Prestation</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix pose</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Détail</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Type de carrelage</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Fourniture</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Pose</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Total / m²</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { prestation: 'Carrelage mural format 30x60', prix: '45 – 60 €/m²', detail: 'Pose collée, joint ciment inclus' },
-                  { prestation: 'Carrelage sol format 60x60', prix: '50 – 70 €/m²', detail: 'Pose collée, joint époxy recommandé' },
-                  { prestation: 'Grand format 120x60 sol ou mur', prix: '60 – 90 €/m²', detail: 'Ragréage souvent nécessaire en supplément' },
-                  { prestation: 'Mosaïque / petits formats', prix: '55 – 85 €/m²', detail: 'Pose plus longue, nombreuses découpes' },
-                  { prestation: 'Zellige (mur)', prix: '70 – 100 €/m²', detail: 'Joints larges, niveaux irréguliers' },
-                  { prestation: 'Dépose ancien carrelage + évacuation', prix: '20 – 40 €/m²', detail: 'Selon épaisseur et adhérence' },
+                  { type: 'Faïence standard (mur)', fourniture: '10 – 25 €', pose: '40 – 60 €', total: '50 – 85 €' },
+                  { type: 'Grès cérame 60x60', fourniture: '25 – 50 €', pose: '50 – 70 €', total: '75 – 120 €' },
+                  { type: 'Grand format 120x60', fourniture: '40 – 100 €', pose: '70 – 100 €', total: '110 – 200 €' },
+                  { type: 'Zellige artisanal', fourniture: '60 – 180 €', pose: '80 – 120 €', total: '140 – 300 €' },
+                  { type: 'Marbre naturel', fourniture: '80 – 250 €', pose: '80 – 130 €', total: '160 – 380 €' },
+                  { type: 'Carrelage chevron / subway', fourniture: '30 – 80 €', pose: '70 – 100 €', total: '100 – 180 €' },
                 ].map((row, i) => (
-                  <tr key={row.prestation} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.prestation}</td>
-                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prix}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.detail}</td>
+                  <tr key={row.type} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.type}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.fourniture}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.pose}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.total}</td>
                   </tr>
                 ))}
               </tbody>
@@ -278,16 +263,16 @@ export default function ArticleCarrelageSalleDeBain() {
 
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Checklist avant de choisir son carrelage
+              Nos recommandations pour bien choisir
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "Vérifier le coefficient anti-glisse R pour les carreaux de sol (R9 minimum)",
-                "S'assurer que le format choisi est adapté à la taille de la pièce",
-                "Prévoir 10 à 15% de chutes supplémentaires sur la quantité commandée",
-                "Choisir un joint époxy pour la douche et les zones les plus humides",
-                "Vérifier la planéité du support avant de commander en grand format",
-                "Prévoir les joints de silicone aux jonctions sanitaires et mur-sol",
+                "Toujours vérifier le classement antidérapant (R9 minimum au sol, R10 en douche)",
+                "Préférer les joints époxy en zone humide pour éviter moisissures et taches",
+                "Commander 10% de surplus pour les coupes et les casses",
+                "Harmoniser le format du sol et des murs pour un effet cohérent",
+                "Tester la couleur des joints avant pose définitive — ils changent l'effet visuel",
+                "Pour le zellige et le marbre, toujours choisir un artisan carreleur expérimenté",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -300,12 +285,12 @@ export default function ArticleCarrelageSalleDeBain() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -315,15 +300,15 @@ export default function ArticleCarrelageSalleDeBain() {
       </section>
 
       {/* Voir aussi */}
-      <section className="py-12 bg-white border-t border-gray-100">
+      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/carrelage-paris', title: 'Carrelage Paris' },
-              { href: '/salle-de-bain-paris', title: 'Rénovation salle de bain Paris' },
-              { href: '/blog/renovation-parquet-massif-paris', title: 'Parquet massif Paris' },
-              { href: '/blog/renovation-cuisine-americaine-paris', title: 'Cuisine américaine Paris' },
+              { href: '/blog/renovation-salle-de-bain-paris', title: 'Rénovation salle de bain Paris' },
+              { href: '/blog/douche-italienne-paris', title: 'Douche italienne Paris' },
+              { href: '/blog/carrelage-salle-de-bain-paris', title: 'Carrelage salle de bain Paris' },
+              { href: '/blog/renovation-appartement-paris-2e', title: 'Rénovation appartement Paris 2e' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -338,7 +323,7 @@ export default function ArticleCarrelageSalleDeBain() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
@@ -367,10 +352,10 @@ export default function ArticleCarrelageSalleDeBain() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Carrelez votre salle de bain parisienne avec un artisan local
+          Votre projet carrelage salle de bain à Paris
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Artisan carreleur parisien. Devis gratuit sous 48h. Pose soignée, joints impeccables.
+          Artisan carreleur qualifié. Devis gratuit sous 48h. Pose soignée et finitions impeccables.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

@@ -166,24 +166,27 @@ export default function RenovationLaCourneuve() {
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-[#F2F2EE]">
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Petit travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Moyen travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Grand travaux</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
-                {[
-                  ['Peinture appartement', '25 - 60 €/m²'],
-                  ['Rénovation salle de bain', '3 500 - 12 000 €'],
-                  ['Rénovation cuisine', '4 000 - 15 000 €'],
-                  ['Parquet (pose + fourniture)', '45 - 100 €/m²'],
-                  ['Rénovation complète appartement', '800 - 1 200 €/m²'],
-                  ['Rénovation avec mise aux normes', '1 200 - 1 500 €/m²'],
-                ].map(([label, price]) => (
-                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
-                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
-                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
-                  </tr>
-                ))}
+                <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                  <td className="px-5 py-3 text-gray-700 font-light">Peinture pièce : 300–700 €</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Salle de bain : 3 500–9 000 €</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Rénovation complète : 800–1 200 €/m²</td>
+                </tr>
+                <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                  <td className="px-5 py-3 text-gray-700 font-light">Pose parquet : 45–100 €/m²</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Cuisine : 4 000–12 000 €</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Réhabilitation avec normes : 1 200–1 500 €/m²</td>
+                </tr>
+                <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                  <td className="px-5 py-3 text-gray-700 font-light">Carrelage : 40–85 €/m²</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Électricité appartement : 3 000–7 000 €</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Pavillon entier : sur devis</td>
+                </tr>
               </tbody>
             </table>
           </div>

@@ -36,23 +36,23 @@ const schemaFaq = {
       name: "Quel est le prix d'une rénovation dans le 2e arrondissement de Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Dans le 2e arrondissement, le prix d'une rénovation complète se situe entre 1 800 et 3 500 €/m² selon l'état du bien, le niveau de finition souhaité et les contraintes de l'immeuble. Une rénovation partielle (peinture, sol, cuisine ou salle de bain) est possible à partir de 800-1 200 €/m². Comptez un budget minimum de 15 000 € pour un appartement de 30 m² entièrement refait.",
+        text: "Dans le 2e arrondissement, le prix d'une rénovation varie entre 1 800 et 3 500 €/m² selon l'ampleur des travaux et la localisation. Le quartier de Montorgueil, très prisé, pousse les budgets vers le haut. Une rénovation légère (peinture, sol, salle de bain) se situe autour de 900 à 1 400 €/m². Une rénovation complète d'un loft de 70 m² dans l'ancien quartier du Sentier — incluant électricité NF C 15-100, plomberie, isolation, cuisine ouverte et salle de bain — tourne autour de 100 000 à 180 000 €. Les anciens ateliers du secteur textile Sentier nécessitent souvent des surcoûts liés à la création de distribution intérieure.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quelles sont les spécificités des anciens ateliers textiles du Sentier ?',
+      name: 'Quels sont les travaux les plus courants dans le 2e arrondissement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le quartier du Sentier recèle de nombreux anciens ateliers de confection reconvertis en appartements ou lofts. Ces espaces présentent des caractéristiques particulières : grandes hauteurs sous plafond (3,50 m à plus de 5 m), larges baies vitrées industrielles, structures métalliques apparentes et plateaux ouverts. La rénovation de ces biens demande une expertise spécifique : traitement acoustique renforcé, mise aux normes électriques complète, et conception sur mesure pour tirer parti des volumes atypiques. Prévoir 2 500 à 4 500 €/m² pour une rénovation complète de qualité.",
+        text: "Le 2e arrondissement est l'un des arrondissements parisiens qui connaît la plus forte gentrification depuis les années 2010. L'ancien quartier du Sentier s'est transformé en pôle de la tech et des start-ups, attirant une population jeune et aisée. Les travaux les plus courants sont : la rénovation complète d'appartements anciens dans des immeubles haussmanniens ou du 19e siècle (parquet, peinture, cuisine, salle de bain), la transformation d'anciens locaux commerciaux ou d'ateliers en lofts ou appartements, et la mise aux normes énergétique (isolation, double vitrage) de biens en DPE F ou G.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Faut-il des autorisations spéciales pour rénover dans le 2e arrondissement ?',
+      name: 'Quelles sont les contraintes spécifiques pour rénover autour de Montorgueil ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le 2e arrondissement comporte des zones patrimoniales (notamment autour de la Bourse) où des contraintes architecturales s'appliquent. Pour des travaux modifiant l'aspect extérieur (ravalement, fenêtres, balcons), une déclaration préalable de travaux est nécessaire. À l'intérieur, la réglementation de copropriété prime : tout abattage de cloison doit être déclaré au syndic. Les travaux sur des éléments porteurs nécessitent une étude de structure et une déclaration en mairie.",
+        text: "Le quartier Montorgueil est l'un des secteurs les plus protégés du 2e arrondissement. La rue Montorgueil et ses abords font l'objet d'une protection particulière au titre du Plan Local d'Urbanisme de Paris : les devantures, enseignes et façades sont réglementées. Pour les appartements en étages, les travaux intérieurs sont libres, mais toute modification de l'aspect extérieur (fenêtres, volets, balcons) nécessite une déclaration préalable soumise à l'avis de l'Architecte des Bâtiments de France. Les copropriétés de la rue Montorgueil et de ses abords ont souvent des règlements très stricts.",
       },
     },
   ],
@@ -90,34 +90,37 @@ export default function ArticleRenovationParis2e() {
             Rénovation Appartement Paris 2e : artisan &amp; prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Le 2e arrondissement connaît une transformation profonde : le Sentier, jadis coeur du textile, est devenu l&apos;un des hubs startup les plus dynamiques d&apos;Europe. Montorgueil attire une clientèle aisée, les lofts d&apos;anciens ateliers se rénovent. Guide complet pour rénover votre appartement dans le 2e, avec les prix 2025.
+            Bourse, Sentier, Montorgueil : le 2e arrondissement est le plus petit de Paris mais l&apos;un des plus dynamiques. Ancien quartier du textile reconverti en hub tech et créatif, il concentre une offre immobilière atypique — lofts dans d&apos;anciens ateliers, appartements haussmanniens et immeubles de commerce reconvertis. Guide complet pour rénover dans le 2e en 2025.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Quartiers */}
+      {/* Section 1 — Spécificités du 2e */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les quartiers du 2e et leurs spécificités en rénovation
+              Sentier, Bourse, Montorgueil : les spécificités du 2e arrondissement
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le 2e arrondissement est le plus petit de Paris, mais l&apos;un des plus hétérogènes. Trois quartiers bien distincts impliquent des typologies de biens — et de travaux — très différentes.
+              Le 2e arrondissement est le plus petit arrondissement de Paris (moins de 22 000 habitants) mais l&apos;un des plus dynamiques. L&apos;ancien quartier du Sentier, historiquement dédié à l&apos;industrie textile, s&apos;est transformé depuis les années 2010 en un pôle créatif et tech très prisé. Les anciens ateliers de confection ont été progressivement reconvertis en appartements, lofts ou bureaux.
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+              Le parc immobilier du 2e est très hétérogène : immeubles haussmanniens de prestige autour de la Bourse, anciens immeubles de rapport du 19e siècle dans le Sentier, quelques constructions modernes et de nombreux rez-de-chaussée commerciaux convertis en habitation. Les appartements du 2e sont souvent atypiques et à fort potentiel de valorisation après rénovation.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Sentier — anciens ateliers textiles devenus lofts',
-                  detail: "La gentrification du Sentier s'est accélérée avec l'arrivée des startups et des agences créatives. Les anciens ateliers de confection se transforment en lofts lumineux aux hauteurs généreuses. Rénovation typique : décloisonnement, béton ciré au sol, cuisines ouvertes, électricité en apparent style industriel. Budget : 2 500 – 4 500 €/m².",
+                  enjeu: 'Lofts dans anciens ateliers du Sentier',
+                  detail: "Les anciens ateliers de confection textile du Sentier sont souvent de grands plateaux en open space, avec de belles hauteurs sous plafond (3 à 5 m) et des structures métalliques apparentes. Leur reconversion en appartement nécessite la création de cloisons, l'installation d'un système de chauffage et de ventilation, et une mise aux normes électrique et plomberie complète. Ces espaces atypiques séduisent les acquéreurs cherchant des logements sortant de l'ordinaire.",
                 },
                 {
-                  enjeu: 'Montorgueil — appartements bourgeois très demandés',
-                  detail: "La rue Montorgueil et ses abords concentrent des appartements haussmanniens ou du début XXe très prisés. Plafonds à moulures, parquets anciens, cheminées en marbre : la rénovation doit préserver le cachet tout en modernisant confort et équipements. Budget : 1 800 – 3 500 €/m² selon niveau de finition.",
+                  enjeu: 'Quartier Montorgueil — très prisé et protégé',
+                  detail: "La rue Montorgueil et ses abords constituent l'un des secteurs les plus recherchés du 2e arrondissement. Les appartements y sont très demandés et les prix élevés. La proximité des commerces, restaurants et marchés est un atout majeur. Les façades et devantures sont réglementées par les ABF, ce qui rend les travaux sur l'extérieur complexes.",
                 },
                 {
-                  enjeu: 'Bourse — immeubles classiques à contraintes patrimoniales',
-                  detail: "Autour du Palais Brongniart, les immeubles des XVIIIe-XIXe siècles sont soumis à des contraintes architecturales strictes. Les façades sont souvent protégées. À l'intérieur, les distributions originales demandent une expertise spécifique pour être modernisées sans dénaturer le bien.",
+                  enjeu: 'Immeubles haussmanniens autour de la Bourse',
+                  detail: "Le secteur de la Bourse de Commerce concentre des immeubles haussmanniens de qualité, avec les caractéristiques typiques : parquet en point de Hongrie, moulures, cheminées en marbre, hauteur sous plafond de 3 à 3,5 m. La rénovation de ces biens nécessite une attention particulière aux éléments patrimoniaux.",
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -130,36 +133,36 @@ export default function ArticleRenovationParis2e() {
         </div>
       </section>
 
-      {/* Section 2 — Lofts ateliers */}
+      {/* Section 2 — Travaux courants */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Rénover un loft ou un ancien atelier dans le 2e
+            Travaux les plus demandés dans le 2e arrondissement
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les anciens ateliers textiles du Sentier constituent un parc immobilier unique à Paris. Hauts de plafond, lumineux et dotés de grandes façades vitrées, ils séduisent mais imposent des travaux spécifiques que tous les artisans ne maîtrisent pas.
+            La gentrification rapide du 2e et la diversité de son parc immobilier génèrent une demande variée, des rénovations légères aux transformations d&apos;espaces industriels en lofts.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Isolation thermique et phonique',
-                solution: "Les planchers industriels transmettent bien les bruits d'impact. Un complexe résilient sous revêtement est indispensable. Les grandes baies vitrées simple vitrage doivent être remplacées par du double ou triple vitrage à faible émissivité.",
-                cout: '80 – 200 €/m²',
+                titre: 'Rénovation appartement haussmannien',
+                detail: "Les appartements haussmanniens du 2e méritent une rénovation soignée qui respecte leur cachet : restauration du parquet en point de Hongrie, conservation des moulures et cheminées, mise aux normes électrique discrète. La cuisine ouverte sur le salon est très demandée dans ce type de bien.",
+                cout: '1 500 – 2 500 €/m²',
               },
               {
-                titre: 'Mise aux normes électriques',
-                solution: "Les anciens ateliers disposent souvent d'installations trifasées ou de tableaux vétustes. Une remise aux normes NF C 15-100 complète est systématiquement nécessaire avant toute rénovation. Prévoir le passage de nouvelles gaines et la création de circuits dédiés.",
-                cout: '80 – 150 €/m²',
+                titre: 'Reconversion atelier en loft',
+                detail: "La transformation d'un ancien atelier du Sentier en loft contemporain est l'un des chantiers les plus demandés dans le 2e. Cela implique la création de cloisons (chambre, salle de bain), l'installation d'un chauffage, une isolation acoustique sérieuse et une mise aux normes complète.",
+                cout: '2 000 – 3 500 €/m²',
               },
               {
-                titre: 'Cloisonnement et création de pièces',
-                solution: "Un plateau nu de 80-150 m² doit être cloisonné intelligemment. La cloison en verre ou verrière métallique préserve la luminosité tout en créant des espaces définis. Cette solution préserve l'esprit loft tout en assurant l'intimité nécessaire.",
-                cout: '300 – 800 €/ml',
+                titre: 'Cuisine ouverte et aménagement',
+                detail: "La création d'une cuisine ouverte dans un appartement du 2e (démolition de la cloison existante, réalisation du comptoir, raccordements plomberie et électricité) est l'une des prestations les plus demandées. Elle améliore significativement la luminosité et la convivialité du logement.",
+                cout: '8 000 – 20 000 €',
               },
               {
-                titre: 'Cuisine ouverte sur mesure',
-                solution: "Dans les lofts, la cuisine américaine est la norme. L'enjeu est la ventilation : une hotte déportée ou à recyclage sans gaine est souvent la seule solution sans percement de façade. Prévoir une extraction performante pour les grandes surfaces.",
-                cout: '8 000 – 25 000 €',
+                titre: 'Rénovation salle de bain complète',
+                detail: "Les salles de bain des appartements anciens du 2e nécessitent souvent une rénovation complète : reconfiguration de l'espace, douche à l'italienne, faïence contemporaine, robinetterie de qualité. Une salle de bain bien rénovée est un argument fort lors de la revente.",
+                cout: '7 000 – 15 000 €',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -167,43 +170,38 @@ export default function ArticleRenovationParis2e() {
                   <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
                   <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 3 — Travaux courants */}
+      {/* Section 3 — Valorisation et tendances */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Travaux les plus demandés dans le 2e arrondissement
+            Montorgueil et Sentier : rénover pour valoriser dans le 2e
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Qu&apos;il s&apos;agisse d&apos;un appartement haussmannien ou d&apos;un loft, les propriétaires du 2e arrondissement partagent des priorités similaires en matière de rénovation.
+            Le marché immobilier du 2e arrondissement récompense fortement les rénovations de qualité, en particulier dans les quartiers Montorgueil et Sentier où la demande reste très soutenue.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Réfection complète de salle de bain',
-                prix: '6 000 – 18 000 €',
-                detail: "La salle de bain est le poste de rénovation le plus demandé. Dans les appartements anciens du 2e, les salles de bain sont souvent exiguës. Redistribution de l'espace, grandes douches à l'italienne, double vasque, chauffage au sol : une rénovation complète transforme le quotidien.",
+                type: 'Valorisation immobilière dans le 2e',
+                prix: '+15 à +35 % de valeur',
+                detail: "Un appartement bien rénové dans le 2e, notamment autour de Montorgueil, peut se valoriser de 20 à 35 % par rapport au même bien dans son état d'origine. Les acheteurs et locataires du 2e sont prêts à payer le prix fort pour un logement clé-en-main avec des prestations de qualité.",
               },
               {
-                type: 'Rénovation cuisine',
-                prix: '8 000 – 20 000 €',
-                detail: "Cuisine équipée moderne avec électroménager intégré, plan de travail en quartz ou marbre, crédence carrelée. Dans les appartements du quartier Montorgueil, l'ouverture de la cuisine sur le séjour est très demandée — sous réserve de l'accord de la copropriété.",
+                type: 'Tendances déco du 2e arrondissement',
+                prix: 'Style industriel-chic',
+                detail: "Le style industriel-chic — métal peint, béton ciré, bois brut, verrières intérieures — est particulièrement adapté aux lofts du Sentier et très demandé dans le 2e. Les cuisines ouvertes avec îlot central, les salles de bain en marbre ou en terrazzo et les bibliothèques intégrées font partie des éléments les plus valorisants.",
               },
               {
-                type: 'Parquet ancien : rénovation ou remplacement',
-                prix: '40 – 120 €/m²',
-                detail: "Les appartements anciens du 2e disposent souvent de parquets en point de Hongrie ou en chêne massif. Ponçage, vitrification ou huilage : une rénovation bien menée redonne tout leur éclat à ces sols. Si le parquet est trop dégradé, une pose de parquet massif ou contrecollé prend le relais.",
-              },
-              {
-                type: 'Peinture et enduits décoratifs',
-                prix: '25 – 60 €/m²',
-                detail: "Dans les anciens appartements, les murs présentent souvent plusieurs couches de peinture et des irrégularités. Un travail de préparation soigné est indispensable avant toute finition qualitative. Béton ciré, stucco, peinture mate haut de gamme : le 2e arrondissement apprécie les finitions soignées.",
+                type: 'Impact DPE dans le 2e',
+                prix: 'DPE C à D recommandé',
+                detail: "Les appartements du 2e arrondissement sont souvent en DPE E ou F dans les immeubles antérieurs aux années 1970. Une rénovation énergétique (isolation des murs par l'intérieur, remplacement des fenêtres, chauffage performant) permet de passer en DPE C ou D et d'élargir considérablement le pool d'acheteurs ou de locataires potentiels.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -218,36 +216,57 @@ export default function ArticleRenovationParis2e() {
         </div>
       </section>
 
-      {/* Section 4 — Budget */}
+      {/* Section 4 — Budget et prix */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix de rénovation dans le 2e arrondissement en 2025
+            Prix de rénovation dans le 2e arrondissement : budget 2025
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les prix ci-dessous s&apos;entendent main d&apos;oeuvre et matériaux inclus, pour un appartement parisien standard dans le 2e arrondissement.
+            Les prix ci-dessous s&apos;entendent pour un appartement ancien du 2e arrondissement, main d&apos;oeuvre et matériaux inclus, hors mobilier.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
                   <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Type de rénovation</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix / m²</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Exemple 50 m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Travaux inclus</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix /m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget 55 m²</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { type: 'Rafraîchissement (peinture + sol)', prix: '400 – 700 €', exemple: '20 000 – 35 000 €' },
-                  { type: 'Rénovation partielle (cuisine ou SDB)', prix: '700 – 1 200 €', exemple: '35 000 – 60 000 €' },
-                  { type: 'Rénovation complète standard', prix: '1 800 – 2 500 €', exemple: '90 000 – 125 000 €' },
-                  { type: 'Rénovation complète haut de gamme', prix: '2 500 – 3 500 €', exemple: '125 000 – 175 000 €' },
-                  { type: 'Loft / atelier reconversion complète', prix: '2 500 – 4 500 €', exemple: 'Sur devis' },
+                  {
+                    type: 'Légère',
+                    travaux: 'Peinture + parquet + salle de bain',
+                    prixM2: '900 – 1 400 €',
+                    budget: '49 500 – 77 000 €',
+                  },
+                  {
+                    type: 'Standard',
+                    travaux: 'Peinture + sol + cuisine + électricité partielle',
+                    prixM2: '1 400 – 2 000 €',
+                    budget: '77 000 – 110 000 €',
+                  },
+                  {
+                    type: 'Complète',
+                    travaux: "Tout corps d'état : électricité NF C 15-100, plomberie, sol, murs, cuisine, salle de bain",
+                    prixM2: '2 000 – 3 000 €',
+                    budget: '110 000 – 165 000 €',
+                  },
+                  {
+                    type: 'Loft / Atelier',
+                    travaux: 'Complète + cloisons, isolation, chauffage, verrières intérieures',
+                    prixM2: '2 500 – 4 000 €',
+                    budget: '137 500 – 220 000 €',
+                  },
                 ].map((row, i) => (
                   <tr key={row.type} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
                     <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.type}</td>
-                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prix}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.exemple}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.travaux}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prixM2}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.budget}</td>
                   </tr>
                 ))}
               </tbody>
@@ -256,16 +275,16 @@ export default function ArticleRenovationParis2e() {
 
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Ce qui fait varier le prix dans le 2e
+              Conseils pour rénover dans le 2e arrondissement
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "L'étage et l'accès (monte-charges absent = surcoût logistique)",
-                "L'état du bien : vétusté, amiante, plomb (diagnostics obligatoires avant travaux)",
-                'Les contraintes de copropriété : horaires de chantier, protection des parties communes',
-                'La nature des matériaux choisis : carrelage grande taille, parquet massif, robinetterie haut de gamme',
-                "La présence d'éléments anciens à préserver : moulures, cheminées, parquets d'époque",
-                "La nécessité d'un permis de construire ou d'une déclaration préalable de travaux",
+                "Pour un atelier du Sentier, prévoir un budget isolation acoustique conséquent — le bruit urbain est important",
+                "Conserver les éléments industriels (poutres métalliques, briques) qui ont une vraie valeur dans le 2e",
+                "Vérifier les contraintes ABF avant de modifier les fenêtres, surtout autour de Montorgueil",
+                "La cuisine ouverte est un must dans le 2e — prévoir l'extraction d'air et les raccordements plomberie",
+                "Anticiper la mise aux normes électrique complète dans les biens antérieurs à 1980",
+                "Privilégier les matériaux durables et de qualité : le marché du 2e valorise fortement les prestations haut de gamme",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -278,12 +297,12 @@ export default function ArticleRenovationParis2e() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -293,15 +312,16 @@ export default function ArticleRenovationParis2e() {
       </section>
 
       {/* Voir aussi */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/blog/renovation-appartement-paris-4e', title: 'Rénovation appartement Paris 4e' },
-              { href: '/blog/renovation-appartement-paris-6e', title: 'Rénovation appartement Paris 6e' },
-              { href: '/blog/renovation-cuisine-americaine-paris', title: 'Cuisine américaine Paris' },
-              { href: '/blog/choisir-carrelage-salle-de-bain', title: 'Choisir son carrelage salle de bain' },
+              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
+              { href: '/blog/renovation-appartement-paris-1er', title: 'Rénovation appartement Paris 1er' },
+              { href: '/blog/renovation-loft-paris', title: 'Rénovation loft Paris' },
+              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénovation appartement haussmannien' },
+              { href: '/contact', title: 'Demander un devis gratuit' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -316,19 +336,19 @@ export default function ArticleRenovationParis2e() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-white border-t border-gray-100">
+      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
-              { href: '/blog/renovation-appartement-paris-4e', label: 'Paris 4e' },
-              { href: '/blog/renovation-appartement-paris-6e', label: 'Paris 6e' },
-              { href: '/renovation-paris-8e', label: 'Paris 8e' },
+              { href: '/renovation-paris-1er', label: 'Paris 1er' },
+              { href: '/renovation-paris-3e', label: 'Paris 3e' },
+              { href: '/renovation-paris-4e', label: 'Paris 4e' },
               { href: '/renovation-paris-9e', label: 'Paris 9e' },
               { href: '/renovation-paris-10e', label: 'Paris 10e' },
               { href: '/renovation-paris-11e', label: 'Paris 11e' },
               { href: '/renovation-levallois-perret', label: 'Levallois' },
-              { href: '/renovation-courbevoie', label: 'Courbevoie' },
+              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -345,10 +365,10 @@ export default function ArticleRenovationParis2e() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Votre projet de rénovation dans le 2e arrondissement
+          Rénovez votre appartement dans le 2e arrondissement
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Diagnostic gratuit. Devis détaillé sous 48h. Artisan spécialisé Paris intra-muros.
+          Artisans spécialisés en lofts, ateliers reconvertis et appartements haussmanniens. Devis gratuit sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
