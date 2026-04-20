@@ -54,6 +54,9 @@ const villes94 = [
   { href: '/renovation-creteil', label: 'Créteil' },
   { href: '/renovation-alfortville', label: 'Alfortville' },
   { href: '/renovation-sucy-en-brie', label: 'Sucy-en-Brie' },
+  { href: '/renovation-thiais', label: 'Thiais' },
+  { href: '/renovation-boissy-saint-leger', label: 'Boissy-Saint-Léger' },
+  { href: '/renovation-orly', label: 'Orly' },
 ]
 
 const services = [
