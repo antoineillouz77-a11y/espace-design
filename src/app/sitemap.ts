@@ -366,6 +366,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-montigny-le-bretonneux`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-guyancourt`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Val-de-Marne (94) — nouvelles villes
+    { url: `${base}/renovation-le-perreux-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-bonneuil-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     // Essonne (91) — nouvelles villes
     { url: `${base}/renovation-savigny-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-athis-mons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

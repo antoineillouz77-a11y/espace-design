@@ -68,6 +68,8 @@ const villes94 = [
   { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
   { href: '/renovation-joinville-le-pont', label: 'Joinville-le-Pont' },
   { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
+  { href: '/renovation-le-perreux-sur-marne', label: 'Le Perreux-sur-Marne' },
+  { href: '/renovation-bonneuil-sur-marne', label: 'Bonneuil-sur-Marne' },
 ]
 
 const services = [
