@@ -67,6 +67,7 @@ const villes91 = [
   { href: '/renovation-etampes', label: 'Étampes' },
   { href: '/renovation-vigneux-sur-seine', label: 'Vigneux-sur-Seine' },
   { href: '/renovation-saint-germain-les-arpajon', label: 'Saint-Germain-lès-Arpajon' },
+  { href: '/renovation-fleury-merogis', label: 'Fleury-Mérogis' },
 ]
 
 const services = [

@@ -546,6 +546,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Essonne (91) — vague 19
     { url: `${base}/renovation-saint-germain-les-arpajon`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-fleury-merogis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Blog — vague 14
     { url: `${base}/blog/tendances-deco-appartement-paris-2025`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
