@@ -870,6 +870,12 @@ const articles = [
     desc: "Parquet chêne blanc à Paris : bois naturel blanchi, huile blanche, vernis satiné. Tendances 2025, pose et entretien.",
     tag: 'Parquet',
   },
+  {
+    href: '/blog/peinture-decoration-appartement-paris',
+    title: 'Peinture & Décoration Appartement Paris : couleurs, finitions & prix 2025',
+    desc: "Tendances peinture 2025, finitions mat/velours/satin, artisan peintre Paris. Prix au m² et conseils couleurs.",
+    tag: 'Peinture',
+  },
 ]
 
 export default function BlogPage() {
