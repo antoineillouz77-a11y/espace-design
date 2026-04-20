@@ -597,6 +597,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/verriere-atelier-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/chape-beton-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/cout-renovation-cuisine-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/cout-renovation-salle-de-bain-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-200m2-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/terrasse-bois-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Seine-et-Marne (77) — vague 23

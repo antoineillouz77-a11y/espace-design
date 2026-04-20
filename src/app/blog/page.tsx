@@ -1146,6 +1146,18 @@ const articles = [
     desc: "Faire poser une terrasse bois à Paris. Ipé, pin traité, composite. Lames, lambourdes, prix, entretien. Devis gratuit 48h.",
     tag: 'Extérieur',
   },
+  {
+    href: '/blog/cout-renovation-salle-de-bain-paris',
+    title: "Coût Rénovation Salle de Bain Paris : prix & devis artisan 2025",
+    desc: "Prix et coût de rénovation salle de bain à Paris. Petite/grande SDB, carrelage, plomberie, douche italienne. Devis gratuit 48h.",
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/renovation-appartement-200m2-paris',
+    title: "Rénovation Appartement 200m² Paris : planning & prix artisan 2025",
+    desc: "Rénover un grand appartement de 200m² à Paris. Planification, corps de métier, budget estimatif au m², phasage. Guide 2025.",
+    tag: 'Rénovation',
+  },
 ]
 
 export default function BlogPage() {
