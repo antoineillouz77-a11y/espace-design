@@ -1524,6 +1524,36 @@ const articles = [
     desc: "Remplacement fenêtres PVC ou aluminium à Paris. Double/triple vitrage, isolation phonique. Devis 48h.",
     tag: 'Travaux',
   },
+  {
+    href: '/blog/brise-vue-terrasse-paris',
+    title: "Brise-Vue Terrasse Paris : installation & prix artisan 2025",
+    desc: "Brise-vue et intimité terrasse à Paris. Bois, bambou, verre dépoli, végétal. Devis gratuit 48h.",
+    tag: 'Extérieur',
+  },
+  {
+    href: '/blog/debarras-appartement-paris',
+    title: "Débarras Appartement Paris : avant rénovation, prix 2025",
+    desc: "Débarras d'appartement avant rénovation à Paris. Vidage encombrants, tri sélectif, bennes. Devis 48h.",
+    tag: 'Services',
+  },
+  {
+    href: '/blog/nettoyage-chantier-paris',
+    title: "Nettoyage Fin de Chantier Paris : prestation & prix 2025",
+    desc: "Nettoyage de fin de chantier à Paris après rénovation. Déchets, dépoussiérage, vitres. Devis 48h.",
+    tag: 'Services',
+  },
+  {
+    href: '/blog/renovation-appartement-creteil',
+    title: "Rénovation Appartement Créteil : artisan & prix 2025",
+    desc: "Rénover un appartement à Créteil (94). Préfecture du Val-de-Marne, immeubles modernes. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-nanterre',
+    title: "Rénovation Appartement Nanterre : artisan & prix 2025",
+    desc: "Rénover un appartement à Nanterre (92). Ville universitaire, La Défense. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
