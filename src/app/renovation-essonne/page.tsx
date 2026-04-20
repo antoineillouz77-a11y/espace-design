@@ -46,6 +46,7 @@ const villes91 = [
   { href: '/renovation-gif-sur-yvette', label: 'Gif-sur-Yvette' },
   { href: '/renovation-longjumeau', label: 'Longjumeau' },
   { href: '/renovation-corbeil-essonnes', label: 'Corbeil-Essonnes' },
+  { href: '/renovation-sainte-genevieve-des-bois', label: 'Sainte-Geneviève-des-Bois' },
 ]
 
 const services = [

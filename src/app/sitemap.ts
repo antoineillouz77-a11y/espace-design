@@ -199,6 +199,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-appartement-paris-9e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-paris-15e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-paris-17e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-paris-19e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Yvelines (78) — autres villes
     { url: `${base}/renovation-sartrouville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -207,6 +208,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Essonne (91) — nouvelles villes
     { url: `${base}/renovation-corbeil-essonnes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-sainte-genevieve-des-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

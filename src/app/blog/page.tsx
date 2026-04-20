@@ -636,6 +636,12 @@ const articles = [
     desc: "Rénovation appartement dans le 17e arrondissement de Paris : Batignolles, Ternes, Épinettes. Artisan local, devis gratuit 48h.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-paris-19e',
+    title: 'Rénovation Appartement Paris 19e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 19e arrondissement de Paris : Buttes-Chaumont, Belleville, Villette. Artisan local, devis gratuit 48h.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {
