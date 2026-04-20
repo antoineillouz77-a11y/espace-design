@@ -15,9 +15,9 @@ const schemaBreadcrumb = {
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Appartement Paris 15e : artisan & prix 2025 | Espace Design',
-  description: "Rénovation appartement dans le 15e arrondissement de Paris : Vaugirard, Convention, Beaugrenelle. Artisan local, devis gratuit 48h.",
-  datePublished: '2025-04-20',
+  headline: 'Rénovation Appartement Paris 15e : Montparnasse, Beaugrenelle & prix 2025 | Espace Design',
+  description: 'Artisan rénovation Paris 15e arrondissement. Montparnasse, Beaugrenelle, Vaugirard, plus grand arrondissement de Paris. Prix 2025, devis sous 48h.',
+  datePublished: '2025-01-15',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
@@ -33,37 +33,54 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quels types de biens trouve-t-on dans le 15e arrondissement ?',
+      name: 'Quel est le prix au m² pour rénover un appartement dans le 15e arrondissement de Paris ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le 15e arrondissement est l'arrondissement le plus peuplé de Paris et présente un parc immobilier très varié. On y trouve des immeubles haussmanniens et des immeubles de rapport des années 1900-1930 dans la partie nord (Vaugirard, Convention), des immeubles modernes des années 1960-1980 (Beaugrenelle, Front de Seine) et des maisons de ville dans les impasses et villas du secteur sud. C'est un arrondissement résidentiel avec peu de contraintes ABF sauf cas particuliers.",
+        text: 'Dans le 15e arrondissement, le plus grand de Paris, les prix de rénovation se situent entre 400 et 650 €/m² pour un rafraîchissement (peinture, sol) et 1 200 à 2 200 €/m² pour une rénovation complète. La forte proportion d\'appartements familiaux (70–120 m²) dans des immeubles des années 1950–1980 tire les prix vers le milieu de gamme : une rénovation complète standard coûte généralement 1 200 à 1 700 €/m². Les appartements haussmanniens autour de Montparnasse ou de la rue de Vaugirard atteignent 1 800 à 2 500 €/m² pour des prestations haut de gamme.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien coûte une rénovation dans le 15e arrondissement en 2025 ?',
+      name: 'Le 15e arrondissement est-il intéressant pour un investissement locatif avec rénovation ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Dans le 15e, les prix sont comparables à la moyenne parisienne. Un rafraîchissement (peintures, sols) coûte entre 400 et 800 €/m². Une rénovation complète d'un appartement ancien se situe entre 1 000 et 1 800 €/m². Les appartements des tours de Beaugrenelle et du Front de Seine nécessitent souvent un traitement de l'isolation thermique et acoustique (80 à 150 €/m² supplémentaires). Pour un 3 pièces de 65 m², comptez entre 65 000 et 120 000 € pour une rénovation complète.",
+        text: 'Le 15e est l\'un des arrondissements parisiens les plus populaires pour l\'investissement locatif, grâce à sa forte population, ses nombreuses familles et sa proximité avec les quartiers d\'affaires (La Défense, Montparnasse). Les appartements familiaux (3–4 pièces) bien rénovés se louent très bien. Le rendement locatif brut se situe généralement entre 3,5 et 4,5 %, ce qui est correct pour Paris. L\'achat d\'un bien à rénover (15–20 % sous le marché) suivi d\'une rénovation complète permet de maximiser la valeur locative.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quelles sont les spécificités de la rénovation dans les immeubles haussmanniens du 15e ?',
+      name: 'Quelles sont les contraintes de rénovation dans les immeubles des années 60–70 du 15e ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Les immeubles haussmanniens du 15e (secteur Vaugirard, Commerce, Convention) présentent les caractéristiques classiques du style : planchers en bois massif à restaurer, hauteur sous plafond de 2,80 à 3,20 m, moulures et parquets à conserver, façades en pierre de taille. Ces biens nécessitent une attention particulière à la conservation des éléments d'origine (parquet, moulures, cheminées) qui valorisent le bien. La rénovation complète d'un haussmannien dans le 15e est entre 1 200 et 2 000 €/m².",
+        text: 'Les immeubles des années 1960–1980 qui dominent une grande partie du 15e présentent des défis spécifiques : présence possible d\'amiante dans les revêtements (diagnostic obligatoire avant 1997), installations électriques vieillissantes (souvent en 2×10A, insuffisant pour les usages modernes), plomberie en acier galvanisé corrodé, VMC désuète ou absente. Ces points constituent souvent un "paquet" à traiter ensemble lors d\'une rénovation, ce qui permet d\'optimiser les coûts de main d\'œuvre.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Faut-il un permis de construire pour rénover un appartement dans le 15e ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'La plupart des travaux intérieurs (peinture, sol, cuisine, salle de bain, électricité, plomberie) ne nécessitent aucune autorisation administrative. Une déclaration préalable de travaux est requise si vous souhaitez modifier l\'aspect extérieur du bâtiment (remplacement fenêtres, remplacement volets). Un permis de construire est nécessaire uniquement si vous créez plus de 20 m² de surface de plancher ou modifiez la structure porteuse. Dans les copropriétés, l\'accord de la copropriété est toujours requis pour les travaux sur parties communes.',
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Paris 15e : artisan & prix 2025 | Espace Design',
-  description: "Rénovation appartement dans le 15e arrondissement de Paris : Vaugirard, Convention, Beaugrenelle. Artisan local, devis gratuit 48h.",
+  title: 'Rénovation Appartement Paris 15e : Montparnasse, Beaugrenelle & prix 2025 | Espace Design',
+  description: 'Artisan rénovation Paris 15e arrondissement. Montparnasse, Beaugrenelle, Vaugirard, prix 2025. Devis gratuit sous 48h.',
+  keywords: [
+    'rénovation appartement paris 15e',
+    'artisan rénovation 15e arrondissement',
+    'rénovation montparnasse paris',
+    'travaux appartement beaugrenelle',
+    'prix rénovation paris 15e 2025',
+    'rénovation vaugirard paris',
+    'entrepreneur rénovation paris 15',
+  ],
 }
 
-export default function ArticleParis15e() {
+export default function ArticleRenovationParis15() {
   return (
     <>
       <script
@@ -83,44 +100,41 @@ export default function ArticleParis15e() {
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Paris
+            Paris 15e arrondissement
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Appartement Paris 15e : artisan &amp; prix 2025
+            Rénovation Appartement Paris 15e : Montparnasse, Beaugrenelle &amp; prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Le 15e est l&apos;arrondissement le plus peuplé de Paris. Entre les immeubles haussmanniens de Vaugirard et Convention, les tours modernes de Beaugrenelle et les maisons cachées dans les villas et impasses, le 15e regorge de biens très différents. Ce guide vous aide à planifier et budgéter votre rénovation dans le 15e.
+            Montparnasse, Beaugrenelle, Vaugirard, Convention, Javel : le 15e est le plus grand arrondissement de Paris et le plus peuplé. Son parc immobilier diversifié — haussmannien au nord-est, résidences modernes des années 60–80 au sud et à l&apos;ouest — génère une demande de rénovation soutenue. Espace Design intervient dans tout le 15e, devis sous 48h.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Profil du quartier */}
+      {/* Section 1 — Quartiers */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              15e arrondissement : l&apos;arrondissement résidentiel par excellence
+              Le parc immobilier du 15e : le plus grand arrondissement de Paris
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Avec plus de 230 000 habitants, le 15e est le plus peuplé des arrondissements parisiens. C&apos;est aussi l&apos;un des plus homogènes en termes d&apos;ambiance — résidentiel, calme, bien desservi — mais l&apos;architecture y est très variée. Les quartiers Vaugirard, Convention et Commerce concentrent les immeubles anciens ; Beaugrenelle et le Front de Seine accueillent les tours modernes ; les villas et impasses du sud cachent des maisons atypiques.
-            </p>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              C&apos;est un arrondissement globalement peu contraint par les règles ABF, ce qui laisse plus de liberté dans les projets de transformation. Les copropriétés sont en revanche souvent bien organisées avec des règlements intérieurs à respecter sur les horaires de travaux.
+              Avec 236 000 habitants et 8,5 km², le 15e arrondissement est le plus grand et le plus peuplé de Paris. Son tissu urbain est très diversifié : haussmannien classique autour de Montparnasse et de la rue de Vaugirard, résidences modernes des années 1960–1980 dans les secteurs Convention et Javel, et quelques opérations récentes autour de Beaugrenelle. Cette diversité se reflète directement dans les types de rénovations demandées.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Immeubles haussmanniens — Vaugirard, Convention, Commerce',
-                  detail: "Ces immeubles construits entre 1860 et 1930 présentent les éléments classiques du bâti ancien : parquet massif chêne, hauteur sous plafond généreuse (2,80 à 3,20 m), moulures au plafond, cheminées décoratives. Leur rénovation est plus complexe mais valorise fortement le bien. Conserver les éléments d'origine (parquet, moulures, cheminées) est toujours rentable.",
+                  enjeu: 'Montparnasse – Vaugirard : haussmannien et immeubles de standing',
+                  detail: 'Le secteur nord-est du 15e, autour de Montparnasse et de la rue de Vaugirard, concentre les appartements les plus valorisés : haussmanniens avec hauts plafonds, moulures et parquets anciens, proximité immédiate des transports et commerces. La demande de rénovation porte sur la modernisation des équipements (cuisine, salle de bain) tout en préservant le cachet architectural. Prix au m² : 11 000–13 500 €/m² post-rénovation.',
                 },
                 {
-                  enjeu: 'Tours modernes — Beaugrenelle, Front de Seine',
-                  detail: "Les tours de Beaugrenelle et du Front de Seine (années 1970-1980) offrent de belles vues sur la Seine mais souffrent d'une isolation acoustique et thermique insuffisante. La rénovation doit traiter ces deux points en priorité. Les règles de copropriété dans ces ensembles modernes sont parfois strictes sur les modifications d'appartements.",
+                  enjeu: 'Beaugrenelle – Front de Seine : tours modernes et résidences récentes',
+                  detail: 'Le secteur Beaugrenelle, face à la Seine, associe des tours de bureaux reconverties et des résidences modernes des années 1970–1980. Les appartements y sont spacieux mais aux finitions souvent datées. La rénovation vise à moderniser entièrement les intérieurs (cuisine ouverte, salle de bain contemporaine, isolation phonique) pour exploiter les volumes généreux et les vues. Prix au m² : 10 000–12 000 €/m².',
                 },
                 {
-                  enjeu: 'Villas et maisons cachées du sud du 15e',
-                  detail: "Le sud du 15e (Brancion, Vouillé, Dantzig) cache de nombreuses villas et maisons individuelles dans des impasses protégées. Ces biens atypiques nécessitent souvent des rénovations complètes incluant toiture, façade et structure. Le coût est plus élevé mais le potentiel de valorisation est important.",
+                  enjeu: 'Convention – Javel – Dupleix : le 15e résidentiel',
+                  detail: 'Le centre et le sud du 15e sont dominés par des immeubles de rapport des années 1950–1970 et quelques haussmanniens tardifs. C\'est le secteur le plus abordable du 15e (9 000–11 000 €/m²) et le plus porteur pour les investisseurs. Les appartements familiaux (70–100 m²) y sont très demandés à la location, notamment par les familles attirées par les nombreuses écoles et parcs.',
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -133,36 +147,46 @@ export default function ArticleParis15e() {
         </div>
       </section>
 
-      {/* Section 2 — Spécificités techniques */}
+      {/* Section 2 — Travaux courants */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Travaux les plus fréquents dans le 15e arrondissement
+            Types de travaux les plus demandés dans le 15e arrondissement
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Voici les travaux les plus souvent réalisés dans le 15e, avec les fourchettes de prix habituellement constatées.
+            La taille du 15e et la diversité de son parc immobilier génèrent un volume important de chantiers de rénovation, des studios étudiants aux grands appartements familiaux.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Rénovation salle de bain',
-                solution: "Remplacement de la baignoire par une douche à l'italienne, nouveau carrelage, vasque suspendue, WC suspendu. La salle de bain est le poste le plus fréquent dans le 15e, souvent vétuste dans les immeubles des années 1960-1980.",
-                cout: '8 000 – 18 000 €',
+                titre: 'Rénovation appartement familial (70–100 m²)',
+                solution: 'Le 15e est l\'arrondissement des familles. La demande porte sur la rénovation des grands appartements : cuisine ouverte sur séjour, 2 salles de bain, chambres optimisées avec rangements intégrés, électricité aux normes. Un programme de 3 à 4 pièces bien rénové dans le 15e se loue ou se revend rapidement.',
+                cout: '1 200 – 2 000 €/m²',
               },
               {
-                titre: 'Ponçage et vitrification parquet',
-                solution: "Les parquets anciens des haussmanniens du 15e méritent d'être restaurés plutôt que recouverts. Un ponçage + vitrification redonne un résultat spectaculaire à moindre coût. Éviter le remplacement par un stratifié qui dévaluerait le bien.",
-                cout: '30 – 60 €/m²',
+                titre: 'Réfection cuisine avec ouverture sur salon',
+                solution: 'L\'ouverture de la cuisine sur le salon est la demande la plus fréquente dans le 15e. Suppression ou allègement de la cloison séparatrice, création d\'un îlot ou d\'un bar, nouveau plan de travail, installation électroménager encastrable. Résultat : appartement lumineux et convivial, très valorisé sur le marché.',
+                cout: '8 000 – 22 000 €',
               },
               {
-                titre: 'Mise aux normes électrique',
-                solution: "Indispensable dans tous les appartements construits avant 1985. Remplacement du tableau électrique, mise en place des disjoncteurs différentiels, ajout de prises de terre. Durée : 3 à 7 jours selon la surface.",
-                cout: '3 000 – 8 000 €',
+                titre: 'Rénovation salle de bain avec douche italienne',
+                solution: 'Remplacement de la baignoire par une douche à l\'italienne : receveur extra-plat, paroi vitrée, robinetterie encastrée. Dans les appartements du 15e avec 2 salles de bain, transformation de la 2e en salle d\'eau compacte. Résultat immédiat sur la valeur locative.',
+                cout: '8 000 – 20 000 €',
               },
               {
-                titre: 'Isolation acoustique (tours)',
-                solution: "Dans les tours de Beaugrenelle et du Front de Seine, le bruit d'impact est le principal problème. Pose d'un plancher flottant avec sous-couche acoustique. Résultat : réduction de 8 à 12 dB des bruits d'impact.",
-                cout: '80 – 150 €/m²',
+                titre: 'Isolation thermique et phonique',
+                solution: 'Les appartements des immeubles des années 60–80 dans le 15e souffrent souvent d\'une isolation insuffisante (thermique et phonique). Doublage des murs périphériques, traitement du plancher (dalle flottante), remplacement des menuiseries. Amélioration du confort et de l\'étiquette DPE, favorable à la revente et à la location.',
+                cout: '60 – 150 €/m² de surface traitée',
+              },
+              {
+                titre: 'Mise aux normes électrique complète',
+                solution: 'Les tableaux électriques vétustes sont très courants dans les immeubles des années 60–70 du 15e. Remplacement du tableau général, création des circuits dédiés (cuisine, salle de bain, informatique), mise à la terre, pose de prises aux normes. Indispensable avant tout autre travail pour éviter les reprises.',
+                cout: '4 500 – 12 000 €',
+              },
+              {
+                titre: 'Rénovation complète pour mise en location ou revente',
+                solution: 'Rénovation globale pour maximiser la valeur du bien : cuisine, salle de bain, électricité, plomberie, sols, peinture. Notre approche : devis global avec planning détaillé, matériaux durables et esthétiques, finitions soignées. Livraison clé en main dans les délais annoncés.',
+                cout: '1 100 – 1 800 €/m²',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -177,56 +201,101 @@ export default function ArticleParis15e() {
         </div>
       </section>
 
-      {/* Section 3 — Prix */}
+      {/* Section 3 — Contraintes */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix d&apos;une rénovation dans le 15e arrondissement en 2025
+            Contraintes et spécificités de la rénovation dans le 15e arrondissement
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le 15e affiche des prix de rénovation dans la moyenne parisienne, légèrement inférieurs à ceux des arrondissements centraux. Les délais sont en général plus courts car les artisans sont moins saturés que dans le Marais ou Saint-Germain.
+            Le 15e arrondissement présente des contraintes variées selon le type de bâti. Voici les points de vigilance que notre équipe anticipe systématiquement.
+          </p>
+          <div className="space-y-4 mb-6">
+            {[
+              {
+                type: 'Amiante dans les immeubles des années 60–80',
+                prix: '200 – 500 € (diagnostic) + surcoût désamiantage',
+                detail: 'La majorité des immeubles des années 1960–1980 du 15e peut contenir de l\'amiante dans les revêtements de sol (dalles vinyle), les colles et les joints. Un diagnostic amiante avant travaux est obligatoire pour tous les bâtiments construits avant juillet 1997. En cas de détection, le désamiantage est réalisé par une entreprise certifiée, avec un surcoût de 20 à 40 % sur la démolition concernée.',
+              },
+              {
+                type: 'Copropriétés : restrictions horaires et autorisations',
+                prix: 'Délai +2 à 6 semaines',
+                detail: 'Dans les grandes copropriétés du 15e (immeubles des années 60–80 avec 50 à 200 logements), les règlements de copropriété imposent souvent des horaires stricts (lundi–vendredi, 8h–17h30) et des procédures de dépôt de matériaux en parties communes. Les modifications de cloisons portantes ou les travaux sur colonnes montantes nécessitent un accord préalable du syndic.',
+              },
+              {
+                type: 'Logistique dans les grandes résidences',
+                prix: 'Variable selon configuration',
+                detail: 'Les grandes résidences du 15e (tours, barres) ont souvent des règles précises sur l\'utilisation des monte-charges et ascenseurs pour les travaux. La coordination avec le gardien et le syndic est indispensable. Notre équipe établit un plan logistique détaillé (livraisons, évacuation gravats, stockage matériaux) en accord avec la copropriété.',
+              },
+              {
+                type: 'DPE et rénovation énergétique (logements G et F)',
+                prix: 'Aides MaPrimeRénov disponibles',
+                detail: 'Le 15e comprend de nombreux logements classés F ou G au DPE (Diagnostic de Performance Énergétique), notamment dans les immeubles des années 60–70. Ces logements ne pourront plus être mis en location à partir de 2025 (G) et 2028 (F). La rénovation énergétique (isolation, fenêtres, chauffage) est donc urgente pour les bailleurs. Des aides (MaPrimeRénov, CEE) sont disponibles.',
+              },
+            ].map((el) => (
+              <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
+                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — Budget */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Prix rénovation appartement Paris 15e : tableau récapitulatif 2025
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Estimations main d&apos;œuvre et matériaux inclus, pour des appartements type du 15e arrondissement de Paris.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau de prestation</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Description</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prestations</th>
                   <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix / m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Total 75 m²</th>
                 </tr>
               </thead>
               <tbody>
                 {[
                   {
                     niveau: 'Rafraîchissement',
-                    prestations: 'Peinture, sol, luminaires — sans modification des installations',
-                    prixM2: '400 – 800 €',
+                    prestations: 'Peinture + sol + petites réparations',
+                    prixM2: '400 – 600 €',
+                    total: '30 000 – 45 000 €',
                   },
                   {
-                    niveau: 'Rénovation partielle (SDB ou cuisine)',
-                    prestations: 'Refonte d\'une pièce humide avec mise aux normes',
-                    prixM2: '800 – 1 200 €',
+                    niveau: 'Rénovation partielle',
+                    prestations: 'Cuisine ou SDB + peinture + sol',
+                    prixM2: '700 – 1 200 €',
+                    total: '52 000 – 90 000 €',
                   },
                   {
-                    niveau: 'Rénovation complète appartement ancien',
-                    prestations: 'Électricité, plomberie, cuisine, SDB, sols, peintures',
-                    prixM2: '1 000 – 1 800 €',
+                    niveau: 'Rénovation complète',
+                    prestations: 'Cuisine + SDB + électricité + plomberie + sols',
+                    prixM2: '1 100 – 1 800 €',
+                    total: '82 000 – 135 000 €',
                   },
                   {
-                    niveau: 'Rénovation haussmannien avec conservation',
-                    prestations: 'Rénovation complète avec restauration parquet, moulures, cheminées',
-                    prixM2: '1 200 – 2 000 €',
-                  },
-                  {
-                    niveau: 'Maison individuelle ou villa',
-                    prestations: 'Rénovation complète maison avec toiture, façade et structure',
-                    prixM2: '1 500 – 2 500 €',
+                    niveau: 'Haut de gamme',
+                    prestations: 'Tout compris + matériaux premium + isolation + domotique',
+                    prixM2: '1 800 – 2 500 €',
+                    total: '135 000 – 187 500 €',
                   },
                 ].map((row, i) => (
                   <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
                     <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.niveau}</td>
                     <td className="px-4 py-3 text-center text-gray-600 font-light">{row.prestations}</td>
                     <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prixM2}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.total}</td>
                   </tr>
                 ))}
               </tbody>
@@ -235,16 +304,16 @@ export default function ArticleParis15e() {
 
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Conseils spécifiques pour rénover dans le 15e
+              Checklist avant de démarrer une rénovation dans le 15e
             </h3>
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                'Conserver le parquet ancien dans les haussmanniens — ponçage et vitrification sont toujours plus rentables que le remplacement',
-                'Traiter l\'acoustique en priorité dans les tours de Beaugrenelle et du Front de Seine',
-                'Vérifier le règlement de copropriété avant de planifier des travaux dans les ensembles modernes',
-                'Prévoir la mise aux normes électrique pour tout bien construit avant 1985',
-                'Anticiper les délais d\'obtention des autorisations d\'urbanisme pour les maisons individuelles',
-                'Demander 3 devis à des artisans locaux du 15e pour des délais d\'intervention réduits',
+                'Commander le diagnostic amiante (obligatoire pour tout bâtiment avant 1997)',
+                'Vérifier la classe DPE du logement et les obligations de rénovation énergétique',
+                'Consulter le règlement de copropriété pour les horaires et restrictions',
+                'Obtenir l\'accord du syndic pour les travaux sur parties communes ou réseaux',
+                'Vérifier la conformité du tableau électrique avant tout autre travail',
+                'Prévoir 10 à 15 % de budget pour les imprévus selon l\'état du bien',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -256,13 +325,90 @@ export default function ArticleParis15e() {
         </div>
       </section>
 
+      {/* Section 5 — Exemples chantiers */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Exemples de chantiers réalisés dans le 15e arrondissement
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Quelques réalisations représentatives de notre activité dans le 15e arrondissement.
+          </p>
+          <div className="space-y-4">
+            {[
+              {
+                titre: 'Appartement familial 90 m² — secteur Convention',
+                description: 'Rénovation complète d\'un 4 pièces pour famille avec enfants : ouverture cuisine/salon, nouvelle salle de bain principale avec douche italienne, création d\'une 2e salle d\'eau, remplacement complet de l\'électricité, parquet flottant chêne huilé, peinture. Durée : 12 semaines. Budget total : 128 000 €.',
+                highlight: 'Famille relogée pendant travaux — livraison clé en main',
+              },
+              {
+                titre: '2 pièces 52 m² Beaugrenelle — investissement locatif',
+                description: 'Rénovation complète d\'un appartement vue Seine pour investisseur : cuisine ouverte sur séjour, salle de bain entièrement rénovée, parquet stratifié, peinture, électricité mise aux normes, remplacement radiateurs. Mis en location en 3 semaines après livraison. Budget : 52 000 €. Durée : 7 semaines.',
+                highlight: 'Mis en location en 3 semaines — loyer optimisé',
+              },
+              {
+                titre: 'Haussmannien 110 m² Montparnasse — rénovation haut de gamme',
+                description: 'Rénovation complète d\'un bel haussmannien pour propriétaires occupants : cuisine sur mesure avec équipements Miele, 2 salles de bain en marbre, parquet point de Hongrie restauré, moulures conservées et repeintes, domotique Legrand. Budget : 245 000 €. Durée : 16 semaines.',
+                highlight: 'Rénovation haut de gamme — valorisation +180 000 €',
+              },
+            ].map((ex) => (
+              <div key={ex.titre} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{ex.titre}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed mb-3">{ex.description}</div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle size={13} className="text-[#B8960C] flex-shrink-0" />
+                  <span className="text-[#B8960C] text-xs font-medium">{ex.highlight}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6 — Avantages artisan local */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Pourquoi choisir Espace Design pour rénover dans le 15e arrondissement ?
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le 15e arrondissement représente l&apos;un de nos marchés principaux. Nous y intervenons régulièrement dans tous les secteurs, du haussmannien de Montparnasse aux résidences modernes de Javel.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                titre: 'Volume de chantiers dans le 15e',
+                detail: 'Grâce à notre volume d\'activité dans le 15e, nous connaissons les syndics, les contraintes des principales résidences et les fournisseurs locaux. Cette connaissance se traduit par des délais raccourcis et des coûts optimisés pour nos clients.',
+              },
+              {
+                titre: 'Rénovation énergétique et DPE',
+                detail: 'Face à l\'urgence de la rénovation énergétique des logements classés F et G, nous proposons des solutions complètes (isolation, fenêtres, chauffage) avec accompagnement dans les démarches d\'aides (MaPrimeRénov, CEE, éco-PTZ).',
+              },
+              {
+                titre: 'Gestion de projet clé en main',
+                detail: 'Un seul interlocuteur pour l\'ensemble des corps de métier : maçonnerie, plomberie, électricité, carrelage, menuiserie, peinture. Coordination des artisans, planning de chantier, suivi quotidien. Vous êtes informé en temps réel de l\'avancement.',
+              },
+              {
+                titre: 'Devis transparent, pas de mauvaises surprises',
+                detail: 'Nos devis détaillent chaque poste de travaux. Le prix est ferme et définitif hors imprévus signalés et chiffrés immédiatement. Notre taux de satisfaction client dépasse 95 % grâce à cette transparence.',
+              },
+            ].map((a) => (
+              <div key={a.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{a.titre}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{a.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -271,17 +417,20 @@ export default function ArticleParis15e() {
         </div>
       </section>
 
-      {/* Voir aussi */}
-      <section className="py-12 bg-white border-t border-gray-100">
+      {/* Guides connexes */}
+      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Guides connexes</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
-              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénover un appartement haussmannien à Paris' },
-              { href: '/blog/parquet-massif-paris', title: 'Parquet massif Paris — pose & prix' },
-              { href: '/blog/isolation-phonique-paris', title: 'Isolation phonique appartement Paris' },
-              { href: '/blog/renovation-salle-de-bain-prix-paris', title: 'Prix rénovation salle de bain Paris 2025' },
+              { href: '/blog/renovation-appartement-paris-14e', title: 'Rénovation appartement Paris 14e' },
+              { href: '/blog/renovation-appartement-paris-16e', title: 'Rénovation appartement Paris 16e' },
+              { href: '/blog/renovation-appartement-paris-7e', title: 'Rénovation appartement Paris 7e' },
+              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique appartement Paris' },
+              { href: '/blog/renovation-cuisine-ouverte-paris', title: 'Rénovation cuisine ouverte Paris' },
+              { href: '/blog/douche-italienne-paris', title: 'Douche italienne Paris' },
+              { href: '/blog/prix-renovation-appartement-paris', title: 'Prix rénovation appartement Paris' },
+              { href: '/renovation-paris', title: 'Rénovation appartement Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -296,19 +445,17 @@ export default function ArticleParis15e() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention proches</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
-              { href: '/renovation-paris-15e', label: 'Paris 15e' },
-              { href: '/renovation-paris-14e', label: 'Paris 14e' },
-              { href: '/renovation-paris-13e', label: 'Paris 13e' },
-              { href: '/renovation-paris-16e', label: 'Paris 16e' },
               { href: '/renovation-paris-7e', label: 'Paris 7e' },
-              { href: '/renovation-paris-6e', label: 'Paris 6e' },
-              { href: '/renovation-paris-17e', label: 'Paris 17e' },
-              { href: '/renovation-paris-12e', label: 'Paris 12e' },
+              { href: '/renovation-paris-14e', label: 'Paris 14e' },
+              { href: '/renovation-paris-16e', label: 'Paris 16e' },
+              { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
+              { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
+              { href: '/renovation-vanves', label: 'Vanves' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -325,10 +472,10 @@ export default function ArticleParis15e() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Vous rénovez un bien dans le 15e arrondissement ?
+          Rénover votre appartement dans le 15e arrondissement
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Vaugirard, Convention, Beaugrenelle — devis gratuit sous 48h dans le 15e.
+          Diagnostic gratuit. Devis sous 48h. Expertise appartements familiaux et immeubles modernes.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

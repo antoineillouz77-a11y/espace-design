@@ -15,11 +15,15 @@ const schemaBreadcrumb = {
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Immeuble Paris : parties communes, façade & copropriété 2025 | Espace Design',
-  description: 'Rénover un immeuble à Paris : parties communes, ravalement de façade, cage d\'escalier, hall. Vote AG, prix 2025.',
-  datePublished: '2025-04-20',
+  headline: 'Rénovation Immeuble Paris : parties communes, cage escalier & prix 2025',
+  description: "Rénover les parties communes d'un immeuble parisien : hall d'entrée, cage escalier, façade. Décisions en copropriété, répartition des charges et prix 2025.",
+  datePublished: '2025-01-15',
   author: { '@type': 'Organization', name: 'Espace Design' },
-  publisher: { '@type': 'Organization', name: 'Espace Design', url: 'https://espacedesignparis.fr' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Espace Design',
+    url: 'https://espacedesignparis.fr',
+  },
   url: 'https://espacedesignparis.fr/blog/renovation-immeuble-paris',
 }
 
@@ -29,96 +33,119 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quelle majorité faut-il pour voter des travaux en copropriété à Paris ?',
+      name: "Qui décide et qui paie la rénovation des parties communes d'un immeuble parisien ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "En copropriété parisienne, la majorité requise dépend de la nature des travaux. Majorité simple (article 24) : travaux courants d'entretien, peinture des parties communes, remplacement d'équipements existants. Majorité absolue (article 25) : travaux modifiant la structure (mur porteur), installation d'un équipement nouveau, ravalement de façade. Double majorité (article 26) : travaux lourds modifiant les droits des copropriétaires. En pratique, la plupart des ravalements et rénovations des parties communes passent en article 24 ou 25.",
+        text: "Les décisions de rénovation des parties communes d'un immeuble en copropriété sont votées en assemblée générale. Les travaux d'entretien courant peuvent être décidés par le syndic ou votés à la majorité simple (article 24). Les travaux importants (ravalement de façade, réfection de cage d'escalier) nécessitent une majorité absolue (article 25). Les frais sont répartis entre les copropriétaires en fonction de leurs tantièmes de parties communes, inscrits dans le règlement de copropriété.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Le ravalement de façade est-il obligatoire à Paris ?',
+      name: "Quel est le prix de rénovation d'une cage d'escalier à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, à Paris le ravalement de façade est rendu obligatoire par arrêté préfectoral tous les 10 ans (articles L. 132-1 et suivants du Code de la Construction). La Ville peut mettre en demeure le syndic de réaliser les travaux sous peine d'amendes. Le non-respect de cette obligation peut également bloquer la vente des lots de la copropriété. Le coût du ravalement est réparti entre les copropriétaires selon les tantièmes.",
+        text: "Le prix de rénovation d'une cage d'escalier à Paris dépend de la hauteur de l'immeuble et des prestations. Pour un immeuble de 5 étages : peinture simple 3 000 – 8 000 €, réfection complète (enduit + peinture + sol + garde-corps) 15 000 – 40 000 €. Pour un immeuble de 8 étages et plus : 25 000 – 80 000 €. Ces travaux sont votés en AG et répartis entre copropriétaires selon les tantièmes. Des aides (MaPrimeRénov' Copropriétés, ANAH) peuvent réduire le reste à charge.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quelles aides financières pour rénover un immeuble à Paris ?',
+      name: "Le ravalement de façade est-il obligatoire à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Plusieurs dispositifs d'aide existent pour les copropriétés parisiennes : MaPrimeRénov' Copropriété (aide ANAH couvrant 25 à 45 % du montant des travaux d'isolation), Eco-PTZ collectif (prêt à taux zéro jusqu'à 50 000 € par logement), aides de la Ville de Paris (isolation de façade, ravalement), TVA à 10 % sur les travaux en immeuble de plus de 2 ans. Ces aides sont cumulables sous conditions. Un audit énergétique préalable est souvent requis.",
+        text: "À Paris, le ravalement de façade est rendu obligatoire par la réglementation municipale tous les 10 ans si l'aspect de la façade est dégradé (article L. 132-1 du Code de la construction). La Ville de Paris peut mettre en demeure le syndic de réaliser les travaux dans un délai imparti. En cas de péril ou de risque de chute d'éléments, une injonction d'urgence est possible. Le ravalement est aussi l'occasion d'intégrer une isolation thermique par l'extérieur (ITE), éligible aux aides ANAH.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment gérer un chantier de rénovation dans un immeuble occupé à Paris ?',
+      name: "Comment obtenir des aides pour la rénovation d'un immeuble parisien ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Un chantier dans un immeuble occupé requiert une organisation rigoureuse : échafaudages avec protection des accès et des véhicules, horaires de travaux respectant les règles de voisinage (7h-22h en semaine, pas de dimanche), information des résidents en amont (lettres d'information, réunions), protection des parties communes (bâches, panneaux de chantier), et désignation d'un coordinateur SPS (Sécurité Protection Santé) pour les chantiers lourds. Le syndic assure généralement la coordination avec les entreprises.",
+        text: "Plusieurs dispositifs d'aides existent pour les copropriétés parisiennes. MaPrimeRénov' Copropriétés (ANAH) : jusqu'à 25% du montant des travaux pour les immeubles réalisant un gain énergétique d'au moins 35%. Éco-PTZ Copropriétés : prêt collectif à taux zéro. Aides de la Ville de Paris : subventions pour le ravalement incluant l'isolation thermique. Action Logement peut aussi intervenir pour certains immeubles. La demande se fait via un Espace Conseil France Rénov' ou un AMO (assistant à maîtrise d'ouvrage) agréé.",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Rénovation Immeuble Paris : parties communes, façade & copropriété 2025 | Espace Design',
-  description: "Rénover un immeuble à Paris : parties communes, ravalement de façade, cage d'escalier, hall. Vote AG, prix 2025.",
+  title: 'Rénovation Immeuble Paris : parties communes, cage escalier & prix 2025 | Espace Design',
+  description: "Rénover les parties communes d'un immeuble parisien : hall d'entrée, cage escalier, façade. Décisions en copropriété, répartition des charges et prix 2025.",
+  keywords: ['rénovation immeuble Paris', 'rénovation parties communes Paris', 'cage escalier Paris', 'ravalement façade Paris', 'copropriété travaux Paris'],
 }
 
-export default function ArticleRenovationImmmeubleParis() {
+export default function ArticleRenovationImmeubelParis() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
+      />
 
       {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Copropriété</p>
+          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
+            Guides
+          </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Immeuble Paris : parties communes, façade & copropriété 2025
+            Rénovation Immeuble Paris : parties communes, cage escalier et prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            La rénovation d&apos;un immeuble parisien — parties communes, ravalement de façade, cage d&apos;escalier, hall d&apos;entrée — est un projet collectif qui engage la copropriété dans sa globalité. Vote en AG, financements disponibles, budget par poste : guide complet pour syndics et copropriétaires en 2025.
+            La rénovation des parties communes d&apos;un immeuble parisien — hall d&apos;entrée, cage escalier, façade, toiture — est une décision collective en copropriété. Elle implique des votes en assemblée générale, une répartition des charges entre copropriétaires et des démarches administratives spécifiques à Paris. Guide complet 2025 avec les prix réels.
           </p>
         </div>
       </section>
 
-      {/* Section 1 */}
+      {/* Section 1 — Parties communes : de quoi parle-t-on ? */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les principaux postes de travaux en immeuble parisien
+              Parties communes d&apos;un immeuble parisien : ce qui peut être rénové
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Les immeubles parisiens — haussmanniens, de rapport, constructions des années 1960-1980 — présentent des besoins de rénovation spécifiques. Le vieillissement des façades, des parties communes et des équipements collectifs génère des dépenses importantes pour les copropriétés.
+              Les parties communes d&apos;un immeuble en copropriété comprennent tout ce qui est à usage collectif ou qui relève de la structure du bâtiment. À Paris, les immeubles anciens (haussmanniens, immeubles de rapport du XIXe ou début XXe) ont souvent des parties communes importantes en mauvais état.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Une bonne gestion commence par un diagnostic complet des parties communes, souvent réalisé par un architecte ou un bureau de contrôle technique mandaté par le syndic.
+              Contrairement aux parties privatives (l&apos;intérieur de chaque appartement), les travaux de parties communes sont décidés collectivement et financés par l&apos;ensemble des copropriétaires selon leurs tantièmes. Les décisions suivent des règles de majorité définies par la loi du 10 juillet 1965.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Ravalement de façade',
-                  detail: "Nettoyage, traitement et réfection de l'enduit ou du parement de façade. Obligatoire tous les 10 ans à Paris (arrêté préfectoral). Inclut souvent l'isolation thermique par l'extérieur (ITE) pour bénéficier des aides ANAH. Prix : 150 – 350 €/m² de façade selon l'état et le type de finition.",
+                  zone: "Hall d'entrée et vestibule",
+                  description: "La première impression de l'immeuble. Travaux courants : peinture des murs et plafonds, réfection du sol (carrelage, pierre), remplacement de la boîte aux lettres, éclairage LED avec détecteur de présence, interphone ou visiophone, digicode. Budget type : 5 000 à 25 000 € selon surface et prestations.",
+                  frequence: 'Tous les 10 – 15 ans',
                 },
                 {
-                  enjeu: 'Cage d\'escalier et hall d\'entrée',
-                  detail: "Peinture des murs et plafonds, réfection du sol (marbre, carrelage, pierre), remplacement de la serrurerie et de l'interphone, mise aux normes de l'éclairage (LED détection mouvement), rafraîchissement de la boîte aux lettres. Budget : 15 000 – 60 000 € selon l'immeuble.",
+                  zone: "Cage d'escalier",
+                  description: "Zone la plus visible et la plus fréquentée des parties communes. Travaux : peinture des murs et plafonds, réfection ou ponçage-vitrification des marches en bois (très fréquent dans l'haussmannien), remplacement de la rampe ou garde-corps, éclairage, ravalement des murs en pierre. La cage d'escalier représente souvent 40 à 60% du budget de rénovation des parties communes.",
+                  frequence: 'Tous les 15 – 20 ans',
                 },
                 {
-                  enjeu: 'Toiture et étanchéité',
-                  detail: "Réfection de la toiture zinc, ardoise ou tuile, remplacement des gouttières et chenaux, traitement des infiltrations. Poste critique car toute humidité non traitée dégrade les structures et les appartements sous les combles. Prix : 100 – 250 €/m² de toiture.",
+                  zone: 'Façade et ravalement',
+                  description: "Ravalement obligatoire tous les 10 ans à Paris si l'état de la façade est dégradé (loi municipale). Travaux : nettoyage haute pression, réparation des pierres ou enduits, rejointoiement, hydrofugation, ravalement complet. Le ravalement est aussi l'opportunité d'intégrer une isolation thermique par l'extérieur (ITE).",
+                  frequence: 'Tous les 10 ans (obligation légale Paris)',
+                },
+                {
+                  zone: 'Toiture, terrasses et cours',
+                  description: "Travaux d'étanchéité (terrasse-terroir), réfection de couverture (ardoises, zinc, tuiles), isolation des combles par l'intérieur ou l'extérieur, entretien des chéneaux et gouttières. Les combles et la toiture sont souvent les postes les plus coûteux.",
+                  frequence: 'Selon état (tous les 20 – 30 ans)',
                 },
               ].map((el) => (
-                <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.enjeu}</div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                <div key={el.zone} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                  <div className="flex items-start justify-between gap-4 mb-2">
+                    <div className="font-medium text-[#1C1C1C] text-sm">{el.zone}</div>
+                    <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.frequence}</div>
+                  </div>
+                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.description}</div>
                 </div>
               ))}
             </div>
@@ -126,41 +153,107 @@ export default function ArticleRenovationImmmeubleParis() {
         </div>
       </section>
 
-      {/* Section 2 */}
+      {/* Section 2 — Décisions en copropriété */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Vote en AG et procédure décisionnelle en copropriété
+            Décisions en copropriété : comment voter les travaux ?
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les travaux en copropriété sont soumis à un processus décisionnel codifié par la loi du 10 juillet 1965. La majorité requise varie selon l&apos;importance des travaux.
+            Avant de lancer des travaux de parties communes, il faut respecter le processus décisionnel de la copropriété, encadré par la loi du 10 juillet 1965 modifiée. Les règles de majorité varient selon l&apos;importance des travaux.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Article 24 — Majorité simple',
-                detail: "Travaux courants d'entretien et de conservation des parties communes : peinture, remplacement d'équipements vétustes, entretien des espaces verts. Vote à la majorité des voix des copropriétaires présents ou représentés.",
-                cout: 'Travaux courants',
+                regle: 'Majorité simple (article 24)',
+                detail: "S'applique aux travaux d'entretien courant : peinture de la cage d'escalier, remplacement de l'éclairage, réparation de fuites. Vote à la majorité des voix des copropriétaires présents et représentés.",
+                typeTravaux: 'Entretien courant, petites réparations',
               },
               {
-                titre: 'Article 25 — Majorité absolue',
-                detail: "Travaux plus importants : ravalement de façade, isolation thermique, installation d'un ascenseur ou d'un digicode, modification de la structure. Vote à la majorité des voix de tous les copropriétaires (présents + absents).",
-                cout: 'Travaux structurants',
+                regle: 'Majorité absolue (article 25)',
+                detail: "Requiert la majorité de l'ensemble des voix de tous les copropriétaires (présents, représentés ou absents). Pour ravalement de façade, réfection de toiture, isolation thermique, rénovation complète des parties communes.",
+                typeTravaux: 'Travaux importants, embellissements',
               },
               {
-                titre: 'Appel d\'offres et devis',
-                detail: "Pour tout chantier significatif, le syndic sollicite 3 devis minimum auprès d'entreprises qualifiées. Les devis sont présentés en AG avec les détails techniques et financiers. Les copropriétaires peuvent poser des questions et demander des modifications avant le vote.",
-                cout: 'Procédure obligatoire',
+                regle: 'Double majorité (article 26)',
+                detail: "2/3 des voix de l'ensemble des copropriétaires ET majorité en nombre. Réservée aux travaux affectant la jouissance des parties privatives ou aux décisions très structurantes.",
+                typeTravaux: 'Travaux très lourds, modifications du règlement',
               },
               {
-                titre: 'Plan pluriannuel de travaux',
-                detail: "Depuis la loi Climat et Résilience (2021), les copropriétés de plus de 15 lots doivent établir un plan pluriannuel de travaux (PPT) basé sur un diagnostic technique global (DTG). Le PPT anticipe les dépenses sur 10 ans et permet de constituer des réserves.",
-                cout: 'Obligatoire depuis 2023',
+                regle: 'Urgence (article 37)',
+                detail: "En cas de péril imminent (risque de chute, sinistre), le syndic peut engager des travaux conservatoires sans vote préalable, avec convocation d'une AG dans les meilleurs délais pour ratification.",
+                typeTravaux: 'Péril, sinistre, urgence sécurité',
               },
             ].map((el) => (
-              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-2 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+              <div key={el.regle} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-1">{el.regle}</div>
+                <div className="text-[#B8960C] text-xs font-light mb-2">{el.typeTravaux}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-[#1C1C1C] rounded-lg p-5">
+            <h3 className="font-display text-base font-semibold text-white mb-3">
+              Les étapes clés pour faire voter des travaux en AG
+            </h3>
+            <div className="space-y-2">
+              {[
+                "Obtenir 3 devis comparatifs d'artisans qualifiés (obligatoire pour les travaux supérieurs au seuil fixé par le règlement)",
+                "Inscrire les travaux à l'ordre du jour de l'AG — délai minimum de convocation : 21 jours",
+                "Présenter en AG le descriptif des travaux, les devis et le plan de financement (avec ou sans emprunt collectif)",
+                "Après vote favorable : notifier les copropriétaires opposants (délai de recours 2 mois) puis signer le marché",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2 text-sm text-gray-300 font-light">
+                  <CheckCircle size={14} className="text-[#D4AF37] flex-shrink-0 mt-0.5" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 — Rénovation cage escalier */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Rénovation cage escalier Paris : étapes et prix 2025
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            La cage d&apos;escalier est le cœur des parties communes d&apos;un immeuble parisien. Sa rénovation améliore l&apos;image de l&apos;immeuble, valorise les appartements et répond souvent à des exigences de sécurité (normes incendie, garde-corps réglementaire). Voici les étapes et les coûts réels observés à Paris.
+          </p>
+          <div className="space-y-4 mb-6">
+            {[
+              {
+                etape: '1 — Diagnostic et état des lieux',
+                detail: "Inventaire précis de l'état des murs (enduits, peinture, humidité), marches et contremarches (bois massif, béton, pierre), rampe et garde-corps (conformité hauteur 90 cm mini, barreaux), éclairage (conformité), digicode et sonnettes. Le diagnostic oriente le programme de travaux.",
+                cout: 'Gratuit sur devis',
+              },
+              {
+                etape: '2 — Travaux de maçonnerie et enduits',
+                detail: "Rebouchage des fissures et trous, réparation des pierres abîmées, reprise d'enduit sur les murs et plafonds. Dans les immeubles haussmanniens, la restauration des moulures et corniches en staff est un poste significatif mais très valorisant.",
+                cout: '3 000 – 12 000 € (immeuble 5 étages)',
+              },
+              {
+                etape: '3 — Peinture et finitions murales',
+                detail: "Application d'une sous-couche et d'une peinture de qualité (peinture satinée résistante aux frottements recommandée en parties communes). Sur les murs en pierre brute ou parement : nettoyage et hydrofugation. Les détails (plinthes, encadrements de porte, moulures) font toute la différence du résultat.",
+                cout: '2 000 – 8 000 € (immeuble 5 étages)',
+              },
+              {
+                etape: '4 — Sol de la cage et paliers',
+                detail: "Réfection ou ponçage des parquets de palier (très courant dans l'haussmannien), remplacement du carrelage des paliers (tomettes, marbre, grès cérame), traitement des marches en bois (ponçage, huilage, vitrification) ou pose d'un nez de marche antidérapant.",
+                cout: '3 000 – 15 000 € (immeuble 5 étages)',
+              },
+              {
+                etape: '5 — Éclairage et sécurité',
+                detail: "Remplacement des luminaires par LED avec détecteur de présence (économie d'énergie de 70 à 80%), mise aux normes du tableau électrique, remplacement de l'interphone ou du visiophone, installation ou rénovation du digicode. L'éclairage de sécurité (BAES) est obligatoire.",
+                cout: '1 500 – 5 000 €',
+              },
+            ].map((el) => (
+              <div key={el.etape} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.etape}</div>
                   <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
@@ -170,96 +263,56 @@ export default function ArticleRenovationImmmeubleParis() {
         </div>
       </section>
 
-      {/* Section 3 */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Aides financières et financement pour la rénovation d&apos;immeuble à Paris
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            De nombreux dispositifs d&apos;aide permettent aux copropriétés parisiennes de financer leurs travaux de rénovation, notamment ceux à caractère énergétique.
-          </p>
-          <div className="space-y-4 mb-6">
-            {[
-              {
-                type: "MaPrimeRénov' Copropriété",
-                prix: '25 – 45 % des travaux',
-                detail: "Aide de l'ANAH destinée aux copropriétés réalisant des travaux d'amélioration énergétique (isolation de façade, toiture, chauffage collectif). Conditions : gain énergétique d'au moins 35 %, 75 % des lots doivent être des résidences principales. Dossier déposé par le syndic.",
-              },
-              {
-                type: 'Eco-PTZ collectif',
-                prix: "Jusqu'à 50 000 € par logement",
-                detail: "Prêt à taux zéro collectif permettant de financer les travaux de rénovation énergétique en copropriété sans apport initial. Les copropriétaires remboursent via les charges. Compatible avec MaPrimeRénov' Copropriété.",
-              },
-              {
-                type: 'Aides de la Ville de Paris',
-                detail: "Paris propose des aides spécifiques pour l'isolation des façades (Eco-façade) et le ravalement incluant une isolation thermique. Renseignez-vous auprès de l'Agence Parisienne du Climat (APC) qui propose un accompagnement gratuit aux copropriétés.",
-                prix: 'Variable selon projet',
-              },
-              {
-                type: 'TVA à taux réduit',
-                prix: '10 % (au lieu de 20 %)',
-                detail: "Les travaux de rénovation dans les immeubles de plus de 2 ans bénéficient d'une TVA à 10 % (voire 5,5 % pour les travaux d'amélioration thermique). Ce taux s'applique aux travaux en parties communes comme aux parties privatives.",
-              },
-            ].map((el) => (
-              <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-4 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
-                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
-                </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Budget table */}
+      {/* Section 4 — Budget récapitulatif */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Budget par poste : rénovation d&apos;un immeuble parisien (2025)
+            Budget rénovation immeuble Paris : tableau des prix 2025
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Estimations pour un immeuble haussmannien de 10 lots sur 5 étages à Paris, hors aides.
+            Prix indicatifs pour un immeuble parisien de 5 étages (R+5), 10 appartements. Main d&apos;œuvre et matériaux inclus.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Poste de travaux</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Majorité AG</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget estimatif</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Zone rénovée</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prestation</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget (R+5)</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { poste: 'Ravalement de façade (hors ITE)', majorite: 'Art. 25', budget: '60 000 – 120 000 €' },
-                  { poste: 'Isolation thermique extérieure (ITE)', majorite: 'Art. 25', budget: '80 000 – 180 000 €' },
-                  { poste: 'Réfection cage d\'escalier + hall', majorite: 'Art. 24', budget: '20 000 – 60 000 €' },
-                  { poste: 'Toiture (réfection zinc ou ardoise)', majorite: 'Art. 24', budget: '40 000 – 100 000 €' },
-                  { poste: 'Mise aux normes ascenseur', majorite: 'Art. 25', budget: '15 000 – 40 000 €' },
-                  { poste: 'Rénovation chauffage collectif', majorite: 'Art. 25', budget: '30 000 – 80 000 €' },
+                  { zone: "Hall d'entrée", prestation: 'Réfection complète (sol + murs + éclairage)', budget: '8 000 – 25 000 €' },
+                  { zone: 'Cage escalier', prestation: 'Peinture simple (murs + plafonds)', budget: '3 000 – 8 000 €' },
+                  { zone: 'Cage escalier', prestation: 'Réfection complète (enduit + peinture + sol + rampe)', budget: '20 000 – 50 000 €' },
+                  { zone: 'Façade', prestation: 'Ravalement complet (nettoyage + rejointoiement + peinture)', budget: '30 000 – 120 000 €' },
+                  { zone: 'Façade', prestation: 'Ravalement + ITE (isolation thermique extérieure)', budget: '60 000 – 200 000 €' },
+                  { zone: 'Toiture', prestation: 'Réfection étanchéité terrasse', budget: '15 000 – 40 000 €' },
+                  { zone: 'Parties communes', prestation: 'Rénovation globale (hall + cage + éclairage)', budget: '35 000 – 100 000 €' },
                 ].map((row, i) => (
-                  <tr key={row.poste} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.poste}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.majorite}</td>
+                  <tr key={`${row.zone}-${row.prestation}`} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.zone}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.prestation}</td>
                     <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.budget}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+
           <div>
-            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">Conseils pour les copropriétaires et syndics</h3>
+            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
+              Aides financières disponibles pour les copropriétés parisiennes
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "Réalisez un Diagnostic Technique Global (DTG) pour anticiper les travaux sur 10 ans",
-                "Groupez plusieurs postes de travaux pour mutualiser les coûts de chantier (échafaudage, benne)",
-                "Sollicitez l'accompagnement gratuit de l'Agence Parisienne du Climat (APC)",
-                "Exigez 3 devis pour chaque lot de travaux — les écarts entre entreprises sont souvent importants",
-                "Constituez un fonds de travaux suffisant (au moins 5 % du budget prévisionnel par an)",
-                "Vérifiez les qualifications RGE des entreprises pour bénéficier des aides ANAH",
+                "MaPrimeRénov' Copropriétés (ANAH) : jusqu'à 25% des travaux si gain énergétique ≥ 35%",
+                "Éco-PTZ Copropriétés : prêt collectif à taux zéro pour travaux d'économie d'énergie",
+                "Subventions Ville de Paris : aide au ravalement incluant isolation thermique",
+                "Action Logement : peut intervenir pour les copropriétés en difficulté",
+                "Certificats d'économies d'énergie (CEE) : prime des fournisseurs d'énergie",
+                "TVA réduite à 10% (ou 5,5% si travaux d'efficacité énergétique) pour les immeubles de plus de 2 ans",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -267,6 +320,80 @@ export default function ArticleRenovationImmmeubleParis() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Ravalement façade Paris */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Ravalement de façade à Paris : obligation, permis et ABF
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Paris dispose d&apos;une réglementation spécifique sur le ravalement des façades. La Ville peut mettre en demeure les copropriétés dont la façade est dégradée ou présente un risque. Le ravalement est aussi encadré par les règles architecturales propres à chaque secteur.
+          </p>
+          <div className="space-y-4">
+            {[
+              {
+                titre: 'Obligation de ravalement tous les 10 ans',
+                detail: "La réglementation parisienne impose le ravalement des façades tous les 10 ans si leur état est dégradé. La Ville de Paris peut émettre un arrêté de mise en demeure avec délai d'exécution. En cas d'inaction du syndic, la Ville peut faire réaliser les travaux d'office aux frais de la copropriété.",
+              },
+              {
+                titre: 'Déclaration préalable ou permis de construire',
+                detail: "Un ravalement simple (nettoyage, peinture à l'identique) ne nécessite généralement qu'une déclaration préalable de travaux. Si le ravalement modifie l'aspect de la façade (changement de couleur, ITE avec matériaux apparents), un permis de construire peut être requis. Dans les secteurs protégés, l'accord de l'ABF est obligatoire.",
+              },
+              {
+                titre: 'Secteurs protégés et ABF',
+                detail: "De nombreux arrondissements parisiens (1er au 8e, Marais, Montmartre...) sont en secteur sauvegardé ou à proximité de monuments historiques. Toute modification de façade nécessite alors une consultation préalable de l'Architecte des Bâtiments de France (ABF), qui peut imposer des matériaux et des teintes spécifiques.",
+              },
+              {
+                titre: "Ravalement + ITE : l'opportunité à saisir",
+                detail: "Le ravalement est le meilleur moment pour réaliser une isolation thermique par l'extérieur (ITE), qui améliore le DPE de l'immeuble et réduit les charges de chauffage. L'ITE évite de perdre de la surface intérieure et est éligible aux aides ANAH (MaPrimeRénov' Copropriétés).",
+              },
+            ].map((el) => (
+              <div key={el.titre} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.titre}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6 — Qui paie quoi */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Répartition des charges : qui paie quoi en copropriété ?
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            La répartition des charges de travaux entre copropriétaires est encadrée par le règlement de copropriété. Les clés de répartition (tantièmes) définissent la quote-part de chaque lot pour chaque catégorie de charges.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                categorie: 'Charges générales',
+                detail: "Réparties en fonction des tantièmes généraux (proportionnels à la surface et à la valeur des lots). Concernent l'entretien courant des parties communes, le gardiennage, l'assurance.",
+              },
+              {
+                categorie: 'Charges spéciales',
+                detail: "Réparties selon l'utilité de la prestation pour chaque lot (ex : ascenseur : seuls les étages supérieurs paient la totalité). Concernent l'ascenseur, le chauffage collectif, certains équipements.",
+              },
+              {
+                categorie: 'Locataires vs propriétaires',
+                detail: "Certaines charges récupérables sur le locataire (nettoyage, éclairage, eau chaude commune). Les travaux de rénovation lourds (cage d'escalier, ravalement) restent à la charge du propriétaire.",
+              },
+              {
+                categorie: 'Fonds de travaux obligatoire',
+                detail: "Depuis 2017, toute copropriété de plus de 10 lots doit alimenter un fonds de travaux à hauteur d'au moins 5% du budget prévisionnel annuel. Ce fonds permet d'anticiper les travaux sans appel de fonds exceptionnel.",
+              },
+            ].map((el) => (
+              <div key={el.categorie} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.categorie}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -292,12 +419,12 @@ export default function ArticleRenovationImmmeubleParis() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Guides connexes</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/blog/renovation-appartement-paris-13e', title: 'Rénovation appartement Paris 13e' },
-              { href: '/blog/renovation-appartement-paris-15e', title: 'Rénovation appartement Paris 15e' },
-              { href: '/blog/renovation-appartement-paris-17e', title: 'Rénovation appartement Paris 17e' },
-              { href: '/blog/mur-porteur-paris', title: 'Mur porteur Paris : abattre & prix' },
-              { href: '/blog/remise-aux-normes-electrique-paris', title: 'Remise aux normes électrique Paris' },
-              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique Paris' },
+              { href: '/blog/renovation-cage-escalier-paris', title: 'Rénovation cage escalier Paris' },
+              { href: '/blog/renovation-hall-immeuble-paris', title: 'Rénovation hall immeuble Paris' },
+              { href: '/blog/ravalement-facade-copropriete-paris', title: 'Ravalement façade copropriété Paris' },
+              { href: '/blog/renovation-appartement-copropriete-paris', title: 'Rénovation appartement copropriété Paris' },
+              { href: '/blog/revetement-sol-appartement-paris', title: 'Revêtement sol appartement Paris' },
+              { href: '/blog/peinture-appartement-paris', title: 'Peinture appartement Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -314,10 +441,10 @@ export default function ArticleRenovationImmmeubleParis() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Rénover les parties communes de votre immeuble parisien
+          Rénover les parties communes de votre immeuble parisien ?
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Diagnostic gratuit. Devis pour syndics et copropriétés. Réponse sous 48h.
+          Devis pour syndic et copropriété. Cage escalier, hall, façade. Résultat soigné sous délai maîtrisé.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
