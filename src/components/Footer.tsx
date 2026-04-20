@@ -151,6 +151,7 @@ export default function Footer() {
                 { href: '/renovation-appartement-paris', label: 'Rénovation Paris' },
                 { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
                 { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
+                { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
                 { href: '/tarifs', label: 'Tarifs' },
                 { href: '/faq', label: 'FAQ' },
                 { href: '/avis', label: 'Avis clients' },

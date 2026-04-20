@@ -264,6 +264,12 @@ const articles = [
     desc: "Parquet en chêne à Paris : massif vs contrecollé, essence, finitions, prix au m², artisans. Guide complet 2025.",
     tag: 'Sols & Parquet',
   },
+  {
+    href: '/blog/renovation-terrasse-paris',
+    title: 'Rénovation Terrasse Paris : lames, carrelage & prix 2025',
+    desc: "Rénover sa terrasse à Paris : lames composite, carrelage sur plots, bois exotique. Prix au m², copropriété. Guide complet 2025.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
