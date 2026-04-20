@@ -1212,6 +1212,12 @@ const articles = [
     desc: "Poser des carreaux de ciment à Paris. Avantages, jointoiement, traitement hydrofuge, entretien, prix au m². Devis gratuit 48h.",
     tag: 'Sol',
   },
+  {
+    href: '/blog/renovation-chambre-paris-2025',
+    title: "Rénovation Chambre Paris 2025 : tendances, idées & prix artisan",
+    desc: "Rénover sa chambre à Paris en 2025. Tendances déco, matériaux, placards sur mesure, parquet, éclairage, prix artisan. Devis gratuit 48h.",
+    tag: 'Chambre',
+  },
 ]
 
 export default function BlogPage() {
