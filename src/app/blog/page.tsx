@@ -1248,6 +1248,102 @@ const articles = [
     desc: "Rénover un appartement à Pigalle (Paris 9e/18e) : immeubles haussmanniens, caves, combles aménageables. Prix artisan 2025.",
     tag: 'Quartier',
   },
+  {
+    href: '/blog/renovation-appartement-batignolles-paris',
+    title: "Rénovation Appartement Batignolles Paris 17e : artisan & prix 2025",
+    desc: "Rénover un appartement aux Batignolles (Paris 17e) : haussmannien, copropriété, parquet. Devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-montparnasse-paris',
+    title: "Rénovation Appartement Montparnasse Paris 14e/6e : artisan & prix 2025",
+    desc: "Rénover un appartement à Montparnasse : standing, cuisines équipées, salles de bain italiennes. Devis 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-bercy-paris',
+    title: "Rénovation Appartement Bercy Paris 12e : loft & prix 2025",
+    desc: "Rénover un appartement ou loft à Bercy (Paris 12e) : béton ciré, verrières, espaces industriels. Devis 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-opera-paris',
+    title: "Rénovation Appartement Opéra Paris 9e/2e : haussmannien & prix 2025",
+    desc: "Rénover un appartement haussmannien au quartier Opéra (Paris 9e/2e). Moulures, parquet, finitions premium. Devis 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-chatelet-paris',
+    title: "Rénovation Appartement Châtelet-Les Halles Paris : artisan & prix 2025",
+    desc: "Rénover un appartement au coeur de Paris, Châtelet-Les Halles. Accès chantier délicat, finitions premium. Devis 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/placard-sur-mesure-paris',
+    title: "Placard Sur Mesure Paris : fabrication & prix artisan 2025",
+    desc: "Fabrication et pose de placards sur mesure à Paris. Optimisation des espaces, matériaux haut de gamme. Devis 48h.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/dressing-sur-mesure-paris',
+    title: "Dressing Sur Mesure Paris : conception & prix artisan 2025",
+    desc: "Aménagement dressing sur mesure à Paris. Conception 3D, dressing d'angle, éclairage LED. Devis gratuit 48h.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/porte-interieure-paris',
+    title: "Porte Intérieure Paris : pose & remplacement artisan 2025",
+    desc: "Pose et remplacement portes intérieures à Paris. Bois massif, huisseries, finitions laquées. Devis 48h.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/porte-coulissante-paris',
+    title: "Porte Coulissante Paris : installation galandage & prix 2025",
+    desc: "Installation portes coulissantes et galandage à Paris. Gain de place, portes vitrées, bois. Devis 48h.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/salle-de-bain-noire-paris',
+    title: "Salle de Bain Noire Paris : tendance & prix artisan 2025",
+    desc: "Créer une salle de bain noire ou anthracite à Paris. Carrelage noir mat, robinetterie noire, douche italienne. Devis 48h.",
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/carrelage-metro-paris',
+    title: "Carrelage Métro Paris : pose faïence & prix artisan 2025",
+    desc: "Pose carrelage métro en faïence à Paris. Joints colorés, formats 10x20, cuisine et salle de bain. Devis 48h.",
+    tag: 'Carrelage',
+  },
+  {
+    href: '/blog/cuisine-ouverte-salon-paris',
+    title: "Cuisine Ouverte sur Salon Paris : abattre cloison & prix 2025",
+    desc: "Ouvrir la cuisine sur le salon à Paris, abattre une cloison. IPN, mur porteur, prix travaux. Devis 48h.",
+    tag: 'Cuisine',
+  },
+  {
+    href: '/blog/renovation-appartement-30m2-paris',
+    title: "Rénovation Appartement 30m2 Paris : budget & prix 2025",
+    desc: "Rénover un studio ou T1 de 30m2 à Paris. Budget rafraîchissement à réno complète, prix artisan 2025.",
+    tag: 'Budget',
+  },
+  {
+    href: '/blog/renovation-appartement-50m2-paris',
+    title: "Rénovation Appartement 50m2 Paris : budget & prix 2025",
+    desc: "Rénover un T2/T3 de 50m2 à Paris. Budget estimé selon niveau de rénovation, prix artisan 2025.",
+    tag: 'Budget',
+  },
+  {
+    href: '/blog/renovation-appartement-70m2-paris',
+    title: "Rénovation Appartement 70m2 Paris : budget & prix 2025",
+    desc: "Rénover un T3 de 70m2 à Paris. Budget rénovation partielle à complète, prix artisan 2025.",
+    tag: 'Budget',
+  },
+  {
+    href: '/blog/renovation-appartement-80m2-paris',
+    title: "Rénovation Appartement 80m2 Paris : budget & prix 2025",
+    desc: "Rénover un T3/T4 de 80m2 à Paris. Budget estimé selon niveau de travaux, prix artisan 2025.",
+    tag: 'Budget',
+  },
 ]
 
 export default function BlogPage() {
