@@ -2220,6 +2220,24 @@ const articles = [
     desc: "Artisan rénovateur à Houilles (Yvelines). Cuisine, salle de bain, parquet. Devis gratuit 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-juvisy-sur-orge',
+    title: "Rénovation Appartement Juvisy-sur-Orge (91) — 2025",
+    desc: "Artisan rénovateur à Juvisy-sur-Orge (Essonne). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-les-ulis',
+    title: "Rénovation Appartement Les Ulis (91) — Guide 2025",
+    desc: "Rénover un appartement aux Ulis (Essonne). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-velizy-villacoublay',
+    title: "Rénovation Appartement Vélizy-Villacoublay (78) — 2025",
+    desc: "Artisan rénovateur à Vélizy-Villacoublay (Yvelines). Cuisine, salle de bain. Devis gratuit.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
