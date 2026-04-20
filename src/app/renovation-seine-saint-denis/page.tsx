@@ -54,6 +54,8 @@ const villes93 = [
   { href: '/renovation-romainville', label: 'Romainville' },
   { href: '/renovation-les-lilas', label: 'Les Lilas' },
   { href: '/renovation-saint-ouen', label: 'Saint-Ouen-sur-Seine' },
+  { href: '/renovation-villemomble', label: 'Villemomble' },
+  { href: '/renovation-livry-gargan', label: 'Livry-Gargan' },
 ]
 
 const services = [
