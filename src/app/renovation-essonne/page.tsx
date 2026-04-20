@@ -65,6 +65,7 @@ const villes91 = [
   { href: '/renovation-saint-michel-sur-orge', label: 'Saint-Michel-sur-Orge' },
   { href: '/renovation-bretigny-sur-orge', label: 'Brétigny-sur-Orge' },
   { href: '/renovation-etampes', label: 'Étampes' },
+  { href: '/renovation-vigneux-sur-seine', label: 'Vigneux-sur-Seine' },
 ]
 
 const services = [

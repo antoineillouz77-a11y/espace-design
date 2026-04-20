@@ -60,6 +60,7 @@ const villes77 = [
   { href: '/renovation-montereau-fault-yonne', label: 'Montereau-Fault-Yonne' },
   { href: '/renovation-provins', label: 'Provins' },
   { href: '/renovation-fontainebleau', label: 'Fontainebleau' },
+  { href: '/renovation-nemours', label: 'Nemours' },
 ]
 
 const services = [

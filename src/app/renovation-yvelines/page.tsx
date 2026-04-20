@@ -69,6 +69,7 @@ const villes78 = [
   { href: '/renovation-limay', label: 'Limay' },
   { href: '/renovation-buchelay', label: 'Buchelay' },
   { href: '/renovation-bougival', label: 'Bougival' },
+  { href: '/renovation-croissy-sur-seine', label: 'Croissy-sur-Seine' },
 ]
 
 const services = [

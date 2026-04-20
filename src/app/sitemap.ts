@@ -524,6 +524,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-montereau-fault-yonne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-provins`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Val-d'Oise (95) — vague 14
+    { url: `${base}/renovation-sannois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Yvelines (78) — vague 14
+    { url: `${base}/renovation-croissy-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Essonne (91) — vague 14
+    { url: `${base}/renovation-vigneux-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-et-Marne (77) — vague 14
+    { url: `${base}/renovation-nemours`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     // Yvelines (78) — vague 13
     { url: `${base}/renovation-bougival`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 

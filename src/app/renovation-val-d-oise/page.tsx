@@ -59,6 +59,7 @@ const villes95 = [
   { href: '/renovation-herblay-sur-seine', label: 'Herblay-sur-Seine' },
   { href: '/renovation-marines', label: 'Marines' },
   { href: '/renovation-ecouen', label: 'Écouen' },
+  { href: '/renovation-sannois', label: 'Sannois' },
 ]
 
 const services = [
