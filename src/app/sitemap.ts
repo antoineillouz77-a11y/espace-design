@@ -355,6 +355,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Seine-Saint-Denis (93) — nouvelles villes
     { url: `${base}/renovation-coubron`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Val-de-Marne (94) — nouvelles villes
+    { url: `${base}/renovation-villeneuve-le-roi`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Essonne (91) — nouvelles villes
+    { url: `${base}/renovation-ris-orangis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     // Blog — nouveaux articles
     { url: `${base}/blog/mur-porteur-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-copropriete-travaux-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
