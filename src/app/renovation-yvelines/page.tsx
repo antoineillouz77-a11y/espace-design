@@ -42,6 +42,8 @@ const villes78 = [
   { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
   { href: '/renovation-chatou', label: 'Chatou' },
   { href: '/renovation-poissy', label: 'Poissy' },
+  { href: '/renovation-conflans-sainte-honorine', label: 'Conflans-Sainte-Honorine' },
+  { href: '/renovation-mantes-la-jolie', label: 'Mantes-la-Jolie' },
 ]
 
 const services = [

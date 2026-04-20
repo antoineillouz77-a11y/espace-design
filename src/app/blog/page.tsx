@@ -606,6 +606,18 @@ const articles = [
     desc: 'Tout savoir sur le sol stratifié à Paris : types, prix au m², pose, avantages vs parquet. Guide artisan 2025.',
     tag: 'Parquet',
   },
+  {
+    href: '/blog/renovation-appartement-paris-5e',
+    title: 'Rénovation Appartement Paris 5e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 5e arrondissement de Paris : Quartier Latin, Mouffetard, Sorbonne. Artisan local, devis gratuit 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/renovation-appartement-paris-13e',
+    title: 'Rénovation Appartement Paris 13e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 13e arrondissement de Paris : Butte-aux-Cailles, Gobelins, Chinatown. Artisan local, devis gratuit 48h.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {

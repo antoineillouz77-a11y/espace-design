@@ -40,6 +40,9 @@ const villes95 = [
   { href: '/renovation-argenteuil', label: 'Argenteuil' },
   { href: '/renovation-cergy', label: 'Cergy' },
   { href: '/renovation-epinay-sur-seine', label: 'Épinay-sur-Seine' },
+  { href: '/renovation-pontoise', label: 'Pontoise' },
+  { href: '/renovation-ermont', label: 'Ermont' },
+  { href: '/renovation-sarcelles', label: 'Sarcelles' },
 ]
 
 const services = [
