@@ -67,6 +67,7 @@ const villes78 = [
   { href: '/renovation-triel-sur-seine', label: 'Triel-sur-Seine' },
   { href: '/renovation-aubergenville', label: 'Aubergenville' },
   { href: '/renovation-limay', label: 'Limay' },
+  { href: '/renovation-buchelay', label: 'Buchelay' },
 ]
 
 const services = [

@@ -73,6 +73,8 @@ const villes94 = [
   { href: '/renovation-villejuif', label: 'Villejuif' },
   { href: '/renovation-arcueil', label: 'Arcueil' },
   { href: '/renovation-cachan', label: 'Cachan' },
+  { href: '/renovation-orly', label: 'Orly' },
+  { href: '/renovation-rungis', label: 'Rungis' },
 ]
 
 const services = [

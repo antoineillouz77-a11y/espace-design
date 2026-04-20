@@ -495,6 +495,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Blog — vague 3
     { url: `${base}/blog/escalier-interieur-renovation-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
+    // Paris arrondissements — vague 8
+    { url: `${base}/renovation-appartement-paris-5e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-appartement-paris-6e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-appartement-paris-7e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-paris-9e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-paris-10e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-paris-12e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+
+    // Seine-Saint-Denis (93) — vague 9
+    { url: `${base}/renovation-livry-gargan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-tremblay-en-france`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-aulnay-sous-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Val-de-Marne (94) — vague 9
+    { url: `${base}/renovation-fontenay-sous-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-orly`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-rungis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Yvelines (78) — vague 8
+    { url: `${base}/renovation-buchelay`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 4-5
+    { url: `${base}/blog/robinetterie-salle-de-bain-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-wc-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-loft-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-immeuble-ancien-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-maison-ancienne-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Pages hub département
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/renovation-val-de-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

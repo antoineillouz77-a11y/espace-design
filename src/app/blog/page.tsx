@@ -912,6 +912,48 @@ const articles = [
     desc: "Dulux, Tollens, Farrow & Ball : quelle peinture choisir pour un appartement parisien ? Conseils 2025.",
     tag: 'Peinture',
   },
+  {
+    href: '/blog/escalier-interieur-renovation-paris',
+    title: 'Rénover un Escalier Intérieur Paris : bois, métal, béton — guide 2025',
+    desc: "Habillage bois, rampe métal, marches béton : rénover son escalier parisien. Prix artisan Paris 2025.",
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/robinetterie-salle-de-bain-paris',
+    title: 'Robinetterie Salle de Bain Paris : choisir & installer 2025',
+    desc: "Hansgrohe, Grohe, Roca : quelle robinetterie pour votre salle de bain parisienne ? Pose artisan Paris 2025.",
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/renovation-wc-paris',
+    title: 'Rénovation WC Paris : prix, matériaux & artisan 2025',
+    desc: "Rénover les toilettes d'un appartement parisien : WC suspendu, carrelage, peinture. Artisan Paris, devis 48h.",
+    tag: 'Plomberie',
+  },
+  {
+    href: '/blog/renovation-studio-paris',
+    title: 'Rénovation Studio Paris : optimiser chaque m² — guide 2025',
+    desc: "Rénover un studio parisien (15 à 35 m²) : optimisation, cuisinette, salle de bain, rangements. Artisan Paris.",
+    tag: 'Prix & Budgets',
+  },
+  {
+    href: '/blog/renovation-loft-paris',
+    title: 'Rénovation Loft Paris : aménager un espace ouvert avec style 2025',
+    desc: "Rénover un loft parisien : béton ciré, verrière, mezzanine, décloisonnement. Artisan Paris, devis 48h.",
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/renovation-immeuble-ancien-paris',
+    title: 'Rénover un Immeuble Ancien Paris : façade, parties communes 2025',
+    desc: "Rénover un immeuble parisien : ravalement, isolation, parties communes, logements. Artisan Paris, devis 48h.",
+    tag: 'Rénovation',
+  },
+  {
+    href: '/blog/renovation-maison-ancienne-paris',
+    title: 'Rénover une Maison Ancienne Paris : guide technique & prix 2025',
+    desc: "Murs en meulière, planchers bois, charpente : rénover une maison ancienne à Paris. Artisan Paris, devis 48h.",
+    tag: 'Rénovation',
+  },
 ]
 
 export default function BlogPage() {
