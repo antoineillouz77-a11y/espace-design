@@ -2178,6 +2178,12 @@ const articles = [
     desc: "Rénover pour louer à Paris : quels travaux prioriser, budget, rentabilité, retour sur investissement.",
     tag: 'Investissement',
   },
+  {
+    href: '/blog/devis-renovation-appartement-paris',
+    title: "Devis Rénovation Appartement Paris — Comment l'obtenir ? 2025",
+    desc: "Comment obtenir un devis de rénovation à Paris ? Ce qu'il doit contenir, pièges à éviter, conseils.",
+    tag: 'Guide',
+  },
 ]
 
 export default function BlogPage() {
