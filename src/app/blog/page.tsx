@@ -786,6 +786,24 @@ const articles = [
     desc: "Poser un carrelage grand format à Paris : 120x60, rectifié, joints fins 1mm. Artisan carreleur, prix 2025.",
     tag: 'Carrelage',
   },
+  {
+    href: '/blog/mur-porteur-paris',
+    title: 'Mur Porteur Paris : abattre, percer & prix artisan 2025',
+    desc: "Abattre ou percer un mur porteur à Paris : IPN, bilan structurel, copropriété, déclaration travaux. Prix et artisan 2025.",
+    tag: 'Guides',
+  },
+  {
+    href: '/blog/renovation-appartement-copropriete-travaux-paris',
+    title: 'Travaux en Copropriété Paris : autorisations, règles & artisan 2025',
+    desc: "Tout savoir sur les travaux en copropriété à Paris : autorisations, règlements, parties communes vs privatives. Guide pratique et prix 2025.",
+    tag: 'Guides',
+  },
+  {
+    href: '/blog/renovation-appartement-paris-18e-montmartre',
+    title: 'Rénovation Appartement Paris 18e Montmartre : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 18e arrondissement de Paris : Montmartre, Pigalle, Château Rouge, Clignancourt. Artisan local, devis 48h.",
+    tag: 'Arrondissements',
+  },
 ]
 
 export default function BlogPage() {

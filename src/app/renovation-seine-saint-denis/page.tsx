@@ -68,6 +68,7 @@ const villes93 = [
   { href: '/renovation-le-raincy', label: 'Le Raincy' },
   { href: '/renovation-villepinte', label: 'Villepinte' },
   { href: '/renovation-vaujours', label: 'Vaujours' },
+  { href: '/renovation-coubron', label: 'Coubron' },
 ]
 
 const services = [

@@ -344,6 +344,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-pontoise`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-ermont`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-sarcelles`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-osny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Yvelines (78) — nouvelles villes
+    { url: `${base}/renovation-meulan-en-yvelines`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Essonne (91) — nouvelles villes
+    { url: `${base}/renovation-montgeron`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-Saint-Denis (93) — nouvelles villes
+    { url: `${base}/renovation-coubron`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — nouveaux articles
+    { url: `${base}/blog/mur-porteur-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-copropriete-travaux-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-paris-18e-montmartre`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Pages hub département
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
