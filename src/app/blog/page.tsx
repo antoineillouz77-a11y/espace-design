@@ -1404,6 +1404,30 @@ const articles = [
     desc: "Rénover un appartement au quartier Saint-Lazare (Paris 8e/9e). Investissement locatif, standing. Devis 48h.",
     tag: 'Quartier',
   },
+  {
+    href: '/blog/eclairage-appartement-paris',
+    title: "Éclairage Appartement Paris : spots LED & installation 2025",
+    desc: "Éclairage et luminaires pour appartement à Paris. Spots encastrés, rubans LED, domotique, variateurs. Devis 48h.",
+    tag: 'Travaux',
+  },
+  {
+    href: '/blog/renovation-appartement-boulogne-billancourt',
+    title: "Rénovation Appartement Boulogne-Billancourt : artisan & prix 2025",
+    desc: "Rénover un appartement à Boulogne-Billancourt (92). Haussmannien et moderne, finitions premium. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-rapide-appartement-paris',
+    title: "Rénovation Rapide Appartement Paris : délais & planning 2025",
+    desc: "Rénover rapidement son appartement à Paris. Rafraîchissement express, planning chantier, délais réalistes.",
+    tag: 'Conseils',
+  },
+  {
+    href: '/blog/comment-choisir-artisan-paris',
+    title: "Comment Choisir Son Artisan Rénovation Paris : guide 2025",
+    desc: "Choisir le bon artisan rénovation à Paris. Labels, assurances, devis comparatifs, garanties. Guide 2025.",
+    tag: 'Conseils',
+  },
 ]
 
 export default function BlogPage() {
