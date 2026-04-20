@@ -462,6 +462,42 @@ const articles = [
     desc: "Rénover son balcon en copropriété à Paris : parties communes vs privatives, autorisations AG, carrelage, étanchéité. Prix 2025.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/pose-parquet-sur-carrelage-paris',
+    title: 'Poser Parquet sur Carrelage Paris : méthode & prix 2025',
+    desc: 'Peut-on poser un parquet sur carrelage à Paris ? Méthode flottante, différence de hauteur, seuils. Prix et conseils artisan 2025.',
+    tag: 'Parquet',
+  },
+  {
+    href: '/blog/isolation-combles-subvention-paris',
+    title: 'Isolation Combles Paris : subventions MaPrimeRénov & prix 2025',
+    desc: 'Isoler ses combles à Paris avec MaPrimeRénov : montant des aides, travaux éligibles, artisan RGE. Guide et prix 2025.',
+    tag: 'Isolation',
+  },
+  {
+    href: '/blog/peinture-beton-cire-paris',
+    title: 'Peinture Béton Ciré Paris : application, entretien & prix 2025',
+    desc: 'Appliquer du béton ciré à Paris : préparation support, couches, lasure de protection. Cuisine, salle de bain, salon. Prix artisan 2025.',
+    tag: 'Peinture',
+  },
+  {
+    href: '/blog/renovation-appartement-copropriete-paris',
+    title: 'Rénovation Appartement en Copropriété Paris : règles & démarches 2025',
+    desc: 'Rénover en copropriété à Paris : travaux autorisés sans AG, vote obligatoire, déclaration en mairie. Guide complet 2025.',
+    tag: 'Réglementation',
+  },
+  {
+    href: '/blog/renovation-cuisine-studio-paris',
+    title: 'Cuisine Studio Paris : aménager une kitchenette 2025',
+    desc: 'Créer ou rénover une cuisine dans un studio parisien : kitchenette encastrée, rangements optimisés, électroménager compact. Prix 2025.',
+    tag: 'Cuisine',
+  },
+  {
+    href: '/blog/renovation-immeuble-ancien-paris',
+    title: 'Rénovation Immeuble Ancien Paris : contraintes, ABF & prix 2025',
+    desc: 'Rénover un appartement dans un immeuble ancien à Paris : contraintes ABF, planchers en bois, murs porteurs, isolation. Prix et guide 2025.',
+    tag: 'Rénovation',
+  },
 ]
 
 export default function BlogPage() {
