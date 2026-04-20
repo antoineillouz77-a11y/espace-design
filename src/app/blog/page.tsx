@@ -1650,6 +1650,18 @@ const articles = [
     desc: "Aménager un appartement en colocation à Paris. Chambres indépendantes, SDB partagée. Devis 48h.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/renovation-appartement-asnieres',
+    title: "Rénovation Appartement Asnières-sur-Seine : artisan & prix 2025",
+    desc: "Rénover un appartement à Asnières-sur-Seine (92). Ville dynamique en bord de Seine. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-pergola-paris',
+    title: "Pergola Paris : installation bois ou alu & prix 2025",
+    desc: "Installer une pergola à Paris (terrasse, jardin). Bois, aluminium, bioclimatique. Devis gratuit 48h.",
+    tag: 'Extérieur',
+  },
 ]
 
 export default function BlogPage() {
