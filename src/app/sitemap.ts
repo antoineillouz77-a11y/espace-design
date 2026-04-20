@@ -536,6 +536,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-appartement-paris-2e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-appartement-paris-3e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-appartement-paris-4e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-appartement-paris-8e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Val-de-Marne (94) — vague 18
+    { url: `${base}/renovation-ormesson-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Blog — vague 13
     { url: `${base}/blog/budget-renovation-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
