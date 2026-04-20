@@ -1,16 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Le Vésinet — Artisan Rénovateur & Devis | Espace Design',
+  title: 'Rénovation Le Vésinet — Artisan & Devis Gratuit | Espace Design',
   description:
-    'Artisan rénovateur au Vésinet (78110). Rénovation complète, maison, salle de bain, cuisine haut de gamme. Devis gratuit 48h.',
+    'Artisan rénovateur au Vésinet (78110) : villas bourgeoises, pavillons, maisons de caractère. Rénovation complète, finitions soignées. Devis gratuit sous 48h.',
   keywords: [
-    'rénovation appartement Le Vésinet',
-    'artisan rénovation Le Vésinet 78',
-    'renovation Le Vésinet 78110',
-    'artisan Le Vésinet Yvelines',
+    'rénovation Le Vésinet',
+    'artisan Le Vésinet',
+    'rénovation villa Le Vésinet',
+    'prix rénovation Le Vésinet',
+    'entreprise rénovation Le Vésinet 78110',
+    'artisan rénovation Yvelines',
   ],
 }
 
@@ -21,6 +24,11 @@ const schemaLocal = {
   description: 'Artisan rénovateur au Vésinet, commune haut de gamme des Yvelines.',
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-le-vesinet',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
   areaServed: {
     '@type': 'AdministrativeArea',
     name: 'Le Vésinet',
@@ -38,7 +46,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Yvelines', item: 'https://espacedesignparis.fr/renovation-yvelines' },
     { '@type': 'ListItem', position: 3, name: 'Rénovation Le Vésinet', item: 'https://espacedesignparis.fr/renovation-le-vesinet' },
   ],
 }
@@ -57,26 +65,18 @@ const schemaFaq = {
     },
     {
       '@type': 'Question',
-      name: 'Espace Design intervient-il au Vésinet ?',
+      name: 'Avez-vous un artisan disponible au Vésinet ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. Nous intervenons au Vésinet et dans les communes voisines : Chatou, Saint-Germain-en-Laye, Rueil-Malmaison. Déplacement gratuit et sans engagement.',
+        text: 'Oui. Espace Design intervient régulièrement au Vésinet et dans toutes les Yvelines. Déplacement gratuit et sans engagement, réponse sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels travaux réalisez-vous au Vésinet ?',
+      name: 'Comment rénover une villa au Vésinet ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rénovation complète de villas et appartements, salle de bain haut de gamme, cuisine sur mesure, parquet massif, menuiserie, décoration intérieure.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Avez-vous une assurance décennale ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+        text: 'La rénovation d\'une villa au Vésinet commence par un diagnostic sur place. Nous élaborons ensuite un plan de travaux complet : gros oeuvre, second oeuvre, finitions et décoration. Patrick vous accompagne de A à Z avec un seul interlocuteur.',
       },
     },
   ],

@@ -3,14 +3,15 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Fontenay-sous-Bois — Artisan & Devis | Espace Design',
+  title: 'Rénovation Fontenay-sous-Bois — Artisan & Devis Gratuit | Espace Design',
   description:
-    'Artisan rénovateur à Fontenay-sous-Bois (94120). Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit 48h.',
+    'Artisan rénovateur à Fontenay-sous-Bois (94120) : maisons individuelles, immeubles années 70-80. Rénovation complète 800-1500€/m². Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Fontenay-sous-Bois',
     'artisan rénovation Fontenay 94',
     'renovation Fontenay-sous-Bois 94120',
     'artisan Fontenay Val-de-Marne',
+    'rénovation maison Fontenay-sous-Bois',
   ],
 }
 
@@ -31,6 +32,11 @@ const schemaLocal = {
     postalCode: '94120',
     addressCountry: 'FR',
   },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
 }
 
 const schemaBreadcrumb = {
@@ -38,7 +44,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
     { '@type': 'ListItem', position: 3, name: 'Rénovation Fontenay-sous-Bois', item: 'https://espacedesignparis.fr/renovation-fontenay-sous-bois' },
   ],
 }
@@ -52,23 +58,23 @@ const schemaFaq = {
       name: 'Quel est le prix d\'une rénovation à Fontenay-sous-Bois ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Fontenay-sous-Bois varie entre 700 et 1 400 €/m² pour une rénovation standard, et jusqu\'à 2 200 €/m² pour des finitions haut de gamme. Commune résidentielle aisée du Val-de-Marne. Devis gratuit sous 48h.',
+        text: 'Le coût d\'une rénovation à Fontenay-sous-Bois varie entre 800 et 1 500 €/m² pour une rénovation complète. Pour les maisons individuelles avec finitions haut de gamme, le budget peut atteindre 2 000 €/m². Devis gratuit sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Espace Design intervient-il à Fontenay-sous-Bois ?',
+      name: 'Comment trouver un artisan sérieux à Fontenay-sous-Bois ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, nous intervenons à Fontenay-sous-Bois et dans tout le Val-de-Marne : Vincennes, Nogent-sur-Marne, Saint-Maur, Joinville-le-Pont. Déplacement gratuit et sans engagement.',
+        text: 'Espace Design intervient régulièrement à Fontenay-sous-Bois et dans tout le Val-de-Marne. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur du début à la fin.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels travaux réalisez-vous à Fontenay-sous-Bois ?',
+      name: 'Rénovez-vous les maisons individuelles à Fontenay-sous-Bois ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
+        text: 'Oui, nous rénovons aussi bien les appartements des immeubles résidentiels que les maisons individuelles à Fontenay-sous-Bois. Extension, isolation, cuisine, salle de bain, décoration — nous prenons en charge tous les corps de métier.',
       },
     },
     {
@@ -98,16 +104,15 @@ export default function RenovationFontenaySousBois() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
-      {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Val-de-Marne — Fontenay-sous-Bois 94</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Val-de-Marne — Fontenay-sous-Bois 94120</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement Fontenay-sous-Bois
+            Rénovation Fontenay-sous-Bois
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Fontenay-sous-Bois. Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit sous 48h.
+            Artisan rénovateur à Fontenay-sous-Bois (94120) : maisons individuelles, immeubles résidentiels des années 70-80. Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -127,7 +132,6 @@ export default function RenovationFontenaySousBois() {
         </div>
       </section>
 
-      {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
@@ -135,9 +139,9 @@ export default function RenovationFontenaySousBois() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Conception et rénovation complète de votre salle de bain et cuisine. Carrelage, plomberie, menuiserie, électricité.' },
-              { num: '03', title: 'Décoration sur mesure', desc: 'Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique adaptée à votre appartement.' },
+              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros oeuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier maîtrisé à Fontenay-sous-Bois.' },
+              { num: '02', title: 'Salle de bain et cuisine', desc: 'Conception et rénovation complète de votre salle de bain et cuisine. Carrelage, plomberie, menuiserie, électricité — clé en main.' },
+              { num: '03', title: 'Décoration sur mesure', desc: 'Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique adaptée à votre maison ou appartement.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -150,14 +154,47 @@ export default function RenovationFontenaySousBois() {
         </div>
       </section>
 
-      {/* Atouts */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Prix rénovation à Fontenay-sous-Bois
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-[#F2F2EE]">
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {[
+                  ['Peinture appartement ou maison', '25 - 60 €/m²'],
+                  ['Rénovation salle de bain', '3 500 - 11 000 €'],
+                  ['Rénovation cuisine', '4 000 - 16 000 €'],
+                  ['Parquet (pose + fourniture)', '40 - 90 €/m²'],
+                  ['Rénovation complète appartement', '800 - 1 500 €/m²'],
+                  ['Rénovation maison individuelle', '900 - 2 000 €/m²'],
+                ].map(([label, price]) => (
+                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
+                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-400 text-xs font-light mt-3">Tarifs indicatifs — devis gratuit personnalisé sous 48h.</p>
+        </div>
+      </section>
+
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -171,7 +208,6 @@ export default function RenovationFontenaySousBois() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -181,15 +217,15 @@ export default function RenovationFontenaySousBois() {
             {[
               {
                 q: 'Quel est le prix d\'une rénovation à Fontenay-sous-Bois ?',
-                a: 'Le coût d\'une rénovation à Fontenay-sous-Bois varie entre 700 et 1 400 €/m² pour une rénovation standard, et jusqu\'à 2 200 €/m² pour des finitions haut de gamme. Commune résidentielle aisée du Val-de-Marne. Devis gratuit sous 48h.',
+                a: 'Le coût d\'une rénovation à Fontenay-sous-Bois varie entre 800 et 1 500 €/m² pour une rénovation complète. Pour les maisons individuelles avec finitions haut de gamme, le budget peut atteindre 2 000 €/m².',
               },
               {
-                q: 'Espace Design intervient-il à Fontenay-sous-Bois ?',
-                a: 'Oui, nous intervenons à Fontenay-sous-Bois et dans tout le Val-de-Marne : Vincennes, Nogent-sur-Marne, Saint-Maur, Joinville-le-Pont. Déplacement gratuit et sans engagement.',
+                q: 'Comment trouver un artisan sérieux à Fontenay-sous-Bois ?',
+                a: 'Espace Design intervient régulièrement à Fontenay-sous-Bois et dans tout le Val-de-Marne. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h.',
               },
               {
-                q: 'Quels travaux réalisez-vous à Fontenay-sous-Bois ?',
-                a: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure.',
+                q: 'Rénovez-vous les maisons individuelles à Fontenay-sous-Bois ?',
+                a: 'Oui, nous rénovons aussi bien les appartements que les maisons individuelles à Fontenay-sous-Bois. Extension, isolation, cuisine, salle de bain — nous prenons en charge tous les corps de métier.',
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -208,16 +244,19 @@ export default function RenovationFontenaySousBois() {
         </div>
       </section>
 
-      {/* Zones voisines */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
               { href: '/renovation-vincennes', label: 'Vincennes' },
               { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
+              { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
+              { href: '/renovation-joinville-le-pont', label: 'Joinville-le-Pont' },
               { href: '/renovation-paris-12e', label: 'Paris 12e' },
               { href: '/renovation-paris-20e', label: 'Paris 20e' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -231,7 +270,6 @@ export default function RenovationFontenaySousBois() {
         </div>
       </section>
 
-      {/* Voir aussi */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -258,7 +296,6 @@ export default function RenovationFontenaySousBois() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
