@@ -252,6 +252,18 @@ const articles = [
     desc: "Rénover un appartement autour de la Bastille (Paris 11e-12e) : prix, artisans, appartements anciens et lofts. Guide complet 2025.",
     tag: 'Guides',
   },
+  {
+    href: '/blog/renovation-duplex-paris',
+    title: 'Rénovation Duplex Paris : prix, aménagement & guide 2025',
+    desc: "Rénover un duplex parisien : mezzanine, escalier, décloisonnement, hauteur sous plafond. Prix et guide complet 2025.",
+    tag: 'Guides',
+  },
+  {
+    href: '/blog/parquet-chene-paris',
+    title: 'Parquet Chêne Paris : massif, contrecollé & prix 2025',
+    desc: "Parquet en chêne à Paris : massif vs contrecollé, essence, finitions, prix au m², artisans. Guide complet 2025.",
+    tag: 'Sols & Parquet',
+  },
 ]
 
 export default function BlogPage() {
