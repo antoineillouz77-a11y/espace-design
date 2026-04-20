@@ -1008,6 +1008,12 @@ const articles = [
     desc: "Combien prévoir pour rénover un appartement à Paris en 2025 ? Prix au m² par type de travaux, budget total, astuces économies.",
     tag: 'Budget & Prix',
   },
+  {
+    href: '/blog/travaux-renovation-locatif-paris',
+    title: 'Rénovation Appartement Locatif Paris : travaux déductibles & rentabilité 2025',
+    desc: "Optimiser la rentabilité de votre bien locatif à Paris. Travaux déductibles, valorisation après rénovation, DPE et loyer.",
+    tag: 'Investissement',
+  },
 ]
 
 export default function BlogPage() {

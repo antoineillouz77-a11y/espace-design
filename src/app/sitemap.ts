@@ -542,6 +542,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Val-de-Marne (94) — vague 18
     { url: `${base}/renovation-ormesson-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-santeny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-noiseau`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 13 (suite)
+    { url: `${base}/blog/travaux-renovation-locatif-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Blog — vague 13
     { url: `${base}/blog/budget-renovation-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
