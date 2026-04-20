@@ -294,6 +294,18 @@ const articles = [
     desc: "Béton ciré à Paris : cuisine, salle de bain, séjour. Prix au m², application, entretien, comparatif avec carrelage. Guide complet 2025.",
     tag: 'Sols & Parquet',
   },
+  {
+    href: '/blog/renovation-salle-de-jeux-paris',
+    title: 'Aménagement Salle de Jeux Paris : idées & prix 2025',
+    desc: "Créer ou rénover une salle de jeux pour enfants à Paris : sol souple, rangements, peinture. Prix et idées déco 2025.",
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/renovation-wc-paris',
+    title: 'Rénovation WC Paris : carrelage, WC suspendu & prix 2025',
+    desc: "Rénover ses WC à Paris : carrelage, faïence, WC suspendu, lave-mains. Prix, délais, artisans. Guide complet 2025.",
+    tag: 'Plomberie',
+  },
 ]
 
 export default function BlogPage() {
