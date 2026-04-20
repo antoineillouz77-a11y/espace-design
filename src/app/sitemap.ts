@@ -178,6 +178,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-immeuble-ancien-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/ravalement-facade-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/ravalement-facade-copropriete-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-mise-en-location-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

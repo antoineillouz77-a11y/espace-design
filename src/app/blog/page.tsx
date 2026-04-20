@@ -510,6 +510,12 @@ const articles = [
     desc: 'Organiser un ravalement de façade en copropriété à Paris : majorité requise, consultation entreprises, financement. Guide syndic 2025.',
     tag: 'Copropriété',
   },
+  {
+    href: '/blog/renovation-appartement-mise-en-location-paris',
+    title: 'Rénovation Avant Location Paris : travaux, budget & rentabilité 2025',
+    desc: 'Rénover un appartement avant de le louer à Paris : travaux prioritaires, budget optimal, rendement locatif. Guide investisseur 2025.',
+    tag: 'Investissement',
+  },
 ]
 
 export default function BlogPage() {

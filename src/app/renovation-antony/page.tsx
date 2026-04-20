@@ -1,16 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Antony — Artisan Rénovateur & Devis | Espace Design',
+  title: 'Rénovation Antony (92160) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Antony (92160). Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit 48h.',
+    'Artisan rénovateur à Antony (92160). Rénovation appartement, maison, salle de bain, cuisine. Devis gratuit 48h. Espace Design.',
   keywords: [
     'rénovation appartement Antony',
     'artisan rénovation Antony 92',
+    'décoration intérieure Antony',
     'renovation Antony 92160',
-    'artisan Antony Hauts-de-Seine',
+    'entreprise renovation Antony Hauts-de-Seine',
+    'artisan Antony 92',
   ],
 }
 
@@ -18,7 +21,7 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur à Antony, commune résidentielle des Hauts-de-Seine au sud de Paris.',
+  description: 'Artisan rénovateur à Antony, ville résidentielle cossue au sud de Paris dans les Hauts-de-Seine.',
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-antony',
   areaServed: {
@@ -33,26 +36,16 @@ const schemaLocal = {
   },
 }
 
-const schemaBreadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Antony', item: 'https://espacedesignparis.fr/renovation-antony' },
-  ],
-}
-
 const schemaFaq = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Antony ?',
+      name: "Quel est le prix d'une rénovation à Antony ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Antony varie entre 700 et 1 400 €/m² pour une rénovation standard. Antony est une commune résidentielle des Hauts-de-Seine au sud de Paris. Devis gratuit sous 48h.',
+        text: "Le coût d'une rénovation à Antony varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux. Antony est une commune résidentielle cossue des Hauts-de-Seine au sud de Paris. Devis gratuit sous 48h.",
       },
     },
     {
@@ -60,7 +53,7 @@ const schemaFaq = {
       name: 'Espace Design intervient-il à Antony ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. Nous intervenons à Antony et dans les communes voisines : Clamart, Châtillon, Montrouge, Bagneux. Déplacement gratuit et sans engagement.',
+        text: 'Oui. Nous intervenons à Antony et dans les communes voisines : Châtenay-Malabry, Massy, Bagneux, Clamart. Déplacement gratuit et sans engagement.',
       },
     },
     {
@@ -76,9 +69,19 @@ const schemaFaq = {
       name: 'Avez-vous une assurance décennale ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+        text: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans après livraison.',
       },
     },
+  ],
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
+    { '@type': 'ListItem', position: 3, name: 'Antony', item: 'https://espacedesignparis.fr/renovation-antony' },
   ],
 }
 
@@ -98,16 +101,15 @@ export default function RenovationAntony() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
-      {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Hauts-de-Seine — Antony 92</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Antony — 92160</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement Antony
+            Rénovation Antony
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Antony. Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Antony. Rénovation complète, salle de bain, cuisine, décoration sur-mesure et finitions haut de gamme. Ville résidentielle cossue au sud de Paris, proche Châtenay-Malabry, Massy et Bagneux. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -127,7 +129,6 @@ export default function RenovationAntony() {
         </div>
       </section>
 
-      {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
@@ -135,9 +136,9 @@ export default function RenovationAntony() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Salle de bain et cuisine rénovées sur mesure. Conception, pose, plomberie et carrelage inclus.' },
-              { num: '03', title: 'Finitions sur mesure', desc: 'Menuiserie, parquet, carrelage, peinture décorative. Les détails qui transforment votre intérieur.' },
+              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier maîtrisé de A à Z.' },
+              { num: '02', title: 'Salle de bain & cuisine', desc: 'Salle de bain et cuisine rénovées sur-mesure. Conception, pose, plomberie, carrelage grand format et robinetterie haut de gamme.' },
+              { num: '03', title: 'Finitions sur mesure', desc: 'Menuiserie, parquet, carrelage, peinture décorative. Les détails qui transforment votre intérieur en espace exceptionnel.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -150,14 +151,56 @@ export default function RenovationAntony() {
         </div>
       </section>
 
-      {/* Atouts */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Tous nos services
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {s.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
+            Une réalisation
+          </h2>
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/25-wc-beton-cire.jpg" alt="Rénovation intérieure sur-mesure — Antony" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -171,7 +214,6 @@ export default function RenovationAntony() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -180,12 +222,12 @@ export default function RenovationAntony() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Antony ?',
-                a: 'Le coût d\'une rénovation à Antony varie entre 700 et 1 400 €/m² pour une rénovation standard. Antony est une commune résidentielle des Hauts-de-Seine au sud de Paris. Devis gratuit sous 48h.',
+                q: "Quel est le prix d'une rénovation à Antony ?",
+                a: "Le coût d'une rénovation à Antony varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux. Devis gratuit sous 48h.",
               },
               {
                 q: 'Espace Design intervient-il à Antony ?',
-                a: 'Oui. Nous intervenons à Antony et dans les communes voisines : Clamart, Châtillon, Montrouge, Bagneux. Déplacement gratuit et sans engagement.',
+                a: 'Oui. Nous intervenons à Antony et dans les communes voisines : Châtenay-Malabry, Massy, Bagneux. Déplacement gratuit et sans engagement.',
               },
               {
                 q: 'Quels travaux réalisez-vous à Antony ?',
@@ -193,7 +235,7 @@ export default function RenovationAntony() {
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
-                a: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans.',
+                a: 'Oui, assurance décennale et RC professionnelle. Travaux garantis 10 ans après livraison.',
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -208,16 +250,17 @@ export default function RenovationAntony() {
         </div>
       </section>
 
-      {/* Zones voisines */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-chatenay-malabry', label: 'Châtenay-Malabry' },
+              { href: '/renovation-massy', label: 'Massy' },
+              { href: '/renovation-bagneux', label: 'Bagneux' },
               { href: '/renovation-clamart', label: 'Clamart' },
-              { href: '/renovation-chatillon', label: 'Châtillon' },
               { href: '/renovation-montrouge', label: 'Montrouge' },
-              { href: '/renovation-versailles', label: 'Versailles' },
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -231,7 +274,6 @@ export default function RenovationAntony() {
         </div>
       </section>
 
-      {/* Voir aussi */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -258,7 +300,6 @@ export default function RenovationAntony() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
