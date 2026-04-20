@@ -1554,6 +1554,12 @@ const articles = [
     desc: "Rénover un appartement à Nanterre (92). Ville universitaire, La Défense. Devis gratuit 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-argenteuil',
+    title: "Rénovation Appartement Argenteuil : artisan & prix 2025",
+    desc: "Rénover un appartement à Argenteuil (95). Grande ville du Val-d'Oise, parc varié. Devis 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
