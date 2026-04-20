@@ -68,6 +68,7 @@ const villes91 = [
   { href: '/renovation-vigneux-sur-seine', label: 'Vigneux-sur-Seine' },
   { href: '/renovation-saint-germain-les-arpajon', label: 'Saint-Germain-lès-Arpajon' },
   { href: '/renovation-fleury-merogis', label: 'Fleury-Mérogis' },
+  { href: '/renovation-courcouronnes', label: 'Courcouronnes' },
 ]
 
 const services = [

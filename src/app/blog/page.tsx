@@ -1020,6 +1020,18 @@ const articles = [
     desc: "Optimiser la rentabilité de votre bien locatif à Paris. Travaux déductibles, valorisation après rénovation, DPE et loyer.",
     tag: 'Investissement',
   },
+  {
+    href: '/blog/baignoire-ilot-paris',
+    title: "Baignoire Îlot Paris : installation, prix & styles — guide artisan 2025",
+    desc: "Installer une baignoire îlot à Paris. Styles, matériaux, contraintes plomberie, prix 2025. Devis gratuit 48h.",
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/renovation-fenetre-double-vitrage-paris',
+    title: 'Remplacement Fenêtres Double Vitrage Paris : prix & guide 2025',
+    desc: "Changer ses fenêtres à Paris. Double/triple vitrage, démarches syndic, CEE, prix 2025. Devis gratuit 48h.",
+    tag: 'Menuiserie',
+  },
 ]
 
 export default function BlogPage() {

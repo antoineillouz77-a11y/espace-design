@@ -547,6 +547,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Essonne (91) — vague 19
     { url: `${base}/renovation-saint-germain-les-arpajon`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-fleury-merogis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-courcouronnes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-et-Marne (77) — vague 19
+    { url: `${base}/renovation-gretz-armainvilliers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 14 (suite)
+    { url: `${base}/blog/baignoire-ilot-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
+    // Blog — vague 15
+    { url: `${base}/blog/renovation-fenetre-double-vitrage-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Blog — vague 14
     { url: `${base}/blog/tendances-deco-appartement-paris-2025`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
