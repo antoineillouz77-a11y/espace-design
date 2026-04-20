@@ -204,7 +204,11 @@ export default function Footer() {
 
         <div className="mt-12 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-600">
           <span>© {new Date().getFullYear()} Espace Design — SIRET 904 728 268 00015</span>
-          <span>Rénovation & Décoration Intérieure · Paris & Île-de-France</span>
+          <div className="flex gap-4 items-center">
+            <Link href="/mentions-legales" className="hover:text-[#D4AF37] transition-colors">Mentions légales</Link>
+            <span>·</span>
+            <span>Rénovation & Décoration Intérieure · Paris & Île-de-France</span>
+          </div>
         </div>
       </div>
     </footer>
