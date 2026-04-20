@@ -420,6 +420,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Seine-Saint-Denis (93) — nouvelles villes
     { url: `${base}/renovation-neuilly-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-gournay-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-vaires-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Val-d'Oise (95) — nouvelles villes

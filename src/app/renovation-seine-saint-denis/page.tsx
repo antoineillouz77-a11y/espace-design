@@ -70,6 +70,7 @@ const villes93 = [
   { href: '/renovation-vaujours', label: 'Vaujours' },
   { href: '/renovation-coubron', label: 'Coubron' },
   { href: '/renovation-neuilly-sur-marne', label: 'Neuilly-sur-Marne' },
+  { href: '/renovation-gournay-sur-marne', label: 'Gournay-sur-Marne' },
 ]
 
 const services = [
