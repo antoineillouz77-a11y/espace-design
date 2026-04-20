@@ -135,6 +135,13 @@ const localBusinessSchema = {
     { '@type': 'City', name: 'Saint-Germain-en-Laye' },
     { '@type': 'City', name: 'Le Vésinet' },
   ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+    bestRating: '5',
+    worstRating: '1',
+  },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Services de rénovation appartement Paris',

@@ -245,6 +245,8 @@ export default function RenovationSalleDeBainParis() {
               { href: '/blog/carrelage-appartement-paris', label: 'Carrelage appartement Paris' },
               { href: '/carrelage-paris', label: 'Nos services carrelage' },
               { href: '/plomberie-paris', label: 'Nos services plomberie' },
+              { href: '/tarifs', label: 'Nos tarifs 2025' },
+              { href: '/faq', label: 'FAQ rénovation' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

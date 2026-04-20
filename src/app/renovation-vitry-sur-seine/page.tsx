@@ -258,6 +258,8 @@ export default function RenovationVitrySurSeine() {
               { href: '/platrererie-paris', label: 'Plâtrerie' },
               { href: '/decoration-interieure-paris', label: 'Décoration' },
               { href: '/amenagement-interieur-paris', label: 'Aménagement' },
+              { href: '/tarifs', label: 'Nos tarifs' },
+              { href: '/faq', label: 'FAQ rénovation' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

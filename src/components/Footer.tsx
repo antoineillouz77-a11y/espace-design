@@ -145,6 +145,7 @@ export default function Footer() {
                 { href: '/renovation-appartement-paris', label: 'Rénovation Paris' },
                 { href: '/tarifs', label: 'Tarifs' },
                 { href: '/faq', label: 'FAQ' },
+                { href: '/avis', label: 'Avis clients' },
                 { href: '/blog', label: 'Blog' },
                 { href: '/contact', label: 'Contact' },
               ].map((l) => (
