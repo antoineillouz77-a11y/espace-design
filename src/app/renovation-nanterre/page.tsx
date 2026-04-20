@@ -3,15 +3,16 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Nanterre — Artisan Rénovateur & Devis | Espace Design',
+  title: 'Rénovation Nanterre — Artisan & Devis Gratuit | Espace Design',
   description:
-    'Artisan rénovateur à Nanterre (92000). Rénovation complète, salle de bain, cuisine, décoration haut de gamme. Devis gratuit 48h. Espace Design.',
+    'Artisan rénovateur à Nanterre (92000) : immeubles collectifs, quartier La Défense résidentiel, logements réhabilités. Prix 800-1500€/m². Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Nanterre',
     'artisan rénovation Nanterre 92',
     'entreprise rénovation Nanterre',
     'renovation Nanterre 92000',
-    'artisan Nanterre',
+    'artisan Nanterre La Défense',
+    'artisan Nanterre hauts-de-seine',
   ],
 }
 
@@ -32,6 +33,11 @@ const schemaLocal = {
     postalCode: '92000',
     addressCountry: 'FR',
   },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
 }
 
 const schemaBreadcrumb = {
@@ -39,7 +45,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
     { '@type': 'ListItem', position: 3, name: 'Rénovation Nanterre', item: 'https://espacedesignparis.fr/renovation-nanterre' },
   ],
 }
@@ -53,23 +59,23 @@ const schemaFaq = {
       name: 'Quel est le prix d\'une rénovation à Nanterre ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Nanterre varie entre 700 et 1 300 €/m² pour une rénovation standard, et jusqu\'à 2 000 €/m² pour des finitions haut de gamme. Devis gratuit personnalisé sous 48h.',
+        text: 'Le coût d\'une rénovation à Nanterre varie entre 800 et 1 500 €/m² pour une rénovation complète. Pour les finitions haut de gamme, comptez 1 500 à 2 500 €/m². Devis gratuit personnalisé sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Espace Design intervient-il à Nanterre ?',
+      name: 'Espace Design intervient-il à Nanterre proche La Défense ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, nous intervenons à Nanterre et dans toute la zone Hauts-de-Seine. Puteaux, Courbevoie, Rueil-Malmaison, La Défense — notre équipe se déplace sans frais de déplacement.',
+        text: 'Oui, nous intervenons régulièrement à Nanterre et dans tout le secteur La Défense : Puteaux, Courbevoie, Rueil-Malmaison. Déplacement gratuit et sans engagement.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels travaux réalisez-vous à Nanterre ?',
+      name: 'Comment rénover un appartement à Nanterre ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rénovation complète, cuisine, salle de bain, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure. Un seul interlocuteur du début à la fin.',
+        text: 'Nous prenons en charge la totalité des travaux : gros oeuvre, électricité, plomberie, cloisons, finitions. Un seul artisan du début à la fin. Devis gratuit sous 48h, délai de réalisation selon surface.',
       },
     },
     {
@@ -99,16 +105,15 @@ export default function RenovationNanterre() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
-      {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Hauts-de-Seine — Nanterre 92</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Hauts-de-Seine — Nanterre 92000</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
             Rénovation appartement<br className="hidden sm:block" /> Nanterre
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Nanterre et dans les Hauts-de-Seine. Rénovation complète, salle de bain, cuisine, finitions haut de gamme. Devis gratuit sous 48h.
+            Artisan rénovateur à Nanterre (92000) : immeubles collectifs, quartier La Défense résidentiel, logements sociaux réhabilités. Rénovation complète, salle de bain, cuisine. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -128,7 +133,6 @@ export default function RenovationNanterre() {
         </div>
       </section>
 
-      {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
@@ -136,9 +140,9 @@ export default function RenovationNanterre() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond à Nanterre : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Conception et réalisation de salles de bain et cuisines adaptées à votre budget. Carrelage, faïence, robinetterie, aménagement sur mesure.' },
-              { num: '03', title: 'Finitions sur mesure', desc: 'Parquet, peinture, menuiseries, carrelage. Un savoir-faire artisanal au service de votre appartement à Nanterre.' },
+              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond à Nanterre : gros oeuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier maîtrisé.' },
+              { num: '02', title: 'Salle de bain et cuisine', desc: 'Conception et réalisation de salles de bain et cuisines adaptées à votre budget. Carrelage, faïence, robinetterie, aménagement sur mesure.' },
+              { num: '03', title: 'Finitions sur mesure', desc: 'Parquet, peinture, menuiseries, carrelage. Un savoir-faire artisanal au service de votre appartement ou logement à Nanterre.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -151,14 +155,47 @@ export default function RenovationNanterre() {
         </div>
       </section>
 
-      {/* Atouts */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Prix rénovation à Nanterre
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-[#F2F2EE]">
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {[
+                  ['Peinture appartement', '25 - 60 €/m²'],
+                  ['Rénovation salle de bain', '3 000 - 10 000 €'],
+                  ['Rénovation cuisine', '4 000 - 15 000 €'],
+                  ['Parquet (pose + fourniture)', '40 - 90 €/m²'],
+                  ['Rénovation complète', '800 - 1 500 €/m²'],
+                  ['Rénovation haut de gamme', '1 500 - 2 500 €/m²'],
+                ].map(([label, price]) => (
+                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
+                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-400 text-xs font-light mt-3">Tarifs indicatifs — devis gratuit personnalisé sous 48h.</p>
+        </div>
+      </section>
+
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -172,7 +209,6 @@ export default function RenovationNanterre() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -182,15 +218,15 @@ export default function RenovationNanterre() {
             {[
               {
                 q: 'Quel est le prix d\'une rénovation à Nanterre ?',
-                a: 'Le coût d\'une rénovation à Nanterre varie entre 700 et 1 300 €/m² pour une rénovation standard, et jusqu\'à 2 000 €/m² pour des finitions haut de gamme. Devis gratuit sous 48h.',
+                a: 'Le coût d\'une rénovation à Nanterre varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour des finitions haut de gamme, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.',
               },
               {
-                q: 'Espace Design intervient-il à Nanterre ?',
-                a: 'Oui, nous intervenons à Nanterre et dans toute la zone Hauts-de-Seine. Puteaux, Courbevoie, Rueil-Malmaison, La Défense — notre équipe se déplace sans frais de déplacement.',
+                q: 'Espace Design intervient-il à Nanterre proche La Défense ?',
+                a: 'Oui, nous intervenons régulièrement à Nanterre et dans tout le secteur La Défense : Puteaux, Courbevoie, Rueil-Malmaison. Déplacement gratuit et sans engagement.',
               },
               {
-                q: 'Quels travaux réalisez-vous à Nanterre ?',
-                a: 'Rénovation complète, cuisine, salle de bain, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure. Un seul interlocuteur du début à la fin.',
+                q: 'Comment rénover un appartement à Nanterre ?',
+                a: 'Nous prenons en charge la totalité des travaux : gros oeuvre, électricité, plomberie, cloisons, finitions. Un seul artisan du début à la fin. Devis gratuit sous 48h.',
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -209,19 +245,22 @@ export default function RenovationNanterre() {
         </div>
       </section>
 
-      {/* Zones voisines */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
               { href: '/renovation-puteaux', label: 'Puteaux' },
               { href: '/renovation-courbevoie', label: 'Courbevoie' },
               { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
-              { href: '/renovation-paris-17e', label: 'Paris 17e' },
+              { href: '/renovation-colombes', label: 'Colombes' },
+              { href: '/renovation-colombes', label: 'Suresnes' },
+              { href: '/renovation-appartement-paris', label: 'Paris' },
+              { href: '/contact', label: 'Nous contacter' },
             ].map((z) => (
               <Link
-                key={z.href}
+                key={z.href + z.label}
                 href={z.href}
                 className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
               >
@@ -232,7 +271,6 @@ export default function RenovationNanterre() {
         </div>
       </section>
 
-      {/* Voir aussi */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -259,7 +297,6 @@ export default function RenovationNanterre() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">

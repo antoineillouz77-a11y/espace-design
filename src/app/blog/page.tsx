@@ -516,6 +516,30 @@ const articles = [
     desc: 'Rénover un appartement avant de le louer à Paris : travaux prioritaires, budget optimal, rendement locatif. Guide investisseur 2025.',
     tag: 'Investissement',
   },
+  {
+    href: '/blog/carrelage-salle-de-bain-paris',
+    title: 'Carrelage Salle de Bain Paris : pose, choix & prix 2025',
+    desc: 'Poser du carrelage en salle de bain à Paris : format, joint époxy, pose sur ancien carrelage, prix artisan. Guide 2025.',
+    tag: 'Carrelage',
+  },
+  {
+    href: '/blog/devis-renovation-en-ligne-paris',
+    title: 'Devis Rénovation Paris : comment obtenir un bon devis en 2025',
+    desc: 'Obtenir un devis de rénovation à Paris : comment comparer artisans, questions à poser, pièges à éviter. Guide pratique 2025.',
+    tag: 'Conseils',
+  },
+  {
+    href: '/blog/renovation-avant-vente-paris',
+    title: 'Rénovation Avant Vente Paris : valoriser son appartement 2025',
+    desc: 'Rénover avant de vendre à Paris : quels travaux pour valoriser, budget, retour sur investissement. Conseils artisan 2025.',
+    tag: 'Investissement',
+  },
+  {
+    href: '/blog/travaux-electricite-appartement-paris',
+    title: 'Travaux Électricité Appartement Paris : mise aux normes & prix 2025',
+    desc: "Mettre aux normes l'électricité d'un appartement à Paris : tableau, prises, éclairage. Prix et artisan RGE. Devis gratuit 48h.",
+    tag: 'Électricité',
+  },
 ]
 
 export default function BlogPage() {
