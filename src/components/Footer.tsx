@@ -89,6 +89,9 @@ const villes = [
   { href: '/renovation-palaiseau', label: 'Palaiseau' },
   { href: '/renovation-argenteuil', label: 'Argenteuil' },
   { href: '/renovation-cergy', label: 'Cergy' },
+  { href: '/renovation-epinay-sur-seine', label: 'Épinay-sur-Seine' },
+  { href: '/renovation-noisy-le-grand', label: 'Noisy-le-Grand' },
+  { href: '/renovation-chatenay-malabry', label: 'Châtenay-Malabry' },
 ]
 
 export default function Footer() {

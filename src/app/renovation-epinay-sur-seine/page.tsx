@@ -4,16 +4,16 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Colombes — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Épinay-sur-Seine — Appartement (93) | Espace Design',
   description:
-    'Artisan rénovateur à Colombes. Rénovation complète, décoration sur-mesure. Devis gratuit 48h. Proche Courbevoie et Asnières.',
+    'Artisan rénovateur à Épinay-sur-Seine (93). Rénovation appartement, peinture, parquet, cuisine. Devis gratuit 48h. Espace Design.',
   keywords: [
-    'rénovation appartement Colombes',
-    'artisan rénovation Colombes',
-    'décoration intérieure Colombes',
-    'renovation Colombes 92700',
-    'entreprise renovation Colombes',
-    'artisan Colombes hauts-de-seine',
+    'rénovation appartement Épinay-sur-Seine',
+    'artisan rénovation Épinay-sur-Seine',
+    'décoration intérieure Épinay-sur-Seine',
+    'renovation Épinay-sur-Seine 93800',
+    'entreprise renovation Épinay-sur-Seine',
+    'artisan Épinay-sur-Seine Seine-Saint-Denis',
   ],
 }
 
@@ -21,17 +21,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Colombes.',
+  description: 'Artisan rénovateur et décorateur intérieur à Épinay-sur-Seine.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-colombes',
+  url: 'https://espacedesignparis.fr/renovation-epinay-sur-seine',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Colombes',
+    name: 'Épinay-sur-Seine',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Colombes',
-    postalCode: '92700',
+    addressLocality: 'Épinay-sur-Seine',
+    postalCode: '93800',
     addressCountry: 'FR',
   },
 }
@@ -42,18 +42,18 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le délai pour obtenir un devis à Colombes ?',
+      name: 'Quel est le délai pour obtenir un devis à Épinay-sur-Seine ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Colombes et dans toute la région.',
+        text: "Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Épinay-sur-Seine et dans toute la région.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation complète à Colombes ?',
+      name: "Quel est le prix d'une rénovation complète à Épinay-sur-Seine ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation complète varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.',
+        text: "Le coût d'une rénovation complète varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.",
       },
     },
     {
@@ -61,15 +61,15 @@ const schemaFaq = {
       name: 'Avez-vous une assurance décennale ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.',
+        text: "Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Intervenez-vous à Colombes ?',
+      name: 'Intervenez-vous à Épinay-sur-Seine ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, nous intervenons régulièrement à Colombes et dans toute l\'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.',
+        text: "Oui, nous intervenons régulièrement à Épinay-sur-Seine et dans toute l'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.",
       },
     },
   ],
@@ -81,11 +81,11 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Colombes', item: 'https://espacedesignparis.fr/renovation-colombes' },
+    { '@type': 'ListItem', position: 3, name: 'Épinay-sur-Seine', item: 'https://espacedesignparis.fr/renovation-epinay-sur-seine' },
   ],
 }
 
-export default function RenovationColombes() {
+export default function RenovationEpinaySurSeine() {
   return (
     <>
       <script
@@ -103,13 +103,13 @@ export default function RenovationColombes() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Colombes — 92700</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Épinay-sur-Seine — 93800</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Colombes
+            Rénovation Épinay-sur-Seine
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Colombes. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Centre, Fossés-Jean, Le Plateau. Proche Courbevoie et Asnières. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Épinay-sur-Seine. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -132,13 +132,13 @@ export default function RenovationColombes() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Colombes
+            Nos services à Épinay-sur-Seine
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation haut de gamme', desc: 'Rénovation complète de prestige avec des matériaux nobles : marbre, parquet massif, boiseries sur-mesure. L&apos;excellence à chaque étape.' },
-              { num: '02', title: 'Décoration intérieure', desc: 'Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique d&apos;exception pour des intérieurs d&apos;exception.' },
-              { num: '03', title: 'Sur-mesure & finitions', desc: 'Menuiserie haut de gamme, parquet point de Hongrie, salle de bain en marbre, peinture décorative. Chaque détail compte.' },
+              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier maîtrisé.' },
+              { num: '02', title: 'Décoration intérieure', desc: 'Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique adaptée à votre appartement.' },
+              { num: '03', title: 'Sur-mesure & finitions', desc: 'Menuiserie, parquet, carrelage, peinture décorative. Les détails qui transforment un intérieur ordinaire en espace exceptionnel.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -151,13 +151,45 @@ export default function RenovationColombes() {
         </div>
       </section>
 
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Tous nos services
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {s.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/18-salon-renovation-complete.jpg" alt="Salon rénové avec finitions haut de gamme et agencement sur-mesure — rénovation appartement Colombes" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/25-wc-beton-cire.jpg" alt="Rénovation intérieure sur-mesure — Épinay-sur-Seine" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -168,7 +200,7 @@ export default function RenovationColombes() {
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -190,20 +222,20 @@ export default function RenovationColombes() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le délai pour obtenir un devis à Colombes ?',
-                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement à Colombes.',
+                q: 'Quel est le délai pour obtenir un devis à Épinay-sur-Seine ?',
+                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement à Épinay-sur-Seine.',
               },
               {
-                q: 'Quel est le prix d\'une rénovation complète à Colombes ?',
-                a: 'Le coût varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².',
+                q: "Quel est le prix d'une rénovation complète à Épinay-sur-Seine ?",
+                a: "Le coût varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
                 a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans.',
               },
               {
-                q: 'Intervenez-vous à Colombes ?',
-                a: 'Oui, nous intervenons régulièrement à Colombes et dans toute l\'Île-de-France. Devis gratuit sous 48h.',
+                q: 'Intervenez-vous à Épinay-sur-Seine ?',
+                a: "Oui, nous intervenons régulièrement à Épinay-sur-Seine et dans toute l'Île-de-France. Devis gratuit sous 48h.",
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -223,10 +255,12 @@ export default function RenovationColombes() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-courbevoie', label: 'Courbevoie' },
+              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
+              { href: '/renovation-clichy-sous-bois', label: 'Clichy-sous-Bois' },
+              { href: '/renovation-villetaneuse', label: 'Villetaneuse' },
+              { href: '/renovation-pierrefitte-sur-seine', label: 'Pierrefitte-sur-Seine' },
+              { href: '/renovation-argenteuil', label: 'Argenteuil' },
               { href: '/renovation-asnieres-sur-seine', label: 'Asnières-sur-Seine' },
-              { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
-              { href: '/renovation-paris-17e', label: 'Paris 17e' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -240,41 +274,13 @@ export default function RenovationColombes() {
         </div>
       </section>
 
-      {/* Voir aussi */}
-      <section className="py-10 bg-white border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
-              { href: '/renovation-cuisine-paris', label: 'Cuisine' },
-              { href: '/peinture-paris', label: 'Peinture' },
-              { href: '/parquet-paris', label: 'Parquet' },
-              { href: '/carrelage-paris', label: 'Carrelage' },
-              { href: '/electricite-paris', label: 'Électricité' },
-              { href: '/plomberie-paris', label: 'Plomberie' },
-              { href: '/menuiserie-paris', label: 'Menuiserie' },
-              { href: '/isolation-paris', label: 'Isolation' },
-              { href: '/platrererie-paris', label: 'Plâtrerie' },
-              { href: '/decoration-interieure-paris', label: 'Décoration' },
-              { href: '/amenagement-interieur-paris', label: 'Aménagement' },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Colombes
+            Votre projet à Épinay-sur-Seine
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Colombes.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune d'Épinay-sur-Seine.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
