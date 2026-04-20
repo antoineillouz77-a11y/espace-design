@@ -1206,6 +1206,12 @@ const articles = [
     desc: "Installer une VMC dans son appartement à Paris. Simple flux, double flux, réglementation, prix artisan. Devis gratuit 48h.",
     tag: 'Technique',
   },
+  {
+    href: '/blog/carreaux-ciment-paris',
+    title: 'Carreaux de Ciment Paris : pose, entretien & prix artisan 2025',
+    desc: "Poser des carreaux de ciment à Paris. Avantages, jointoiement, traitement hydrofuge, entretien, prix au m². Devis gratuit 48h.",
+    tag: 'Sol',
+  },
 ]
 
 export default function BlogPage() {
