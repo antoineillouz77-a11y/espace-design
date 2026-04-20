@@ -444,6 +444,12 @@ const articles = [
     desc: 'Faire nettoyer son appartement après rénovation à Paris : poussière plâtre, résidus peinture, vitres. Tarifs et conseils artisan 2025.',
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/renovation-salle-de-bain-petite-surface-paris',
+    title: 'Petite Salle de Bain Paris : rénovation 3m² 4m² & prix 2025',
+    desc: 'Rénover une petite salle de bain à Paris (3 à 5 m²) : douche italienne, WC suspendu, rangements. Optimisation espace et prix 2025.',
+    tag: 'Salle de bain',
+  },
 ]
 
 export default function BlogPage() {
