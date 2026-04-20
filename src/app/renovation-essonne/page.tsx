@@ -50,6 +50,7 @@ const villes91 = [
   { href: '/renovation-yerres', label: 'Yerres' },
   { href: '/renovation-viry-chatillon', label: 'Viry-Châtillon' },
   { href: '/renovation-brunoy', label: 'Brunoy' },
+  { href: '/renovation-juvisy-sur-orge', label: 'Juvisy-sur-Orge' },
 ]
 
 const services = [
