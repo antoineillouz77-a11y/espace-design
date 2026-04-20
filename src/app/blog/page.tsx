@@ -1170,6 +1170,18 @@ const articles = [
     desc: "Rénover un appartement haussmannien à Paris. Parquets, moulures, cheminées, réglementation, isolation, prix. Guide expert 2025.",
     tag: 'Rénovation',
   },
+  {
+    href: '/blog/enduit-decoratif-paris',
+    title: "Enduit Décoratif Paris : béton ciré, stuc, tadelakt & prix 2025",
+    desc: "Enduit décoratif à Paris : béton ciré, stuc vénitien, tadelakt. Application, entretien, prix au m². Artisan qualifié. Devis gratuit 48h.",
+    tag: 'Décoration',
+  },
+  {
+    href: '/blog/prix-peinture-appartement-paris',
+    title: 'Prix Peinture Appartement Paris : tarif artisan au m² 2025',
+    desc: "Prix et tarif peinture appartement à Paris en 2025. Coût au m² selon pièce, préparation murs, main d'œuvre. Devis gratuit 48h.",
+    tag: 'Peinture',
+  },
 ]
 
 export default function BlogPage() {
