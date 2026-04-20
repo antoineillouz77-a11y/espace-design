@@ -38,7 +38,7 @@ const schemaLocal = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
-    reviewCount: '32',
+    reviewCount: '47',
   },
 }
 

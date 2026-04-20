@@ -33,26 +33,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation dans le 1er arrondissement de Paris ?',
+      name: "Quel est le prix d'une rénovation dans le 1er arrondissement de Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dans le 1er arrondissement, les prix de rénovation sont parmi les plus élevés de Paris. Comptez entre 2 000 et 4 500 €/m² selon l\'état du bien et le niveau de finition souhaité. Pour une rénovation complète d\'un appartement haussmannien de 60 m², le budget se situe généralement entre 80 000 et 150 000 €. Les contraintes ABF (Architecte des Bâtiments de France) et la présence fréquente de matériaux anciens (parquet point de Hongrie, moulures, cheminées) peuvent alourdir la facture de 15 à 30 % par rapport à un appartement standard.',
+        text: "Le 1er arrondissement est l'un des plus chers de Paris pour la rénovation. Les prix varient entre 2 000 et 4 500 €/m² selon l'ampleur des travaux et la nature du bien. Une rénovation légère (peinture, parquet, salle de bain) débute autour de 1 200 à 1 800 €/m². Une rénovation complète d'un appartement de 60 m² dans un immeuble classé proche du Louvre — incluant plâtrerie de prestige, parquet sur mesure, cuisine haute gamme, électricité et plomberie — peut facilement dépasser 200 000 €. Les contraintes ABF, les immeubles entièrement classés et les exigences des copropriétés de prestige sont les principaux facteurs de surcoût.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Faut-il une autorisation spéciale pour rénover dans le 1er arrondissement ?',
+      name: 'Quelles sont les contraintes ABF dans le 1er arrondissement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. Le 1er arrondissement est entièrement classé en secteur sauvegardé (Site Patrimonial Remarquable), ce qui implique un avis obligatoire de l\'Architecte des Bâtiments de France (ABF) pour tous les travaux visibles depuis l\'extérieur : ravalement de façade, remplacement de fenêtres, modifications de devantures. Pour les travaux intérieurs (sans impact sur les parties communes ni sur l\'aspect extérieur du bâtiment), une simple déclaration préalable suffit généralement. Il est fortement conseillé de consulter la Mairie du 1er ou un architecte du patrimoine avant d\'engager des travaux.',
+        text: "Le 1er arrondissement est intégralement couvert par des périmètres de protection des Monuments Historiques (Louvre, Sainte-Chapelle, Palais-Royal). Les Architectes des Bâtiments de France exercent un contrôle très strict sur tout ce qui est visible depuis l'extérieur : couleur et style des fenêtres, volets, matériaux de façade, balcons. Toute modification de menuiserie extérieure nécessite une déclaration préalable de travaux, soumise à l'avis conforme de l'ABF. Cet avis peut imposer des matériaux spécifiques (bois peint en teinte historique, double vitrage aux proportions identiques aux fenêtres d'origine) et rallonger les délais de 2 à 4 mois.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien de temps prend une rénovation complète dans le 1er arrondissement ?',
+      name: 'Faut-il un architecte pour rénover dans le 1er arrondissement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Une rénovation complète d\'un appartement de 50 à 80 m² dans le 1er arrondissement prend en moyenne 3 à 6 mois, hors délais d\'obtention des autorisations administratives (ABF, déclarations préalables). Les délais peuvent s\'allonger de 2 à 4 semaines supplémentaires si des éléments patrimoniaux sont découverts en cours de chantier (peintures anciennes, parquets originaux à restaurer, structures maçonnées). Prévoir également un délai de 4 à 8 semaines pour l\'obtention des autorisations auprès de l\'ABF.',
+        text: "Un architecte n'est pas obligatoire pour les travaux intérieurs inférieurs à 150 m² de surface de plancher créée. En revanche, dans le 1er arrondissement, il est fortement recommandé de faire appel à un architecte du patrimoine ou à un maître d'oeuvre expérimenté : les interactions avec l'ABF et le dépôt de déclarations préalables nécessitent une parfaite connaissance des règles du Plan de Sauvegarde et de Mise en Valeur. Les copropriétés de prestige du 1er exigent souvent des dossiers de travaux très complets avant d'autoriser les chantiers.",
       },
     },
   ],
@@ -90,7 +90,7 @@ export default function ArticleRenovationParis1er() {
             Rénovation Appartement Paris 1er : artisan &amp; prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Louvre, Châtelet, Les Halles, Palais-Royal — le 1er arrondissement est l&apos;un des plus prestigieux et des plus contraignants de Paris pour engager des travaux. Immeubles haussmanniens classés, secteur sauvegardé, avis ABF obligatoire : guide complet pour rénover dans les règles en 2025.
+            Louvre, Palais-Royal, Châtelet, Les Halles : le 1er arrondissement est le coeur historique de Paris et l&apos;un des plus réglementés de France. Immeubles entièrement classés, ABF omniprésents, copropriétés de prestige exigeantes — rénover dans le 1er requiert une expertise particulière. Guide complet pour vos travaux en 2025.
           </p>
         </div>
       </section>
@@ -100,27 +100,27 @@ export default function ArticleRenovationParis1er() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les spécificités du 1er arrondissement pour la rénovation
+              Louvre, Palais-Royal, Les Halles : les spécificités du 1er arrondissement
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le 1er arrondissement de Paris est l&apos;arrondissement le plus touristique de la capitale. Il abrite le musée du Louvre, le Palais-Royal, la Sainte-Chapelle et les Halles — autant de monuments qui font du secteur un espace patrimonial d&apos;exception, mais aussi l&apos;un des plus réglementés pour les travaux.
+              Le 1er arrondissement est l&apos;arrondissement le moins peuplé de Paris (moins de 17 000 habitants) mais l&apos;un des plus denses en monuments historiques classés. Le Louvre, le Palais-Royal, la Sainte-Chapelle, le Pont-Neuf et les jardins des Tuileries constituent autant de périmètres de protection qui couvrent la quasi-totalité de l&apos;arrondissement.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Rénover un appartement dans le 1er, c&apos;est composer avec des contraintes administratives strictes, un bâti ancien exigeant des savoir-faire spécifiques, et un marché immobilier haut de gamme qui justifie des finitions irréprochables.
+              Le parc immobilier du 1er est dominé par des immeubles des 17e, 18e et 19e siècles, avec quelques constructions modernes autour des Halles. Les appartements sont souvent de grande taille (plus de 80 m²), avec des hauteurs sous plafond remarquables (3 à 4 m dans les étages nobles), des parquets anciens en point de Hongrie et des éléments architecturaux de prestige (moulures, cheminées en marbre, boiseries).
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Secteur sauvegardé et avis ABF',
-                  detail: 'L\'ensemble du 1er arrondissement est couvert par le Plan de Sauvegarde et de Mise en Valeur (PSMV). Tout travail affectant l\'aspect extérieur d\'un bâtiment (fenêtres, ravalement, toiture) requiert l\'avis favorable de l\'Architecte des Bâtiments de France. Un refus de l\'ABF peut bloquer entièrement un projet de rénovation.',
+                  enjeu: 'Immeubles entièrement classés aux Monuments Historiques',
+                  detail: "Plusieurs immeubles du 1er arrondissement sont classés ou inscrits dans leur intégralité — non seulement la façade mais aussi les parties communes intérieures (escaliers, hall, caves voûtées). Toute modification, même minime, nécessite une autorisation de la Direction Régionale des Affaires Culturelles (DRAC) et un suivi par un architecte du patrimoine.",
                 },
                 {
-                  enjeu: 'Immeubles haussmanniens : contraintes et richesses',
-                  detail: 'Les immeubles du 1er (IXe – XIXe s.) présentent des planchers en bois porteurs, des moulures en plâtre, des parquets point de Hongrie et des cheminées d\'époque. Leur conservation est souvent imposée par le règlement de copropriété ou par l\'ABF. La restauration de ces éléments nécessite des artisans spécialisés et augmente le coût des travaux.',
+                  enjeu: 'Contrôle ABF très strict — déclarations préalables systématiques',
+                  detail: "Dans le 1er arrondissement, l'avis de l'Architecte des Bâtiments de France est requis pour tout changement visible depuis la rue : fenêtres, volets, devantures, balcons. L'ABF peut imposer des matériaux spécifiques (bois peint, double vitrage discret, zinc) et refuser des modifications jugées incompatibles avec le caractère historique de l'immeuble. Le délai de réponse est de 2 à 4 mois.",
                 },
                 {
-                  enjeu: 'Résidences haut de gamme et travaux d\'exception',
-                  detail: 'Les appartements du 1er accueillent une clientèle internationale et des résidences secondaires de standing. Les finitions attendues sont à l\'avenant : pierre de taille apparente, enduits à la chaux, menuiseries sur mesure, domotique intégrée. Les prix reflètent ces exigences : 2 000 à 4 500 €/m² pour une rénovation complète.',
+                  enjeu: 'Copropriétés de prestige — règlements très contraignants',
+                  detail: "Les copropriétés du 1er arrondissement ont souvent des règlements très détaillés sur les travaux autorisés : choix des revêtements de sol (parquet imposé, carrelage parfois interdit), interdiction de modifier les cloisons porteuses sans étude préalable, obligations acoustiques renforcées. Avant tout projet, lire attentivement le règlement de copropriété est indispensable.",
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -133,36 +133,36 @@ export default function ArticleRenovationParis1er() {
         </div>
       </section>
 
-      {/* Section 2 — Contraintes ABF */}
+      {/* Section 2 — Travaux courants */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Contraintes ABF : ce que vous devez savoir avant de commencer
+            Travaux courants dans le 1er arrondissement : rénovation de prestige
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            L&apos;Architecte des Bâtiments de France est l&apos;interlocuteur incontournable de tout projet de rénovation dans le 1er arrondissement. Son avis conforme — c&apos;est-à-dire contraignant — s&apos;impose à l&apos;administration pour les travaux extérieurs. Comprendre son périmètre d&apos;intervention permet d&apos;anticiper les délais et d&apos;éviter les refus.
+            La rénovation dans le 1er arrondissement est presque toujours une rénovation de prestige, avec des exigences de finition et de matériaux très élevées. Voici les prestations les plus demandées.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Remplacement de fenêtres',
-                contrainte: 'Modèle, matériau (bois imposé en façade sur rue), couleur et profil doivent être validés par l\'ABF. Le double vitrage est accepté s\'il respecte l\'aspect d\'origine. Délai d\'instruction : 2 à 3 mois.',
-                cout: 'Surcoût : +10 – 20 %',
+                titre: 'Restauration parquet point de Hongrie',
+                detail: "Les parquets anciens en point de Hongrie des appartements du 1er méritent une restauration soignée. Ponçage, rebouchage des lames abîmées à l'identique (chêne massif de récupération), vitrification ou huilage : une restauration bien faite donne une seconde vie à ces parquets d'exception.",
+                cout: '40 – 90 €/m²',
               },
               {
-                titre: 'Ravalement de façade',
-                contrainte: 'Matériaux et teinte imposés. Toute modification de l\'aspect de la pierre de taille (jointement, badigeon) est soumise à autorisation préfectorale. L\'ABF peut exiger un ravalement à la chaux traditionnelle.',
-                cout: 'Surcoût : +15 – 30 %',
+                titre: 'Restauration moulures et ornements',
+                detail: "Les plafonds à caissons, les corniches à oves, les rosaces et les moulures des appartements du 1er sont des éléments patrimoniaux à conserver. Un plâtrier ornemaniste spécialisé peut reproduire à l'identique les parties manquantes ou endommagées.",
+                cout: '150 – 400 €/ml',
               },
               {
-                titre: 'Travaux intérieurs',
-                contrainte: 'Les travaux intérieurs sans impact extérieur (redistribution de pièces, cuisine, salle de bain) ne nécessitent généralement pas l\'avis ABF. En revanche, la suppression de moulures ou de parquets anciens peut être interdite par le règlement de copropriété.',
-                cout: 'Pas de surcoût ABF',
+                titre: 'Rénovation salle de bain haut de gamme',
+                detail: "Dans le 1er arrondissement, les salles de bain sont souvent rénovées avec des matériaux de très haute qualité : marbre de Carrare, robinetterie de marque, douche à l'italienne XL, baignoire îlot. La plomberie doit être entièrement refaite pour supporter ces équipements.",
+                cout: '15 000 – 40 000 €',
               },
               {
-                titre: 'Verrière et modifications de structure',
-                contrainte: 'L\'ouverture d\'une verrière en toiture ou la modification de la structure d\'un immeuble classé nécessite un permis de construire avec avis ABF. Délai d\'instruction : 4 à 6 mois. Refus fréquents en secteur sauvegardé.',
-                cout: 'Surcoût : +20 – 40 %',
+                titre: 'Mise aux normes électrique complète',
+                detail: "Les appartements anciens du 1er nécessitent une mise aux normes NF C 15-100 complète : tableau électrique neuf, mise à la terre, circuits dédiés, éclairage LED à variateur. Dans les immeubles classés, le passage des câbles doit être réalisé sans dommage pour les murs en pierre.",
+                cout: '5 000 – 15 000 €',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -170,43 +170,38 @@ export default function ArticleRenovationParis1er() {
                   <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
                   <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.contrainte}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 3 — Types de travaux courants */}
+      {/* Section 3 — Isolation et contraintes patrimoniales */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Travaux courants dans les appartements du 1er arrondissement
+            Isolation et amélioration thermique dans le 1er arrondissement
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les chantiers de rénovation dans le 1er présentent des caractéristiques récurrentes liées à l&apos;âge du bâti (souvent antérieur à 1950) et aux exigences de la clientèle locale. Voici les postes de travaux les plus fréquents.
+            L&apos;isolation d&apos;un appartement dans le 1er arrondissement est soumise à des contraintes patrimoniales spécifiques. L&apos;isolation par l&apos;extérieur est quasi impossible sur les immeubles classés. Seule l&apos;isolation par l&apos;intérieur est réalisable, avec des matériaux adaptés à la pierre ancienne.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Restauration des parquets anciens',
-                prix: '40 – 90 €/m²',
-                detail: 'Ponçage, vitrification ou huilage des parquets point de Hongrie, à chevrons ou bâton rompu d\'époque. La restauration est souvent préférable à la dépose, car ces parquets sont irremplaçables à l\'identique. Un parquet en mauvais état peut nécessiter un rebouchage des lames manquantes par un parqueteur spécialisé.',
+                type: 'Isolation intérieure sur murs anciens',
+                prix: '100 – 180 €/m²',
+                detail: "Sur les murs en pierre de taille des immeubles du 1er, l'isolation intérieure doit utiliser des matériaux respirants : laine de bois, chanvre ou liège expansé. Les isolants synthétiques fermés (polystyrène) sont proscrits car ils emprisonnent l'humidité dans la pierre et provoquent des dégradations irréversibles. L'épaisseur du doublage (8 à 12 cm) réduit légèrement la surface habitable.",
               },
               {
-                type: 'Restauration des moulures et corniches',
-                prix: '120 – 300 €/ml',
-                detail: 'Réfection des moulures en staff ou en plâtre : ragréage des parties manquantes, moulage à l\'identique pour les sections très abîmées. Indispensable dans les appartements haussmanniens de prestige dont les corniches sont souvent camouflées sous des faux-plafonds à déposer.',
+                type: 'Remplacement des fenêtres — contraintes ABF',
+                prix: '800 – 2 500 € par fenêtre',
+                detail: "Dans le 1er arrondissement, le remplacement des fenêtres est soumis à l'avis de l'ABF. Les nouvelles menuiseries doivent respecter les proportions et l'aspect des fenêtres d'origine : bois peint en teinte imposée, petits-bois si présents à l'origine, double vitrage à faible épaisseur de lame d'air. Le PVC est généralement refusé dans les immeubles classés.",
               },
               {
-                type: 'Redistribution des espaces',
-                prix: '1 800 – 3 500 €/m²',
-                detail: 'Ouverture de cloisons, création d\'une cuisine ouverte, déplacement de salle de bain. Dans les immeubles anciens, les murs porteurs sont fréquents et nécessitent la pose de poutres IPN ou HEA avec calcul de structure par un bureau d\'études. Prévoir 3 000 – 8 000 € pour une ouverture de mur porteur.',
-              },
-              {
-                type: 'Mise aux normes électriques et plomberie',
-                prix: '8 000 – 25 000 €',
-                detail: 'La majorité des appartements du 1er construits avant les années 1970 présentent des installations électriques obsolètes (aluminium, fusibles, absence de prise de terre). La mise aux normes NF C 15-100 est obligatoire lors d\'une rénovation complète. La plomberie en plomb doit également être remplacée intégralement.',
+                type: "Amélioration DPE sans toucher à l'extérieur",
+                prix: 'Gain 1 à 2 classes DPE',
+                detail: "Il est possible d'améliorer significativement le DPE d'un appartement du 1er sans modification extérieure : isolation du plancher bas, isolation du plafond (sous les combles ou le toit), remplacement de la chaudière par un système à condensation ou une pompe à chaleur air-air, et installation d'une VMC hygro-réglable. Ces travaux ne nécessitent pas d'avis ABF.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -221,51 +216,57 @@ export default function ArticleRenovationParis1er() {
         </div>
       </section>
 
-      {/* Section 4 — Budget */}
+      {/* Section 4 — Budget et prix */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Budget rénovation appartement Paris 1er : prix au m² 2025
+            Prix de rénovation dans le 1er arrondissement : budget 2025
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les tarifs ci-dessous s&apos;entendent main d&apos;œuvre et matériaux inclus, pour des appartements haussmanniens typiques du 1er arrondissement.
+            Les prix ci-dessous s&apos;entendent pour un appartement ancien du 1er arrondissement, main d&apos;oeuvre et matériaux inclus. Les surcoûts liés aux contraintes ABF et copropriété peuvent représenter 15 à 25 % du budget total.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prestations</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix / m²</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Type de rénovation</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Travaux inclus</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix /m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget 60 m²</th>
                 </tr>
               </thead>
               <tbody>
                 {[
                   {
-                    niveau: 'Rafraîchissement',
-                    prestations: 'Peinture + parquet + sanitaires (sans modification de plan)',
-                    prixM2: '600 – 1 000 €',
+                    type: 'Légère',
+                    travaux: 'Peinture + parquet restauré + salle de bain',
+                    prixM2: '1 200 – 1 800 €',
+                    budget: '72 000 – 108 000 €',
                   },
                   {
-                    niveau: 'Rénovation partielle',
-                    prestations: 'Cuisine + SDB + électricité + parquet restauré',
-                    prixM2: '1 000 – 2 000 €',
+                    type: 'Standard',
+                    travaux: 'Peinture + parquet + cuisine + électricité partielle',
+                    prixM2: '1 800 – 2 500 €',
+                    budget: '108 000 – 150 000 €',
                   },
                   {
-                    niveau: 'Rénovation complète',
-                    prestations: 'Tout corps d\'état, redistribution légère, finitions haut de gamme',
-                    prixM2: '2 000 – 3 500 €',
+                    type: 'Complète',
+                    travaux: "Tout corps d'état : électricité NF C 15-100, plomberie, sol, moulures, cuisine, salle de bain",
+                    prixM2: '2 500 – 3 500 €',
+                    budget: '150 000 – 210 000 €',
                   },
                   {
-                    niveau: 'Rénovation d\'exception',
-                    prestations: 'Restauration patrimoniale, domotique, matériaux nobles, ABF',
-                    prixM2: '3 500 – 4 500 €',
+                    type: 'Prestige',
+                    travaux: 'Complète + restauration patrimoine, matériaux nobles, sur mesure, architecte',
+                    prixM2: '3 500 – 6 000 €',
+                    budget: '210 000 – 360 000 €',
                   },
                 ].map((row, i) => (
-                  <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.niveau}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.prestations}</td>
+                  <tr key={row.type} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.type}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.travaux}</td>
                     <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prixM2}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.budget}</td>
                   </tr>
                 ))}
               </tbody>
@@ -274,16 +275,16 @@ export default function ArticleRenovationParis1er() {
 
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Ce qui fait varier le prix dans le 1er arrondissement
+              Conseils pour rénover dans le 1er arrondissement
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                'Présence d\'éléments patrimoniaux à restaurer (parquet, moulures, cheminées)',
-                'Contraintes ABF entraînant un surcoût matériaux (fenêtres bois, enduits chaux)',
-                'État des installations existantes (électricité plomb, plomberie ancienne)',
-                'Accessibilité du chantier (immeubles sans ascenseur, étages élevés)',
-                'Présence d\'amiante ou de plomb (diagnostic obligatoire avant 1997)',
-                'Niveau de finition souhaité : standard, haut de gamme ou prestige',
+                "Consulter l'ABF avant toute décision sur les fenêtres ou la façade — un refus peut bloquer tout le projet",
+                "Lire le règlement de copropriété avant l'achat : certaines restrictions sont très contraignantes",
+                "Faire appel à un plâtrier ornemaniste pour restaurer les moulures plutôt que les supprimer",
+                "Utiliser des matériaux respirants pour l'isolation des murs en pierre (laine de bois, chanvre)",
+                "Anticiper des délais plus longs : ABF, copropriété et artisans spécialisés allongent les plannings",
+                "Conserver les éléments patrimoniaux (cheminées, parquet, boiseries) qui valorisent le bien",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -296,12 +297,12 @@ export default function ArticleRenovationParis1er() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -311,15 +312,16 @@ export default function ArticleRenovationParis1er() {
       </section>
 
       {/* Voir aussi */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
               { href: '/blog/renovation-appartement-paris-2e', title: 'Rénovation appartement Paris 2e' },
+              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénovation appartement haussmannien' },
               { href: '/blog/renovation-maison-ancienne-paris', title: 'Rénovation maison ancienne Paris' },
-              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique appartement Paris' },
-              { href: '/blog/renovation-bureau-paris', title: 'Rénovation bureau Paris' },
+              { href: '/contact', title: 'Demander un devis gratuit' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -334,7 +336,7 @@ export default function ArticleRenovationParis1er() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-white border-t border-gray-100">
+      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
@@ -342,11 +344,11 @@ export default function ArticleRenovationParis1er() {
               { href: '/renovation-paris-2e', label: 'Paris 2e' },
               { href: '/renovation-paris-3e', label: 'Paris 3e' },
               { href: '/renovation-paris-4e', label: 'Paris 4e' },
+              { href: '/renovation-paris-5e', label: 'Paris 5e' },
+              { href: '/renovation-paris-6e', label: 'Paris 6e' },
+              { href: '/renovation-paris-7e', label: 'Paris 7e' },
               { href: '/renovation-paris-8e', label: 'Paris 8e' },
-              { href: '/renovation-paris-9e', label: 'Paris 9e' },
-              { href: '/renovation-paris-16e', label: 'Paris 16e' },
-              { href: '/renovation-levallois-perret', label: 'Levallois' },
-              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly' },
+              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -363,10 +365,10 @@ export default function ArticleRenovationParis1er() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Votre projet de rénovation dans le 1er arrondissement
+          Rénovez votre appartement dans le 1er arrondissement
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Artisan expérimenté en bâti ancien et contraintes ABF. Devis gratuit sous 48h.
+          Artisans spécialisés en immeubles classés et rénovation de prestige. Devis gratuit sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

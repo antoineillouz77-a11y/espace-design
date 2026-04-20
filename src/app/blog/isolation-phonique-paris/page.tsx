@@ -12,18 +12,12 @@ const schemaBreadcrumb = {
   ],
 }
 
-export const metadata: Metadata = {
-  title: 'Isolation Phonique Paris : solutions, prix & artisans 2025 | Espace Design',
-  description:
-    'Isolation phonique appartement Paris : contre-cloisons, sols flottants, plafonds, fenêtres. Prix au m², solutions efficaces. Guide 2025.',
-}
-
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Isolation Phonique Paris : solutions, prix & artisans 2025',
-  description:
-    'Isolation phonique appartement Paris : contre-cloisons, sols flottants, plafonds, fenêtres. Prix au m², solutions efficaces. Guide 2025.',
+  headline: 'Isolation Phonique Paris : bruits de voisins & solutions 2025 | Espace Design',
+  description: 'Isoler son appartement des bruits à Paris : bruits aériens, d\'impact, de voisins. Solutions, matériaux et prix au m² 2025.',
+  datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
@@ -39,32 +33,37 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quelle est la solution d\'isolation phonique la plus efficace dans un appartement parisien ?',
+      name: "Quel est le prix de l'isolation phonique dans un appartement parisien ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'La solution la plus efficace dépend de la source du bruit. Pour les bruits aériens entre voisins (voix, télévision), la contre-cloison désolidarisée avec laine de roche 45 mm est la référence (gain de 15 à 25 dB). Pour les bruits d\'impact du voisin du dessus (pas, chutes d\'objets), un plancher flottant avec sous-couche résiliente est incontournable (gain de 20 à 30 dB). Dans la plupart des appartements parisiens, combiner les deux donne les meilleurs résultats. Budget : 80 à 200 €/m² selon les surfaces traitées.',
+        text: "Le coût de l'isolation phonique varie selon la surface traitée et la solution choisie. Pour un mur mitoyen de 15 m² avec doublage désolidarisé et laine de roche : 900 à 1 800 €. Pour un faux-plafond acoustique de 20 m² (pièce de vie) : 1 600 à 3 000 €. Pour un sol avec sous-couche résiliente (20 m²) : 300 à 600 €. Pour une rénovation phonique complète d'un appartement de 50 m² (murs, plafond, sol) : 8 000 à 20 000 €. Les prix incluent la main d'œuvre et les matériaux.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Peut-on isoler phoniquement son appartement sans travaux lourds à Paris ?',
+      name: "Quelle est la meilleure solution pour isoler des bruits de voisins du dessus ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, des solutions légères existent : pose de rideaux épais (réduction de 3 à 5 dB), joints d\'étanchéité sur les portes intérieures (réduction de 5 à 8 dB), moquette épaisse sur mousse (réduction de 8 à 12 dB pour les bruits d\'impact), calfeutrement des prises électriques et interrupteurs (pont acoustique fréquent). Ces solutions sont utiles en complément mais insuffisantes seules face à un voisinage bruyant. Pour un gain significatif (> 15 dB), les travaux structurels sont inévitables.',
+        text: "Les bruits du dessus sont généralement des bruits d'impact (pas, chutes d'objets, chaises traînées) et des bruits aériens (voix, musique). La solution la plus efficace est le faux-plafond désolidarisé : ossature métallique sur suspentes anti-vibrations, laine de roche haute densité (100 à 150 mm), doublage plaque de plâtre haute densité. Gain attendu : 35 à 45 dB sur les bruits d'impact, 30 à 40 dB sur les bruits aériens. Coût : 80 à 150 €/m². Une sous-couche résiliente posée dans l'appartement du dessus (si accord du voisin) est plus efficace encore, mais difficile à obtenir en pratique.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien coûte l\'isolation phonique d\'un appartement parisien ?',
+      name: "Combien de temps dure un chantier d'isolation phonique à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût varie fortement selon les surfaces et les solutions choisies. Pour une chambre de 12 m² avec traitement des 3 parois bruyantes (1 mur + plafond + sol) : 3 000 à 7 000 €. Pour un appartement de 60 m² avec traitement complet (tous murs mitoyens + plafond + sol) : 12 000 à 30 000 €. Les postes les plus coûteux sont le plafond désolidarisé (80 à 200 €/m²) et la porte d\'entrée acoustique si elle est à remplacer (1 500 à 4 000 €). Espace Design propose un diagnostic phonique gratuit pour identifier les sources et prioriser les travaux.',
+        text: "La durée dépend de la surface à traiter et du type d'intervention. Doublage d'un mur mitoyen (15 m²) : 1 à 2 jours. Faux-plafond acoustique d'une pièce (20 m²) : 2 à 3 jours. Isolation phonique complète d'un appartement de 50 m² : 2 à 3 semaines, travaux de plâtrerie et de finition inclus. Le séchage des enduits de finition peut allonger le délai de 5 à 10 jours. Prévoyez de pouvoir quitter le logement pendant les phases les plus poussiéreuses (dépose, perçages).",
       },
     },
   ],
 }
 
-export default function ArticleIsolationPhoniqueParis() {
+export const metadata: Metadata = {
+  title: 'Isolation Phonique Paris : bruits de voisins & solutions 2025 | Espace Design',
+  description: "Isoler son appartement des bruits à Paris : bruits aériens, d'impact, de voisins. Solutions, matériaux et prix au m² 2025.",
+}
+
+export default function ArticleIsolationPhonique() {
   return (
     <>
       <script
@@ -80,293 +79,308 @@ export default function ArticleIsolationPhoniqueParis() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
       />
 
-      {/* Hero article */}
-      <section className="pt-28 sm:pt-36 pb-12 bg-[#FAFAF8]">
+      {/* Hero */}
+      <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
+          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
             Isolation
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
-          <h1 className="font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Isolation Phonique Paris : solutions, prix &amp; artisans 2025
+          <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
+            Isolation Phonique Paris : bruits de voisins &amp; solutions 2025
           </h1>
-          <p className="text-gray-500 text-sm font-light leading-relaxed">
-            Vivre à Paris, c&apos;est souvent composer avec le bruit — voisins du dessus,
-            mitoyens, rue, couloir d&apos;immeuble. L&apos;isolation phonique est l&apos;un des chantiers
-            les plus demandés dans les appartements parisiens, et l&apos;un des plus mal compris.
-            Ce guide pratique détaille les solutions réellement efficaces, poste par poste,
-            avec les prix 2025 et les gains acoustiques attendus.
+          <p className="text-gray-400 text-sm font-light leading-relaxed">
+            Bruits de pas du dessus, voix des voisins à travers les murs, chauffe-eau qui résonne la nuit : le bruit est l&apos;un des principaux problèmes de confort dans les appartements parisiens. Solutions techniques, matériaux et prix au m² — guide complet 2025 pour retrouver le calme chez vous.
           </p>
         </div>
       </section>
 
-      {/* Contenu article */}
+      {/* Section 1 — Types de bruits */}
       <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-12">
-
-          {/* Section 1 — Parois verticales */}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Bruits des voisins mitoyens : traiter les parois verticales
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              Les bruits transmis par les murs mitoyens (voix, musique, télévision) sont des
-              bruits aériens. La solution la plus efficace est la contre-cloison désolidarisée :
-              une nouvelle cloison est construite devant le mur existant, sans aucun contact
-              rigide avec lui (ce contact est appelé pont acoustique et annule l&apos;effet isolant).
-            </p>
-
-            <div className="space-y-5">
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  La contre-cloison sur ossature métallique désolidarisée
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Une ossature en rails et montants métalliques est montée à 3 cm du mur
-                  existant, sans vissage dans ce mur. L&apos;espace entre les deux parois est comblé
-                  par de la laine de roche (45 mm minimum, densité 45 kg/m³). Les deux faces
-                  sont habillées de double plaque de plâtre (2 × 13 mm). Gain acoustique :
-                  15 à 25 dB. Perte de surface au sol : 8 à 12 cm par paroi traitée.
-                  Prix posé : 80 à 130 €/m².
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Le complexe acoustique collé (solution légère)
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Des panneaux composites (mousse résiliente + plaque de plâtre ou OSB) sont
-                  collés directement sur le mur existant. Solution moins efficace (gain de
-                  8 à 12 dB) mais plus rapide à poser et moins encombrante (épaisseur
-                  totale 40 à 60 mm). Adaptée aux situations où la perte de surface est
-                  une contrainte forte. Prix : 50 à 90 €/m².
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Le panneau masse-ressort-masse
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Technique haute performance pour les cas difficiles (studio de musique,
-                  voisin particulièrement bruyant) : deux panneaux lourds séparés par
-                  une couche résiliente à masse élevée. Gain de 25 à 35 dB mais épaisseur
-                  conséquente (15 à 20 cm). Prix : 150 à 250 €/m². Nécessite de refaire
-                  les encadrements, prises et interrupteurs concernés.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section 2 — Plafond */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Bruits du voisin du dessus : le plafond désolidarisé
+              Les trois types de bruits dans un appartement parisien
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le bruit de pas, chutes d&apos;objets, chaises traînées — les bruits d&apos;impact transmis
-              par le plancher du voisin du dessus sont les plus difficiles à traiter côté
-              victime. Le seul moyen efficace est d&apos;interrompre la transmission rigide entre
-              la dalle et le plafond de votre appartement.
+              Tous les bruits ne se traitent pas de la même manière. Identifier précisément le type de bruit dont vous souffrez est la première étape pour choisir la bonne solution. Une erreur de diagnostic peut conduire à des travaux coûteux mais peu efficaces.
             </p>
-            <ul className="space-y-3">
-              {[
-                {
-                  poste: 'Faux-plafond sur suspentes acoustiques',
-                  fourchette: '80 à 150 €/m²',
-                  detail: 'Une ossature métallique est suspendue à la dalle via des suspentes anti-vibratiles (caoutchouc ou ressort). L\'espace créé (15 à 25 cm) est rempli de laine de roche. Gain : 15 à 25 dB sur les bruits aériens, 10 à 15 dB sur les bruits d\'impact. La solution la plus courante dans les appartements parisiens.',
-                },
-                {
-                  poste: 'Faux-plafond sur plots résilients',
-                  fourchette: '120 à 200 €/m²',
-                  detail: 'Plots en matériau résilient intercalés entre la dalle et l\'ossature. Plus efficace sur les basses fréquences (bruits de pas lourds, musique basse). Gain : 20 à 30 dB bruits d\'impact. Perte de hauteur sous plafond : 12 à 20 cm.',
-                },
-                {
-                  poste: 'Plafond suspendu découplé complet',
-                  fourchette: '150 à 250 €/m²',
-                  detail: 'Solution haut de gamme : ossature complètement découplée de la structure, double plaque de plâtre, laine de roche haute densité, traitement des périphéries. Gain : 30 à 40 dB. Recommandé pour les chambres sur cour ou au-dessous d\'une salle de bain.',
-                },
-              ].map((item) => (
-                <li key={item.poste} className="bg-[#FAFAF8] rounded-lg p-4 border border-gray-100">
-                  <div className="flex justify-between items-start mb-1">
-                    <div className="font-medium text-[#1C1C1C] text-sm">{item.poste}</div>
-                    <div className="text-[#B8960C] text-sm font-medium whitespace-nowrap ml-4">{item.fourchette}</div>
-                  </div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{item.detail}</div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Section 3 — Sol flottant */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Bruits d&apos;impact transmis vers le bas : le plancher flottant
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              Si vous êtes à l&apos;origine des bruits pour votre voisin du dessous (enfants qui
-              courent, chaises, objets qui tombent), la solution est un plancher flottant —
-              c&apos;est-à-dire un sol posé sur une couche résiliente qui absorbe les chocs avant
-              qu&apos;ils ne se transmettent à la dalle.
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+              Dans un appartement parisien, les bruits proviennent généralement de trois sources distinctes, chacune nécessitant une approche technique spécifique.
             </p>
-
-            <div className="space-y-5">
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Sous-couche résiliente sous parquet ou stratifié
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  La sous-couche acoustique (liège, polyuréthane expansé, mousse PE haute densité)
-                  est posée directement sur la dalle, puis le parquet flottant ou stratifié
-                  est clipsé par-dessus. Le sol ne doit jamais être fixé aux plinthes ou aux murs
-                  (pont acoustique). Gain : 15 à 22 dB sur les bruits d&apos;impact (indice LnTw).
-                  Solution la moins coûteuse : 5 à 15 €/m² pour la sous-couche seule.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Chape sèche flottante (plaques de sol)
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Des plaques de sol (Fermacell, Knauf, Rigidur) sont posées sur une couche
-                  de granulés de liège ou de laine de roche. Le tout repose sans fixation sur
-                  la dalle. Solution plus épaisse (5 à 8 cm) mais compatible avec tous les
-                  revêtements (carrelage, parquet, béton ciré) et très performante : gain
-                  de 22 à 30 dB. Prix : 50 à 90 €/m² posé.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Chape béton flottante sur résilient
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  La chape béton (5 à 7 cm d&apos;épaisseur) est coulée sur une membrane résiliente
-                  (laine de roche 25 mm ou mousse acoustique haute densité) avec relevés
-                  périphériques pour éviter tout contact avec les murs. Solution la plus lourde
-                  et la plus durable, avec un gain de 25 à 35 dB. À réserver aux projets de
-                  rénovation complète car le temps de séchage est long (4 à 6 semaines).
-                  Prix : 60 à 120 €/m².
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section 4 — Fenêtres */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Bruits extérieurs : fenêtres et vitrages acoustiques
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Pour les appartements parisiens sur boulevard, avenue ou rue passante, le bruit
-              de la circulation est souvent la source principale. Les fenêtres sont le
-              maillon faible de l&apos;enveloppe phonique.
-            </p>
-            <ul className="space-y-3">
-              {[
-                {
-                  flag: 'Vitrage feuilleté acoustique (remplacement du verre seul)',
-                  detail: 'Si le châssis est en bon état, le remplacement du seul vitrage par un verre feuilleté asymétrique (ex: 6/16/44.2 mm) peut suffire. Gain : 10 à 15 dB. Prix : 150 à 400 € par vantail selon la taille.',
-                },
-                {
-                  flag: 'Fenêtres double vitrage acoustique PVC ou aluminium',
-                  detail: 'Remplacement complet du châssis par une fenêtre à rupture de pont thermique et vitrage acoustique feuilleté. Gain : 35 à 42 dB (classement AR 4 ou 5). Prix : 800 à 2 500 € par fenêtre posée selon la taille et le matériau.',
-                },
-                {
-                  flag: 'Survitrage intérieur (solution locative)',
-                  detail: 'Un second vitrage est posé en applique à l\'intérieur du châssis existant, créant une lame d\'air supplémentaire. Solution sans travaux lourds, compatible avec un bail locatif. Gain : 8 à 20 dB selon la lame d\'air. Prix : 300 à 800 € par fenêtre.',
-                },
-                {
-                  flag: 'Calfeutrement des joints et coulisses',
-                  detail: 'Les joints d\'étanchéité usés ou absents sont la première cause de déperdition acoustique sur les fenêtres existantes. Le simple remplacement des joints (10 à 30 € par fenêtre) peut apporter 3 à 8 dB de gain supplémentaire à coût quasi nul.',
-                },
-              ].map((item) => (
-                <li key={item.flag} className="flex gap-3">
-                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <span className="text-[#1C1C1C] text-sm font-medium">{item.flag} : </span>
-                    <span className="text-gray-600 text-sm font-light">{item.detail}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Section 5 — Portes */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Portes acoustiques et traitement des points singuliers
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Une isolation phonique de qualité peut être annulée par des points de faiblesse
-              souvent négligés : porte d&apos;entrée insuffisante, prises électriques dos à dos,
-              passages de gaines. Ces détails font souvent la différence entre un résultat
-              correct et un résultat exceptionnel.
-            </p>
-            <ul className="space-y-3">
-              {[
-                {
-                  poste: 'Porte d\'entrée acoustique',
-                  fourchette: '1 500 à 4 000 €',
-                  detail: 'Une porte d\'entrée classique offre 25 à 30 dB. Une porte acoustique certifiée (Rw ≥ 42 dB) est indispensable si le palier ou l\'escalier est bruyant. Joint périphérique, bas de porte automatique, encadrement jointif : aucun pont acoustique ne doit subsister.',
-                },
-                {
-                  poste: 'Portes intérieures acoustiques',
-                  fourchette: '400 à 900 € par porte',
-                  detail: 'Les portes intérieures standard (creux, 25 à 28 dB) ne protègent pas des bruits d\'une pièce à l\'autre. Des portes pleines avec joint périphérique (Rw ≥ 38 dB) réduisent significativement les bruits de la vie courante. Indispensable pour les chambres en appartement familial.',
-                },
-                {
-                  poste: 'Traitement des boîtes électriques (prises, interrupteurs)',
-                  fourchette: '20 à 50 € par point',
-                  detail: 'Les boîtes électriques encastrées dans les murs créent des ponts acoustiques importants. Des membranes acoustiques (type Isover Vario KM Duplex ou équivalent) sont posées dans ou autour de chaque boîte. Opération rapide mais souvent oubliée.',
-                },
-                {
-                  poste: 'Traitement des passages de gaines et canalisations',
-                  fourchette: 'Sur devis',
-                  detail: 'Les tuyaux de plomberie transmettent les bruits d\'eau et de chasse d\'eau dans tout l\'immeuble. Un manchonnage des tuyaux et le colmatage des passages de gaines avec un mastic acoustique réduisent significativement ces bruits structurels.',
-                },
-              ].map((item) => (
-                <li key={item.poste} className="bg-[#FAFAF8] rounded-lg p-4 border border-gray-100">
-                  <div className="flex justify-between items-start mb-1">
-                    <div className="font-medium text-[#1C1C1C] text-sm">{item.poste}</div>
-                    <div className="text-[#B8960C] text-sm font-medium whitespace-nowrap ml-4">{item.fourchette}</div>
-                  </div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{item.detail}</div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* FAQ */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-6">
-              Questions fréquentes — Isolation phonique Paris
-            </h2>
             <div className="space-y-4">
-              {schemaFaq.mainEntity.map((item) => (
-                <div key={item.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{item.name}</div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{item.acceptedAnswer.text}</div>
+              {[
+                {
+                  enjeu: 'Bruits aériens (voix, musique, télévision)',
+                  detail: "Les sons se propagent dans l'air et traversent les cloisons et planchers. Exemples : conversation des voisins, musique, aboiements de chiens. Traitement : augmenter la masse et l'amortissement des parois (doublage haute densité, laine de roche). La réglementation NRA (Nouvelle Réglementation Acoustique) impose un isolement de 53 dB minimum entre logements pour les immeubles construits depuis 1996 — beaucoup d'immeubles parisiens anciens n'atteignent pas ce niveau.",
+                },
+                {
+                  enjeu: "Bruits d'impact (pas, chutes, chaises)",
+                  detail: "Vibrations transmises par contact direct avec la structure de l'immeuble. Exemples : pas des voisins du dessus, enfants qui courent, chaises traînées, haltères posées au sol. Ces bruits sont les plus difficiles à traiter depuis votre propre appartement car ils se propagent dans la structure. Solution côté émetteur : sous-couche résiliente sous le sol. Solution côté récepteur : faux-plafond désolidarisé. Les deux combinées sont idéales.",
+                },
+                {
+                  enjeu: "Bruits d'équipements (plomberie, VMC, chauffe-eau)",
+                  detail: "Bruits solidiens transmis par les canalisations, les gaines de ventilation ou les appareils électroménagers vibrant contre la structure. Exemples : chasse d'eau des voisins, bourdonnement de la VMC, ronronnement du chauffe-eau. Traitement : désolidarisation des équipements (supports anti-vibrations, manchons souples), isolation des canalisations (coquilles isolantes, enrobage laine minérale).",
+                },
+                {
+                  enjeu: "Bruits extérieurs (rue, circulation, chantiers)",
+                  detail: "À Paris, la nuisance sonore extérieure est significative dans les appartements donnant sur des rues passantes. La principale voie de transmission : les fenêtres. Solution prioritaire : remplacement des fenêtres par du double vitrage acoustique (4/16/4 minimum, ou 8/12/44.2 pour les cas sévères). Amélioration possible : joint acoustique de périphérie, film acoustique sur vitrage existant (solution provisoire).",
+                },
+              ].map((el) => (
+                <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.enjeu}</div>
+                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
                 </div>
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* Section 2 — Solutions plafond */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Solutions plafond : faux-plafond désolidarisé et laine de roche
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le traitement phonique du plafond est souvent le chantier le plus impactant dans un appartement parisien, car il traite à la fois les bruits d&apos;impact et les bruits aériens venant du dessus. Voici les solutions du plus simple au plus performant.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            {[
+              {
+                titre: 'Faux-plafond désolidarisé sur suspentes anti-vibrations',
+                solution: "Ossature métallique suspendue au plancher via des suspentes élastiques (type Isotrem ou Spring), remplissage par laine de roche haute densité (minimum 100 mm, idéalement 150 mm), doublage par 2 plaques de plâtre haute densité BA13. C'est la solution de référence. Gain : 35 à 50 dB en fonction des bruits. Perte de hauteur : 15 à 25 cm.",
+                cout: '80 – 150 €/m²',
+              },
+              {
+                titre: 'Faux-plafond collé (solution légère)',
+                solution: "Plaques de plâtre haute densité collées directement au plafond existant avec bandes résilientes périphériques. Solution plus rapide et moins coûteuse mais moins efficace sur les bruits d'impact. Gain : 15 à 25 dB. Perte de hauteur : 3 à 5 cm seulement. Adaptée quand la hauteur sous plafond est limitée.",
+                cout: '40 – 70 €/m²',
+              },
+              {
+                titre: 'Laine de roche haute densité (90 kg/m³ et plus)',
+                solution: "Isolant de référence pour les applications acoustiques. La densité est déterminante : une laine de roche légère (20 kg/m³) absorbe les sons mais ne les bloque pas ; la haute densité (90+ kg/m³) offre à la fois absorption et affaiblissement. Utilisée systématiquement dans les faux-plafonds désolidarisés.",
+                cout: '8 – 20 €/m²',
+              },
+              {
+                titre: 'Plaques de plâtre haute densité (BA18, BA25)',
+                solution: "Les plaques lourdes (18 mm et 25 mm) améliorent significativement l'isolement acoustique par rapport aux plaques standard BA13. Leur masse plus importante réduit la transmission des bruits aériens. En multicouche (2 plaques croisées), l'effet est encore renforcé. Toujours coupler avec un isolant souple.",
+                cout: '12 – 25 €/m²',
+              },
+            ].map((el) => (
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 — Solutions sol */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Solutions sol : sous-couche résiliente et parquet flottant
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le traitement phonique du sol réduit les bruits que vous transmettez à vos voisins du dessous et, dans une moindre mesure, les bruits que vous recevez de ceux du dessus. C&apos;est souvent l&apos;intervention la moins coûteuse et la plus rapide à réaliser.
+          </p>
+          <div className="space-y-4 mb-6">
+            {[
+              {
+                type: 'Sous-couche résiliente sous revêtement de sol',
+                prix: '15 – 30 €/m²',
+                detail: "Posée entre le support et le revêtement (parquet flottant, stratifié, vinyle), la sous-couche résiliente amortit les bruits d'impact avant qu'ils ne se transmettent au plancher. Les meilleures sous-couches atteignent 20 à 25 dB de réduction sur les bruits d'impact. Choisir une sous-couche avec un indice Delta Lw d'au moins 20 dB. Simple à poser lors d'un changement de sol.",
+              },
+              {
+                type: 'Parquet flottant + sous-couche haute performance',
+                prix: '40 – 100 €/m² posé',
+                detail: "Le parquet flottant (non collé, non cloué) associé à une sous-couche résiliente haute performance est l'une des meilleures combinaisons pour réduire les bruits d'impact. Le parquet ne doit pas être collé aux murs : prévoir un joint périphérique en silicone ou une plinthe souple pour éviter les ponts phoniques.",
+              },
+              {
+                type: 'Moquette épaisse',
+                prix: '20 – 60 €/m² posé',
+                detail: "La moquette épaisse (velours ou bouclé, avec sous-couche mousse) est le revêtement le plus efficace pour réduire les bruits d'impact vers le bas. Réduction de 25 à 35 dB selon les modèles. Solution très abordable et rapide à poser. Moins appréciée esthétiquement dans les appartements parisiens contemporains, mais très efficace dans les chambres.",
+              },
+              {
+                type: 'Chape acoustique (chape flottante)',
+                prix: '60 – 120 €/m²',
+                detail: "Chape coulée sur une sous-couche résiliente périphérique et sous-jacente, totalement désolidarisée des murs et du plancher. C'est la solution la plus performante pour les bruits d'impact (réduction de 30 à 40 dB) mais aussi la plus lourde et la plus coûteuse. Nécessite de vérifier la portance du plancher avant réalisation.",
+              },
+            ].map((el) => (
+              <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
+                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — Solutions murs */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Solutions murs : doublage indépendant et isolation acoustique
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le traitement phonique des murs mitoyens s&apos;impose lorsque les bruits aériens des voisins (voix, musique, télévision) traversent les cloisons. L&apos;efficacité dépend essentiellement de la masse et de la désolidarisation du doublage.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            {[
+              {
+                titre: 'Doublage désolidarisé sur ossature métallique',
+                solution: "Ossature métallique posée à 2 à 3 cm du mur existant (sans contact direct), remplissage par laine de roche 45 à 100 mm, doublage en doubles plaques de plâtre haute densité. C'est la solution de référence. Gain : 40 à 55 dB. Perte de surface : 7 à 12 cm de largeur.",
+                cout: '60 – 120 €/m²',
+              },
+              {
+                titre: 'Doublage collé (complexe phonique)',
+                solution: "Complexe plâtre + laine de roche collé directement sur le mur. Moins encombrant (perte de 4 à 6 cm) mais moins performant car il y a un risque de pont phonique par les points de colle. Gain : 25 à 35 dB selon la densité de la laine. Solution acceptable pour les cloisons légères.",
+                cout: '45 – 80 €/m²',
+              },
+              {
+                titre: 'Mur double indépendant (solution maximale)',
+                solution: "Construction d'un second mur en carreaux de plâtre ou en briques plâtrières, totalement indépendant du mur mitoyen, avec un vide d'air rempli de laine minérale. C'est la solution la plus performante (gain jusqu'à 65 dB) mais la plus encombrante (perte de 12 à 20 cm). Réservée aux cas sévères.",
+                cout: '100 – 180 €/m²',
+              },
+              {
+                titre: 'Traitement des points singuliers (prises, portes)',
+                solution: "Les prises électriques dans les murs mitoyens, les gaines et les portes sont des points faibles qui réduisent l'efficacité d'un doublage. Solutions : boîtiers électriques étanches, gaines isolées, joints acoustiques sous porte, seuil de porte occultant. Souvent négligé, le traitement des points singuliers peut améliorer les performances de 5 à 15 dB.",
+                cout: '200 – 800 €',
+              },
+            ].map((el) => (
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Budget */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Budget isolation phonique : prix au m² à Paris
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Les prix ci-dessous s&apos;entendent main d&apos;œuvre et matériaux inclus, pour un appartement parisien standard.
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#1C1C1C] text-white">
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Solution</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix/m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Gain dB</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Type de bruit</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    solution: 'Sous-couche résiliente sol',
+                    prix: '15 – 30 €',
+                    gain: '15 – 25 dB',
+                    type: 'Impact',
+                  },
+                  {
+                    solution: 'Doublage mur collé',
+                    prix: '45 – 80 €',
+                    gain: '25 – 35 dB',
+                    type: 'Aérien',
+                  },
+                  {
+                    solution: 'Doublage mur désolidarisé',
+                    prix: '60 – 120 €',
+                    gain: '40 – 55 dB',
+                    type: 'Aérien',
+                  },
+                  {
+                    solution: 'Faux-plafond désolidarisé',
+                    prix: '80 – 150 €',
+                    gain: '35 – 50 dB',
+                    type: 'Impact + aérien',
+                  },
+                  {
+                    solution: 'Mur double indépendant',
+                    prix: '100 – 180 €',
+                    gain: '55 – 65 dB',
+                    type: 'Aérien',
+                  },
+                ].map((row, i) => (
+                  <tr key={row.solution} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.solution}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prix}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.gain}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.type}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
+              Conseils pour maximiser l&apos;efficacité de votre isolation phonique
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                "Identifier précisément le type de bruit avant de choisir une solution — un diagnostic est indispensable",
+                "Éviter les ponts phoniques : toute liaison rigide entre le doublage et la structure annule l'effet d'isolation",
+                "Traiter tous les points singuliers (prises, gaines, joints de portes) sous peine de performances divisées par 2",
+                "Combiner sol + mur + plafond pour un résultat global optimal — traiter une seule paroi a des limites",
+                "Choisir des matériaux haute densité : la masse est le premier critère d'isolement aux bruits aériens",
+                "Faire appel à un acousticien pour les cas sévères — le diagnostic préalable coûte 300 à 800 € mais évite les erreurs",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
+          <div className="space-y-6">
+            {schemaFaq.mainEntity.map((q) => (
+              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Voir aussi */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/isolation-paris', title: 'Isolation Paris — Espace Design' },
-              { href: '/blog/isolation-acoustique-appartement-paris', title: 'Isolation acoustique appartement Paris — guide 2025' },
-              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique appartement Paris — guide 2025' },
-              { href: '/blog/renovation-cave-paris', title: 'Rénovation cave Paris — guide 2025' },
+              { href: '/blog/renovation-bureau-paris', title: 'Rénovation bureau Paris' },
+              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique appartement Paris' },
+              { href: '/blog/faux-plafond-paris', title: 'Faux-plafond Paris' },
+              { href: '/blog/renovation-chambre-paris', title: 'Rénovation chambre Paris' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', title: 'Parquet flottant vs collé Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -381,18 +395,19 @@ export default function ArticleIsolationPhoniqueParis() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-white border-t border-gray-100">
+      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
+              { href: '/renovation-paris-8e', label: 'Paris 8e' },
+              { href: '/renovation-paris-9e', label: 'Paris 9e' },
+              { href: '/renovation-paris-10e', label: 'Paris 10e' },
               { href: '/renovation-paris-11e', label: 'Paris 11e' },
-              { href: '/renovation-paris-18e', label: 'Paris 18e' },
-              { href: '/renovation-paris-19e', label: 'Paris 19e' },
-              { href: '/renovation-paris-20e', label: 'Paris 20e' },
-              { href: '/renovation-montreuil', label: 'Montreuil' },
+              { href: '/renovation-levallois-perret', label: 'Levallois' },
+              { href: '/renovation-courbevoie', label: 'Courbevoie' },
+              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
               { href: '/renovation-pantin', label: 'Pantin' },
-              { href: '/renovation-bagnolet', label: 'Bagnolet' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -407,23 +422,23 @@ export default function ArticleIsolationPhoniqueParis() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#1C1C1C] text-center px-4">
-        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-          Problèmes d&apos;isolation phonique ?
+      <section className="py-16 bg-[#D4AF37] text-center px-4">
+        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
+          Retrouvez le calme dans votre appartement parisien
         </h2>
-        <p className="text-gray-400 text-sm font-light mb-8">
-          Diagnostic gratuit et devis détaillé sous 48h. Déplacement sans engagement dans tout Paris et petite couronne.
+        <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
+          Diagnostic acoustique gratuit. Devis détaillé sous 48h. Artisans spécialisés en isolation phonique à Paris.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact"
-            className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#c9a030] transition-colors"
+            className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-black transition-colors"
           >
             Devis gratuit <ArrowRight size={13} />
           </Link>
           <a
             href="tel:+33611783867"
-            className="flex items-center justify-center gap-2 border border-gray-600 text-gray-300 px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-white hover:text-white transition-colors"
+            className="flex items-center justify-center gap-2 border border-[#1C1C1C]/30 text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-[#1C1C1C] transition-colors"
           >
             <Phone size={14} />
             06 11 78 38 67
