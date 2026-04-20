@@ -386,6 +386,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-chelles`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-torcy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-lagny-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-noisiel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-lognes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Val-d'Oise (95) — nouvelles villes
     { url: `${base}/renovation-bezons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

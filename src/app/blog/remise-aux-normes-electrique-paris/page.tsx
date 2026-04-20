@@ -15,11 +15,15 @@ const schemaBreadcrumb = {
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Remise aux Normes Électriques Paris : NF C 15-100 & prix 2025 | Espace Design',
-  description: "Remettre aux normes l'électricité d'un appartement à Paris : NF C 15-100, tableau divisionnaire, prise de terre. Prix 2025.",
-  datePublished: '2025-04-20',
+  headline: 'Remise aux Normes Électrique Paris : diagnostic, travaux & prix 2025',
+  description: "Mise en conformité électrique d'un appartement parisien : NF C 15-100, tableau électrique, mise à la terre, prix par pièce. Cas spécifiques des immeubles haussmanniens 2025.",
+  datePublished: '2025-01-15',
   author: { '@type': 'Organization', name: 'Espace Design' },
-  publisher: { '@type': 'Organization', name: 'Espace Design', url: 'https://espacedesignparis.fr' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Espace Design',
+    url: 'https://espacedesignparis.fr',
+  },
   url: 'https://espacedesignparis.fr/blog/remise-aux-normes-electrique-paris',
 }
 
@@ -29,96 +33,119 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: "La remise aux normes électrique est-elle obligatoire pour vendre un appartement à Paris ?",
+      name: "Quel est le prix d'une remise aux normes électriques à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Non, la remise aux normes n'est pas légalement obligatoire pour vendre. En revanche, un diagnostic électrique est obligatoire pour tout appartement de plus de 15 ans mis en vente (depuis 2009). Si ce diagnostic révèle des anomalies (absence de DDR, pas de prise de terre, tableau vétuste), l'acheteur peut s'en servir pour négocier le prix ou demander une mise aux normes avant la vente. Une installation conforme NF C 15-100 valorise significativement le bien.",
+        text: "Le prix d'une remise aux normes électriques à Paris dépend de la surface du logement et de l'état de l'installation existante. Pour un studio ou 2 pièces (20 – 35 m²) : 1 500 à 4 000 €. Pour un 3 pièces (50 – 65 m²) : 3 000 à 7 000 €. Pour un appartement haussmannien de 80 à 120 m² : 5 000 à 15 000 €. Ces prix incluent le nouveau tableau électrique, le remplacement du câblage, la mise à la terre et les prises conformes. Une installation ancienne sans mise à la terre dans un immeuble haussmannien peut nécessiter un budget plus élevé si les travaux de saignées dans les murs en pierre sont importants.",
       },
     },
     {
       '@type': 'Question',
-      name: "Quel est le prix d'une remise aux normes électrique à Paris ?",
+      name: "Le diagnostic électrique est-il obligatoire à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le prix d'une remise aux normes électrique à Paris varie selon la surface et l'état de l'installation existante. Pour un studio (20-30 m²) : 1 500 – 3 000 €. Pour un appartement 2-3 pièces (40-70 m²) : 3 000 – 6 000 €. Pour un appartement 4-5 pièces (80-120 m²) : 5 000 – 10 000 €. Ces prix incluent le remplacement du tableau électrique, la pose des DDR 30 mA, la mise à la terre des prises et circuits, et les saignées si nécessaire.",
+        text: "Oui, le diagnostic électrique (état de l'installation intérieure d'électricité) est obligatoire lors de la vente d'un logement dont l'installation électrique date de plus de 15 ans — ce qui concerne la très grande majorité des appartements parisiens anciens. Il est réalisé par un diagnostiqueur certifié et a une durée de validité de 3 ans. Il n'est pas obligatoire pour une location mais est fortement recommandé (le propriétaire est responsable de la sécurité électrique du logement mis en location).",
       },
     },
     {
       '@type': 'Question',
-      name: "Qu'est-ce que la norme NF C 15-100 et pourquoi est-elle importante ?",
+      name: "Qu'est-ce que la norme NF C 15-100 et s'applique-t-elle à mon appartement parisien ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La norme NF C 15-100 est la norme française qui régit les installations électriques dans les locaux d'habitation. Elle définit notamment : le nombre minimal de circuits dédiés par pièce (6 circuits minimum en cuisine), la présence obligatoire de disjoncteurs différentiels 30 mA, la mise à la terre de toutes les prises, les sections de câbles selon les usages, et les règles d'implantation des prises et interrupteurs. Elle a été révisée en 2002 et en 2015. Toute installation antérieure à 2002 est considérée comme non conforme.",
+        text: "La norme NF C 15-100 est la norme française qui régit les installations électriques dans les bâtiments d'habitation. Elle définit le nombre minimal de circuits, de prises, de points d'éclairage et d'interrupteurs par pièce, ainsi que les équipements de protection (disjoncteur différentiel, parafoudre). Elle est obligatoire pour toute installation neuve ou rénovée. Les installations anciennes ne sont pas rétroactivement obligatoires de la respecter, sauf lors d'une vente ou d'une rénovation globale. Pour un appartement parisien ancien, la mise en conformité NF C 15-100 est recommandée pour la sécurité et la valeur du bien.",
       },
     },
     {
       '@type': 'Question',
-      name: "Combien de temps prend la remise aux normes électrique d'un appartement parisien ?",
+      name: "La mise à la terre est-elle possible dans un immeuble haussmannien parisien ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La durée dépend de la surface et de l'ampleur des travaux. Pour un studio ou 2 pièces avec installation partielle : 2 à 4 jours. Pour un appartement 3-4 pièces avec refonte complète : 4 à 8 jours. Si des saignées dans les murs sont nécessaires (ancien appartement sans gaines), il faut compter 1 à 2 jours supplémentaires pour les enduits et ragréages. Prévoyez également 1 à 2 semaines pour obtenir le certificat de conformité Consuel.",
+        text: "La mise à la terre est possible dans un appartement haussmannien, bien que techniquement plus complexe que dans un immeuble récent. Deux solutions existent : raccordement au réseau de terre collectif de l'immeuble (si présent et conforme) ou création d'un piquet de terre individuel. Dans les immeubles anciens sans réseau de terre collectif, l'électricien peut créer une liaison de terre en descendant un conducteur de protection depuis le tableau jusqu'au sol (cave ou sous-sol). Cette démarche est indispensable pour protéger les occupants et alimenter les prises avec terre (obligatoires depuis 1968).",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Remise aux Normes Électriques Paris : NF C 15-100 & prix 2025 | Espace Design',
-  description: "Remettre aux normes l'électricité d'un appartement à Paris : NF C 15-100, tableau divisionnaire, prise de terre. Prix 2025.",
+  title: 'Remise aux Normes Électrique Paris : diagnostic, travaux & prix 2025 | Espace Design',
+  description: "Mise en conformité électrique d'un appartement parisien : NF C 15-100, tableau électrique, mise à la terre, prix par pièce. Cas spécifiques des immeubles haussmanniens 2025.",
+  keywords: ['remise aux normes électrique Paris', 'mise en conformité électrique Paris', 'tableau électrique Paris', 'NF C 15-100 Paris', 'installation électrique Paris'],
 }
 
 export default function ArticleRemiseNormesElectriqueParis() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
+      />
 
       {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Électricité</p>
+          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
+            Électricité
+          </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Remise aux Normes Électriques Paris : NF C 15-100 & prix 2025
+            Remise aux Normes Électrique Paris : diagnostic, travaux et prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            De nombreux appartements parisiens — haussmanniens, immeubles des années 1960-1980 — disposent d&apos;installations électriques vétustes et non conformes à la norme NF C 15-100. Risques, obligations lors de la vente, travaux à prévoir et prix réels 2025 par un électricien parisien certifié.
+            L&apos;installation électrique de nombreux appartements parisiens est vieillissante, non conforme à la norme NF C 15-100 et souvent dangereuse. Tableau électrique insuffisant, absence de mise à la terre, câblage en tissu : voici le guide complet pour comprendre les travaux de mise en conformité, les prix à Paris et les spécificités des immeubles haussmanniens.
           </p>
         </div>
       </section>
 
-      {/* Section 1 */}
+      {/* Section 1 — Signes d'une installation à remettre aux normes */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les obligations de la norme NF C 15-100 dans un appartement parisien
+              Comment savoir si votre installation électrique est à remettre aux normes ?
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              La norme NF C 15-100 définit les règles de sécurité minimales pour les installations électriques résidentielles en France. Dans les appartements parisiens anciens, nombre de ces règles ne sont pas respectées, exposant les occupants à des risques d&apos;électrocution, d&apos;incendie ou de surintensité.
+              À Paris, une grande partie des appartements anciens (haussmanniens, immeubles des années 1930 à 1960) ont des installations électriques vieilles de 30 à 80 ans. Ces installations peuvent fonctionner sans incident apparent, mais présentent des risques réels d&apos;incendie, d&apos;électrocution ou de surtension.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Le parc immobilier parisien compte une proportion élevée d&apos;installations électriques antérieures à 1980, voire à 1970. Ces installations utilisent souvent des câbles en aluminium (dangereux), des fusibles à cartouche (insuffisants), et ne disposent pas de mise à la terre.
+              Le diagnostic électrique obligatoire lors de la vente (installations de plus de 15 ans) identifie les anomalies et classe l&apos;installation. Mais même sans vente, plusieurs signes visibles alertent sur la nécessité d&apos;une remise aux normes.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Tableau électrique et disjoncteurs différentiels',
-                  detail: "Le tableau divisionnaire doit comporter des disjoncteurs différentiels 30 mA (DDR) protégeant chaque circuit. Ces dispositifs coupent l'alimentation en cas de fuite de courant, protégeant des électrocutions. Un tableau vétuste avec fusibles à plomb ou disjoncteurs sans DDR est non conforme NF C 15-100.",
+                  signe: 'Tableau électrique vétuste ou sous-dimensionné',
+                  description: "Tableau à fusibles en fil de plomb (à remplacer impérativement), tableau avec disjonteurs mais sans différentiels 30 mA, tableau insuffisant pour l'usage actuel (pas assez de circuits, disjoncteur général qui saute régulièrement). Tout tableau de plus de 25 ans mérite une inspection.",
+                  risque: 'Risque incendie élevé',
                 },
                 {
-                  enjeu: 'Mise à la terre des prises',
-                  detail: "Toutes les prises de courant doivent être équipées d'une fiche de terre (prise 2P+T). La mise à la terre connecte les masses métalliques des appareils au réseau de terre de l'immeuble, évitant les chocs électriques. Dans les appartements anciens sans prise de terre, une installation complète du circuit de terre est nécessaire.",
+                  signe: 'Absence de prise de terre',
+                  description: "Les prises sans trou de terre (2 alvéoles au lieu de 3) signalent une absence de mise à la terre. C'est obligatoire depuis 1968 pour toutes les nouvelles installations. Sans terre, les appareils électroménagers (lave-linge, réfrigérateur, four...) ne sont pas protégés et peuvent être dangereux en cas de défaut d'isolation.",
+                  risque: "Risque d'électrocution",
                 },
                 {
-                  enjeu: 'Nombre de circuits dédiés',
-                  detail: "La norme impose un minimum de 6 circuits dédiés pour la cuisine seule : éclairage, prises de courant, four/plaque (circuit dédié 32A), lave-vaisselle, réfrigérateur, micro-ondes. Les appartements haussmanniens avec un seul circuit pour toute la cuisine sont très courants et dangereux.",
+                  signe: 'Câblage en tissu ou en aluminium',
+                  description: "Dans les appartements parisiens anciens, le câblage d'origine peut être en fil tissu (isolant en coton vieilli, très inflammable) ou en aluminium (résistance plus élevée, connexions oxydées). Ces câbles doivent être remplacés intégralement.",
+                  risque: 'Risque incendie très élevé',
+                },
+                {
+                  signe: 'Manque de prises et circuits insuffisants',
+                  description: "La norme NF C 15-100 impose un nombre minimal de prises par pièce : 3 prises minimum dans un salon, 4 à 6 en cuisine (dont un circuit dédié plaque de cuisson), 2 en chambre. Un appartement ancien avec 1 à 2 prises par pièce ne répond plus aux besoins.",
+                  risque: 'Surcharge, incendie',
                 },
               ].map((el) => (
-                <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.enjeu}</div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                <div key={el.signe} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                  <div className="flex items-start justify-between gap-4 mb-2">
+                    <div className="font-medium text-[#1C1C1C] text-sm">{el.signe}</div>
+                    <div className="text-red-500 text-xs font-medium flex-shrink-0">{el.risque}</div>
+                  </div>
+                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.description}</div>
                 </div>
               ))}
             </div>
@@ -126,124 +153,139 @@ export default function ArticleRemiseNormesElectriqueParis() {
         </div>
       </section>
 
-      {/* Section 2 */}
+      {/* Section 2 — Norme NF C 15-100 */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Diagnostic électrique et vente immobilière à Paris
+            La norme NF C 15-100 : ce qu&apos;elle impose concrètement
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Depuis 2009, le diagnostic électrique est obligatoire pour tout logement de plus de 15 ans mis en vente. Il est réalisé par un diagnostiqueur certifié et fait partie du Dossier de Diagnostic Technique (DDT) remis à l&apos;acheteur.
+            La norme NF C 15-100 définit les règles minimales d&apos;une installation électrique sûre dans un logement. Voici les exigences principales pièce par pièce, pour un appartement parisien type.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Diagnostic électrique (DDT)',
-                detail: "Obligatoire à la vente pour tout logement de plus de 15 ans. Le diagnostiqueur vérifie le tableau, les DDR, la terre, les prises, les circuits salle de bain. Il classe les anomalies en A (danger immédiat) et B (non-conformité sans danger immédiat). Durée de validité : 3 ans.",
-                cout: '80 – 150 €',
+                piece: 'Séjour / Salon',
+                exigences: "5 prises minimum (dont 1 dédiée TV), 1 point d'éclairage commandé, 1 circuit 16A ou 2 circuits 16A selon surface. Prises avec terre obligatoires.",
+                circuit: '1 à 2 circuits 16A',
               },
               {
-                titre: 'Impact sur la négociation',
-                detail: "Un rapport avec de nombreuses anomalies de type A peut refroidir les acheteurs ou justifier une négociation du prix. Une remise aux normes préalable à la vente se rentabilise souvent par un meilleur prix de vente et une vente plus rapide.",
-                cout: 'Valorisation du bien',
+                piece: 'Cuisine',
+                exigences: "6 prises minimum dont 2 circuits spécialisés 20A (réfrigérateur, four). Circuit dédié 32A pour plaque de cuisson électrique. 1 circuit 20A lave-vaisselle. Prises à 1,20 m au-dessus du plan de travail.",
+                circuit: '4 à 6 circuits dédiés',
               },
               {
-                titre: 'Certificat Consuel',
-                detail: "Après remise aux normes, le certificat Consuel atteste de la conformité de l'installation. Il est exigé par Enedis pour la mise en service ou l'augmentation de puissance. Il rassure les acheteurs et les assureurs.",
-                cout: '150 – 200 €',
+                piece: 'Chambre',
+                exigences: "3 prises minimum (dont 1 prise rasoir ou 2 prises), 1 point d'éclairage commandé. Circuit partagé avec d'autres pièces possible.",
+                circuit: '1 circuit 16A partagé',
               },
               {
-                titre: 'DPE et rénovation électrique',
-                detail: "Le chauffage électrique impacte le DPE (Diagnostic de Performance Énergétique). Un appartement chauffé à l'électricité avec une installation vétuste (convecteurs anciens) sera mal classé. La remise aux normes associée à des radiateurs à inertie améliore le confort et peut améliorer le DPE.",
-                cout: 'Impact sur DPE',
+                piece: 'Salle de bain',
+                exigences: "Volumes réglementés (0, 1, 2) définissant les équipements autorisés. Différentiel 30 mA obligatoire. Liaison équipotentielle entre toutes les parties métalliques. Prise rasoir en volume 2 uniquement (transformateur d'isolement).",
+                circuit: '1 circuit dédié 20A',
               },
             ].map((el) => (
-              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={el.piece} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="flex items-start justify-between gap-2 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.piece}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.circuit}</div>
                 </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.exigences}</div>
               </div>
             ))}
+          </div>
+
+          <div className="bg-[#1C1C1C] rounded-lg p-5">
+            <h3 className="font-display text-base font-semibold text-white mb-3">
+              Tableau électrique conforme NF C 15-100 : ce qu&apos;il doit contenir
+            </h3>
+            <div className="space-y-2">
+              {[
+                "Disjoncteur général de branchement (calibre adapté à l'abonnement EDF)",
+                "Interrupteurs différentiels 30 mA (au moins 2 : éclairage/prises + salle de bain + cuisine)",
+                "Disjoncteurs de protection par circuit (1 disjoncteur par circuit : salon, chambres, cuisine, SDB...)",
+                "Parafoudre recommandé en zone exposée (toiture terrasse, appartements en attique)",
+                "Repérage des circuits : étiquettes lisibles sur chaque disjoncteur",
+                "Espace suffisant pour ajout de circuits futurs (ex. borne de recharge véhicule électrique)",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2 text-sm text-gray-300 font-light">
+                  <CheckCircle size={14} className="text-[#D4AF37] flex-shrink-0 mt-0.5" />
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 3 */}
+      {/* Section 3 — Spécificités Haussmannien */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Travaux électriques spécifiques aux appartements parisiens
+            Remise aux normes dans un immeuble haussmannien : les défis spécifiques
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les contraintes des appartements parisiens — murs épais en pierre, planchers bois anciens, hauteurs sous plafond variables — rendent les travaux d&apos;électricité plus complexes qu&apos;ailleurs.
+            Les appartements haussmanniens parisiens posent des défis particuliers lors d&apos;une remise aux normes électriques. Les murs en pierre de taille de 40 à 60 cm, les hauteurs sous plafond de 3 m et les ornements architecturaux (moulures, rosaces) imposent des solutions techniques adaptées.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Saignées dans les murs en pierre',
-                prix: '30 – 60 €/ml de saignée',
-                detail: "Dans les immeubles haussmanniens, les murs porteurs en pierre de taille ou meulière rendent les saignées laborieuses et coûteuses. Alternativement, les câbles peuvent être posés en apparent sous goulotte PVC ou moulure bois (plus esthétique). Le passage dans les planchers bois (entre deux étages) nécessite une coordination avec les travaux de sol.",
+                defi: 'Saignées dans les murs en pierre',
+                solution: "Les saignées pour passer les câbles dans des murs en pierre épaisse (35 à 60 cm) sont plus longues et coûteuses qu'en cloison légère. Deux options : saignées cachées sous enduit (invisible, coût plus élevé) ou gaines apparentes en moulures PVC peintes (moins coûteux, moins esthétique). Pour préserver les enduits anciens, certains électriciens optent pour des chemins de câbles discrets en plinthe ou en corniche.",
               },
               {
-                type: 'Salle de bain : zone IPXX',
-                prix: '500 – 1 500 €',
-                detail: "La salle de bain est la pièce la plus réglementée : volumes de sécurité (0, 1, 2, 3) définissant les matériels autorisés, DDR 30 mA obligatoire sur le circuit, pas de prise de courant dans le volume 1, liaison équipotentielle entre toutes les masses métalliques. Dans les petites salles de bain parisiennes, la conformité est souvent le premier poste à traiter.",
+                defi: "Absence de mise à la terre dans l'immeuble",
+                solution: "Dans les immeubles haussmanniens sans réseau de terre collectif, l'électricien crée une liaison de terre individuelle — soit en descendant un conducteur PE depuis le tableau jusqu'à un piquet de terre en cave ou sous-sol, soit en se raccordant à l'alimentation Enedis (si le câble d'entrée inclut un conducteur PE). Cette démarche est systématique dans les immeubles parisiens anciens.",
               },
               {
-                type: 'Tableau électrique : remplacement complet',
-                prix: '800 – 2 000 €',
-                detail: "Le remplacement complet du tableau est souvent nécessaire dans les appartements des années 1960-1990 (tableau à fusibles, tableau sans DDR). Le nouveau tableau doit intégrer : disjoncteur de branchement, interrupteur différentiel de tête 30 mA ou 500 mA, disjoncteurs par circuit, rangement organisé par pièce.",
+                defi: 'Préservation des moulures et ornements',
+                solution: "Les appartements haussmanniens sont souvent protégés ou valorisés par leurs éléments décoratifs (moulures en plâtre, rosaces, parquets...). L'électricien doit travailler avec précision pour ne pas les endommager. Les encastrements de boîtes de dérivation doivent être réalisés avec des outils adaptés à la pierre.",
               },
               {
-                type: 'Domotique et smart home',
-                prix: '1 000 – 5 000 €',
-                detail: "La remise aux normes est l'occasion idéale pour intégrer une installation domotique : interrupteurs connectés, prises USB, éclairage pilotable, thermostat intelligent. Le câblage neuf facilite l'intégration de ces équipements. Un appartement parisien connecté se loue et se vend mieux.",
+                defi: 'Hauteur sous plafond de 3 m et plus',
+                solution: "Les grandes hauteurs augmentent la longueur des saignées et des câbles. Les tableaux électriques sont souvent déplacés dans l'entrée (plus accessible) lors d'une rénovation complète. Les plafonds hauts permettent en revanche une meilleure discrétion des chemin de câbles en partie haute des murs.",
               },
             ].map((el) => (
-              <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-4 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
-                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
-                </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              <div key={el.defi} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.defi}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Budget table */}
+      {/* Section 4 — Budget */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix remise aux normes électrique à Paris par surface (2025)
+            Prix remise aux normes électrique Paris 2025 : tableau récapitulatif
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Prix indicatifs main d&apos;œuvre + matériaux, refonte complète de l&apos;installation (câblage + tableau + prises + interrupteurs).
+            Tarifs observés à Paris, main d&apos;œuvre et matériaux inclus (câblage, tableau, prises, interrupteurs). Hors travaux de finition (enduit, peinture, carrelage après saignées).
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Surface</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Type logement</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Circuits à prévoir</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix estimatif</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Appartement</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Surface</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Nb circuits</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { surface: '20 – 30 m²', type: 'Studio', circuits: '8 – 10', prix: '1 500 – 3 000 €' },
-                  { surface: '40 – 60 m²', type: '2-3 pièces', circuits: '12 – 16', prix: '3 000 – 5 500 €' },
-                  { surface: '60 – 80 m²', type: '3-4 pièces', circuits: '16 – 20', prix: '4 500 – 7 000 €' },
-                  { surface: '80 – 120 m²', type: '4-5 pièces', circuits: '20 – 28', prix: '6 000 – 10 000 €' },
-                  { surface: '120 m² et +', type: 'Grand appartement', circuits: '28+', prix: 'Sur devis' },
+                  { type: 'Studio / T1', surface: '15 – 30 m²', circuits: '6 – 8', prix: '1 500 – 3 500 €' },
+                  { type: 'T2', surface: '35 – 50 m²', circuits: '8 – 12', prix: '2 500 – 5 500 €' },
+                  { type: 'T3', surface: '55 – 70 m²', circuits: '10 – 14', prix: '3 500 – 7 500 €' },
+                  { type: 'T4', surface: '75 – 100 m²', circuits: '12 – 18', prix: '5 000 – 10 000 €' },
+                  { type: 'Appartement haussmannien (T4–T5)', surface: '90 – 150 m²', circuits: '14 – 22', prix: '7 000 – 18 000 €' },
+                  { type: 'Tableau seul (remplacement)', surface: 'Tous types', circuits: '—', prix: '800 – 2 500 €' },
                 ].map((row, i) => (
-                  <tr key={row.surface} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.surface}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.type}</td>
+                  <tr key={row.type} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.type}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.surface}</td>
                     <td className="px-4 py-3 text-center text-gray-600 font-light">{row.circuits}</td>
                     <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prix}</td>
                   </tr>
@@ -251,16 +293,19 @@ export default function ArticleRemiseNormesElectriqueParis() {
               </tbody>
             </table>
           </div>
+
           <div>
-            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">Conseils pour bien préparer sa remise aux normes</h3>
+            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
+              Ce qui peut faire varier le prix à Paris
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "Faites réaliser le diagnostic électrique avant de demander un devis — il identifie précisément les anomalies",
-                "Groupez la remise aux normes avec d'autres travaux (peinture, sol) pour limiter les perturbations",
-                "Exigez une attestation de conformité Consuel à la fin des travaux",
-                "Vérifiez que l'électricien est titulaire de la qualification Qualifelec ou équivalente",
-                "Anticipez l'ajout de prises USB, RJ45 et prises extérieures lors de la refonte complète",
-                "La puissance souscrite (kVA) doit être adaptée aux usages actuels (cuisine équipée, chauffage électrique)",
+                "Murs en pierre épaisse (haussmannien) : saignées plus longues, surcoût 20 à 40%",
+                "Absence de mise à la terre : création du réseau de terre, surcoût 500 – 1 500 €",
+                "Câblage en fil tissu à remplacer intégralement : surcoût 30 à 60%",
+                "Appartement en copropriété avec contraintes d'accès au vide-sanitaire : surcoût variable",
+                "Finitions après saignées (enduit, peinture) : 1 500 – 5 000 € selon surface",
+                "Certification CONSUEL obligatoire pour une installation neuve ou rénovée : 150 – 300 €",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -268,6 +313,92 @@ export default function ArticleRemiseNormesElectriqueParis() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Étapes des travaux */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Les étapes d&apos;une remise aux normes électrique à Paris
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Une remise aux normes électrique complète dans un appartement parisien suit un processus structuré. Voici les étapes type, du diagnostic à la certification finale.
+          </p>
+          <div className="space-y-4">
+            {[
+              {
+                etape: "1 — Diagnostic de l'installation existante",
+                detail: "Inspection complète : état du tableau, type et section des câbles, présence ou absence de terre, nombre de circuits, conformité des prises et interrupteurs, état des boîtes de dérivation. Le diagnostiqueur certifié établit un rapport avec classement des anomalies (sécurité immédiate, à risque, observation).",
+                duree: '2 à 4 heures',
+              },
+              {
+                etape: '2 — Établissement du programme de travaux',
+                detail: "Sur la base du diagnostic, l'électricien établit un plan de câblage : nombre de circuits, emplacement du nouveau tableau, passage des câbles (saignées, goulottes, plinthes), position des nouvelles prises et points d'éclairage. Le devis détaille chaque poste.",
+                duree: '1 à 3 jours (devis)',
+              },
+              {
+                etape: "3 — Travaux d'électricité (phase principale)",
+                detail: "Coupure générale, démontage de l'ancien câblage, saignées dans les murs et plafonds, passage des nouveaux câbles, pose des boîtes d'encastrement, raccordement du nouveau tableau électrique, pose des prises et interrupteurs. Dans un appartement haussmannien de 80 m², compter 5 à 10 jours de travaux.",
+                duree: '3 à 12 jours selon surface',
+              },
+              {
+                etape: '4 — Finitions après travaux électriques',
+                detail: "Rebouchage des saignées (plâtre, enduit), reprise de peinture sur les zones touchées. Idéalement, les travaux électriques sont coordonnés avec la rénovation générale de l'appartement pour limiter les dégâts apparents.",
+                duree: '2 à 5 jours',
+              },
+              {
+                etape: '5 — Test et certification CONSUEL',
+                detail: "Après travaux, une vérification complète de l'installation est effectuée (test des différentiels, mesure de la terre, vérification de la continuité). La certification CONSUEL est obligatoire pour remettre en service un logement dont l'installation a été entièrement refaite. Enedis en a besoin pour se raccorder ou modifier l'abonnement.",
+                duree: '1 jour (inspection + certificat)',
+              },
+            ].map((el) => (
+              <div key={el.etape} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.etape}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.duree}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6 — Aides et obligations */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Aides, obligations et cas particuliers pour les Parisiens
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            La remise aux normes électrique peut bénéficier d&apos;aides fiscales et d&apos;accompagnements spécifiques. Elle est parfois obligatoire dans certaines situations.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                titre: 'TVA réduite à 10%',
+                detail: "Les travaux d'électricité dans un logement de plus de 2 ans bénéficient d'une TVA à 10% (au lieu de 20%). Condition : le logement doit être à usage d'habitation et les travaux réalisés par un professionnel. La TVA à 5,5% s'applique si les travaux s'inscrivent dans une rénovation énergétique globale.",
+              },
+              {
+                titre: "MaPrimeRénov' (si travaux combinés)",
+                detail: "La mise aux normes électrique seule n'est pas éligible à MaPrimeRénov'. En revanche, si elle est couplée à des travaux d'isolation ou de chauffage dans le cadre d'une rénovation globale, la rénovation globale peut être éligible.",
+              },
+              {
+                titre: "Obligation lors d'une vente",
+                detail: "Le diagnostic électrique (installation de plus de 15 ans) est obligatoire en annexe du compromis de vente. S'il révèle des anomalies de type 1 (sécurité immédiate), l'acquéreur peut s'en prévaloir lors de la négociation du prix.",
+              },
+              {
+                titre: 'Obligation du propriétaire bailleur',
+                detail: "Le propriétaire doit mettre à disposition un logement décent avec une installation électrique conforme. Si un locataire signale une anomalie électrique grave, le propriétaire est tenu d'intervenir. Le non-respect peut entraîner une réduction de loyer ou une injonction judiciaire.",
+              },
+            ].map((el) => (
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.titre}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -293,12 +424,12 @@ export default function ArticleRemiseNormesElectriqueParis() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Guides connexes</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/blog/renovation-appartement-paris-13e', title: 'Rénovation appartement Paris 13e' },
-              { href: '/blog/renovation-appartement-paris-15e', title: 'Rénovation appartement Paris 15e' },
-              { href: '/blog/renovation-appartement-paris-17e', title: 'Rénovation appartement Paris 17e' },
-              { href: '/blog/renovation-immeuble-paris', title: 'Rénovation immeuble Paris' },
+              { href: '/blog/electricite-appartement-paris', title: 'Électricité appartement Paris' },
+              { href: '/blog/travaux-electricite-appartement-paris', title: 'Travaux électricité appartement Paris' },
               { href: '/blog/domotique-appartement-paris', title: 'Domotique appartement Paris' },
-              { href: '/blog/renovation-bureau-paris', title: 'Rénovation bureau Paris' },
+              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénovation appartement haussmannien Paris' },
+              { href: '/blog/diagnostic-amiante-paris', title: 'Diagnostic amiante Paris' },
+              { href: '/blog/budget-renovation-paris-2025', title: 'Budget rénovation Paris 2025' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -315,10 +446,10 @@ export default function ArticleRemiseNormesElectriqueParis() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Remettre aux normes l&apos;électricité de votre appartement parisien
+          Mettre votre installation électrique aux normes à Paris ?
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Diagnostic gratuit. Électriciens certifiés NF C 15-100. Devis sous 48h.
+          Diagnostic gratuit. Tableau électrique, câblage, mise à la terre. Devis sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
