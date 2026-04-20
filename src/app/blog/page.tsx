@@ -2424,6 +2424,36 @@ const articles = [
     desc: "Rénovation appartement quartier Monceau, Paris 8e/17e. Haussmannien haut de gamme, devis gratuit 48h.",
     tag: 'Quartier',
   },
+  {
+    href: '/blog/renovation-appartement-arts-metiers-paris',
+    title: "Rénovation Appartement Arts et Métiers Paris 3e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Arts et Métiers, Paris 3e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-epinettes-paris',
+    title: "Rénovation Appartement Épinettes Paris 17e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier des Épinettes, Paris 17e. Architecture mixte, finitions soignées, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-saint-georges-paris',
+    title: "Rénovation Appartement Saint-Georges Paris 9e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Saint-Georges, Paris 9e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-vaugirard-paris',
+    title: "Rénovation Appartement Vaugirard Paris 15e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Vaugirard, Paris 15e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-villette-paris',
+    title: "Rénovation Appartement La Villette Paris 19e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier de la Villette, Paris 19e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
 ]
 
 export default function BlogPage() {
