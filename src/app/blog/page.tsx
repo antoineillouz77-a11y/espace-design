@@ -306,6 +306,18 @@ const articles = [
     desc: "Rénover ses WC à Paris : carrelage, faïence, WC suspendu, lave-mains. Prix, délais, artisans. Guide complet 2025.",
     tag: 'Plomberie',
   },
+  {
+    href: '/blog/douche-italienne-paris',
+    title: 'Douche Italienne Paris : prix, carrelage & installation 2025',
+    desc: "Créer une douche italienne à Paris : receveur extra-plat, carrelage, paroi, prix. Guide complet et artisans spécialisés 2025.",
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/renovation-bureau-paris',
+    title: 'Rénovation Bureau Paris : aménagement home office & prix 2025',
+    desc: "Créer ou rénover un bureau à Paris : isolation phonique, éclairage, rangements, sol. Prix et guide complet 2025.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
