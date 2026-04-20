@@ -72,6 +72,7 @@ const villes78 = [
   { href: '/renovation-croissy-sur-seine', label: 'Croissy-sur-Seine' },
   { href: '/renovation-jouy-en-josas', label: 'Jouy-en-Josas' },
   { href: '/renovation-saint-quentin-en-yvelines', label: 'Saint-Quentin-en-Yvelines' },
+  { href: '/renovation-andrezy', label: 'Andrésy' },
 ]
 
 const services = [

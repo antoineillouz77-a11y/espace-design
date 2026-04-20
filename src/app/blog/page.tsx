@@ -990,6 +990,18 @@ const articles = [
     desc: "Pose carrelage salle de bain Paris. Grands formats, mosaïque, zellige. Prix artisan 2025. Devis gratuit 48h.",
     tag: 'Carrelage',
   },
+  {
+    href: '/blog/installation-cuisine-ikea-paris',
+    title: 'Installation Cuisine IKEA Paris : montage, pose & prix artisan 2025',
+    desc: "Faire poser sa cuisine IKEA à Paris par un artisan. Prix, délais, plomberie, électricité. Devis gratuit 48h.",
+    tag: 'Cuisine',
+  },
+  {
+    href: '/blog/isolation-phonique-appartement-paris',
+    title: 'Isolation Phonique Appartement Paris : solutions & prix 2025',
+    desc: "Réduire les bruits dans votre appartement parisien. Doublage murs, faux-plafond, sol flottant. Devis gratuit 48h.",
+    tag: 'Isolation',
+  },
 ]
 
 export default function BlogPage() {

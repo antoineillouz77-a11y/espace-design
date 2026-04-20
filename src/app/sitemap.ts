@@ -532,6 +532,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-jouy-en-josas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-saint-quentin-en-yvelines`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Yvelines (78) — vague 16
+    { url: `${base}/renovation-andrezy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-et-Marne (77) — vague 16
+    { url: `${base}/renovation-fontenay-en-brie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 11
+    { url: `${base}/blog/installation-cuisine-ikea-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/isolation-phonique-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Blog — vague 10
     { url: `${base}/blog/renovation-salle-de-bain-haussmannien`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/pose-carrelage-salle-de-bain-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
