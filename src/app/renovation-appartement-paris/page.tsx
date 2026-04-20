@@ -386,6 +386,29 @@ export default function RenovationParis() {
         </div>
       </section>
 
+      {/* Ressources utiles */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">À explorer</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/tarifs', label: 'Nos tarifs 2025' },
+              { href: '/faq', label: 'FAQ rénovation' },
+              { href: '/avis', label: 'Avis clients' },
+              { href: '/realisations', label: 'Portfolio' },
+              { href: '/blog/renovation-loft-paris', label: 'Rénovation loft Paris' },
+              { href: '/blog/amenagement-studio-paris', label: 'Aménagement studio' },
+              { href: '/blog/chauffage-appartement-paris', label: 'Chauffage appartement' },
+              { href: '/blog/plomberie-appartement-paris', label: 'Plomberie appartement' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-[#1C1C1C] text-center px-4">
         <h2 className="font-display text-3xl font-bold text-white mb-4">
