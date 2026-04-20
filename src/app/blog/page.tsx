@@ -168,6 +168,12 @@ const articles = [
     desc: "Home staging à Paris : travaux de valorisation avant vente. Peinture, sol, cuisines, salles de bain — augmentez votre prix de vente.",
     tag: 'Conseils',
   },
+  {
+    href: '/blog/peinture-decorative-paris',
+    title: 'Peinture Décorative Paris : enduit, béton ciré, tadelakt 2025',
+    desc: "Peinture décorative à Paris : enduit à la chaux, béton ciré, tadelakt, badigeon. Prix, applications, artisans. Guide complet.",
+    tag: 'Peinture',
+  },
 ]
 
 export default function BlogPage() {

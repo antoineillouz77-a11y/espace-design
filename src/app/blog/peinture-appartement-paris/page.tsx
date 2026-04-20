@@ -285,10 +285,11 @@ export default function ArticlePeintureAppartement() {
           <h2 className="font-display text-xl font-semibold text-[#1C1C1C] mb-6">Voir aussi</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: '/peinture-paris', title: 'Peinture Paris — notre service', tag: 'Service' },
               { href: '/blog/prix-renovation-appartement-paris', title: 'Prix rénovation appartement Paris 2025', tag: 'Prix' },
               { href: '/blog/renovation-parquet-paris', title: 'Parquet à Paris : pose et rénovation', tag: 'Sols' },
-              { href: '/blog/renovation-salle-de-bain-paris', title: 'Rénovation salle de bain Paris', tag: 'Salle de bain' },
               { href: '/blog/choisir-artisan-renovation-paris', title: 'Choisir son artisan rénovateur', tag: 'Conseils' },
+              { href: '/decoration-interieure-paris', title: 'Décoration intérieure Paris', tag: 'Décoration' },
             ].map((a) => (
               <Link key={a.href} href={a.href} className="block p-4 bg-[#FAFAF8] border border-gray-100 rounded-lg hover:border-[#D4AF37]/40 transition-colors group">
                 <span className="text-[10px] uppercase tracking-widest text-[#B8960C] font-light">{a.tag}</span>

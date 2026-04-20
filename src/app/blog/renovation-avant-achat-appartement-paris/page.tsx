@@ -280,10 +280,11 @@ export default function RenovationAvantAchatAppartementParis() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris — Espace Design' },
+              { href: '/blog/budget-renovation-paris-2025', title: 'Budget rénovation Paris 2025' },
               { href: '/blog/prix-renovation-appartement-paris', title: 'Prix d\'une rénovation à Paris en 2025' },
               { href: '/blog/electricite-appartement-paris', title: 'Électricité appartement Paris : mise aux normes' },
               { href: '/blog/investissement-locatif-renovation-paris', title: 'Rénovation investissement locatif Paris' },
-              { href: '/blog/renovation-appartement-ancien-paris', title: 'Rénover un appartement ancien à Paris' },
             ].map((a) => (
               <Link
                 key={a.href}

@@ -314,10 +314,11 @@ export default function ArticleIsolationAcoustique() {
           <h2 className="font-display text-xl font-semibold text-[#1C1C1C] mb-6">Voir aussi</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: '/isolation-paris', title: 'Isolation Paris — notre service', tag: 'Service' },
+              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique appartement Paris', tag: 'Isolation' },
               { href: '/blog/prix-renovation-appartement-paris', title: 'Prix rénovation appartement Paris 2025', tag: 'Prix' },
               { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénover un appartement haussmannien', tag: 'Guide' },
-              { href: '/blog/renovation-parquet-paris', title: 'Parquet à Paris : pose et rénovation', tag: 'Sols' },
-              { href: '/blog/choisir-artisan-renovation-paris', title: 'Choisir son artisan rénovateur à Paris', tag: 'Conseils' },
+              { href: '/platrererie-paris', title: 'Plâtrerie & cloisons Paris', tag: 'Service' },
             ].map((a) => (
               <Link key={a.href} href={a.href} className="block p-4 bg-[#FAFAF8] border border-gray-100 rounded-lg hover:border-[#D4AF37]/40 transition-colors group">
                 <span className="text-[10px] uppercase tracking-widest text-[#B8960C] font-light">{a.tag}</span>

@@ -247,10 +247,11 @@ export default function CarrelageAppartementParis() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/blog/renovation-salle-de-bain-paris', title: 'Rénovation salle de bain à Paris' },
+              { href: '/carrelage-paris', title: 'Carrelage Paris — notre service' },
+              { href: '/renovation-salle-de-bain-paris', title: 'Rénovation salle de bain Paris' },
+              { href: '/blog/renovation-salle-de-bain-paris', title: 'Guide rénovation salle de bain Paris' },
               { href: '/blog/renovation-parquet-paris', title: 'Parquet à Paris : pose et rénovation' },
               { href: '/blog/prix-renovation-appartement-paris', title: 'Prix d\'une rénovation à Paris en 2025' },
-              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris — Espace Design' },
             ].map((a) => (
               <Link
                 key={a.href}

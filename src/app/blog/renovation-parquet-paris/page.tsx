@@ -338,9 +338,10 @@ export default function ArticleParquet() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: '/parquet-paris', title: 'Parquet Paris — notre service' },
+              { href: '/blog/parquet-massif-paris', title: 'Parquet massif Paris : guide complet' },
               { href: '/blog/prix-renovation-appartement-paris', title: 'Prix d\'une rénovation à Paris en 2025' },
               { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénover un appartement haussmannien' },
-              { href: '/blog/peinture-appartement-paris', title: 'Peinture appartement Paris : prix et conseils' },
               { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris — Espace Design' },
             ].map((a) => (
               <Link

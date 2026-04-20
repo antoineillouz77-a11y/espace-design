@@ -256,10 +256,11 @@ export default function MenuiserieSurMesureParis() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: '/menuiserie-paris', title: 'Menuiserie sur mesure Paris — notre service' },
+              { href: '/amenagement-interieur-paris', title: 'Aménagement intérieur Paris' },
               { href: '/blog/prix-renovation-appartement-paris', title: 'Prix d\'une rénovation à Paris en 2025' },
               { href: '/blog/renovation-studio-paris', title: 'Rénovation studio Paris : prix et astuces' },
               { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénover un appartement haussmannien' },
-              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris — Espace Design' },
             ].map((a) => (
               <Link
                 key={a.href}
