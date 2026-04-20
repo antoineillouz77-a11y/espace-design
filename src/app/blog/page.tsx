@@ -888,6 +888,12 @@ const articles = [
     desc: "Douche italienne sans receveur à Paris : chape hydrofuge, étanchéité SPEC, carrelage antidérapant. Prix 2025.",
     tag: 'Salle de bain',
   },
+  {
+    href: '/blog/isolation-murs-appartement-paris',
+    title: 'Isolation Murs Appartement Paris : ITI, ITE & prix 2025',
+    desc: "Isoler les murs d'un appartement à Paris : ITI, ITE, aides MaPrimeRénov'. Prix m² 2025 par technique.",
+    tag: 'Isolation',
+  },
 ]
 
 export default function BlogPage() {

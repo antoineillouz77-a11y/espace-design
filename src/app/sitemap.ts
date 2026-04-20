@@ -414,6 +414,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-mitry-mory`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-roissy-en-brie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-lieusaint`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-les-clayes-sous-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-brie-comte-robert`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Hauts-de-Seine (92) — nouvelles villes
@@ -432,6 +433,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/peinture-decoration-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/verriere-interieure-atelier-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/salle-de-bain-italienne-sans-receveur-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/isolation-murs-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Val-de-Marne (94) — nouvelles villes
     { url: `${base}/renovation-villejuif`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

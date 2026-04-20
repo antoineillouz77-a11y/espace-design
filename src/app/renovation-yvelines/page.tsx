@@ -60,6 +60,7 @@ const villes78 = [
   { href: '/renovation-trappes', label: 'Trappes' },
   { href: '/renovation-plaisir', label: 'Plaisir' },
   { href: '/renovation-elancourt', label: 'Élancourt' },
+  { href: '/renovation-les-clayes-sous-bois', label: 'Les Clayes-sous-Bois' },
 ]
 
 const services = [
