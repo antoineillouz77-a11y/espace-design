@@ -1698,6 +1698,12 @@ const articles = [
     desc: "Soubassement mural à Paris. Lambris bois, PVC, carrelage, boiseries bas de mur. Devis 48h.",
     tag: 'Travaux',
   },
+  {
+    href: '/blog/renovation-appartement-fontenay-sous-bois',
+    title: "Rénovation Appartement Fontenay-sous-Bois : artisan & prix 2025",
+    desc: "Rénover un appartement à Fontenay-sous-Bois (94). Ville résidentielle Val-de-Marne. Devis 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
