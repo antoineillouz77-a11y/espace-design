@@ -8,15 +8,15 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Balcon Copropriété Paris', item: 'https://espacedesignparis.fr/blog/renovation-balcon-terrasse-immeuble-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Rénovation Balcon Terrasse Paris', item: 'https://espacedesignparis.fr/blog/renovation-balcon-terrasse-immeuble-paris' },
   ],
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Balcon Copropriété Paris : travaux, autorisations & prix 2025',
-  description: 'Rénover son balcon en copropriété à Paris : parties communes vs privatives, autorisations AG, carrelage, étanchéité. Prix 2025.',
+  headline: 'Rénovation Balcon & Terrasse Paris : imperméabilisation et carrelage 2025 | Espace Design',
+  description: 'Rénover balcon ou terrasse à Paris : étanchéité, carrelage, garde-corps. Parties privatives vs communes en copropriété. Prix 2025.',
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,37 +33,37 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Ai-je besoin d\'une autorisation pour rénover mon balcon en copropriété à Paris ?',
+      name: "Le balcon est-il une partie privative ou commune en copropriété ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Cela dépend des travaux envisagés. Le remplacement du carrelage du sol (partie commune à usage privatif) nécessite généralement une autorisation de l\'assemblée générale (AG). En revanche, peindre l\'intérieur du garde-corps ou poser un revêtement sans modifier la structure sont souvent considérés comme des travaux privatifs. Dans tous les cas, consultez votre règlement de copropriété et le syndic avant de démarrer.',
+        text: "En copropriété parisienne, le balcon est généralement une partie commune à jouissance privative : vous l'utilisez comme si c'était le vôtre, mais la structure (dalle, poutre) appartient à la copropriété. Conséquence pratique : les travaux touchant la structure (étanchéité de la dalle, remplacement du garde-corps, travaux de maçonnerie) relèvent de la copropriété et nécessitent un vote en AG. En revanche, le revêtement de sol (carrelage, caillebotis) et le mobilier sont généralement à votre charge et ne requièrent pas d'accord collectif. Vérifiez systématiquement votre règlement de copropriété.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quelle étanchéité pour un balcon parisien fissuré ou qui prend l\'eau ?',
+      name: "Comment traiter l'étanchéité d'un balcon parisien ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pour un balcon qui prend l\'eau, la solution standard est l\'application d\'une résine d\'étanchéité liquide en deux couches, précédée d\'un primaire d\'accrochage. Le système est complété par une membrane armée aux joints et relevés (angles). Cette technique est compatible avec la pose de carrelage antidérapant par-dessus. Comptez 80 à 150 €/m² pour l\'étanchéité seule, main d\'œuvre incluse.',
+        text: "L'étanchéité d'un balcon parisien peut être réalisée par plusieurs méthodes selon l'état de la dalle et le budget. La résine d'étanchéité liquide (polyuréthane ou époxy) est la solution la plus rapide et économique : elle s'applique directement sur le support et forme un film imperméable continu. La membrane EPDM (caoutchouc synthétique) offre une meilleure durabilité (25 ans) mais est plus coûteuse à poser. Pour les terrasses accessibles avec carrelage, l'étanchéité sous carrelage (complexe multicouche) est la référence. Le coût varie de 50 à 150 €/m² selon la méthode et l'état du support.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Peut-on installer un garde-corps en verre sur un balcon parisien ?',
+      name: "Quel est le prix pour rénover un balcon à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, sous conditions. La hauteur minimale réglementaire est de 1 m (1,10 m si le plancher est situé à plus de 6 m du sol). Le garde-corps étant une partie commune de l\'immeuble, sa modification nécessite un vote en AG. À Paris, les immeubles haussmanniens classés imposent parfois des contraintes esthétiques (fer forgé, couleur) définies par l\'ABF (Architecte des Bâtiments de France). Un dépôt de déclaration préalable en mairie est souvent nécessaire.',
+        text: "Le coût de rénovation d'un balcon parisien (typiquement 4 à 10 m²) dépend des travaux réalisés. Revêtement de sol seul (carrelage grès cérame ou caillebotis bois) : 800 à 2 500 €. Étanchéité seule (résine liquide) : 600 à 1 500 €. Étanchéité + carrelage : 1 500 à 4 000 €. Rénovation complète incluant garde-corps, étanchéité et carrelage : 3 000 à 8 000 €. Pour une terrasse de 20 à 30 m² avec complexe d'étanchéité et carrelage grand format : 8 000 à 20 000 €.",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Rénovation Balcon Copropriété Paris : travaux, autorisations & prix 2025 | Espace Design',
-  description: 'Rénover son balcon en copropriété à Paris : parties communes vs privatives, autorisations AG, carrelage, étanchéité. Prix 2025.',
+  title: 'Rénovation Balcon & Terrasse Paris : imperméabilisation et carrelage 2025 | Espace Design',
+  description: 'Rénover balcon ou terrasse à Paris : étanchéité, carrelage, garde-corps. Parties privatives vs communes en copropriété. Prix 2025.',
 }
 
-export default function ArticleRenovationBalcon() {
+export default function ArticleRenovationBalconTerrasse() {
   return (
     <>
       <script
@@ -83,44 +83,48 @@ export default function ArticleRenovationBalcon() {
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Aménagement
+            Extérieur
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Balcon Copropriété Paris : travaux, autorisations & prix 2025
+            Rénovation Balcon &amp; Terrasse Paris : imperméabilisation et carrelage 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Rénover un balcon en copropriété parisienne est plus encadré qu&apos;il n&apos;y paraît. Entre parties communes et privatives, autorisations d&apos;AG, étanchéité et choix du revêtement, ce guide vous aide à aborder votre projet sereinement en 2025.
+            Balcon fissuré, terrasse qui fuit, carrelage décollé, garde-corps rouillé : les espaces extérieurs parisiens souffrent des alternances de gel et de pluie. Étanchéité, carrelage extérieur, garde-corps et règles de copropriété — guide complet 2025 pour rénover votre balcon ou terrasse en toute sérénité.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Parties communes vs privatives */}
+      {/* Section 1 — Statut juridique */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Parties communes et parties privatives : ce que dit la loi
+              Statut juridique du balcon en copropriété parisienne
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Dans un immeuble en copropriété parisien, le balcon est une zone hybride. La structure porteuse (dalle béton, solives), le carrelage du sol et le garde-corps sont généralement des parties communes — même si vous en avez la jouissance exclusive. L&apos;intérieur du balcon (plafond côté appartement, murs intérieurs) est quant à lui privatif.
+              Avant de lancer des travaux sur votre balcon ou terrasse, il est impératif de comprendre son statut juridique dans votre copropriété. La répartition des responsabilités entre le copropriétaire et le syndicat dépend de ce statut — et des erreurs peuvent coûter cher.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Cette distinction a des conséquences directes sur les travaux que vous pouvez entreprendre sans demander l&apos;accord de la copropriété, et ceux qui nécessitent un vote en assemblée générale.
+              En règle générale, le règlement de copropriété distingue trois catégories d&apos;éléments sur un balcon. Vérifiez toujours votre règlement spécifique avant tout projet.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Le sol du balcon — partie commune à usage privatif',
-                  detail: 'La dalle et le revêtement de sol du balcon sont généralement des parties communes. Remplacer le carrelage nécessite l\'accord de la copropriété (vote en AG). Le règlement de copropriété peut imposer des matériaux ou des couleurs précises pour préserver l\'harmonie de l\'immeuble.',
+                  enjeu: 'La structure (dalle, poutres) : partie commune',
+                  detail: "La structure portante du balcon (dalle béton, poutres métalliques) appartient à la copropriété, même si vous en avez la jouissance exclusive. Les travaux d'étanchéité de la dalle, de réparation des fissures structurelles ou de remplacement des éléments porteurs relèvent du syndicat et doivent être votés en AG. Si une infiltration depuis votre balcon cause des dégâts dans l'appartement du dessous, la copropriété est responsable.",
                 },
                 {
-                  enjeu: 'Le garde-corps — partie commune',
-                  detail: 'Le garde-corps (rambarde, balustrade) est presque toujours une partie commune. Sa modification, son remplacement ou son renforcement requiert un vote en AG et souvent une déclaration préalable en mairie. La hauteur réglementaire minimale est de 1 m (1,10 m au-delà de 6 m de hauteur).',
+                  enjeu: 'Le garde-corps et la balustrade : souvent partie commune',
+                  detail: "Le garde-corps est fréquemment classé comme partie commune car il contribue à l'aspect extérieur de l'immeuble et à la sécurité collective. Son remplacement nécessite généralement un vote en AG et doit respecter un style harmonisé avec l'ensemble de l'immeuble. Vérifiez impérativement votre règlement de copropriété.",
                 },
                 {
-                  enjeu: 'Les murs intérieurs du balcon — parties privatives',
-                  detail: 'Peindre ou revêtir les murs intérieurs du balcon (la face intérieure du mur de façade, visible uniquement depuis votre balcon) est généralement libre. En revanche, toute modification de la façade visible de l\'extérieur est soumise à autorisation.',
+                  enjeu: 'Le revêtement de sol : souvent partie privative',
+                  detail: "Le carrelage, le caillebotis ou tout autre revêtement posé sur la dalle est généralement à la charge du copropriétaire. Vous pouvez le remplacer librement, sous réserve de ne pas modifier la structure (notamment en posant un carrelage trop lourd sur une dalle fragilisée) et de respecter l'aspect général de l'immeuble.",
+                },
+                {
+                  enjeu: 'Terrasse de toit (toiture-terrasse) : cas particulier',
+                  detail: "La toiture-terrasse accessible est souvent une partie commune à jouissance privative. Son étanchéité est impérativement à la charge de la copropriété, car une fuite peut affecter plusieurs appartements en dessous. Le copropriétaire qui en a la jouissance n'a le droit d'y poser que des éléments non fixés (mobilier, bacs de fleurs, caillebotis démontables).",
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -133,36 +137,36 @@ export default function ArticleRenovationBalcon() {
         </div>
       </section>
 
-      {/* Section 2 — Autorisations AG */}
+      {/* Section 2 — Étanchéité */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Autorisations en assemblée générale : ce qu&apos;il faut demander
+            Étanchéité : solutions et matériaux pour un balcon parisien
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Pour tout travaux touchant aux parties communes, une résolution doit être inscrite à l&apos;ordre du jour de l&apos;AG et votée. Le quorum requis varie selon la nature des travaux : majorité simple (article 24), majorité absolue (article 25) ou double majorité (article 26).
+            L&apos;étanchéité est la priorité absolue pour un balcon ou une terrasse parisien. Une dalle non étanche génère des infiltrations qui dégradent la structure, les plafonds des appartements inférieurs et les murs intérieurs. Plusieurs solutions existent selon l&apos;état du support et l&apos;usage final.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Remplacement du carrelage',
-                detail: 'Vote en AG à la majorité de l\'article 24 ou 25 selon le règlement. Fournissez un descriptif matériaux, un plan et un devis artisan pour appuyer votre demande. Délai moyen : 3 à 6 mois selon la date de l\'AG.',
-                cout: 'Majorité simple',
+                titre: 'Résine d\'étanchéité liquide (polyuréthane)',
+                solution: "Application par rouleau ou brosse directement sur le béton nettoyé et dépoussiéré. Forme un film imperméable continu sans joints. Idéale pour les petites surfaces et les formes complexes (angles, seuils). Durée de vie : 10 à 15 ans. Applicable sur un carrelage existant fissuré.",
+                cout: '50 – 90 €/m²',
               },
               {
-                titre: 'Modification du garde-corps',
-                detail: 'Vote requis à la majorité de l\'article 25. Joindre une note technique sur la conformité réglementaire (hauteur, résistance) et l\'avis de l\'architecte si l\'immeuble est protégé ABF.',
-                cout: 'Majorité absolue',
+                titre: 'Membrane EPDM (caoutchouc synthétique)',
+                solution: "Membrane en caoutchouc vulcanisé collée ou lestée sur le support. Excellente résistance aux UV, aux cycles gel-dégel et à l'ozonolyse. Durée de vie : 25 à 40 ans. Solution privilégiée pour les grandes terrasses. Nécessite un support propre, plan et solide.",
+                cout: '80 – 140 €/m²',
               },
               {
-                titre: 'Pergola ou store banne',
-                detail: 'Toute installation visible de l\'extérieur (pergola, store, brise-vue) modifie l\'aspect de l\'immeuble. Vote AG requis + déclaration préalable en mairie. L\'ABF peut s\'opposer si l\'immeuble est en secteur sauvegardé.',
-                cout: 'Majorité absolue',
+                titre: 'Étanchéité sous carrelage (complexe multicouche)',
+                solution: "Système d'étanchéité liquide appliqué avant la pose du carrelage, avec treillis de renfort aux angles et aux jonctions. Permet de poser le carrelage directement dessus. C'est la solution de référence pour les terrasses carrelées accessibles. Conforme DTU 43.1.",
+                cout: '60 – 120 €/m²',
               },
               {
-                titre: 'Travaux d\'étanchéité urgents',
-                detail: 'En cas de fuite avérée menaçant les parties communes ou les voisins du dessous, le syndic peut autoriser des travaux urgents sans attendre l\'AG (article 37 du décret de 1967). Prévenez le syndic par écrit.',
-                cout: 'Urgence : syndic',
+                titre: 'Traitement des relevés et joints de dilatation',
+                solution: "Les points singuliers (relevés contre les murs, joints de dilatation, seuil de porte-fenêtre) sont les zones de faiblesse d'une étanchéité. Leur traitement soigné avec des bandes de renfort et des mastics adaptés est indispensable pour garantir l'imperméabilité sur la durée.",
+                cout: 'Inclus dans le devis',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -170,43 +174,43 @@ export default function ArticleRenovationBalcon() {
                   <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
                   <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 3 — Étanchéité */}
+      {/* Section 3 — Carrelage extérieur */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Étanchéité du balcon : primaire d&apos;accrochage et résine
+            Carrelage extérieur pour balcon et terrasse parisien
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Un balcon parisien exposé aux intempéries finit toujours par présenter des infiltrations si l&apos;étanchéité n&apos;est pas entretenue. La solution professionnelle combine un primaire d&apos;accrochage, une résine d&apos;étanchéité liquide et une finition antidérapante. Elle est compatible avec la pose de carrelage ou de lames composite par-dessus.
+            Le choix du revêtement de sol extérieur conditionne l&apos;esthétique, la sécurité et la durabilité de votre balcon ou terrasse. À Paris, les matériaux doivent résister aux cycles de gel-dégel répétés, aux pluies intenses et aux UV. Voici les solutions les plus adaptées.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Diagnostic : repérer les zones à traiter',
-                prix: 'Inclus devis',
-                detail: 'Avant tout travaux, il faut identifier les fissures (joints dilatation, relevés d\'étanchéité), les zones de stagnation d\'eau et l\'état du revêtement existant. Un balcon qui prend l\'eau nécessite une reprise d\'étanchéité complète avant repose du carrelage.',
+                type: 'Grès cérame antidérapant extérieur',
+                prix: '40 – 100 €/m² posé',
+                detail: "Le grès cérame est le matériau de référence pour les terrasses et balcons en milieu urbain. Résistance au gel (classe C selon EN ISO 10545-12), absorption d'eau quasi nulle, entretien facile. Choisir un indice d'antidérapance R11 minimum pour les balcons exposés à la pluie. Large choix d'aspect : pierre, bois, béton, mosaïque.",
               },
               {
-                type: 'Primaire d\'accrochage',
-                prix: '5 – 15 €/m²',
-                detail: 'Appliqué sur le support nettoyé et dépoussiéré, le primaire renforce l\'adhérence de la résine et consolide les microfissures superficielles. Séchage 2 à 4h selon les conditions. Indispensable sur support béton ancien.',
+                type: 'Carrelage grand format (60×60, 80×80)',
+                prix: '60 – 150 €/m² posé',
+                detail: "Esthétique contemporaine et facile à entretenir. Nécessite un support parfaitement plan et une étanchéité préalable soignée. La pose requiert un professionnel expérimenté pour la coupe et la mise à niveau. Joints de dilatation obligatoires tous les 3 m². Effet visuel très soigné, valorise un appartement haut de gamme.",
               },
               {
-                type: 'Résine d\'étanchéité liquide + membrane armée',
-                prix: '40 – 80 €/m²',
-                detail: 'Application en deux couches croisées de résine polyuréthane ou PMMA. Une membrane en voile de verre est noyée dans la première couche aux angles et relevés (zones de faiblesse). Résistance aux UV, aux cycles gel-dégel et aux eaux de pluie. Durée de vie : 15 à 25 ans.',
+                type: 'Caillebotis bois composite ou naturel',
+                prix: '30 – 80 €/m²',
+                detail: "Solution démontable ne nécessitant pas de colle ni de scellement. Idéale pour les terrasses en jouissance privative sans autorisation de travaux. Le bois composite (bois + plastique recyclé) est insensible aux variations hygrométriques et ne nécessite pas de traitement. Le bois naturel (teck, ipé) offre un aspect haut de gamme mais demande un entretien annuel.",
               },
               {
-                type: 'Finition antidérapante ou pose carrelage',
-                prix: '30 – 60 €/m²',
-                detail: 'La résine peut recevoir un agrégat de quartz coloré pour un résultat fini antidérapant (résistance R11), ou servir de base pour la pose de carrelage antidérapant (grès cérame classe A+B+C). Le tout est réalisé en une seule intervention.',
+                type: 'Pierre naturelle (ardoise, travertin, grès)',
+                prix: '70 – 180 €/m² posé',
+                detail: "Aspect naturel et chaleureux, particulièrement adapté aux appartements haussmanniens et aux terrasses spacieuses. Vérifier obligatoirement la résistance au gel de la pierre choisie (indice d'absorption d'eau inférieur à 3 %). L'ardoise et le grès sont excellents ; le travertin et la pierre calcaire demandent un traitement hydrofuge préventif.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -221,107 +225,82 @@ export default function ArticleRenovationBalcon() {
         </div>
       </section>
 
-      {/* Section 4 — Revêtements */}
+      {/* Section 4 — Garde-corps et réglementation */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Revêtements de sol : carrelage antidérapant et lames composite
+            Garde-corps : sécurité, réglementation et travaux en copropriété
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le choix du revêtement de sol conditionne l&apos;esthétique, la durabilité et la sécurité du balcon. À Paris, deux matériaux s&apos;imposent pour leur résistance aux intempéries et aux cycles gel-dégel : le grès cérame antidérapant et les lames composite imitation bois.
+            Le garde-corps est un élément de sécurité essentiel dont la réglementation est stricte. Voici ce qu&apos;il faut savoir avant d&apos;entreprendre des travaux.
           </p>
-          <div className="space-y-4 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
             {[
-              {
-                type: 'Carrelage grès cérame antidérapant',
-                prix: '50 – 120 €/m²',
-                detail: 'Solution la plus durable. Le grès cérame est insensible au gel, imperméable et résistant aux chocs. Choisir une classification antidérapante R11 minimum pour un balcon. Les formats XXL (60×60 ou 60×120 cm) offrent moins de joints, donc moins de points d\'infiltration. Pose sur chape ou lit de mortier-colle.',
-              },
-              {
-                type: 'Lames composite imitation bois (WPC)',
-                prix: '60 – 150 €/m²',
-                detail: 'Esthétique bois sans l\'entretien. Le WPC (bois-polymère composite) résiste à l\'eau, aux UV et au gel. Pose sur plots réglables ou sur lambourdes, ce qui crée une ventilation sous le plancher et protège l\'étanchéité. Idéal sur les balcons déjà étanches. Entretien annuel : nettoyage haute-pression.',
-              },
-              {
-                type: 'Carrelage imitation bois (grès cérame décor bois)',
-                prix: '55 – 130 €/m²',
-                detail: 'Compromis entre l\'esthétique du parquet et la durabilité du grès cérame. Formats longs et étroits (20×120 cm), texturation du bois, tons chaleureux. Très demandé sur les balcons parisiens pour leur look contemporain et leur facilité d\'entretien.',
-              },
-            ].map((el) => (
-              <div key={el.type} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-4 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
-                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
-                </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              "Hauteur minimale réglementaire : 1 m pour les balcons à plus de 1 m du sol (norme NF P01-012)",
+              "Pas de jours supérieurs à 18 cm dans le garde-corps (sécurité enfants)",
+              "Les garde-corps en copropriété sont généralement des parties communes : accord AG souvent requis",
+              "Remplacement : modèle harmonisé avec l'aspect général de l'immeuble, validé par la copropriété",
+              "Matériaux courants : acier laqué, inox brossé, aluminium thermolaqué, verre feuilleté",
+              "Vérification annuelle de l'état du garde-corps (corrosion, fixations) recommandée",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                {item}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 5 — Prix */}
+      {/* Section 5 — Budget */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Budget rénovation balcon Paris : prix 2025
+            Budget rénovation balcon et terrasse à Paris
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les prix ci-dessous s&apos;entendent pour un balcon de 6 à 10 m² à Paris, main d&apos;œuvre et matériaux inclus.
+            Les prix ci-dessous s&apos;entendent main d&apos;œuvre et matériaux inclus, pour un balcon de 6 m² ou une terrasse de 20 m².
           </p>
-
-          <div className="grid grid-cols-1 gap-3 mb-8">
-            {[
-              {
-                niveau: 'Réfection carrelage simple',
-                prestations: 'Dépose ancien carrelage + pose grès cérame antidérapant (sans reprise étanchéité)',
-                prix: '1 500 – 3 000 €',
-              },
-              {
-                niveau: 'Étanchéité + carrelage',
-                prestations: 'Primaire + résine étanchéité + pose carrelage grès cérame ou WPC',
-                prix: '3 000 – 5 000 €',
-              },
-              {
-                niveau: 'Rénovation complète',
-                prestations: 'Étanchéité + carrelage + garde-corps + peinture murs',
-                prix: '5 000 – 8 000 €',
-              },
-              {
-                niveau: 'Rénovation premium',
-                prestations: 'Étanchéité + lames WPC + garde-corps verre + pergola + éclairage',
-                prix: '8 000 – 15 000 €',
-              },
-            ].map((row) => (
-              <div key={row.niveau} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                <div>
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-1">{row.niveau}</div>
-                  <div className="text-gray-600 text-xs font-light">{row.prestations}</div>
-                </div>
-                <div className="text-[#B8960C] font-medium text-sm flex-shrink-0">{row.prix}</div>
-              </div>
-            ))}
-          </div>
-
-          <div>
-            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Points de vigilance avant de commencer
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                'Consulter le règlement de copropriété avant tout travaux de sol ou de garde-corps',
-                'Vérifier si l\'immeuble est en secteur ABF (Architecte des Bâtiments de France)',
-                'Envoyer une demande d\'inscription à l\'ordre du jour de l\'AG au syndic',
-                'Prévoir une reprise d\'étanchéité systématique si le balcon a plus de 15 ans',
-                'Choisir un carrelage classé R11 minimum (résistance antidérapante extérieure)',
-                'Vérifier la pente d\'évacuation des eaux (minimum 1,5 %) avant la pose du nouveau revêtement',
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                  {item}
-                </div>
-              ))}
-            </div>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#1C1C1C] text-white">
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Prestation</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Balcon 6 m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Terrasse 20 m²</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    prestation: 'Carrelage seul (grès cérame)',
+                    balcon: '800 – 1 800 €',
+                    terrasse: '2 500 – 6 000 €',
+                  },
+                  {
+                    prestation: 'Étanchéité résine seule',
+                    balcon: '400 – 800 €',
+                    terrasse: '1 200 – 2 500 €',
+                  },
+                  {
+                    prestation: 'Étanchéité + carrelage',
+                    balcon: '1 200 – 3 000 €',
+                    terrasse: '4 000 – 10 000 €',
+                  },
+                  {
+                    prestation: 'Rénovation complète (étanchéité + carrelage + garde-corps)',
+                    balcon: '2 500 – 6 000 €',
+                    terrasse: '8 000 – 20 000 €',
+                  },
+                ].map((row, i) => (
+                  <tr key={row.prestation} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.prestation}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.balcon}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.terrasse}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -347,10 +326,11 @@ export default function ArticleRenovationBalcon() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: '/blog/renovation-terrasse-paris', title: 'Rénovation terrasse Paris' },
+              { href: '/blog/renovation-balcon-paris', title: 'Rénovation balcon Paris' },
+              { href: '/blog/renovation-hall-immeuble-paris', title: 'Rénovation hall immeuble Paris' },
               { href: '/carrelage-paris', title: 'Carrelage Paris' },
-              { href: '/ravalement-facade-paris', title: 'Ravalement façade Paris' },
-              { href: '/blog/renovation-appartement-copropriete-paris', title: 'Rénovation appartement en copropriété' },
-              { href: '/blog/ravalement-facade-paris', title: 'Ravalement de façade Paris' },
+              { href: '/blog/carrelage-grand-format-paris', title: 'Carrelage grand format Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -394,10 +374,10 @@ export default function ArticleRenovationBalcon() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Votre balcon mérite une rénovation soignée
+          Rénovez votre balcon ou terrasse à Paris
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Diagnostic gratuit. Devis détaillé sous 48h. Artisan spécialisé en rénovation de balcons parisiens.
+          Diagnostic gratuit. Devis détaillé sous 48h. Spécialistes étanchéité et carrelage extérieur parisien.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

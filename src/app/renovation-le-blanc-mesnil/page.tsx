@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Corbeil-Essonnes (91100) — Artisan Rénovateur | Espace Design',
+  title: 'Rénovation Le Blanc-Mesnil (93150) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Corbeil-Essonnes (91100) : maisons individuelles, appartements anciens du centre historique, résidences des années 60-80. Rénovation 800-2500€/m². Devis gratuit 48h.',
+    'Artisan rénovateur au Blanc-Mesnil (93150) : pavillons, maisons individuelles, appartements collectifs des années 60-80. Rénovation Seine-Saint-Denis 700-2500€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation Corbeil-Essonnes',
-    'artisan rénovation Corbeil-Essonnes',
-    'rénovation appartement Corbeil',
-    'renovation Corbeil-Essonnes 91100',
-    'entreprise renovation Corbeil',
-    'artisan Corbeil Essonne',
-    'rénovation maison Corbeil-Essonnes',
+    'rénovation appartement Le Blanc-Mesnil',
+    'artisan rénovation Le Blanc-Mesnil',
+    'rénovation Le Blanc-Mesnil 93150',
+    'entreprise rénovation Le Blanc-Mesnil',
+    'artisan Le Blanc-Mesnil 93',
+    'rénovation pavillon Le Blanc-Mesnil',
+    'rénovation Seine-Saint-Denis',
   ],
 }
 
@@ -22,17 +22,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Corbeil-Essonnes.',
+  description: 'Artisan rénovateur et décorateur intérieur au Blanc-Mesnil.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-corbeil-essonnes',
+  url: 'https://espacedesignparis.fr/renovation-le-blanc-mesnil',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Corbeil-Essonnes',
+    name: 'Le Blanc-Mesnil',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Corbeil-Essonnes',
-    postalCode: '91100',
+    addressLocality: 'Le Blanc-Mesnil',
+    postalCode: '93150',
     addressCountry: 'FR',
   },
   aggregateRating: {
@@ -48,26 +48,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Corbeil-Essonnes ?',
+      name: 'Quel est le prix d\'une rénovation au Blanc-Mesnil ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Corbeil-Essonnes varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les appartements anciens du centre historique ou les maisons individuelles entièrement remises à neuf, comptez jusqu\'à 2 500 €/m². Devis gratuit sous 48h.',
+        text: 'Le coût d\'une rénovation au Blanc-Mesnil varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour une rénovation complète d\'un pavillon ou d\'un appartement des années 60-80, comptez 1 200 à 2 500 €/m². Devis gratuit sous 48h.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel artisan contacter pour rénover à Corbeil-Essonnes ?',
+      name: 'Comment trouver un artisan au Blanc-Mesnil pour rénover sa maison ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Espace Design intervient régulièrement à Corbeil-Essonnes pour des rénovations de maisons individuelles et d\'appartements anciens. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur.',
+        text: 'Espace Design intervient régulièrement au Blanc-Mesnil pour des rénovations de pavillons et d\'appartements collectifs. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur du diagnostic à la livraison.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment rénover un appartement ancien à Corbeil-Essonnes ?',
+      name: 'Quels travaux sont prioritaires dans un appartement des années 60-80 en Seine-Saint-Denis ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pour les appartements anciens de Corbeil-Essonnes, nous gérons la mise aux normes électriques, la rénovation de la plomberie, le remplacement des revêtements sols et murs, et les finitions intérieures. Chaque projet fait l\'objet d\'un devis détaillé.',
+        text: 'Dans les logements des années 60-80 en Seine-Saint-Denis, les travaux prioritaires sont la mise aux normes électrique (tableau, prises, câblage), la réfection de la plomberie, l\'isolation thermique par les combles ou les murs, et la rénovation des revêtements sols et murs.',
       },
     },
     {
@@ -86,12 +86,12 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Essonne', item: 'https://espacedesignparis.fr/renovation-essonne' },
-    { '@type': 'ListItem', position: 3, name: 'Corbeil-Essonnes', item: 'https://espacedesignparis.fr/renovation-corbeil-essonnes' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Seine-Saint-Denis', item: 'https://espacedesignparis.fr/renovation-seine-saint-denis' },
+    { '@type': 'ListItem', position: 3, name: 'Le Blanc-Mesnil', item: 'https://espacedesignparis.fr/renovation-le-blanc-mesnil' },
   ],
 }
 
-export default function RenovationCorbeilEssonnes() {
+export default function RenovationLeBlanMesnil() {
   return (
     <>
       <script
@@ -109,13 +109,13 @@ export default function RenovationCorbeilEssonnes() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Corbeil-Essonnes — 91100</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Le Blanc-Mesnil — 93150</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Corbeil-Essonnes
+            Rénovation appartement<br className="hidden sm:block" /> Le Blanc-Mesnil
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Corbeil-Essonnes (91100) : maisons individuelles, appartements anciens du centre historique, résidences des années 60-80. Rénovation complète et remise à neuf. Devis gratuit sous 48h.
+            Artisan rénovateur au Blanc-Mesnil (93150) : pavillons, maisons individuelles, appartements collectifs des années 60-80. Rénovation complète, mise aux normes et finitions soignées en Seine-Saint-Denis. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -138,13 +138,13 @@ export default function RenovationCorbeilEssonnes() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Corbeil-Essonnes
+            Nos services au Blanc-Mesnil
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Remise à neuf intégrale de maisons individuelles et d\'appartements anciens à Corbeil-Essonnes — électricité, plomberie, cloisons, revêtements, finitions.' },
-              { num: '02', title: 'Rénovation de résidences', desc: 'Modernisation des appartements des résidences des années 60-80 : redistribution des espaces, isolation phonique et thermique, cuisine et salle de bain refaites.' },
-              { num: '03', title: 'Finitions soignées', desc: 'Peinture, parquet, carrelage, menuiseries intérieures. Des prestations complètes avec un seul artisan référent pour votre projet à Corbeil-Essonnes.' },
+              { num: '01', title: 'Rénovation de pavillons', desc: 'Remise à neuf complète de maisons individuelles et pavillons : électricité, plomberie, isolation, doublage des murs, revêtements sols et murs, menuiseries.' },
+              { num: '02', title: 'Appartements collectifs 60-80', desc: 'Mise aux normes et modernisation des appartements des ensembles collectifs des années 60-80 : tableau électrique, plomberie cuivre, isolation phonique et thermique.' },
+              { num: '03', title: 'Finitions et décoration', desc: 'Peinture, parquet, carrelage, salle de bain clé en main, cuisine — un résultat soigné qui valorise durablement votre bien au Blanc-Mesnil.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -160,7 +160,7 @@ export default function RenovationCorbeilEssonnes() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Corbeil-Essonnes
+            Prix rénovation au Blanc-Mesnil
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
@@ -172,12 +172,12 @@ export default function RenovationCorbeilEssonnes() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture appartement', '30 - 60 €/m²'],
+                  ['Peinture appartement', '25 - 60 €/m²'],
                   ['Rénovation salle de bain', '3 500 - 12 000 €'],
                   ['Rénovation cuisine', '4 000 - 15 000 €'],
                   ['Parquet (pose + fourniture)', '45 - 100 €/m²'],
-                  ['Rénovation complète', '800 - 1 500 €/m²'],
-                  ['Rénovation maison individuelle', '1 000 - 2 500 €/m²'],
+                  ['Rénovation complète appartement', '700 - 1 200 €/m²'],
+                  ['Rénovation complète pavillon', '1 200 - 2 500 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -197,7 +197,7 @@ export default function RenovationCorbeilEssonnes() {
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Salle de bain rénovée — rénovation appartement Corbeil-Essonnes 91100" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — pavillon Le Blanc-Mesnil 93150" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -230,16 +230,16 @@ export default function RenovationCorbeilEssonnes() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Corbeil-Essonnes ?',
-                a: 'Le coût d\'une rénovation à Corbeil-Essonnes varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons individuelles entièrement remises à neuf ou les appartements anciens, comptez jusqu\'à 2 500 €/m².',
+                q: 'Quel est le prix d\'une rénovation au Blanc-Mesnil ?',
+                a: 'Le coût d\'une rénovation au Blanc-Mesnil varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour une rénovation complète d\'un pavillon ou d\'un appartement des années 60-80, comptez 1 200 à 2 500 €/m².',
               },
               {
-                q: 'Quel artisan contacter pour rénover à Corbeil-Essonnes ?',
-                a: 'Espace Design intervient régulièrement à Corbeil-Essonnes pour des rénovations de maisons individuelles et d\'appartements anciens. Assuré décennale, devis gratuit sous 48h.',
+                q: 'Comment trouver un artisan au Blanc-Mesnil pour rénover sa maison ?',
+                a: 'Espace Design intervient régulièrement au Blanc-Mesnil pour des rénovations de pavillons et d\'appartements collectifs. Assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h.',
               },
               {
-                q: 'Comment rénover un appartement ancien à Corbeil-Essonnes ?',
-                a: 'Pour les appartements anciens de Corbeil-Essonnes, nous gérons la mise aux normes électriques, la rénovation de la plomberie, le remplacement des revêtements, et toutes les finitions intérieures. Chaque projet fait l\'objet d\'un devis détaillé.',
+                q: 'Quels travaux sont prioritaires dans un appartement des années 60-80 en Seine-Saint-Denis ?',
+                a: 'Dans les logements des années 60-80 en Seine-Saint-Denis, les travaux prioritaires sont la mise aux normes électrique, la réfection de la plomberie, l\'isolation thermique et acoustique, et la rénovation des revêtements sols et murs.',
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -263,12 +263,11 @@ export default function RenovationCorbeilEssonnes() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-essonne', label: 'Essonne (91)' },
-              { href: '/renovation-evry-courcouronnes', label: 'Évry-Courcouronnes' },
-              { href: '/renovation-massy', label: 'Massy' },
-              { href: '/renovation-ris-orangis', label: 'Ris-Orangis' },
-              { href: '/renovation-longjumeau', label: 'Longjumeau' },
-              { href: '/renovation-palaiseau', label: 'Palaiseau' },
+              { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
+              { href: '/renovation-drancy', label: 'Drancy' },
+              { href: '/renovation-aulnay-sous-bois', label: 'Aulnay-sous-Bois' },
+              { href: '/renovation-bobigny', label: 'Bobigny' },
+              { href: '/renovation-tremblay-en-france', label: 'Tremblay-en-France' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
@@ -316,7 +315,7 @@ export default function RenovationCorbeilEssonnes() {
             {[
               { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
               { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain' },
-              { href: '/blog/renovation-avant-vente-paris', label: 'Rénovation avant vente' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant vente' },
               { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
               { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
               { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
@@ -332,10 +331,10 @@ export default function RenovationCorbeilEssonnes() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Corbeil-Essonnes
+            Votre projet au Blanc-Mesnil
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Corbeil-Essonnes.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune du Blanc-Mesnil et la Seine-Saint-Denis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

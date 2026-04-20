@@ -648,6 +648,18 @@ const articles = [
     desc: "Rénovation appartement dans le 20e arrondissement de Paris : Père-Lachaise, Belleville, Ménilmontant. Artisan local, devis gratuit 48h.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-paris-1er',
+    title: 'Rénovation Appartement Paris 1er : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 1er arrondissement de Paris : Louvre, Châtelet, Les Halles. Artisan local, devis gratuit 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/renovation-maison-ancienne-paris',
+    title: 'Rénovation Maison Ancienne Paris : meulière, pierres & contraintes 2025',
+    desc: "Rénover une maison ancienne à Paris : contraintes ABF, pierres de taille, poutres apparentes, amiante. Guide artisan 2025.",
+    tag: 'Guides',
+  },
 ]
 
 export default function BlogPage() {

@@ -16,7 +16,7 @@ const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Rénovation Appartement Paris 20e : artisan & prix 2025 | Espace Design',
-  description: "Rénovation appartement dans le 20e arrondissement de Paris : Père-Lachaise, Belleville, Ménilmontant. Artisan local, devis gratuit 48h.",
+  description: 'Rénovation appartement dans le 20e arrondissement de Paris : Père-Lachaise, Belleville, Ménilmontant. Artisan local, devis gratuit 48h.',
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,26 +33,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quels types de biens trouve-t-on dans le 20e arrondissement ?',
+      name: 'Quel est le prix d\'une rénovation dans le 20e arrondissement de Paris ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le 20e arrondissement est l'un des plus divers de Paris. Autour du Père-Lachaise, on trouve des immeubles bourgeois de la fin du XIXe siècle avec de belles surfaces et des parquets anciens. Dans Belleville et Ménilmontant, le parc est plus varié : immeubles populaires des années 1920-1960, ateliers d'artistes réhabilités, maisons de ville dans des impasses. Le bas du 20e (Nation) est plus homogène avec des immeubles des années 1950-1970. La gentrification de Belleville et Ménilmontant crée une forte demande de rénovation dans ces secteurs.",
+        text: "Dans le 20e arrondissement, le prix d'une rénovation varie entre 1 300 et 2 500 €/m² selon l'ampleur des travaux. Une rénovation légère (peinture, sol, salle de bain) se situe autour de 700 à 1 100 €/m². Une rénovation complète d'un appartement de 55 m² à Belleville ou Ménilmontant — incluant électricité NF C 15-100, plomberie, sol, peinture, cuisine — tourne autour de 60 000 à 100 000 €. Les ateliers reconvertis et les lofts peuvent nécessiter des surcoûts liés à la création de cloisons, à l'isolation thermique et à l'installation de systèmes de chauffage adaptés.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien coûte une rénovation dans le 20e arrondissement en 2025 ?',
+      name: 'Quels sont les travaux les plus courants dans le 20e arrondissement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le 20e propose des prix de rénovation parmi les plus accessibles de Paris, ce qui en fait un marché très actif. Un rafraîchissement coûte entre 400 et 800 €/m². Une rénovation complète d'un appartement ancien se situe entre 850 et 1 500 €/m². Pour un studio de 30 m² à rénover entièrement, comptez entre 25 000 et 45 000 €. Pour un 2 pièces de 50 m², entre 42 500 et 75 000 €.",
+        text: "Le 20e arrondissement connaît une forte gentrification depuis une dizaine d'années, notamment dans les quartiers de Belleville, Ménilmontant et Gambetta. Les travaux les plus courants sont : la rénovation complète d'appartements populaires anciens (parquet, peinture, électricité, cuisine et salle de bain), la reconversion d'ateliers d'artistes en lofts ou appartements (création de cloisons, isolation, chauffage, éclairage), et l'amélioration énergétique (isolation des murs anciens, remplacement des fenêtres simple vitrage). Les copropriétés des années 1960-1980 de la périphérie du 20e font également l'objet de rénovations importantes liées aux nouvelles obligations DPE.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Belleville et Ménilmontant : est-ce une bonne adresse pour rénover en 2025 ?',
+      name: 'Faut-il des autorisations spéciales pour rénover dans le 20e arrondissement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, Belleville et Ménilmontant sont parmi les secteurs les plus dynamiques de Paris pour la rénovation en 2025. Ces quartiers sont en pleine gentrification — de nombreux bobos et créatifs s'y installent, attirés par l'ambiance de village, les commerces de bouche et les prix encore raisonnables. Les appartements anciens y sont achetés vétustes et rénovés dans un esprit atelier ou loft pour la location meublée ou la résidence principale. La plus-value après rénovation est significative.",
+        text: "La plupart des travaux intérieurs dans le 20e arrondissement ne nécessitent pas d'autorisation particulière (peinture, revêtements de sol, cuisine, salle de bain). En revanche, si votre appartement est situé à proximité d'un monument historique (comme le cimetière du Père-Lachaise ou certains bâtiments de Belleville), une déclaration préalable de travaux peut être exigée pour les modifications de façade ou de menuiseries extérieures. En copropriété, les travaux sur parties communes (cage d'escalier, façade) nécessitent un vote en assemblée générale.",
       },
     },
   ],
@@ -60,10 +60,10 @@ const schemaFaq = {
 
 export const metadata: Metadata = {
   title: 'Rénovation Appartement Paris 20e : artisan & prix 2025 | Espace Design',
-  description: "Rénovation appartement dans le 20e arrondissement de Paris : Père-Lachaise, Belleville, Ménilmontant. Artisan local, devis gratuit 48h.",
+  description: 'Rénovation appartement dans le 20e arrondissement de Paris : Père-Lachaise, Belleville, Ménilmontant. Artisan local, devis gratuit 48h.',
 }
 
-export default function ArticleParis20e() {
+export default function ArticleRenovationParis20e() {
   return (
     <>
       <script
@@ -90,37 +90,37 @@ export default function ArticleParis20e() {
             Rénovation Appartement Paris 20e : artisan &amp; prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Le 20e arrondissement est l&apos;un des plus vivants et des plus divers de Paris. Père-Lachaise et ses immeubles bourgeois, Belleville et Ménilmontant en pleine gentrification, ateliers d&apos;artistes reconvertis — le 20e concentre un grand nombre de projets de rénovation. C&apos;est aussi l&apos;un des arrondissements les plus accessibles financièrement, ce qui en fait un marché très actif.
+            Belleville, Ménilmontant, Père-Lachaise, Gambetta : le 20e arrondissement est l&apos;un des plus vivants et des plus populaires de Paris. Entre anciens ateliers reconvertis, immeubles des années 1960 et appartements ouvriers du 19e siècle, la rénovation dans le 20e réserve ses spécificités. Guide complet pour rénover dans le 20e arrondissement en 2025.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Profil du quartier */}
+      {/* Section 1 — Spécificités du 20e */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              20e arrondissement : diversité, gentrification et fort potentiel de rénovation
+              Belleville, Ménilmontant, Père-Lachaise : les spécificités du 20e
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le 20e est souvent présenté comme l&apos;un des derniers arrondissements parisiens &quot;authentiques&quot;. Quartier populaire par tradition, il subit depuis les années 2010 une gentrification progressive, particulièrement marquée dans les secteurs Belleville, Ménilmontant et Gambetta. Cette transformation est le moteur principal d&apos;une activité de rénovation intense.
+              Le 20e arrondissement est l&apos;un des arrondissements les plus hétérogènes de Paris. Son tissu urbain mêle immeubles ouvriers du 19e siècle, constructions des années 1960 à 1980 (notamment autour de la place Gambetta), anciens ateliers d&apos;artistes et artisans reconvertis en lofts ou appartements, et quelques opérations de logements sociaux récents.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Les biens les plus intéressants à rénover dans le 20e sont les appartements anciens des immeubles des années 1900-1950, souvent vétustes (plomberie en plomb, électricité pré-1985, isolation inexistante) mais spacieux et lumineux, avec des parquets anciens à rénover et des hauteurs sous plafond généreuses.
+              La gentrification progressive de Belleville et Ménilmontant depuis les années 2010 a largement stimulé la demande de rénovation. Les acquéreurs cherchent à valoriser des appartements populaires anciens ou à transformer des espaces atypiques. Les prix au m² restent inférieurs à ceux des arrondissements centraux, ce qui justifie souvent des budgets de rénovation ambitieux.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Père-Lachaise — immeubles bourgeois et surfaces généreuses',
-                  detail: "Le secteur Père-Lachaise (autour du cimetière, rue des Pyrénées, boulevard de Ménilmontant) concentre des immeubles de la fin du XIXe siècle avec de belles surfaces, des parquets en chêne massif et des hauteurs sous plafond de 2,80 à 3 m. Ces appartements sont très recherchés après rénovation et se valorisent fortement.",
+                  enjeu: 'Ateliers reconvertis et lofts',
+                  detail: "Les anciens ateliers d'artistes et d'artisans du 20e (nombreux autour de Ménilmontant et de la rue de Belleville) sont très recherchés. Leur reconversion en appartement nécessite la création de cloisons, l'installation d'un système de chauffage adapté, une isolation thermique et acoustique sérieuse, et la mise aux normes électrique et plomberie complète. Comptez un surcoût de 20 à 30 % par rapport à un appartement standard.",
                 },
                 {
-                  enjeu: 'Belleville — village dans la ville en pleine transformation',
-                  detail: "Belleville (partagé entre les 19e et 20e) est le coeur vibrant de l'est parisien. Ses immeubles anciens, ses passages et cours intérieures, ses ateliers d'artistes — tout y attire les projets de rénovation ambitieux. La demande locative y est forte et le rendement après rénovation est parmi les meilleurs de Paris.",
+                  enjeu: 'Immeubles populaires du 19e siècle',
+                  detail: "Les immeubles ouvriers du 19e siècle, nombreux dans le 20e, ont des planchers en bois anciens, des murs en pierre ou en brique, et des distributions souvent exiguës. Les couloirs étroits et les escaliers sans ascenseur compliquent l'acheminement des matériaux. La mise aux normes électrique (tableau, prises de terre, câblage complet) est presque toujours nécessaire.",
                 },
                 {
-                  enjeu: 'Ménilmontant — esprit bohème et ateliers reconvertis',
-                  detail: "Ménilmontant est le quartier le plus bobo du 20e. Ses ruelles en escalier, ses villas cachées et ses anciens ateliers d'artistes offrent des configurations uniques à Paris. Ces biens nécessitent souvent une rénovation complète mais offrent un potentiel architectural exceptionnel pour des projets d'atelier ou de loft.",
+                  enjeu: 'Copropriétés des années 1960-1980',
+                  detail: "La périphérie du 20e (notamment autour de la porte de Montreuil et de la porte de Bagnolet) compte de nombreuses copropriétés de la période 1960-1980, souvent en mauvais état énergétique (DPE F ou G). Les propriétaires font face à des obligations croissantes liées aux nouvelles règles de location : ces appartements nécessitent une rénovation énergétique significative pour rester louables.",
                 },
               ].map((el) => (
                 <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -133,36 +133,36 @@ export default function ArticleParis20e() {
         </div>
       </section>
 
-      {/* Section 2 — Spécificités techniques */}
+      {/* Section 2 — Travaux populaires */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Travaux populaires et spécificités techniques dans le 20e
+            Travaux les plus demandés dans le 20e arrondissement
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le 20e concentre de nombreux biens anciens nécessitant une remise à niveau complète. Voici les travaux les plus fréquents et leurs fourchettes de prix.
+            La forte dynamique immobilière du 20e se traduit par une demande soutenue pour des rénovations complètes et des transformations d&apos;espaces atypiques. Voici les chantiers les plus courants.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Réfection électrique complète',
-                solution: "La mise aux normes NF C 15-100 est quasi systématique dans les appartements du 20e construits avant 1985. Remplacement du tableau, câblage en encastré, prises de terre, différentiels par circuit. Ce poste est non négociable pour la sécurité et obligatoire à la revente.",
-                cout: '3 000 – 8 000 €',
+                titre: 'Rénovation complète appartement populaire',
+                detail: "Les appartements ouvriers anciens du 20e nécessitent souvent une rénovation intégrale : électricité NF C 15-100, plomberie, carrelage ou parquet, peinture, cuisine et salle de bain. Ces chantiers tout corps d'état sont notre spécialité.",
+                cout: '1 300 – 2 000 €/m²',
               },
               {
-                titre: 'Remplacement canalisations plomb',
-                solution: "Les appartements construits avant 1950 dans le 20e ont souvent encore des canalisations en plomb, interdit depuis 1995. Le remplacement complet est obligatoire — il faut ouvrir les murs et sols. Profiter d'une rénovation complète pour le réaliser systématiquement.",
-                cout: '3 000 – 7 000 €',
+                titre: 'Reconversion atelier en appartement',
+                detail: "Création de cloisons, isolation des murs et de la toiture, installation chauffage (radiateurs ou plancher chauffant), mise aux normes plomberie et électrique. Chantier complexe nécessitant une coordination de corps de métiers.",
+                cout: '1 800 – 3 000 €/m²',
               },
               {
-                titre: 'Rénovation parquet massif ancien',
-                solution: "Les immeubles anciens du 20e disposent souvent de parquets en chêne massif (lames de 60 à 90 mm) en très bon état structurellement. Ponçage et vitrification pour 30 à 60 €/m² — un investissement minimal pour un résultat spectaculaire qui valorise fortement le bien.",
-                cout: '30 – 60 €/m²',
+                titre: 'Rénovation salle de bain',
+                detail: "Les salles de bain des appartements anciens du 20e sont souvent vétustes (carrelage années 1970, robinetterie usée). Une rénovation complète salle de bain (6 à 8 m²) inclut carrelage, faïence, sanitaires, robinetterie et plomberie.",
+                cout: '6 000 – 12 000 €',
               },
               {
-                titre: 'Création d\'un esprit atelier — décloisonnement',
-                solution: "Très demandé dans Belleville et Ménilmontant, le décloisonnement transforme un appartement mal distribué en espace ouvert lumineux. Abattement des murs non porteurs, cuisine ouverte, espace de travail intégré — la transformation est spectaculaire et très appréciée par les locataires.",
-                cout: '3 000 – 8 000 €',
+                titre: 'Mise aux normes électrique',
+                detail: "Les appartements antérieurs à 1980 dans le 20e nécessitent presque systématiquement une remise aux normes NF C 15-100 : nouveau tableau électrique, prises de terre, circuit dédié cuisine et salle de bain, éclairage LED. Améliore aussi l'assurance habitation.",
+                cout: '3 500 – 9 000 €',
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -170,58 +170,103 @@ export default function ArticleParis20e() {
                   <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
                   <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 3 — Prix */}
+      {/* Section 3 — Gentrification et valorisation */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix d&apos;une rénovation dans le 20e arrondissement en 2025
+            Belleville et Ménilmontant : rénover pour valoriser
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le 20e est l&apos;un des arrondissements les plus accessibles pour rénover à Paris. Le rapport coût de rénovation / valeur créée est parmi les meilleurs de la capitale, notamment dans les secteurs Belleville et Ménilmontant.
+            La gentrification de Belleville et Ménilmontant a transformé ces quartiers populaires en secteurs très prisés. Une rénovation bien menée permet une valorisation significative du bien, dans un marché où l&apos;offre de biens rénovés reste insuffisante.
+          </p>
+          <div className="space-y-4 mb-6">
+            {[
+              {
+                type: 'Valorisation par la rénovation',
+                prix: '+20 à +40 % de valeur',
+                detail: "Un appartement de 50 m² entièrement rénové à Belleville ou Ménilmontant peut se vendre 30 à 40 % plus cher qu'un appartement dans son jus. Le marché du 20e récompense fortement les rénovations qualitatives (parquet, cuisine ouverte, salle de bain moderne) car l'offre de biens bien rénovés reste inférieure à la demande.",
+              },
+              {
+                type: 'Tendances déco du 20e',
+                prix: 'Style industriel et loft',
+                detail: "Le style industriel — béton ciré, métal, bois brut, grandes hauteurs sous plafond — est particulièrement adapté aux ateliers reconvertis du 20e. Les cuisines ouvertes sur le salon, les verrières intérieures et les murs en brique apparente sont les éléments décoratifs les plus demandés dans ce quartier.",
+              },
+              {
+                type: 'Impact DPE sur les prix',
+                prix: 'DPE F/G : -10 à -20 %',
+                detail: "De nombreux appartements du 20e affichent un DPE F ou G, en particulier dans les immeubles des années 1960. Depuis 2023, les logements notés G sont progressivement interdits à la location. Une rénovation énergétique (isolation, double vitrage, chauffage) permet de remonter à un DPE C ou D et de récupérer toute la valeur du bien.",
+              },
+            ].map((el) => (
+              <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
+                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — Budget et prix */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Prix de rénovation dans le 20e arrondissement : budget 2025
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Les prix ci-dessous s&apos;entendent pour un appartement ancien du 20e arrondissement, main d&apos;oeuvre et matériaux inclus, hors mobilier.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau de prestation</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Description</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix / m²</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Type de rénovation</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Travaux inclus</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix /m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget 50 m²</th>
                 </tr>
               </thead>
               <tbody>
                 {[
                   {
-                    niveau: 'Rafraîchissement',
-                    prestations: 'Peinture, sol, luminaires — sans modification des installations',
-                    prixM2: '400 – 800 €',
+                    type: 'Légère',
+                    travaux: 'Peinture + parquet + salle de bain',
+                    prixM2: '700 – 1 100 €',
+                    budget: '35 000 – 55 000 €',
                   },
                   {
-                    niveau: 'Rénovation partielle (SDB ou cuisine)',
-                    prestations: 'Refonte d\'une pièce humide avec mise aux normes',
-                    prixM2: '700 – 1 000 €',
+                    type: 'Standard',
+                    travaux: 'Peinture + sol + cuisine + électricité partielle',
+                    prixM2: '1 100 – 1 600 €',
+                    budget: '55 000 – 80 000 €',
                   },
                   {
-                    niveau: 'Rénovation complète appartement ancien',
-                    prestations: 'Électricité, plomberie, cuisine, SDB, sols, peintures',
-                    prixM2: '850 – 1 500 €',
+                    type: 'Complète',
+                    travaux: "Tout corps d'état : électricité NF C 15-100, plomberie, sol, murs, cuisine, salle de bain",
+                    prixM2: '1 600 – 2 500 €',
+                    budget: '80 000 – 125 000 €',
                   },
                   {
-                    niveau: 'Rénovation esprit atelier ou loft',
-                    prestations: 'Décloisonnement, béton ciré, verrière, cuisine ouverte, finitions design',
-                    prixM2: '1 500 – 2 500 €',
+                    type: 'Atelier reconverti',
+                    travaux: 'Complète + cloisons, isolation, chauffage, verrières',
+                    prixM2: '2 000 – 3 500 €',
+                    budget: '100 000 – 175 000 €',
                   },
                 ].map((row, i) => (
-                  <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.niveau}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.prestations}</td>
+                  <tr key={row.type} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.type}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.travaux}</td>
                     <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prixM2}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.budget}</td>
                   </tr>
                 ))}
               </tbody>
@@ -230,16 +275,16 @@ export default function ArticleParis20e() {
 
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Conseils spécifiques pour rénover dans le 20e
+              Conseils pour rénover dans le 20e arrondissement
             </h3>
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                'Remplacer systématiquement les canalisations en plomb lors de toute rénovation — présentes dans la plupart des immeubles construits avant 1950',
-                'Rénover le parquet massif plutôt que le remplacer — ponçage + vitrification pour un résultat spectaculaire à prix maîtrisé',
-                'Décloisonner pour créer de la luminosité — les appartements anciens du 20e sont souvent trop découpés',
-                'Traiter l\'isolation thermique et phonique dans les immeubles des années 1950-1970',
-                'Anticiper la mise aux normes électrique — obligatoire dans tout bien construit avant 1985',
-                'Vérifier les villas et impasses du 20e — des maisons de ville à fort potentiel y sont encore à saisir',
+                "Vérifier le DPE avant d'acheter : un DPE G impose une rénovation énergétique obligatoire",
+                "Pour un atelier reconverti, prévoir un budget chauffage et isolation suffisant dès le départ",
+                "Anticiper les difficultés d'accès (escaliers étroits, absence d'ascenseur) dans le budget",
+                "Conserver les éléments atypiques (poutres, brique apparente, verrière) qui ont une vraie valeur",
+                "Se renseigner sur les aides MaPrimeRénov' pour les travaux d'isolation et de chauffage",
+                "Choisir un artisan local connaissant le tissu immobilier du 20e et ses particularités",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -273,10 +318,10 @@ export default function ArticleParis20e() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
-              { href: '/blog/renovation-appartement-investissement-paris', title: 'Rénovation investissement locatif Paris' },
-              { href: '/blog/renovation-appartement-ancien-paris', title: 'Rénover un appartement ancien à Paris' },
-              { href: '/blog/sol-beton-cire-paris', title: 'Béton ciré Paris — pose & prix' },
-              { href: '/blog/renovation-appartement-montmartre-paris', title: 'Rénovation Montmartre Paris 18e' },
+              { href: '/blog/renovation-appartement-paris-19e', title: 'Rénovation appartement Paris 19e' },
+              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique appartement Paris' },
+              { href: '/blog/renovation-maison-ancienne-paris', title: 'Rénovation maison ancienne Paris' },
+              { href: '/contact', title: 'Demander un devis gratuit' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -296,14 +341,14 @@ export default function ArticleParis20e() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
-              { href: '/renovation-paris-20e', label: 'Paris 20e' },
-              { href: '/renovation-paris-19e', label: 'Paris 19e' },
               { href: '/renovation-paris-11e', label: 'Paris 11e' },
               { href: '/renovation-paris-12e', label: 'Paris 12e' },
-              { href: '/renovation-paris-18e', label: 'Paris 18e' },
-              { href: '/renovation-paris-10e', label: 'Paris 10e' },
+              { href: '/renovation-paris-13e', label: 'Paris 13e' },
+              { href: '/renovation-paris-19e', label: 'Paris 19e' },
               { href: '/renovation-montreuil', label: 'Montreuil' },
               { href: '/renovation-vincennes', label: 'Vincennes' },
+              { href: '/renovation-pantin', label: 'Pantin' },
+              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -320,10 +365,10 @@ export default function ArticleParis20e() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Vous rénovez un bien dans le 20e arrondissement ?
+          Rénovez votre appartement dans le 20e arrondissement
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Père-Lachaise, Belleville, Ménilmontant — devis gratuit sous 48h dans le 20e.
+          Artisans spécialisés en rénovation et reconversion d&apos;ateliers à Belleville et Ménilmontant. Devis gratuit sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

@@ -56,6 +56,7 @@ const villes93 = [
   { href: '/renovation-saint-ouen', label: 'Saint-Ouen-sur-Seine' },
   { href: '/renovation-villemomble', label: 'Villemomble' },
   { href: '/renovation-livry-gargan', label: 'Livry-Gargan' },
+  { href: '/renovation-le-blanc-mesnil', label: 'Le Blanc-Mesnil' },
 ]
 
 const services = [
