@@ -61,6 +61,7 @@ const villes95 = [
   { href: '/renovation-ecouen', label: 'Écouen' },
   { href: '/renovation-sannois', label: 'Sannois' },
   { href: '/renovation-persan', label: 'Persan' },
+  { href: '/renovation-beaumont-sur-oise', label: 'Beaumont-sur-Oise' },
 ]
 
 const services = [

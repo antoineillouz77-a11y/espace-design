@@ -557,6 +557,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Val-d'Oise (95) — vague 20
     { url: `${base}/renovation-persan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-beaumont-sur-oise`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Essonne (91) — vague 20
     { url: `${base}/renovation-varennes-jarcy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
