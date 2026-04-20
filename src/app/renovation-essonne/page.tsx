@@ -42,6 +42,9 @@ const villes91 = [
   { href: '/renovation-chatenay-malabry', label: 'Châtenay-Malabry' },
   { href: '/renovation-evry-courcouronnes', label: 'Évry-Courcouronnes' },
   { href: '/renovation-antony', label: 'Antony' },
+  { href: '/renovation-orsay', label: 'Orsay' },
+  { href: '/renovation-gif-sur-yvette', label: 'Gif-sur-Yvette' },
+  { href: '/renovation-longjumeau', label: 'Longjumeau' },
 ]
 
 const services = [

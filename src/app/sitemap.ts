@@ -232,6 +232,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-choisy-le-roi`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-le-kremlin-bicetre`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Yvelines (78) — nouvelles villes
+    { url: `${base}/renovation-poissy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Essonne (91) — nouvelles villes
+    { url: `${base}/renovation-orsay`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-gif-sur-yvette`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-longjumeau`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     // Pages hub département
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/renovation-val-de-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

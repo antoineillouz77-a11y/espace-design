@@ -41,6 +41,7 @@ const villes78 = [
   { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
   { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
   { href: '/renovation-chatou', label: 'Chatou' },
+  { href: '/renovation-poissy', label: 'Poissy' },
 ]
 
 const services = [
