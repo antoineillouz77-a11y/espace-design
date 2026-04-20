@@ -1704,6 +1704,12 @@ const articles = [
     desc: "Rénover un appartement à Fontenay-sous-Bois (94). Ville résidentielle Val-de-Marne. Devis 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-pantin',
+    title: "Rénovation Appartement Pantin : artisan & prix 2025",
+    desc: "Rénover un appartement à Pantin (93). Ville en pleine gentrification, anciens entrepôts. Devis 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
