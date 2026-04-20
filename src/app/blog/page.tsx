@@ -2382,6 +2382,18 @@ const articles = [
     desc: "Rénovation appartement quartier Pernety, Paris 14e. Artisan local, devis gratuit 48h.",
     tag: 'Quartier',
   },
+  {
+    href: '/blog/renovation-appartement-javel-paris',
+    title: "Rénovation Appartement Javel Paris 15e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Javel / André Citroën, Paris 15e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-plaisance-paris',
+    title: "Rénovation Appartement Plaisance Paris 14e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Plaisance, Paris 14e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
 ]
 
 export default function BlogPage() {
