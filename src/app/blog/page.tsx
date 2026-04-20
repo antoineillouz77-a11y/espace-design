@@ -2166,6 +2166,18 @@ const articles = [
     desc: "Adapter son appartement à Paris pour les seniors : douche à l'italienne, barres d'appui, prix.",
     tag: 'Guide',
   },
+  {
+    href: '/blog/renovation-copropriete-paris',
+    title: "Rénovation en Copropriété Paris — Guide & Règles 2025",
+    desc: "Tout savoir sur la rénovation en copropriété à Paris : autorisations, assemblée générale, travaux.",
+    tag: 'Guide',
+  },
+  {
+    href: '/blog/renovation-investissement-locatif-paris',
+    title: "Rénovation Investissement Locatif Paris — ROI & Conseils 2025",
+    desc: "Rénover pour louer à Paris : quels travaux prioriser, budget, rentabilité, retour sur investissement.",
+    tag: 'Investissement',
+  },
 ]
 
 export default function BlogPage() {
