@@ -763,6 +763,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-appartement-bourg-la-reine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-fontenay-aux-roses`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-la-courneuve`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-clichy-sous-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-pontoise`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Blog — vague 15 (plancher)
     { url: `${base}/blog/renovation-plancher-chauffant-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },

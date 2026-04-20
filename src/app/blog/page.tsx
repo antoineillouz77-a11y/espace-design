@@ -2064,6 +2064,18 @@ const articles = [
     desc: "Artisan rénovateur à La Courneuve (93). Cuisine, salle de bain, parquet. Devis gratuit sous 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-clichy-sous-bois',
+    title: "Rénovation Appartement Clichy-sous-Bois (93) — 2025",
+    desc: "Rénover un appartement à Clichy-sous-Bois (93). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-pontoise',
+    title: "Rénovation Appartement Pontoise (95) — Guide 2025",
+    desc: "Artisan rénovateur à Pontoise (Val-d'Oise). Cuisine, salle de bain, parquet. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
