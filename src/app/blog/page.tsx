@@ -2412,6 +2412,18 @@ const articles = [
     desc: "Rénovation appartement quartier Tolbiac, Paris 13e. Artisan local, devis gratuit 48h.",
     tag: 'Quartier',
   },
+  {
+    href: '/blog/renovation-appartement-maison-blanche-paris',
+    title: "Rénovation Appartement Maison Blanche Paris 13e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Maison Blanche, Paris 13e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-monceau-paris',
+    title: "Rénovation Appartement Monceau Paris 8e/17e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Monceau, Paris 8e/17e. Haussmannien haut de gamme, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
 ]
 
 export default function BlogPage() {

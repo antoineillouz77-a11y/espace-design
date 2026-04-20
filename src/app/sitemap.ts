@@ -821,6 +821,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-appartement-auteuil-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-ternes-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-tolbiac-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-maison-blanche-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-monceau-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Blog — vague 15 (plancher)
     { url: `${base}/blog/renovation-plancher-chauffant-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
