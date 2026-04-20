@@ -3,15 +3,16 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Clamart — Artisan Rénovateur & Devis | Espace Design',
+  title: 'Rénovation Clamart (92140) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Clamart (92140). Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit 48h. Espace Design.',
+    'Artisan rénovateur à Clamart (92140) — nombreuses maisons individuelles et copropriétés à rénover dans cette ville pavillonnaire du sud des Hauts-de-Seine. Rénovation complète, salle de bain, cuisine. Devis gratuit 48h.',
   keywords: [
+    'rénovation Clamart',
+    'artisan rénovation Clamart 92140',
+    'rénovation maison Clamart',
     'rénovation appartement Clamart',
-    'artisan rénovation Clamart 92',
     'entreprise rénovation Clamart',
-    'renovation Clamart 92140',
-    'artisan Clamart',
+    'renovation 92140 Hauts-de-Seine',
   ],
 }
 
@@ -19,8 +20,9 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur à Clamart (92140). Rénovation complète, salle de bain, cuisine, décoration sur mesure.',
+  description: 'Artisan rénovateur à Clamart (92140) — rénovation maisons individuelles, pavillons et copropriétés dans le sud des Hauts-de-Seine.',
   telephone: '+33611783867',
+  email: 'espacedesign92@gmail.com',
   url: 'https://espacedesignparis.fr/renovation-clamart',
   areaServed: {
     '@type': 'AdministrativeArea',
@@ -32,16 +34,11 @@ const schemaLocal = {
     postalCode: '92140',
     addressCountry: 'FR',
   },
-}
-
-const schemaBreadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Clamart', item: 'https://espacedesignparis.fr/renovation-clamart' },
-  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
 }
 
 const schemaFaq = {
@@ -50,10 +47,10 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Clamart ?',
+      name: "Quel est le prix d'une rénovation à Clamart ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le prix d\'une rénovation à Clamart varie entre 700 et 1 400 €/m² pour une rénovation standard, et jusqu\'à 2 000 €/m² pour des finitions haut de gamme. Devis gratuit personnalisé sous 48h.',
+        text: "Le prix d'une rénovation à Clamart varie entre 700 et 1 400 €/m² pour une rénovation standard, et jusqu'à 2 000 €/m² pour des finitions haut de gamme. Clamart compte de nombreuses maisons individuelles nécessitant souvent une mise aux normes et une modernisation. Devis gratuit personnalisé sous 48h.",
       },
     },
     {
@@ -61,7 +58,7 @@ const schemaFaq = {
       name: 'Espace Design intervient-il à Clamart ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, nous intervenons à Clamart et dans toute la zone sud des Hauts-de-Seine : Meudon, Montrouge, Malakoff, Issy-les-Moulineaux. Déplacement gratuit et sans engagement.',
+        text: "Oui, nous intervenons à Clamart et dans toute la zone sud des Hauts-de-Seine : Meudon, Montrouge, Malakoff, Châtillon, Issy-les-Moulineaux. Déplacement gratuit et sans engagement.",
       },
     },
     {
@@ -69,7 +66,7 @@ const schemaFaq = {
       name: 'Quels travaux réalisez-vous à Clamart ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure. Un seul interlocuteur du début à la fin.',
+        text: "Rénovation complète de maison ou appartement, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur-mesure, isolation thermique. Un seul interlocuteur du début à la fin.",
       },
     },
     {
@@ -80,6 +77,16 @@ const schemaFaq = {
         text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans.',
       },
     },
+  ],
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Hauts-de-Seine (92)', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
+    { '@type': 'ListItem', position: 3, name: 'Clamart', item: 'https://espacedesignparis.fr/renovation-clamart' },
   ],
 }
 
@@ -102,13 +109,13 @@ export default function RenovationClamart() {
       {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Hauts-de-Seine — Clamart 92</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Hauts-de-Seine — Clamart 92140</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
             Rénovation appartement<br className="hidden sm:block" /> Clamart
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Clamart et dans le sud des Hauts-de-Seine. Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit sous 48h.
+            Artisan rénovateur à Clamart — ville pavillonnaire avec de nombreuses maisons individuelles et copropriétés à rénover. Rénovation complète, salle de bain, cuisine, décoration sur-mesure. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -128,6 +135,50 @@ export default function RenovationClamart() {
         </div>
       </section>
 
+      {/* Intro locale */}
+      <section className="py-14 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Votre artisan rénovateur à Clamart
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Ville à dominante pavillonnaire du <strong>sud des Hauts-de-Seine</strong>, Clamart est réputée pour ses
+            nombreuses maisons individuelles et ses quartiers résidentiels calmes. Le parc immobilier est varié : pavillons
+            des années 1950-1970 à rénover en profondeur, copropriétés des années 1980 à moderniser, maisons de ville
+            nécessitant une mise aux normes électrique ou une isolation thermique renforcée.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Espace Design accompagne les propriétaires clamartois dans la rénovation et la valorisation de leurs biens.
+            Que vous souhaitiez rénover entièrement une maison avant d'y emménager, moderniser votre cuisine et salle
+            de bain, refaire les peintures et poser un nouveau parquet, ou isoler votre habitation, nous vous proposons
+            une solution complète avec un seul artisan référent sur l'ensemble du projet.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            Notre zone d'intervention couvre également
+            <Link href="/renovation-meudon" className="text-[#B8960C] hover:underline mx-1">Meudon</Link>,
+            <Link href="/renovation-chatillon" className="text-[#B8960C] hover:underline mx-1">Châtillon</Link>,
+            <Link href="/renovation-malakoff" className="text-[#B8960C] hover:underline mx-1">Malakoff</Link> et
+            <Link href="/renovation-issy-les-moulineaux" className="text-[#B8960C] hover:underline mx-1">Issy-les-Moulineaux</Link>,
+            permettant une intervention rapide sur tout le sud des Hauts-de-Seine.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              'Devis gratuit sous 48h',
+              'Assurance décennale',
+              "15+ ans d'expérience",
+              'Respect des délais',
+              'Finitions haut de gamme',
+              'Un seul interlocuteur',
+            ].map((a) => (
+              <div key={a} className="flex items-start gap-2">
+                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                <span className="text-sm text-gray-600">{a}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -136,9 +187,21 @@ export default function RenovationClamart() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond à Clamart : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Conception et réalisation de salles de bain et cuisines personnalisées. Carrelage, faïence, robinetterie, menuiserie sur mesure à Clamart.' },
-              { num: '03', title: 'Finitions sur mesure', desc: 'Parquet, peinture, menuiseries, carrelage. Les détails qui font la différence pour votre appartement à Clamart.' },
+              {
+                num: '01',
+                title: 'Rénovation complète',
+                desc: "Du sol au plafond à Clamart : gros œuvre, électricité, plomberie, cloisons, isolation, finitions. Idéal pour les maisons et pavillons des années 50-70 qui retrouvent une seconde vie.",
+              },
+              {
+                num: '02',
+                title: 'Salle de bain & cuisine',
+                desc: "Conception et réalisation de salles de bain et cuisines sur-mesure. Carrelage, faïence, robinetterie, menuiseries, plans de travail. Des espaces modernes adaptés à votre maison.",
+              },
+              {
+                num: '03',
+                title: 'Isolation & finitions',
+                desc: "Isolation thermique et acoustique, parquet, peinture, menuiseries intérieures. Amélioration du confort et de la performance énergétique pour vos maisons et appartements à Clamart.",
+              },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -158,7 +221,7 @@ export default function RenovationClamart() {
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -181,16 +244,16 @@ export default function RenovationClamart() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Clamart ?',
-                a: 'Le prix d\'une rénovation à Clamart varie entre 700 et 1 400 €/m² pour une rénovation standard, et jusqu\'à 2 000 €/m² pour des finitions haut de gamme. Devis gratuit sous 48h.',
+                q: "Quel est le prix d'une rénovation à Clamart ?",
+                a: "Le prix d'une rénovation à Clamart varie entre 700 et 1 400 €/m² pour une rénovation standard, et jusqu'à 2 000 €/m² pour des finitions haut de gamme. Devis gratuit sous 48h.",
               },
               {
                 q: 'Espace Design intervient-il à Clamart ?',
-                a: 'Oui, nous intervenons à Clamart et dans toute la zone sud des Hauts-de-Seine : Meudon, Montrouge, Malakoff, Issy-les-Moulineaux. Déplacement gratuit et sans engagement.',
+                a: "Oui, nous intervenons à Clamart et dans toute la zone sud des Hauts-de-Seine : Meudon, Montrouge, Malakoff, Issy-les-Moulineaux. Déplacement gratuit et sans engagement.",
               },
               {
                 q: 'Quels travaux réalisez-vous à Clamart ?',
-                a: 'Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure. Un seul interlocuteur du début à la fin.',
+                a: "Rénovation complète, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur-mesure, isolation. Un seul interlocuteur du début à la fin.",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -216,9 +279,11 @@ export default function RenovationClamart() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-meudon', label: 'Meudon' },
-              { href: '/renovation-montrouge', label: 'Montrouge' },
+              { href: '/renovation-chatillon', label: 'Châtillon' },
               { href: '/renovation-malakoff', label: 'Malakoff' },
               { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
+              { href: '/renovation-montrouge', label: 'Montrouge' },
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -232,7 +297,7 @@ export default function RenovationClamart() {
         </div>
       </section>
 
-      {/* Voir aussi */}
+      {/* Voir aussi — services */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -266,7 +331,8 @@ export default function RenovationClamart() {
             Votre projet à Clamart
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement à Clamart et dans le sud des Hauts-de-Seine.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h.
+            Déplacement sans engagement à Clamart et dans le sud des Hauts-de-Seine.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

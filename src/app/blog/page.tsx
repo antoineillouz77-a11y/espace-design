@@ -498,6 +498,18 @@ const articles = [
     desc: 'Rénover un appartement dans un immeuble ancien à Paris : contraintes ABF, planchers en bois, murs porteurs, isolation. Prix et guide 2025.',
     tag: 'Rénovation',
   },
+  {
+    href: '/blog/ravalement-facade-paris',
+    title: 'Ravalement Façade Paris : obligation, autorisations ABF & prix 2025',
+    desc: 'Ravalement de façade à Paris : obligation décennale, autorisations ABF, enduits, peintures. Prix et guide artisan 2025.',
+    tag: 'Réglementation',
+  },
+  {
+    href: '/blog/ravalement-facade-copropriete-paris',
+    title: 'Ravalement Façade Copropriété Paris : vote AG & prestataire 2025',
+    desc: 'Organiser un ravalement de façade en copropriété à Paris : majorité requise, consultation entreprises, financement. Guide syndic 2025.',
+    tag: 'Copropriété',
+  },
 ]
 
 export default function BlogPage() {

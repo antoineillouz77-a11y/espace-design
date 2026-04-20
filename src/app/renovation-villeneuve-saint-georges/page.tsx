@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Villeneuve-Saint-Georges : Artisan Rénovateur Villeneuve-Saint-Georges (94) | Espace Design',
+  title: 'Rénovation Villeneuve-Saint-Georges (94190) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Villeneuve-Saint-Georges — rénovation appartement, salle de bain, cuisine, peinture, parquet. Devis gratuit sous 48h. Espace Design Paris.',
+    'Artisan rénovateur à Villeneuve-Saint-Georges (94190). Rénovation appartement, maison, salle de bain, cuisine. Devis gratuit 48h. Espace Design.',
   keywords: [
     'rénovation appartement Villeneuve-Saint-Georges',
     'artisan rénovation Villeneuve-Saint-Georges',
@@ -30,8 +30,8 @@ const schemaLocal = {
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Paris',
-    postalCode: '75000',
+    addressLocality: 'Villeneuve-Saint-Georges',
+    postalCode: '94190',
     addressCountry: 'FR',
   },
 }
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
     { '@type': 'ListItem', position: 3, name: 'Villeneuve-Saint-Georges', item: 'https://espacedesignparis.fr/renovation-villeneuve-saint-georges' },
   ],
 }
@@ -106,10 +106,10 @@ export default function RenovationVilleneuveStGeorges() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Villeneuve-Saint-Georges — 94190</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Villeneuve-Saint-Georges
+            Rénovation Villeneuve-Saint-Georges
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Villeneuve-Saint-Georges. Rénovation complète, salle de bain, cuisine, parquet et finitions soignées. Commune du Val-de-Marne proche Vitry-sur-Seine et Créteil. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Villeneuve-Saint-Georges. Rénovation complète, salle de bain, cuisine, parquet et finitions soignées. Commune du Val-de-Marne proche Choisy-le-Roi, Vitry-sur-Seine et Ablon-sur-Seine. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -151,6 +151,38 @@ export default function RenovationVilleneuveStGeorges() {
         </div>
       </section>
 
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Tous nos services
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {s.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
@@ -166,7 +198,7 @@ export default function RenovationVilleneuveStGeorges() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
-              "Devis gratuit sous 48h",
+              'Devis gratuit sous 48h',
               'Assurance décennale',
               "15+ ans d'expérience",
               'Respect des délais',
@@ -223,11 +255,11 @@ export default function RenovationVilleneuveStGeorges() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-choisy-le-roi', label: 'Choisy-le-Roi' },
               { href: '/renovation-vitry-sur-seine', label: 'Vitry-sur-Seine' },
               { href: '/renovation-champigny-sur-marne', label: 'Champigny-sur-Marne' },
               { href: '/renovation-maisons-alfort', label: 'Maisons-Alfort' },
-              { href: '/renovation-charenton-le-pont', label: 'Charenton-le-Pont' },
-              { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -258,8 +290,6 @@ export default function RenovationVilleneuveStGeorges() {
               { href: '/platrererie-paris', label: 'Plâtrerie' },
               { href: '/decoration-interieure-paris', label: 'Décoration' },
               { href: '/amenagement-interieur-paris', label: 'Aménagement' },
-              { href: '/tarifs', label: 'Nos tarifs' },
-              { href: '/faq', label: 'FAQ rénovation' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
