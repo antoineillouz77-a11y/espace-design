@@ -450,6 +450,18 @@ const articles = [
     desc: 'Rénover une petite salle de bain à Paris (3 à 5 m²) : douche italienne, WC suspendu, rangements. Optimisation espace et prix 2025.',
     tag: 'Salle de bain',
   },
+  {
+    href: '/blog/domotique-renovation-paris',
+    title: 'Domotique Rénovation Paris : store, éclairage & thermostat connecté 2025',
+    desc: "Intégrer la domotique lors d'une rénovation à Paris : store motorisé, éclairage LED connecté, thermostat, volets. Prix et guide 2025.",
+    tag: 'Électricité',
+  },
+  {
+    href: '/blog/renovation-balcon-terrasse-immeuble-paris',
+    title: 'Rénovation Balcon Copropriété Paris : travaux, autorisations & prix 2025',
+    desc: "Rénover son balcon en copropriété à Paris : parties communes vs privatives, autorisations AG, carrelage, étanchéité. Prix 2025.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
