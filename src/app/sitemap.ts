@@ -527,8 +527,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Val-d'Oise (95) — vague 14
     { url: `${base}/renovation-sannois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
-    // Yvelines (78) — vague 14
+    // Yvelines (78) — vague 14-15
     { url: `${base}/renovation-croissy-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-jouy-en-josas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-saint-quentin-en-yvelines`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 10
+    { url: `${base}/blog/renovation-salle-de-bain-haussmannien`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/pose-carrelage-salle-de-bain-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Essonne (91) — vague 14
     { url: `${base}/renovation-vigneux-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

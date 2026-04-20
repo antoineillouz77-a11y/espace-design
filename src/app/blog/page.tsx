@@ -978,6 +978,18 @@ const articles = [
     desc: "Sol vinyle à Paris : LVT, dalle, lame. Pose artisan, prix au m², entretien 2025. Devis gratuit 48h.",
     tag: 'Sol & Revêtements',
   },
+  {
+    href: '/blog/renovation-salle-de-bain-haussmannien',
+    title: 'Salle de Bain Haussmannienne Paris : rénovation avec caractère 2025',
+    desc: "Rénover une salle de bain haussmannienne à Paris. Contraintes syndic, styles conseillés, prix au m². Devis gratuit 48h.",
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/pose-carrelage-salle-de-bain-paris',
+    title: 'Pose Carrelage Salle de Bain Paris : prix, types & artisan 2025',
+    desc: "Pose carrelage salle de bain Paris. Grands formats, mosaïque, zellige. Prix artisan 2025. Devis gratuit 48h.",
+    tag: 'Carrelage',
+  },
 ]
 
 export default function BlogPage() {
