@@ -57,6 +57,7 @@ const villes93 = [
   { href: '/renovation-villemomble', label: 'Villemomble' },
   { href: '/renovation-livry-gargan', label: 'Livry-Gargan' },
   { href: '/renovation-le-blanc-mesnil', label: 'Le Blanc-Mesnil' },
+  { href: '/renovation-pierrefitte-sur-seine', label: 'Pierrefitte-sur-Seine' },
 ]
 
 const services = [

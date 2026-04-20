@@ -660,6 +660,24 @@ const articles = [
     desc: "Rénover une maison ancienne à Paris : contraintes ABF, pierres de taille, poutres apparentes, amiante. Guide artisan 2025.",
     tag: 'Guides',
   },
+  {
+    href: '/blog/renovation-appartement-paris-2e',
+    title: 'Rénovation Appartement Paris 2e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 2e arrondissement de Paris : Bourse, Sentier, Montorgueil. Artisan local, devis gratuit 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/choisir-carrelage-salle-de-bain',
+    title: 'Choisir son Carrelage Salle de Bain : format, matière & prix 2025',
+    desc: "Comment choisir le carrelage pour sa salle de bain : 60x60, grès cérame, zellige. Anti-dérapant, joints époxy. Guide et prix 2025.",
+    tag: 'Carrelage',
+  },
+  {
+    href: '/blog/renovation-parquet-massif-paris',
+    title: 'Parquet Massif Paris : pose, ponçage & prix artisan 2025',
+    desc: "Poser ou rénover un parquet massif à Paris : chêne, frêne, exotique. Pose clouée, collée ou flottante. Artisan parqueteur, devis 48h.",
+    tag: 'Parquet',
+  },
 ]
 
 export default function BlogPage() {
