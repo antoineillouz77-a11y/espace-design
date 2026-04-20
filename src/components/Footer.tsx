@@ -68,6 +68,8 @@ const villes = [
   { href: '/renovation-tremblay-en-france', label: 'Tremblay-en-France' },
   { href: '/renovation-rosny-sous-bois', label: 'Rosny-sous-Bois' },
   { href: '/renovation-drancy', label: 'Drancy' },
+  { href: '/renovation-bondy', label: 'Bondy' },
+  { href: '/renovation-choisy-le-roi', label: 'Choisy-le-Roi' },
   { href: '/renovation-vitry-sur-seine', label: 'Vitry-sur-Seine' },
   { href: '/renovation-champigny-sur-marne', label: 'Champigny-sur-Marne' },
   { href: '/renovation-villeneuve-saint-georges', label: 'Villeneuve-Saint-Georges' },
