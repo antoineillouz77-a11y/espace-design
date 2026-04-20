@@ -228,6 +228,12 @@ const articles = [
     desc: "Rénover sa cave à Paris : traitement humidité, isolation, aménagement bureau ou chambre. Prix, réglementation copropriété. Guide complet 2025.",
     tag: 'Guides',
   },
+  {
+    href: '/blog/renovation-appartement-marais-paris',
+    title: 'Rénovation Appartement Marais Paris : guide & artisans 2025',
+    desc: "Rénover un appartement dans le Marais (Paris 3e-4e) : contraintes Bâtiments de France, prix, artisans spécialisés. Guide complet 2025.",
+    tag: 'Guides',
+  },
 ]
 
 export default function BlogPage() {

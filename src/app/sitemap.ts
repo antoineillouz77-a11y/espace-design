@@ -171,6 +171,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/amenagement-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/chauffage-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-cave-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-marais-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
   ]
 }
