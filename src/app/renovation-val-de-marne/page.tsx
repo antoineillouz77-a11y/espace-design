@@ -64,6 +64,7 @@ const villes94 = [
   { href: '/renovation-villeneuve-le-roi', label: 'Villeneuve-le-Roi' },
   { href: '/renovation-valenton', label: 'Valenton' },
   { href: '/renovation-limeil-brevannes', label: 'Limeil-Brévannes' },
+  { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
 ]
 
 const services = [

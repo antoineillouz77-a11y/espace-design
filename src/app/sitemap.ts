@@ -389,6 +389,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-noisiel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-lognes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-draveil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-crosne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-vaires-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Val-d'Oise (95) — nouvelles villes
