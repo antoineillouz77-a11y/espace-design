@@ -397,6 +397,11 @@ export default function RenovationParis() {
               { href: '/blog/renovation-fenetre-paris', title: 'Rénovation fenêtres Paris : double vitrage, PVC', tag: 'Rénovation' },
               { href: '/blog/home-staging-paris', title: 'Home staging Paris : valoriser avant vente', tag: 'Conseils' },
               { href: '/blog/domotique-appartement-paris', title: 'Domotique appartement Paris : prix 2025', tag: 'Aménagement' },
+              { href: '/blog/renovation-appartement-copropriete-paris', title: 'Rénover en copropriété à Paris : règles et démarches', tag: 'Réglementation' },
+              { href: '/blog/renovation-immeuble-ancien-paris', title: 'Rénovation immeuble ancien Paris : contraintes ABF', tag: 'Patrimoine' },
+              { href: '/blog/renovation-avant-vente-paris', title: 'Rénovation avant vente Paris : valoriser son bien', tag: 'Investissement' },
+              { href: '/blog/ravalement-facade-paris', title: 'Ravalement façade Paris : obligation et prix 2025', tag: 'Façade' },
+              { href: '/blog/renovation-cuisine-studio-paris', title: 'Cuisine studio Paris : kitchenette et rangements', tag: 'Cuisine' },
             ].map((a) => (
               <Link key={a.href} href={a.href} className="flex items-start gap-3 bg-white rounded-lg p-4 border border-gray-100 hover:border-[#D4AF37]/40 transition-colors group">
                 <div>

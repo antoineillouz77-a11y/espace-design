@@ -249,10 +249,11 @@ export default function CarrelageParis() {
               { href: '/blog/carrelage-appartement-paris', label: 'Guide carrelage appartement' },
               { href: '/blog/carrelage-grand-format-paris', label: 'Carrelage grand format Paris' },
               { href: '/blog/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/blog/douche-italienne-paris', label: 'Douche italienne Paris' },
+              { href: '/blog/renovation-salle-de-bain-petite-surface-paris', label: 'Petite salle de bain' },
               { href: '/renovation-salle-de-bain-paris', label: 'Service salle de bain' },
               { href: '/parquet-paris', label: 'Parquet Paris' },
               { href: '/tarifs', label: 'Nos tarifs 2025' },
-              { href: '/faq', label: 'FAQ rénovation' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
