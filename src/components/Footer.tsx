@@ -20,104 +20,86 @@ const services = [
 ]
 
 const arrondissements = [
-  { href: '/renovation-paris-1er', label: 'Paris 1er' },
-  { href: '/renovation-paris-2e', label: 'Paris 2e' },
-  { href: '/renovation-paris-3e', label: 'Paris 3e' },
-  { href: '/renovation-paris-4e', label: 'Paris 4e' },
-  { href: '/renovation-paris-5e', label: 'Paris 5e' },
-  { href: '/renovation-paris-6e', label: 'Paris 6e' },
-  { href: '/renovation-paris-7e', label: 'Paris 7e' },
-  { href: '/renovation-paris-8e', label: 'Paris 8e' },
-  { href: '/renovation-paris-9e', label: 'Paris 9e' },
-  { href: '/renovation-paris-10e', label: 'Paris 10e' },
-  { href: '/renovation-paris-11e', label: 'Paris 11e' },
-  { href: '/renovation-paris-12e', label: 'Paris 12e' },
-  { href: '/renovation-paris-13e', label: 'Paris 13e' },
-  { href: '/renovation-paris-14e', label: 'Paris 14e' },
-  { href: '/renovation-paris-15e', label: 'Paris 15e' },
-  { href: '/renovation-paris-16e', label: 'Paris 16e' },
-  { href: '/renovation-paris-17e', label: 'Paris 17e' },
-  { href: '/renovation-paris-18e', label: 'Paris 18e' },
-  { href: '/renovation-paris-19e', label: 'Paris 19e' },
-  { href: '/renovation-paris-20e', label: 'Paris 20e' },
+  { href: '/renovation-paris-1er', label: '1er' },
+  { href: '/renovation-paris-2e', label: '2e' },
+  { href: '/renovation-paris-3e', label: '3e' },
+  { href: '/renovation-paris-4e', label: '4e' },
+  { href: '/renovation-paris-5e', label: '5e' },
+  { href: '/renovation-paris-6e', label: '6e' },
+  { href: '/renovation-paris-7e', label: '7e' },
+  { href: '/renovation-paris-8e', label: '8e' },
+  { href: '/renovation-paris-9e', label: '9e' },
+  { href: '/renovation-paris-10e', label: '10e' },
+  { href: '/renovation-paris-11e', label: '11e' },
+  { href: '/renovation-paris-12e', label: '12e' },
+  { href: '/renovation-paris-13e', label: '13e' },
+  { href: '/renovation-paris-14e', label: '14e' },
+  { href: '/renovation-paris-15e', label: '15e' },
+  { href: '/renovation-paris-16e', label: '16e' },
+  { href: '/renovation-paris-17e', label: '17e' },
+  { href: '/renovation-paris-18e', label: '18e' },
+  { href: '/renovation-paris-19e', label: '19e' },
+  { href: '/renovation-paris-20e', label: '20e' },
 ]
 
-const villes = [
-  { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
-  { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
-  { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
-  { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
-  { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
-  { href: '/renovation-courbevoie', label: 'Courbevoie' },
-  { href: '/renovation-asnieres-sur-seine', label: 'Asnières-sur-Seine' },
-  { href: '/renovation-suresnes', label: 'Suresnes' },
-  { href: '/renovation-puteaux', label: 'Puteaux' },
-  { href: '/renovation-nanterre', label: 'Nanterre' },
-  { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
-  { href: '/renovation-meudon', label: 'Meudon' },
-  { href: '/renovation-clamart', label: 'Clamart' },
-  { href: '/renovation-montrouge', label: 'Montrouge' },
-  { href: '/renovation-malakoff', label: 'Malakoff' },
-  { href: '/renovation-chatillon', label: 'Châtillon' },
-  { href: '/renovation-vanves', label: 'Vanves' },
-  { href: '/renovation-clichy', label: 'Clichy' },
-  { href: '/renovation-colombes', label: 'Colombes' },
-  { href: '/renovation-bagneux', label: 'Bagneux' },
-  { href: '/renovation-bobigny', label: 'Bobigny' },
-  { href: '/renovation-aulnay-sous-bois', label: 'Aulnay-sous-Bois' },
-  { href: '/renovation-tremblay-en-france', label: 'Tremblay-en-France' },
-  { href: '/renovation-rosny-sous-bois', label: 'Rosny-sous-Bois' },
-  { href: '/renovation-drancy', label: 'Drancy' },
-  { href: '/renovation-bondy', label: 'Bondy' },
-  { href: '/renovation-choisy-le-roi', label: 'Choisy-le-Roi' },
-  { href: '/renovation-vitry-sur-seine', label: 'Vitry-sur-Seine' },
-  { href: '/renovation-champigny-sur-marne', label: 'Champigny-sur-Marne' },
-  { href: '/renovation-villeneuve-saint-georges', label: 'Villeneuve-Saint-Georges' },
-  { href: '/renovation-antony', label: 'Antony' },
-  { href: '/renovation-garches', label: 'Garches' },
-  { href: '/renovation-sevres', label: 'Sèvres' },
-  { href: '/renovation-vincennes', label: 'Vincennes' },
-  { href: '/renovation-saint-mande', label: 'Saint-Mandé' },
-  { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
-  { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
-  { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
-  { href: '/renovation-maisons-alfort', label: 'Maisons-Alfort' },
-  { href: '/renovation-joinville-le-pont', label: 'Joinville-le-Pont' },
-  { href: '/renovation-charenton-le-pont', label: 'Charenton-le-Pont' },
-  { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
-  { href: '/renovation-gentilly', label: 'Gentilly' },
-  { href: '/renovation-versailles', label: 'Versailles' },
-  { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
-  { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
-  { href: '/renovation-chatou', label: 'Chatou' },
-  { href: '/renovation-saint-denis', label: 'Saint-Denis' },
-  { href: '/renovation-montreuil', label: 'Montreuil' },
-  { href: '/renovation-pantin', label: 'Pantin' },
-  { href: '/renovation-aubervilliers', label: 'Aubervilliers' },
-  { href: '/renovation-bagnolet', label: 'Bagnolet' },
-  { href: '/renovation-massy', label: 'Massy' },
-  { href: '/renovation-palaiseau', label: 'Palaiseau' },
-  { href: '/renovation-argenteuil', label: 'Argenteuil' },
-  { href: '/renovation-cergy', label: 'Cergy' },
-  { href: '/renovation-epinay-sur-seine', label: 'Épinay-sur-Seine' },
-  { href: '/renovation-noisy-le-grand', label: 'Noisy-le-Grand' },
-  { href: '/renovation-chatenay-malabry', label: 'Châtenay-Malabry' },
+const departements = [
+  {
+    href: '/renovation-hauts-de-seine',
+    num: '92',
+    label: 'Hauts-de-Seine',
+    villes: ['Neuilly-sur-Seine', 'Levallois-Perret', 'Boulogne-Billancourt', 'Issy-les-Moulineaux', 'Courbevoie', 'Nanterre'],
+  },
+  {
+    href: '/renovation-seine-saint-denis',
+    num: '93',
+    label: 'Seine-Saint-Denis',
+    villes: ['Saint-Denis', 'Montreuil', 'Aubervilliers', 'Pantin', 'Drancy', 'Aulnay-sous-Bois'],
+  },
+  {
+    href: '/renovation-val-de-marne',
+    num: '94',
+    label: 'Val-de-Marne',
+    villes: ['Vincennes', 'Champigny-sur-Marne', 'Vitry-sur-Seine', 'Ivry-sur-Seine', 'Créteil'],
+  },
+  {
+    href: '/renovation-essonne',
+    num: '91',
+    label: 'Essonne',
+    villes: ['Massy', 'Palaiseau', 'Évry', 'Corbeil-Essonnes', 'Antony'],
+  },
+  {
+    href: '/renovation-yvelines',
+    num: '78',
+    label: 'Yvelines',
+    villes: ['Versailles', 'Saint-Germain-en-Laye', 'Chatou', 'Le Vésinet', 'Poissy'],
+  },
+  {
+    href: '/renovation-val-d-oise',
+    num: '95',
+    label: "Val-d'Oise",
+    villes: ['Cergy', 'Argenteuil', 'Épinay-sur-Seine', 'Sarcelles'],
+  },
+  {
+    href: '/renovation-seine-et-marne',
+    num: '77',
+    label: 'Seine-et-Marne',
+    villes: ['Meaux', 'Chelles', 'Noisy-le-Grand', 'Lagny-sur-Marne'],
+  },
 ]
 
 export default function Footer() {
   return (
     <footer className="bg-[#1C1C1C] text-gray-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-          {/* Brand */}
-          <div className="lg:col-span-1">
-            <div className="font-display text-2xl font-bold text-white mb-1">
-              ESPACE DESIGN
-            </div>
-            <div className="text-xs text-[#D4AF37] tracking-widest uppercase mb-4">
-              Rénovation & Décoration
-            </div>
-            <p className="text-sm text-gray-400 leading-relaxed mb-5">
+
+        {/* Grille principale — 4 colonnes */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+          {/* Colonne 1 — Brand + Contact */}
+          <div>
+            <div className="font-display text-2xl font-bold text-white mb-1">ESPACE DESIGN</div>
+            <div className="text-xs text-[#D4AF37] tracking-widest uppercase mb-5">Rénovation & Décoration</div>
+            <p className="text-sm text-gray-400 leading-relaxed mb-6">
               Artisan rénovateur à Paris et en Île-de-France. Belles finitions, travail soigné.
             </p>
             <ul className="space-y-3 text-sm">
@@ -140,21 +122,14 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Navigation + Services */}
-          <div className="lg:col-span-1">
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Navigation</h3>
-            <ul className="space-y-2 text-sm mb-6">
+          {/* Colonne 2 — Navigation + Services */}
+          <div>
+            <h3 className="text-white font-semibold mb-4 text-xs uppercase tracking-widest">Navigation</h3>
+            <ul className="space-y-2 text-sm mb-8">
               {[
                 { href: '/', label: 'Accueil' },
                 { href: '/services', label: 'Services' },
                 { href: '/realisations', label: 'Réalisations' },
-                { href: '/renovation-appartement-paris', label: 'Rénovation Paris' },
-                { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
-                { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
-                { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
-                { href: '/renovation-yvelines', label: 'Yvelines (78)' },
-                { href: '/renovation-val-d-oise', label: 'Val-d\'Oise (95)' },
-                { href: '/renovation-essonne', label: 'Essonne (91)' },
                 { href: '/tarifs', label: 'Tarifs' },
                 { href: '/faq', label: 'FAQ' },
                 { href: '/avis', label: 'Avis clients' },
@@ -167,53 +142,73 @@ export default function Footer() {
               ))}
             </ul>
 
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Services</h3>
-            <ul className="space-y-2 text-sm">
-              {services.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} className="hover:text-[#D4AF37] transition-colors">{l.label}</Link>
-                </li>
+            <h3 className="text-white font-semibold mb-4 text-xs uppercase tracking-widest">Nos prestations</h3>
+            <div className="grid grid-cols-2 gap-x-3 gap-y-2 text-sm">
+              {services.map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className="text-gray-400 hover:text-[#D4AF37] transition-colors text-xs leading-snug"
+                >
+                  {s.label}
+                </Link>
               ))}
-            </ul>
+            </div>
           </div>
 
-          {/* Paris 1er–10e */}
-          <div className="lg:col-span-1">
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Paris 1er–10e</h3>
-            <ul className="space-y-2 text-sm">
-              {arrondissements.slice(0, 10).map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} className="hover:text-[#D4AF37] transition-colors">{l.label}</Link>
-                </li>
+          {/* Colonne 3 — Paris (tous arrondissements) */}
+          <div>
+            <h3 className="text-white font-semibold mb-1 text-xs uppercase tracking-widest">Paris</h3>
+            <p className="text-gray-500 text-xs mb-4">Tous les arrondissements</p>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+              {arrondissements.map((a) => (
+                <Link
+                  key={a.href}
+                  href={a.href}
+                  className="text-gray-400 hover:text-[#D4AF37] transition-colors text-xs"
+                >
+                  Paris {a.label}
+                </Link>
               ))}
-            </ul>
+            </div>
+            <div className="mt-6 pt-4 border-t border-gray-800">
+              <h4 className="text-gray-500 text-xs uppercase tracking-widest mb-3">Types de biens</h4>
+              <div className="space-y-1.5 text-xs">
+                <Link href="/renovation-appartement-paris" className="block text-gray-400 hover:text-[#D4AF37] transition-colors">Appartement Paris</Link>
+                <Link href="/renovation-appartement-haussmannien-paris" className="block text-gray-400 hover:text-[#D4AF37] transition-colors">Haussmannien</Link>
+                <Link href="/renovation-studio-paris" className="block text-gray-400 hover:text-[#D4AF37] transition-colors">Studio</Link>
+                <Link href="/renovation-maison-paris" className="block text-gray-400 hover:text-[#D4AF37] transition-colors">Maison IDF</Link>
+              </div>
+            </div>
           </div>
 
-          {/* Paris 11e–20e */}
-          <div className="lg:col-span-1">
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Paris 11e–20e</h3>
-            <ul className="space-y-2 text-sm">
-              {arrondissements.slice(10).map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} className="hover:text-[#D4AF37] transition-colors">{l.label}</Link>
-                </li>
+          {/* Colonne 4 — Départements Île-de-France */}
+          <div>
+            <h3 className="text-white font-semibold mb-1 text-xs uppercase tracking-widest">Île-de-France</h3>
+            <p className="text-gray-500 text-xs mb-4">Par département</p>
+            <div className="space-y-5">
+              {departements.map((d) => (
+                <div key={d.href}>
+                  <Link href={d.href} className="flex items-center gap-2 group">
+                    <span className="text-[10px] font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-1.5 py-0.5 rounded">
+                      {d.num}
+                    </span>
+                    <span className="text-white text-xs font-medium group-hover:text-[#D4AF37] transition-colors">
+                      {d.label}
+                    </span>
+                  </Link>
+                  <div className="mt-1 ml-7 flex flex-wrap gap-x-2 gap-y-0.5">
+                    {d.villes.map((v) => (
+                      <span key={v} className="text-gray-600 text-[10px]">{v}</span>
+                    ))}
+                  </div>
+                </div>
               ))}
-            </ul>
-          </div>
-
-          {/* Île-de-France */}
-          <div className="lg:col-span-1">
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Île-de-France</h3>
-            <ul className="space-y-2 text-sm">
-              {villes.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} className="hover:text-[#D4AF37] transition-colors">{l.label}</Link>
-                </li>
-              ))}
-            </ul>
+            </div>
           </div>
         </div>
 
+        {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-600">
           <span>© {new Date().getFullYear()} Espace Design — SIRET 904 728 268 00015</span>
           <div className="flex gap-4 items-center">
