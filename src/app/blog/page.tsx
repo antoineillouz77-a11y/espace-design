@@ -1428,6 +1428,42 @@ const articles = [
     desc: "Choisir le bon artisan rénovation à Paris. Labels, assurances, devis comparatifs, garanties. Guide 2025.",
     tag: 'Conseils',
   },
+  {
+    href: '/blog/financement-travaux-renovation-paris',
+    title: "Financement Travaux Rénovation Paris : prêts & aides 2025",
+    desc: "Financer sa rénovation à Paris. Prêt travaux, MaPrimeRénov, Anah, CEE. Guide complet des aides 2025.",
+    tag: 'Conseils',
+  },
+  {
+    href: '/blog/tva-travaux-renovation-paris',
+    title: "TVA Travaux Rénovation Paris : taux 10% conditions 2025",
+    desc: "TVA à 10% sur vos travaux de rénovation à Paris. Conditions, attestation propriétaire, logement de plus de 2 ans.",
+    tag: 'Conseils',
+  },
+  {
+    href: '/blog/planning-travaux-renovation-paris',
+    title: "Planning Travaux Rénovation Paris : ordre & délais 2025",
+    desc: "Organiser son chantier de rénovation à Paris. Ordre des travaux, coordination artisans, délais réalistes.",
+    tag: 'Conseils',
+  },
+  {
+    href: '/blog/renovation-appartement-levallois',
+    title: "Rénovation Appartement Levallois-Perret : artisan & prix 2025",
+    desc: "Rénover un appartement à Levallois-Perret (92). Immeubles modernes et anciens, finitions premium. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-versailles',
+    title: "Rénovation Appartement Versailles : artisan & prix 2025",
+    desc: "Rénover un appartement à Versailles. Patrimoine UNESCO, appartements classés et modernes. Devis 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-saint-germain-en-laye',
+    title: "Rénovation Appartement Saint-Germain-en-Laye : artisan & prix 2025",
+    desc: "Rénover un appartement à Saint-Germain-en-Laye. Ville royale, appartements premium. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
