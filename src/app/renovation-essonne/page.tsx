@@ -45,6 +45,7 @@ const villes91 = [
   { href: '/renovation-orsay', label: 'Orsay' },
   { href: '/renovation-gif-sur-yvette', label: 'Gif-sur-Yvette' },
   { href: '/renovation-longjumeau', label: 'Longjumeau' },
+  { href: '/renovation-corbeil-essonnes', label: 'Corbeil-Essonnes' },
 ]
 
 const services = [

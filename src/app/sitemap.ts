@@ -203,6 +203,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Yvelines (78) — autres villes
     { url: `${base}/renovation-sartrouville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-houilles`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-maisons-laffitte`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Essonne (91) — nouvelles villes
+    { url: `${base}/renovation-corbeil-essonnes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

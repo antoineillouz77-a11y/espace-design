@@ -46,6 +46,7 @@ const villes78 = [
   { href: '/renovation-mantes-la-jolie', label: 'Mantes-la-Jolie' },
   { href: '/renovation-sartrouville', label: 'Sartrouville' },
   { href: '/renovation-houilles', label: 'Houilles' },
+  { href: '/renovation-maisons-laffitte', label: 'Maisons-Laffitte' },
 ]
 
 const services = [
