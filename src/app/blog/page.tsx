@@ -1734,6 +1734,54 @@ const articles = [
     desc: "Rénover un appartement à Vitry-sur-Seine (94). Grande ville Val-de-Marne. Devis gratuit 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/carrelage-exterieur-terrasse-paris',
+    title: "Carrelage extérieur terrasse Paris — Guide & Prix 2025",
+    desc: "Choisir et poser un carrelage extérieur pour terrasse à Paris. Grès cérame, antidérapant, prix au m².",
+    tag: 'Carrelage',
+  },
+  {
+    href: '/blog/renovation-appartement-meudon',
+    title: "Rénovation Appartement Meudon (92) — Guide 2025",
+    desc: "Rénover un appartement ou une maison à Meudon. Cuisine, salle de bain, parquet. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-issy-les-moulineaux',
+    title: "Rénovation Appartement Issy-les-Moulineaux (92) — Guide 2025",
+    desc: "Artisan rénovateur à Issy-les-Moulineaux : cuisine, salle de bain, parquet, cloisons. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-clamart',
+    title: "Rénovation Appartement Clamart (92) — Guide & Prix 2025",
+    desc: "Rénover votre appartement ou maison à Clamart. Tous corps d'état, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-clichy',
+    title: "Rénovation Appartement Clichy (92) — Guide 2025",
+    desc: "Artisan rénovateur à Clichy : lofts, espaces industriels, cuisine ouverte, salle de bain moderne.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-saint-maur-des-fosses',
+    title: "Rénovation Appartement Saint-Maur-des-Fossés (94) — 2025",
+    desc: "Rénover un appartement à Saint-Maur-des-Fossés. Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-noisy-le-grand',
+    title: "Rénovation Appartement Noisy-le-Grand (93) — Guide 2025",
+    desc: "Artisan rénovateur à Noisy-le-Grand. Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-gagny',
+    title: "Rénovation Appartement Gagny (93) — Guide & Prix 2025",
+    desc: "Rénover un appartement à Gagny. Artisan qualifié en Seine-Saint-Denis, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
