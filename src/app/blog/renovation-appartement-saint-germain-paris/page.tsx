@@ -12,18 +12,12 @@ const schemaBreadcrumb = {
   ],
 }
 
-export const metadata: Metadata = {
-  title: 'Rénovation Appartement Saint-Germain-des-Prés Paris : guide 2025 | Espace Design',
-  description:
-    'Rénover un appartement à Saint-Germain-des-Prés (Paris 6e) : prix, contraintes, artisans. Haussmannien, immeubles anciens, finitions premium.',
-}
-
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Appartement Saint-Germain-des-Prés Paris : guide 2025',
-  description:
-    'Rénover un appartement à Saint-Germain-des-Prés (Paris 6e) : prix, contraintes, artisans. Haussmannien, immeubles anciens, finitions premium.',
+  headline: 'Rénovation Appartement Saint-Germain-des-Prés Paris : spécificités & prix | Espace Design',
+  description: 'Rénover dans le 6e arrondissement à Paris : ABF, moulures, parquet point de Hongrie, contraintes copropriété. Prix artisan.',
+  datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
@@ -39,29 +33,34 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel type d\'appartements trouve-t-on à Saint-Germain-des-Prés ?',
+      name: 'Quelles sont les contraintes ABF pour rénover à Saint-Germain-des-Prés ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Saint-Germain-des-Prés (Paris 6e) regroupe essentiellement des appartements haussmanniens (XIXe siècle) et des immeubles anciens antérieurs à 1900. Ces biens se caractérisent par des hauteurs sous plafond généreuses (3,20 à 4,20 m), des parquets en bois massif, des moulures et corniches ornées. Leur rénovation requiert un soin particulier pour préserver ces éléments d\'époque.',
+        text: "Saint-Germain-des-Prés (Paris 6e) est en secteur protégé : toute modification visible depuis la rue nécessite l'accord de l'Architecte des Bâtiments de France (ABF). Cela concerne le remplacement des fenêtres, le ravalement de façade, les velux en toiture et les climatiseurs visibles. Le délai d'instruction ABF est de 2 à 3 mois. À l'intérieur, les travaux sont libres dans la plupart des cas — sauf si l'appartement est lui-même classé ou inscrit.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien coûte la rénovation d\'un appartement à Saint-Germain-des-Prés ?',
+      name: 'Faut-il restaurer ou remplacer le parquet point de Hongrie dans le 6e ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'La rénovation dans le 6e arrondissement coûte entre 1 800 et 4 000 €/m² en rénovation complète, compte tenu du niveau de finition attendu dans ce quartier premium. Pour un appartement de 80 m², prévoyez 140 000 à 320 000 € en renovation intégrale (électricité, plomberie, cuisine, salle de bain, finitions haut de gamme). La restauration des parquets anciens et des moulures représente souvent 15 à 25% du budget.',
+        text: "La restauration d'un parquet en point de Hongrie d'époque est presque toujours préférable à son remplacement dans le 6e arrondissement. Un parquet massif en chêne peut être ponçé et rehaussé 3 à 4 fois. La restauration coûte 60 à 120 €/m² — nettement moins qu'un remplacement, et incomparablement plus valorisant pour un bien premium. La pose d'un nouveau parquet point de Hongrie (chêne massif sur liteaux) est possible si le parquet existant est trop dégradé : comptez 150 à 250 €/m² fourni-posé.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels artisans choisir pour rénover à Saint-Germain-des-Prés ?',
+      name: 'Quel est le prix d\'une rénovation complète dans le 6e arrondissement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pour rénover dans le 6e, choisissez impérativement un artisan expérimenté dans les appartements anciens parisiens, maîtrisant la restauration de parquet, la pose de carrelage en grand format et les enduits de finition. Vérifiez les références sur des chantiers similaires (haussmanniens, immeubles anciens). Espace Design intervient régulièrement dans le 6e, 7e et 8e arrondissement.',
+        text: "La rénovation complète d'un appartement à Saint-Germain-des-Prés coûte entre 1 500 et 2 500 €/m² pour une rénovation standard, et entre 2 500 et 4 000 €/m² si elle inclut la restauration du patrimoine (parquets anciens, moulures, cheminées). Pour un 80 m², prévoyez de 120 000 à 320 000 € en rénovation intégrale de standing. Ce surcoût par rapport à d'autres quartiers s'explique par la complexité technique, l'accès difficile et le niveau de finition attendu.",
       },
     },
   ],
+}
+
+export const metadata: Metadata = {
+  title: 'Rénovation Appartement Saint-Germain-des-Prés Paris : spécificités & prix | Espace Design',
+  description: 'Rénover dans le 6e arrondissement à Paris : ABF, moulures, parquet point de Hongrie, contraintes copropriété. Prix artisan.',
 }
 
 export default function ArticleSaintGermain() {
@@ -80,211 +79,229 @@ export default function ArticleSaintGermain() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
       />
 
-      {/* Hero article */}
-      <section className="pt-28 sm:pt-36 pb-12 bg-[#FAFAF8]">
+      {/* Hero */}
+      <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Guides
+          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
+            Quartiers
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
-          <h1 className="font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement à Saint-Germain-des-Prés (Paris 6e) : guide 2025
+          <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
+            Rénovation Appartement Saint-Germain-des-Prés Paris : spécificités &amp; prix
           </h1>
-          <p className="text-gray-500 text-sm font-light leading-relaxed">
-            Saint-Germain-des-Prés concentre certains des plus beaux appartements parisiens :
-            haussmanniens, immeubles du XVIIIe et XIXe siècle, parquets en bois massif, plafonds
-            hauts, moulures ornées. Rénover dans le 6e demande une expertise technique et un niveau
-            de finition à la hauteur du quartier. Ce guide vous accompagne pas à pas.
+          <p className="text-gray-400 text-sm font-light leading-relaxed">
+            Saint-Germain-des-Prés (Paris 6e) concentre certains des plus beaux appartements parisiens : haussmanniens, immeubles du XVIIIe et XIXe siècle, parquets point de Hongrie, plafonds hauts, moulures ornées. Rénover dans le 6e demande une expertise technique et un niveau de finition à la hauteur du quartier. Ce guide vous accompagne pas à pas.
           </p>
         </div>
       </section>
 
-      {/* Contenu article */}
+      {/* Section 1 — Caractéristiques du quartier */}
       <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-12">
-
-          {/* Section 1 */}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les appartements de Saint-Germain-des-Prés : profil et caractéristiques
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              Le 6e arrondissement est dominé par deux typologies de biens : les immeubles
-              haussmanniens construits sous Napoléon III (1853-1870) et les immeubles anciens
-              antérieurs, datant parfois du XVIIe siècle. Ces deux typologies ont en commun
-              des caractéristiques architecturales remarquables — et des contraintes de
-              rénovation tout aussi remarquables.
-            </p>
-
-            <div className="space-y-5">
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  L&apos;appartement haussmannien du 6e : caractéristiques clés
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Hauteur sous plafond de 3,20 m à 4,20 m, parquet en bois massif (point de
-                  Hongrie ou lames larges), moulures en plâtre, cheminée en marbre, fenêtres
-                  à double vantail en bois. Ces éléments définissent le style haussmannien
-                  et leur restauration est le cœur d&apos;un chantier de rénovation réussi dans
-                  ce quartier.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Les immeubles anciens : encore plus exigeants
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Certains immeubles de Saint-Germain-des-Prés datent du XVIIe siècle, notamment
-                  autour de la rue de Buci et du carrefour de l&apos;Odéon. Ces biens présentent des
-                  planchers en chêne massif, des poutres apparentes et des murs en pierre de taille.
-                  Leur rénovation doit concilier performance technique (isolation, plomberie,
-                  électricité) et respect du bâti historique.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Les étages nobles et les chambres de service
-                </h3>
-                <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Dans un immeuble haussmannien du 6e, le 1er et 2e étages (étages nobles)
-                  présentent les plus belles prestations : plafonds les plus hauts, moulures
-                  les plus richement ornées. Les étages supérieurs et les anciens appartements
-                  de service (au 6e ou 7e étage) ont des caractéristiques différentes — souvent
-                  plus simples, parfois sous les toits — et peuvent être transformés en espaces
-                  contemporains avec plus de liberté.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Section 2 */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Combien coûte une rénovation à Saint-Germain-des-Prés ?
+              Les appartements du 6e : immeubles haussmanniens et contraintes patrimoniales
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le 6e arrondissement est l&apos;un des plus chers de Paris à la rénovation. Les raisons
-              sont multiples : complexité technique, matériaux nobles, accès difficile (étroitesse
-              des rues, copropriétés strictes), et niveau de finition attendu par les propriétaires
-              de ce quartier.
+              Le 6e arrondissement est dominé par deux typologies : les immeubles haussmanniens construits sous Napoléon III (1853-1870) et les immeubles anciens antérieurs datant parfois du XVIIe siècle. Ces deux typologies ont en commun des caractéristiques architecturales remarquables — et des contraintes de rénovation tout aussi remarquables.
             </p>
-            <ul className="space-y-3">
-              {[
-                {
-                  poste: 'Rafraîchissement léger',
-                  fourchette: '500 à 900 €/m²',
-                  detail: 'Peinture, sols, luminaires. Ne modifie pas les installations existantes.',
-                },
-                {
-                  poste: 'Rénovation d\'une pièce d\'eau',
-                  fourchette: '12 000 à 30 000 €',
-                  detail: 'Salle de bain ou cuisine seule, finitions premium (carrelage grand format, robinetterie haut de gamme).',
-                },
-                {
-                  poste: 'Rénovation complète sans restauration du patrimoine',
-                  fourchette: '1 800 à 2 800 €/m²',
-                  detail: 'Électricité, plomberie, cuisine, bain, sols neufs, peintures. Éléments anciens conservés mais non restaurés.',
-                },
-                {
-                  poste: 'Rénovation complète avec restauration du patrimoine',
-                  fourchette: '2 800 à 4 000 €/m²',
-                  detail: 'Restauration parquet, moulures, cheminées, menuiseries. Matériaux nobles (marbre, boiseries, enduits à la chaux).',
-                },
-              ].map((item) => (
-                <li key={item.poste} className="bg-[#FAFAF8] rounded-lg p-4 border border-gray-100">
-                  <div className="flex justify-between items-start mb-1">
-                    <div className="font-medium text-[#1C1C1C] text-sm">{item.poste}</div>
-                    <div className="text-[#B8960C] text-sm font-medium whitespace-nowrap ml-4">{item.fourchette}</div>
-                  </div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{item.detail}</div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Section 3 */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les postes clés d&apos;une rénovation haussmannienne à Saint-Germain
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              Voici les postes qui méritent une attention particulière dans un appartement
-              haussmannien du 6e arrondissement.
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+              Saint-Germain-des-Prés étant en secteur protégé, toute modification visible depuis la rue est soumise à l&apos;accord préalable de l&apos;Architecte des Bâtiments de France (ABF). Le délai d&apos;instruction est de 2 à 3 mois et doit être anticipé dans le planning du chantier.
             </p>
-            <ul className="space-y-3">
-              {[
-                {
-                  flag: 'Restauration du parquet ancien',
-                  detail: 'Un parquet point de Hongrie en chêne massif d\'époque peut être ponçé et rehaussé jusqu\'à 3 à 4 fois. La restauration coûte 60 à 120 €/m² — bien moins qu\'un remplacement, et incomparablement plus valorisant.',
-                },
-                {
-                  flag: 'Réfection des moulures et corniches',
-                  detail: 'Les moulures en plâtre peuvent être restaurées (remplissage, lissage, peinture) ou refaites à l\'identique par un staffeur. Compter 80 à 200 €/ml selon la complexité des profils.',
-                },
-                {
-                  flag: 'Mise aux normes électriques',
-                  detail: 'Un appartement haussmannien non rénové depuis 30 ans nécessite souvent une mise aux normes complète : tableau électrique, remplacement des fils, mise à la terre. Budget : 10 000 à 18 000 € pour un 80 m².',
-                },
-                {
-                  flag: 'Remplacement des fenêtres',
-                  detail: 'Le remplacement des fenêtres est soumis à l\'accord de la copropriété et, dans certains secteurs, de l\'ABF. Le double vitrage bois sur l\'existant (rénovation) est souvent la solution privilégiée dans les quartiers historiques.',
-                },
-                {
-                  flag: 'Salle de bain premium',
-                  detail: 'Dans un appartement du 6e, les propriétaires souhaitent généralement des finitions haut de gamme : carrelage grand format 120×60 ou 120×120, douche à l\'italienne, robinetterie de marque. Budget salle de bain : 18 000 à 35 000 €.',
-                },
-              ].map((item) => (
-                <li key={item.flag} className="flex gap-3">
-                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                  <div>
-                    <span className="text-[#1C1C1C] text-sm font-medium">{item.flag} : </span>
-                    <span className="text-gray-600 text-sm font-light">{item.detail}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Section 4 */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Espace Design dans le 6e : notre expérience
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Espace Design réalise régulièrement des rénovations dans le 6e arrondissement
-              et les quartiers voisins (7e, 5e, 4e). Notre équipe est formée à la restauration
-              des éléments patrimoniaux des appartements haussmanniens — parquets, moulures,
-              menuiseries — et maîtrise les corps de métier nécessaires à une rénovation
-              complète : plomberie, électricité, carrelage, peinture, menuiserie.
-            </p>
-            <p className="text-gray-600 text-sm leading-relaxed font-light">
-              Nous fonctionnons comme interlocuteur unique : vous n&apos;avez pas à gérer
-              plusieurs artisans. Du premier devis à la livraison du chantier, nous coordonnons
-              l&apos;ensemble des travaux.{' '}
-              <Link href="/contact" className="text-[#B8960C] hover:underline">
-                Contactez-nous pour un devis gratuit
-              </Link>
-              .
-            </p>
-          </div>
-
-          {/* FAQ */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-6">
-              Questions fréquentes — Rénovation à Saint-Germain-des-Prés
-            </h2>
             <div className="space-y-4">
-              {schemaFaq.mainEntity.map((item) => (
-                <div key={item.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{item.name}</div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{item.acceptedAnswer.text}</div>
+              {[
+                {
+                  enjeu: 'Immeubles haussmanniens — les étages nobles',
+                  detail: 'Hauteur sous plafond de 3,20 m à 4,20 m, parquet en bois massif (point de Hongrie ou lames larges), moulures en plâtre, cheminée en marbre, fenêtres à double vantail en bois. Les 1er et 2e étages (étages nobles) présentent les plus belles prestations : plafonds les plus hauts, moulures les plus richement ornées.',
+                },
+                {
+                  enjeu: 'Immeubles anciens — XVIIe et XVIIIe siècle',
+                  detail: 'Certains immeubles de Saint-Germain-des-Prés datent du XVIIe siècle, notamment autour de la rue de Buci et du carrefour de l&apos;Odéon. Ces biens présentent des planchers en chêne massif, des poutres apparentes et des murs en pierre de taille. Leur rénovation doit concilier performance technique (isolation, plomberie, électricité) et respect du bâti historique.',
+                },
+                {
+                  enjeu: 'Règlement de copropriété — contraintes à vérifier',
+                  detail: 'Dans les immeubles anciens du 6e, les règlements de copropriété sont souvent très détaillés sur les matériaux autorisés, les horaires de travaux (souvent 8h-17h en semaine) et les accès. Vérifiez ces points avant de signer avec votre artisan pour éviter les mauvaises surprises.',
+                },
+              ].map((el) => (
+                <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.enjeu}</div>
+                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
                 </div>
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* Section 2 — Parquet et moulures */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Parquet point de Hongrie et moulures : restaurer ou remplacer ?
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Dans un appartement du 6e, le traitement du parquet et des moulures est le poste le plus identitaire — et souvent le plus délicat à arbitrer. Voici les options et leurs coûts.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            {[
+              {
+                titre: 'Restauration parquet point de Hongrie',
+                solution: 'Ponçage + vitrification ou huilage d&apos;un parquet massif d&apos;époque. Possible 3 à 4 fois sur la durée de vie du parquet. Résultat incomparable, valorisation maximale du bien. Recommandé en priorité si le parquet est sain.',
+                cout: '60 – 120 €/m²',
+              },
+              {
+                titre: 'Remplacement parquet (neuf)',
+                solution: 'Parquet point de Hongrie neuf en chêne massif sur liteaux, posé selon les règles de l&apos;art. Solution si le parquet existant est trop dégradé ou très mince. Le résultat est identique à l&apos;original mais le coût est supérieur.',
+                cout: '150 – 250 €/m²',
+              },
+              {
+                titre: 'Restauration moulures et corniches',
+                solution: 'Les moulures en plâtre peuvent être restaurées (remplissage, lissage, peinture) ou refaites à l&apos;identique par un staffeur. Compter 80 à 200 €/ml selon la complexité des profils. Indispensable pour préserver le caractère haussmannien.',
+                cout: '80 – 200 €/ml',
+              },
+              {
+                titre: 'Cheminées en marbre — restauration',
+                solution: 'La restauration d&apos;une cheminée en marbre comprend le nettoyage, le rebouchage des éclats et éventuellement la cristallisation ou le polissage du marbre. Une cheminée restaurée valorise significativement un appartement du 6e.',
+                cout: '800 – 3 000 €',
+              },
+            ].map((el) => (
+              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 — Prix */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Prix d&apos;une rénovation à Saint-Germain-des-Prés en 2025
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le 6e arrondissement est l&apos;un des plus chers de Paris à la rénovation. Les raisons sont multiples : complexité technique, matériaux nobles, accès difficile (étroitesse des rues, copropriétés strictes) et niveau de finition attendu.
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#1C1C1C] text-white">
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Description</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix / m²</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    niveau: 'Rafraîchissement léger',
+                    prestations: 'Peinture, sols, luminaires — sans modifier les installations',
+                    prixM2: '500 – 900 €',
+                  },
+                  {
+                    niveau: 'Rénovation partielle',
+                    prestations: 'Salle de bain ou cuisine seule, finitions premium',
+                    prixM2: '12 000 – 30 000 € (la pièce)',
+                  },
+                  {
+                    niveau: 'Rénovation complète standard',
+                    prestations: 'Électricité, plomberie, cuisine, SDB, sols, peintures',
+                    prixM2: '1 500 – 2 500 €',
+                  },
+                  {
+                    niveau: 'Rénovation avec restauration patrimoine',
+                    prestations: 'Parquet, moulures, cheminées + matériaux nobles (marbre, boiseries)',
+                    prixM2: '2 500 – 4 000 €',
+                  },
+                ].map((row, i) => (
+                  <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.niveau}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.prestations}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prixM2}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
+              Postes clés d&apos;une rénovation haussmannienne dans le 6e
+            </h3>
+            <div className="space-y-3">
+              {[
+                'Restauration parquet point de Hongrie — 60 à 120 €/m² (valorise significativement le bien)',
+                'Mise aux normes électriques complètes — 10 000 à 18 000 € pour un 80 m² non rénové',
+                'Salle de bain premium (carrelage grand format 120×60, robinetterie haut de gamme) — 18 000 à 35 000 €',
+                'Remplacement des fenêtres avec accord ABF — double vitrage bois sur l\'existant privilégié',
+                'Réfection des moulures et corniches — 80 à 200 €/ml selon la complexité des profils',
+                'Cuisine sur mesure avec plan de travail en marbre ou granit — 20 000 à 40 000 €',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — Délais administratifs */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Délais administratifs : ce qu&apos;il faut anticiper dans le 6e
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            La rénovation dans un secteur protégé comme Saint-Germain-des-Prés implique des délais administratifs supplémentaires qu&apos;un artisan expérimenté intègre dès la phase de planification.
+          </p>
+          <div className="space-y-4">
+            {[
+              {
+                type: 'Déclaration préalable de travaux (ABF)',
+                prix: '2 à 3 mois',
+                detail: 'Obligatoire pour tout remplacement de fenêtres, ravalement de façade, velux ou équipement visible depuis la rue. À déposer avant le démarrage du chantier. Le dossier ABF comprend des plans, des photos et une notice descriptive des matériaux.',
+              },
+              {
+                type: 'Autorisation de la copropriété',
+                prix: '1 à 3 mois',
+                detail: 'Les travaux importants (ouverture de cloisons porteuses, modification de façade, changement de destination de locaux) nécessitent une autorisation de l&apos;assemblée générale. Comptez un cycle de convocation + vote avant de démarrer.',
+              },
+              {
+                type: 'Benne et stationnement de livraison',
+                prix: '2 à 4 semaines',
+                detail: 'Déposer une demande d&apos;autorisation de stationnement en Mairie pour la benne à gravats et les livraisons de matériaux. Dans les rues étroites du 6e (rue de Buci, rue Jacob), cela peut nécessiter une organisation spéciale avec des horaires de livraison restreints.',
+              },
+            ].map((el) => (
+              <div key={el.type} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
+                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
+                </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
+          <div className="space-y-6">
+            {schemaFaq.mainEntity.map((q) => (
+              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -294,11 +311,11 @@ export default function ArticleSaintGermain() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/renovation-paris-6e', title: 'Rénovation Paris 6e — Espace Design' },
-              { href: '/renovation-paris-7e', title: 'Rénovation Paris 7e — Espace Design' },
-              { href: '/renovation-appartement-haussmannien-paris', title: 'Rénovation appartement haussmannien Paris' },
+              { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris' },
+              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénovation appartement haussmannien Paris' },
               { href: '/blog/parquet-massif-paris', title: 'Parquet massif à Paris : restauration et pose' },
-              { href: '/blog/decoration-interieure-paris', title: 'Décoration intérieure à Paris — guide 2025' },
+              { href: '/blog/renovation-appartement-marais-paris', title: 'Rénovation appartement Marais Paris' },
+              { href: '/blog/moulures-paris', title: 'Moulures Paris : restauration et pose' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -342,23 +359,23 @@ export default function ArticleSaintGermain() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#1C1C1C] text-center px-4">
-        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
+      <section className="py-16 bg-[#D4AF37] text-center px-4">
+        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
           Vous rénovez un appartement à Saint-Germain-des-Prés ?
         </h2>
-        <p className="text-gray-400 text-sm font-light mb-8">
+        <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
           Devis gratuit et détaillé sous 48h. Déplacement sans engagement dans le 6e et alentours.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact"
-            className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#c9a030] transition-colors"
+            className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-black transition-colors"
           >
             Devis gratuit <ArrowRight size={13} />
           </Link>
           <a
             href="tel:+33611783867"
-            className="flex items-center justify-center gap-2 border border-gray-600 text-gray-300 px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-white hover:text-white transition-colors"
+            className="flex items-center justify-center gap-2 border border-[#1C1C1C]/30 text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-[#1C1C1C] transition-colors"
           >
             <Phone size={14} />
             06 11 78 38 67

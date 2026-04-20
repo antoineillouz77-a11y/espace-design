@@ -570,6 +570,12 @@ const articles = [
     desc: 'Budget pour rénover une salle de bain à Paris : carrelage, douche, vasque, plomberie. Prix détaillés par poste artisan 2025.',
     tag: 'Prix & Budgets',
   },
+  {
+    href: '/blog/renovation-couloir-paris',
+    title: 'Rénovation Couloir Paris : astuces pour un espace petit & sombre 2025',
+    desc: 'Rénover un couloir parisien étroit et sombre : peinture claire, miroirs, éclairage, rangements intégrés. Prix et idées 2025.',
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
