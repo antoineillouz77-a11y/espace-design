@@ -555,6 +555,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Seine-et-Marne (77) — vague 19-20
     { url: `${base}/renovation-gretz-armainvilliers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Val-d'Oise (95) — vague 20
+    { url: `${base}/renovation-persan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     // Essonne (91) — vague 20
     { url: `${base}/renovation-varennes-jarcy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 

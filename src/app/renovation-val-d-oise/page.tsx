@@ -60,6 +60,7 @@ const villes95 = [
   { href: '/renovation-marines', label: 'Marines' },
   { href: '/renovation-ecouen', label: 'Écouen' },
   { href: '/renovation-sannois', label: 'Sannois' },
+  { href: '/renovation-persan', label: 'Persan' },
 ]
 
 const services = [
