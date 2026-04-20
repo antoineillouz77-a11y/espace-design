@@ -1218,6 +1218,24 @@ const articles = [
     desc: "Rénover sa chambre à Paris en 2025. Tendances déco, matériaux, placards sur mesure, parquet, éclairage, prix artisan. Devis gratuit 48h.",
     tag: 'Chambre',
   },
+  {
+    href: '/blog/renovation-appartement-oberkampf-paris',
+    title: "Rénovation Appartement Oberkampf Paris 11e : artisan & prix 2025",
+    desc: "Rénover un appartement à Oberkampf Paris 11e. Immeubles anciens, lofts, rénovation totale, prix artisan. Devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-nation-paris',
+    title: "Rénovation Appartement Nation Paris 11e/12e : artisan & prix 2025",
+    desc: "Rénover un appartement près de Nation à Paris 11e/12e. Appartements haussmanniens, prix artisan. Devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-republique-paris',
+    title: "Rénovation Appartement République Paris 10e/11e : artisan & prix 2025",
+    desc: "Rénover un appartement près de République à Paris 10e/11e. Logements anciens et récents, prix artisan. Devis gratuit 48h.",
+    tag: 'Quartier',
+  },
 ]
 
 export default function BlogPage() {
