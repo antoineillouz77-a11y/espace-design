@@ -696,6 +696,18 @@ const articles = [
     desc: "Rénovation appartement dans le 11e arrondissement de Paris : Bastille, Oberkampf, Nation. Artisan local, devis 48h.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-paris-3e',
+    title: 'Rénovation Appartement Paris 3e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 3e arrondissement de Paris : Marais nord, Arts-et-Métiers, Temple. ABF, parquet, plafonds. Devis 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/renovation-appartement-paris-14e',
+    title: 'Rénovation Appartement Paris 14e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 14e arrondissement de Paris : Montparnasse, Alésia, Plaisance. Artisan, devis 48h.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {

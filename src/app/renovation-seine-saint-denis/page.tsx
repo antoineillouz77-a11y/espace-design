@@ -60,6 +60,7 @@ const villes93 = [
   { href: '/renovation-pierrefitte-sur-seine', label: 'Pierrefitte-sur-Seine' },
   { href: '/renovation-stains', label: 'Stains' },
   { href: '/renovation-la-courneuve', label: 'La Courneuve' },
+  { href: '/renovation-gagny', label: 'Gagny' },
 ]
 
 const services = [
