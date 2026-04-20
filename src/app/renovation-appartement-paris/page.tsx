@@ -386,8 +386,29 @@ export default function RenovationParis() {
         </div>
       </section>
 
-      {/* Ressources utiles */}
+      {/* Départements IDF */}
       <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Île-de-France</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
+              { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
+              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
+              { href: '/renovation-val-d-oise', label: 'Val-d\'Oise (95)' },
+              { href: '/renovation-essonne', label: 'Essonne (91)' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ressources utiles */}
+      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">À explorer</p>
           <div className="flex flex-wrap gap-3">

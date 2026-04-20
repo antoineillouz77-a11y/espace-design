@@ -270,6 +270,12 @@ const articles = [
     desc: "Rénover sa terrasse à Paris : lames composite, carrelage sur plots, bois exotique. Prix au m², copropriété. Guide complet 2025.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/renovation-balcon-paris',
+    title: 'Rénovation Balcon Paris : carrelage, étanchéité & prix 2025',
+    desc: "Rénover son balcon à Paris : carrelage sur plots, lames composite, étanchéité, garde-corps. Prix au m² et guide complet 2025.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
