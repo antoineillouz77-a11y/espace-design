@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Montrouge — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Montrouge (92120) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Montrouge. Rénovation complète, parquet, salle de bain. Devis gratuit 48h. Proche Paris 14e.',
+    'Artisan rénovateur à Montrouge (92120). Rénovation appartement, salle de bain, cuisine. Ville dense adjacente à Paris, nombreux appartements à rénover. Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Montrouge',
     'artisan rénovation Montrouge',
@@ -25,7 +25,7 @@ const schemaLocal = {
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-montrouge',
   areaServed: {
-    '@type': 'AdministrativeArea',
+    '@type': 'City',
     name: 'Montrouge',
   },
   address: {
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
     { '@type': 'ListItem', position: 3, name: 'Montrouge', item: 'https://espacedesignparis.fr/renovation-montrouge' },
   ],
 }
@@ -109,7 +109,7 @@ export default function RenovationMontrouge() {
             Rénovation appartement<br className="hidden sm:block" /> Montrouge
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Montrouge. Rénovation complète, parquet, salle de bain, finitions haut de gamme. Centre-ville, Bagneux, proche Paris 14e. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Montrouge. Ville dense adjacente à Paris, nous intervenons dans vos nombreux appartements à rénover. Rénovation complète, salle de bain, parquet, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -223,10 +223,11 @@ export default function RenovationMontrouge() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
+              { href: '/renovation-malakoff', label: 'Malakoff' },
+              { href: '/renovation-vanves', label: 'Vanves' },
               { href: '/renovation-paris-14e', label: 'Paris 14e' },
               { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
-              { href: '/renovation-malakoff', label: 'Malakoff' },
-              { href: '/renovation-paris-15e', label: 'Paris 15e' },
             ].map((z) => (
               <Link
                 key={z.href}

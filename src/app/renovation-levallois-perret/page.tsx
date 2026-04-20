@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Levallois-Perret — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Levallois-Perret (92300) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur et décorateur intérieur à Levallois-Perret. Rénovation complète, décoration haut de gamme, sur-mesure. Devis gratuit 48h. Anatole France, Louise Michel, Champerret.',
+    'Artisan rénovateur à Levallois-Perret (92) : appartements des années 70-80, rénovation complète, finitions soignées. Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Levallois-Perret',
     'artisan rénovation Levallois',
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
     { '@type': 'ListItem', position: 3, name: 'Levallois-Perret', item: 'https://espacedesignparis.fr/renovation-levallois-perret' },
   ],
 }
@@ -227,8 +227,11 @@ export default function RenovationLevallois() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-paris-17e', label: 'Paris 17e' },
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
               { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
+              { href: '/renovation-clichy', label: 'Clichy' },
+              { href: '/renovation-paris-17e', label: 'Paris 17e' },
+              { href: '/contact', label: 'Nous contacter' },
             ].map((z) => (
               <Link
                 key={z.href}

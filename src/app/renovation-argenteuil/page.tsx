@@ -1,18 +1,27 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Argenteuil — Appartement & Maison (95) | Espace Design',
+  title: 'Rénovation Argenteuil (95100) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Argenteuil (95). Rénovation appartement, maison, salle de bain, cuisine. Devis gratuit 48h. Espace Design.',
+    'Artisan rénovateur à Argenteuil (95100). Rénovation appartement, maison, salle de bain, cuisine. Spécialiste immeubles anciens années 60-80. Devis gratuit 48h. Espace Design.',
+  keywords: [
+    'rénovation appartement Argenteuil',
+    'artisan rénovation Argenteuil',
+    'décoration intérieure Argenteuil',
+    'renovation Argenteuil 95100',
+    'entreprise renovation Argenteuil',
+    "artisan Argenteuil Val-d'Oise",
+  ],
 }
 
-const schemaLocalBusiness = {
+const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur à Argenteuil (95).',
+  description: 'Artisan rénovateur et décorateur intérieur à Argenteuil.',
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-argenteuil',
   areaServed: {
@@ -27,59 +36,71 @@ const schemaLocalBusiness = {
   },
 }
 
+const schemaFaq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Quel est le délai pour obtenir un devis à Argenteuil ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Argenteuil et dans toute la région.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Quel est le prix d'une rénovation complète à Argenteuil ?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Le coût d'une rénovation complète varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Avez-vous une assurance décennale ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Intervenez-vous à Argenteuil ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Oui, nous intervenons régulièrement à Argenteuil et dans toute l'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.",
+      },
+    },
+  ],
+}
+
 const schemaBreadcrumb = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: "Rénovation Val-d'Oise", item: 'https://espacedesignparis.fr/renovation-val-d-oise' },
     { '@type': 'ListItem', position: 3, name: 'Argenteuil', item: 'https://espacedesignparis.fr/renovation-argenteuil' },
   ],
 }
-
-const services = [
-  { label: 'Rénovation salle de bain', href: '/renovation-salle-de-bain-paris' },
-  { label: 'Rénovation cuisine', href: '/renovation-cuisine-paris' },
-  { label: 'Peinture intérieure', href: '/peinture-paris' },
-  { label: 'Parquet', href: '/parquet-paris' },
-  { label: 'Carrelage', href: '/carrelage-paris' },
-  { label: 'Électricité', href: '/electricite-paris' },
-  { label: 'Plomberie', href: '/plomberie-paris' },
-  { label: 'Menuiserie', href: '/menuiserie-paris' },
-  { label: 'Isolation', href: '/isolation-paris' },
-  { label: 'Plâtrerie', href: '/platrererie-paris' },
-  { label: 'Décoration intérieure', href: '/decoration-interieure-paris' },
-  { label: 'Aménagement intérieur', href: '/amenagement-interieur-paris' },
-]
-
-const avantages = [
-  { title: 'Grande ville, grande expérience', desc: 'Argenteuil est l\'une des villes les plus peuplées d\'Île-de-France. Nous intervenons sur tous types de logements : grands ensembles, maisons individuelles, immeubles anciens ou récents.' },
-  { title: 'Travaux clés en main', desc: 'Salle de bain, cuisine, peinture, parquet : nos artisans qualifiés prennent en charge l\'intégralité du chantier. Vous gagnez du temps et évitez la coordination de multiples prestataires.' },
-  { title: 'Devis gratuit sous 48h', desc: 'Nous nous déplaçons gratuitement à Argenteuil pour estimer votre projet. Vous recevez un devis détaillé et transparent sous 48 heures, sans engagement.' },
-]
-
-const voisines = [
-  { href: '/renovation-clichy', label: 'Clichy' },
-  { href: '/renovation-asnieres-sur-seine', label: 'Asnières-sur-Seine' },
-  { href: '/renovation-colombes', label: 'Colombes' },
-  { href: '/renovation-bois-colombes', label: 'Bois-Colombes' },
-  { href: '/renovation-gennevilliers', label: 'Gennevilliers' },
-  { href: '/renovation-sartrouville', label: 'Sartrouville' },
-]
 
 export default function RenovationArgenteuil() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocalBusiness) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocal) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
-      {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Argenteuil — 95100</p>
@@ -88,7 +109,7 @@ export default function RenovationArgenteuil() {
             Rénovation Argenteuil
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Argenteuil (95). Rénovation appartement, maison, salle de bain, cuisine. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Argenteuil. Spécialiste de la rénovation d&apos;immeubles anciens des années 60-80, appartements et maisons. Finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -108,51 +129,137 @@ export default function RenovationArgenteuil() {
         </div>
       </section>
 
-      {/* Nos services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
             Nos services à Argenteuil
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {services.map((s) => (
-              <Link
-                key={s.href}
-                href={s.href}
-                className="flex items-center gap-3 bg-white rounded-lg px-5 py-4 border border-gray-100 hover:border-[#D4AF37] transition-colors group"
-              >
-                <CheckCircle size={16} className="text-[#B8960C] flex-shrink-0" />
-                <span className="text-sm text-[#1C1C1C] font-light group-hover:text-[#B8960C] transition-colors">{s.label}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pourquoi nous choisir */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Pourquoi nous choisir pour votre rénovation à Argenteuil
-          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {avantages.map((a) => (
-              <div key={a.title} className="bg-[#FAFAF8] rounded-lg p-6 border border-gray-100">
-                <div className="w-6 h-px bg-[#D4AF37] mb-4" />
-                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">{a.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed font-light">{a.desc}</p>
+            {[
+              { num: '01', title: 'Rénovation complète', desc: "Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Idéal pour remettre à neuf les immeubles des années 60-80 très présents à Argenteuil." },
+              { num: '02', title: 'Décoration intérieure', desc: "Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique adaptée à votre appartement ou maison." },
+              { num: '03', title: 'Sur-mesure & finitions', desc: "Menuiserie, parquet, carrelage, peinture décorative. Les détails qui transforment un intérieur ordinaire en espace exceptionnel." },
+            ].map((s) => (
+              <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
+                <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
+                <div className="w-6 h-px bg-[#D4AF37]/50 mb-4" />
+                <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-2">{s.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed font-light">{s.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Zones voisines */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Tous nos services
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {s.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
+            Une réalisation
+          </h2>
+          <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
+            <Image src="/images/realisations/25-wc-beton-cire.jpg" alt="Rénovation intérieure sur-mesure — Argenteuil" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {[
+              'Devis gratuit sous 48h',
+              'Assurance décennale',
+              "15+ ans d'expérience",
+              'Respect des délais',
+              'Finitions haut de gamme',
+              'Un seul interlocuteur',
+            ].map((a) => (
+              <div key={a} className="flex items-center gap-2 text-sm text-gray-600 font-light">
+                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0" />
+                {a}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Questions fréquentes
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: 'Quel est le délai pour obtenir un devis à Argenteuil ?',
+                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement à Argenteuil.',
+              },
+              {
+                q: "Quel est le prix d'une rénovation complète à Argenteuil ?",
+                a: "Le coût varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².",
+              },
+              {
+                q: 'Avez-vous une assurance décennale ?',
+                a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans.',
+              },
+              {
+                q: 'Intervenez-vous à Argenteuil ?',
+                a: "Oui, nous intervenons régulièrement à Argenteuil et dans toute l'Île-de-France. Devis gratuit sous 48h.",
+              },
+            ].map((item) => (
+              <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
+                <summary className="font-display text-base font-semibold text-[#1C1C1C] cursor-pointer list-none flex justify-between items-center">
+                  {item.q}
+                  <span className="text-[#D4AF37] text-lg ml-4 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="mt-3 text-gray-500 text-sm leading-relaxed font-light">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {voisines.map((z) => (
+            {[
+              { href: '/renovation-cergy', label: 'Cergy' },
+              { href: '/renovation-epinay-sur-seine', label: 'Épinay-sur-Seine' },
+              { href: '/renovation-sannois', label: 'Sannois' },
+              { href: '/renovation-val-d-oise', label: "Val-d'Oise (95)" },
+            ].map((z) => (
               <Link
                 key={z.href}
                 href={z.href}
@@ -165,14 +272,39 @@ export default function RenovationArgenteuil() {
         </div>
       </section>
 
-      {/* CTA */}
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
             Votre projet à Argenteuil
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement à Argenteuil et dans tout le Val-d'Oise.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune d&apos;Argenteuil.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

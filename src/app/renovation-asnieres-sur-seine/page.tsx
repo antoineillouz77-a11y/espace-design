@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Asnières-sur-Seine — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Asnières-sur-Seine (92600) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Asnières-sur-Seine. Rénovation complète, décoration sur-mesure. Devis gratuit 48h. Village d\'Asnières, Bords de Seine.',
+    'Artisan rénovateur à Asnières-sur-Seine (92600). Rénovation appartement, salle de bain, cuisine. Ville bord de Seine, anciens immeubles et résidences récentes. Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Asnières-sur-Seine',
     'artisan rénovation Asnières',
@@ -25,7 +25,7 @@ const schemaLocal = {
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-asnieres-sur-seine',
   areaServed: {
-    '@type': 'AdministrativeArea',
+    '@type': 'City',
     name: 'Asnières-sur-Seine',
   },
   address: {
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
     { '@type': 'ListItem', position: 3, name: 'Asnières-sur-Seine', item: 'https://espacedesignparis.fr/renovation-asnieres-sur-seine' },
   ],
 }
@@ -109,7 +109,7 @@ export default function RenovationAsnieres() {
             Rénovation appartement<br className="hidden sm:block" /> Asnières-sur-Seine
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Asnières-sur-Seine. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Village d&apos;Asnières, Bords de Seine, Grésillons. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Asnières-sur-Seine. Ville bord de Seine, nous intervenons dans vos anciens immeubles comme dans vos résidences récentes. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -223,10 +223,11 @@ export default function RenovationAsnieres() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-paris-17e', label: 'Paris 17e' },
-              { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
+              { href: '/renovation-clichy', label: 'Clichy' },
+              { href: '/renovation-colombes', label: 'Colombes' },
               { href: '/renovation-courbevoie', label: 'Courbevoie' },
-              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
+              { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
             ].map((z) => (
               <Link
                 key={z.href}

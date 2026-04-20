@@ -217,9 +217,9 @@ export default function RenovationIvrySurSeine() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-charenton-le-pont', label: 'Charenton-le-Pont' },
-              { href: '/renovation-maisons-alfort', label: 'Maisons-Alfort' },
+              { href: '/renovation-vitry-sur-seine', label: 'Vitry-sur-Seine' },
               { href: '/renovation-paris-13e', label: 'Paris 13e' },
-              { href: '/renovation-paris-12e', label: 'Paris 12e' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
             ].map((z) => (
               <Link
                 key={z.href}

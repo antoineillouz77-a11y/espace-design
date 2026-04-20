@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Boulogne-Billancourt — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Boulogne-Billancourt (92100) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur et décorateur intérieur à Boulogne-Billancourt. Rénovation complète, décoration haut de gamme, sur-mesure. Devis gratuit 48h. Billancourt, Reine, Jean Jaurès, Marcel Sembat.',
+    'Artisan rénovateur à Boulogne-Billancourt (92) : studios anciens, grands appartements modernes, finitions haut de gamme. Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Boulogne-Billancourt',
     'artisan rénovation Boulogne',
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
     { '@type': 'ListItem', position: 3, name: 'Boulogne-Billancourt', item: 'https://espacedesignparis.fr/renovation-boulogne-billancourt' },
   ],
 }
@@ -227,11 +227,11 @@ export default function RenovationBoulogne() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-paris-15e', label: 'Paris 15e' },
-              { href: '/renovation-paris-16e', label: 'Paris 16e' },
-              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
               { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
-              { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
+              { href: '/renovation-meudon', label: 'Meudon' },
+              { href: '/renovation-paris-16e', label: 'Paris 16e' },
+              { href: '/contact', label: 'Nous contacter' },
             ].map((z) => (
               <Link
                 key={z.href}

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Saint-Germain-en-Laye — Artisan & Devis | Espace Design',
+  title: 'Rénovation Saint-Germain-en-Laye (78100) — Artisan Rénovateur | Espace Design',
   description:
     'Artisan rénovateur à Saint-Germain-en-Laye (78100). Rénovation complète, maison, salle de bain, cuisine haut de gamme. Devis gratuit 48h.',
   keywords: [
@@ -38,7 +38,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Yvelines', item: 'https://espacedesignparis.fr/renovation-yvelines' },
     { '@type': 'ListItem', position: 3, name: 'Rénovation Saint-Germain-en-Laye', item: 'https://espacedesignparis.fr/renovation-saint-germain-en-laye' },
   ],
 }
@@ -214,10 +214,11 @@ export default function RenovationSaintGermainEnLaye() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
               { href: '/renovation-versailles', label: 'Versailles' },
-              { href: '/renovation-rueil-malmaison', label: 'Rueil-Malmaison' },
-              { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
-              { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
+              { href: '/renovation-le-pecq', label: 'Le Pecq' },
+              { href: '/renovation-chatou', label: 'Chatou' },
+              { href: '/contact', label: 'Nous contacter' },
             ].map((z) => (
               <Link
                 key={z.href}

@@ -4,16 +4,17 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Versailles — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Versailles (78000) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur et décorateur intérieur à Versailles. Rénovation complète, décoration haut de gamme, sur-mesure. Devis gratuit 48h. Chantiers, Notre-Dame, Saint-Louis, Clagny.',
+    'Artisan rénovateur à Versailles (78) : appartements en centre-ville, maisons bourgeoises, bâtiments classés. Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Versailles',
     'artisan rénovation Versailles',
     'décoration intérieure Versailles',
     'renovation Versailles 78000',
     'entreprise renovation Versailles',
-    'artisan Versailles yvelines',
+    'artisan Versailles Yvelines',
+    'rénovation bâtiment classé Versailles',
   ],
 }
 
@@ -80,7 +81,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Yvelines', item: 'https://espacedesignparis.fr/renovation-yvelines' },
     { '@type': 'ListItem', position: 3, name: 'Versailles', item: 'https://espacedesignparis.fr/renovation-versailles' },
   ],
 }
@@ -227,8 +228,11 @@ export default function RenovationVersailles() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
-              { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
+              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
+              { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
+              { href: '/renovation-le-chesnay', label: 'Le Chesnay' },
+              { href: '/renovation-viroflay', label: 'Viroflay' },
+              { href: '/contact', label: 'Nous contacter' },
             ].map((z) => (
               <Link
                 key={z.href}

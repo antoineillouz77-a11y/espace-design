@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Rueil-Malmaison — Artisan & Devis | Espace Design',
+  title: 'Rénovation Rueil-Malmaison (92500) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Rueil-Malmaison (92500). Rénovation complète, salle de bain, cuisine, décoration sur mesure. Devis gratuit 48h. Espace Design.',
+    'Artisan rénovateur à Rueil-Malmaison (92500). Rénovation appartement, maison, salle de bain, cuisine. Grande commune résidentielle, quartiers pavillonnaires. Devis gratuit 48h.',
   keywords: [
     'rénovation appartement Rueil-Malmaison',
     'artisan rénovation Rueil 92',
@@ -23,7 +23,7 @@ const schemaLocal = {
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-rueil-malmaison',
   areaServed: {
-    '@type': 'AdministrativeArea',
+    '@type': 'City',
     name: 'Rueil-Malmaison',
   },
   address: {
@@ -39,7 +39,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Hauts-de-Seine', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
     { '@type': 'ListItem', position: 3, name: 'Rénovation Rueil-Malmaison', item: 'https://espacedesignparis.fr/renovation-rueil-malmaison' },
   ],
 }
@@ -108,7 +108,7 @@ export default function RenovationRueilMalmaison() {
             Rénovation appartement<br className="hidden sm:block" /> Rueil-Malmaison
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Rueil-Malmaison et dans les communes voisines. Rénovation complète, salle de bain, cuisine, finitions sur mesure. Devis gratuit sous 48h.
+            Artisan rénovateur à Rueil-Malmaison. Grande commune résidentielle, nous intervenons dans vos maisons et appartements en quartiers pavillonnaires. Rénovation complète, salle de bain, cuisine, finitions sur mesure. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -215,10 +215,11 @@ export default function RenovationRueilMalmaison() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
               { href: '/renovation-nanterre', label: 'Nanterre' },
               { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
-              { href: '/renovation-suresnes', label: 'Suresnes' },
-              { href: '/renovation-versailles', label: 'Versailles' },
+              { href: '/renovation-chatou', label: 'Chatou' },
+              { href: '/renovation-courbevoie', label: 'Courbevoie' },
             ].map((z) => (
               <Link
                 key={z.href}
