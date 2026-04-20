@@ -2274,6 +2274,12 @@ const articles = [
     desc: "Artisan rénovateur à Yerres (Essonne). Cuisine, salle de bain, parquet, peinture. Devis gratuit.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-torcy',
+    title: "Rénovation Appartement Torcy (77) — Guide 2025",
+    desc: "Rénover un appartement à Torcy (Seine-et-Marne). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
