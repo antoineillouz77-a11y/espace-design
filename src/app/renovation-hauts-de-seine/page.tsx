@@ -69,6 +69,7 @@ const villes92 = [
   { href: '/renovation-fontenay-aux-roses', label: 'Fontenay-aux-Roses' },
   { href: '/renovation-sceaux', label: 'Sceaux' },
   { href: '/renovation-bois-colombes', label: 'Bois-Colombes' },
+  { href: '/renovation-gennevilliers', label: 'Gennevilliers' },
 ]
 
 const services = [

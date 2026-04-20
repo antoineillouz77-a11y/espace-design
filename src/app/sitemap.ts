@@ -433,6 +433,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Hauts-de-Seine (92) — nouvelles villes
     { url: `${base}/renovation-bois-colombes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-gennevilliers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Pages hub département
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
