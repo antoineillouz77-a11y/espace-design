@@ -68,6 +68,7 @@ const villes92 = [
   { href: '/renovation-le-plessis-robinson', label: 'Le Plessis-Robinson' },
   { href: '/renovation-fontenay-aux-roses', label: 'Fontenay-aux-Roses' },
   { href: '/renovation-sceaux', label: 'Sceaux' },
+  { href: '/renovation-bois-colombes', label: 'Bois-Colombes' },
 ]
 
 const services = [
