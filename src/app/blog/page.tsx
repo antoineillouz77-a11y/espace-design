@@ -426,6 +426,18 @@ const articles = [
     desc: 'Peindre son plafond à Paris : préparation, peinture blanc mat, plafond tendu, rosace décorative. Prix au m² et artisan peintre 2025.',
     tag: 'Peinture',
   },
+  {
+    href: '/blog/renovation-parquet-contrecolle-paris',
+    title: 'Parquet Contrecollé Paris : pose, prix & avantages 2025',
+    desc: 'Choisir et poser du parquet contrecollé à Paris : avantages vs massif, pose flottante vs collée, essences. Prix au m² et artisan 2025.',
+    tag: 'Parquet',
+  },
+  {
+    href: '/blog/amenagement-combles-perdus-paris',
+    title: 'Aménagement Combles Perdus Paris : isolation, plancher & prix 2025',
+    desc: 'Aménager ses combles perdus à Paris : isolation soufflée ou rampant, trappe, plancher. Éligibilité MaPrimeRénov. Prix 2025.',
+    tag: 'Isolation',
+  },
 ]
 
 export default function BlogPage() {
