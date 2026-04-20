@@ -62,6 +62,8 @@ const villes95 = [
   { href: '/renovation-sannois', label: 'Sannois' },
   { href: '/renovation-persan', label: 'Persan' },
   { href: '/renovation-beaumont-sur-oise', label: 'Beaumont-sur-Oise' },
+  { href: '/renovation-viarmes', label: 'Viarmes' },
+  { href: '/renovation-luzarches', label: 'Luzarches' },
 ]
 
 const services = [

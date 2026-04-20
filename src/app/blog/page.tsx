@@ -1044,6 +1044,12 @@ const articles = [
     desc: "Installer une porte blindée à Paris. Certifications A2P, démarches copropriété, prix 2025. Devis gratuit 48h.",
     tag: 'Menuiserie',
   },
+  {
+    href: '/blog/credence-cuisine-paris',
+    title: 'Crédence Cuisine Paris : matériaux, pose & prix artisan 2025',
+    desc: "Choisir et faire poser sa crédence cuisine à Paris. Carrelage, verre, inox, zellige. Prix artisan 2025. Devis gratuit 48h.",
+    tag: 'Cuisine',
+  },
 ]
 
 export default function BlogPage() {

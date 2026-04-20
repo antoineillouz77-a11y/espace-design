@@ -555,9 +555,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Seine-et-Marne (77) — vague 19-20
     { url: `${base}/renovation-gretz-armainvilliers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
-    // Val-d'Oise (95) — vague 20
+    // Val-d'Oise (95) — vague 20-21
     { url: `${base}/renovation-persan`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-beaumont-sur-oise`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-viarmes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-luzarches`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 16
+    { url: `${base}/blog/credence-cuisine-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Essonne (91) — vague 20
     { url: `${base}/renovation-varennes-jarcy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
