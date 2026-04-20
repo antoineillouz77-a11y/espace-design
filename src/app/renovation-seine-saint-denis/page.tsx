@@ -64,6 +64,7 @@ const villes93 = [
   { href: '/renovation-montfermeil', label: 'Montfermeil' },
   { href: '/renovation-neuilly-plaisance', label: 'Neuilly-Plaisance' },
   { href: '/renovation-clichy-sous-bois', label: 'Clichy-sous-Bois' },
+  { href: '/renovation-sevran', label: 'Sevran' },
 ]
 
 const services = [

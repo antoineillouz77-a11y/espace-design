@@ -16,7 +16,7 @@ const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Prix Rénovation Salle de Bain Paris : tarifs détaillés 2025 | Espace Design',
-  description: 'Prix rénovation salle de bain à Paris : petite surface 3m², carrelage mural, meuble vasque, douche italienne. Tarifs artisan 2025.',
+  description: "Prix rénovation salle de bain à Paris : petite surface 3m², carrelage mural, meuble vasque, douche italienne. Tarifs artisan 2025.",
   datePublished: '2025-04-20',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
@@ -33,34 +33,34 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix moyen d\'une rénovation de salle de bain à Paris en 2025 ?',
+      name: "Quel est le prix d'une rénovation de salle de bain à Paris en 2025 ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le prix moyen d\'une rénovation de salle de bain à Paris se situe entre 3 000 et 15 000 € selon la surface et le niveau de finition. Pour une petite salle de bain de 3 m² avec douche italienne, meuble vasque et WC suspendu en finition standard, comptez 5 000 à 8 000 €. Une salle de bain de 6 à 8 m² en finition intermédiaire revient à 8 000 – 15 000 €. Les finitions premium (carrelage grès cérame grand format, robinetterie haut de gamme, baignoire îlot) font monter la facture à 15 000 – 30 000 € pour une grande salle de bain.',
+        text: "À Paris, le prix d'une rénovation de salle de bain varie selon la surface et le niveau de prestations. Pour une petite salle de bain de 3 m², comptez 3 000 à 6 000 € pour un basique, 6 000 à 10 000 € pour un niveau intermédiaire avec douche à l'italienne. Pour une salle de bain de 6 à 8 m², le budget passe à 8 000 – 15 000 € en intermédiaire et 15 000 – 30 000 € en premium avec marbre, robinetterie haut de gamme et baignoire îlot. Ces prix incluent main d'oeuvre et matériaux.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Douche italienne ou baignoire : que choisir pour une salle de bain à Paris ?',
+      name: "Combien coûte une douche à l'italienne à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dans les petits appartements parisiens (moins de 6 m² de salle de bain), la douche italienne est presque toujours préférable : elle optimise l\'espace, facilite l\'entretien et répond aux attentes des locataires et acheteurs actuels. La baignoire reste pertinente pour les familles avec enfants et pour les grandes salles de bain (plus de 8 m²) dans des appartements familiaux. Le coût d\'une douche italienne est supérieur à celui d\'une douche bac (receveur à encastrer dans la chape : 300 à 800 € de plus) mais le résultat esthétique et fonctionnel est nettement supérieur.',
+        text: "La création d'une douche à l'italienne à Paris coûte entre 2 000 et 8 000 € selon la taille et les matériaux. Douche à l'italienne basique (receveur extra-plat 80×80, paroi verre simple, carrelage standard) : 2 000 – 3 500 €. Douche italienne intermédiaire (receveur 90×120 ou bac à douche encastré, paroi verre 10 mm, carrelage qualité) : 3 500 – 5 500 €. Douche italienne premium (sol en marbre, paroi sans bord apparent, robinetterie Hansgrohe ou Dornbracht, niche éclairée) : 5 500 – 8 000 €. Ces prix incluent la pose et le raccordement plomberie.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien coûte le carrelage d\'une salle de bain à Paris, pose comprise ?',
+      name: "Faut-il vider complètement la salle de bain pour la rénover ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le prix du carrelage pose comprise dans une salle de bain à Paris varie entre 60 et 200 €/m² selon le matériau et le format. Carrelage standard (20x20 ou 30x60, grès cérame) : 60 à 90 €/m². Carrelage intermédiaire (grand format 60x120, effet marbre) : 90 à 140 €/m². Carrelage premium (grand format 120x120, grès cérame pleine masse ou véritable marbre) : 140 à 200 €/m² et plus. Pour une salle de bain de 5 m², comptez entre 1 200 et 4 000 € pour l\'ensemble sol + murs (environ 20 m² à poser).',
+        text: "Pour une rénovation complète (nouveau carrelage, nouvelle plomberie, nouvelle électricité), oui : tout doit être déposé — anciens carrelages, sanitaires, meubles. Cette mise à nu permet de vérifier l'état de l'étanchéité, de la plomberie et des gaines électriques. Pour un simple rafraîchissement (peinture, remplacement du meuble vasque, nouvelle robinetterie), il est possible d'intervenir sans dépose complète. Espace Design fait un diagnostic avant travaux pour vous indiquer ce qui doit obligatoirement être repris.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien de temps dure une rénovation de salle de bain à Paris ?',
+      name: "Combien de temps dure la rénovation d'une salle de bain à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Une rénovation complète de salle de bain à Paris dure entre 2 et 4 semaines selon la surface et la complexité. Phase 1 (démolition et gros oeuvre) : 2 à 3 jours. Phase 2 (plomberie et électricité) : 2 à 4 jours. Phase 3 (chape et étanchéité pour douche italienne) : 3 à 5 jours avec séchage. Phase 4 (carrelage) : 3 à 5 jours. Phase 5 (pose des équipements, finitions, peinture) : 2 à 3 jours. Au total : 12 à 20 jours ouvrés. La salle de bain est inutilisable pendant toute la durée du chantier.',
+        text: "Une rénovation complète d'une salle de bain de 4 à 6 m² à Paris prend généralement 10 à 20 jours ouvrés selon la complexité (démolition, plomberie, électricité, carrelage, pose des équipements, peinture). Le carrelage à lui seul nécessite 48 à 72h de séchage entre la pose et le rejointoiement. La salle de bain est hors service pendant toute la durée des travaux : prévoir un accès à une autre salle d'eau ou s'organiser en conséquence.",
       },
     },
   ],
@@ -68,10 +68,10 @@ const schemaFaq = {
 
 export const metadata: Metadata = {
   title: 'Prix Rénovation Salle de Bain Paris : tarifs détaillés 2025 | Espace Design',
-  description: 'Prix rénovation salle de bain à Paris : petite surface 3m², carrelage mural, meuble vasque, douche italienne. Tarifs artisan 2025.',
+  description: "Prix rénovation salle de bain à Paris : petite surface 3m², carrelage mural, meuble vasque, douche italienne. Tarifs artisan 2025.",
 }
 
-export default function ArticlePrixSalleDeBain() {
+export default function ArticlePrixRenovationSalleDeBain() {
   return (
     <>
       <script
@@ -98,56 +98,62 @@ export default function ArticlePrixSalleDeBain() {
             Prix Rénovation Salle de Bain Paris : tarifs détaillés 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            La salle de bain est la pièce où le rapport qualité-prix est le plus scruté. À Paris, les contraintes de surface, les réseaux à déplacer et le choix des matériaux font varier les budgets du simple au triple. Ce guide détaille poste par poste les prix pratiqués par les artisans parisiens en 2025.
+            Combien coûte vraiment la rénovation d&apos;une salle de bain à Paris ? Des petites surfaces de 3 m² aux grandes salles de bain prestige, des simples rafraîchissements aux rénovations complètes avec douche à l&apos;italienne et marbre : guide des tarifs 2025 par poste, par niveau de finition, et par surface.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Tableau des niveaux */}
+      {/* Section 1 — Tableau des prix par niveau */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Tableau des prix : 3 niveaux de rénovation salle de bain à Paris
+            Prix rénovation salle de bain Paris : tableau par niveau de finition
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les prix incluent la main d&apos;œuvre, les matériaux et la gestion du chantier. Ils s&apos;entendent pour une salle de bain de 4 à 6 m² à Paris, hors désamiantage ou traitement du plomb si nécessaire.
+            Les prix ci-dessous s&apos;entendent main d&apos;œuvre et matériaux inclus, pour une rénovation complète à Paris (dépose des anciens équipements, plomberie, électricité, carrelage, pose des nouveaux équipements). Ils n&apos;incluent pas les éventuels travaux de maçonnerie lourde ni les déplacements de cloisons.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
                   <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Equipements</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Matériaux</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget total</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">3 m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">5 m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">8 m²</th>
                 </tr>
               </thead>
               <tbody>
                 {[
                   {
-                    niveau: 'Basique',
-                    equipements: 'Douche bac + meuble vasque + WC',
-                    materiaux: 'Carrelage 30x60 standard, robinetterie entrée de gamme',
-                    total: '3 000 – 8 000 €',
+                    niveau: "Basique",
+                    s3: "3 000 – 5 000 €",
+                    s5: "5 000 – 8 000 €",
+                    s8: "8 000 – 12 000 €",
                   },
                   {
-                    niveau: 'Intermédiaire',
-                    equipements: 'Douche italienne + meuble suspendu + WC suspendu + VMC',
-                    materiaux: 'Carrelage 60x120 effet béton ou pierre, robinetterie Hansgrohe / Grohe',
-                    total: '8 000 – 15 000 €',
+                    niveau: "Intermédiaire",
+                    s3: "5 000 – 8 000 €",
+                    s5: "8 000 – 13 000 €",
+                    s8: "13 000 – 20 000 €",
                   },
                   {
-                    niveau: 'Premium',
-                    equipements: 'Douche italienne XL ou baignoire îlot + double vasque + WC japonais',
-                    materiaux: 'Grès cérame grand format, marbre véritable, robinetterie design haut de gamme',
-                    total: '15 000 – 30 000 €',
+                    niveau: "Premium",
+                    s3: "8 000 – 15 000 €",
+                    s5: "13 000 – 22 000 €",
+                    s8: "20 000 – 35 000 €",
+                  },
+                  {
+                    niveau: "Luxe / Marbre",
+                    s3: "15 000 – 25 000 €",
+                    s5: "22 000 – 40 000 €",
+                    s8: "35 000 – 60 000 €",
                   },
                 ].map((row, i) => (
                   <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
                     <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.niveau}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.equipements}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.materiaux}</td>
-                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.total}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.s3}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.s5}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.s8}</td>
                   </tr>
                 ))}
               </tbody>
@@ -156,16 +162,20 @@ export default function ArticlePrixSalleDeBain() {
           <div className="space-y-4">
             {[
               {
-                enjeu: 'Rénovation basique (3 000 – 8 000 €)',
-                detail: 'Solution pour les petites surfaces (3 à 4 m²) ou les budgets contraints. Remplacement des équipements à l\'identique, carrelage standard, peinture spéciale humidité. La plomberie et l\'électricité sont maintenues en place. Idéal pour un appartement locatif avec un budget de rafraîchissement limité.',
+                enjeu: "Niveau Basique — fonctionnel et propre",
+                detail: "Carrelage céramique standard (20 – 40 €/m²), meuble vasque sur pied ou encastré d'entrée de gamme, douche avec bac à poser, robinetterie économique. Tout neuf et fonctionnel, sans recherche esthétique particulière. Idéal pour une mise en location ou un premier logement.",
               },
               {
-                enjeu: 'Rénovation intermédiaire (8 000 – 15 000 €)',
-                detail: 'Le niveau le plus demandé à Paris. Tout est remplacé : douche italienne encastrée, meuble vasque suspendu avec miroir LED, WC suspendu (gain de place et facilité d\'entretien), carrelage grand format 60x120, VMC hygroréglable. La plomberie peut être légèrement déplacée. C\'est le rapport qualité-prix optimal pour un appartement de ville.',
+                enjeu: "Niveau Intermédiaire — le meilleur rapport qualité-prix",
+                detail: "Carrelage grès cérame (40 – 80 €/m²), douche à l'italienne avec receveur extra-plat, meuble vasque suspendu, robinetterie milieu de gamme (Grohe, Jacob Delafon). Rendu soigné et moderne, durabilité satisfaisante. Le niveau le plus souvent choisi à Paris pour une rénovation principale.",
               },
               {
-                enjeu: 'Rénovation premium (15 000 – 30 000 €)',
-                detail: 'Pour les appartements haut de gamme ou les grandes surfaces (plus de 7 m²). Baignoire îlot, douche à l\'italienne XL avec pommeau de pluie encastré au plafond, double vasque sur plan de travail marbre, WC japonais, chauffage radiant ou sèche-serviettes design, carrelage en marbre véritable. Matériaux importés sur mesure et délais plus longs (4 à 6 semaines).',
+                enjeu: "Niveau Premium — finitions haut de gamme",
+                detail: "Carrelage grand format ou pierre naturelle (80 – 200 €/m²), douche à l'italienne XL sans bord apparent, meuble vasque sur mesure, robinetterie Hansgrohe Axor ou Duravit, miroir rétroéclairé, plancher chauffant, niche éclairée. Pour les appartements de standing.",
+              },
+              {
+                enjeu: "Niveau Luxe / Marbre — le summum parisien",
+                detail: "Marbre Carrare ou Calacatta au sol et aux murs, robinetterie Dornbracht ou Vola, baignoire îlot en fonte, douche à l'italienne 120×120 cm, éclairage architectural, chauffage au sol hydraulique. Réservé aux appartements du 7e, 8e, 16e et 17e arrondissements.",
               },
             ].map((el) => (
               <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -177,36 +187,46 @@ export default function ArticlePrixSalleDeBain() {
         </div>
       </section>
 
-      {/* Section 2 — Détail par poste */}
+      {/* Section 2 — Prix par poste */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix par poste : ce que coûte chaque prestation
+            Prix détaillés par poste de travaux
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Comprendre la décomposition du prix d&apos;une rénovation de salle de bain permet de mieux prioriser et d&apos;arbitrer entre les différents postes selon votre budget.
+            Pour mieux comprendre et maîtriser votre budget, voici le détail des principaux postes d&apos;une rénovation de salle de bain à Paris, avec les fourchettes de prix pratiquées en 2025.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Carrelage sol et murs (pose + matériaux)',
-                solution: 'Carrelage standard 30x60 : 60 – 90 €/m². Carrelage intermédiaire grand format 60x120 : 90 – 140 €/m². Marbre véritable ou grès pleine masse : 140 – 200 €/m². Pour une SDB de 5 m² (environ 20 m² à poser) : 1 200 à 4 000 €. La douche italienne nécessite une étanchéité sous carrelage (150 – 350 € supplémentaires).',
-                cout: '60 – 200 €/m²',
+                titre: "Carrelage sol",
+                detail: "Pose carrelage céramique standard : 40 – 60 €/m². Carrelage grès cérame 60×60 cm : 60 – 100 €/m². Pierre naturelle ou marbre : 150 – 350 €/m². Béton ciré : 80 – 150 €/m². Inclut dépose de l'ancien carrelage, ragréage si nécessaire, pose et joints.",
+                cout: "40 – 350 €/m²",
               },
               {
-                titre: 'Plomberie (déplacement et remplacement)',
-                solution: 'Maintien de la plomberie en place avec remplacement des équipements : 800 – 1 500 €. Déplacement mineur (douche décalée de 30 cm) : 1 500 – 3 000 €. Reconfiguration complète avec déplacement de WC : 3 000 – 6 000 €. Remplacement des canalisations en plomb (obligatoire) : 2 000 – 5 000 €.',
-                cout: '800 – 6 000 €',
+                titre: "Carrelage mural",
+                detail: "Carrelage mural céramique : 35 – 70 €/m². Carrelage métro ou zellige : 70 – 150 €/m². Grand format grès cérame 60×120 cm : 80 – 160 €/m². Marbre mural (plaquettes ou dalles) : 200 – 500 €/m². Inclut pose et joints, hors dépose si recollage sur l'existant.",
+                cout: "35 – 500 €/m²",
               },
               {
-                titre: 'Électricité et VMC',
-                solution: 'Mise aux normes électricité salle de bain (zones de sécurité 0, 1, 2, hors zones) : 800 – 2 000 €. Pose VMC simple flux hygroréglable : 400 – 800 €. Pose VMC double flux (grande SDB ou SDB sans fenêtre) : 800 – 1 500 €. Éclairage encastré LED : 150 – 400 € selon nombre de spots.',
-                cout: '800 – 2 500 €',
+                titre: "Plomberie",
+                detail: "Remplacement robinetterie simple : 200 – 600 €. Remplacement complet plomberie salle de bain (alimentations + évacuations) : 1 500 – 4 000 €. Déplacement d'un point d'eau (WC, douche, vasque) : 500 – 1 500 €. Création d'un point d'eau supplémentaire : 800 – 2 000 €.",
+                cout: "200 – 4 000 €",
               },
               {
-                titre: 'Équipements sanitaires',
-                solution: 'Meuble vasque suspendu entrée de gamme : 300 – 600 €. Meuble vasque suspendu milieu de gamme : 600 – 1 500 €. WC suspendu avec bâti-support : 500 – 1 200 €. Douche bac : 200 – 500 €. Douche italienne (receveur + bonde + paroi) : 600 – 2 500 €. Baignoire standard : 400 – 1 000 €. Baignoire îlot : 1 500 – 6 000 €.',
-                cout: '1 500 – 10 000 €',
+                titre: "Électricité",
+                detail: "Mise aux normes électricité salle de bain (zones NF C 15-100, liaisons équipotentielles) : 600 – 1 500 €. Création point lumineux encastré : 150 – 300 €/spot. Plancher chauffant électrique (hors carrelage) : 60 – 100 €/m². Sèche-serviettes électrique posé : 200 – 600 €.",
+                cout: "600 – 1 500 €",
+              },
+              {
+                titre: "Meuble vasque et robinetterie",
+                detail: "Meuble vasque suspendu entrée de gamme : 300 – 800 €. Meuble vasque design milieu de gamme : 800 – 2 000 €. Meuble sur mesure menuiserie : 2 000 – 6 000 €. Robinetterie basique : 80 – 200 €. Robinetterie intermédiaire (Grohe, Hansgrohe) : 300 – 800 €. Robinetterie luxe (Dornbracht, Vola) : 1 000 – 5 000 €.",
+                cout: "380 – 11 000 €",
+              },
+              {
+                titre: "VMC et ventilation",
+                detail: "La ventilation mécanique est obligatoire dans les salles de bain. Remplacement d'un extracteur VMC simple flux : 200 – 500 €. Installation VMC double flux (confort accru, économies d'énergie) : 1 500 – 4 000 € pour l'appartement entier. Indispensable pour éviter condensation et moisissures.",
+                cout: "200 – 4 000 €",
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -214,7 +234,7 @@ export default function ArticlePrixSalleDeBain() {
                   <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
                   <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.cout}</div>
                 </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
             ))}
           </div>
@@ -225,27 +245,27 @@ export default function ArticlePrixSalleDeBain() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Douche italienne vs baignoire : quel choix pour une salle de bain parisienne ?
+            Douche à l&apos;italienne ou baignoire : que choisir à Paris ?
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le choix entre douche italienne et baignoire conditionne la répartition du budget et l&apos;usage quotidien de la salle de bain. Voici une comparaison objective pour vous aider à trancher.
+            Dans les petites surfaces parisiennes, le choix entre douche à l&apos;italienne et baignoire conditionne l&apos;ensemble de l&apos;aménagement. Chaque option a ses avantages selon la surface disponible, l&apos;usage prévu et le profil des occupants.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Douche italienne : le choix des appartements parisiens',
-                prix: '1 200 – 4 000 € (receveur + étanchéité + bonde + paroi ou verre)',
-                detail: 'La douche italienne (douche à l\'italienne ou douche de plain-pied) est le standard actuel pour les appartements parisiens. Avantages : gain d\'espace (pas de receveur haut), accessibilité PMR, facilité d\'entretien, esthétique contemporaine. Contrainte principale : nécessite de rebaisser le niveau du sol (création d\'une chape) pour encastrer la bonde, ce qui augmente les coûts et les délais. Ne convient pas si le plancher est trop mince (vérification préalable obligatoire).',
+                type: "Douche à l'italienne — le choix contemporain",
+                prix: "2 000 – 8 000 €",
+                detail: "La douche à l'italienne est aujourd'hui le standard des rénovations parisiennes. Elle agrandit visuellement la salle de bain (sol continu, sans bac saillant), facilite l'accès (PMR), et se pose dans des surfaces dès 3 m². Contrainte : elle nécessite une chape d'abaissement du sol (+ 500 à 1 500 €) et une évacuation en siphon de sol, ce qui peut poser problème dans les appartements en étage avec chape existante mince.",
               },
               {
-                type: 'Baignoire : pertinente pour les familles et les grandes surfaces',
-                prix: '800 – 8 000 € selon le modèle',
-                detail: 'La baignoire reste le choix des familles avec enfants en bas âge et des amateurs de bains relaxants. Dans une grande salle de bain (plus de 7 m²), baignoire + douche séparée est la configuration idéale. La baignoire îlot offre un impact esthétique fort pour les rénovations haut de gamme. Inconvénient en appartement parisien : encombrement important (minimum 1,70 x 0,75 m) qui peut rendre la pièce étriquée dans les petites surfaces.',
+                type: "Baignoire encastrée — le classique parisien",
+                prix: "1 500 – 6 000 €",
+                detail: "La baignoire encastrée (ou encaissée dans une tablette maçonnée) reste prisée dans les appartements familiaux et les rénovations haussmanniennes. Elle nécessite une surface minimale de 4 m² et s'associe souvent à une douche séparée dans les grandes salles de bain. Coût : baignoire acrylique encastrée posée : 1 500 – 3 000 €. Baignoire en fonte émaillée : 3 000 – 6 000 €.",
               },
               {
-                type: 'Douche bac receveur : l\'option économique',
-                prix: '400 – 1 500 €',
-                detail: 'Le receveur de douche à poser (bac acrylique ou résine) est la solution la moins coûteuse et la plus rapide à installer. Il ne nécessite pas de chape ni d\'étanchéité spéciale. Adapté aux budgets serrés ou aux rénovations locatives où l\'enjeu est la fonctionnalité plus que l\'esthétique. Les modèles extra-plats (4 cm) offrent un compromis intéressant entre aspect douche italienne et simplicité de pose.',
+                type: "Baignoire îlot — le luxe parisien",
+                prix: "5 000 – 20 000 €",
+                detail: "La baignoire îlot est la pièce maîtresse des salles de bain de prestige du 7e, 8e et 16e. Elle nécessite une surface d'au moins 10 m² pour ne pas sembler écrasée. Matériaux : résine de synthèse, fonte émaillée, pierre naturelle. La robinetterie se pose au sol (robinet de sol) ou au plafond (robinet plafond) — ce qui implique une conception soignée des alimentations.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -260,29 +280,62 @@ export default function ArticlePrixSalleDeBain() {
         </div>
       </section>
 
-      {/* Section 4 — Checklist */}
+      {/* Section 4 — Conseils et checklist */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Conseils pour optimiser son budget salle de bain à Paris
+            Conseils pour bien budgéter sa rénovation de salle de bain à Paris
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Six principes à retenir pour obtenir le meilleur rapport qualité-prix sur votre rénovation de salle de bain.
+            La salle de bain est l&apos;une des pièces les plus complexes à rénover : plomberie, électricité, carrelage et équipements doivent être coordonnés dans un espace souvent restreint. Voici les points essentiels à maîtriser pour éviter les mauvaises surprises.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
             {[
-              'Maintenir la plomberie en place autant que possible : chaque déplacement de point d\'eau coûte 500 à 1 500 €',
-              'Choisir un carrelage en phase avec votre budget global : le carrelage représente 25 à 40 % du coût total',
-              'Investir dans une VMC performante : l\'humidité est l\'ennemi des salles de bain parisiennes peu ventilées',
-              'Opter pour un WC suspendu : gain de place, facilité de nettoyage, valorise l\'appartement',
-              'Vérifier la faisabilité de la douche italienne avant de la budgéter : le plancher doit avoir 10 cm minimum de disponible',
-              'Prévoir 10 % de budget imprévus : les chantiers en appartement parisien réservent souvent des surprises',
+              "Toujours faire un diagnostic de l'étanchéité existante avant de recarreler",
+              "Prévoir 10 à 15 % de carrelage supplémentaire pour les chutes et les remplacements futurs",
+              "Intégrer la mise aux normes électriques NF C 15-100 dès la rénovation (liaisons équipotentielles obligatoires)",
+              "Ne jamais poser de nouveau carrelage sur un ancien décollé — risque de remontées d'humidité",
+              "Vérifier la capacité de débit d'eau chaude avant de choisir une grande douche à l'italienne",
+              "Anticiper la VMC — une salle de bain mal ventilée développe des moisissures en 6 mois",
+              "Demander un devis détaillé par poste pour comparer les offres entre artisans",
+              "Faire réaliser l'étanchéité sous carrelage (Schlüter, membrane KERDI) pour une durabilité maximale",
             ].map((item) => (
               <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                 <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
                 {item}
               </div>
             ))}
+          </div>
+
+          <div className="bg-white rounded-lg p-6 border border-gray-100">
+            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-3">
+              Prix au m² salle de bain rénovée à Paris (tous postes inclus)
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-[#FAFAF8]">
+                    <th className="text-left px-3 py-2 font-medium text-[#1C1C1C] text-xs">Niveau</th>
+                    <th className="text-center px-3 py-2 font-medium text-[#1C1C1C] text-xs">Prix / m²</th>
+                    <th className="text-center px-3 py-2 font-medium text-[#1C1C1C] text-xs">Matériaux types</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { niveau: "Basique", prix: "1 000 – 1 800 €", mat: "Céramique, acrylique, robinetterie économique" },
+                    { niveau: "Intermédiaire", prix: "1 800 – 2 800 €", mat: "Grès cérame, douche italienne, Grohe/Hansgrohe" },
+                    { niveau: "Premium", prix: "2 800 – 4 500 €", mat: "Grand format, douche XL, Axor/Jacob Delafon" },
+                    { niveau: "Luxe", prix: "4 500 – 7 500 €", mat: "Marbre, Dornbracht/Vola, baignoire îlot" },
+                  ].map((row, i) => (
+                    <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                      <td className="px-3 py-2 text-[#1C1C1C] font-medium text-sm">{row.niveau}</td>
+                      <td className="px-3 py-2 text-center text-[#B8960C] font-medium text-sm">{row.prix}</td>
+                      <td className="px-3 py-2 text-center text-gray-600 font-light text-xs">{row.mat}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
@@ -308,12 +361,12 @@ export default function ArticlePrixSalleDeBain() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Guides connexes</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/blog/devis-travaux-renovation-paris', title: 'Devis travaux rénovation Paris' },
-              { href: '/blog/renovation-appartement-paris-11e', title: 'Rénovation appartement Paris 11e' },
-              { href: '/blog/renovation-appartement-paris-14e', title: 'Rénovation appartement Paris 14e' },
-              { href: '/blog/renovation-appartement-paris-18e', title: 'Rénovation appartement Paris 18e' },
-              { href: '/blog/renovation-bureau-paris', title: 'Rénovation bureau Paris' },
-              { href: '/salle-de-bain-paris', title: 'Rénovation salle de bain Paris' },
+              { href: '/blog/renovation-salle-de-bain-paris', title: 'Rénovation salle de bain Paris' },
+              { href: '/blog/douche-italienne-paris', title: 'Douche à l\'italienne Paris' },
+              { href: '/blog/carrelage-salle-de-bain-paris', title: 'Carrelage salle de bain Paris' },
+              { href: '/blog/renovation-appartement-paris-7e', title: 'Rénovation appartement Paris 7e' },
+              { href: '/blog/renovation-appartement-paris-16e', title: 'Rénovation appartement Paris 16e' },
+              { href: '/blog/renovation-salle-de-bain-petite-surface-paris', title: 'Salle de bain petite surface Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -333,14 +386,14 @@ export default function ArticlePrixSalleDeBain() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
+              { href: '/renovation-paris-7e', label: 'Paris 7e' },
               { href: '/renovation-paris-8e', label: 'Paris 8e' },
               { href: '/renovation-paris-11e', label: 'Paris 11e' },
-              { href: '/renovation-paris-14e', label: 'Paris 14e' },
+              { href: '/renovation-paris-12e', label: 'Paris 12e' },
               { href: '/renovation-paris-16e', label: 'Paris 16e' },
-              { href: '/renovation-paris-18e', label: 'Paris 18e' },
               { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
-              { href: '/renovation-levallois-perret', label: 'Levallois' },
-              { href: '/renovation-boulogne-billancourt', label: 'Boulogne' },
+              { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
+              { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -357,10 +410,10 @@ export default function ArticlePrixSalleDeBain() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Rénovez votre salle de bain à Paris
+          Obtenez un devis pour votre salle de bain à Paris
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Devis détaillé poste par poste sous 48h. Artisan spécialiste salle de bain Paris.
+          Diagnostic gratuit. Devis détaillé par poste sous 48h. Artisans spécialisés salle de bain Paris.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

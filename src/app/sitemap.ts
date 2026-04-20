@@ -233,6 +233,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-l-hay-les-roses`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-clichy-sous-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/blog/renovation-appartement-paris-16e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-bailleur-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-terrasse-bois-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/renovation-la-garenne-colombes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-sevran`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Seine-Saint-Denis (93) — le-blanc-mesnil, pierrefitte, stains
     { url: `${base}/renovation-le-blanc-mesnil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

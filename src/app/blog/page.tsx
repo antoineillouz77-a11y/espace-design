@@ -762,6 +762,18 @@ const articles = [
     desc: "Rénovation appartement dans le 16e arrondissement de Paris : Passy, Auteuil, Trocadéro. Prestige, haussmannien, artisan 2025.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-bailleur-paris',
+    title: 'Rénovation Appartement Bailleur Paris : entre deux locataires 2025',
+    desc: "Rénover un appartement entre deux locataires à Paris : peinture, sols, cuisine, salle de bain. Budget et artisan 2025.",
+    tag: 'Guides',
+  },
+  {
+    href: '/blog/renovation-terrasse-bois-paris',
+    title: 'Terrasse Bois Paris : ipé, composite & prix artisan 2025',
+    desc: "Installer une terrasse en bois à Paris : ipé, teck, composite. Permis de construire, copropriété, entretien. Artisan, prix 2025.",
+    tag: 'Extérieur',
+  },
 ]
 
 export default function BlogPage() {

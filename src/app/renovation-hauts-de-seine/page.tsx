@@ -61,6 +61,7 @@ const villes92 = [
   { href: '/renovation-garches', label: 'Garches' },
   { href: '/renovation-sevres', label: 'Sèvres' },
   { href: '/renovation-chatenay-malabry', label: 'Châtenay-Malabry' },
+  { href: '/renovation-la-garenne-colombes', label: 'La Garenne-Colombes' },
 ]
 
 const services = [
