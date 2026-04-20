@@ -15,9 +15,9 @@ const schemaBreadcrumb = {
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Rénovation Appartement Paris 10e : artisan & prix 2025 | Espace Design',
-  description: 'Rénovation appartement dans le 10e arrondissement de Paris : Canal Saint-Martin, République, Gare du Nord. Artisan, devis 48h.',
-  datePublished: '2025-04-20',
+  headline: "Rénovation Appartement Paris 10e : Canal Saint-Martin & prix 2025 | Espace Design",
+  description: "Artisan rénovation Paris 10e arrondissement : Canal Saint-Martin, République, Gare du Nord. Quartier en forte demande locative, prix 2025.",
+  datePublished: '2025-01-15',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
@@ -33,42 +33,43 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation appartement dans le 10e arrondissement ?',
+      name: "Quel est le prix d'une rénovation appartement dans le 10e arrondissement ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Dans le 10e arrondissement, les prix de rénovation varient entre 1 400 et 2 800 €/m² selon le niveau de finition et le type de bien. Une rénovation légère (peinture, sol, électricité partielle) se situe autour de 600 à 1 000 €/m². Pour un appartement Canal Saint-Martin avec loft converti : comptez 1 500 à 2 500 €/m² (béton ciré, métal industriel, verrière). Pour un appartement Haussmannien rénové complètement : 1 800 à 2 800 €/m². Ces prix incluent main d'œuvre et matériaux.",
+        text: "Dans le 10e arrondissement, les prix de rénovation varient entre 600 et 2 800 €/m² selon le niveau de finition et le type de bien. Une rénovation légère (peinture, sol, électricité partielle) se situe autour de 600 à 1 000 €/m². Pour un appartement Canal Saint-Martin avec loft converti : comptez 1 500 à 2 500 €/m² (béton ciré, métal industriel, verrière). Pour un appartement haussmannien rénové complètement : 1 800 à 2 800 €/m². Ces prix incluent main d'œuvre et matériaux.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment transformer un ancien entrepôt en loft dans le 10e ?',
+      name: "Quelles sont les spécificités de la rénovation pour investissement locatif dans le 10e ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La transformation d'un ancien entrepôt ou d'un atelier en loft nécessite plusieurs étapes : vérification de la conformité au PLU de Paris (changement de destination si le local était commercial ou industriel), étude structure pour valider la reprise des charges, création des lots techniques (salle de bain, cuisine, électricité aux normes), isolation thermique et phonique (les anciens entrepôts ont souvent une mauvaise isolation). Comptez 1 200 à 2 500 €/m² selon le niveau de finition souhaité et l'état initial du local.",
+        text: "Le 10e est particulièrement prisé par les investisseurs locatifs grâce à la proximité des Gares du Nord et de l'Est, du Canal Saint-Martin et de la place de la République. Pour optimiser le rendement locatif, les travaux prioritaires sont : remise aux normes électrique (obligatoire pour louer décemment), isolation phonique (le 10e est bruyant — boulevard de Strasbourg, axe ferroviaire), cuisine fonctionnelle ouverte, salle de bain refaite à neuf. Budget moyen pour un T2 de 40 m² prêt à louer : 20 000 à 45 000 €.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Peut-on installer une verrière dans un appartement du 10e ?',
+      name: "Comment transformer un ancien entrepôt en loft dans le 10e ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, une verrière intérieure est possible dans un appartement du 10e, sous réserve que le mur ou la cloison sur lequel elle est posée ne soit pas porteur. Si le mur est porteur, il faut créer un IPN (poutre métallique) pour reprendre les charges avant d'installer la verrière. Une verrière atelier acier noir coûte entre 1 500 et 5 000 € selon les dimensions, la qualité du vitrage (simple, double, feuilleté) et la complexité de la pose. Prévoir une déclaration préalable en mairie si la verrière modifie l'aspect extérieur du bâtiment.",
+        text: "La transformation d'un ancien entrepôt ou atelier en loft nécessite plusieurs étapes : vérification de la conformité au PLU de Paris (changement de destination si le local était commercial ou industriel), étude structure pour valider la reprise des charges, création des lots techniques (salle de bain, cuisine, électricité aux normes), isolation thermique et phonique. Comptez 1 200 à 2 500 €/m² selon le niveau de finition et l'état initial du local. Un architecte est recommandé pour les changements de destination.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quelles sont les spécificités de la rénovation près de la Gare du Nord ?',
+      name: "Quelles sont les spécificités de la rénovation près de la Gare du Nord ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Les immeubles du quartier Gare du Nord (autour des rues du Faubourg-Saint-Denis et Lafayette) sont souvent des immeubles de rapport construits entre 1880 et 1920, moins haussmanniens que ceux du centre. Les spécificités : hauteur sous plafond plus basse (2,50 à 2,70 m), installations électriques souvent vétustes à remettre entièrement aux normes, isolation phonique importante (ligne B du RER, trafic intense), présence fréquente d'amiante dans les colles de carrelage et les faux-plafonds (diagnostic obligatoire avant travaux).",
+        text: "Les immeubles du quartier Gare du Nord (autour des rues du Faubourg-Saint-Denis et Lafayette) sont souvent des immeubles de rapport construits entre 1880 et 1920. Les spécificités : hauteur sous plafond plus basse (2,50 à 2,70 m), installations électriques souvent vétustes à remettre entièrement aux normes, isolation phonique importante (RER B, trafic intense), présence fréquente d'amiante dans les colles de carrelage et les faux-plafonds (diagnostic obligatoire avant travaux dans les immeubles d'avant 1997).",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Paris 10e : artisan & prix 2025 | Espace Design',
-  description: 'Rénovation appartement dans le 10e arrondissement de Paris : Canal Saint-Martin, République, Gare du Nord. Artisan, devis 48h.',
+  title: "Rénovation Appartement Paris 10e : Canal Saint-Martin & prix 2025 | Espace Design",
+  description: "Artisan rénovation Paris 10e arrondissement : Canal Saint-Martin, République, Gare du Nord. Quartier en forte demande locative, prix 2025.",
+  keywords: "rénovation appartement Paris 10e, artisan Paris 10e, rénovation Canal Saint-Martin",
 }
 
 export default function ArticleRenovationParis10e() {
@@ -91,48 +92,45 @@ export default function ArticleRenovationParis10e() {
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Paris
+            Arrondissements
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Rénovation Appartement Paris 10e : artisan &amp; prix 2025
+            Rénovation Appartement Paris 10e : Canal Saint-Martin &amp; prix 2025
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Canal Saint-Martin, République, Gare du Nord : le 10e arrondissement offre une diversité architecturale unique à Paris. Anciens entrepôts reconvertis en lofts, immeubles de rapport Belle Époque, ateliers d&apos;artistes — chaque bien a ses spécificités. Guide complet pour rénover dans le 10e en 2025.
+            Canal Saint-Martin, République, Gare du Nord : le 10e arrondissement est l&apos;un des plus dynamiques de Paris. Forte demande locative, parc immobilier diversifié, quartiers en mutation — rénover dans le 10e est un investissement stratégique. Guide complet pour votre projet en 2025.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Canal Saint-Martin et gentrification */}
+      {/* Section 1 — Spécificités du 10e */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Canal Saint-Martin : lofts et espaces industriels reconvertis
+              Spécificités du 10e : Canal Saint-Martin, gares et mix résidentiel
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le quartier Canal Saint-Martin est l&apos;un des secteurs les plus dynamiques de Paris depuis les années 2010. D&apos;anciens entrepôts et ateliers industriels y ont été transformés en lofts ouverts très recherchés. Ce type de rénovation est exigeant : changement de destination, gros œuvre, isolation totale à créer, lots techniques à concevoir de zéro.
-            </p>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-              Le style industriel qui caractérise ces espaces repose sur des matériaux bruts — béton ciré, acier noir, bois vieilli, brique apparente — qui demandent une vraie expertise de mise en œuvre. Un béton ciré mal exécuté fissure et se tache ; une verrière industrielle mal étanchée crée des ponts thermiques importants.
+              Le 10e arrondissement offre une diversité architecturale et sociale unique à Paris. Ses trois quartiers principaux — Canal Saint-Martin, République-Strasbourg-Saint-Denis et Gare du Nord-Gare de l&apos;Est — présentent des enjeux de rénovation très différents.
             </p>
             <div className="space-y-4">
               {[
                 {
-                  enjeu: 'Loft industriel : béton ciré et matériaux bruts',
-                  detail: 'Béton ciré sur sol (30 à 80 €/m²), brique apparente dégagée et rejointoyée (20 à 40 €/m²), charpente métallique apparente peinte (selon devis), verrière atelier acier noir (1 500 à 5 000 € selon taille). Ces matériaux demandent des finitions soignées pour ne pas paraître inachevés.',
+                  quartier: "Canal Saint-Martin : le quartier branché",
+                  detail: "Depuis les années 2010, le quartier Canal Saint-Martin est l'un des secteurs les plus gentrifiés de Paris. D'anciens entrepôts et ateliers industriels y ont été transformés en lofts et appartements ouverts recherchés. Style industriel (béton ciré, acier noir, brique apparente), cuisine ouverte avec verrière, isolation phonique renforcée : voilà les travaux emblématiques du secteur.",
                 },
                 {
-                  enjeu: 'Isolation thermique et phonique d\'un ancien entrepôt',
-                  detail: 'Un entrepôt ou atelier non habité n\'a aucune isolation. Il faut créer de toutes pièces : doublage intérieur en laine de roche (60 à 120 €/m²), isolation du plancher bas, isolation de la toiture si accessible. Le résultat DPE peut passer de G à C après travaux.',
+                  quartier: "Gares du Nord et de l'Est : porte d'entrée de Paris",
+                  detail: "Les quartiers autour des deux gares concentrent une forte densité locative. Les immeubles sont majoritairement des constructions de rapport de la Belle Époque (1880-1920) aux hauteurs sous plafond modestes (2,50 à 2,70 m). La remise aux normes électrique et l'isolation phonique sont les travaux les plus urgents et les plus valorisants pour l'investissement locatif.",
                 },
                 {
-                  enjeu: 'Création des lots techniques',
-                  detail: 'Salle de bain, cuisine, plomberie, électricité : tout est à créer dans un ancien entrepôt. La conception de l\'espace (plan, circulation, ensoleillement) est l\'étape clé. Prévoir un architecte d\'intérieur ou un maître d\'œuvre pour les projets de plus de 100 m².',
+                  quartier: "République et Strasbourg-Saint-Denis : mix résidentiel varié",
+                  detail: "Autour de la place de la République, le 10e offre une grande variété d'immeubles : haussmanniens standards, résidences des années 1960-1970, et petites copropriétés de type immeuble de rapport. Chaque bien appelle une approche spécifique selon son état, son époque et sa configuration.",
                 },
               ].map((el) => (
-                <div key={el.enjeu} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.enjeu}</div>
+                <div key={el.quartier} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.quartier}</div>
                   <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
                 </div>
               ))}
@@ -141,36 +139,36 @@ export default function ArticleRenovationParis10e() {
         </div>
       </section>
 
-      {/* Section 2 — République et mixité architecturale */}
+      {/* Section 2 — Parc immobilier */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            République et alentours : la mixité architecturale du 10e
+            Parc immobilier du 10e : haussmannien, grands immeubles 70s et petites copropriétés
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Autour de la place de la République et du faubourg Saint-Denis, le 10e concentre une grande variété d&apos;immeubles : Haussmanniens standards, immeubles de rapport de la Belle Époque (1880-1914), constructions d&apos;après-guerre et résidences récentes. Chaque type de bien appelle une approche spécifique.
+            Comprendre le type d&apos;immeuble dans lequel se trouve votre appartement est essentiel pour anticiper les contraintes et les coûts de rénovation.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: 'Haussmannien standard du 10e',
-                detail: 'Moins luxueux que le 6e, mais mêmes bases : moulures, parquet chêne, cheminée. La rénovation standard (cuisine, SDB, peinture, électricité) coûte 1 200 à 2 000 €/m². L\'occasion de moderniser sans dénaturer : cuisine ouverte possible si la cloison n\'est pas porteuse.',
-                cout: '1 200 – 2 000 €/m²',
+                titre: "Haussmannien standard du 10e",
+                detail: "Moins luxueux que ceux du 6e ou du 8e, mais mêmes bases : moulures, parquet chêne, cheminée, hauteur sous plafond 2,80 m. La rénovation standard coûte 1 200 à 2 000 €/m². L'occasion de moderniser sans dénaturer : cuisine ouverte possible si cloison non porteuse.",
+                cout: "1 200 – 2 000 €/m²",
               },
               {
-                titre: 'Immeuble de rapport Belle Époque',
-                detail: 'Hauteurs sous plafond plus modestes (2,50 à 2,70 m), mais souvent des détails remarquables (carreaux de ciment, tomettes, ferronnerie d\'escalier). Préserver les éléments d\'époque valorise le bien. Mise aux normes électrique souvent urgente.',
-                cout: '900 – 1 600 €/m²',
+                titre: "Immeuble de rapport Belle Époque",
+                detail: "Hauteurs sous plafond plus modestes (2,50 à 2,70 m), mais souvent des détails remarquables : carreaux de ciment, tomettes, ferronnerie. Mise aux normes électrique souvent urgente. Conserver les éléments d'époque valorise fortement le bien.",
+                cout: "900 – 1 600 €/m²",
               },
               {
-                titre: 'Construction d\'après-guerre',
-                detail: 'Béton armé, double vitrage possible, mais isolation souvent insuffisante. L\'isolation par l\'intérieur (doublage laine de roche 60 mm + plaque de plâtre) améliore sensiblement le confort et le DPE. Pas de contraintes patrimoniales.',
-                cout: '700 – 1 200 €/m²',
+                titre: "Grand immeuble des années 1970",
+                detail: "Béton armé, double vitrage possible, mais isolation thermique insuffisante et équipements vieillissants. Isolation par l'intérieur + remplacement fenêtres améliorent sensiblement le DPE. Pas de contraintes patrimoniales.",
+                cout: "700 – 1 200 €/m²",
               },
               {
-                titre: 'Ancien atelier ou commerce reconverti',
-                detail: 'Dossier urbanisme à monter pour le changement de destination (PLU de Paris, mairie du 10e). Travaux : isolation totale, lot technique complet, ventilation, conformité ascenseur si existant. Budget plus élevé mais valeur créée importante.',
-                cout: '1 500 – 2 800 €/m²',
+                titre: "Ancien atelier ou entrepôt reconverti",
+                detail: "Dossier urbanisme pour changement de destination (PLU de Paris). Travaux : isolation totale à créer, lot technique complet, ventilation, conformité. Budget plus élevé mais valeur créée très importante dans le 10e.",
+                cout: "1 500 – 2 800 €/m²",
               },
             ].map((el) => (
               <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
@@ -185,31 +183,36 @@ export default function ArticleRenovationParis10e() {
         </div>
       </section>
 
-      {/* Section 3 — Isolation phonique */}
+      {/* Section 3 — Travaux les plus demandés (investisseurs locatifs) */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Isolation phonique dans le 10e : une priorité incontournable
+            Travaux les plus demandés dans le 10e par les investisseurs locatifs
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le 10e est l&apos;un des arrondissements les plus animés de Paris : Gare du Nord, Gare de l&apos;Est, Canal Saint-Martin, boulevard de Strasbourg. L&apos;isolation phonique est un investissement essentiel pour le confort de vie et la valeur locative du bien.
+            Le 10e est l&apos;un des arrondissements les plus actifs en termes d&apos;investissement locatif parisien. La proximité des grandes gares, du Canal Saint-Martin et de la place de la République attire une clientèle de locataires diversifiée et exigeante.
           </p>
           <div className="space-y-4 mb-6">
             {[
               {
-                type: 'Isolation des murs sur rue',
-                prix: '80 – 150 €/m²',
-                detail: 'Doublage intérieur avec laine de roche 45 mm sur ossature métallique désolidarisée, plaque de plâtre haute densité. Gain de 40 à 50 dB sur les bruits extérieurs. Perte de 6 à 8 cm sur la profondeur de la pièce. Recommandé pour tous les appartements donnant sur boulevard ou axe passant.',
+                type: "Remise aux normes électrique complète",
+                prix: "3 000 – 8 000 €",
+                detail: "Obligatoire pour louer légalement un logement décent. Dans les immeubles du 10e d'avant 1970, les installations électriques (fuse-based, mono-phase, tableau non différentiel) sont souvent à refaire intégralement. Comptez 3 000 à 8 000 € pour un appartement de 40 à 80 m².",
               },
               {
-                type: 'Double vitrage acoustique',
-                prix: '400 – 900 € / fenêtre',
-                detail: 'Remplacement des simples vitrages par du double vitrage feuilleté asymétrique (6/18/4 ou 44.2/16/44.2). Réduction du bruit de 35 à 42 dB selon le vitrage. À compléter par des joints d\'étanchéité périphériques. La pose dans les immeubles anciens requiert parfois une adaptation des tableaux de fenêtre.',
+                type: "Isolation phonique sur rue",
+                prix: "80 – 150 €/m² de mur",
+                detail: "Le 10e est l'un des arrondissements les plus bruyants de Paris (Gare du Nord, RER B, boulevard de Strasbourg, canal). L'isolation phonique est un investissement rentable : elle augmente le loyer potentiel et réduit la vacance locative. Double vitrage acoustique + doublage des murs sur rue.",
               },
               {
-                type: 'Isolation du plancher',
-                prix: '15 – 35 €/m²',
-                detail: 'Sous-couche résiliente (liège, laine de roche, mousse) posée sous le revêtement de sol. Réduit les bruits d\'impact transmis aux voisins du dessous et reçus du dessus. Particulièrement important dans les immeubles sans plancher intermédiaire (anciens entrepôts).',
+                type: "Réfection complète salle de bain",
+                prix: "6 000 – 15 000 €",
+                detail: "Une salle de bain refaite à neuf (douche à l'italienne, faïence contemporaine, robinetterie design) est le premier critère de décision des locataires dans le 10e. Comptez 6 000 à 15 000 € pour une salle de bain de 4 à 8 m² selon les finitions.",
+              },
+              {
+                type: "Cuisine ouverte avec électroménager encastré",
+                prix: "8 000 – 18 000 €",
+                detail: "La cuisine ouverte est le second critère prioritaire. Dans un studio ou T2 du 10e, abattre une cloison légère pour ouvrir la cuisine sur le séjour agrandit visuellement le bien de 20 à 30 % sans toucher aux m² réels. ROI locatif significatif.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
@@ -228,7 +231,7 @@ export default function ArticleRenovationParis10e() {
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix d&apos;une rénovation appartement Paris 10e en 2025
+            Prix rénovation appartement Paris 10e en 2025
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
             Tarifs main d&apos;œuvre et matériaux inclus pour un appartement dans le 10e arrondissement.
@@ -246,28 +249,28 @@ export default function ArticleRenovationParis10e() {
               <tbody>
                 {[
                   {
-                    niveau: 'Réfection légère',
-                    prestations: 'Peinture, sol vinyle, électricité partielle',
-                    prixM2: '600 – 1 000 €',
-                    total: '27 000 – 45 000 €',
+                    niveau: "Réfection légère",
+                    prestations: "Peinture, sol vinyle, électricité partielle",
+                    prixM2: "600 – 1 000 €",
+                    total: "27 000 – 45 000 €",
                   },
                   {
-                    niveau: 'Rénovation standard',
-                    prestations: 'Cuisine, SDB, peinture, sol, électricité complète',
-                    prixM2: '1 200 – 1 800 €',
-                    total: '54 000 – 81 000 €',
+                    niveau: "Rénovation standard",
+                    prestations: "Cuisine, SDB, peinture, sol, électricité complète",
+                    prixM2: "1 200 – 1 800 €",
+                    total: "54 000 – 81 000 €",
                   },
                   {
-                    niveau: 'Rénovation complète',
-                    prestations: 'Tout corps d\'état + isolation phonique + double vitrage',
-                    prixM2: '1 800 – 2 500 €',
-                    total: '81 000 – 112 500 €',
+                    niveau: "Rénovation complète",
+                    prestations: "Tout corps d'état + isolation phonique + double vitrage",
+                    prixM2: "1 800 – 2 500 €",
+                    total: "81 000 – 112 500 €",
                   },
                   {
-                    niveau: 'Loft industriel',
-                    prestations: 'Création loft complet depuis ancien entrepôt ou atelier',
-                    prixM2: '2 000 – 3 000 €',
-                    total: '90 000 – 135 000 €',
+                    niveau: "Loft industriel",
+                    prestations: "Création loft complet depuis ancien entrepôt ou atelier",
+                    prixM2: "2 000 – 3 000 €",
+                    total: "90 000 – 135 000 €",
                   },
                 ].map((row, i) => (
                   <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
@@ -280,19 +283,18 @@ export default function ArticleRenovationParis10e() {
               </tbody>
             </table>
           </div>
-
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
               Conseils pour rénover dans le 10e arrondissement
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                'Faire un diagnostic amiante avant toute démolition dans un immeuble d\'avant 1997',
-                'Vérifier le PLU pour les changements de destination (atelier vers logement)',
-                'Prioriser l\'isolation phonique sur rue avant la décoration',
-                'Conserver les éléments Belle Époque (carreaux de ciment, tomettes, ferronnerie)',
-                'Anticiper la mise aux normes électrique complète pour les immeubles anciens',
-                'Prévoir 10 à 15 % de contingence pour les découvertes en structure',
+                "Faire un diagnostic amiante avant toute démolition dans un immeuble d'avant 1997 — obligation légale",
+                "Vérifier le PLU pour les changements de destination (atelier vers logement)",
+                "Prioriser l'isolation phonique sur rue avant la décoration — impact direct sur le loyer",
+                "Conserver les éléments Belle Époque (carreaux de ciment, tomettes, ferronnerie) — forte valeur ajoutée",
+                "Anticiper la mise aux normes électrique complète pour les immeubles anciens",
+                "Prévoir 10 à 15 % de contingence pour les découvertes en structure",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -326,11 +328,11 @@ export default function ArticleRenovationParis10e() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { href: '/blog/renovation-appartement-paris-4e', title: 'Rénovation appartement Paris 4e' },
-              { href: '/blog/renovation-appartement-paris-6e', title: 'Rénovation appartement Paris 6e' },
-              { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique appartement Paris' },
-              { href: '/blog/renovation-cuisine-americaine-paris', title: 'Cuisine américaine Paris' },
-              { href: '/blog/renovation-bureau-paris', title: 'Rénovation bureau Paris' },
-              { href: '/renovation-paris', title: 'Rénovation Paris — tous arrondissements' },
+              { href: '/blog/renovation-appartement-paris-11e', title: 'Rénovation appartement Paris 11e' },
+              { href: '/blog/isolation-phonique-paris', title: 'Isolation phonique Paris' },
+              { href: '/blog/renovation-cuisine-ouverte-paris', title: 'Cuisine ouverte Paris' },
+              { href: '/blog/pose-parquet-paris', title: 'Pose parquet Paris' },
+              { href: '/blog/renovation-appartement-ancien-paris', title: 'Rénovation appartement ancien Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -344,40 +346,13 @@ export default function ArticleRenovationParis10e() {
         </div>
       </section>
 
-      {/* Zones */}
-      <section className="py-10 bg-white border-t border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {[
-              { href: '/renovation-paris-9e', label: 'Paris 9e' },
-              { href: '/renovation-paris-11e', label: 'Paris 11e' },
-              { href: '/renovation-paris-18e', label: 'Paris 18e' },
-              { href: '/renovation-paris-19e', label: 'Paris 19e' },
-              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
-              { href: '/renovation-pantin', label: 'Pantin' },
-              { href: '/renovation-aubervilliers', label: 'Aubervilliers' },
-              { href: '/renovation-bobigny', label: 'Bobigny' },
-            ].map((z) => (
-              <Link
-                key={z.href}
-                href={z.href}
-                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
-              >
-                {z.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
           Rénovation appartement Paris 10e : devis gratuit sous 48h
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Artisans expérimentés en rénovation d&apos;appartements et de lofts dans le 10e arrondissement. Devis sous 48h.
+          Artisans expérimentés en rénovation d&apos;appartements dans le 10e arrondissement. Canal Saint-Martin, République, Gare du Nord.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
