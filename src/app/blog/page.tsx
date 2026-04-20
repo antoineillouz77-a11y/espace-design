@@ -1134,6 +1134,18 @@ const articles = [
     desc: "Faire poser une chape béton à Paris. Chape sèche, liquide, traditionnelle. Épaisseur, séchage, prix au m². Devis gratuit 48h.",
     tag: 'Gros œuvre',
   },
+  {
+    href: '/blog/cout-renovation-cuisine-paris',
+    title: "Coût Rénovation Cuisine Paris : prix au m² et devis artisan 2025",
+    desc: "Prix et coût de rénovation cuisine à Paris. Petit/moyen/grand budget, cuisine IKEA vs sur mesure. Devis gratuit 48h.",
+    tag: 'Cuisine',
+  },
+  {
+    href: '/blog/terrasse-bois-paris',
+    title: 'Terrasse Bois Paris : pose, essences & prix artisan 2025',
+    desc: "Faire poser une terrasse bois à Paris. Ipé, pin traité, composite. Lames, lambourdes, prix, entretien. Devis gratuit 48h.",
+    tag: 'Extérieur',
+  },
 ]
 
 export default function BlogPage() {

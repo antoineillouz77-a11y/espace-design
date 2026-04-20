@@ -68,6 +68,7 @@ const villes77 = [
   { href: '/renovation-serris', label: 'Serris' },
   { href: '/renovation-champagne-sur-seine', label: 'Champagne-sur-Seine' },
   { href: '/renovation-moret-sur-loing', label: 'Moret-sur-Loing' },
+  { href: '/renovation-champs-sur-marne', label: 'Champs-sur-Marne' },
 ]
 
 const services = [
