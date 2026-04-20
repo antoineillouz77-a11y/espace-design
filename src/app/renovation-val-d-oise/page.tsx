@@ -52,6 +52,7 @@ const villes95 = [
   { href: '/renovation-taverny', label: 'Taverny' },
   { href: '/renovation-saint-gratien', label: 'Saint-Gratien' },
   { href: '/renovation-villiers-le-bel', label: 'Villiers-le-Bel' },
+  { href: '/renovation-franconville', label: 'Franconville' },
 ]
 
 const services = [
