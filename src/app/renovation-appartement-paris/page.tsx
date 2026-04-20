@@ -69,6 +69,18 @@ const villes = [
   { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
   { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
   { href: '/renovation-chatou', label: 'Chatou' },
+  { href: '/renovation-saint-denis', label: 'Saint-Denis' },
+  { href: '/renovation-montreuil', label: 'Montreuil' },
+  { href: '/renovation-pantin', label: 'Pantin' },
+  { href: '/renovation-aubervilliers', label: 'Aubervilliers' },
+  { href: '/renovation-bagnolet', label: 'Bagnolet' },
+  { href: '/renovation-massy', label: 'Massy' },
+  { href: '/renovation-palaiseau', label: 'Palaiseau' },
+  { href: '/renovation-argenteuil', label: 'Argenteuil' },
+  { href: '/renovation-cergy', label: 'Cergy' },
+  { href: '/renovation-epinay-sur-seine', label: 'Épinay-sur-Seine' },
+  { href: '/renovation-noisy-le-grand', label: 'Noisy-le-Grand' },
+  { href: '/renovation-chatenay-malabry', label: 'Châtenay-Malabry' },
 ]
 
 const services = [
@@ -84,6 +96,9 @@ const services = [
   { href: '/platrererie-paris', label: 'Plâtrerie', desc: 'Cloisons, faux-plafonds, enduits' },
   { href: '/decoration-interieure-paris', label: 'Décoration', desc: 'Conseil, mood board, matériaux' },
   { href: '/amenagement-interieur-paris', label: 'Aménagement', desc: 'Mezzanine, verrière, optimisation espace' },
+  { href: '/renovation-studio-paris', label: 'Studio', desc: 'Lit escamotable, mezzanine, optimisation' },
+  { href: '/renovation-maison-paris', label: 'Maison IDF', desc: 'Rénovation maison en Île-de-France' },
+  { href: '/renovation-appartement-haussmannien-paris', label: 'Haussmannien', desc: 'Moulures, parquet, hauteur sous plafond' },
 ]
 
 const schemaBreadcrumb = {
@@ -354,6 +369,11 @@ export default function RenovationParis() {
               { href: '/blog/isolation-thermique-appartement-paris', title: 'Isolation thermique Paris : prix et aides', tag: 'Isolation' },
               { href: '/blog/renovation-2-pieces-paris', title: 'Rénovation 2 pièces Paris : budget et guide', tag: 'Budgets' },
               { href: '/blog/renovation-3-pieces-paris', title: 'Rénovation 3 pièces Paris : prix et budget', tag: 'Budgets' },
+              { href: '/blog/budget-renovation-paris-2025', title: 'Budget rénovation Paris 2025 : estimez votre projet', tag: 'Budgets' },
+              { href: '/blog/devis-renovation-paris', title: 'Comment obtenir et comparer 3 devis à Paris', tag: 'Conseils' },
+              { href: '/blog/renovation-fenetre-paris', title: 'Rénovation fenêtres Paris : double vitrage, PVC', tag: 'Rénovation' },
+              { href: '/blog/home-staging-paris', title: 'Home staging Paris : valoriser avant vente', tag: 'Conseils' },
+              { href: '/blog/domotique-appartement-paris', title: 'Domotique appartement Paris : prix 2025', tag: 'Aménagement' },
             ].map((a) => (
               <Link key={a.href} href={a.href} className="flex items-start gap-3 bg-white rounded-lg p-4 border border-gray-100 hover:border-[#D4AF37]/40 transition-colors group">
                 <div>

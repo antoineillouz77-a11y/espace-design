@@ -592,7 +592,17 @@ export default function HomePage() {
               { href: '/renovation-neuilly-sur-seine', label: 'Neuilly' },
               { href: '/renovation-levallois-perret', label: 'Levallois' },
               { href: '/renovation-boulogne-billancourt', label: 'Boulogne' },
+              { href: '/renovation-issy-les-moulineaux', label: 'Issy' },
+              { href: '/renovation-saint-cloud', label: 'Saint-Cloud' },
+              { href: '/renovation-courbevoie', label: 'Courbevoie' },
+              { href: '/renovation-asnieres-sur-seine', label: 'Asnières' },
+              { href: '/renovation-vincennes', label: 'Vincennes' },
               { href: '/renovation-versailles', label: 'Versailles' },
+              { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain' },
+              { href: '/renovation-montreuil', label: 'Montreuil' },
+              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
+              { href: '/renovation-argenteuil', label: 'Argenteuil' },
+              { href: '/renovation-cergy', label: 'Cergy' },
             ].map((v) => (
               <Link
                 key={v.href}

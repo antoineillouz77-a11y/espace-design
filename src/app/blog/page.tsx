@@ -186,6 +186,18 @@ const articles = [
     desc: "Changer ses fenêtres à Paris : double vitrage, PVC, aluminium, bois. Prix, aides MaPrimeRénov', démarches copropriété. Guide complet.",
     tag: 'Rénovation',
   },
+  {
+    href: '/blog/renovation-escalier-paris',
+    title: 'Rénovation Escalier Paris : prix, bois, carrelage & garde-corps 2025',
+    desc: 'Rénover un escalier à Paris : peinture, remplacement marches, garde-corps design. Prix selon matériaux. Guide complet et artisans 2025.',
+    tag: 'Menuiserie',
+  },
+  {
+    href: '/blog/domotique-appartement-paris',
+    title: 'Domotique Appartement Paris : prix, installation & marques 2025',
+    desc: "Domotique dans un appartement parisien : volets automatiques, éclairage connecté, thermostat, interphone vidéo. Prix et installation. Guide 2025.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {

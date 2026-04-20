@@ -139,6 +139,8 @@ export default function Footer() {
                 { href: '/services', label: 'Services' },
                 { href: '/realisations', label: 'Réalisations' },
                 { href: '/renovation-appartement-paris', label: 'Rénovation Paris' },
+                { href: '/tarifs', label: 'Tarifs' },
+                { href: '/faq', label: 'FAQ' },
                 { href: '/blog', label: 'Blog' },
                 { href: '/contact', label: 'Contact' },
               ].map((l) => (
