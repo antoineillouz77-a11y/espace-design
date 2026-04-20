@@ -2280,6 +2280,12 @@ const articles = [
     desc: "Rénover un appartement à Torcy (Seine-et-Marne). Artisan qualifié, devis gratuit sous 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-lagny-sur-marne',
+    title: "Rénovation Appartement Lagny-sur-Marne (77) — 2025",
+    desc: "Artisan rénovateur à Lagny-sur-Marne (77). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
