@@ -438,6 +438,12 @@ const articles = [
     desc: 'Aménager ses combles perdus à Paris : isolation soufflée ou rampant, trappe, plancher. Éligibilité MaPrimeRénov. Prix 2025.',
     tag: 'Isolation',
   },
+  {
+    href: '/blog/nettoyage-apres-travaux-paris',
+    title: 'Nettoyage Après Travaux Paris : tarifs, entreprises & astuces 2025',
+    desc: 'Faire nettoyer son appartement après rénovation à Paris : poussière plâtre, résidus peinture, vitres. Tarifs et conseils artisan 2025.',
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
