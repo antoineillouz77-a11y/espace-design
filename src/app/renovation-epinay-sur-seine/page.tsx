@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Épinay-sur-Seine — Appartement (93) | Espace Design',
+  title: 'Rénovation Épinay-sur-Seine (93800) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Épinay-sur-Seine (93). Rénovation appartement, peinture, parquet, cuisine. Devis gratuit 48h. Espace Design.',
+    'Artisan rénovateur à Épinay-sur-Seine (93800). Rénovation appartement, salle de bain, cuisine, peinture, parquet. Seine-Saint-Denis. Devis gratuit 48h. Espace Design.',
   keywords: [
     'rénovation appartement Épinay-sur-Seine',
     'artisan rénovation Épinay-sur-Seine',
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Seine-Saint-Denis', item: 'https://espacedesignparis.fr/renovation-seine-saint-denis' },
     { '@type': 'ListItem', position: 3, name: 'Épinay-sur-Seine', item: 'https://espacedesignparis.fr/renovation-epinay-sur-seine' },
   ],
 }
@@ -109,7 +109,7 @@ export default function RenovationEpinaySurSeine() {
             Rénovation Épinay-sur-Seine
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Épinay-sur-Seine. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Épinay-sur-Seine. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Proche Saint-Denis, Argenteuil, Villetaneuse. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -256,11 +256,9 @@ export default function RenovationEpinaySurSeine() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-saint-denis', label: 'Saint-Denis' },
-              { href: '/renovation-clichy-sous-bois', label: 'Clichy-sous-Bois' },
-              { href: '/renovation-villetaneuse', label: 'Villetaneuse' },
-              { href: '/renovation-pierrefitte-sur-seine', label: 'Pierrefitte-sur-Seine' },
               { href: '/renovation-argenteuil', label: 'Argenteuil' },
-              { href: '/renovation-asnieres-sur-seine', label: 'Asnières-sur-Seine' },
+              { href: '/renovation-villetaneuse', label: 'Villetaneuse' },
+              { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -274,13 +272,39 @@ export default function RenovationEpinaySurSeine() {
         </div>
       </section>
 
+      <section className="py-10 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
             Votre projet à Épinay-sur-Seine
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune d'Épinay-sur-Seine.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune d&apos;Épinay-sur-Seine.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

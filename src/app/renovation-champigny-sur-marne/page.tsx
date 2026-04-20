@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Champigny-sur-Marne : Artisan Rénovateur Champigny-sur-Marne (94) | Espace Design',
+  title: 'Rénovation Champigny-sur-Marne (94500) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Champigny-sur-Marne — rénovation appartement, salle de bain, cuisine, peinture, parquet. Devis gratuit sous 48h. Espace Design Paris.',
+    'Artisan rénovateur à Champigny-sur-Marne (94500). Rénovation appartement, maison pavillonnaire, salle de bain, cuisine. Devis gratuit 48h. Espace Design.',
   keywords: [
     'rénovation appartement Champigny-sur-Marne',
     'artisan rénovation Champigny-sur-Marne',
@@ -21,7 +21,7 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Champigny-sur-Marne.',
+  description: 'Artisan rénovateur et décorateur intérieur à Champigny-sur-Marne, grande ville pavillonnaire en bord de Marne.',
   telephone: '+33611783867',
   url: 'https://espacedesignparis.fr/renovation-champigny-sur-marne',
   areaServed: {
@@ -30,8 +30,8 @@ const schemaLocal = {
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Paris',
-    postalCode: '75000',
+    addressLocality: 'Champigny-sur-Marne',
+    postalCode: '94500',
     addressCountry: 'FR',
   },
 }
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
     { '@type': 'ListItem', position: 3, name: 'Champigny-sur-Marne', item: 'https://espacedesignparis.fr/renovation-champigny-sur-marne' },
   ],
 }
@@ -106,10 +106,10 @@ export default function RenovationChampignySurMarne() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Champigny-sur-Marne — 94500</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Champigny-sur-Marne
+            Rénovation Champigny-sur-Marne
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Champigny-sur-Marne. Rénovation complète, salle de bain, cuisine, parquet et finitions soignées. Commune du Val-de-Marne en bord de Marne, proche Joinville et Nogent-sur-Marne. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Champigny-sur-Marne. Rénovation complète d&apos;appartement ou de maison pavillonnaire, salle de bain, cuisine et finitions soignées. Grande commune du Val-de-Marne en bord de Marne, proche Joinville et Nogent-sur-Marne. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -136,7 +136,7 @@ export default function RenovationChampignySurMarne() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: "Rénovation intégrale de votre appartement ou maison à Champigny-sur-Marne : second œuvre, finitions et agencement. Un projet clé en main piloté par un seul interlocuteur de confiance." },
+              { num: '01', title: 'Rénovation complète', desc: "Rénovation intégrale de votre appartement ou maison pavillonnaire à Champigny-sur-Marne : second œuvre, finitions et agencement. Un projet clé en main piloté par un seul interlocuteur de confiance." },
               { num: '02', title: 'Salle de bain & cuisine', desc: "Rénovation de salle de bain et cuisine avec des matériaux durables et esthétiques. Faïence, robinetterie de qualité, plan de travail et meubles sur-mesure adaptés à votre espace." },
               { num: '03', title: 'Parquet, peinture & finitions', desc: "Pose de parquet massif ou stratifié, peinture décorative, plâtrerie, menuiserie intérieure. Des finitions impeccables qui valorisent votre bien immobilier à Champigny." },
             ].map((s) => (
@@ -146,6 +146,38 @@ export default function RenovationChampignySurMarne() {
                 <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-2">{s.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed font-light">{s.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Tous nos services
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {s.label}
+              </Link>
             ))}
           </div>
         </div>
@@ -166,7 +198,7 @@ export default function RenovationChampignySurMarne() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
-              "Devis gratuit sous 48h",
+              'Devis gratuit sous 48h',
               'Assurance décennale',
               "15+ ans d'expérience",
               'Respect des délais',
@@ -225,9 +257,10 @@ export default function RenovationChampignySurMarne() {
             {[
               { href: '/renovation-joinville-le-pont', label: 'Joinville-le-Pont' },
               { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
+              { href: '/renovation-saint-maur-des-fosses', label: 'Saint-Maur-des-Fossés' },
               { href: '/renovation-vitry-sur-seine', label: 'Vitry-sur-Seine' },
               { href: '/renovation-villeneuve-saint-georges', label: 'Villeneuve-Saint-Georges' },
-              { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -258,8 +291,6 @@ export default function RenovationChampignySurMarne() {
               { href: '/platrererie-paris', label: 'Plâtrerie' },
               { href: '/decoration-interieure-paris', label: 'Décoration' },
               { href: '/amenagement-interieur-paris', label: 'Aménagement' },
-              { href: '/tarifs', label: 'Nos tarifs' },
-              { href: '/faq', label: 'FAQ rénovation' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}

@@ -3,15 +3,16 @@ import Link from 'next/link'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Puteaux — Artisan Rénovateur & Devis | Espace Design',
+  title: 'Rénovation Puteaux (92800) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Puteaux (92800). Rénovation complète, salle de bain, cuisine, décoration haut de gamme. Devis gratuit 48h. Espace Design.',
+    'Artisan rénovateur à Puteaux (92800) — tours résidentielles modernes et appartements adjacents à La Défense. Rénovation complète, salle de bain, cuisine, finitions haut de gamme. Devis gratuit 48h.',
   keywords: [
+    'rénovation Puteaux',
+    'artisan rénovation Puteaux 92800',
     'rénovation appartement Puteaux',
-    'artisan rénovation Puteaux 92',
     'entreprise rénovation Puteaux',
-    'renovation Puteaux 92800',
-    'artisan Puteaux',
+    'renovation 92800',
+    'artisan Puteaux La Défense',
   ],
 }
 
@@ -19,8 +20,9 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur à Puteaux (92800). Rénovation complète, salle de bain, cuisine, décoration haut de gamme.',
+  description: 'Artisan rénovateur à Puteaux (92800) — rénovation appartements tours résidentielles et biens autour de La Défense.',
   telephone: '+33611783867',
+  email: 'espacedesign92@gmail.com',
   url: 'https://espacedesignparis.fr/renovation-puteaux',
   areaServed: {
     '@type': 'AdministrativeArea',
@@ -32,16 +34,11 @@ const schemaLocal = {
     postalCode: '92800',
     addressCountry: 'FR',
   },
-}
-
-const schemaBreadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Paris', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Rénovation Puteaux', item: 'https://espacedesignparis.fr/renovation-puteaux' },
-  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+  },
 }
 
 const schemaFaq = {
@@ -50,10 +47,10 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Puteaux ?',
+      name: "Quel est le prix d'une rénovation à Puteaux ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le prix d\'une rénovation à Puteaux varie entre 700 et 1 400 €/m² pour une rénovation standard, et 1 500 à 2 500 €/m² pour du haut de gamme. Puteaux étant une commune aisée des Hauts-de-Seine, les projets y sont souvent ambitieux. Devis gratuit sous 48h.',
+        text: "Le prix d'une rénovation à Puteaux varie entre 700 et 1 400 €/m² pour une rénovation standard, et 1 500 à 2 500 €/m² pour du haut de gamme. Puteaux étant adjacente à La Défense, les projets y sont souvent ambitieux, notamment dans les tours résidentielles modernes. Devis gratuit sous 48h.",
       },
     },
     {
@@ -61,7 +58,7 @@ const schemaFaq = {
       name: 'Espace Design intervient-il à Puteaux ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. Nous intervenons régulièrement à Puteaux et dans tout le secteur de La Défense — Courbevoie, Neuilly-sur-Seine, Nanterre. Devis gratuit sous 48h, déplacement sans engagement.',
+        text: 'Oui. Nous intervenons régulièrement à Puteaux et dans tout le secteur de La Défense — Courbevoie, Neuilly-sur-Seine, Suresnes, Nanterre. Déplacement gratuit et sans engagement.',
       },
     },
     {
@@ -69,7 +66,7 @@ const schemaFaq = {
       name: 'Quels types de travaux réalisez-vous à Puteaux ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rénovation complète d\'appartement, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure. Un seul artisan pour coordonner l\'ensemble du chantier à Puteaux.',
+        text: "Rénovation complète d'appartement, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur-mesure. Un seul artisan pour coordonner l'ensemble du chantier à Puteaux.",
       },
     },
     {
@@ -80,6 +77,16 @@ const schemaFaq = {
         text: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans après livraison.',
       },
     },
+  ],
+}
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Hauts-de-Seine (92)', item: 'https://espacedesignparis.fr/renovation-hauts-de-seine' },
+    { '@type': 'ListItem', position: 3, name: 'Puteaux', item: 'https://espacedesignparis.fr/renovation-puteaux' },
   ],
 }
 
@@ -102,13 +109,13 @@ export default function RenovationPuteaux() {
       {/* Hero compact */}
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Hauts-de-Seine — Puteaux 92</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Hauts-de-Seine — Puteaux 92800</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
             Rénovation appartement<br className="hidden sm:block" /> Puteaux
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Puteaux et dans le secteur de La Défense. Rénovation complète, salle de bain, cuisine, finitions haut de gamme. Devis gratuit sous 48h.
+            Artisan rénovateur à Puteaux et dans le secteur de La Défense. Rénovation complète, salle de bain, cuisine, finitions haut de gamme. Appartements modernes et tours résidentielles. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -128,6 +135,49 @@ export default function RenovationPuteaux() {
         </div>
       </section>
 
+      {/* Intro locale */}
+      <section className="py-14 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Votre artisan rénovateur à Puteaux
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Commune directement adjacente au quartier d'affaires de <strong>La Défense</strong>, Puteaux présente un
+            parc immobilier résidentiel particulier : tours de logements construites dans les années 1970-1990, résidences
+            modernes de standing, et quelques îlots de maisons de ville dans les quartiers historiques. Ces biens
+            nécessitent souvent une rénovation complète pour répondre aux standards actuels de confort et d'esthétique.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Espace Design intervient à Puteaux pour tous vos projets de rénovation : refonte complète d'un appartement
+            en vue d'une mise en location ou de la revente, rénovation de salle de bain et cuisine dans une résidence
+            moderne, pose de parquet ou de carrelage, peinture décorative. Notre savoir-faire en finitions haut de gamme
+            correspond aux attentes des résidents de ce secteur dynamique des Hauts-de-Seine.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            Nous intervenons également dans les communes voisines de
+            <Link href="/renovation-courbevoie" className="text-[#B8960C] hover:underline mx-1">Courbevoie</Link>,
+            <Link href="/renovation-suresnes" className="text-[#B8960C] hover:underline mx-1">Suresnes</Link>,
+            <Link href="/renovation-nanterre" className="text-[#B8960C] hover:underline mx-1">Nanterre</Link> et
+            <Link href="/renovation-neuilly-sur-seine" className="text-[#B8960C] hover:underline mx-1">Neuilly-sur-Seine</Link>.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              'Devis gratuit sous 48h',
+              'Assurance décennale',
+              "15+ ans d'expérience",
+              'Respect des délais',
+              'Finitions haut de gamme',
+              'Un seul interlocuteur',
+            ].map((a) => (
+              <div key={a} className="flex items-start gap-2">
+                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                <span className="text-sm text-gray-600">{a}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services */}
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -136,9 +186,21 @@ export default function RenovationPuteaux() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond à Puteaux : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier.' },
-              { num: '02', title: 'Salle de bain & cuisine', desc: 'Conception et réalisation de salles de bain et cuisines haut de gamme. Carrelage, faïence, robinetterie, menuiserie sur mesure.' },
-              { num: '03', title: 'Finitions sur mesure', desc: 'Parquet, peinture, menuiseries, éclairage architectural. Les détails qui transforment votre appartement à Puteaux en espace d\'exception.' },
+              {
+                num: '01',
+                title: 'Rénovation complète',
+                desc: "Du sol au plafond à Puteaux : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan coordonne l'ensemble du chantier, du devis à la livraison.",
+              },
+              {
+                num: '02',
+                title: 'Salle de bain & cuisine',
+                desc: "Conception et réalisation de salles de bain et cuisines haut de gamme. Carrelage, faïence, robinetterie premium, menuiserie sur-mesure adaptée aux appartements modernes.",
+              },
+              {
+                num: '03',
+                title: 'Finitions sur mesure',
+                desc: "Parquet, peinture décorative, menuiseries, éclairage architectural. Les détails qui transforment votre appartement en résidence à Puteaux en espace d'exception.",
+              },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -158,7 +220,7 @@ export default function RenovationPuteaux() {
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -181,16 +243,16 @@ export default function RenovationPuteaux() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Puteaux ?',
-                a: 'Le prix d\'une rénovation à Puteaux varie entre 700 et 1 400 €/m² pour une rénovation standard, et 1 500 à 2 500 €/m² pour du haut de gamme. Devis gratuit sous 48h.',
+                q: "Quel est le prix d'une rénovation à Puteaux ?",
+                a: "Le prix d'une rénovation à Puteaux varie entre 700 et 1 400 €/m² pour une rénovation standard, et 1 500 à 2 500 €/m² pour du haut de gamme. Devis gratuit sous 48h.",
               },
               {
                 q: 'Espace Design intervient-il à Puteaux ?',
-                a: 'Oui. Nous intervenons régulièrement à Puteaux et dans tout le secteur de La Défense — Courbevoie, Neuilly-sur-Seine, Nanterre. Déplacement gratuit et sans engagement.',
+                a: 'Oui. Nous intervenons régulièrement à Puteaux et dans tout le secteur de La Défense — Courbevoie, Neuilly-sur-Seine, Suresnes, Nanterre. Déplacement gratuit et sans engagement.',
               },
               {
                 q: 'Quels types de travaux réalisez-vous à Puteaux ?',
-                a: 'Rénovation complète d\'appartement, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur mesure. Un seul artisan pour coordonner l\'ensemble du chantier.',
+                a: "Rénovation complète d'appartement, salle de bain, cuisine, peinture, parquet, carrelage, électricité, plomberie, menuiserie sur-mesure. Un seul artisan pour coordonner l'ensemble du chantier.",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -216,9 +278,11 @@ export default function RenovationPuteaux() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-courbevoie', label: 'Courbevoie' },
+              { href: '/renovation-suresnes', label: 'Suresnes' },
+              { href: '/renovation-nanterre', label: 'Nanterre' },
               { href: '/renovation-neuilly-sur-seine', label: 'Neuilly-sur-Seine' },
-              { href: '/renovation-paris-17e', label: 'Paris 17e' },
               { href: '/renovation-levallois-perret', label: 'Levallois-Perret' },
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -232,7 +296,7 @@ export default function RenovationPuteaux() {
         </div>
       </section>
 
-      {/* Voir aussi */}
+      {/* Voir aussi — services */}
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
@@ -266,7 +330,8 @@ export default function RenovationPuteaux() {
             Votre projet à Puteaux
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement à Puteaux et dans tout le secteur de La Défense.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h.
+            Déplacement sans engagement à Puteaux et dans tout le secteur de La Défense.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

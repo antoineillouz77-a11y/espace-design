@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Vitry-sur-Seine : Artisan Rénovateur Vitry-sur-Seine (94) | Espace Design',
+  title: 'Rénovation Vitry-sur-Seine (94400) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Vitry-sur-Seine — rénovation appartement, salle de bain, cuisine, peinture, parquet. Devis gratuit sous 48h. Espace Design Paris.',
+    'Artisan rénovateur à Vitry-sur-Seine (94400). Rénovation appartement, maison, salle de bain, cuisine. Devis gratuit 48h. Espace Design.',
   keywords: [
     'rénovation appartement Vitry-sur-Seine',
     'artisan rénovation Vitry-sur-Seine',
@@ -30,8 +30,8 @@ const schemaLocal = {
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Paris',
-    postalCode: '75000',
+    addressLocality: 'Vitry-sur-Seine',
+    postalCode: '94400',
     addressCountry: 'FR',
   },
 }
@@ -80,7 +80,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
     { '@type': 'ListItem', position: 3, name: 'Vitry-sur-Seine', item: 'https://espacedesignparis.fr/renovation-vitry-sur-seine' },
   ],
 }
@@ -106,10 +106,10 @@ export default function RenovationVitrySurSeine() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Vitry-sur-Seine — 94400</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Vitry-sur-Seine
+            Rénovation Vitry-sur-Seine
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Vitry-sur-Seine. Rénovation complète, salle de bain, cuisine, parquet et finitions soignées. Plus grande commune du Val-de-Marne, proche Paris 13e et Ivry-sur-Seine. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Vitry-sur-Seine. Rénovation complète d&apos;appartement ou de maison, salle de bain, cuisine, parquet et finitions soignées. Plus grande commune du Val-de-Marne, proche Paris 13e et Ivry-sur-Seine. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -136,7 +136,7 @@ export default function RenovationVitrySurSeine() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation complète', desc: 'Rénovation intégrale de votre appartement ou maison à Vitry-sur-Seine : gros œuvre second, finitions, agencement. Un projet clé en main piloté par un seul interlocuteur.' },
+              { num: '01', title: 'Rénovation complète', desc: 'Rénovation intégrale de votre appartement ou maison à Vitry-sur-Seine : gros œuvre, électricité, plomberie, cloisons, finitions. Un projet clé en main piloté par un seul interlocuteur.' },
               { num: '02', title: 'Salle de bain & cuisine', desc: 'Rénovation de salle de bain et cuisine haut de gamme : faïence, robinetterie, plan de travail, meubles sur-mesure. Résultat durable et esthétique garanti.' },
               { num: '03', title: 'Parquet, peinture & finitions', desc: 'Pose de parquet massif ou stratifié, peinture décorative, plâtrerie, menuiserie. Des finitions impeccables qui valorisent chaque mètre carré.' },
             ].map((s) => (
@@ -146,6 +146,38 @@ export default function RenovationVitrySurSeine() {
                 <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-2">{s.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed font-light">{s.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Tous nos services
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {s.label}
+              </Link>
             ))}
           </div>
         </div>
@@ -166,7 +198,7 @@ export default function RenovationVitrySurSeine() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
-              "Devis gratuit sous 48h",
+              'Devis gratuit sous 48h',
               'Assurance décennale',
               "15+ ans d'expérience",
               'Respect des délais',
@@ -224,10 +256,11 @@ export default function RenovationVitrySurSeine() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { href: '/renovation-ivry-sur-seine', label: 'Ivry-sur-Seine' },
-              { href: '/renovation-paris-13e', label: 'Paris 13e' },
+              { href: '/renovation-choisy-le-roi', label: 'Choisy-le-Roi' },
+              { href: '/renovation-le-kremlin-bicetre', label: 'Kremlin-Bicêtre' },
               { href: '/renovation-champigny-sur-marne', label: 'Champigny-sur-Marne' },
               { href: '/renovation-villeneuve-saint-georges', label: 'Villeneuve-Saint-Georges' },
-              { href: '/renovation-maisons-alfort', label: 'Maisons-Alfort' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -258,8 +291,6 @@ export default function RenovationVitrySurSeine() {
               { href: '/platrererie-paris', label: 'Plâtrerie' },
               { href: '/decoration-interieure-paris', label: 'Décoration' },
               { href: '/amenagement-interieur-paris', label: 'Aménagement' },
-              { href: '/tarifs', label: 'Nos tarifs' },
-              { href: '/faq', label: 'FAQ rénovation' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
