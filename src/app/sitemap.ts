@@ -532,6 +532,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-jouy-en-josas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-saint-quentin-en-yvelines`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Paris arrondissements — vague 17
+    { url: `${base}/renovation-appartement-paris-2e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     // Yvelines (78) — vague 16
     { url: `${base}/renovation-andrezy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
