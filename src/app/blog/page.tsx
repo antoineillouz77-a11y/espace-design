@@ -1488,6 +1488,36 @@ const articles = [
     desc: "Aménager une salle de jeux ou home cinéma à Paris. Insonorisation, éclairage, écran de projection.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/cuisine-bois-paris',
+    title: "Cuisine Bois Paris : massif ou plaqué, prix artisan 2025",
+    desc: "Cuisine en bois massif ou plaqué à Paris. Ambiance chaleureuse, durabilité, entretien. Devis gratuit 48h.",
+    tag: 'Cuisine',
+  },
+  {
+    href: '/blog/renovation-bibliotheque-salon-paris',
+    title: "Bibliothèque Sur Mesure Paris : intégrée salon, prix 2025",
+    desc: "Bibliothèque intégrée sur mesure dans le salon à Paris. Sol-plafond, bois massif, éclairage intégré.",
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/renovation-bureau-domicile-paris',
+    title: "Bureau à Domicile Paris : aménagement & prix artisan 2025",
+    desc: "Aménager un bureau à domicile à Paris. Cloison, éclairage de travail, prises, acoustique. Devis 48h.",
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/renovation-appartement-montreuil',
+    title: "Rénovation Appartement Montreuil : artisan & prix 2025",
+    desc: "Rénover un appartement à Montreuil (93). Ville artistique en pleine gentrification. Devis gratuit 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-saint-denis',
+    title: "Rénovation Appartement Saint-Denis : artisan & prix 2025",
+    desc: "Rénover un appartement à Saint-Denis (93). Ville en transformation, Stade de France. Devis 48h.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
