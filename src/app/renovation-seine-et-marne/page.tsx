@@ -56,6 +56,9 @@ const villes77 = [
   { href: '/renovation-emerainville', label: 'Émerainville' },
   { href: '/renovation-claye-souilly', label: 'Claye-Souilly' },
   { href: '/renovation-nangis', label: 'Nangis' },
+  { href: '/renovation-coulommiers', label: 'Coulommiers' },
+  { href: '/renovation-montereau-fault-yonne', label: 'Montereau-Fault-Yonne' },
+  { href: '/renovation-provins', label: 'Provins' },
 ]
 
 const services = [

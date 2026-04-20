@@ -519,6 +519,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Yvelines (78) — vague 8
     { url: `${base}/renovation-buchelay`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Seine-et-Marne (77) — vague 10
+    { url: `${base}/renovation-coulommiers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-montereau-fault-yonne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-provins`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     // Blog — vague 4-5
     { url: `${base}/blog/robinetterie-salle-de-bain-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-wc-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
