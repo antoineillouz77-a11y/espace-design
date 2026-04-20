@@ -2286,6 +2286,24 @@ const articles = [
     desc: "Artisan rénovateur à Lagny-sur-Marne (77). Cuisine, salle de bain, parquet. Devis gratuit.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/pose-enduit-decoratif-paris',
+    title: "Enduit Décoratif Paris — Pose & Prix 2025",
+    desc: "Appliquer un enduit décoratif à Paris : stuc, béton ciré, tadelakt, chaux. Prix et conseils.",
+    tag: 'Décoration',
+  },
+  {
+    href: '/blog/renovation-appartement-montereau-fault-yonne',
+    title: "Rénovation Appartement Montereau-Fault-Yonne (77) — 2025",
+    desc: "Artisan rénovateur à Montereau-Fault-Yonne (Seine-et-Marne). Devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-saint-gratien',
+    title: "Rénovation Appartement Saint-Gratien (95) — Guide 2025",
+    desc: "Rénover un appartement à Saint-Gratien (Val-d'Oise). Artisan qualifié, devis gratuit.",
+    tag: 'Ville',
+  },
 ]
 
 export default function BlogPage() {
