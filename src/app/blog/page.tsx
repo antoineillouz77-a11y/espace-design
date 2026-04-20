@@ -2316,6 +2316,12 @@ const articles = [
     desc: "Rénover un appartement à Taverny (Val-d'Oise). Artisan qualifié, devis gratuit sous 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-handicap-paris',
+    title: "Rénovation Accessibilité PMR Paris — Guide 2025",
+    desc: "Adapter votre appartement à Paris pour l'accessibilité PMR : largeur portes, rampes, douche. Prix.",
+    tag: 'Guide',
+  },
 ]
 
 export default function BlogPage() {
