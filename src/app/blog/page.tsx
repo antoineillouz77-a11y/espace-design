@@ -276,6 +276,18 @@ const articles = [
     desc: "Rénover son balcon à Paris : carrelage sur plots, lames composite, étanchéité, garde-corps. Prix au m² et guide complet 2025.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/isolation-phonique-paris',
+    title: 'Isolation Phonique Paris : solutions, prix & artisans 2025',
+    desc: "Isolation phonique appartement Paris : contre-cloisons, sols flottants, plafonds, fenêtres. Prix au m², solutions efficaces. Guide 2025.",
+    tag: 'Isolation',
+  },
+  {
+    href: '/blog/renovation-chambre-paris',
+    title: 'Rénovation Chambre Paris : aménagement, rangements & prix 2025',
+    desc: "Rénover une chambre à Paris : parquet, peinture, placards sur mesure, isolation phonique. Prix au m² et guide complet 2025.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
