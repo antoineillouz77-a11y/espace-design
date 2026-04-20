@@ -1584,6 +1584,12 @@ const articles = [
     desc: "Ravalement et rénovation façade maison à Paris. Enduit, peinture façade, isolation extérieure. Devis 48h.",
     tag: 'Extérieur',
   },
+  {
+    href: '/blog/miroir-sur-mesure-paris',
+    title: "Miroir Sur Mesure Paris : pose & prix artisan 2025",
+    desc: "Pose de miroir sur mesure à Paris. Salle de bain, dressing, salon. Miroir encadré et sur mesure.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
