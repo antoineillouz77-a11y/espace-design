@@ -63,6 +63,8 @@ const villes77 = [
   { href: '/renovation-nemours', label: 'Nemours' },
   { href: '/renovation-fontenay-en-brie', label: 'Fontenay-en-Brie' },
   { href: '/renovation-gretz-armainvilliers', label: 'Gretz-Armainvilliers' },
+  { href: '/renovation-bussy-saint-georges', label: 'Bussy-Saint-Georges' },
+  { href: '/renovation-chessy', label: 'Chessy' },
 ]
 
 const services = [

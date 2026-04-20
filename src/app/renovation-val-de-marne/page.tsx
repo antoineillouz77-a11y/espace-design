@@ -78,6 +78,7 @@ const villes94 = [
   { href: '/renovation-ormesson-sur-marne', label: 'Ormesson-sur-Marne' },
   { href: '/renovation-santeny', label: 'Santeny' },
   { href: '/renovation-noiseau', label: 'Noiseau' },
+  { href: '/renovation-la-queue-en-brie', label: 'La Queue-en-Brie' },
 ]
 
 const services = [

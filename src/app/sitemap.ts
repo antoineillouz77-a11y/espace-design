@@ -549,8 +549,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-fleury-merogis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-courcouronnes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
-    // Seine-et-Marne (77) — vague 19
+    // Val-de-Marne (94) — vague 20
+    { url: `${base}/renovation-la-queue-en-brie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-et-Marne (77) — vague 19-20
     { url: `${base}/renovation-gretz-armainvilliers`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-et-Marne (77) — vague 20
+    { url: `${base}/renovation-bussy-saint-georges`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-chessy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Blog — vague 14 (suite)
     { url: `${base}/blog/baignoire-ilot-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
