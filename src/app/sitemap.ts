@@ -338,6 +338,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Yvelines (78) — nouvelles villes
     { url: `${base}/renovation-fontenay-le-fleury`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-plaisir`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-conflans-sainte-honorine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-mantes-la-jolie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
@@ -361,6 +362,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Essonne (91) — nouvelles villes
     { url: `${base}/renovation-ris-orangis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-grigny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Yvelines (78) — nouvelles villes
     { url: `${base}/renovation-les-mureaux`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -406,6 +408,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-pontault-combault`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-ozoir-la-ferriere`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-trappes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-savigny-le-temple`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Hauts-de-Seine (92) — nouvelles villes
     { url: `${base}/renovation-le-plessis-robinson`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -449,6 +452,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-yvelines`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/renovation-val-d-oise`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/renovation-essonne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${base}/renovation-seine-et-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
 
   ]
 }

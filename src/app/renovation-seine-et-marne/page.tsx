@@ -3,15 +3,15 @@ import Link from 'next/link'
 import { ArrowRight, Phone, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Yvelines (78) — Artisan Rénovateur | Espace Design',
+  title: 'Rénovation Seine-et-Marne (77) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur dans les Yvelines (78) : Versailles, Saint-Germain-en-Laye, Le Vésinet, Chatou, Rueil. Devis gratuit 48h.',
+    'Artisan rénovateur en Seine-et-Marne (77) : Melun, Meaux, Chelles, Torcy, Pontault-Combault et toutes les communes. Devis gratuit 48h.',
   keywords: [
-    'rénovation Yvelines',
-    'rénovation appartement 78',
-    'artisan rénovation Yvelines',
-    'rénovation Versailles Saint-Germain',
-    'entreprise rénovation 78',
+    'rénovation Seine-et-Marne',
+    'rénovation appartement 77',
+    'artisan rénovation Seine-et-Marne',
+    'rénovation Melun Meaux Chelles',
+    'entreprise rénovation 77',
   ],
 }
 
@@ -20,7 +20,7 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Yvelines (78)', item: 'https://espacedesignparis.fr/renovation-yvelines' },
+    { '@type': 'ListItem', position: 2, name: 'Seine-et-Marne (77)', item: 'https://espacedesignparis.fr/renovation-seine-et-marne' },
   ],
 }
 
@@ -28,37 +28,30 @@ const schemaLocalBusiness = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur dans les Yvelines (78) — rénovation appartement, salle de bain, cuisine, peinture, parquet.',
+  description: 'Artisan rénovateur en Seine-et-Marne (77) — rénovation appartement, salle de bain, cuisine, peinture, parquet.',
   telephone: '+33611783867',
   email: 'espacedesign92@gmail.com',
   url: 'https://espacedesignparis.fr',
-  areaServed: { '@type': 'AdministrativeArea', name: 'Yvelines' },
+  areaServed: { '@type': 'AdministrativeArea', name: 'Seine-et-Marne' },
   priceRange: '€€€',
 }
 
-const villes78 = [
-  { href: '/renovation-versailles', label: 'Versailles' },
-  { href: '/renovation-saint-germain-en-laye', label: 'Saint-Germain-en-Laye' },
-  { href: '/renovation-le-vesinet', label: 'Le Vésinet' },
-  { href: '/renovation-chatou', label: 'Chatou' },
-  { href: '/renovation-poissy', label: 'Poissy' },
-  { href: '/renovation-conflans-sainte-honorine', label: 'Conflans-Sainte-Honorine' },
-  { href: '/renovation-mantes-la-jolie', label: 'Mantes-la-Jolie' },
-  { href: '/renovation-sartrouville', label: 'Sartrouville' },
-  { href: '/renovation-houilles', label: 'Houilles' },
-  { href: '/renovation-maisons-laffitte', label: 'Maisons-Laffitte' },
-  { href: '/renovation-rambouillet', label: 'Rambouillet' },
-  { href: '/renovation-mantes-la-ville', label: 'Mantes-la-Ville' },
-  { href: '/renovation-meulan-en-yvelines', label: 'Meulan-en-Yvelines' },
-  { href: '/renovation-les-mureaux', label: 'Les Mureaux' },
-  { href: '/renovation-montigny-le-bretonneux', label: 'Montigny-le-Bretonneux' },
-  { href: '/renovation-guyancourt', label: 'Guyancourt' },
-  { href: '/renovation-velizy-villacoublay', label: 'Vélizy-Villacoublay' },
-  { href: '/renovation-buc', label: 'Buc' },
-  { href: '/renovation-le-chesnay-rocquencourt', label: 'Le Chesnay-Rocquencourt' },
-  { href: '/renovation-fontenay-le-fleury', label: 'Fontenay-le-Fleury' },
-  { href: '/renovation-trappes', label: 'Trappes' },
-  { href: '/renovation-plaisir', label: 'Plaisir' },
+const villes77 = [
+  { href: '/renovation-melun', label: 'Melun' },
+  { href: '/renovation-meaux', label: 'Meaux' },
+  { href: '/renovation-chelles', label: 'Chelles' },
+  { href: '/renovation-torcy', label: 'Torcy' },
+  { href: '/renovation-lagny-sur-marne', label: 'Lagny-sur-Marne' },
+  { href: '/renovation-noisiel', label: 'Noisiel' },
+  { href: '/renovation-lognes', label: 'Lognes' },
+  { href: '/renovation-pontault-combault', label: 'Pontault-Combault' },
+  { href: '/renovation-ozoir-la-ferriere', label: 'Ozoir-la-Ferrière' },
+  { href: '/renovation-savigny-le-temple', label: 'Savigny-le-Temple' },
+  { href: '/renovation-combs-la-ville', label: 'Combs-la-Ville' },
+  { href: '/renovation-brie-comte-robert', label: 'Brie-Comte-Robert' },
+  { href: '/renovation-saint-thibault-des-vignes', label: 'Saint-Thibault-des-Vignes' },
+  { href: '/renovation-mitry-mory', label: 'Mitry-Mory' },
+  { href: '/renovation-roissy-en-brie', label: 'Roissy-en-Brie' },
 ]
 
 const services = [
@@ -76,7 +69,7 @@ const services = [
   { href: '/amenagement-interieur-paris', label: 'Aménagement' },
 ]
 
-export default function YvelinesPage() {
+export default function SeineEtMarnePage() {
   return (
     <>
       <script
@@ -90,13 +83,13 @@ export default function YvelinesPage() {
 
       {/* Hero */}
       <section className="pt-32 pb-16 bg-[#1C1C1C] text-center px-4">
-        <p className="text-[#D4AF37] text-sm font-medium uppercase tracking-widest mb-3">Yvelines (78)</p>
+        <p className="text-[#D4AF37] text-sm font-medium uppercase tracking-widest mb-3">Seine-et-Marne (77)</p>
         <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4">
-          Rénovation Yvelines
+          Rénovation Seine-et-Marne
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto text-base leading-relaxed">
-          Artisan rénovateur dans les Yvelines — Versailles, Saint-Germain-en-Laye, Le Vésinet,
-          Chatou et toute la région. Devis gratuit sous 48h.
+          Artisan rénovateur dans tout le 77 — Melun, Meaux, Chelles, Torcy, Pontault-Combault et
+          toutes les communes de Seine-et-Marne. Devis gratuit sous 48h.
         </p>
       </section>
 
@@ -104,29 +97,34 @@ export default function YvelinesPage() {
       <section className="py-14 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Votre artisan rénovateur dans le 78
+            Votre artisan rénovateur dans le 77
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Les Yvelines abritent certains des biens immobiliers les plus prestigieux d&apos;Île-de-France —
-            grandes demeures bourgeoises à Versailles, élégantes villas à Saint-Germain-en-Laye et
-            au Vésinet, maisons de maître dans la vallée de la Seine. Ces propriétés nécessitent
-            souvent des travaux de rénovation délicats, respectueux du patrimoine architectural
-            et des finitions haut de gamme.
+            Espace Design intervient dans toutes les communes de <strong>Seine-et-Marne</strong> pour
+            vos projets de rénovation. Le 77 est un département à la diversité architecturale
+            remarquable : les villes nouvelles de Marne-la-Vallée — Torcy, Lognes, Noisiel — regroupent
+            des ensembles de logements collectifs des années 70-80 souvent demandeurs de rénovations
+            complètes, tandis que les centres historiques de Melun et Meaux abritent des immeubles
+            anciens aux volumes généreux, propices à des réaménagements de caractère.
           </p>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Espace Design intervient dans tout le département des <strong>Yvelines</strong> pour vos
-            projets de rénovation : rénovation complète d&apos;appartement, réfection de salle de bain,
-            renovation de cuisine, peinture, parquet, carrelage. Notre savoir-faire en finitions
-            soignées répond aux exigences des propriétés du 78.
+            Le long de la Marne et de la Seine, de Chelles à Lagny-sur-Marne, les propriétés
+            riveraines — maisons de pêcheurs reconverties, pavillons de bord de rivière — nécessitent
+            une attention particulière à l&apos;humidité et à l&apos;isolation. Dans les suburbs
+            résidentielles de l&apos;est francilien comme Pontault-Combault et Ozoir-la-Ferrière,
+            nous intervenons régulièrement sur des pavillons des années 80-90 à moderniser :
+            salles de bain à repenser, cuisines à ouvrir, parquets à rénover et façades à
+            rafraîchir. Quelle que soit la nature de votre bien, nous apportons les mêmes
+            exigences de finition et le même respect de vos délais et de votre budget.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
             {[
-              'Devis gratuit sous 48h sur tout le 78',
+              'Devis gratuit sous 48h sur tout le 77',
               'Déplacement gratuit dans le département',
               'Artisan qualifié, assurance décennale',
-              'Finitions haut de gamme garanties',
+              'Finitions soignées garanties',
               'Respect des délais et du budget',
-              'Un seul interlocuteur du début à la fin',
+              'Travaux tous corps de métier',
             ].map((e) => (
               <div key={e} className="flex items-start gap-2">
                 <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -140,7 +138,7 @@ export default function YvelinesPage() {
       {/* Services */}
       <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-xl font-semibold text-[#1C1C1C] mb-6">Nos services dans le 78</h2>
+          <h2 className="font-display text-xl font-semibold text-[#1C1C1C] mb-6">Nos services dans le 77</h2>
           <div className="flex flex-wrap gap-3">
             {services.map((s) => (
               <Link
@@ -159,10 +157,10 @@ export default function YvelinesPage() {
       <section className="py-14 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-xl font-semibold text-[#1C1C1C] mb-6">
-            Communes des Yvelines où nous intervenons
+            Communes de Seine-et-Marne où nous intervenons
           </h2>
           <div className="flex flex-wrap gap-2">
-            {villes78.map((v) => (
+            {villes77.map((v) => (
               <Link
                 key={v.href}
                 href={v.href}
@@ -183,10 +181,10 @@ export default function YvelinesPage() {
             {[
               { href: '/renovation-appartement-paris', label: 'Rénovation Paris' },
               { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
+              { href: '/renovation-essonne', label: 'Essonne (91)' },
               { href: '/tarifs', label: 'Nos tarifs' },
               { href: '/faq', label: 'FAQ rénovation' },
-              { href: '/avis', label: 'Avis clients' },
-              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
                 {l.label}
@@ -199,10 +197,10 @@ export default function YvelinesPage() {
       {/* CTA */}
       <section className="py-16 bg-[#1C1C1C] text-center px-4">
         <h2 className="font-display text-3xl font-bold text-white mb-4">
-          Votre projet dans le 78
+          Votre projet dans le 77
         </h2>
         <p className="text-gray-400 mb-8 max-w-xl mx-auto text-sm">
-          Devis gratuit sous 48h — déplacement gratuit dans tout le département des Yvelines.
+          Devis gratuit sous 48h — déplacement gratuit dans tout le Seine-et-Marne.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
