@@ -744,6 +744,18 @@ const articles = [
     desc: "Prix rénovation salle de bain à Paris : petite surface 3m², carrelage mural, meuble vasque, douche italienne. Tarifs artisan 2025.",
     tag: 'Salle de bain',
   },
+  {
+    href: '/blog/renovation-appartement-paris-12e',
+    title: 'Rénovation Appartement Paris 12e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 12e arrondissement de Paris : Bastille, Nation, Bercy. Artisan local, devis 48h.",
+    tag: 'Paris',
+  },
+  {
+    href: '/blog/devis-travaux-renovation-paris',
+    title: 'Devis Travaux Rénovation Paris : comment comparer & éviter les pièges 2025',
+    desc: "Comment obtenir et comparer un devis de rénovation à Paris : CGV, prix au m², délais, assurance décennale. Guide 2025.",
+    tag: 'Guides',
+  },
 ]
 
 export default function BlogPage() {

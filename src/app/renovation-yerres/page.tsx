@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Fontenay-sous-Bois (94120) — Artisan Rénovateur | Espace Design',
+  title: 'Rénovation Yerres (91330) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Fontenay-sous-Bois (94120) : pavillons années 50-70, maisons de ville, résidences est parisien. Rénovation 800-2500€/m². Devis gratuit 48h.',
+    'Artisan rénovateur à Yerres (91330) : maisons bourgeoises, pavillons résidentiels, bords de la Yerres. Rénovation complète 800-2500€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation appartement Fontenay-sous-Bois',
-    'artisan rénovation Fontenay-sous-Bois',
-    'décoration intérieure Fontenay-sous-Bois',
-    'renovation Fontenay-sous-Bois 94120',
-    'entreprise renovation Fontenay-sous-Bois',
-    'artisan Fontenay-sous-Bois Val-de-Marne',
-    'rénovation pavillon Fontenay-sous-Bois',
+    'rénovation maison Yerres',
+    'artisan rénovation Yerres',
+    'rénovation appartement Yerres',
+    'renovation Yerres 91330',
+    'entreprise renovation Yerres',
+    'artisan Yerres Essonne',
+    'rénovation maison bourgeoise Yerres 91',
   ],
 }
 
@@ -22,17 +22,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Fontenay-sous-Bois.',
+  description: 'Artisan rénovateur et décorateur intérieur à Yerres.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-fontenay-sous-bois',
+  url: 'https://espacedesignparis.fr/renovation-yerres',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Fontenay-sous-Bois',
+    name: 'Yerres',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Fontenay-sous-Bois',
-    postalCode: '94120',
+    addressLocality: 'Yerres',
+    postalCode: '91330',
     addressCountry: 'FR',
   },
   aggregateRating: {
@@ -48,26 +48,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: "Quel est le prix d'une rénovation à Fontenay-sous-Bois ?",
+      name: "Quel est le prix d'une rénovation à Yerres ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le coût d'une rénovation à Fontenay-sous-Bois varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons années 50-70 et les maisons de ville, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
+        text: "Le coût d'une rénovation à Yerres varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons bourgeoises et pavillons résidentiels avec finitions haut de gamme, comptez 1 500 à 2 500 €/m². Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel artisan contacter pour rénover un pavillon à Fontenay-sous-Bois ?',
+      name: 'Rénovez-vous les maisons bourgeoises à Yerres ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Espace Design intervient régulièrement à Fontenay-sous-Bois pour des rénovations de pavillons et maisons de ville. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h, un seul interlocuteur.",
+        text: "Oui, Espace Design intervient régulièrement dans les maisons bourgeoises et pavillons résidentiels de Yerres. Rénovation complète ou partielle, restauration des éléments d'origine, modernisation du confort — devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment rénover un pavillon des années 60 à Fontenay-sous-Bois ?',
+      name: 'Quels travaux réalisez-vous à Yerres ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La rénovation d'un pavillon des années 60 à Fontenay-sous-Bois nécessite souvent une mise aux normes électrique, une isolation renforcée, et un rafraîchissement complet des pièces d'eau. Nous établissons un diagnostic gratuit et un devis détaillé sous 48h.",
+        text: "Nous réalisons tous types de travaux à Yerres : peinture, rénovation salle de bain, réfection cuisine, pose de parquet, carrelage, électricité, plomberie, isolation et aménagement intérieur complet pour vos maisons et pavillons.",
       },
     },
     {
@@ -86,12 +86,12 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Val-de-Marne', item: 'https://espacedesignparis.fr/renovation-val-de-marne' },
-    { '@type': 'ListItem', position: 3, name: 'Fontenay-sous-Bois', item: 'https://espacedesignparis.fr/renovation-fontenay-sous-bois' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Essonne', item: 'https://espacedesignparis.fr/renovation-essonne' },
+    { '@type': 'ListItem', position: 3, name: 'Yerres', item: 'https://espacedesignparis.fr/renovation-yerres' },
   ],
 }
 
-export default function RenovationFontenaySOusBois() {
+export default function RenovationYerres() {
   return (
     <>
       <script
@@ -109,13 +109,13 @@ export default function RenovationFontenaySOusBois() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Fontenay-sous-Bois — 94120</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Yerres — 91330</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation maison<br className="hidden sm:block" /> Fontenay-sous-Bois
+            Rénovation maison<br className="hidden sm:block" /> Yerres
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Fontenay-sous-Bois (94120) : pavillons années 50-70, maisons de ville, résidences de l'est parisien en Val-de-Marne. Rénovation complète, cuisine, salle de bain, peinture. Devis gratuit sous 48h.
+            Artisan rénovateur à Yerres (91330) : maisons bourgeoises, pavillons résidentiels et demeures en bords de la Yerres. Rénovation intérieure complète et finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -138,13 +138,25 @@ export default function RenovationFontenaySOusBois() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Fontenay-sous-Bois
+            Nos services à Yerres
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation salle de bain', desc: "Modernisation de vos salles de bain des années 60-70 à Fontenay-sous-Bois : douche à l'italienne, receveur extra-plat, faïence tendance, plomberie et électricité aux normes." },
-              { num: '02', title: 'Rénovation cuisine', desc: "Transformation de cuisine dans vos pavillons et maisons de ville de Fontenay-sous-Bois : nouvelle disposition, plans de travail, façades, carrelage, électroménager encastré." },
-              { num: '03', title: 'Peinture et finitions', desc: "Peinture intérieure, ravalement, parquet, isolation. Mise au goût du jour de vos pavillons des années 50 à 70 à Fontenay-sous-Bois, avec des matériaux durables et esthétiques." },
+              {
+                num: '01',
+                title: 'Rénovation salle de bain',
+                desc: "Transformation complète de votre salle de bain à Yerres : douche à l'italienne, baignoire, carrelage, faïence, meuble vasque et plomberie. Finitions soignées adaptées aux maisons bourgeoises et pavillons résidentiels.",
+              },
+              {
+                num: '02',
+                title: 'Rénovation cuisine',
+                desc: "Modernisation de votre cuisine dans une maison bourgeoise ou un pavillon à Yerres : plan de travail, crédence, carrelage, peinture. Travaux propres et livrés dans les délais convenus.",
+              },
+              {
+                num: '03',
+                title: 'Peinture & finitions',
+                desc: "Peinture intérieure, enduits décoratifs, parquet, revêtements de sols — nous intervenons dans toutes les pièces de vos maisons et pavillons à Yerres pour valoriser et embellir votre bien.",
+              },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -160,30 +172,33 @@ export default function RenovationFontenaySOusBois() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Fontenay-sous-Bois
+            Prix rénovation à Yerres
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-[#F2F2EE]">
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Type de travaux</th>
-                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Prix indicatif</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Petits travaux</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Travaux moyens</th>
+                  <th className="px-5 py-3 font-semibold text-[#1C1C1C] font-display">Grands travaux</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
-                {[
-                  ['Peinture maison / appartement', '30 - 70 €/m²'],
-                  ['Rénovation salle de bain', '4 000 - 12 000 €'],
-                  ['Rénovation cuisine', '5 000 - 18 000 €'],
-                  ['Parquet (pose + fourniture)', '50 - 100 €/m²'],
-                  ['Rénovation complète', '800 - 1 500 €/m²'],
-                  ['Rénovation pavillon années 50-70', '1 500 - 2 500 €/m²'],
-                ].map(([label, price]) => (
-                  <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
-                    <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
-                    <td className="px-5 py-3 text-[#B8960C] font-semibold">{price}</td>
-                  </tr>
-                ))}
+                <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                  <td className="px-5 py-3 text-gray-700 font-light">Peinture pièce : 300–800 €</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Salle de bain : 4 000–12 000 €</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Rénovation complète : 800–1 500 €/m²</td>
+                </tr>
+                <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                  <td className="px-5 py-3 text-gray-700 font-light">Pose parquet : 45–100 €/m²</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Cuisine : 5 000–18 000 €</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Maison bourgeoise : 1 500–2 500 €/m²</td>
+                </tr>
+                <tr className="bg-white hover:bg-[#FAFAF8] transition-colors">
+                  <td className="px-5 py-3 text-gray-700 font-light">Carrelage : 45–90 €/m²</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Électricité maison : 3 000–8 000 €</td>
+                  <td className="px-5 py-3 text-gray-700 font-light">Maison entière : sur devis</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -199,7 +214,7 @@ export default function RenovationFontenaySOusBois() {
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
             <Image
               src="/images/realisations/19-sdb-mosaique-lavabo.jpg"
-              alt="Rénovation salle de bain — pavillon années 60 Fontenay-sous-Bois 94120"
+              alt="Rénovation salle de bain — maison bourgeoise Yerres 91330 Essonne"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 896px"
@@ -236,16 +251,16 @@ export default function RenovationFontenaySOusBois() {
           <div className="space-y-4">
             {[
               {
-                q: "Quel est le prix d'une rénovation à Fontenay-sous-Bois ?",
-                a: "Le coût d'une rénovation à Fontenay-sous-Bois varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons années 50-70 et les maisons de ville, comptez 1 500 à 2 500 €/m².",
+                q: "Quel est le prix d'une rénovation à Yerres ?",
+                a: "Le coût d'une rénovation à Yerres varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les maisons bourgeoises avec finitions haut de gamme, comptez 1 500 à 2 500 €/m².",
               },
               {
-                q: 'Quel artisan contacter pour rénover un pavillon à Fontenay-sous-Bois ?',
-                a: "Espace Design intervient régulièrement à Fontenay-sous-Bois pour des rénovations de pavillons et maisons de ville. Assuré décennale, devis gratuit sous 48h.",
+                q: 'Rénovez-vous les maisons bourgeoises à Yerres ?',
+                a: "Oui, Espace Design intervient régulièrement dans les maisons bourgeoises et pavillons résidentiels de Yerres. Rénovation complète ou partielle, restauration des éléments d'origine, modernisation du confort.",
               },
               {
-                q: 'Comment rénover un pavillon des années 60 à Fontenay-sous-Bois ?',
-                a: "La rénovation d'un pavillon des années 60 à Fontenay-sous-Bois nécessite souvent une mise aux normes électrique, une isolation renforcée et un rafraîchissement complet des pièces d'eau. Nous établissons un diagnostic gratuit sous 48h.",
+                q: 'Quels travaux réalisez-vous à Yerres ?',
+                a: "Nous réalisons tous types de travaux à Yerres : peinture, rénovation salle de bain, réfection cuisine, pose de parquet, carrelage, électricité, plomberie, isolation et aménagement intérieur complet.",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -269,11 +284,10 @@ export default function RenovationFontenaySOusBois() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
-              { href: '/renovation-vincennes', label: 'Vincennes' },
-              { href: '/renovation-saint-mande', label: 'Saint-Mandé' },
-              { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
-              { href: '/renovation-rosny-sous-bois', label: 'Rosny-sous-Bois' },
+              { href: '/renovation-essonne', label: 'Essonne (91)' },
+              { href: '/renovation-brunoy', label: 'Brunoy' },
+              { href: '/renovation-villeneuve-saint-georges', label: 'Villeneuve-Saint-Georges' },
+              { href: '/renovation-croissy-beaubourg', label: 'Croissy-Beaubourg' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
@@ -321,7 +335,7 @@ export default function RenovationFontenaySOusBois() {
             {[
               { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
               { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain Paris' },
-              { href: '/blog/renovation-avant-vente-paris', label: 'Rénovation avant vente' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant de vendre' },
               { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
               { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
               { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
@@ -337,10 +351,10 @@ export default function RenovationFontenaySOusBois() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Fontenay-sous-Bois
+            Votre projet à Yerres
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Fontenay-sous-Bois et ses alentours en Val-de-Marne.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Yerres et alentours en Essonne.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

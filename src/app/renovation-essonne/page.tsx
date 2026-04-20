@@ -47,6 +47,7 @@ const villes91 = [
   { href: '/renovation-longjumeau', label: 'Longjumeau' },
   { href: '/renovation-corbeil-essonnes', label: 'Corbeil-Essonnes' },
   { href: '/renovation-sainte-genevieve-des-bois', label: 'Sainte-Geneviève-des-Bois' },
+  { href: '/renovation-yerres', label: 'Yerres' },
 ]
 
 const services = [
