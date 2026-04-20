@@ -65,6 +65,7 @@ const villes77 = [
   { href: '/renovation-gretz-armainvilliers', label: 'Gretz-Armainvilliers' },
   { href: '/renovation-bussy-saint-georges', label: 'Bussy-Saint-Georges' },
   { href: '/renovation-chessy', label: 'Chessy' },
+  { href: '/renovation-serris', label: 'Serris' },
 ]
 
 const services = [

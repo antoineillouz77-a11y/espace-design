@@ -69,6 +69,7 @@ const villes91 = [
   { href: '/renovation-saint-germain-les-arpajon', label: 'Saint-Germain-lès-Arpajon' },
   { href: '/renovation-fleury-merogis', label: 'Fleury-Mérogis' },
   { href: '/renovation-courcouronnes', label: 'Courcouronnes' },
+  { href: '/renovation-varennes-jarcy', label: 'Varennes-Jarcy' },
 ]
 
 const services = [
