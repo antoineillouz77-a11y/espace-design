@@ -146,6 +146,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-wc-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/douche-italienne-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-bureau-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-entree-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/peinture-cuisine-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/peinture-enduit-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-combles-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/diagnostic-amiante-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
@@ -169,8 +174,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-cergy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-epinay-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
-    // Seine-et-Marne (93) / Est parisien
+    // Seine-Saint-Denis (93) — petites communes
     { url: `${base}/renovation-noisy-le-grand`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-noisy-le-sec`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-romainville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-les-lilas`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Val-de-Marne (94) — nouvelles villes
     { url: `${base}/renovation-vitry-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

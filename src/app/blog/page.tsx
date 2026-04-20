@@ -318,6 +318,36 @@ const articles = [
     desc: "Créer ou rénover un bureau à Paris : isolation phonique, éclairage, rangements, sol. Prix et guide complet 2025.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/renovation-entree-paris',
+    title: "Rénovation Entrée Paris : hall d'appartement & prix 2025",
+    desc: "Rénover l'entrée de son appartement parisien : sol, miroir, rangements, éclairage. Prix et idées déco 2025.",
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/peinture-cuisine-paris',
+    title: 'Peinture Cuisine Paris : couleurs, lessivables & prix 2025',
+    desc: 'Choisir la bonne peinture pour sa cuisine parisienne : peinture lessivable, émulsion, faïence. Couleurs tendance, prix. Guide 2025.',
+    tag: 'Peinture',
+  },
+  {
+    href: '/blog/peinture-enduit-paris',
+    title: 'Enduit Peinture Paris : préparation murs & finitions 2025',
+    desc: 'Enduits de finition à Paris : enduit de lissage, enduit à la chaux, ragréage. Prix, techniques, artisans. Guide complet 2025.',
+    tag: 'Peinture',
+  },
+  {
+    href: '/blog/renovation-combles-paris',
+    title: 'Rénovation Combles Paris : aménagement, isolation & prix 2025',
+    desc: 'Aménager les combles à Paris : isolation, Velux, hauteur sous plafond, prix. Guide pour appartements en dernier étage 2025.',
+    tag: 'Isolation',
+  },
+  {
+    href: '/blog/diagnostic-amiante-paris',
+    title: 'Diagnostic Amiante Paris : avant rénovation, prix & obligations 2025',
+    desc: 'Amiante dans un appartement parisien : diagnostic obligatoire, matériaux concernés, coût du désamiantage. Guide complet avant travaux 2025.',
+    tag: 'Réglementation',
+  },
 ]
 
 export default function BlogPage() {
