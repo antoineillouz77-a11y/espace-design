@@ -39,26 +39,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel profil d\'appartements autour de la Bastille ?',
+      name: 'Quels types de biens trouve-t-on autour de la Bastille (11e-12e) ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le quartier Bastille (11e et 12e arrondissements) concentre des appartements des années 1870-1930, des lofts industriels reconvertis dans les anciens entrepôts, et des immeubles contemporains. La mixité est forte : de l\'appartement ouvrier réhabilité au loft design. La rénovation est moins contraignante qu\'en secteur sauvegardé, et les budgets sont souvent plus accessibles qu\'à l\'Ouest parisien.',
+        text: 'Le quartier Bastille (Paris 11e et 12e arrondissements) présente un parc immobilier très varié : appartements anciens du XIXe siècle avec parquets et moulures, lofts issus de la reconversion d\'anciens ateliers ou entrepôts industriels, et immeubles contemporains des années 1980-2000. Cette diversité permet de trouver des biens à rénover à des prix encore accessibles pour Paris intramuros, avec un fort potentiel de valorisation.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Combien coûte la rénovation d\'un appartement à Bastille ?',
+      name: 'Combien coûte une rénovation autour de la Bastille en 2025 ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'La rénovation dans le 11e et 12e est souvent plus accessible qu\'à l\'Ouest parisien. Comptez 800 à 1 500 €/m² pour une rénovation partielle, 1 500 à 2 500 €/m² pour une rénovation complète. Un studio de 30 m² se rénove pour 20 000 à 45 000 €. Les lofts industriels peuvent nécessiter des budgets plus importants (isolation, hauteur, structures).',
+        text: 'Les prix de rénovation dans le 11e et le 12e sont généralement plus accessibles que dans les arrondissements du centre-ouest parisien. Comptez 1 200 à 2 200 €/m² pour une rénovation complète standard, et 2 200 à 3 000 €/m² pour un projet loft avec décloisonnement, verrière intérieure et finitions industrielles. Un rafraîchissement simple (peinture, sol, éclairage) revient à 400 à 700 €/m².',
       },
     },
     {
       '@type': 'Question',
-      name: 'Peut-on créer un loft dans un ancien entrepôt à Bastille ?',
+      name: 'Peut-on créer un loft dans un ancien entrepôt autour de la Bastille ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, le quartier Bastille-Aligre compte plusieurs immeubles d\'anciens entrepôts reconvertis en lofts. L\'aménagement d\'un loft nécessite de traiter spécifiquement l\'isolation (acoustique et thermique) car les structures industrielles sont souvent mal isolées. Les travaux types : béton ciré, verrière intérieure, cuisine ouverte sur mesure, mezzanine pour créer une chambre. Budget loft de 80 m² : 80 000 à 150 000 €.',
+        text: 'Oui — le 11e et le 12e abritent d\'anciens ateliers et entrepôts transformés en logements qui se prêtent idéalement à l\'esprit loft : grands volumes, hauteurs sous plafond de 3,50 m à 6 m, dalles béton brut, métal apparent. Ces espaces permettent des projets de décloisonnement ambitieux (cuisine ouverte, mezzanine, verrière intérieure). Le budget pour un projet loft complet dans le secteur Bastille est de l\'ordre de 2 000 à 3 000 €/m² selon les finitions.',
       },
     },
   ],
@@ -88,14 +88,14 @@ export default function ArticleBastille() {
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement Bastille (Paris 11e-12e) : prix & guide 2025
+            Rénovation appartement Bastille — Paris 11e & 12e
           </h1>
           <p className="text-gray-500 text-sm font-light leading-relaxed">
-            Le quartier Bastille concentre une offre immobilière très diverse : appartements
-            anciens des années 1880-1930, lofts industriels dans les anciens entrepôts du
-            faubourg Saint-Antoine, immeubles contemporains et ateliers reconvertis. La
-            rénovation dans le 11e et le 12e est souvent plus accessible qu&apos;ailleurs à Paris,
-            avec des possibilités créatives importantes. Ce guide vous guide pas à pas.
+            Le quartier Bastille concentre une offre immobilière exceptionnellement variée : appartements
+            anciens du XIXe siècle, lofts issus d&apos;anciens ateliers et entrepôts industriels, immeubles
+            contemporains. Les prix y sont encore plus accessibles que dans le centre-ouest parisien,
+            avec un fort potentiel de valorisation après rénovation. Ce guide vous aide à préparer
+            votre projet dans le 11e ou le 12e arrondissement.
           </p>
         </div>
       </section>
@@ -107,53 +107,56 @@ export default function ArticleBastille() {
           {/* Section 1 */}
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Le quartier Bastille : diversité architecturale et opportunités
+              Un quartier au parc immobilier mixte et en pleine évolution
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              Autour de la place de la Bastille, les 11e et 12e arrondissements offrent
-              un tissu urbain riche et varié. Historiquement quartier artisan et ouvrier,
-              le secteur a connu une profonde transformation depuis les années 1980,
-              devenant l&apos;un des quartiers les plus dynamiques et créatifs de Paris.
+              Le secteur Bastille (11e et 12e arrondissements) a connu une profonde mutation
+              depuis les années 1990. D&apos;anciens quartiers artisanaux et industriels se sont
+              transformés en secteurs résidentiels recherchés, portés par la rénovation de
+              friches et la création de logements atypiques. Aujourd&apos;hui, on y trouve trois
+              grandes typologies de biens, chacune avec ses spécificités de rénovation.
             </p>
 
             <div className="space-y-5">
               <div>
                 <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Les appartements anciens du faubourg Saint-Antoine
+                  Les appartements anciens du XIXe siècle
                 </h3>
                 <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Le faubourg Saint-Antoine (11e et 12e) regorge d&apos;immeubles de rapport construits
-                  entre 1870 et 1930. Ces biens présentent des caractéristiques proches des
-                  haussmanniens — parquet en bois massif, moulures, cheminées — mais avec des
-                  finitions plus modestes et des surfaces souvent généreuses. Leur rénovation
-                  est l&apos;occasion de révéler un potentiel souvent sous-estimé.
+                  Le 11e arrondissement regorge d&apos;immeubles construits entre 1850 et 1930 :
+                  plafonds à 2,90 m - 3,20 m, parquets en bois massif, moulures simples,
+                  cheminées de fonte. Ces appartements sont souvent vendus à rénover et
+                  présentent un excellent rapport qualité-prix une fois rénovés. Leur
+                  rénovation suit les mêmes règles que dans n&apos;importe quel immeuble
+                  ancien parisien : mise aux normes électrique, réfection plomberie,
+                  restauration du parquet.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Les lofts industriels de la Bastille-Aligre
+                  Les lofts dans d&apos;anciens ateliers et entrepôts
                 </h3>
                 <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Les anciens entrepôts du quartier (notamment autour de la rue de la Roquette
-                  et du marché d&apos;Aligre) ont été reconvertis en lofts et ateliers très
-                  recherchés. Ces espaces offrent des hauteurs sous plafond de 4 à 7 m,
-                  des structures métalliques apparentes, des bétons bruts et des volumes
-                  ouverts uniques à Paris. Leur rénovation demande une expertise spécifique
-                  en aménagement de grands volumes.
+                  La spécialité du quartier Bastille : d&apos;anciens ateliers de menuiserie,
+                  de métal ou d&apos;imprimerie ont été transformés en lofts, souvent dans les
+                  passages et cours intérieures (passage de la Bonne Graine, passage
+                  Louis-Philippe, cour de la Maison Brûlée). Ces espaces offrent des
+                  hauteurs sous plafond spectaculaires (4 à 6 m), des verrières et des
+                  volumes industriels uniques à Paris.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
-                  Le 12e : bois de Vincennes et immeubles contemporains
+                  Les immeubles contemporains des années 1980-2000
                 </h3>
                 <p className="text-gray-600 text-sm font-light leading-relaxed">
-                  Le 12e arrondissement est plus résidentiel que le 11e. On y trouve davantage
-                  d&apos;immeubles des années 1960-1980 et des programmes contemporains, notamment
-                  autour de la Promenade Plantée et de Bercy. Ces biens nécessitent un autre
-                  type de rénovation : cuisine et salles de bain à moderniser, isolation à
-                  améliorer, agencements à repenser selon les modes de vie actuels.
+                  Notamment dans le 12e autour de Bercy et de la Promenade Plantée,
+                  des immeubles plus récents offrent des appartements avec balcons,
+                  double vitrage d&apos;origine et ascenseurs. Moins atypiques mais souvent
+                  bien configurés, ils se prêtent à des rénovations plus standard :
+                  cuisine ouverte, salle de bain contemporaine, parquet flottant ou collé.
                 </p>
               </div>
             </div>
@@ -162,35 +165,34 @@ export default function ArticleBastille() {
           {/* Section 2 */}
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Combien coûte une rénovation autour de la Bastille ?
+              Prix d&apos;une rénovation autour de la Bastille en 2025
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              La Bastille est l&apos;un des secteurs parisiens où le rapport qualité/prix de la
-              rénovation est le meilleur. Les contraintes patrimoniales sont moins fortes
-              qu&apos;à l&apos;Ouest, les logistiques plus simples, et les prix souvent plus accessibles
-              sans pour autant sacrifier la qualité.
+              Avec des prix au m² plus accessibles que dans les arrondissements du centre-ouest,
+              le 11e et le 12e offrent un excellent potentiel de valorisation après rénovation.
+              Le budget dépend fortement du type de bien et du niveau de finition souhaité.
             </p>
             <ul className="space-y-3">
               {[
                 {
-                  poste: 'Studio / petit appartement (rafraîchissement)',
-                  fourchette: '20 000 à 35 000 €',
-                  detail: 'Pour un studio de 20-30 m² à remettre au goût du jour sans modification structurelle.',
+                  poste: 'Rafraîchissement (peinture, sol, éclairage)',
+                  fourchette: '400 à 700 €/m²',
+                  detail: 'Pour un appartement en bon état général. Peinture murs et plafonds, remplacement du sol, éclairage LED. Sans modification des installations existantes.',
                 },
                 {
-                  poste: 'Rénovation partielle (une pièce d\'eau)',
+                  poste: 'Rénovation partielle (cuisine ou salle de bain)',
                   fourchette: '8 000 à 20 000 €',
-                  detail: 'Salle de bain ou cuisine rénovée complètement. Fourchette large selon les finitions.',
+                  detail: 'Rénovation d\'une pièce d\'eau ou création d\'une cuisine ouverte. Budget selon la surface et les finitions choisies.',
                 },
                 {
-                  poste: 'Rénovation complète — appartement standard',
-                  fourchette: '1 500 à 2 500 €/m²',
-                  detail: 'Électricité, plomberie, cuisine, bain, sols, peintures. Niveau de finition moyen à élevé.',
+                  poste: 'Rénovation complète — appartement ancien standard',
+                  fourchette: '1 200 à 2 200 €/m²',
+                  detail: 'Électricité, plomberie, cuisine, salle de bain, parquet, peintures. Configuration standard dans un immeuble ancien du 11e ou 12e.',
                 },
                 {
-                  poste: 'Loft industriel — rénovation et aménagement',
-                  fourchette: '80 000 à 150 000 € (80 m²)',
-                  detail: 'Isolation thermique et acoustique, cloisonnement, béton ciré, verrière, cuisine ouverte sur mesure.',
+                  poste: 'Projet loft — décloisonnement et finitions industrielles',
+                  fourchette: '2 200 à 3 000 €/m²',
+                  detail: 'Création d\'espaces ouverts, verrière intérieure, mezzanine, cuisine ouverte, béton ciré, métal apparent. Finitions inspirées du style industriel.',
                 },
               ].map((item) => (
                 <li key={item.poste} className="bg-[#FAFAF8] rounded-lg p-4 border border-gray-100">
@@ -207,33 +209,33 @@ export default function ArticleBastille() {
           {/* Section 3 */}
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les projets phares de rénovation autour de la Bastille
+              Projets phares dans le secteur Bastille : loft, cuisine ouverte, décloisonnement
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              Voici les types de projets les plus fréquents dans le quartier Bastille,
-              avec leurs spécificités techniques et leurs budgets.
+              Le 11e et le 12e sont particulièrement propices aux projets de transformation ambitieux.
+              Voici les travaux les plus courants et ce qu&apos;il faut savoir avant de les engager.
             </p>
             <ul className="space-y-3">
               {[
                 {
-                  flag: 'Transformation d\'un entrepôt en loft habitable',
-                  detail: 'Isolation thermique et acoustique (les structures industrielles ne sont pas isolées), création de cloisonnements légers (verre, acier), béton ciré sur l\'existant, cuisine ouverte sur mesure, mezzanine bois pour créer une chambre. C\'est l\'un des projets les plus créatifs et les plus valorisants du marché parisien.',
+                  flag: 'Décloisonnement et cuisine ouverte',
+                  detail: 'Ouvrir la cuisine sur le salon est le projet le plus demandé dans le secteur Bastille. Si la cloison est non porteuse : 2 000 à 5 000 €. Si c\'est un mur porteur : étude de structure + IPN, soit 8 000 à 16 000 €. Un artisan expérimenté peut évaluer la faisabilité en visite.',
                 },
                 {
                   flag: 'Création d\'une verrière intérieure',
-                  detail: 'La verrière intérieure (entre séjour et chambre, ou entre cuisine et couloir) est particulièrement adaptée aux appartements du 11e où la lumière naturelle peut manquer. Budget : 3 500 à 8 000 € pour une verrière de 3 à 6 m².',
+                  detail: 'La verrière intérieure (entre salon et chambre, ou entre cuisine et salon) est une signature des rénovations Bastille. Comptez 3 000 à 8 000 € pour une verrière standard en métal et verre feuilleté, posée par un menuisier métallier spécialisé.',
                 },
                 {
-                  flag: 'Rénovation d\'un appartement ouvrier des années 1900',
-                  detail: 'Ces appartements ont souvent des installations électriques et de plomberie très anciennes à refaire intégralement. La mise aux normes peut représenter 30 à 40% du budget total. En contrepartie, les volumes sont souvent généreux et les parquets anciens en excellent état.',
+                  flag: 'Mezzanine dans un appartement à hauteur sous plafond élevée',
+                  detail: 'Avec 3,50 m ou plus sous plafond, la mezzanine est une solution intelligente pour gagner une chambre ou un espace de travail. Budget : 8 000 à 18 000 € selon la superficie et les matériaux (bois, métal, mixte).',
                 },
                 {
-                  flag: 'Aménagement d\'un appartement duplex',
-                  detail: 'Le quartier Bastille compte de nombreux duplex (anciens ateliers, immeubles avec mezzanine). L\'optimisation des espaces sur deux niveaux — escalier, espace de travail en hauteur, chambre mezzanine — est une spécialité que maîtrisent peu d\'artisans.',
+                  flag: 'Béton ciré et finitions industrielles',
+                  detail: 'Sol en béton ciré, mur en enduit béton, métal brut — ces finitions s\'accordent parfaitement avec l\'esprit des lofts Bastille. Le béton ciré coûte 80 à 150 €/m² fourni et posé, soit plus que le parquet mais moins qu\'un carrelage grand format posé.',
                 },
                 {
-                  flag: 'Rénovation cuisine avec béton ciré ou résine',
-                  detail: 'Le style industriel est très présent dans le 11e. Le béton ciré (sol, plan de travail, crédence) et la résine époxy sont des finitions courantes. Elles nécessitent une pose soignée et un support préparé avec soin pour éviter les fissurations.',
+                  flag: 'Mise aux normes électrique',
+                  detail: 'Dans les appartements anciens non rénovés du 11e, l\'électricité est souvent à refaire intégralement : tableau, fils, prises, éclairage. Budget : 7 000 à 14 000 € pour un 70-80 m².',
                 },
               ].map((item) => (
                 <li key={item.flag} className="flex gap-3">
@@ -250,26 +252,33 @@ export default function ArticleBastille() {
           {/* Section 4 */}
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Rénovation dans le 11e et 12e : nos conseils pratiques
+              Choisir son artisan pour rénover dans le 11e ou le 12e
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              La Bastille est un quartier dynamique où les chantiers se multiplient. Quelques
-              conseils pour bien démarrer votre projet de rénovation dans le 11e ou le 12e
-              arrondissement.
+              La diversité du parc immobilier autour de la Bastille exige des artisans polyvalents :
+              capables de rénover un appartement ancien classique aussi bien que de transformer
+              un ancien atelier en loft contemporain. Ce n&apos;est pas la même technicité ni les
+              mêmes matériaux.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Vérifiez toujours le règlement de copropriété avant de démarrer : même si
-              le quartier est moins contraignant que les secteurs sauvegardés, certaines
-              copropriétés imposent des règles strictes sur les horaires de chantier, les
-              matériaux de sol et les modifications de façade.
+              Pour un projet loft, vérifiez spécifiquement : les références en décloisonnement
+              et pose de verrières, la maîtrise des finitions industrielles (béton ciré, métal),
+              et la capacité à coordonner menuisiers, plombiers et électriciens sur un plateau
+              ouvert. Pour un appartement ancien standard, les critères habituels s&apos;appliquent :
+              assurance décennale, références en immeubles anciens, coordination multi-corps de
+              métier.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed font-light">
-              Pour un loft ou un espace industriel, faites systématiquement appel à un
-              bureau d&apos;études structure avant de modifier des cloisons ou des planchers :
-              les structures industrielles peuvent réserver des surprises. Espace Design
-              coordonne ces études pour vous.{' '}
+              Espace Design intervient régulièrement dans le 11e et le 12e arrondissement, ainsi
+              que dans les quartiers voisins (3e, 4e, 10e, 13e). Notre équipe maîtrise aussi
+              bien la rénovation classique d&apos;appartements anciens que les projets loft et de
+              transformation. Consultez nos{' '}
+              <Link href="/realisations" className="text-[#B8960C] hover:underline">
+                réalisations
+              </Link>{' '}
+              ou{' '}
               <Link href="/contact" className="text-[#B8960C] hover:underline">
-                Contactez-nous pour une visite gratuite
+                demandez un devis gratuit
               </Link>
               .
             </p>
@@ -301,7 +310,7 @@ export default function ArticleBastille() {
             {[
               { href: '/renovation-paris-11e', title: 'Rénovation Paris 11e — Espace Design' },
               { href: '/renovation-paris-12e', title: 'Rénovation Paris 12e — Espace Design' },
-              { href: '/blog/renovation-loft-paris', title: 'Rénovation loft Paris — guide 2025' },
+              { href: '/blog/renovation-loft-paris', title: 'Rénovation loft Paris — guide complet 2025' },
               { href: '/blog/verriere-interieure-paris', title: 'Verrière intérieure Paris — prix & pose' },
               { href: '/renovation-appartement-paris', title: 'Rénovation appartement Paris — Espace Design' },
             ].map((a) => (
@@ -349,10 +358,10 @@ export default function ArticleBastille() {
       {/* CTA */}
       <section className="py-16 bg-[#1C1C1C] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-          Vous rénovez autour de la Bastille ?
+          Vous rénovez un appartement autour de la Bastille ?
         </h2>
         <p className="text-gray-400 text-sm font-light mb-8">
-          Appartement ancien, loft industriel, duplex — devis gratuit et détaillé sous 48h.
+          Appartement ancien, loft, projet de décloisonnement — devis gratuit sous 48h dans le 11e et 12e.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

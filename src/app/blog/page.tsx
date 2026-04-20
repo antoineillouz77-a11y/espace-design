@@ -246,6 +246,12 @@ const articles = [
     desc: "Rénover un appartement à Montmartre (Paris 18e) : maisons de village, appartements anciens, prix, artisans. Guide complet 2025.",
     tag: 'Guides',
   },
+  {
+    href: '/blog/renovation-appartement-bastille-paris',
+    title: 'Rénovation Appartement Bastille Paris 11e-12e : prix & guide 2025',
+    desc: "Rénover un appartement autour de la Bastille (Paris 11e-12e) : prix, artisans, appartements anciens et lofts. Guide complet 2025.",
+    tag: 'Guides',
+  },
 ]
 
 export default function BlogPage() {
