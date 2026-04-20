@@ -564,6 +564,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Essonne (91) — vague 21
     { url: `${base}/renovation-morangis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Seine-et-Marne (77) — vague 22
+    { url: `${base}/renovation-champagne-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-moret-sur-loing`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 17
+    { url: `${base}/blog/declaration-travaux-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-cuisine-equipee-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
     // Blog — vague 15 (plancher)
     { url: `${base}/blog/renovation-plancher-chauffant-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 

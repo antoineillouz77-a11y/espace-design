@@ -66,6 +66,8 @@ const villes77 = [
   { href: '/renovation-bussy-saint-georges', label: 'Bussy-Saint-Georges' },
   { href: '/renovation-chessy', label: 'Chessy' },
   { href: '/renovation-serris', label: 'Serris' },
+  { href: '/renovation-champagne-sur-seine', label: 'Champagne-sur-Seine' },
+  { href: '/renovation-moret-sur-loing', label: 'Moret-sur-Loing' },
 ]
 
 const services = [

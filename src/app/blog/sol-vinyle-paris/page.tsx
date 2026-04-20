@@ -8,17 +8,17 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: "Sol Vinyle Paris", item: 'https://espacedesignparis.fr/blog/sol-vinyle-paris' },
+    { '@type': 'ListItem', position: 3, name: 'Sol Vinyle Paris', item: 'https://espacedesignparis.fr/blog/sol-vinyle-paris' },
   ],
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: "Sol Vinyle Paris : LVT, vinyle clipsable — pose & prix artisan 2025 | Espace Design",
-  description: "Poser un sol vinyle à Paris : LVT, dalle adhésive, lames clipsables. Artisan Paris, prix au m², durée vie 2025.",
-  datePublished: '2025-04-20',
-  dateModified: '2025-04-20',
+  headline: 'Sol Vinyle Paris : pose, prix & conseils — artisan 2025',
+  description: "Choisir et poser un sol vinyle à Paris : LVT, dalle, lame, prix au m², pose collée ou flottante, entretien. Guide artisan 2025.",
+  datePublished: '2025-01-15',
+  dateModified: '2025-01-15',
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
@@ -34,43 +34,51 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: "Le vinyle résiste-t-il à l'humidité en salle de bain ?",
+      name: 'Quel sol vinyle choisir pour un appartement parisien ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le vinyle est imperméable à l'eau en surface, ce qui le rend adapté aux salles de bain. Cependant, la résistance à l'humidité dépend du type de pose. Le vinyle collé (dalle adhésive ou lame collée) est la solution la plus sûre : aucune infiltration possible sous le revêtement. Le vinyle clipsable (LVT flottant) est également étanche en surface mais peut laisser passer l'eau par les joints si ceux-ci ne sont pas parfaitement serrés ou si le plancher flotte beaucoup. Pour les salles de bain avec douche italienne, nous recommandons une pose collée ou une lame LVT avec traitement hydrofuge des joints.",
+        text: "Pour un appartement parisien en location ou à usage intensif, le LVT (Luxury Vinyl Tile) en lame rigide à clipser est la solution la plus recommandée. Sa couche d'usure épaisse (0,3 à 0,55 mm) résiste aux rayures et aux talons. La dalle vinyle collée est préférable pour les grandes surfaces sans dilatation. Pour une salle de bain ou une cuisine, le vinyle est idéal car totalement imperméable — contrairement au parquet ou au stratifié. Choisissez une épaisseur minimale de 5 mm pour un bon confort acoustique et une bonne planéité sur un sol légèrement irrégulier.",
       },
     },
     {
       '@type': 'Question',
-      name: "Peut-on poser du vinyle sur carrelage existant ?",
+      name: 'Combien coûte la pose de sol vinyle à Paris ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, c'est une des grandes forces du vinyle : il peut être posé directement sur un carrelage existant en bon état (pas de carrelage décollé, pas de différence de niveau supérieure à 3 mm entre les dalles). La lame LVT clipsable s'adapte très bien à ce cas de figure — elle compense les légères irrégularités grâce à sa rigidité. Si le carrelage présente des joints profonds (creux supérieurs à 2 mm), un ragréage des joints est recommandé avant pose. Cette solution évite le coût et les nuisances d'un décarrelage complet.",
+        text: "Le prix d'un sol vinyle posé à Paris varie selon la gamme et le mode de pose. Comptez 25 à 45 euros par m² fourniture et pose pour un vinyle lame à clipser d'entrée de gamme, 40 à 70 euros par m² pour un LVT haut de gamme avec couche d'usure 0,55 mm. La pose collée (dalle ou lame) est légèrement plus chère en main-d'oeuvre : 30 à 55 euros par m². La préparation du support (ragréage) est facturée en supplément : 15 à 30 euros par m² selon l'état du sol existant.",
       },
     },
     {
       '@type': 'Question',
-      name: "Combien coûte la pose de LVT à Paris ?",
+      name: 'Peut-on poser du vinyle sur carrelage existant ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La pose de LVT (Luxury Vinyl Tile) à Paris coûte entre 35 et 70 €/m² main d'oeuvre et matériaux inclus, selon la qualité du produit, la surface à poser et la préparation du support nécessaire. Pour un appartement de 30 m² (salon + chambre), comptez un budget de 1 500 à 3 500 €. La pose de LVT premium (épaisseur 6 à 8 mm, couche d'usure 0,5 mm) est plus coûteuse en matériaux mais offre une durée de vie supérieure (20 à 25 ans) et une meilleure isolation phonique — intéressant pour les appartements parisiens en copropriété.",
+        text: "Oui, dans la plupart des cas il est possible de poser du vinyle directement sur un carrelage existant, à condition que celui-ci soit en bon état — pas de carreaux décollés, pas de joints creux, surface plane. Avantage : gain de temps et économie sur la dépose. Le vinyle flottant à clipser peut être posé directement si les joints ne sont pas trop profonds (moins de 2 mm). Pour les joints marqués, un ragréage fin ou une feuille de désolidarisation est nécessaire avant la pose. La hauteur de sol augmente de 4 à 8 mm selon l'épaisseur du vinyle choisi.",
       },
     },
     {
       '@type': 'Question',
-      name: "Quelle épaisseur de vinyle pour un appartement parisien ?",
+      name: "Quelle épaisseur de sol vinyle choisir ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Pour un appartement parisien en usage résidentiel standard, une lame LVT de 4 à 5 mm d'épaisseur totale avec une couche d'usure de 0,3 mm est suffisante. Pour les logements locatifs à fort passage ou les espaces de vie principaux (salon, couloir), privilégiez une épaisseur de 5 à 6 mm avec une couche d'usure de 0,5 mm — elle résiste mieux aux rayures et à l'usure quotidienne. Pour les salles de bain et les cuisines, une dalle vinyle collée de 2 à 3 mm est une option économique et performante. L'épaisseur impacte aussi l'isolation acoustique : un LVT épais (6 à 8 mm) avec sous-couche intégrée atténue mieux les bruits d'impact — avantage important en copropriété parisienne.",
+        text: "L'épaisseur totale du vinyle influence le confort acoustique, la résistance aux irrégularités du sol et la durabilité. Pour une chambre ou un bureau : 4 mm minimum. Pour un séjour, une cuisine ou un couloir à trafic intensif : 5 à 6 mm. La couche d'usure (ou couche de protection) est distincte de l'épaisseur totale : 0,2 mm pour un usage léger, 0,3 mm pour un usage résidentiel standard, 0,5 mm et plus pour un usage intensif ou locatif. Dans un appartement parisien en copropriété, vérifiez si le règlement impose une sous-couche acoustique séparée — certains vinyles intègrent une mousse acoustique, d'autres non.",
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: "Sol Vinyle Paris : LVT, vinyle clipsable — pose & prix artisan 2025 | Espace Design",
-  description: "Poser un sol vinyle à Paris : LVT, dalle adhésive, lames clipsables. Artisan Paris, prix au m², durée vie 2025.",
-  keywords: ["sol vinyle Paris", "LVT Paris", "pose vinyle Paris", "lames vinyle Paris artisan", "dalle vinyle collée Paris"],
+  title: 'Sol Vinyle Paris : pose, prix & conseils — artisan 2025 | Espace Design',
+  description: "Choisir et poser un sol vinyle à Paris : LVT, dalle, lame, prix au m², pose collée ou flottante, entretien. Guide artisan 2025.",
+  keywords: [
+    'sol vinyle Paris',
+    'pose sol vinyle Paris',
+    'LVT Paris',
+    'vinyle lame Paris',
+    'prix sol vinyle Paris',
+    'artisan sol vinyle Paris',
+    'dalle vinyle Paris',
+  ],
 }
 
 export default function ArticleSolVinyleParis() {
@@ -93,119 +101,102 @@ export default function ArticleSolVinyleParis() {
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Sol &amp; Revêtements
+            Revêtement de sol
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Sol Vinyle à Paris : LVT, dalles et lames vinyle — guide complet 2025
+            Sol Vinyle Paris : choisir, poser et entretenir
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Le sol vinyle s&apos;est imposé en quelques années comme une alternative crédible au parquet et au carrelage dans les appartements parisiens. Résistant à l&apos;humidité, facile à poser sur un support existant, imitation bois ou pierre très réaliste : tout ce qu&apos;il faut savoir sur le LVT, les dalles adhésives et les lames clipsables à Paris en 2025.
+            Le sol vinyle a considérablement évolué ces dernières années. Loin des anciens vinyles en rouleau des années 1980, les LVT (Luxury Vinyl Tile) actuels imitent à s&apos;y méprendre le bois, la pierre ou le béton — avec une imperméabilité totale et un entretien minimal. Guide complet pour choisir et poser un sol vinyle dans un appartement parisien en 2025.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Tendance et avantages */}
+      {/* Section 1 — Types de sol vinyle */}
       <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Pourquoi le vinyle s&apos;impose à Paris : tendance et avantages
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light">
-            Le sol vinyle représente aujourd&apos;hui plus de 30 % du marché des revêtements de sol en rénovation résidentielle en France. Cette progression s&apos;explique par plusieurs facteurs : le rapport qualité-prix excellent comparé au parquet massif, la résistance à l&apos;humidité qui en fait la solution idéale pour les cuisines et salles de bain, et la facilité de pose sur un support existant (carrelage, béton, ancien vinyle) qui réduit significativement le coût et la durée des travaux.
-          </p>
-          <p className="text-gray-600 text-sm leading-relaxed font-light">
-            Dans le marché locatif parisien, le vinyle LVT (Luxury Vinyl Tile) est particulièrement prisé des investisseurs : sa durée de vie de 15 à 25 ans, sa résistance aux rayures et aux taches, et la facilité de remplacement d&apos;une lame isolée en cas de dommage en font un choix très rationnel pour un appartement destiné à la location. Il est aussi apprécié pour son confort acoustique supérieur au carrelage — un avantage non négligeable en copropriété parisienne.
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {[
-              { label: "Résistance humidité", icon: "💧" },
-              { label: "Pose sur existant", icon: "🔧" },
-              { label: "Imitation parquet réaliste", icon: "🪵" },
-              { label: "Durée 15-25 ans", icon: "⏳" },
-            ].map((el) => (
-              <div key={el.label} className="bg-[#FAFAF8] rounded-lg p-4 border border-gray-100 text-center">
-                <div className="text-2xl mb-2">{el.icon}</div>
-                <div className="text-xs text-gray-600 font-light">{el.label}</div>
-              </div>
-            ))}
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
+          <div>
+            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+              Les types de sol vinyle : LVT, dalle et lame
+            </h2>
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+              Le marché du sol vinyle a explosé ces dix ans avec l&apos;apparition des LVT (Luxury Vinyl Tile), des vinyles rigides à couche d&apos;usure épaisse. Il existe trois grandes familles, chacune adaptée à des usages et des configurations différents.
+            </p>
+            <div className="space-y-4">
+              {[
+                {
+                  type: 'LVT lame rigide à clipser (SPC ou WPC)',
+                  detail: "Le LVT rigide (SPC : Stone Plastic Composite ou WPC : Wood Plastic Composite) est la référence actuelle pour les appartements parisiens. Un noyau rigide en PVC mélangé à de la pierre calcaire (SPC) ou de la mousse (WPC) lui confère une excellente planéité et une grande stabilité dimensionnelle. Pose flottante à clipser sans colle, sur quasiment tous les supports. Imperméabilité totale, couche d'usure jusqu'à 0,55 mm. Idéal pour les cuisines, salles de bain et pièces à vivre.",
+                  usage: 'Usage universel',
+                },
+                {
+                  type: 'Dalle vinyle souple collée',
+                  detail: "La dalle vinyle souple (généralement 30×30 cm ou 45×45 cm) se pose collée sur le support. Plus fine que le LVT rigide (1,5 à 3 mm), elle épouse parfaitement les irrégularités légères du sol. Moins résistante aux chocs ponctuels (pied de chaise, talon) que le LVT rigide, mais moins chère à l'achat. Adaptée aux grandes surfaces planes (loft, studio, couloirs larges). Le remplacement d'une dalle abîmée isolée est facile.",
+                  usage: 'Grandes surfaces planes',
+                },
+                {
+                  type: 'Lame vinyle souple à clipser ou collée',
+                  detail: "La lame vinyle souple (format bois, environ 15×90 cm) existe en version collée ou clipsée. Plus flexible que le LVT rigide, elle s'adapte mieux aux sols présentant de légères irrégularités. Sa couche d'usure (0,2 à 0,3 mm) est généralement moins épaisse que le LVT. Moins stable dimensionnellement sur de grandes surfaces (dilatation en cas de chaleur). Bon rapport qualité-prix pour les chambres et pièces peu exposées.",
+                  usage: 'Chambres, budget serré',
+                },
+                {
+                  type: 'Vinyle en rouleau',
+                  detail: "Le sol vinyle en rouleau (ou lino vinyle, à ne pas confondre avec le linoléum naturel) est posé collé sur toute la surface. Absence de joints — avantage majeur pour l'hygiène (cuisine, salle de bain, cuisine collective). Nécessite un support parfaitement plan. Gamme de prix large, de l'entrée de gamme à des produits haut de gamme avec impression haute résolution. Durée de vie inférieure aux LVT rigides si le support n'est pas parfait.",
+                  usage: 'Hygiène, cuisine, SdB',
+                },
+              ].map((el) => (
+                <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                  <div className="flex items-start justify-between gap-2 mb-2 flex-wrap">
+                    <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
+                    <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.usage}</div>
+                  </div>
+                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 2 — Les types de sol vinyle */}
+      {/* Section 2 — Avantages */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Les types de sol vinyle : dalle, lame clipsable et rouleau
+            Avantages du sol vinyle dans un appartement parisien
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Il existe trois grandes familles de revêtements vinyle, chacune avec ses avantages et ses usages spécifiques. Le choix dépend du support, de l&apos;usage de la pièce et du budget.
-          </p>
-          <div className="space-y-4">
-            {[
-              {
-                type: "Dalle vinyle auto-adhésive (ou collée)",
-                format: "Format 30×30 cm ou 45×45 cm",
-                detail: "La dalle vinyle est la solution la plus économique. Le modèle auto-adhésif se pose directement sur un support lisse et propre, sans colle supplémentaire. Très facile à poser soi-même, elle est idéale pour les petites surfaces (entrée, salle de bain, WC). Son épaisseur est généralement faible (2 à 3 mm), ce qui la rend moins confortable sous le pied que le LVT. En revanche, son étanchéité collée est parfaite pour les pièces humides. Durée de vie : 10 à 15 ans avec un entretien adapté.",
-                prix: "8 – 18 €/m² fourni posé",
-              },
-              {
-                type: "Lame vinyle clipsable (LVT flottant)",
-                format: "Format 15×60 cm à 20×120 cm",
-                detail: "La lame vinyle clipsable est la solution la plus populaire en rénovation d'appartement. Elle s'assemble par clipsage (système click, identique au parquet flottant) sans colle ni fixation. Pose rapide, possible sur un support légèrement irrégulier. Le LVT clipsable d'entrée de gamme fait 3 à 4 mm, le premium 5 à 8 mm avec sous-couche intégrée. La largeur de la lame influe sur le rendu visuel : plus la lame est large, plus l'imitation parquet est convaincante.",
-                prix: "20 – 50 €/m² fourni posé",
-              },
-              {
-                type: "Vinyle en rouleau (lé continu)",
-                format: "Largeurs 2, 3 ou 4 mètres",
-                detail: "Le vinyle en rouleau est la solution la plus économique pour les grandes surfaces et les couloirs. Un seul lé couvre toute la largeur d'une pièce sans joint — atout majeur pour l'étanchéité en salle de bain. Il se pose collé (sur sol béton ou carrelage) ou tendu (fixé aux extrémités). Moins esthétique que le LVT, il est souvent utilisé dans les cuisines, les couloirs et les appartements locatifs d'entrée de gamme. Épaisseur : 1,5 à 4 mm.",
-                prix: "12 – 30 €/m² fourni posé",
-              },
-            ].map((el) => (
-              <div key={el.type} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-4 mb-1 flex-wrap">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.prix}</div>
-                </div>
-                <div className="text-gray-500 text-xs mb-3">{el.format}</div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3 — LVT premium */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            LVT : le premium du vinyle pour les appartements parisiens
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le LVT (Luxury Vinyl Tile) est la catégorie haut de gamme du vinyle. Il se distingue par son épaisseur (4 à 8 mm), la qualité de son décor (impression haute définition imitant le bois ou la pierre naturelle), et sa couche d&apos;usure épaisse (0,3 à 0,55 mm) qui garantit une résistance aux rayures et aux passages intensifs. C&apos;est la solution privilégiée dans les appartements de standing et les logements locatifs premium à Paris.
+            Le sol vinyle s&apos;est imposé comme une alternative sérieuse au parquet et au carrelage dans les appartements parisiens, notamment pour la rénovation et les investissements locatifs. Voici ses principaux atouts.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             {[
               {
-                feature: "Structure du LVT",
-                detail: "Le LVT est composé de plusieurs couches : couche de support (PVC rigide ou composite), couche de décor (impression haute résolution), couche d'usure (transparente, de 0,3 à 0,55 mm) et, selon les modèles, une sous-couche acoustique intégrée. La rigidité du support PVC garantit une stabilité dimensionnelle que les anciens vinyles souples n'avaient pas.",
+                avantage: 'Imperméabilité totale',
+                detail: "Contrairement au parquet et au stratifié, le vinyle est 100 % imperméable — il peut être posé en salle de bain, cuisine et pièces humides sans risque de gonflement. Les LVT rigides ne craignent pas les projections d'eau ni les robinets qui fuient. Avantage considérable dans les appartements parisiens anciens où les remontées d'humidité sont fréquentes.",
               },
               {
-                feature: "Stabilité dimensionnelle",
-                detail: "Contrairement au parquet flottant qui se dilate avec les variations de température et d'humidité, le LVT est quasi indifférent aux variations hygrométriques. Il ne gonfle pas, ne se rétracte pas. C'est un avantage décisif dans les appartements parisiens qui alternent entre périodes de chauffage intense en hiver (air très sec) et été chaud.",
+                avantage: 'Confort acoustique',
+                detail: "Les LVT rigides épais (5 à 8 mm) avec couche de mousse intégrée offrent un bon confort acoustique aux bruits d'impact — crucial en copropriété parisienne. Certains produits haut de gamme atteignent 19 à 22 dB de réduction des bruits d'impact (delta Lw), ce qui peut suffire à satisfaire le règlement de copropriété sans sous-couche supplémentaire.",
               },
               {
-                feature: "Imitation bois et pierre",
-                detail: "Les techniques d'impression actuelles permettent une reproduction très réaliste des essences de bois (chêne, noyer, pin) et des pierres naturelles (travertin, ardoise, béton ciré). Certains modèles de LVT sont pratiquement indiscernables du parquet à la vue — seul le toucher (plus souple et légèrement plus chaud) trahit la nature du matériau.",
+                avantage: "Facilité d'entretien",
+                detail: "L'entretien du vinyle est minimal : balai ou aspirateur quotidien, serpillière légèrement humide hebdomadaire. Pas de cire, pas de vitrifiant, pas de ponçage tous les 5 ans. La couche de protection polyuréthane ne nécessite pas de traitement particulier. Les taches (café, vin, graisses) partent facilement à l'eau savonneuse. Idéal pour les appartements locatifs.",
               },
               {
-                feature: "Confort acoustique",
-                detail: "Le LVT de 5 à 8 mm avec sous-couche intégrée offre une atténuation des bruits d'impact de 15 à 22 dB — bien supérieure au carrelage et comparable à un parquet flottant avec sous-couche. En copropriété parisienne, où les obligations acoustiques entre logements sont strictes, c'est un critère important.",
+                avantage: 'Pose sur support existant',
+                detail: "L'un des grands avantages du vinyle pour la rénovation d'appartements parisiens : il peut être posé directement sur un carrelage existant en bon état, sur un parquet abîmé après ragréage léger, ou sur un béton brut. Pas besoin de déposer le sol existant dans la plupart des cas — gain de temps, d'argent et de nuisances de chantier.",
+              },
+              {
+                avantage: 'Résistance aux rayures',
+                detail: "La couche d'usure polyuréthane des LVT résiste mieux aux rayures quotidiennes (pattes d'animaux, pieds de chaises) que la plupart des parquets huilés. Un LVT avec couche d'usure 0,5 mm supporte sans marque un usage intensif pendant 15 à 25 ans. Recommandé pour les appartements avec enfants, animaux de compagnie ou usage locatif intensif.",
+              },
+              {
+                avantage: 'Large gamme de décors',
+                detail: "Les technologies d'impression haute résolution permettent aux LVT d'imiter de manière très convaincante le bois (chêne, noyer, pin), la pierre (ardoise, travertin, marbre) ou le béton ciré. Des textures en relief (grain du bois, irrégularités de la pierre) renforcent encore le réalisme. Le rendu visuel est souvent indiscernable du matériau naturel imité.",
               },
             ].map((el) => (
-              <div key={el.feature} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.feature}</div>
+              <div key={el.avantage} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.avantage}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
             ))}
@@ -213,63 +204,124 @@ export default function ArticleSolVinyleParis() {
         </div>
       </section>
 
-      {/* Section 4 — Pose sur existant */}
+      {/* Section 3 — Prix */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Prix sol vinyle Paris 2025 : fourniture et pose
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Tarifs indicatifs pour un appartement parisien, sur support sain (carrelage existant ou béton plan). La préparation du support (ragréage, dépose, ponçage) est facturée en supplément selon l&apos;état du sol.
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#1C1C1C] text-white">
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Produit</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Gamme</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Fourniture</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Pose artisan</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    produit: 'LVT rigide SPC (4 mm, couche usure 0,3 mm)',
+                    gamme: 'Entrée de gamme',
+                    fourniture: '15 – 25 €/m²',
+                    pose: '18 – 25 €/m²',
+                  },
+                  {
+                    produit: 'LVT rigide SPC (5 mm, couche usure 0,5 mm)',
+                    gamme: 'Standard',
+                    fourniture: '25 – 40 €/m²',
+                    pose: '20 – 28 €/m²',
+                  },
+                  {
+                    produit: 'LVT haut de gamme (6-8 mm, couche usure 0,55 mm)',
+                    gamme: 'Premium',
+                    fourniture: '40 – 65 €/m²',
+                    pose: '22 – 30 €/m²',
+                  },
+                  {
+                    produit: 'Dalle vinyle souple collée',
+                    gamme: 'Standard',
+                    fourniture: '8 – 18 €/m²',
+                    pose: '20 – 30 €/m²',
+                  },
+                  {
+                    produit: 'Vinyle rouleau collé',
+                    gamme: 'Économique',
+                    fourniture: '10 – 25 €/m²',
+                    pose: '20 – 28 €/m²',
+                  },
+                  {
+                    produit: 'Ragréage autonivelant (support irrégulier)',
+                    gamme: 'Préparation',
+                    fourniture: '—',
+                    pose: '15 – 30 €/m²',
+                  },
+                ].map((row, i) => (
+                  <tr key={row.produit} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium text-sm">{row.produit}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light text-sm">{row.gamme}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium text-sm">{row.fourniture}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light text-sm">{row.pose}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — Techniques de pose */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Poser du vinyle sur un revêtement existant à Paris
+            Techniques de pose : collé, flottant ou à clipser
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            L&apos;un des principaux atouts du vinyle en rénovation parisienne est sa capacité à être posé directement sur le support existant, évitant le coût et les nuisances d&apos;un dépose complet. Mais certaines conditions doivent être respectées pour garantir un résultat durable.
+            Le mode de pose conditionne la durabilité, le comportement acoustique et la facilité de remplacement du sol. Voici les trois techniques et leurs conditions d&apos;utilisation dans un appartement parisien.
           </p>
           <div className="space-y-4 mb-8">
             {[
               {
-                cas: "Pose sur carrelage existant",
-                conditions: "Carrelage bien collé (aucun carrelage décollé ou creux), joints de carrelage peu profonds (moins de 2 mm), planéité correcte (moins de 3 mm sous la règle de 2 m)",
-                action: "Vérification carrelage par carrelage au marteau. Ragréage des joints si nécessaire. Pose LVT clipsable directement ou pose dalle adhésive sur carrelage propre et dégraissé.",
+                methode: 'Pose flottante à clipser (LVT rigide)',
+                pour: 'Rénovation rapide, pose sur carrelage existant',
+                detail: "Les lames s'assemblent entre elles par un système de clic sans colle sur le support. Le sol repose librement sur le support et peut se dilater. Pose rapide (50 à 60 m² par jour pour un artisan). Idéale pour les rénovations où l'on souhaite conserver le sol existant en dessous. Exige un sol support plan (tolérance : 3 mm sous la règle de 2 m). Les variations thermiques peuvent provoquer de légers craquements si les joints de dilatation en périphérie ne sont pas respectés.",
               },
               {
-                cas: "Pose sur parquet flottant existant",
-                conditions: "Parquet stable, sans craquements importants, planéité correcte, absence de déformation (gondolement, soulèvement)",
-                action: "LVT clipsable posé flottant au-dessus. Attention à la hauteur cumulée avec les plinthes et les huisseries — vérifier que les portes passent toujours.",
+                methode: 'Pose collée (dalle ou lame, colle adaptée)',
+                pour: 'Grande surface, zones humides, plancher chauffant',
+                detail: "Application d'une colle acrylique ou polyuréthane sur le support avant la pose des lames ou dalles. Avantage : aucun mouvement du sol, pas de craquement, meilleure isolation acoustique. Obligatoire sur plancher chauffant (le LVT flottant ne convient pas en général à cause des variations de température). Inconvénient : dépose plus difficile et risque d'endommager le support lors du remplacement.",
               },
               {
-                cas: "Pose sur béton ou chape",
-                conditions: "Chape sèche (humidité résiduelle < 2,5 %), propre, sans fissures actives, planéité correcte",
-                action: "Ragréage autolissant si irrégularités. Application d'un primaire d'accrochage avant dalle adhésive. Attendre 28 jours minimum après une chape neuve.",
-              },
-              {
-                cas: "Pose sur ancien vinyle en rouleau",
-                conditions: "Ancien vinyle bien collé, lisse, sans cloquage",
-                action: "Possible en pose flottante LVT clipsable si l'ancien vinyle est parfaitement lisse. Sinon, dépose de l'ancien vinyle recommandée pour garantir la planéité.",
+                methode: "Pose semi-collée (périphérie collée, centre flottant)",
+                pour: "Pièces de taille moyenne, compromis stabilité/flexibilité",
+                detail: "La colle n'est appliquée qu'en périphérie de la pièce et aux joints de dilatation. Le centre du sol reste flottant. Technique utilisée pour les vinyles souples en lame qui ont une tendance à se soulever sur les grands espaces. Moins courante pour les LVT rigides qui ont une stabilité dimensionnelle suffisante pour une pose 100 % flottante.",
               },
             ].map((el) => (
-              <div key={el.cas} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.cas}</div>
-                <div className="flex gap-2 mb-2">
-                  <span className="text-xs text-gray-500 font-medium uppercase tracking-wide">Conditions :</span>
-                  <span className="text-xs text-gray-600 font-light leading-relaxed">{el.conditions}</span>
-                </div>
-                <div className="flex gap-2">
-                  <span className="text-xs text-[#B8960C] font-medium uppercase tracking-wide flex-shrink-0">Action :</span>
-                  <span className="text-xs text-gray-600 font-light leading-relaxed">{el.action}</span>
-                </div>
+              <div key={el.methode} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-1">{el.methode}</div>
+                <div className="text-[#B8960C] text-xs font-medium mb-3">{el.pour}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
             ))}
           </div>
+
           <div>
             <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Règles de pose à respecter
+              Points de vigilance avant la pose
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "Laisser acclimaté le vinyle 24 à 48h dans la pièce avant pose (à plat, emballages ouverts)",
-                "Toujours laisser un joint de dilatation de 8 à 10 mm en périphérie (recouvert par les plinthes)",
-                "Vérifier la planéité du support : écart max 3 mm sous la règle de 2 m",
-                "Contrôler l'humidité du support béton avant pose (hygromètre électronique)",
-                "Ragréer les joints de carrelage profonds avant pose de dalle ou LVT clipsable",
-                "Alterner les rangées de lames (décalage minimum 30 cm) pour un rendu naturel",
+                "Vérifier la planéité du support : tolérance maximale 3 mm sous la règle de 2 m pour une pose flottante",
+                "Laisser le vinyle s'acclimater 48h à température ambiante (18 à 22°C) avant la pose",
+                "Prévoir des joints de dilatation en périphérie (5 à 10 mm) et couvrir avec des plinthes ou baguettes",
+                "Vérifier le règlement de copropriété : sous-couche acoustique souvent obligatoire",
+                "Ne pas poser sur un support humide (teneur en humidité du béton < 2,5 %)",
+                "Prévoir 10 % de chutes pour les coupes, les angles et les assemblages complexes",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
                   <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
@@ -281,107 +333,56 @@ export default function ArticleSolVinyleParis() {
         </div>
       </section>
 
-      {/* Section 5 — Prix */}
+      {/* Section 5 — Entretien */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix pose sol vinyle à Paris 2025
+            Entretien et longévité d&apos;un sol vinyle à Paris
           </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Tarifs indicatifs pour un appartement parisien, main d&apos;œuvre et matériaux inclus. Les prix varient selon la qualité du produit, la surface, la préparation du support et l&apos;accès au chantier.
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
+            Le sol vinyle est l&apos;un des revêtements les plus faciles à entretenir — un atout décisif pour les propriétaires bailleurs parisiens. Voici les bonnes pratiques pour maximiser la durée de vie de votre sol.
           </p>
-          <div className="overflow-x-auto mb-8">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Type de vinyle</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Surface de référence</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget total</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix / m²</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { type: "Dalle vinyle adhésive", surface: "30 m²", budget: "600 – 1 500 €", prix: "20 – 50 €/m²" },
-                  { type: "Lame LVT clipsable (entrée de gamme 4 mm)", surface: "30 m²", budget: "900 – 2 100 €", prix: "30 – 70 €/m²" },
-                  { type: "Lame LVT premium (6-8 mm + sous-couche)", surface: "30 m²", budget: "1 500 – 3 500 €", prix: "50 – 115 €/m²" },
-                  { type: "Vinyle en rouleau collé", surface: "30 m²", budget: "500 – 1 200 €", prix: "16 – 40 €/m²" },
-                  { type: "Ragréage du support (si nécessaire)", surface: "30 m²", budget: "400 – 900 €", prix: "13 – 30 €/m²" },
-                ].map((row, i) => (
-                  <tr key={row.type} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                    <td className="px-4 py-3 text-[#1C1C1C] font-medium text-sm">{row.type}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light text-sm">{row.surface}</td>
-                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium text-sm">{row.budget}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light text-sm">{row.prix}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-            <div className="font-medium text-[#1C1C1C] text-sm mb-2">Ce qui influence le prix à Paris</div>
-            <ul className="space-y-1">
-              {[
-                "La qualité du produit : un LVT de 0,55 mm de couche d'usure coûte 2 à 3 fois plus qu'un LVT à 0,3 mm, mais dure 2 à 3 fois plus longtemps",
-                "La préparation du support : un ragréage complet ajoute 400 à 900 € pour 30 m²",
-                "L'accès au chantier : immeuble sans ascenseur, étages élevés, difficulté de stationnement pour le matériel",
-                "La dépose de l'ancien revêtement si nécessaire : 5 à 15 €/m² supplémentaires",
-                "Les finitions : plinthes assorties, seuils de porte, joints de transition entre pièces",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                  <span className="text-[#B8960C] flex-shrink-0 mt-1">—</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6 — Entretien et durée de vie */}
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Entretien et durée de vie du sol vinyle à Paris
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le sol vinyle est l&apos;un des revêtements les plus faciles à entretenir. Sa surface lisse ne retient pas les poussières et résiste aux taches courantes. Quelques précautions prolongent significativement sa durée de vie.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                titre: "Nettoyage quotidien",
-                detail: "Aspirateur (brosse douce) ou balai microfibre. Le vinyle ne supporte pas les abrasifs ni les produits acides (vinaigre blanc concentré). Éviter les lavettes trop mouillées qui peuvent s'infiltrer dans les joints d'une pose clipsable.",
+                frequence: 'Entretien quotidien',
+                detail: "Balai microfibre ou aspirateur sans brosse rotative dure. Ramasse les poussières et grains de sable qui rayeraient la surface si traînés sous les semelles.",
               },
               {
-                titre: "Nettoyage en profondeur",
-                detail: "Serpillière légèrement humide avec un produit neutre dédié au vinyle. Éviter le nettoyeur vapeur sur les lames clipsables : la chaleur et la pression peuvent déformer les clips et soulever les lames. Le nettoyeur vapeur est déconseillé même sur les produits estampillés 'waterproof'.",
+                frequence: 'Entretien hebdomadaire',
+                detail: "Serpillière microfibre légèrement humidifiée avec eau tiède ou nettoyant pH neutre spécial vinyle. Ne jamais utiliser de détergent agressif, d'eau de Javel ou de produits à base d'acétone qui attaquent la couche de protection.",
               },
               {
-                titre: "Durée de vie réelle",
-                detail: "Un LVT standard (0,3 mm d'usure) dure 12 à 18 ans en usage résidentiel modéré. Un LVT premium (0,55 mm) dure 20 à 25 ans. La dalle adhésive d'entrée de gamme : 8 à 12 ans. En logement locatif à fort passage, compter un coefficient de réduction de 20 à 30 % sur ces estimations.",
+                frequence: 'Protection des meubles',
+                detail: "Poser des feutres protecteurs sous les pieds des meubles lourds. Utiliser des roulettes en caoutchouc souple sous les chaises de bureau. Les pieds métalliques ou en plastique dur rayent la couche d'usure même épaisse.",
               },
               {
-                titre: "Remplacement d'une lame endommagée",
-                detail: "L'un des grands avantages du vinyle clipsable : une lame rayée ou tachée peut être remplacée indépendamment, sans retoucher tout le sol. Il suffit de démonter les lames depuis le bord de la pièce jusqu'à la lame endommagée, de la changer, puis de remonter. Conserver toujours quelques lames de réserve lors de la pose initiale.",
+                frequence: 'Protection de la chaleur',
+                detail: "Le vinyle est sensible à la chaleur directe : ne pas poser de radiateur électrique portatif directement sur le sol vinyle, éviter l'exposition directe et prolongée au soleil par une grande baie sans protection (stores, rideaux). La dilatation thermique est maîtrisée si les joints de dilatation ont été respectés à la pose.",
               },
             ].map((el) => (
-              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.titre}</div>
+              <div key={el.frequence} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.frequence}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
             ))}
+          </div>
+          <div className="bg-[#1C1C1C] rounded-lg p-5 text-white">
+            <div className="font-medium text-[#D4AF37] text-sm mb-2">Durée de vie d&apos;un sol vinyle</div>
+            <p className="text-gray-300 text-sm font-light leading-relaxed">
+              Un LVT rigide haut de gamme (couche d&apos;usure 0,55 mm) bien entretenu dure 20 à 30 ans dans un appartement résidentiel. Un vinyle souple d&apos;entrée de gamme (couche 0,2 mm) aura une durée de vie de 8 à 12 ans en usage standard. Dans un appartement locatif parisien à fort turn-over, investir dans un LVT 0,5 mm minimum est rentable sur la durée.
+            </p>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
             {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
               </div>
@@ -391,17 +392,17 @@ export default function ArticleSolVinyleParis() {
       </section>
 
       {/* Guides connexes */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Guides connexes</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/blog/sol-stratifie-paris', title: "Sol stratifié Paris" },
-              { href: '/blog/pose-parquet-paris', title: "Pose parquet Paris" },
-              { href: '/blog/revetement-sol-appartement-paris', title: "Revêtement sol appartement Paris" },
-              { href: '/blog/parquet-flottant-vs-colle-paris', title: "Parquet flottant vs collé Paris" },
-              { href: '/blog/carrelage-appartement-paris', title: "Carrelage appartement Paris" },
-              { href: '/blog/renovation-salle-de-bain-paris', title: "Rénovation salle de bain Paris" },
+              { href: '/blog/sol-stratifie-paris', title: 'Sol stratifié Paris' },
+              { href: '/blog/parquet-flottant-vs-colle-paris', title: 'Parquet flottant vs collé Paris' },
+              { href: '/blog/pose-parquet-paris', title: 'Pose parquet Paris' },
+              { href: '/blog/revetement-sol-appartement-paris', title: 'Revêtement sol appartement Paris' },
+              { href: '/blog/renovation-salle-de-bain-paris', title: 'Rénovation salle de bain Paris' },
+              { href: '/contact', title: 'Demander un devis gratuit' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -416,19 +417,19 @@ export default function ArticleSolVinyleParis() {
       </section>
 
       {/* Zones */}
-      <section className="py-10 bg-white border-t border-gray-100">
+      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
-              { href: '/renovation-paris-8e', label: 'Paris 8e' },
-              { href: '/renovation-paris-9e', label: 'Paris 9e' },
-              { href: '/renovation-paris-11e', label: 'Paris 11e' },
-              { href: '/renovation-paris-15e', label: 'Paris 15e' },
-              { href: '/renovation-levallois-perret', label: 'Levallois' },
-              { href: '/renovation-neuilly-sur-seine', label: 'Neuilly' },
-              { href: '/renovation-boulogne-billancourt', label: 'Boulogne-Billancourt' },
-              { href: '/renovation-vincennes', label: 'Vincennes' },
+              { href: '/renovation-appartement-paris-8e', label: 'Paris 8e' },
+              { href: '/renovation-appartement-paris-9e', label: 'Paris 9e' },
+              { href: '/renovation-appartement-paris-10e', label: 'Paris 10e' },
+              { href: '/renovation-appartement-paris-11e', label: 'Paris 11e' },
+              { href: '/renovation-appartement-paris-15e', label: 'Paris 15e' },
+              { href: '/renovation-appartement-paris-16e', label: 'Paris 16e' },
+              { href: '/renovation-appartement-paris-17e', label: 'Paris 17e' },
+              { href: '/renovation-appartement-paris-18e', label: 'Paris 18e' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -445,10 +446,10 @@ export default function ArticleSolVinyleParis() {
       {/* CTA */}
       <section className="py-16 bg-[#D4AF37] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Pose de sol vinyle à Paris : devis gratuit sous 48h
+          Pose de sol vinyle à Paris : devis gratuit
         </h2>
         <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          LVT, dalle adhésive, vinyle en rouleau. Pose sur support existant. Devis détaillé sous 48h, intervention rapide sur Paris.
+          Fourniture et pose de LVT, dalle ou lame vinyle par artisan qualifié. Devis détaillé sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

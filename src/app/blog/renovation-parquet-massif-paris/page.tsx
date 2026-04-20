@@ -1,232 +1,114 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
+import { ArrowRight, Phone, CheckCircle } from 'lucide-react'
 
-const schemaBreadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Parquet Massif Paris', item: 'https://espacedesignparis.fr/blog/renovation-parquet-massif-paris' },
-  ],
+export const metadata: Metadata = {
+  title: "Rénovation Parquet Massif Paris : ponçage, vitrification & prix 2025",
+  description: "Tout savoir sur la rénovation de parquet massif à Paris : ponçage, bouchage des fissures, choix de teinte, vitrification ou huile-cire, prix au m² 2025 et durée d'intervention.",
+  keywords: ["rénovation parquet massif Paris", "ponçage parquet Paris", "vitrification parquet Paris", "prix ponçage parquet 2025", "artisan parqueteur Paris"],
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Parquet Massif Paris : pose, ponçage & vitrification 2025 | Espace Design',
-  description: 'Parquet massif à Paris : essences, pose collée vs clouée, ponçage, vitrification. Guide artisan et prix au m² 2025.',
-  datePublished: '2025-04-20',
+  headline: "Rénovation Parquet Massif Paris : ponçage, vitrification & prix 2025",
+  description: "Tout savoir sur la rénovation de parquet massif à Paris : ponçage, bouchage des fissures, choix de teinte, vitrification ou huile-cire, prix au m² 2025.",
   author: { '@type': 'Organization', name: 'Espace Design' },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Espace Design',
-    url: 'https://espacedesignparis.fr',
-  },
-  url: 'https://espacedesignparis.fr/blog/renovation-parquet-massif-paris',
+  publisher: { '@type': 'Organization', name: 'Espace Design', url: 'https://espacedesignparis.fr' },
+  datePublished: '2025-01-15',
+  dateModified: '2025-01-15',
 }
 
-const schemaFaq = {
+const schemaFAQ = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Combien de fois peut-on poncer un parquet massif à Paris ?',
+      name: "Peut-on rénover tous les parquets ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Un parquet massif peut être poncé 3 à 4 fois sur sa durée de vie, selon l'épaisseur de la lame et la profondeur des rainures. Une lame massive de 20 mm d'épaisseur peut tolérer 3 ponçages avant d'atteindre la rainure. À Paris, où les parquets anciens datent parfois du XIXe siècle, un audit préalable par un artisan parqueteur est recommandé pour évaluer l'épaisseur résiduelle avant tout ponçage.",
+        text: "Non, seuls les parquets massifs et certains contrecollés épais (couche d'usure > 4 mm) peuvent être ponçés et rénovés. Les parquets stratifiés ou les contrecollés minces (couche d'usure < 2 mm) ne supportent pas le ponçage mécanique. Avant toute intervention, un artisan parqueteur évalue l'épaisseur résiduelle avec une sonde ou une jauge afin de s'assurer qu'au moins 3 mm de bois subsistent au-dessus de la rainure. Un parquet massif de 20 mm d'épaisseur en bon état peut généralement être rénové sans problème.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Vitrification ou huile pour un parquet massif dans un appartement parisien ?',
+      name: "Combien coûte la rénovation parquet Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La vitrification (vernis polyuréthane) est la finition la plus utilisée à Paris : très résistante aux rayures et à l'humidité, elle convient aux pièces à fort trafic (couloir, séjour). L'huile pénétrante offre un aspect naturel et mat très apprécié dans les appartements de caractère, mais nécessite un entretien annuel (réhuilage). Pour les zones humides ou les familles avec enfants, la vitrification glycéro est souvent le meilleur compromis.",
+        text: "À Paris en 2025, le prix d'une rénovation complète de parquet massif (ponçage + bouchage + vitrification) se situe entre 25 et 55 €/m² selon l'état du parquet, la superficie et la finition choisie. Le ponçage seul coûte 15 à 25 €/m², la vitrification seule 10 à 20 €/m², l'huile ou la cire 8 à 15 €/m². Pour un appartement de 50 m², comptez entre 1 500 et 3 500 € main d'oeuvre et matériaux inclus. La dépose et l'évacuation d'un ancien revêtement sont facturées en supplément (10 à 20 €/m²).",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel est le prix du parquet massif posé à Paris en 2025 ?',
+      name: "Quelle finition choisir : vitrification ou huile ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "À Paris, le prix du parquet massif posé varie entre 80 et 200 €/m² selon l'essence et le mode de pose. Chêne massif posé collé sur béton : 80 à 130 €/m². Chêne massif posé cloué sur lambourdes : 110 à 160 €/m². Essences nobles (noyer, frêne, hêtre) : 130 à 200 €/m². Ces prix incluent la fourniture du parquet, les lambourdes si nécessaire, la pose et la finition (vitrification ou huile). La dépose et l'évacuation de l'ancien revêtement sont en supplément (15 à 30 €/m²).",
+        text: "La vitrification (vernis polyuréthane) offre une protection maximale contre l'eau et les rayures ; elle convient aux pièces à fort passage (couloir, salon, cuisine ouverte) et aux logements locatifs. Elle donne un aspect brillant à satiné. L'huile pénétrante préserve l'aspect naturel du bois, est plus facile à réparer par zones (simple réhuilage sans tout poncer) mais nécessite un entretien annuel. La cire offre le rendu le plus authentique pour les parquets anciens haussmanniens mais demande un entretien rigoureux. Pour un usage familial intensif, la vitrification glycéro reste le meilleur compromis durabilité / coût.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Combien de fois peut-on poncer un parquet ?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Un parquet massif peut être poncé 3 à 5 fois selon son épaisseur initiale. Une lame de 22 mm tolère davantage de ponçages qu'une lame de 14 mm. Chaque ponçage enlève environ 1 à 2 mm de bois. Un artisan expérimenté mesure l'épaisseur résiduelle avant chaque intervention pour éviter d'atteindre la rainure. Les parquets haussmanniens parisiens, souvent posés au XIXe siècle, ont parfois déjà subi plusieurs rénovations : un diagnostic préalable est indispensable avant de s'engager.",
       },
     },
   ],
 }
 
-export const metadata: Metadata = {
-  title: 'Parquet Massif Paris : pose, ponçage & vitrification 2025 | Espace Design',
-  description: 'Parquet massif à Paris : essences, pose collée vs clouée, ponçage, vitrification. Guide artisan et prix au m² 2025.',
-}
-
-export default function ArticleParquetMassif() {
+export default function Page() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
 
       {/* Hero */}
-      <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Parquet
-          </p>
-          <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
+      <section className="bg-[#1C1C1C] text-center pt-32 pb-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Parquet</p>
+          <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Parquet Massif Paris : pose, ponçage & vitrification 2025
+            Rénovation Parquet Massif Paris : redonner vie à votre sol
           </h1>
-          <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Le parquet massif reste la référence dans les appartements parisiens de caractère. Essences, modes de pose, ponçage, finition : guide complet pour choisir, poser et entretenir un parquet massif à Paris en 2025.
+          <p className="text-gray-400 text-sm font-light leading-relaxed max-w-2xl mx-auto">
+            Ponçage, bouchage des fissures, choix de teinte, vitrification ou huile-cire : guide complet pour rénover un parquet massif à Paris en 2025, avec les prix au m² et les délais d&apos;intervention.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Massif vs contrecollé */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Parquet massif vs contrecollé : quelles différences ?
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le parquet massif est constitué d&apos;une seule et même pièce de bois, usinée dans toute son épaisseur (15 à 22 mm). Le contrecollé est composé d&apos;un parement de bois noble collé sur un support en bois composite. Les deux produits ont une apparence similaire une fois posés, mais leurs propriétés diffèrent significativement.
-            </p>
-            <div className="space-y-4">
-              {[
-                {
-                  critere: 'Nombre de ponçages possibles',
-                  massif: '3 à 4 ponçages sur la durée de vie (lame de 20 mm)',
-                  contrecolle: '1 à 2 ponçages maximum (parement de 4 mm d\'épaisseur)',
-                },
-                {
-                  critere: 'Durabilité',
-                  massif: "Jusqu'à 100 ans avec un entretien régulier. Les parquets haussmanniens parisiens témoignent de cette longévité.",
-                  contrecolle: "25 à 40 ans en moyenne. Sensible à l'humidité sur les couches inférieures.",
-                },
-                {
-                  critere: 'Réaction à l\'humidité',
-                  massif: "Travaille davantage (dilatation/rétraction saisonnière). Nécessite une pose adaptée et un taux d'humidité stable.",
-                  contrecolle: "Plus stable dimensionnellement. Peut être posé dans des pièces légèrement humides.",
-                },
-                {
-                  critere: 'Prix',
-                  massif: "Fourniture : 30 à 90 €/m² selon l'essence. Pose : 40 à 70 €/m² supplémentaires.",
-                  contrecolle: "Fourniture : 20 à 60 €/m². Pose souvent plus rapide (clipsage flottant possible).",
-                },
-              ].map((el) => (
-                <div key={el.critere} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-3">{el.critere}</div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div>
-                      <div className="text-[10px] uppercase tracking-widest text-[#B8960C] font-light mb-1">Massif</div>
-                      <div className="text-gray-600 text-sm font-light leading-relaxed">{el.massif}</div>
-                    </div>
-                    <div>
-                      <div className="text-[10px] uppercase tracking-widest text-gray-400 font-light mb-1">Contrecollé</div>
-                      <div className="text-gray-600 text-sm font-light leading-relaxed">{el.contrecolle}</div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 2 — Essences */}
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Essences populaires à Paris : chêne, noyer, frêne
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le choix de l&apos;essence conditionne l&apos;esthétique, la dureté et le prix du parquet. Dans les appartements parisiens, trois essences dominent le marché.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            {[
-              {
-                essence: 'Chêne massif',
-                hardness: 'Dureté Brinell : 3,7',
-                detail: "L'essence de référence à Paris. Grain marqué, nombreux coloris disponibles (naturel, blanchi, fumé, brossé). Dureté suffisante pour toutes les pièces. La pose en point de Hongrie ou en chevron est particulièrement prisée dans les appartements haussmanniens.",
-                prix: '30 – 65 €/m² fourniture',
-              },
-              {
-                essence: 'Noyer massif',
-                hardness: 'Dureté Brinell : 3,5',
-                detail: "Teinte chocolat chaud naturelle, très décoratif. Plus rare et plus cher que le chêne. Légèrement moins dur, convient aux pièces à trafic modéré. Apprécié dans les appartements contemporains haut de gamme.",
-                prix: '55 – 90 €/m² fourniture',
-              },
-              {
-                essence: 'Frêne massif',
-                hardness: 'Dureté Brinell : 4,0',
-                detail: "Plus dur que le chêne, grain fin et élégant, teinte claire tirant sur le beige. Résistant aux rayures, idéal pour les zones à fort trafic. Très apprécié dans les cuisines ouvertes ou les couloirs.",
-                prix: '35 – 65 €/m² fourniture',
-              },
-              {
-                essence: 'Hêtre massif',
-                hardness: 'Dureté Brinell : 3,8',
-                detail: "Teinte homogène rosée très caractéristique. Sensible à l'humidité et aux variations de température. Adapté aux séjours et chambres mais déconseillé dans les cuisines. Prix attractif pour une essence dure.",
-                prix: '28 – 50 €/m² fourniture',
-              },
-            ].map((el) => (
-              <div key={el.essence} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-2 mb-1">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.essence}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.prix}</div>
-                </div>
-                <div className="text-[10px] text-gray-400 font-light mb-2">{el.hardness}</div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3 — Pose */}
+      {/* Section 1 — Différences massif / contrecollé / stratifié */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Pose collée sur béton vs pose clouée sur lambourdes
+            Massif, contrecollé, stratifié : lequel peut être rénové ?
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le mode de pose dépend avant tout de la nature du support existant et de l&apos;épaisseur du parquet. Dans un appartement parisien, deux situations sont courantes : un plancher béton (chape ou dalle) ou un plancher bois ancien avec vieux parquet à déposer.
+            Avant de planifier une rénovation, il faut identifier précisément le type de parquet en place. Tous ne réagissent pas de la même façon au ponçage mécanique — et certains ne peuvent tout simplement pas être rénovés.
           </p>
-          <div className="space-y-4 mb-6">
+          <div className="space-y-4">
             {[
               {
-                type: 'Pose collée sur béton (chape ou ragréage)',
-                prix: '40 – 60 €/m² pose seule',
-                detail: "Colle bi-composant appliquée à la spatule dentelée directement sur la chape ou un ragréage autonivelant. Nécessite une humidité résiduelle du béton inférieure à 3,5 CM (test carbure obligatoire). Séchage 24 à 48h avant circulation. Solution la plus rapide et la plus économique sur béton sain.",
+                type: 'Parquet massif',
+                reno: 'Oui — 3 à 5 ponçages possibles',
+                detail: "Constitué d'une seule pièce de bois plein (14 à 22 mm). Le parquet de référence dans les appartements parisiens anciens. La couche d'usure est épaisse : il peut être poncé plusieurs fois sur sa durée de vie. Les parquets en point de Hongrie ou en chêne bâton rompu des immeubles haussmanniens sont presque toujours des parquets massifs.",
               },
               {
-                type: 'Pose clouée sur lambourdes',
-                prix: '60 – 80 €/m² pose + lambourdes',
-                detail: "Lambourdes en bois fixées sur la dalle, parquet cloué dessus. Permet de rattraper des irrégularités de niveau, d'intégrer une isolation thermique ou phonique sous le parquet et de créer un espace technique. Solution traditionnelle dans les rénovations d'appartements anciens. Surélévation de 35 à 45 mm.",
+                type: 'Parquet contrecollé',
+                reno: 'Conditionnellement — selon épaisseur parement',
+                detail: "Composé d'un parement de bois noble (2 à 6 mm) collé sur un support multiplis. Les modèles avec parement > 4 mm peuvent être poncés 1 à 2 fois. Ceux avec parement de 2 mm ou moins ne supportent pas le ponçage. Un artisan mesure l'épaisseur du parement à l'aide d'une sonde avant de s'engager.",
               },
               {
-                type: 'Pose sur plancher bois existant (chêville ou colle)',
-                prix: '35 – 55 €/m² pose seule',
-                detail: "Sur un plancher bois sain (vérification préalable des solives), le parquet massif peut être cloué directement. Condition : le plancher existant doit être stable, sec et plan. Permet de conserver la hauteur sous plafond. Solution courante lors de la rénovation des parquets anciens en chêne point de Hongrie.",
+                type: 'Parquet stratifié',
+                reno: 'Non — impossible à poncer',
+                detail: "Le stratifié est constitué d'une planche HDF recouverte d'une photo imprimée protégée par une résine dure. Il n'y a aucune couche de bois véritable : le ponçage détruirait immédiatement le décor. En cas d'usure ou de rayures profondes, la seule solution est le remplacement complet.",
               },
             ].map((el) => (
               <div key={el.type} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
                 <div className="flex items-start justify-between gap-4 mb-2">
                   <div className="font-medium text-[#1C1C1C] text-sm">{el.type}</div>
-                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.reno}</div>
                 </div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
@@ -235,48 +117,84 @@ export default function ArticleParquetMassif() {
         </div>
       </section>
 
-      {/* Section 4 — Ponçage et finition */}
+      {/* Section 2 — Étapes du ponçage */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Ponçage et finition : vitrification vs huile
+            Les étapes du ponçage professionnel
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le ponçage d&apos;un parquet massif ancien est l&apos;opération la plus délicate de la rénovation. Il nécessite un matériel professionnel (ponceuse à bande, ponceuse de bord) et un savoir-faire précis pour éviter les ondulations et les brûlures du bois.
+            Le ponçage d&apos;un parquet massif est une opération délicate qui nécessite un matériel professionnel (ponceuse à bande, ponceuse de bord, vibrante de finition) et une progression rigoureuse des grains. Un ponçage mal maîtrisé laisse des ondulations ou des brûlures irréparables.
+          </p>
+          <div className="space-y-4">
+            {[
+              {
+                etape: '1. Diagnostic et préparation',
+                detail: "Mesure de l'épaisseur résiduelle, vérification de l'état des lames (décollées, cassées, pourries). Les lames abîmées sont remplacées avant de poncer. La pièce est entièrement vidée et les plinthes sont déposées. Bouchage des gros trous et des nœuds avec de la colle à bois avant le premier passage.",
+              },
+              {
+                etape: '2. Ponçage gros grain (36 ou 40)',
+                detail: "Passage de la ponceuse à bande dans le sens des lames pour éliminer l'ancienne finition (vernis, cire, huile) et le bois oxydé en surface. Ce premier passage est le plus agressif : il enlève 1 à 2 mm de bois. Les angles et les bords sont traités à la ponceuse de chant.",
+              },
+              {
+                etape: '3. Bouchage des fissures et interstices',
+                detail: "Application d'un mastic à base de colle à bois mélangée à la sciure du ponçage : le résultat est parfaitement teinté dans la couleur naturelle du parquet. Ce mastic sèche en 2 à 4 heures selon l'humidité ambiante. Cette étape est essentielle pour les parquets anciens dont les lames ont travaillé et présentent des interstices visibles.",
+              },
+              {
+                etape: '4. Ponçage moyen puis fin (60, 80, 120)',
+                detail: "Passage successifs avec des grains de plus en plus fins pour lisser la surface et éliminer les stries du premier ponçage. Chaque passage se fait dans le sens du bois. Le dernier passage à grain fin (120) prépare la surface à recevoir la finition.",
+              },
+              {
+                etape: '5. Dépoussiérage et finition',
+                detail: "Aspiration complète de la sciure et dépoussiérage à l'aide d'un chiffon légèrement humide. Application de la finition choisie : vitrification (2 à 3 couches), huile (2 à 3 couches) ou cire (2 couches + lustrage). Séchage entre chaque couche : 4 à 12 heures selon le produit.",
+              },
+            ].map((el) => (
+              <div key={el.etape} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.etape}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 — Teintes */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Choisir la teinte de son parquet massif
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            La teinte est appliquée après le ponçage final, avant la finition. Elle peut radicalement transformer l&apos;ambiance d&apos;un appartement. Attention : une teinte mal dosée ou mal appliquée est très difficile à corriger.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
               {
-                finition: 'Vitrification glycéro',
-                aspect: 'Brillant à satiné',
-                detail: "Vernis à l'huile de lin polymérisé. Excellent rapport durabilité / souplesse. Résiste bien aux rayures légères. Séchage 24h entre couches (2 à 3 couches). Très utilisé dans les appartements familiaux parisiens.",
-                prix: '15 – 25 €/m²',
+                teinte: 'Naturel (sans teinte)',
+                ambiance: 'Chaleureux, authentique',
+                detail: "La finition naturelle laisse apparaître la couleur et les veines naturelles du bois. Le chêne prend une teinte dorée avec le temps. Idéal pour les appartements haussmanniens ou les rénovations souhaitant conserver le caractère d'origine.",
               },
               {
-                finition: 'Vitrification polyuréthane',
-                aspect: 'Brillant à mat',
-                detail: "Vernis de synthèse très résistant à l'abrasion et à l'eau. Idéal pour les zones à fort trafic (couloir, salon). Séchage plus rapide (12h). Finition plus plastifiée visuellement. Standard dans les rénovations locatives.",
-                prix: '18 – 28 €/m²',
+                teinte: 'Blanchi ou grisé',
+                ambiance: 'Lumineux, scandinave',
+                detail: "Une lasure blanche ou grise diluée est appliquée avant la vitrification. Elle atténue les veines et éclaircit la pièce. Très tendance dans les appartements contemporains parisiens. Attention : irréversible, impossible de revenir au naturel sans reponcer.",
               },
               {
-                finition: 'Huile pénétrante',
-                aspect: 'Naturel, mat',
-                detail: "Huile (lin, tung, durcissante) qui pénètre dans les fibres du bois. Aspect naturel très apprécié dans les appartements de caractère. Le bois respire et reste vivant. Nécessite un réhuilage annuel. Facilement réparable par zone.",
-                prix: '12 – 20 €/m²',
+                teinte: 'Fumé ou brun foncé',
+                ambiance: 'Élégant, contrasté',
+                detail: "Le bois est teinté dans des tons tabac, wengé ou ebène. Crée un contraste fort avec des murs blancs. Convient bien aux grandes pièces lumineuses. Dans une pièce sombre, une teinte foncée peut écraser visuellement l'espace.",
               },
               {
-                finition: 'Cire',
-                aspect: 'Satiné, naturel',
-                detail: "Finition traditionnelle des parquets parisiens anciens. Aspect authentique mais entretien plus contraignant (cirage régulier). Déconseillée dans les cuisines ou salles de bain. Idéale pour restituer l'authenticité d'un parquet haussmannien.",
-                prix: '10 – 18 €/m²',
+                teinte: 'Vieilli ou oxydé',
+                ambiance: 'Vintage, patine',
+                detail: "Technique qui simule un vieillissement accéléré du bois par réaction chimique (acide tannique + sulfate de fer) ou par l'application d'un brou de noix. Donne un aspect patine et historique très apprécié dans les appartements de caractère et les lofts.",
               },
             ].map((el) => (
-              <div key={el.finition} className="bg-white rounded-lg p-5 border border-gray-100">
+              <div key={el.teinte} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
                 <div className="flex items-start justify-between gap-2 mb-1">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.finition}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.prix}</div>
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.teinte}</div>
+                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.ambiance}</div>
                 </div>
-                <div className="text-[10px] text-gray-400 font-light mb-2">Aspect : {el.aspect}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
               </div>
             ))}
@@ -284,62 +202,97 @@ export default function ArticleParquetMassif() {
         </div>
       </section>
 
-      {/* Section 5 — Budget */}
+      {/* Section 4 — Vitrification vs huile-cire */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Vitrification vs huile-cire : quelle finition choisir ?
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le choix de la finition est déterminant pour la durabilité, l&apos;aspect visuel et l&apos;entretien futur de votre parquet. Il n&apos;y a pas de finition universellement supérieure : tout dépend de votre usage, de vos préférences esthétiques et de la pièce concernée.
+          </p>
+          <div className="overflow-x-auto mb-6">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#1C1C1C] text-white">
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Critère</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Vitrification</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Huile-cire</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { critere: 'Résistance rayures', vitri: 'Très bonne', huile: 'Moyenne' },
+                  { critere: "Résistance à l'eau", vitri: 'Excellente', huile: 'Bonne (si entretien régulier)' },
+                  { critere: 'Aspect visuel', vitri: 'Brillant à satiné', huile: 'Mat naturel' },
+                  { critere: 'Entretien', vitri: 'Faible (nettoyage humide)', huile: "Réhuilage annuel requis" },
+                  { critere: 'Réparation locale', vitri: "Difficile (tout poncer)", huile: "Facile (poncer la zone)" },
+                  { critere: 'Prix finition', vitri: '15 – 28 €/m²', huile: '10 – 18 €/m²' },
+                  { critere: 'Idéal pour', vitri: 'Couloir, salon, locatif', huile: 'Chambre, appartement de caractère' },
+                ].map((row, i) => (
+                  <tr key={row.critere} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.critere}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.vitri}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.huile}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Prix et durée */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix du parquet massif à Paris : tableau récapitulatif 2025
+            Prix rénovation parquet massif Paris 2025 & durée d&apos;intervention
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Les prix s&apos;entendent fourniture et pose par un artisan parqueteur parisien, finition vitrification incluse.
+            Les prix s&apos;entendent main d&apos;oeuvre + matériaux, pour un artisan parqueteur parisien qualifié, hors dépose de l&apos;ancien revêtement.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="bg-[#1C1C1C] text-white">
                   <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Prestation</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix m²</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Détail</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Prix au m²</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Durée (50 m²)</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { prestation: 'Chêne massif posé collé + vitrification', prix: '80 – 130 €/m²', detail: 'Fourniture + colle + pose + vitrification 2 couches' },
-                  { prestation: 'Chêne massif posé sur lambourdes + vitrification', prix: '110 – 160 €/m²', detail: 'Fourniture + lambourdes + pose clouée + vitrification' },
-                  { prestation: 'Essence noble (noyer, frêne) posé collé', prix: '130 – 200 €/m²', detail: 'Fourniture + colle + pose + finition huile ou vernis' },
-                  { prestation: 'Ponçage seul (parquet existant)', prix: '20 – 40 €/m²', detail: 'Ponçage 3 passes + nettoyage (finition non incluse)' },
-                  { prestation: 'Vitrification seule (après ponçage)', prix: '15 – 28 €/m²', detail: '2 à 3 couches vernis ou huile' },
-                  { prestation: 'Dépose et évacuation ancien parquet', prix: '15 – 30 €/m²', detail: 'Dépose + chargement + évacuation déchetterie' },
+                  { presta: 'Ponçage seul (3 passes)', prix: '15 – 25 €/m²', duree: '1 journée' },
+                  { presta: 'Bouchage fissures inclus', prix: '18 – 28 €/m²', duree: '1 journée' },
+                  { presta: 'Vitrification (2-3 couches)', prix: '10 – 20 €/m²', duree: '1 à 2 journées' },
+                  { presta: 'Huile ou cire (2-3 couches)', prix: '8 – 15 €/m²', duree: '1 journée' },
+                  { presta: 'Rénovation complète (ponçage + finition)', prix: '25 – 55 €/m²', duree: '2 à 3 journées' },
+                  { presta: 'Remplacement lames isolées', prix: '30 – 80 €/lame', duree: 'Demi-journée' },
+                  { presta: 'Dépose + évacuation ancien revêtement', prix: '10 – 20 €/m²', duree: 'En sus' },
                 ].map((row, i) => (
-                  <tr key={row.prestation} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.prestation}</td>
+                  <tr key={row.presta} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.presta}</td>
                     <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.prix}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.detail}</td>
+                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.duree}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-
-          <div>
-            <h3 className="font-display text-lg font-semibold text-[#1C1C1C] mb-4">
-              Conseils avant de rénover un parquet massif parisien
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                "Mesurer l'épaisseur résiduelle avant de décider de poncer — un parquet trop fin ne peut plus être traité",
-                "Vérifier l'humidité du support (béton) avec un test carbure avant toute pose collée",
-                "Laisser acclimater le parquet massif 48 à 72h dans la pièce avant la pose",
-                "Traiter les lames abîmées ou décollées avant le ponçage pour éviter les vibrations de la ponceuse",
-                "Choisir une finition huile si vous souhaitez réparer par zones sans tout rénover",
-                "Prévoir un taux d'humidité intérieure stable (45 à 60%) pour limiter le travail du bois",
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                  {item}
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              "Prévoir 48 à 72h sans circuler après vitrification pour un séchage optimal",
+              "Aérer abondamment pendant et après l'application des finitions solvantées",
+              "Laisser acclimater les lames de remplacement 48h dans la pièce avant pose",
+              "Maintenir un taux d'humidité stable (45-60%) pour limiter le travail du bois",
+              "Poser des patins sous les meubles dès la fin du chantier pour protéger la finition",
+              "Éviter le nettoyage humide pendant 7 jours après vitrification",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -349,7 +302,7 @@ export default function ArticleParquetMassif() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
           <div className="space-y-6">
-            {schemaFaq.mainEntity.map((q) => (
+            {schemaFAQ.mainEntity.map((q) => (
               <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
                 <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
                 <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
@@ -365,10 +318,10 @@ export default function ArticleParquetMassif() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/parquet-paris', title: 'Parquet Paris' },
-              { href: '/blog/choisir-carrelage-salle-de-bain', title: 'Choisir son carrelage salle de bain' },
-              { href: '/blog/renovation-appartement-paris-1er', title: 'Rénovation appartement Paris 1er' },
-              { href: '/blog/renovation-bureau-paris', title: 'Rénovation bureau Paris' },
+              { href: '/parquet-paris', title: 'Parquet Paris — Espace Design' },
+              { href: '/blog/parquet-massif-paris', title: 'Parquet massif Paris' },
+              { href: '/blog/pose-parquet-paris', title: 'Pose parquet Paris' },
+              { href: '/blog/renovation-appartement-haussmannien-paris', title: 'Rénovation appartement haussmannien' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -382,51 +335,24 @@ export default function ArticleParquetMassif() {
         </div>
       </section>
 
-      {/* Zones */}
-      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {[
-              { href: '/renovation-paris-8e', label: 'Paris 8e' },
-              { href: '/renovation-paris-9e', label: 'Paris 9e' },
-              { href: '/renovation-paris-10e', label: 'Paris 10e' },
-              { href: '/renovation-paris-11e', label: 'Paris 11e' },
-              { href: '/renovation-levallois-perret', label: 'Levallois' },
-              { href: '/renovation-courbevoie', label: 'Courbevoie' },
-              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
-              { href: '/renovation-pantin', label: 'Pantin' },
-            ].map((z) => (
-              <Link
-                key={z.href}
-                href={z.href}
-                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
-              >
-                {z.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section className="py-16 bg-[#D4AF37] text-center px-4">
-        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Rénover ou poser votre parquet massif à Paris
+      <section className="py-16 bg-[#1C1C1C] text-center px-4">
+        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
+          Rénover votre parquet massif à Paris
         </h2>
-        <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Artisan parqueteur parisien. Devis gratuit sous 48h. Ponçage, pose et vitrification.
+        <p className="text-gray-400 text-sm font-light mb-8">
+          Artisan parqueteur parisien. Ponçage, vitrification, huile. Devis gratuit sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact"
-            className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-black transition-colors"
+            className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#c9a030] transition-colors"
           >
             Devis gratuit <ArrowRight size={13} />
           </Link>
           <a
             href="tel:+33611783867"
-            className="flex items-center justify-center gap-2 border border-[#1C1C1C]/30 text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-[#1C1C1C] transition-colors"
+            className="flex items-center justify-center gap-2 border border-gray-600 text-gray-300 px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-white hover:text-white transition-colors"
           >
             <Phone size={14} />
             06 11 78 38 67

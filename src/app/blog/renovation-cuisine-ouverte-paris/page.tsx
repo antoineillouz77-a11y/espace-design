@@ -12,64 +12,74 @@ const schemaBreadcrumb = {
   ],
 }
 
+export const metadata: Metadata = {
+  title: "Cuisine Ouverte Paris : rénovation, prix & démarches 2025 | Espace Design",
+  description:
+    "Ouvrir et rénover une cuisine à Paris : abattage mur porteur, IBS/poutre, démarches syndic, prix et tendances 2025. Artisan spécialisé Paris. Devis gratuit sous 48h.",
+  keywords: [
+    'cuisine ouverte Paris',
+    'ouvrir cuisine salon Paris',
+    'abattage mur porteur Paris',
+    'rénovation cuisine ouverte Paris',
+    'prix cuisine ouverte Paris',
+    'IPN mur porteur Paris',
+    'démarches syndic ouverture cuisine',
+  ],
+}
+
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: "Cuisine Ouverte Paris : aménagement, verrière & prix 2025 | Espace Design",
-  description: "Aménager une cuisine ouverte à Paris : cuisine en L, îlot central, verrière atelier, matériaux tendance. Artisan Paris, prix 2025.",
-  datePublished: '2025-01-15',
+  headline: "Cuisine Ouverte Paris : rénovation, prix & démarches 2025",
+  description: "Guide complet pour ouvrir et rénover une cuisine à Paris : abattage de mur porteur ou non-porteur, IBS/poutre, démarches syndic, prix et tendances 2025.",
   author: { '@type': 'Organization', name: 'Espace Design' },
   publisher: {
     '@type': 'Organization',
     name: 'Espace Design',
     url: 'https://espacedesignparis.fr',
   },
+  datePublished: '2025-01-15',
+  dateModified: '2025-01-15',
   url: 'https://espacedesignparis.fr/blog/renovation-cuisine-ouverte-paris',
 }
 
-const schemaFaq = {
+const schemaFAQ = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
     {
       '@type': 'Question',
-      name: "Faut-il un permis de construire pour ouvrir une cuisine à Paris ?",
+      name: "Peut-on abattre un mur porteur pour ouvrir une cuisine à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Non, ouvrir une cuisine sur le salon ne nécessite pas de permis de construire. Si vous abattez un mur porteur, une déclaration préalable de travaux en mairie est requise, accompagnée d'une étude structurelle par un bureau d'études. En copropriété, l'assemblée générale doit approuver les travaux touchant aux parties communes ou aux murs porteurs. En revanche, l'installation d'une verrière intérieure ou le déplacement de cloisons légères ne nécessitent aucune démarche administrative.",
+        text: "Oui, c'est techniquement possible dans la grande majorité des cas. L'abattage d'un mur porteur nécessite une étude de structure par un bureau d'études agréé, qui définit le type de reprise en sous-oeuvre nécessaire (poutre IPN, IBS, béton armé). Un étaiement provisoire est mis en place pendant les travaux. Comptez 800 à 2 000 € pour l'étude et 4 000 à 12 000 € pour la reprise structurelle selon la portée.",
       },
     },
     {
       '@type': 'Question',
-      name: "Comment gérer les odeurs et la ventilation dans une cuisine ouverte ?",
+      name: "Faut-il un accord du syndic pour ouvrir sa cuisine ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "La ventilation est le point critique d'une cuisine ouverte. La solution la plus efficace est un extracteur déporté (moteur dans les combles ou en extérieur) avec un débit d'au moins 600 m³/h, couplé à un filtre à charbon actif si l'évacuation vers l'extérieur est impossible. En copropriété parisienne, le passage d'un conduit d'évacuation vers la façade ou la toiture doit être approuvé par le syndic. La VMC hygroréglable de type B complète le dispositif. Budget extracteur déporté : 800 à 2 500 €.",
+        text: "Si vous abattez ou modifiez un mur porteur (partie structurelle commune dans de nombreuses copropriétés), l'accord du syndic est obligatoire — souvent avec passage en assemblée générale. Pour la simple suppression d'une cloison non-porteuse entre cuisine et salon, aucune démarche syndic n'est requise, mais une déclaration préalable de travaux en mairie peut être nécessaire si les travaux modifient la distribution du logement.",
       },
     },
     {
       '@type': 'Question',
-      name: "Quel est le prix d'une cuisine ouverte avec verrière à Paris ?",
+      name: "Quel est le prix d'une cuisine ouverte à Paris en 2025 ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Le coût d'une cuisine ouverte avec verrière à Paris varie selon la configuration. Une cuisine ouverte simple (sans verrière, mur non porteur abattu + électroménager encastré) : 8 000 à 18 000 €. Avec verrière style atelier (acier + vitrage simple) : 3 000 à 8 000 € pour la verrière seule. Configuration complète cuisine en L avec îlot central, verrière et finitions haut de gamme : 25 000 à 45 000 €. Ces prix incluent la main d'œuvre, les matériaux et l'électroménager de milieu de gamme.",
+        text: "Le budget total d'une cuisine ouverte à Paris se décompose ainsi : démolition de la cloison (500 à 2 000 € pour non-porteur, 3 000 à 8 000 € pour porteur avec IPN) + nouvelle cuisine fournie et posée (6 000 à 25 000 € selon gamme) + finitions (sol, peinture, électricité : 2 000 à 6 000 €). Budget global : de 10 000 € pour une ouverture simple à 40 000 € pour un projet complet haut de gamme.",
       },
     },
     {
       '@type': 'Question',
-      name: "Peut-on ouvrir une cuisine dans un appartement haussmannien parisien ?",
+      name: "Quel est le délai pour des travaux d'ouverture de cuisine à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui, mais avec des précautions spécifiques. Les immeubles haussmanniens ont souvent des murs porteurs en pierre ou en brique de 40 à 60 cm d'épaisseur. Avant tout abattage, un bureau d'études structures doit déterminer si le mur est porteur et définir le type de linteau ou poutre à poser. Comptez 800 à 2 000 € pour l'étude structurelle, et 3 000 à 8 000 € pour la pose d'une IPN (poutre acier) si nécessaire. La hauteur sous plafond généreuse (2,70 à 3,20 m) des haussmanniens est un atout pour les verrières d'atelier.",
+        text: "Pour une cloison non-porteuse : 1 à 2 semaines (démolition + cuisine + finitions). Pour un mur porteur avec IPN : 3 à 6 semaines, dont 1 semaine pour l'étaiement et la reprise structurelle. Ajoutez 2 à 4 mois pour l'obtention de l'accord syndic et de la déclaration préalable en mairie si nécessaire — à anticiper bien avant le début du chantier.",
       },
     },
   ],
-}
-
-export const metadata: Metadata = {
-  title: "Cuisine Ouverte Paris : aménagement, verrière & prix 2025 | Espace Design",
-  description: "Aménager une cuisine ouverte à Paris : cuisine en L, îlot central, verrière atelier, matériaux tendance. Artisan Paris, prix 2025.",
-  keywords: "cuisine ouverte Paris, aménagement cuisine Paris, cuisine îlot Paris, verrière cuisine Paris",
 }
 
 export default function ArticleCuisineOuverteParis() {
@@ -81,309 +91,316 @@ export default function ArticleCuisineOuverteParis() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
       />
 
       {/* Hero */}
       <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Cuisine
+            Guide & Conseils
           </p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Cuisine Ouverte Paris : aménagement, verrière &amp; prix 2025
+            Cuisine Ouverte Paris : ouvrir et rénover votre cuisine
           </h1>
           <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Ouvrir sa cuisine sur le salon est l&apos;une des transformations les plus demandées dans les appartements parisiens. Entre la cuisine en L, l&apos;îlot central, la verrière d&apos;atelier et le choix des matériaux, chaque projet requiert une approche technique et esthétique rigoureuse. Guide complet 2025 par Espace Design.
+            Ouvrir la cuisine sur le séjour est l&apos;une des transformations les plus
+            demandées dans les appartements parisiens. Elle implique des questions techniques
+            majeures — porteur ou non-porteur ? IBS ou IPN ? — et des démarches
+            administratives souvent sous-estimées. Espace Design vous guide pour mener ce
+            projet sans mauvaise surprise.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — 3 configurations */}
       <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-12">
+
+          {/* Section 1 — Porteur vs non-porteur */}
           <div>
             <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              3 configurations de cuisine ouverte adaptées aux appartements parisiens
+              Mur porteur ou non-porteur : comment savoir ?
             </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-              Le choix de la configuration dépend de la superficie disponible, de l&apos;orientation et de l&apos;usage prévu. Dans les appartements parisiens souvent compacts (40 à 80 m²), chaque configuration répond à des contraintes spécifiques d&apos;espace et de budget.
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
+              La distinction entre mur porteur et cloison légère est la première question à
+              résoudre avant tout projet d&apos;ouverture de cuisine. Se tromper entraîne des
+              désordres structurels graves — fissures, affaissement de plancher, effondrement
+              partiel.
             </p>
-            <div className="space-y-4">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
               {[
                 {
-                  titre: "Cuisine en L : la plus adaptée aux petites surfaces",
-                  detail: "La cuisine en L s'appuie sur deux murs adjacents et libère la zone centrale pour la circulation. Idéale pour les appartements de 40 à 60 m², elle permet d'intégrer lave-vaisselle, four encastré et réfrigérateur américain sans empiéter sur la pièce de vie. La longueur des plans de travail varie de 3 à 5 mètres linéaires. Prix fourni + posé : 6 000 à 15 000 €.",
+                  label: 'Mur porteur',
+                  color: 'border-red-200 bg-red-50',
+                  badge: 'Intervention structurelle obligatoire',
+                  items: [
+                    "Épaisseur supérieure à 20 cm",
+                    "Maçonnerie en pierre, brique pleine ou béton",
+                    "Perpendiculaire aux solives du plancher",
+                    "Présent dans l'axe de toute la hauteur de l'immeuble",
+                    "Figurant sur les plans structurels du bâtiment",
+                  ],
                 },
                 {
-                  titre: "Cuisine avec îlot central : convivialité et fonctionnalité",
-                  detail: "L'îlot central transforme la cuisine en espace de vie partagé. Il intègre souvent la plaque de cuisson, un évier secondaire ou simplement un plan de travail convivial avec tabourets. Nécessite au minimum 12 m² de surface cuisine et une hauteur sous plafond de 2,50 m pour un extracteur efficace. Budget îlot seul : 2 000 à 8 000 €.",
+                  label: 'Cloison légère (non-porteuse)',
+                  color: 'border-green-200 bg-green-50',
+                  badge: 'Démolition simplifiée',
+                  items: [
+                    "Épaisseur de 5 à 15 cm",
+                    "Brique creuse, carreaux de plâtre ou placo",
+                    "Parallèle aux solives ou sans lien structurel",
+                    "Ne remonte pas sur toute la hauteur de l'immeuble",
+                    "Son retrait ne modifie pas la stabilité du bâtiment",
+                  ],
+                },
+              ].map((item) => (
+                <div key={item.label} className={`border rounded-lg p-5 ${item.color}`}>
+                  <div className="font-display text-sm font-semibold text-[#1C1C1C] mb-1">{item.label}</div>
+                  <div className="text-xs text-gray-500 font-light mb-3">{item.badge}</div>
+                  <ul className="space-y-1">
+                    {item.items.map((i) => (
+                      <li key={i} className="flex gap-2 text-xs text-gray-600 font-light">
+                        <span className="text-gray-400 flex-shrink-0">—</span>
+                        {i}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-gray-600 text-sm leading-relaxed font-light">
+              En cas de doute — et dans un appartement parisien ancien le doute est fréquent
+              — seul un bureau d&apos;études structures peut trancher avec certitude, après
+              examen visuel et consultation des plans de l&apos;immeuble. Cette étude coûte
+              entre 500 et 1 500 €. Espace Design travaille avec des bureaux d&apos;études
+              partenaires et peut organiser cette visite dès la phase de devis.
+            </p>
+          </div>
+
+          {/* Section 2 — IBS / Poutre */}
+          <div>
+            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+              IBS, IPN, poutre béton : quelle reprise en sous-oeuvre ?
+            </h2>
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
+              Quand un mur porteur est abattu, les charges qu&apos;il supportait doivent être
+              reprises par un linteau ou une poutre. Le choix dépend de la portée de
+              l&apos;ouverture, des charges à supporter et de l&apos;esthétique souhaitée.
+            </p>
+
+            <div className="space-y-4 mb-5">
+              {[
+                {
+                  type: "IPN (poutre acier laminée)",
+                  usage: "Portée de 1,50 m à 5 m — le plus courant à Paris",
+                  prix: "2 500 – 6 000 €",
+                  detail: "La poutre IPN (en I) est le standard pour les reprises de murs porteurs dans les appartements haussmanniens et les immeubles récents. Elle est mise en place après étaiement provisoire, puis encastrée dans les murs de rive. Elle peut rester apparente (effet industriel) ou être habillée d'un coffrage plâtre.",
                 },
                 {
-                  titre: "Cuisine linéaire ouverte : sobriété parisienne",
-                  detail: "Sur un seul mur, la cuisine linéaire convient aux studios et deux-pièces parisiens. Elle maximise la longueur disponible (souvent 3 à 4 m) avec un agencement : réfrigérateur / lave-vaisselle / évier / plaque / four. La plus discrète visuellement, elle se fond dans le salon sans le surcharger. Prix fourni + posé : 4 000 à 10 000 €.",
+                  type: "IBS (poutre béton armé coulée en place)",
+                  usage: "Portée courte à moyenne, dans le béton existant",
+                  prix: "1 800 – 4 000 €",
+                  detail: "L'IBS (ou linteau béton) est coulé en place dans une trémie créée dans le mur. Solution adaptée aux murs en béton banché des immeubles des années 1960-1980. Plus discret qu'un IPN apparent mais impose un coffrage soigné. Délai de séchage béton : 28 jours avant décoffrage.",
                 },
-              ].map((el) => (
-                <div key={el.titre} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.titre}</div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+                {
+                  type: "Poutre bois lamellé-collé",
+                  usage: "Petites portées (< 2,50 m), esprit chaleureux",
+                  prix: "2 000 – 4 500 €",
+                  detail: "La poutre bois apparent est une alternative esthétique dans les lofts et appartements au style chaleureux. Elle est dimensionnée par le bureau d'études et laissée visible pour l'effet décoratif. Non adaptée aux grandes portées ni aux charges lourdes.",
+                },
+              ].map((item) => (
+                <div key={item.type} className="bg-[#FAFAF8] border border-gray-100 rounded-lg p-5">
+                  <div className="flex items-start justify-between gap-3 mb-1">
+                    <div className="font-display text-sm font-semibold text-[#1C1C1C]">{item.type}</div>
+                    <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{item.prix}</div>
+                  </div>
+                  <div className="text-xs text-gray-500 font-light mb-2">{item.usage}</div>
+                  <p className="text-gray-600 text-sm font-light leading-relaxed">{item.detail}</p>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Section 2 — Verrière intérieure */}
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Verrière intérieure cuisine-salon : styles et prix
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            La verrière d&apos;atelier est la solution la plus tendance pour séparer visuellement la cuisine du salon tout en conservant la luminosité. Elle laisse passer la lumière, délimite les espaces sans les cloisonner et apporte un caractère industriel très prisé dans les appartements parisiens rénovés.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            {[
-              {
-                titre: "Verrière acier style atelier",
-                prix: "3 000 – 6 000 €",
-                detail: "Profilés acier noir mat ou thermolaqué, vitrage simple ou feuilleté. Le style atelier parisien par excellence. Fabrication sur mesure, pose incluse. Dimensions courantes : 1,80 à 2,50 m de hauteur.",
-              },
-              {
-                titre: "Verrière aluminium thermolaquée",
-                prix: "2 500 – 5 000 €",
-                detail: "Plus légère que l'acier, déclinée en noir, blanc ou gris anthracite. Finition uniforme, entretien facile. Compatible avec double vitrage pour une meilleure isolation phonique.",
-              },
-              {
-                titre: "Verrière avec porte coulissante",
-                prix: "4 500 – 8 000 €",
-                detail: "Intègre une porte coulissante (ou pivotante) dans la structure. Permet de fermer la cuisine lors de préparations intenses ou pour réduire les nuisances sonores. Très prisé dans les appartements familiaux.",
-              },
-              {
-                titre: "Verrière bois et verre",
-                prix: "3 500 – 7 000 €",
-                detail: "Structure bois massif ou contreplaqué laqué. Style plus chaleureux que l'acier, intégration naturelle dans les appartements anciens. Traitement anti-humidité obligatoire côté cuisine.",
-              },
-            ].map((el) => (
-              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-2 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.prix}</div>
-                </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
-              </div>
-            ))}
-          </div>
-          <div className="bg-[#1C1C1C]/5 rounded-lg p-5 border border-gray-200">
-            <p className="text-[#1C1C1C] text-sm font-medium mb-2">Conseil Espace Design</p>
-            <p className="text-gray-600 text-sm font-light leading-relaxed">
-              Dans les immeubles haussmanniens, la hauteur sous plafond (2,70 à 3,20 m) permet des verrières pleine hauteur spectaculaires. Prévoyez un vitrage feuilleté (sécurité) si la verrière est proche d&apos;une zone de passage. La verrière n&apos;est pas soumise à permis de construire mais peut nécessiter l&apos;accord du syndic si elle touche à un mur porteur.
+          {/* Section 3 — Démarches syndic */}
+          <div>
+            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+              Démarches syndic et administratives : ce qui est obligatoire
+            </h2>
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
+              Paris est une ville de copropriétés — et les copropriétés ont leurs règles. Voici
+              ce que vous devez anticiper selon le type de travaux envisagé.
             </p>
+            <ol className="space-y-3 mb-5">
+              {[
+                { num: '01', title: "Cloison non-porteuse entre cuisine et salon", detail: "Aucune démarche syndic requise. Déclaration préalable de travaux en mairie si la superficie habituelle du logement est modifiée (rare pour une simple ouverture cuisine)." },
+                { num: '02', title: "Mur porteur appartenant aux parties communes", detail: "Accord obligatoire du syndic + vote en assemblée générale (majorité article 25 ou 26 selon le règlement). Délai : 2 à 4 mois selon la prochaine AG. Fournir l'étude de structure et les plans d'exécution." },
+                { num: '03', title: "Déclaration préalable en mairie", detail: "Obligatoire si les travaux modifient la structure porteuse du bâtiment. Instruction en 1 mois. Affichage de la déclaration obligatoire pendant toute la durée du chantier." },
+                { num: '04', title: "Assurance dommages-ouvrage", detail: "Recommandée (parfois exigée par le syndic) pour tout abattage de mur porteur. Elle garantit la prise en charge des dommages structurels pendant 10 ans. Coût : 1 à 3 % du montant des travaux." },
+                { num: '05', title: "Déclaration au voisinage", detail: "Non obligatoire légalement, mais fortement conseillée. Les vibrations liées à la démolition d'un mur maçonné peuvent inquiéter les voisins. Une information préalable évite les conflits." },
+              ].map((step) => (
+                <li key={step.num} className="flex gap-4">
+                  <span className="font-display text-2xl font-semibold text-[#D4AF37]/60 flex-shrink-0 w-8">{step.num}</span>
+                  <div>
+                    <span className="text-[#1C1C1C] text-sm font-medium">{step.title} : </span>
+                    <span className="text-gray-600 text-sm font-light">{step.detail}</span>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
-        </div>
-      </section>
 
-      {/* Section 3 — Matériaux tendance */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Matériaux tendance pour une cuisine ouverte parisienne
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Le choix des matériaux définit l&apos;ambiance et la durabilité de la cuisine. Dans une cuisine ouverte, les matériaux doivent être à la fois résistants (chaleur, humidité, chocs) et esthétiquement cohérents avec le reste de l&apos;appartement, puisqu&apos;ils sont visibles depuis le salon.
-          </p>
-          <div className="space-y-4 mb-6">
-            {[
-              {
-                matiere: "Béton ciré : industriel et intemporel",
-                usage: "Plan de travail, crédence, sol",
-                prix: "80 – 150 €/m²",
-                detail: "Le béton ciré est imperméabilisé (résine époxy) et résiste aux taches, à la chaleur et à l'humidité. Disponible en 50 teintes, il unifie visuellement la cuisine et le salon. Entretien : simple dépoussiérage + crème protectrice 1 à 2 fois par an. Inconvénient : sensible aux impacts sur les angles.",
-              },
-              {
-                matiere: "Carreaux de ciment : caractère et authenticité",
-                usage: "Crédence, sol, façades meubles",
-                prix: "60 – 120 €/m² posé",
-                detail: "Très tendance dans les rénovations parisiennes de type loft ou appartement ancien. Les carreaux de ciment (20×20 cm) apportent couleur et motif sans alourdir l'espace. Exigent un traitement hydrofuge après pose. Recommandés en crédence plutôt qu'en plan de travail.",
-              },
-              {
-                matiere: "Bois massif : chaleur naturelle",
-                usage: "Plan de travail, façades meubles, îlot",
-                prix: "300 – 800 €/ml (plan de travail)",
-                detail: "Le chêne massif huilé reste l'incontournable des cuisines ouvertes parisiennes. Chaleureux, réparable (ponçage), il vieillit bien si entretenu. Entretien : huile naturelle 1 à 2 fois par an. Le noyer et le frêne offrent des alternatives plus sombres et précieuses.",
-              },
-              {
-                matiere: "Inox alimentaire : professionnel et durable",
-                usage: "Plan de travail, crédence, évier intégré",
-                prix: "200 – 500 €/ml (plan de travail)",
-                detail: "Inaltérable, antibactérien et facile à entretenir, l'inox est le matériau des cuisines professionnelles. Dans une cuisine ouverte, il confère un style industriel sobre. L'inox brossé (mat) est préférable à l'inox poli (traces de doigts visibles). Compatible avec plaque à induction encastrée.",
-              },
-            ].map((el) => (
-              <div key={el.matiere} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-4 mb-1">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.matiere}</div>
-                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
-                </div>
-                <div className="text-[#B8960C]/70 text-xs font-light mb-2">{el.usage}</div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+          {/* Section 4 — Prix */}
+          <div>
+            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+              Prix d&apos;une cuisine ouverte à Paris 2025 : budget complet
+            </h2>
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
+              Le budget d&apos;une cuisine ouverte se décompose en trois grands postes, chacun
+              pouvant varier selon la configuration du logement et le niveau de prestation
+              souhaité.
+            </p>
 
-      {/* Section 4 — Électroménager et extracteur */}
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Électroménager encastré et extracteur déporté
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Dans une cuisine ouverte, l&apos;électroménager encastré est indispensable pour préserver la cohérence visuelle avec le salon. L&apos;extracteur déporté est la solution technique incontournable pour maîtriser les odeurs et la vapeur sans nuire au confort du séjour.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            {[
-              {
-                titre: "Four encastré multifonction",
-                prix: "400 – 1 200 €",
-                detail: "Four encastré sous plan de travail ou en colonne. Préférer la pyrolyse pour une cuisine ouverte (nettoyage sans produits chimiques). Marques reconnues : Bosch, Siemens, De Dietrich.",
-              },
-              {
-                titre: "Plaque à induction",
-                prix: "300 – 900 €",
-                detail: "L'induction est recommandée en cuisine ouverte : pas de flamme, chauffe rapide, surface froide en dehors des zones de cuisson. Les modèles full-surface permettent de positionner les casseroles librement.",
-              },
-              {
-                titre: "Extracteur déporté (moteur distant)",
-                prix: "800 – 2 500 €",
-                detail: "Le moteur est déporté dans les combles, le palier ou en extérieur. Bruit réduit à moins de 35 dB dans la cuisine. Débit minimum recommandé : 600 m³/h. Filtre charbon actif si évacuation vers l'extérieur impossible.",
-              },
-              {
-                titre: "Lave-vaisselle intégré",
-                prix: "500 – 1 000 €",
-                detail: "Totalement intégré sous plan de travail avec façade assortie aux meubles. Invisible depuis le salon. Indispensable pour maintenir l'ordre visuel dans une cuisine ouverte.",
-              },
-            ].map((el) => (
-              <div key={el.titre} className="bg-white rounded-lg p-5 border border-gray-100">
-                <div className="flex items-start justify-between gap-2 mb-2">
-                  <div className="font-medium text-[#1C1C1C] text-sm">{el.titre}</div>
-                  <div className="text-[#B8960C] text-xs font-medium flex-shrink-0">{el.prix}</div>
-                </div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5 — Contraintes copropriété */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Contraintes copropriété : VMC, murs porteurs et autorisations à Paris
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-4">
-            Plus de 70 % des logements parisiens sont en copropriété. Avant de lancer les travaux, plusieurs points doivent être validés pour éviter blocages et litiges :
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-            {[
-              "Vérifier que la VMC collective peut accueillir un débit supplémentaire pour la cuisine ouverte",
-              "Obtenir l'accord écrit du syndic pour tout abattage de mur porteur ou modification de la structure",
-              "Déclarer les travaux en mairie si abattage de mur porteur (déclaration préalable de travaux)",
-              "Soumettre le projet en assemblée générale si les travaux affectent les parties communes",
-              "Faire réaliser une étude de structure par un bureau d'études agréé avant tout abattage",
-              "Prévoir une protection acoustique pour ne pas augmenter les nuisances sonores vers les voisins",
-            ].map((item) => (
-              <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6 — Tableau prix */}
-      <section className="py-16 bg-[#FAFAF8]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Prix cuisine ouverte Paris 2025 : tableau récapitulatif
-          </h2>
-          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            Tarifs indicatifs pour Paris intramuros, main d&apos;œuvre et matériaux inclus (hors électroménager haut de gamme).
-          </p>
-          <div className="overflow-x-auto mb-8">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr className="bg-[#1C1C1C] text-white">
-                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Configuration</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Surface type</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget</th>
-                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Durée chantier</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  { config: "Linéaire ouverte simple", surface: "Studio / 2P", budget: "4 000 – 10 000 €", duree: "1 – 2 semaines" },
-                  { config: "Cuisine en L sans verrière", surface: "2P – 3P", budget: "8 000 – 16 000 €", duree: "2 – 3 semaines" },
-                  { config: "Cuisine en L + verrière acier", surface: "3P – 4P", budget: "14 000 – 25 000 €", duree: "3 – 4 semaines" },
-                  { config: "Îlot central + verrière", surface: "3P+ (min. 50 m²)", budget: "20 000 – 35 000 €", duree: "4 – 6 semaines" },
-                  { config: "Abattage mur porteur + IPN", surface: "Tous types", budget: "+ 5 000 – 12 000 €", duree: "+ 1 semaine" },
-                  { config: "Extracteur déporté + VMC", surface: "Tous types", budget: "800 – 2 500 €", duree: "1 – 2 jours" },
-                ].map((row, i) => (
-                  <tr key={row.config} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.config}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.surface}</td>
-                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.budget}</td>
-                    <td className="px-4 py-3 text-center text-gray-600 font-light">{row.duree}</td>
+            <div className="overflow-x-auto mb-5">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="border-b border-gray-200">
+                    <th className="text-left py-2 pr-4 font-medium text-[#1C1C1C] text-xs uppercase tracking-wide">Poste</th>
+                    <th className="text-left py-2 pr-4 font-medium text-[#1C1C1C] text-xs uppercase tracking-wide">Entrée de gamme</th>
+                    <th className="text-left py-2 font-medium text-[#1C1C1C] text-xs uppercase tracking-wide">Haut de gamme</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {[
+                    ["Démolition cloison légère", "500 €", "2 000 €"],
+                    ["Abattage mur porteur + IPN", "4 000 €", "12 000 €"],
+                    ["Cuisine fournie + posée (sans électromenager)", "5 000 €", "25 000 €"],
+                    ["Électroménager encastré", "1 500 €", "8 000 €"],
+                    ["Finitions (sol, peinture, électricité)", "2 000 €", "6 000 €"],
+                    ["Étude de structure", "500 €", "1 500 €"],
+                  ].map(([poste, bas, haut]) => (
+                    <tr key={poste}>
+                      <td className="py-2 pr-4 text-gray-600 font-light">{poste}</td>
+                      <td className="py-2 pr-4 text-gray-600 font-light">{bas}</td>
+                      <td className="py-2 text-gray-600 font-light">{haut}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                {
+                  label: 'Ouverture simple (cloison légère)',
+                  price: '8 000 – 18 000 €',
+                  desc: "Suppression d'une cloison légère + nouvelle cuisine équipée. Finitions peinture et sol incluses.",
+                },
+                {
+                  label: 'Ouverture avec mur porteur',
+                  price: '15 000 – 30 000 €',
+                  desc: "Étude structure + IPN + cuisine + finitions. Le cas le plus fréquent dans les appartements haussmanniens parisiens.",
+                },
+                {
+                  label: 'Projet complet haut de gamme',
+                  price: '30 000 – 50 000 €',
+                  desc: "Mur porteur, cuisine sur mesure, électroménager premium, îlot central, parquet, peinture décorative.",
+                },
+              ].map((item) => (
+                <div key={item.label} className="bg-[#FAFAF8] border border-gray-100 rounded-lg p-5">
+                  <div className="text-[#B8960C] text-xs font-light uppercase tracking-widest mb-1">{item.label}</div>
+                  <div className="font-display text-lg font-semibold text-[#1C1C1C] mb-2">{item.price}</div>
+                  <p className="text-gray-500 text-xs font-light leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
+
+          {/* Section 5 — Tendances */}
+          <div>
+            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+              Tendances cuisine ouverte Paris 2025
+            </h2>
+            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
+              Les cuisines ouvertes que nous réalisons à Paris en 2025 suivent des tendances
+              fortes, mêlant fonctionnalité, esthétique et durabilité.
+            </p>
+            <ul className="space-y-3">
+              {[
+                "Îlot central de cuisson avec plan de travail en quartzite ou marbre : le format le plus demandé dans les 3 pièces et plus.",
+                "Façades de cuisine sans poignée (push-to-open) en laque mate gris foncé ou vert sauge : pour une intégration discrète dans le salon.",
+                "Verrière d'atelier acier noir entre cuisine et couloir : séparer sans cloisonner, laisser passer la lumière.",
+                "Extracteur déporté (moteur en façade ou dans les combles) : silence et efficacité dans une cuisine ouverte, sans gêner le séjour.",
+                "Éclairage multicouche : hotte lumineuse + spots encastrés + sous-meubles LED pour varier les ambiances.",
+                "Plan de travail en bois massif chêne + crédence en zellige vert ou bleu : alliance de la chaleur et de la couleur.",
+              ].map((item) => (
+                <li key={item} className="flex gap-3 text-sm text-gray-600 font-light">
+                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-8">
+            Questions fréquentes
+          </h2>
           <div className="space-y-6">
-            {schemaFaq.mainEntity.map((q) => (
-              <div key={q.name} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
-                <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
-                <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
+            {[
+              {
+                q: "Peut-on abattre un mur porteur pour ouvrir une cuisine à Paris ?",
+                a: "Oui, dans la grande majorité des cas. Cela nécessite une étude de structure (500 à 1 500 €) qui définit le type de reprise en sous-oeuvre — poutre IPN, IBS ou béton. Un étaiement provisoire est mis en place pendant les travaux. Budget reprise structurelle : 4 000 à 12 000 € selon la portée.",
+              },
+              {
+                q: "Faut-il un accord du syndic pour ouvrir sa cuisine ?",
+                a: "Uniquement si vous touchez à un mur porteur faisant partie des parties communes. Dans ce cas, accord syndic obligatoire, souvent avec vote en AG. Pour la suppression d'une cloison légère intérieure, aucune démarche syndic n'est nécessaire. Espace Design vous aide à identifier le statut du mur dès la première visite.",
+              },
+              {
+                q: "Quel est le prix d'une cuisine ouverte à Paris en 2025 ?",
+                a: "De 8 000 € (ouverture simple + cuisine basique) à 50 000 € (mur porteur + cuisine sur mesure haut de gamme). La fourchette la plus courante pour un 3 pièces parisien avec mur porteur et cuisine équipée de milieu de gamme : 15 000 à 25 000 € tout compris.",
+              },
+              {
+                q: "Quel est le délai pour des travaux d'ouverture de cuisine à Paris ?",
+                a: "Cloison légère : 1 à 2 semaines de chantier. Mur porteur avec IPN : 3 à 6 semaines. Ajoutez 2 à 4 mois pour les démarches syndic et la déclaration préalable en mairie si nécessaire — à anticiper bien avant le début du chantier.",
+              },
+            ].map((faq) => (
+              <div key={faq.q} className="border-b border-gray-100 pb-6">
+                <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-2">
+                  {faq.q}
+                </h3>
+                <p className="text-gray-600 text-sm font-light leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Guides connexes */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      {/* Voir aussi */}
+      <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Guides connexes</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Voir aussi</p>
+          <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/renovation-appartement-ancien-paris', title: 'Rénovation appartement ancien Paris' },
-              { href: '/blog/pose-parquet-paris', title: 'Pose parquet Paris' },
-              { href: '/blog/peinture-enduit-paris', title: 'Peinture et enduit Paris' },
-              { href: '/blog/renovation-salle-de-bain-paris', title: 'Rénovation salle de bain Paris' },
-              { href: '/blog/isolation-phonique-paris', title: 'Isolation phonique Paris' },
-              { href: '/blog/renovation-appartement-paris-10e', title: 'Rénovation appartement Paris 10e' },
-            ].map((a) => (
-              <Link
-                key={a.href}
-                href={a.href}
-                className="bg-white border border-gray-100 rounded-lg p-4 hover:border-[#D4AF37]/40 transition-colors group"
-              >
-                <span className="text-sm text-[#1C1C1C] font-light group-hover:text-[#B8960C] transition-colors">{a.title}</span>
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine Paris' },
+              { href: '/blog/prix-renovation-cuisine-paris', label: 'Prix rénovation cuisine Paris' },
+              { href: '/blog/mur-porteur-paris', label: 'Guide mur porteur Paris' },
+              { href: '/blog/ouverture-cuisine-salon-paris', label: 'Ouverture cuisine salon Paris' },
+              { href: '/blog/renovation-cuisine-americaine-paris', label: 'Cuisine américaine Paris' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
               </Link>
             ))}
           </div>
@@ -391,23 +408,23 @@ export default function ArticleCuisineOuverteParis() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#D4AF37] text-center px-4">
-        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-4">
-          Votre cuisine ouverte sur mesure à Paris
+      <section className="py-16 bg-[#1C1C1C] text-center px-4">
+        <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
+          Votre projet cuisine ouverte à Paris ?
         </h2>
-        <p className="text-[#1C1C1C]/70 text-sm font-light mb-8">
-          Diagnostic gratuit. Étude de faisabilité technique. Devis détaillé sous 48h.
+        <p className="text-gray-400 text-sm font-light mb-8">
+          Diagnostic gratuit, étude de faisabilité et devis détaillé sous 48h. Porteur ou non-porteur — on gère tout.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact"
-            className="flex items-center justify-center gap-2 bg-[#1C1C1C] text-white px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-black transition-colors"
+            className="flex items-center justify-center gap-2 bg-[#D4AF37] text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:bg-[#c9a030] transition-colors"
           >
             Devis gratuit <ArrowRight size={13} />
           </Link>
           <a
             href="tel:+33611783867"
-            className="flex items-center justify-center gap-2 border border-[#1C1C1C]/30 text-[#1C1C1C] px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-[#1C1C1C] transition-colors"
+            className="flex items-center justify-center gap-2 border border-gray-600 text-gray-300 px-7 py-3.5 rounded font-light text-sm tracking-wide hover:border-white hover:text-white transition-colors"
           >
             <Phone size={14} />
             06 11 78 38 67

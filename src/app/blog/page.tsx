@@ -1056,6 +1056,18 @@ const articles = [
     desc: "Choisir et faire poser sa crédence cuisine à Paris. Carrelage, verre, inox, zellige. Prix artisan 2025. Devis gratuit 48h.",
     tag: 'Cuisine',
   },
+  {
+    href: '/blog/declaration-travaux-paris',
+    title: "Déclaration Travaux Paris : quand et comment déclarer ? Guide 2025",
+    desc: "Quels travaux nécessitent une déclaration préalable à Paris ? Formulaires, délais, règles PLU. Guide complet artisan 2025.",
+    tag: 'Administratif',
+  },
+  {
+    href: '/blog/renovation-cuisine-equipee-paris',
+    title: 'Cuisine Équipée Paris : installation, marques & prix artisan 2025',
+    desc: "Faire installer une cuisine équipée à Paris. Choix des marques, coût de pose artisan, délais. Devis gratuit 48h.",
+    tag: 'Cuisine',
+  },
 ]
 
 export default function BlogPage() {

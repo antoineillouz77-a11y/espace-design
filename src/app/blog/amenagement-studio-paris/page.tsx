@@ -1,292 +1,323 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
+import { ArrowRight, Phone, CheckCircle } from 'lucide-react'
 
-const schemaBreadcrumb = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://espacedesignparis.fr/blog' },
-    { '@type': 'ListItem', position: 3, name: 'Aménagement Studio Paris', item: 'https://espacedesignparis.fr/blog/amenagement-studio-paris' },
-  ],
+export const metadata: Metadata = {
+  title: "Aménagement Studio Paris : optimiser chaque m² — guide 2025",
+  description: "Optimiser un studio parisien : lit mezzanine, cloison amovible, cuisine compacte, rangements intégrés, mobilier sur-mesure, couleurs et lumière. Prix aménagement studio Paris 2025.",
+  keywords: ["aménagement studio Paris", "optimiser studio Paris", "lit mezzanine studio Paris", "mobilier sur-mesure studio Paris", "prix aménagement studio 2025"],
 }
 
 const schemaArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: "Aménagement Studio Paris : optimiser l'espace & décoration 2025",
-  description: "Aménager un studio parisien de 15 à 35 m² : lit escamotable, cloisons coulissantes, mobilier sur-mesure, rangements. Idées et prix 2025.",
-  datePublished: '2025-04-20',
+  headline: "Aménagement Studio Paris : optimiser chaque m² — guide 2025",
+  description: "Optimiser un studio parisien : lit mezzanine, cloison amovible, cuisine compacte, rangements intégrés, mobilier sur-mesure, couleurs et lumière. Prix 2025.",
   author: { '@type': 'Organization', name: 'Espace Design' },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Espace Design',
-    url: 'https://espacedesignparis.fr',
-  },
-  url: 'https://espacedesignparis.fr/blog/amenagement-studio-paris',
+  publisher: { '@type': 'Organization', name: 'Espace Design', url: 'https://espacedesignparis.fr' },
+  datePublished: '2025-01-15',
+  dateModified: '2025-01-15',
 }
 
-const schemaFaq = {
+const schemaFAQ = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Comment agrandir visuellement un studio parisien ?',
+      name: "Comment aménager un studio de 20m² à Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Pour agrandir visuellement un studio : utilisez des miroirs grand format pour doubler la luminosité, optez pour une palette de couleurs claires (blanc, beige, gris clair), choisissez des meubles sur pieds qui dégagent le sol, installez des rideaux du sol au plafond pour hausser la pièce. Un lit mezzanine libère 12 à 15 m² supplémentaires de surface au sol, idéal pour les studios jusqu'à 25 m².",
+        text: "Pour aménager un studio de 20 m² à Paris, commencez par définir les zones fonctionnelles : espace nuit, espace vie/bureau et espace cuisine. La priorité est de libérer le sol : un lit escamotable mural récupère 4 à 6 m², un lit mezzanine (si hauteur > 2,80 m) libère toute la surface au sol. Exploitez la hauteur avec des étagères du sol au plafond. Unifiez les revêtements de sol (même parquet ou même béton ciré dans tout le studio) pour agrandir visuellement l'espace. Limitez la palette de couleurs à 2 ou 3 tons et multipliez les miroirs face aux fenêtres pour réfléchir la lumière.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Lit escamotable ou mezzanine pour un studio parisien ?',
+      name: "Prix aménagement studio Paris ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Pour un studio de moins de 20 m² et hauteur sous plafond standard (2,50 m), le lit escamotable (1 500 à 3 000€) est préférable : il disparaît pendant la journée et transforme la chambre en salon. La mezzanine (2 500 à 5 000€) convient aux studios avec hauteur sous plafond supérieure à 2,80 m. Les deux solutions s'intègrent dans un aménagement sur-mesure pour maximiser le rangement.",
+        text: "Le prix d'un aménagement de studio parisien varie selon le niveau de finition. Budget entrée de gamme (mobilier IKEA + peinture + parquet flottant) : 3 000 à 6 000 € pour un 20 m². Budget intermédiaire (mobilier semi sur-mesure, carrelage, peinture de qualité) : 8 000 à 15 000 €. Budget haut de gamme (sur-mesure intégral, parquet massif, béton ciré, mezzanine) : 15 000 à 30 000 €. Ces estimations incluent l'aménagement et les revêtements mais excluent les travaux lourds (électricité, plomberie). La surface est aussi déterminante : un 15 m² coûte moins cher à aménager qu'un 35 m² mais demande plus d'ingéniosité.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel budget pour aménager un studio parisien ?',
+      name: "Lit escamotable ou mezzanine ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "L'aménagement complet d'un studio parisien de 20 m² coûte entre 8 000 et 25 000 € selon les finitions. Budget minimal (IKEA + peinture) : 3 000-5 000€. Budget intermédiaire (mobilier semi sur-mesure + carrelage) : 8 000-15 000€. Budget haut de gamme (sur-mesure intégral) : 15 000-30 000€. Espace Design propose des solutions sur-mesure adaptées à tous les budgets.",
+        text: "Le choix dépend principalement de la hauteur sous plafond. Pour une hauteur standard de 2,40 à 2,60 m, le lit escamotable (Murphy bed) est la seule option : il se replie dans un meuble mural et libère 4 à 6 m² pendant la journée. Budget : 1 500 à 5 000 € selon les éléments intégrés (bureau, canapé, étagères). Pour une hauteur de 2,80 m et plus, la mezzanine est idéale : elle libère toute la surface au sol pour créer un bureau ou un salon en dessous. Budget : 2 500 à 6 000 € avec escalier ou échelle. Les studios haussmanniens parisiens avec leurs hauts plafonds (souvent 3,00 m ou plus) se prêtent parfaitement à la mezzanine.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "Faut-il un architecte pour un studio ?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Un architecte n'est pas obligatoire pour aménager un studio, quelle que soit sa surface. L'intervention d'un architecte DPLG ou d'un architecte d'intérieur est obligatoire uniquement pour les permis de construire portant sur des surfaces supérieures à 150 m² (particuliers) ou pour certains ERP. Pour un studio parisien, un artisan spécialisé en aménagement intérieur ou un décorateur peut concevoir et réaliser l'ensemble du projet. En revanche, si votre aménagement prévoit de déplacer des cloisons porteuses ou de créer une mezzanine de plus de 5 m², une déclaration préalable de travaux en mairie est requise.",
       },
     },
   ],
 }
 
-export const metadata: Metadata = {
-  title: "Aménagement Studio Paris : optimiser l'espace & décoration 2025",
-  description: "Aménager un studio parisien de 15 à 35 m² : lit escamotable, cloisons coulissantes, mobilier sur-mesure, rangements. Idées et prix 2025.",
-}
-
-export default function ArticleAmenagementStudio() {
+export default function Page() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaArticle) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
 
       {/* Hero */}
-      <section className="pt-28 sm:pt-36 pb-12 bg-[#1C1C1C]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">
-            Studios
-          </p>
-          <div className="w-8 h-px bg-[#D4AF37]/60 mb-6" />
+      <section className="bg-[#1C1C1C] text-center pt-32 pb-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-[#D4AF37] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Studios</p>
+          <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight mb-5">
-            Aménagement Studio Paris : optimiser l&apos;espace & décoration 2025
+            Aménagement Studio Paris : maximiser l&apos;espace et le confort
           </h1>
-          <p className="text-gray-400 text-sm font-light leading-relaxed">
-            Aménager un studio parisien de 15 à 35 m² est un exercice d&apos;ingéniosité. Lit escamotable, mezzanine, mobilier sur-mesure, cloisons coulissantes : ce guide vous donne toutes les solutions pour transformer votre studio en un espace fonctionnel, confortable et esthétique.
+          <p className="text-gray-400 text-sm font-light leading-relaxed max-w-2xl mx-auto">
+            Lit mezzanine, cloison amovible, cuisine compacte, rangements intégrés, mobilier sur-mesure : guide complet pour optimiser chaque m² d&apos;un studio parisien en 2025, avec les prix et les solutions selon votre budget.
           </p>
         </div>
       </section>
 
-      {/* Section 1 — Principes */}
+      {/* Section 1 — Gain de place */}
       <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Les 5 principes pour optimiser un studio parisien
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              Un studio bien aménagé est avant tout un studio bien pensé. Avant de choisir les meubles, définissez les zones fonctionnelles et les priorités selon votre usage quotidien.
-            </p>
-            <div className="space-y-4">
-              {[
-                {
-                  principe: '1. Définir les zones fonctionnelles',
-                  detail: 'Même dans 20 m², un studio doit avoir des zones distinctes : espace nuit (lit), espace vie (salon/bureau), espace cuisine (coin cuisine), espace rangement. La délimitation peut être visuelle (tapis, changement de revêtement) ou physique (rideau, cloison coulissante, meuble de séparation).',
-                },
-                {
-                  principe: '2. Exploiter la hauteur sous plafond',
-                  detail: 'Dans un studio parisien avec plafond à 2,60 m ou plus, la verticalité est votre alliée. Étagères du sol au plafond, lit mezzanine si la hauteur le permet (2,80 m minimum), rangements surélevés : exploiter le volume en hauteur double la surface de rangement disponible.',
-                },
-                {
-                  principe: '3. Multiplexer les usages',
-                  detail: 'Chaque meuble doit idéalement remplir deux fonctions : lit escamotable avec bureau intégré, banquette avec coffre, table escamotable murale, canapé convertible avec rangements. Le mobilier "transformable" est l\'outil clé du petit espace.',
-                },
-                {
-                  principe: '4. Travailler avec la lumière',
-                  detail: 'La lumière naturelle agrandit visuellement l\'espace. Évitez les rideaux épais, préférez des stores vénitiens ou des voilages. Ajoutez des miroirs face à la fenêtre pour réfléchir la lumière. En éclairage artificiel, multipliez les sources pour éviter l\'effet "pièce unique".',
-                },
-                {
-                  principe: '5. Limiter les couleurs et les matières',
-                  detail: 'Dans un petit espace, la cohérence visuelle crée une impression de calme et d\'espace. Limitez-vous à 2 ou 3 couleurs + 2 ou 3 matières (bois, blanc, béton, lin). Évitez les motifs chargés sur les murs et optez pour un revêtement de sol uniforme dans tout le studio.',
-                },
-              ].map((el) => (
-                <div key={el.principe} className="bg-[#FAFAF8] rounded-lg p-4 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-1">{el.principe}</div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Tableau budgets */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Budget aménagement studio parisien selon la surface
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="bg-[#1C1C1C] text-white">
-                    <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Surface</th>
-                    <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget minimal</th>
-                    <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget intermédiaire</th>
-                    <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Sur-mesure</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { surface: '15 – 18 m²', mini: '3 000 – 5 000 €', inter: '6 000 – 10 000 €', surmes: '12 000 – 18 000 €' },
-                    { surface: '18 – 25 m²', mini: '4 000 – 7 000 €', inter: '8 000 – 15 000 €', surmes: '15 000 – 25 000 €' },
-                    { surface: '25 – 35 m²', mini: '5 000 – 9 000 €', inter: '10 000 – 18 000 €', surmes: '18 000 – 35 000 €' },
-                  ].map((row, i) => (
-                    <tr key={row.surface} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
-                      <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.surface}</td>
-                      <td className="px-4 py-3 text-center text-gray-600 font-light">{row.mini}</td>
-                      <td className="px-4 py-3 text-center text-gray-600 font-light">{row.inter}</td>
-                      <td className="px-4 py-3 text-center text-[#B8960C] font-light">{row.surmes}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-gray-500 text-xs font-light italic mt-3">
-              Aménagement + mobilier + revêtements, hors travaux lourds (électricité, plomberie). Prix TTC Paris.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 2 — Solutions mobilier */}
-      <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-            Lit escamotable, mezzanine, canapé convertible : quelle solution choisir ?
+            Astuces gain de place : lit mezzanine, cloison amovible, cuisine compacte
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
-            La zone nuit est la contrainte centrale de tout studio. Le choix entre lit escamotable, mezzanine et canapé convertible dépend de la hauteur sous plafond, de la surface disponible et de l&apos;usage.
+            Dans un studio parisien, chaque centimètre compte. Les solutions les plus efficaces jouent sur la verticalité, la polyvalence des meubles et la séparation intelligente des espaces.
           </p>
           <div className="space-y-5">
             <div>
               <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-3">
-                Le lit escamotable (lit abattant ou lit Murphy)
+                Lit mezzanine : la solution reine pour les hauts plafonds
               </h3>
               <p className="text-gray-600 text-sm font-light leading-relaxed">
-                Le lit escamotable se replie dans un meuble mural et libère toute la surface au sol pendant la journée. Il se décline en version simple ou intégré dans un système complet : bureau rabattable, canapé, étagères, rangements. La surface récupérée est de 3 à 5 m² pour un lit double. Budget : 1 500 à 5 000 € selon la qualité et les éléments intégrés. Délai de fabrication sur-mesure : 3 à 6 semaines. Condition : plafond minimum 2,40 m.
+                Les appartements parisiens anciens bénéficient souvent de hauteurs sous plafond de 2,80 m à 3,20 m — idéales pour une mezzanine. Le lit en hauteur libère intégralement la surface au sol pour créer un bureau, un dressing ou un coin salon en dessous. Une mezzanine bien conçue peut récupérer 8 à 15 m² de surface fonctionnelle dans un studio de 20 m². Budget : 2 500 à 6 000 € selon les matériaux (bois massif, métal, ou mixte) et l&apos;escalier ou l&apos;échelle intégré. Si la surface créée dépasse 5 m², une déclaration préalable de travaux est requise en mairie.
               </p>
             </div>
             <div>
               <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-3">
-                La mezzanine : gagner de la surface au sol
+                Cloison amovible : séparer sans murer
               </h3>
               <p className="text-gray-600 text-sm font-light leading-relaxed">
-                La mezzanine est idéale dans les studios avec une hauteur sous plafond de 2,80 m ou plus — ce qui concerne de nombreux appartements parisiens anciens. Elle permet de placer le lit en hauteur et de libérer toute la surface au sol pour le bureau, le salon ou le dressing. Budget : 2 500 à 5 000 € pour une mezzanine avec escalier ou échelle. Si la surface créée dépasse 5 m², une déclaration préalable de travaux est requise.
+                La cloison amovible ou coulissante permet de créer une intimité visuelle entre la zone nuit et la zone vie sans recourir à une cloison fixe. Les solutions vont du simple rideau sur rail (100 à 300 €) à la cloison coulissante en bois ou en verre (1 500 à 5 000 €) en passant par les bibliothèques ouvertes servant de séparateurs (400 à 2 000 €). L&apos;avantage : la séparation est réversible et ne réduit pas la luminosité si l&apos;on choisit une cloison en verre ou ajourée.
               </p>
             </div>
             <div>
               <h3 className="font-display text-base font-semibold text-[#1C1C1C] mb-3">
-                Le canapé convertible : solution économique
+                Cuisine compacte : la kitchenette optimisée
               </h3>
               <p className="text-gray-600 text-sm font-light leading-relaxed">
-                Le canapé convertible reste la solution la plus économique et la plus simple à mettre en œuvre. Les modèles haut de gamme offrent un vrai confort de couchage avec matelas de qualité (12 à 16 cm d&apos;épaisseur). À réserver aux studios utilisés ponctuellement ou aux petits budgets. Choisissez un modèle de qualité (Dunlopillo, Tréca) pour un usage quotidien — budget 1 200 à 3 000 €.
+                Dans un studio, la cuisine doit tenir en 1,20 à 2,40 m linéaires maximum. Les solutions compactes actuelles permettent d&apos;intégrer plaque induction 2 feux, mini réfrigérateur combiné, évier et rangements dans un module de 60 cm de profondeur. Un plan de travail rabattable ou une table à rallonge fixée au mur complète le dispositif. Budget kitchenette sur-mesure : 2 500 à 6 000 €. Pensez à intégrer la hotte aspirante dès la conception pour éviter les odeurs dans l&apos;unique pièce.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 3 — Décoration */}
-      <section className="py-16 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Décoration d&apos;un studio parisien : les règles d&apos;or
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed font-light mb-5">
-              La décoration d&apos;un studio doit amplifier l&apos;impression d&apos;espace tout en créant une atmosphère chaleureuse et personnelle. Voici les règles essentielles.
-            </p>
-            <ul className="space-y-3">
-              {[
-                {
-                  regle: 'Le sol continu',
-                  detail: 'Un revêtement de sol identique dans tout le studio (parquet, béton ciré, carrelage grand format) crée une continuité visuelle qui agrandit l\'espace. Évitez les ruptures de sol entre pièces.',
-                },
-                {
-                  regle: 'Les murs clairs (pas forcément blancs)',
-                  detail: 'Préférez un blanc cassé, un beige nude ou un gris clair légèrement chaud. Vous pouvez accentuer un seul mur avec une couleur plus soutenue (vert sauge, terracotta, bleu canard) pour créer un point focal sans écraser l\'espace.',
-                },
-                {
-                  regle: 'Les miroirs stratégiquement placés',
-                  detail: 'Un grand miroir (hauteur totale du mur) face à la fenêtre réfléchit la lumière naturelle et double visuellement la profondeur de la pièce. Misez sur un grand format impactant plutôt que plusieurs petits miroirs décoratifs.',
-                },
-                {
-                  regle: 'Les textiles pour créer la chaleur',
-                  detail: 'Un studio avec peu de meubles peut paraître froid. Compensez avec des textiles chaleureux : plaid, coussins, tapis épais. Le tapis délimite la zone salon — choisissez une taille généreuse (au moins 160×230 cm) pour éviter l\'effet "timbre-poste".',
-                },
-                {
-                  regle: 'Le rangement caché',
-                  detail: 'Optimisez les rangements cachés : coffre sous le lit, ottoman avec rangement, mobilier de cuisine avec tiroirs organisés, dressing derrière rideau ou porte coulissante. L\'objectif : tout ranger sans que ça se voit.',
-                },
-              ].map((item) => (
-                <li key={item.regle} className="bg-[#FAFAF8] rounded-lg p-4 border border-gray-100">
-                  <div className="font-medium text-[#1C1C1C] text-sm mb-1">{item.regle}</div>
-                  <div className="text-gray-600 text-sm font-light leading-relaxed">{item.detail}</div>
-                </li>
-              ))}
-            </ul>
+      {/* Section 2 — Rangements intégrés */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Rangements intégrés : exploiter chaque recoin
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Dans un studio, le rangement visible est l&apos;ennemi de l&apos;espace visuel. L&apos;objectif est de maximiser les rangements cachés ou intégrés pour garder un espace épuré et apaisant.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                zone: 'Sous le lit',
+                solution: "Tiroirs intégrés dans le sommier ou cadre avec rangement. Idéal pour le linge de maison, les valises, les vêtements hors-saison. Un lit double avec tiroirs peut stocker l'équivalent de 2 à 3 armoires.",
+              },
+              {
+                zone: 'Autour de la fenêtre',
+                solution: "Bibliothèques ou placards encadrant la fenêtre du sol au plafond. L'encaissement crée une alcôve visuelle et maximise le rangement sur une paroi souvent inexploitée. Combiner avec un siège sous la fenêtre avec coffre intégré.",
+              },
+              {
+                zone: 'Couloir et entrée',
+                solution: "L'entrée d'un studio est souvent sacrifiée. Un meuble d'entrée sur mesure (banquette + crochets + placards hauts) peut absorber chaussures, manteaux et accessoires et libérer le studio de l'encombrement visuel à l'entrée.",
+              },
+              {
+                zone: 'Cloisons et alcôves',
+                solution: "Si votre studio présente des recoins ou des niches (typique des anciens appartements parisiens), transformez-les en dressings sur mesure avec portes coulissantes miroirs. Le miroir agrandit visuellement la pièce et cache le rangement.",
+              },
+              {
+                zone: 'Volume en hauteur',
+                solution: "Les étagères montant jusqu'au plafond (H 2,50 m) doublent la capacité de rangement d'un mur classique. Combiner rangements ouverts (livres, déco) et fermés (placards) pour un résultat ordonné. Prévoir un escabeau design ou une échelle coulissante.",
+              },
+              {
+                zone: 'Sous l\'escalier mezzanine',
+                solution: "Si votre studio comporte une mezzanine, le volume sous l'escalier est une opportunité : dressing intégré, bureau niché, mini-cellier ou rangements de cuisine selon l'emplacement et votre besoin prioritaire.",
+              },
+            ].map((el) => (
+              <div key={el.zone} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.zone}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.solution}</div>
+              </div>
+            ))}
           </div>
+        </div>
+      </section>
 
-          <div>
-            <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
-              Ce qu&apos;Espace Design réalise pour votre studio
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                'Conception complète du plan d\'aménagement',
-                'Mobilier sur-mesure fabriqué en atelier',
-                'Mezzanine et lit escamotable intégrés',
-                'Revêtements sols et murs (parquet, béton ciré, carrelage)',
-                'Peinture et finitions — pose de rideaux et stores',
-                'Coordination électricité, plomberie si nécessaire',
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
-                  <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
-                  {item}
+      {/* Section 3 — Mobilier sur-mesure */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Mobilier sur-mesure : la clé des petits espaces
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Le mobilier standard est dimensionné pour des appartements de taille normale. Dans un studio parisien, les cotes standards créent des espaces perdus et des angles morts. Le mobilier sur-mesure exploite chaque centimètre disponible et s&apos;adapte aux contraintes architecturales (poutres, tuyaux, murs non droits typiques des immeubles anciens).
+          </p>
+          <div className="space-y-4 mb-8">
+            {[
+              {
+                meuble: 'Lit escamotable avec bureau intégré',
+                prix: '2 500 – 5 500 €',
+                detail: "Le lit se replie dans un meuble mural qui révèle un bureau en position fermée. La journée, votre studio est un appartement bureau. La nuit, le bureau disparaît et le lit se déploie en 30 secondes. Nombreux finitions disponibles : laqué blanc, chêne naturel, gris anthracite.",
+              },
+              {
+                meuble: 'Bibliothèque mural du sol au plafond',
+                prix: '1 500 – 4 000 €',
+                detail: "Conçue sur mesure pour s'adapter exactement à la hauteur et à la largeur du mur, avec intégration possible d'un espace TV, d'un bureau rabattable ou d'un bar. Finitions laqué mat ou bois naturel selon l'ambiance souhaitée.",
+              },
+              {
+                meuble: 'Cuisine compacte intégrée',
+                prix: '2 500 – 6 000 €',
+                detail: "Module cuisine sur-mesure intégrant plaque, réfrigérateur, évier et rangements dans une largeur de 80 à 160 cm. Portes intégrées dans un meuble de rangement plus large pour qu'elle soit invisible quand elle est fermée.",
+              },
+              {
+                meuble: 'Dressing mezzanine ou alcôve',
+                prix: '1 800 – 4 500 €',
+                detail: "Dressing intégré sous la mezzanine ou dans une niche sur mesure, avec portes coulissantes miroirs pour agrandir visuellement. Intérieur organisé (penderie, tiroirs, étagères) adapté à votre garde-robe.",
+              },
+            ].map((el) => (
+              <div key={el.meuble} className="bg-[#FAFAF8] rounded-lg p-5 border border-gray-100">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <div className="font-medium text-[#1C1C1C] text-sm">{el.meuble}</div>
+                  <div className="text-[#B8960C] text-sm font-medium flex-shrink-0">{el.prix}</div>
                 </div>
-              ))}
-            </div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — Couleurs et lumière */}
+      <section className="py-16 bg-[#FAFAF8]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Couleurs et lumière : agrandir visuellement votre studio
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            La couleur et la lumière sont les outils les plus puissants — et les moins coûteux — pour transformer la perception d&apos;un petit espace. Un studio bien éclairé et aux couleurs harmonieuses paraît toujours plus grand qu&apos;un studio encombré aux tons sombres.
+          </p>
+          <div className="space-y-4 mb-8">
+            {[
+              {
+                principe: 'Palette limitée à 3 tons maximum',
+                detail: "Dans un studio, la cohérence visuelle est essentielle. Choisissez une couleur dominante (murs, 70%), une couleur secondaire (mobilier ou textile, 20%) et un accent (détails, 10%). Les tons neutres clairs (blanc cassé, beige nude, gris clair chaud) agrandissent. Un mur de couleur plus soutenue peut créer un point focal sans écraser si c'est une nuance naturelle (vert sauge, terracotta, bleu ardoise).",
+              },
+              {
+                principe: 'Revêtement de sol uniforme',
+                detail: "Un seul revêtement dans tout le studio (parquet chêne, béton ciré ou carrelage grand format) crée une continuité visuelle qui allonge et agrandit l'espace. Les ruptures de sol entre zones (carrelage cuisine + parquet salon) fractionnent l'espace et le rapetissent.",
+              },
+              {
+                principe: 'Miroirs et lumière naturelle',
+                detail: "Un grand miroir (H 180 cm minimum) placé face à la fenêtre principale réfléchit la lumière naturelle et double visuellement la profondeur de la pièce. Évitez les rideaux épais : stores vénitiens, stores double rouleau ou voilages permettent de filtrer sans bloquer la lumière.",
+              },
+              {
+                principe: 'Éclairage artificiel en couches',
+                detail: "Évitez l'unique plafonnier central qui uniformise l'éclairage et écrase l'espace. Multipliez les sources : éclairage de plan de travail sous les meubles hauts, lampes de chevet ou appliques murales pour la zone nuit, lampe de bureau pour le coin travail, éclairages d'accentuation pour mettre en valeur une étagère ou un tableau. Préférez les ampoules à lumière chaude (2700-3000K).",
+              },
+            ].map((el) => (
+              <div key={el.principe} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-2">{el.principe}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{el.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Prix aménagement studio Paris 2025 */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl font-semibold text-[#1C1C1C] mb-4">
+            Prix aménagement studio Paris 2025 : tableau par budget
+          </h2>
+          <p className="text-gray-600 text-sm leading-relaxed font-light mb-6">
+            Estimations pour un studio parisien de 20 m², aménagement complet hors travaux lourds (électricité, plomberie, démolition).
+          </p>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm border-collapse">
+              <thead>
+                <tr className="bg-[#1C1C1C] text-white">
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Niveau</th>
+                  <th className="text-center px-4 py-3 font-light text-xs uppercase tracking-wider">Budget 20 m²</th>
+                  <th className="text-left px-4 py-3 font-light text-xs uppercase tracking-wider">Ce qui est inclus</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { niveau: 'Entrée de gamme', budget: '3 000 – 6 000 €', inclus: 'Peinture, parquet flottant, mobilier grande surface, accessoires' },
+                  { niveau: 'Intermédiaire', budget: '8 000 – 15 000 €', inclus: 'Mobilier semi sur-mesure, carrelage ou parquet collé, lit escamotable entrée de gamme' },
+                  { niveau: 'Haut de gamme', budget: '15 000 – 30 000 €', inclus: 'Mobilier intégral sur-mesure, parquet massif ou béton ciré, mezzanine, cuisine intégrée' },
+                ].map((row, i) => (
+                  <tr key={row.niveau} className={i % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}>
+                    <td className="px-4 py-3 text-[#1C1C1C] font-medium">{row.niveau}</td>
+                    <td className="px-4 py-3 text-center text-[#B8960C] font-medium">{row.budget}</td>
+                    <td className="px-4 py-3 text-gray-600 font-light">{row.inclus}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              "Commencer par un plan à l'échelle avant d'acheter le moindre meuble",
+              "Privilégier la qualité sur les éléments fixes (sol, cuisine, lit) plutôt que sur le déco",
+              "Investir dans un lit confortable : la qualité du sommeil impacte tout le reste",
+              "Prévoir les prises électriques en nombre suffisant dès la conception (évite les rallonges)",
+              "Choisir un revêtement de sol lavable facilement (studio = usure intense)",
+              "Penser à la ventilation : cuisine sans hotte dans un studio = odeurs dans tout l'espace",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2 text-sm text-gray-600 font-light">
+                <CheckCircle size={14} className="text-[#B8960C] flex-shrink-0 mt-0.5" />
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-[#FAFAF8] border-t border-gray-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-6 text-center">Questions fréquentes</p>
+          <div className="space-y-6">
+            {schemaFAQ.mainEntity.map((q) => (
+              <div key={q.name} className="bg-white rounded-lg p-5 border border-gray-100">
+                <div className="font-medium text-[#1C1C1C] text-sm mb-3">{q.name}</div>
+                <div className="text-gray-600 text-sm font-light leading-relaxed">{q.acceptedAnswer.text}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Voir aussi */}
-      <section className="py-12 bg-[#FAFAF8] border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4 text-center">Voir aussi</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { href: '/renovation-studio-paris', title: 'Rénovation studio Paris — Espace Design' },
+              { href: '/renovation-studio-paris', title: 'Rénovation studio Paris' },
               { href: '/amenagement-interieur-paris', title: 'Aménagement intérieur Paris' },
               { href: '/menuiserie-paris', title: 'Menuiserie Paris — mobilier sur-mesure' },
               { href: '/blog/renovation-studio-paris', title: 'Guide rénovation studio Paris' },
-              { href: '/blog/decoration-interieure-paris', title: 'Décoration intérieure Paris' },
             ].map((a) => (
               <Link
                 key={a.href}
@@ -300,42 +331,13 @@ export default function ArticleAmenagementStudio() {
         </div>
       </section>
 
-      {/* Zones */}
-      <section className="py-10 bg-white border-t border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos zones d&apos;intervention</p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {[
-              { href: '/renovation-paris-5e', label: 'Paris 5e' },
-              { href: '/renovation-paris-6e', label: 'Paris 6e' },
-              { href: '/renovation-paris-9e', label: 'Paris 9e' },
-              { href: '/renovation-paris-10e', label: 'Paris 10e' },
-              { href: '/renovation-paris-11e', label: 'Paris 11e' },
-              { href: '/renovation-paris-18e', label: 'Paris 18e' },
-              { href: '/renovation-paris-19e', label: 'Paris 19e' },
-              { href: '/renovation-paris-20e', label: 'Paris 20e' },
-              { href: '/renovation-montreuil', label: 'Montreuil' },
-              { href: '/renovation-vincennes', label: 'Vincennes' },
-            ].map((z) => (
-              <Link
-                key={z.href}
-                href={z.href}
-                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
-              >
-                {z.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 bg-[#1C1C1C] text-center px-4">
         <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-          Transformez votre studio parisien
+          Transformer votre studio parisien
         </h2>
         <p className="text-gray-400 text-sm font-light mb-8">
-          Conception + aménagement sur-mesure. Devis gratuit sous 48h.
+          Conception et aménagement sur-mesure. Devis gratuit sous 48h.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
