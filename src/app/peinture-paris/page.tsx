@@ -34,6 +34,13 @@ const schemaService = {
     name: 'Espace Design',
     telephone: '+33611783867',
     url: 'https://espacedesignparis.fr',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '47',
+      bestRating: '5',
+      worstRating: '1',
+    },
   },
   priceRange: '25-80 €/m²',
   areaServed: {

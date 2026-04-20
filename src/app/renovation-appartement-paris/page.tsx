@@ -101,6 +101,25 @@ const services = [
   { href: '/renovation-appartement-haussmannien-paris', label: 'Haussmannien', desc: 'Moulures, parquet, hauteur sous plafond' },
 ]
 
+const schemaLocalBusiness = {
+  '@context': 'https://schema.org',
+  '@type': 'HomeAndConstructionBusiness',
+  name: 'Espace Design',
+  description: 'Artisan rénovateur à Paris — rénovation appartement complète, cuisine, salle de bain, peinture, parquet, décoration intérieure.',
+  telephone: '+33611783867',
+  email: 'espacedesign92@gmail.com',
+  url: 'https://espacedesignparis.fr',
+  areaServed: { '@type': 'City', name: 'Paris' },
+  priceRange: '€€€',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '47',
+    bestRating: '5',
+    worstRating: '1',
+  },
+}
+
 const schemaBreadcrumb = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -183,6 +202,10 @@ const faq = [
 export default function RenovationParis() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaLocalBusiness) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
