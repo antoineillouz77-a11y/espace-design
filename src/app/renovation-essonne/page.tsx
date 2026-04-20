@@ -40,6 +40,8 @@ const villes91 = [
   { href: '/renovation-massy', label: 'Massy' },
   { href: '/renovation-palaiseau', label: 'Palaiseau' },
   { href: '/renovation-chatenay-malabry', label: 'Châtenay-Malabry' },
+  { href: '/renovation-evry-courcouronnes', label: 'Évry-Courcouronnes' },
+  { href: '/renovation-antony', label: 'Antony' },
 ]
 
 const services = [

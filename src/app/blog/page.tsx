@@ -396,6 +396,30 @@ const articles = [
     desc: 'Changer ses fenêtres à Paris : double vitrage, PVC, aluminium, bois. Autorisations ABF, prix et artisan 2025.',
     tag: 'Menuiserie',
   },
+  {
+    href: '/blog/faux-plafond-paris',
+    title: 'Faux Plafond Paris : placo, dalles & prix 2025',
+    desc: 'Poser un faux plafond à Paris : placo BA13, dalles minérales, tendu. Cacher les gaines, isolation phonique. Prix au m² et artisans 2025.',
+    tag: 'Plâtrerie',
+  },
+  {
+    href: '/blog/renovation-hall-immeuble-paris',
+    title: "Rénovation Hall d'Immeuble Paris : syndic, vote & prix 2025",
+    desc: "Rénover le hall d'un immeuble à Paris : procédure vote en AG, travaux parties communes, choix artisan syndic. Prix et guide 2025.",
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/creation-verriere-interieure-paris',
+    title: 'Création Verrière Intérieure Paris : prix, démarches & artisan 2025',
+    desc: "Installer une verrière intérieure à Paris : cloison vitrée atelier, verrière d'angle, autorisation copropriété. Prix et guide 2025.",
+    tag: 'Menuiserie',
+  },
+  {
+    href: '/blog/renovation-cuisine-ouverte-paris',
+    title: 'Cuisine Ouverte Paris : séparation, îlot & prix 2025',
+    desc: 'Ouvrir sa cuisine sur le salon à Paris : abattre mur porteur, verrière, îlot central, hotte décorative. Autorisations et prix 2025.',
+    tag: 'Cuisine',
+  },
 ]
 
 export default function BlogPage() {

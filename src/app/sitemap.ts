@@ -159,6 +159,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-cave-parking-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-sous-sol-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-fenetre-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/faux-plafond-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-hall-immeuble-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/creation-verriere-interieure-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-cuisine-ouverte-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
@@ -176,6 +180,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-massy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-palaiseau`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-chatenay-malabry`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-evry-courcouronnes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Val-d'Oise (95)
     { url: `${base}/renovation-argenteuil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
