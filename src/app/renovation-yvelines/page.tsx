@@ -53,6 +53,9 @@ const villes78 = [
   { href: '/renovation-les-mureaux', label: 'Les Mureaux' },
   { href: '/renovation-montigny-le-bretonneux', label: 'Montigny-le-Bretonneux' },
   { href: '/renovation-guyancourt', label: 'Guyancourt' },
+  { href: '/renovation-velizy-villacoublay', label: 'Vélizy-Villacoublay' },
+  { href: '/renovation-buc', label: 'Buc' },
+  { href: '/renovation-le-chesnay-rocquencourt', label: 'Le Chesnay-Rocquencourt' },
 ]
 
 const services = [

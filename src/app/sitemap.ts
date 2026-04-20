@@ -370,6 +370,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-le-perreux-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-bonneuil-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
+    // Yvelines (78) — nouvelles villes
+    { url: `${base}/renovation-velizy-villacoublay`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-buc`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-le-chesnay-rocquencourt`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
     // Essonne (91) — nouvelles villes
     { url: `${base}/renovation-savigny-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-athis-mons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
