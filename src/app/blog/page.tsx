@@ -642,6 +642,12 @@ const articles = [
     desc: "Rénovation appartement dans le 19e arrondissement de Paris : Buttes-Chaumont, Belleville, Villette. Artisan local, devis gratuit 48h.",
     tag: 'Paris',
   },
+  {
+    href: '/blog/renovation-appartement-paris-20e',
+    title: 'Rénovation Appartement Paris 20e : artisan & prix 2025',
+    desc: "Rénovation appartement dans le 20e arrondissement de Paris : Père-Lachaise, Belleville, Ménilmontant. Artisan local, devis gratuit 48h.",
+    tag: 'Paris',
+  },
 ]
 
 export default function BlogPage() {
