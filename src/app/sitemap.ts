@@ -534,6 +534,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Paris arrondissements — vague 17
     { url: `${base}/renovation-appartement-paris-2e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-appartement-paris-3e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-appartement-paris-4e`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Blog — vague 13
+    { url: `${base}/blog/budget-renovation-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Yvelines (78) — vague 16
     { url: `${base}/renovation-andrezy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

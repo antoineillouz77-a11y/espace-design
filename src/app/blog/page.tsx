@@ -1002,6 +1002,12 @@ const articles = [
     desc: "Réduire les bruits dans votre appartement parisien. Doublage murs, faux-plafond, sol flottant. Devis gratuit 48h.",
     tag: 'Isolation',
   },
+  {
+    href: '/blog/budget-renovation-appartement-paris',
+    title: 'Budget Rénovation Appartement Paris : grilles de prix 2025 par pièce',
+    desc: "Combien prévoir pour rénover un appartement à Paris en 2025 ? Prix au m² par type de travaux, budget total, astuces économies.",
+    tag: 'Budget & Prix',
+  },
 ]
 
 export default function BlogPage() {
