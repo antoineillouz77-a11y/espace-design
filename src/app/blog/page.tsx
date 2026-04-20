@@ -2394,6 +2394,24 @@ const articles = [
     desc: "Rénovation appartement quartier Plaisance, Paris 14e. Artisan local, devis gratuit 48h.",
     tag: 'Quartier',
   },
+  {
+    href: '/blog/renovation-appartement-auteuil-paris',
+    title: "Rénovation Appartement Auteuil Paris 16e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Auteuil, Paris 16e. Haussmannien, finitions haut de gamme, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-ternes-paris',
+    title: "Rénovation Appartement Ternes Paris 17e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier des Ternes, Paris 17e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
+  {
+    href: '/blog/renovation-appartement-tolbiac-paris',
+    title: "Rénovation Appartement Tolbiac Paris 13e — Artisan Local 2025",
+    desc: "Rénovation appartement quartier Tolbiac, Paris 13e. Artisan local, devis gratuit 48h.",
+    tag: 'Quartier',
+  },
 ]
 
 export default function BlogPage() {
