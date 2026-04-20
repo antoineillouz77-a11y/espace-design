@@ -4,16 +4,16 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Vincennes — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Vincennes — Appartement & Maison (94) | Espace Design',
   description:
-    'Artisan rénovateur et décorateur intérieur à Vincennes. Rénovation complète, décoration haut de gamme, sur-mesure. Devis gratuit 48h. Château de Vincennes, Fontenay, Île de France.',
+    'Artisan rénovateur à Vincennes (94). Rénovation appartement, maison, salle de bain, cuisine. Devis gratuit 48h. Espace Design.',
   keywords: [
     'rénovation appartement Vincennes',
     'artisan rénovation Vincennes',
     'décoration intérieure Vincennes',
     'renovation Vincennes 94300',
     'entreprise renovation Vincennes',
-    'artisan Vincennes val-de-marne',
+    'artisan Vincennes Val-de-Marne',
   ],
 }
 
@@ -45,15 +45,15 @@ const schemaFaq = {
       name: 'Quel est le délai pour obtenir un devis à Vincennes ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Vincennes et dans toute la région.',
+        text: "Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Vincennes et dans toute la région.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation complète à Vincennes ?',
+      name: "Quel est le prix d'une rénovation complète à Vincennes ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation complète varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.',
+        text: "Le coût d'une rénovation complète varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.",
       },
     },
     {
@@ -61,7 +61,7 @@ const schemaFaq = {
       name: 'Avez-vous une assurance décennale ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.',
+        text: "Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.",
       },
     },
     {
@@ -69,7 +69,7 @@ const schemaFaq = {
       name: 'Intervenez-vous à Vincennes ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, nous intervenons régulièrement à Vincennes et dans toute l\'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.',
+        text: "Oui, nous intervenons régulièrement à Vincennes et dans toute l'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.",
       },
     },
   ],
@@ -106,7 +106,7 @@ export default function RenovationVincennes() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Vincennes — 94300</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Vincennes
+            Rénovation Vincennes
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
             Artisan rénovateur et décorateur intérieur à Vincennes. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
@@ -151,15 +151,45 @@ export default function RenovationVincennes() {
         </div>
       </section>
 
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Tous nos services
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {s.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      {/* Photo */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/27-wc-taupe-rangements.jpg" alt="WC avec rangements sur-mesure — Vincennes" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/25-wc-beton-cire.jpg" alt="Rénovation intérieure sur-mesure — Vincennes" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -170,7 +200,7 @@ export default function RenovationVincennes() {
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -184,7 +214,6 @@ export default function RenovationVincennes() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="py-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
@@ -197,8 +226,8 @@ export default function RenovationVincennes() {
                 a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement à Vincennes.',
               },
               {
-                q: 'Quel est le prix d\'une rénovation complète à Vincennes ?',
-                a: 'Le coût varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².',
+                q: "Quel est le prix d'une rénovation complète à Vincennes ?",
+                a: "Le coût varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -206,7 +235,7 @@ export default function RenovationVincennes() {
               },
               {
                 q: 'Intervenez-vous à Vincennes ?',
-                a: 'Oui, nous intervenons régulièrement à Vincennes et dans toute l\'Île-de-France. Devis gratuit sous 48h.',
+                a: "Oui, nous intervenons régulièrement à Vincennes et dans toute l'Île-de-France. Devis gratuit sous 48h.",
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -221,13 +250,17 @@ export default function RenovationVincennes() {
         </div>
       </section>
 
-      {/* Zones voisines */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
+              { href: '/renovation-saint-mande', label: 'Saint-Mandé' },
+              { href: '/renovation-fontenay-sous-bois', label: 'Fontenay-sous-Bois' },
+              { href: '/renovation-montreuil', label: 'Montreuil' },
               { href: '/renovation-paris-12e', label: 'Paris 12e' },
+              { href: '/renovation-paris-20e', label: 'Paris 20e' },
+              { href: '/renovation-nogent-sur-marne', label: 'Nogent-sur-Marne' },
             ].map((z) => (
               <Link
                 key={z.href}

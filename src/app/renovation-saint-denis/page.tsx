@@ -4,16 +4,16 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Appartement Montrouge — Espace Design | Artisan Rénovateur',
+  title: 'Rénovation Saint-Denis — Appartement & Maison (93) | Espace Design',
   description:
-    'Artisan rénovateur à Montrouge. Rénovation complète, parquet, salle de bain. Devis gratuit 48h. Proche Paris 14e.',
+    'Artisan rénovateur à Saint-Denis (93). Rénovation appartement, cuisine, salle de bain, peinture. Devis gratuit 48h. Espace Design.',
   keywords: [
-    'rénovation appartement Montrouge',
-    'artisan rénovation Montrouge',
-    'décoration intérieure Montrouge',
-    'renovation Montrouge 92120',
-    'entreprise renovation Montrouge',
-    'artisan Montrouge hauts-de-seine',
+    'rénovation appartement Saint-Denis',
+    'artisan rénovation Saint-Denis',
+    'décoration intérieure Saint-Denis',
+    'renovation Saint-Denis 93200',
+    'entreprise renovation Saint-Denis',
+    'artisan Saint-Denis Seine-Saint-Denis',
   ],
 }
 
@@ -21,17 +21,17 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Montrouge.',
+  description: 'Artisan rénovateur et décorateur intérieur à Saint-Denis.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-montrouge',
+  url: 'https://espacedesignparis.fr/renovation-saint-denis',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Montrouge',
+    name: 'Saint-Denis',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Montrouge',
-    postalCode: '92120',
+    addressLocality: 'Saint-Denis',
+    postalCode: '93200',
     addressCountry: 'FR',
   },
 }
@@ -42,18 +42,18 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le délai pour obtenir un devis à Montrouge ?',
+      name: 'Quel est le délai pour obtenir un devis à Saint-Denis ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Montrouge et dans toute la région.',
+        text: "Nous répondons à toutes les demandes de devis sous 48h. Le déplacement est gratuit et sans engagement à Saint-Denis et dans toute la région.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation complète à Montrouge ?',
+      name: "Quel est le prix d'une rénovation complète à Saint-Denis ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation complète varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.',
+        text: "Le coût d'une rénovation complète varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux choisis. Pour les finitions haut de gamme, le budget peut atteindre 2 000 à 3 000 €/m². Contactez-nous pour un devis personnalisé.",
       },
     },
     {
@@ -61,15 +61,15 @@ const schemaFaq = {
       name: 'Avez-vous une assurance décennale ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.',
+        text: "Oui, Espace Design est couvert par une assurance décennale et une assurance responsabilité civile professionnelle. Nos garanties vous protègent pendant 10 ans après la livraison des travaux.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Intervenez-vous à Montrouge ?',
+      name: 'Intervenez-vous à Saint-Denis ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, nous intervenons régulièrement à Montrouge et dans toute l\'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.',
+        text: "Oui, nous intervenons régulièrement à Saint-Denis et dans toute l'Île-de-France. Contactez-nous pour un devis gratuit sous 48h.",
       },
     },
   ],
@@ -81,11 +81,11 @@ const schemaBreadcrumb = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
     { '@type': 'ListItem', position: 2, name: 'Rénovation Île-de-France', item: 'https://espacedesignparis.fr/renovation-appartement-paris' },
-    { '@type': 'ListItem', position: 3, name: 'Montrouge', item: 'https://espacedesignparis.fr/renovation-montrouge' },
+    { '@type': 'ListItem', position: 3, name: 'Saint-Denis', item: 'https://espacedesignparis.fr/renovation-saint-denis' },
   ],
 }
 
-export default function RenovationMontrouge() {
+export default function RenovationSaintDenis() {
   return (
     <>
       <script
@@ -103,13 +103,13 @@ export default function RenovationMontrouge() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Montrouge — 92120</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Saint-Denis — 93200</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Montrouge
+            Rénovation Saint-Denis
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur et décorateur intérieur à Montrouge. Rénovation complète, parquet, salle de bain, finitions haut de gamme. Centre-ville, Bagneux, proche Paris 14e. Devis gratuit sous 48h.
+            Artisan rénovateur et décorateur intérieur à Saint-Denis. Rénovation complète, décoration sur-mesure, finitions haut de gamme. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -132,13 +132,13 @@ export default function RenovationMontrouge() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Montrouge
+            Nos services à Saint-Denis
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation haut de gamme', desc: 'Rénovation complète de prestige avec des matériaux nobles : marbre, parquet massif, boiseries sur-mesure. L&apos;excellence à chaque étape.' },
-              { num: '02', title: 'Décoration intérieure', desc: 'Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique d&apos;exception pour des intérieurs d&apos;exception.' },
-              { num: '03', title: 'Sur-mesure & finitions', desc: 'Menuiserie haut de gamme, parquet point de Hongrie, salle de bain en marbre, peinture décorative. Chaque détail compte.' },
+              { num: '01', title: 'Rénovation complète', desc: 'Du sol au plafond : gros œuvre, électricité, plomberie, cloisons, finitions. Un seul artisan, un seul chantier maîtrisé.' },
+              { num: '02', title: 'Décoration intérieure', desc: 'Agencement sur-mesure, choix des matériaux, harmonie des couleurs — une signature esthétique adaptée à votre appartement.' },
+              { num: '03', title: 'Sur-mesure & finitions', desc: 'Menuiserie, parquet, carrelage, peinture décorative. Les détails qui transforment un intérieur ordinaire en espace exceptionnel.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -151,13 +151,45 @@ export default function RenovationMontrouge() {
         </div>
       </section>
 
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
+            Tous nos services
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/renovation-salle-de-bain-paris', label: 'Rénovation salle de bain' },
+              { href: '/renovation-cuisine-paris', label: 'Rénovation cuisine' },
+              { href: '/peinture-paris', label: 'Peinture' },
+              { href: '/parquet-paris', label: 'Parquet' },
+              { href: '/carrelage-paris', label: 'Carrelage' },
+              { href: '/electricite-paris', label: 'Électricité' },
+              { href: '/plomberie-paris', label: 'Plomberie' },
+              { href: '/menuiserie-paris', label: 'Menuiserie' },
+              { href: '/isolation-paris', label: 'Isolation' },
+              { href: '/platrererie-paris', label: 'Plâtrerie' },
+              { href: '/decoration-interieure-paris', label: 'Décoration intérieure' },
+              { href: '/amenagement-interieur-paris', label: 'Aménagement intérieur' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="text-xs text-[#1C1C1C] border border-gray-200 rounded px-3 py-1.5 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light"
+              >
+                {s.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/18-salon-renovation-complete.jpg" alt="Salon rénové avec finitions haut de gamme et agencement sur-mesure — rénovation appartement Montrouge" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/25-wc-beton-cire.jpg" alt="Rénovation intérieure sur-mesure — Saint-Denis" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -168,7 +200,7 @@ export default function RenovationMontrouge() {
             {[
               'Devis gratuit sous 48h',
               'Assurance décennale',
-              '15+ ans d\'expérience',
+              "15+ ans d'expérience",
               'Respect des délais',
               'Finitions haut de gamme',
               'Un seul interlocuteur',
@@ -190,20 +222,20 @@ export default function RenovationMontrouge() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le délai pour obtenir un devis à Montrouge ?',
-                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement à Montrouge.',
+                q: 'Quel est le délai pour obtenir un devis à Saint-Denis ?',
+                a: 'Nous répondons à toutes les demandes sous 48h. Le déplacement est gratuit et sans engagement à Saint-Denis.',
               },
               {
-                q: 'Quel est le prix d\'une rénovation complète à Montrouge ?',
-                a: 'Le coût varie entre 800 et 1 500 €/m² selon l\'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².',
+                q: "Quel est le prix d'une rénovation complète à Saint-Denis ?",
+                a: "Le coût varie entre 800 et 1 500 €/m² selon l'état du bien et les matériaux. Pour du haut de gamme, comptez 2 000 à 3 000 €/m².",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
                 a: 'Oui, Espace Design est couvert par une assurance décennale et une RC professionnelle. Vos travaux sont garantis 10 ans.',
               },
               {
-                q: 'Intervenez-vous à Montrouge ?',
-                a: 'Oui, nous intervenons régulièrement à Montrouge et dans toute l\'Île-de-France. Devis gratuit sous 48h.',
+                q: 'Intervenez-vous à Saint-Denis ?',
+                a: "Oui, nous intervenons régulièrement à Saint-Denis et dans toute l'Île-de-France. Devis gratuit sous 48h.",
               },
             ].map((item) => (
               <details key={item.q} className="bg-white border border-gray-100 rounded-lg p-5 group">
@@ -223,10 +255,12 @@ export default function RenovationMontrouge() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-paris-14e', label: 'Paris 14e' },
-              { href: '/renovation-issy-les-moulineaux', label: 'Issy-les-Moulineaux' },
-              { href: '/renovation-malakoff', label: 'Malakoff' },
-              { href: '/renovation-paris-15e', label: 'Paris 15e' },
+              { href: '/renovation-paris-18e', label: 'Paris 18e' },
+              { href: '/renovation-aubervilliers', label: 'Aubervilliers' },
+              { href: '/renovation-clichy', label: 'Clichy' },
+              { href: '/renovation-saint-ouen', label: 'Saint-Ouen' },
+              { href: '/renovation-la-plaine', label: 'La Plaine' },
+              { href: '/renovation-epinay-sur-seine', label: 'Épinay-sur-Seine' },
             ].map((z) => (
               <Link
                 key={z.href}
@@ -240,40 +274,13 @@ export default function RenovationMontrouge() {
         </div>
       </section>
 
-      {/* Voir aussi */}
-      <section className="py-10 bg-white border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Nos services</p>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { href: '/renovation-salle-de-bain-paris', label: 'Salle de bain' },
-              { href: '/renovation-cuisine-paris', label: 'Cuisine' },
-              { href: '/peinture-paris', label: 'Peinture' },
-              { href: '/parquet-paris', label: 'Parquet' },
-              { href: '/carrelage-paris', label: 'Carrelage' },
-              { href: '/electricite-paris', label: 'Électricité' },
-              { href: '/plomberie-paris', label: 'Plomberie' },
-              { href: '/menuiserie-paris', label: 'Menuiserie' },
-              { href: '/isolation-paris', label: 'Isolation' },
-              { href: '/platrererie-paris', label: 'Plâtrerie' },
-              { href: '/decoration-interieure-paris', label: 'Décoration' },
-              { href: '/amenagement-interieur-paris', label: 'Aménagement' },
-            ].map((l) => (
-              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Montrouge
+            Votre projet à Saint-Denis
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Montrouge.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Saint-Denis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
