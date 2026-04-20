@@ -582,6 +582,12 @@ const articles = [
     desc: 'Qui peut rénover un appartement loué à Paris ? Droits du bailleur, du locataire, travaux imposables. Guide juridique 2025.',
     tag: 'Réglementation',
   },
+  {
+    href: '/blog/renovation-appartement-investissement-paris',
+    title: 'Rénovation Investissement Locatif Paris : ROI & travaux prioritaires 2025',
+    desc: 'Rénover un investissement locatif à Paris : quels travaux maximisent le loyer, budget, rendement. Guide investisseur 2025.',
+    tag: 'Investissement',
+  },
 ]
 
 export default function BlogPage() {
