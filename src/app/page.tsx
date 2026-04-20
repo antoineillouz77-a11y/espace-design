@@ -638,6 +638,24 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
+            {[
+              { href: '/renovation-hauts-de-seine', label: 'Hauts-de-Seine (92)' },
+              { href: '/renovation-val-de-marne', label: 'Val-de-Marne (94)' },
+              { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
+              { href: '/renovation-yvelines', label: 'Yvelines (78)' },
+              { href: '/renovation-val-d-oise', label: 'Val-d\'Oise (95)' },
+              { href: '/renovation-essonne', label: 'Essonne (91)' },
+            ].map((dep) => (
+              <Link
+                key={dep.href}
+                href={dep.href}
+                className="text-xs text-[#D4AF37] border border-[#D4AF37]/40 px-3 py-1 rounded hover:bg-[#D4AF37] hover:text-[#1C1C1C] transition-colors duration-200"
+              >
+                {dep.label}
+              </Link>
+            ))}
+          </div>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 border border-[#D4AF37] text-[#D4AF37] px-6 py-3 rounded text-sm font-light tracking-wide hover:bg-[#D4AF37] hover:text-[#1C1C1C] transition-colors duration-300"
