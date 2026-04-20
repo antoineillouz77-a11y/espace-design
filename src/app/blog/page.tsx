@@ -576,6 +576,12 @@ const articles = [
     desc: 'Rénover un couloir parisien étroit et sombre : peinture claire, miroirs, éclairage, rangements intégrés. Prix et idées 2025.',
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/renovation-appartement-loue-paris',
+    title: 'Rénovation Appartement Loué Paris : droits locataire & bailleur 2025',
+    desc: 'Qui peut rénover un appartement loué à Paris ? Droits du bailleur, du locataire, travaux imposables. Guide juridique 2025.',
+    tag: 'Réglementation',
+  },
 ]
 
 export default function BlogPage() {

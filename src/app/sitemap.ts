@@ -189,6 +189,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/parquet-flottant-vs-colle-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-salle-de-bain-prix-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-couloir-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-loue-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
@@ -243,6 +244,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-orsay`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-gif-sur-yvette`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-longjumeau`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Val-de-Marne (94) — nouvelles villes
+    { url: `${base}/renovation-creteil`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-alfortville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-sucy-en-brie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-thiais`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-boissy-saint-leger`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-orly`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Pages hub département
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },

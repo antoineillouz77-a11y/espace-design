@@ -51,6 +51,9 @@ const villes94 = [
   { href: '/renovation-champigny-sur-marne', label: 'Champigny-sur-Marne' },
   { href: '/renovation-villeneuve-saint-georges', label: 'Villeneuve-Saint-Georges' },
   { href: '/renovation-choisy-le-roi', label: 'Choisy-le-Roi' },
+  { href: '/renovation-creteil', label: 'Créteil' },
+  { href: '/renovation-alfortville', label: 'Alfortville' },
+  { href: '/renovation-sucy-en-brie', label: 'Sucy-en-Brie' },
 ]
 
 const services = [
