@@ -273,6 +273,27 @@ export default function RenovationParis6e() {
         </div>
       </section>
 
+      {/* Articles liés */}
+      <section className="py-10 bg-[#FAFAF8] border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Guides utiles</p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { href: '/blog/renovation-appartement-saint-germain-paris', label: 'Rénover Saint-Germain-des-Prés' },
+              { href: '/blog/renovation-appartement-haussmannien-paris', label: 'Appartement haussmannien' },
+              { href: '/blog/renovation-appartement-copropriete-paris', label: 'Rénover en copropriété' },
+              { href: '/blog/prix-renovation-appartement-paris', label: 'Prix rénovation Paris' },
+              { href: '/blog/moulures-paris', label: 'Restauration moulures' },
+              { href: '/blog/parquet-chene-paris', label: 'Parquet chêne Paris' },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
