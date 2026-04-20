@@ -64,6 +64,7 @@ const villes = [
   { href: '/renovation-colombes', label: 'Colombes' },
   { href: '/renovation-bagneux', label: 'Bagneux' },
   { href: '/renovation-bobigny', label: 'Bobigny' },
+  { href: '/renovation-aulnay-sous-bois', label: 'Aulnay-sous-Bois' },
   { href: '/renovation-vitry-sur-seine', label: 'Vitry-sur-Seine' },
   { href: '/renovation-champigny-sur-marne', label: 'Champigny-sur-Marne' },
   { href: '/renovation-villeneuve-saint-georges', label: 'Villeneuve-Saint-Georges' },

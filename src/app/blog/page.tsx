@@ -234,6 +234,18 @@ const articles = [
     desc: "Rénover un appartement dans le Marais (Paris 3e-4e) : contraintes Bâtiments de France, prix, artisans spécialisés. Guide complet 2025.",
     tag: 'Guides',
   },
+  {
+    href: '/blog/renovation-appartement-saint-germain-paris',
+    title: 'Rénovation Appartement Saint-Germain-des-Prés Paris : guide 2025',
+    desc: "Rénover un appartement à Saint-Germain-des-Prés (Paris 6e) : prix, contraintes, artisans. Haussmannien, immeubles anciens, finitions premium.",
+    tag: 'Guides',
+  },
+  {
+    href: '/blog/renovation-appartement-montmartre-paris',
+    title: 'Rénovation Appartement Montmartre Paris 18e : guide & prix 2025',
+    desc: "Rénover un appartement à Montmartre (Paris 18e) : maisons de village, appartements anciens, prix, artisans. Guide complet 2025.",
+    tag: 'Guides',
+  },
 ]
 
 export default function BlogPage() {
