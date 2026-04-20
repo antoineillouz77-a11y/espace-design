@@ -876,6 +876,12 @@ const articles = [
     desc: "Tendances peinture 2025, finitions mat/velours/satin, artisan peintre Paris. Prix au m² et conseils couleurs.",
     tag: 'Peinture',
   },
+  {
+    href: '/blog/verriere-interieure-atelier-paris',
+    title: 'Verrière Intérieure Atelier Paris : styles, prix & pose 2025',
+    desc: "Installer une verrière intérieure style atelier à Paris : séparation cuisine-salon, cloison vitrée. Prix pose 2025.",
+    tag: 'Décoration',
+  },
 ]
 
 export default function BlogPage() {
