@@ -1464,6 +1464,30 @@ const articles = [
     desc: "Rénover un appartement à Saint-Germain-en-Laye. Ville royale, appartements premium. Devis gratuit 48h.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/salle-de-bain-style-industriel-paris',
+    title: "Salle de Bain Style Industriel Paris : tendance & prix 2025",
+    desc: "Créer une salle de bain style industriel à Paris. Béton, métal, tuyaux apparents, robinetterie. Devis 48h.",
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/salle-de-bain-scandinave-paris',
+    title: "Salle de Bain Scandinave Paris : style & prix artisan 2025",
+    desc: "Aménager une salle de bain scandinave à Paris. Bois clair, carrelage blanc, minimalisme. Devis 48h.",
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/cuisine-noir-mat-paris',
+    title: "Cuisine Noire Mat Paris : meubles & prix artisan 2025",
+    desc: "Créer une cuisine noire mat à Paris. Façades laquées, plan de travail, association couleurs. Devis 48h.",
+    tag: 'Cuisine',
+  },
+  {
+    href: '/blog/renovation-salle-de-jeux-adultes-paris',
+    title: "Salle de Jeux Adultes Paris : aménagement & prix 2025",
+    desc: "Aménager une salle de jeux ou home cinéma à Paris. Insonorisation, éclairage, écran de projection.",
+    tag: 'Aménagement',
+  },
 ]
 
 export default function BlogPage() {
