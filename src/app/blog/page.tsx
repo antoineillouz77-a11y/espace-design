@@ -1182,6 +1182,18 @@ const articles = [
     desc: "Prix et tarif peinture appartement à Paris en 2025. Coût au m² selon pièce, préparation murs, main d'œuvre. Devis gratuit 48h.",
     tag: 'Peinture',
   },
+  {
+    href: '/blog/climatisation-appartement-paris',
+    title: 'Climatisation Appartement Paris : installation split & prix artisan 2025',
+    desc: "Installer une climatisation dans son appartement à Paris. Split, règles copropriété, démarches mairie, prix. Devis gratuit 48h.",
+    tag: 'Climatisation',
+  },
+  {
+    href: '/blog/renovation-appartement-belleville-paris',
+    title: "Rénovation Appartement Belleville Paris 20e : artisan & prix 2025",
+    desc: "Rénover un appartement à Belleville Paris 19e/20e. Immeubles anciens, lofts, rénovation totale, prix artisan. Devis gratuit 48h.",
+    tag: 'Quartier',
+  },
 ]
 
 export default function BlogPage() {
