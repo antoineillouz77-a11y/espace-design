@@ -198,6 +198,36 @@ const articles = [
     desc: "Domotique dans un appartement parisien : volets automatiques, éclairage connecté, thermostat, interphone vidéo. Prix et installation. Guide 2025.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/renovation-loft-paris',
+    title: 'Rénovation Loft Paris : prix, aménagement industriel & guide 2025',
+    desc: "Rénover un loft à Paris : style industriel, béton ciré, verrière, mezzanine. Prix au m², artisans spécialisés. Guide complet 2025.",
+    tag: 'Guides',
+  },
+  {
+    href: '/blog/plomberie-appartement-paris',
+    title: 'Plomberie Appartement Paris : prix, réfection & urgence 2025',
+    desc: "Rénovation plomberie Paris : remplacement colonnes, salle de bain, prix au m², délais. Plombier agréé Paris et Île-de-France. Guide complet 2025.",
+    tag: 'Plomberie',
+  },
+  {
+    href: '/blog/amenagement-studio-paris',
+    title: 'Aménagement Studio Paris : optimiser l\'espace & décoration 2025',
+    desc: "Aménager un studio parisien de 15 à 35 m² : lit escamotable, cloisons coulissantes, mobilier sur-mesure, rangements. Idées et prix 2025.",
+    tag: 'Studios',
+  },
+  {
+    href: '/blog/chauffage-appartement-paris',
+    title: 'Chauffage Appartement Paris : remplacement, prix & aides 2025',
+    desc: "Changer son chauffage à Paris : radiateurs à inertie, plancher chauffant, pompe à chaleur. Prix, aides MaPrimeRénov', copropriété. Guide 2025.",
+    tag: 'Rénovation',
+  },
+  {
+    href: '/blog/renovation-cave-paris',
+    title: 'Rénovation Cave Paris : aménagement, humidité & prix 2025',
+    desc: "Rénover sa cave à Paris : traitement humidité, isolation, aménagement bureau ou chambre. Prix, réglementation copropriété. Guide complet 2025.",
+    tag: 'Guides',
+  },
 ]
 
 export default function BlogPage() {

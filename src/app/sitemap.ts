@@ -155,5 +155,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Seine-et-Marne (93) / Est parisien
     { url: `${base}/renovation-noisy-le-grand`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Val-de-Marne (94) — nouvelles villes
+    { url: `${base}/renovation-vitry-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-champigny-sur-marne`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-villeneuve-saint-georges`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-Saint-Denis (93) — nouvelles villes
+    { url: `${base}/renovation-bobigny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Articles blog supplémentaires
+    { url: `${base}/blog/renovation-loft-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/plomberie-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/amenagement-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/chauffage-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-cave-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+
   ]
 }
