@@ -364,6 +364,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Essonne (91) — nouvelles villes
     { url: `${base}/renovation-ris-orangis`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-grigny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-morsang-sur-orge`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-bruyeres-le-chatel`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Yvelines (78) — nouvelles villes
     { url: `${base}/renovation-les-mureaux`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -414,8 +416,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-mitry-mory`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-roissy-en-brie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-lieusaint`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-saint-thibault-des-vignes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-les-clayes-sous-bois`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-andresy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-carrieres-sous-poissy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-acheres`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-brie-comte-robert`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Hauts-de-Seine (92) — nouvelles villes
@@ -436,6 +441,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/salle-de-bain-italienne-sans-receveur-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/isolation-murs-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/cloison-separation-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/amenagement-petite-salle-de-bain-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/choisir-peinture-appartement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Val-de-Marne (94) — nouvelles villes
     { url: `${base}/renovation-villejuif`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -453,6 +460,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-franconville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-soisy-sous-montmorency`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-montmorency`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-gonesse`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-herblay-sur-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-bezons`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-taverny`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 

@@ -62,6 +62,8 @@ const villes78 = [
   { href: '/renovation-elancourt', label: 'Élancourt' },
   { href: '/renovation-les-clayes-sous-bois', label: 'Les Clayes-sous-Bois' },
   { href: '/renovation-andresy', label: 'Andrésy' },
+  { href: '/renovation-carrieres-sous-poissy', label: 'Carrières-sous-Poissy' },
+  { href: '/renovation-acheres', label: 'Achères' },
 ]
 
 const services = [

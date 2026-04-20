@@ -900,6 +900,18 @@ const articles = [
     desc: "Créer une cloison dans un appartement parisien : placo, brique, verre, amovible. Prix pose artisan Paris 2025.",
     tag: 'Aménagement',
   },
+  {
+    href: '/blog/amenagement-petite-salle-de-bain-paris',
+    title: 'Aménagement Petite Salle de Bain Paris : astuces & prix 2025',
+    desc: "Optimiser une petite salle de bain (3-5 m²) à Paris : douche italienne, WC suspendu, niche carrelage. Artisan Paris.",
+    tag: 'Salle de bain',
+  },
+  {
+    href: '/blog/choisir-peinture-appartement-paris',
+    title: 'Choisir sa Peinture Appartement Paris : marques, finitions & prix 2025',
+    desc: "Dulux, Tollens, Farrow & Ball : quelle peinture choisir pour un appartement parisien ? Conseils 2025.",
+    tag: 'Peinture',
+  },
 ]
 
 export default function BlogPage() {
