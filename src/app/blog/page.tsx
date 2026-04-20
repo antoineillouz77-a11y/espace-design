@@ -588,6 +588,24 @@ const articles = [
     desc: 'Rénover un investissement locatif à Paris : quels travaux maximisent le loyer, budget, rendement. Guide investisseur 2025.',
     tag: 'Investissement',
   },
+  {
+    href: '/blog/renovation-appartement-neuf-paris',
+    title: 'Rénovation Appartement Neuf Paris : personnalisation & aménagement 2025',
+    desc: 'Personnaliser un appartement neuf à Paris avant emménagement : peinture, parquet, placards. Prix et conseils artisan 2025.',
+    tag: 'Aménagement',
+  },
+  {
+    href: '/blog/renovation-urgence-paris',
+    title: 'Rénovation Urgence Paris : dégât des eaux, fissure & intervention rapide 2025',
+    desc: "Urgences rénovation à Paris : dégât des eaux, fissure apparente, chute de plâtre. Qui appeler, que faire, assurance. Guide 2025.",
+    tag: 'Conseils',
+  },
+  {
+    href: '/blog/sol-stratifie-paris',
+    title: 'Sol Stratifié Paris : pose, entretien & prix 2025',
+    desc: 'Tout savoir sur le sol stratifié à Paris : types, prix au m², pose, avantages vs parquet. Guide artisan 2025.',
+    tag: 'Parquet',
+  },
 ]
 
 export default function BlogPage() {

@@ -53,6 +53,7 @@ const villes93 = [
   { href: '/renovation-noisy-le-sec', label: 'Noisy-le-Sec' },
   { href: '/renovation-romainville', label: 'Romainville' },
   { href: '/renovation-les-lilas', label: 'Les Lilas' },
+  { href: '/renovation-saint-ouen', label: 'Saint-Ouen-sur-Seine' },
 ]
 
 const services = [

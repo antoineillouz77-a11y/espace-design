@@ -191,6 +191,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-couloir-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-loue-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-appartement-investissement-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-appartement-neuf-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/renovation-urgence-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/sol-stratifie-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Pages service spécialisées
     { url: `${base}/renovation-studio-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
@@ -253,6 +256,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-thiais`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-boissy-saint-leger`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-orly`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // Seine-Saint-Denis (93) — nouvelles villes
+    { url: `${base}/renovation-saint-ouen`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Pages hub département
     { url: `${base}/renovation-hauts-de-seine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
