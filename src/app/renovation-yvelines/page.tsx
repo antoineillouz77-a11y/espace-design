@@ -59,6 +59,7 @@ const villes78 = [
   { href: '/renovation-fontenay-le-fleury', label: 'Fontenay-le-Fleury' },
   { href: '/renovation-trappes', label: 'Trappes' },
   { href: '/renovation-plaisir', label: 'Plaisir' },
+  { href: '/renovation-elancourt', label: 'Élancourt' },
 ]
 
 const services = [

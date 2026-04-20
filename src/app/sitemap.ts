@@ -339,6 +339,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Yvelines (78) — nouvelles villes
     { url: `${base}/renovation-fontenay-le-fleury`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-plaisir`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-elancourt`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-conflans-sainte-honorine`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-mantes-la-jolie`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
@@ -409,6 +410,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/renovation-ozoir-la-ferriere`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-trappes`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/renovation-savigny-le-temple`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/renovation-combs-la-ville`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Hauts-de-Seine (92) — nouvelles villes
     { url: `${base}/renovation-le-plessis-robinson`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
@@ -421,6 +423,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/renovation-salle-de-bain-italienne-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/renovation-cave-amenagee-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/blog/prix-renovation-cuisine-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/blog/pose-parquet-paris`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
 
     // Val-de-Marne (94) — nouvelles villes
     { url: `${base}/renovation-villejuif`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

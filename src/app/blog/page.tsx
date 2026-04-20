@@ -858,6 +858,12 @@ const articles = [
     desc: "Quel budget pour rénover une cuisine à Paris ? Cuisine équipée, plan de travail, carrelage, électroménager. Prix m² 2025.",
     tag: 'Cuisine',
   },
+  {
+    href: '/blog/pose-parquet-paris',
+    title: 'Pose Parquet Paris : massif, contrecollé & prix artisan 2025',
+    desc: "Poser un parquet à Paris : parquet massif cloué, contrecollé collé, flottant. Préparation, finitions, prix m² 2025.",
+    tag: 'Parquet',
+  },
 ]
 
 export default function BlogPage() {
