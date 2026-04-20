@@ -4,17 +4,17 @@ import Image from 'next/image'
 import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Rénovation Sainte-Geneviève-des-Bois (91700) — Artisan Rénovateur | Espace Design',
+  title: 'Rénovation Stains (93240) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur à Sainte-Geneviève-des-Bois (91700) : pavillons et maisons résidentielles, commune verte et résidentielle prisée de l\'Essonne. Rénovation 800-2500€/m². Devis gratuit 48h.',
+    'Artisan rénovateur à Stains (93240) : pavillons, maisons individuelles, logements collectifs Seine-Saint-Denis. Rénovation maison Stains 700-2500€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation Sainte-Geneviève-des-Bois',
-    'artisan rénovation Sainte-Geneviève-des-Bois',
-    'rénovation maison Essonne',
-    'renovation Sainte-Genevieve-des-Bois 91700',
-    'entreprise renovation Ste-Geneviève',
-    'artisan Sainte-Geneviève-des-Bois 91',
-    'rénovation pavillon Essonne',
+    'rénovation maison Stains',
+    'artisan rénovation Stains',
+    'rénovation Stains 93240',
+    'entreprise rénovation Stains',
+    'artisan Stains Seine-Saint-Denis',
+    'rénovation pavillon Stains',
+    'rénovation appartement 93',
   ],
 }
 
@@ -22,23 +22,23 @@ const schemaLocal = {
   '@context': 'https://schema.org',
   '@type': 'HomeAndConstructionBusiness',
   name: 'Espace Design',
-  description: 'Artisan rénovateur et décorateur intérieur à Sainte-Geneviève-des-Bois.',
+  description: 'Artisan rénovateur et décorateur intérieur à Stains.',
   telephone: '+33611783867',
-  url: 'https://espacedesignparis.fr/renovation-sainte-genevieve-des-bois',
+  url: 'https://espacedesignparis.fr/renovation-stains',
   areaServed: {
     '@type': 'AdministrativeArea',
-    name: 'Sainte-Geneviève-des-Bois',
+    name: 'Stains',
   },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Sainte-Geneviève-des-Bois',
-    postalCode: '91700',
+    addressLocality: 'Stains',
+    postalCode: '93240',
     addressCountry: 'FR',
   },
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
-    reviewCount: '47',
+    reviewCount: '32',
   },
 }
 
@@ -48,26 +48,26 @@ const schemaFaq = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Quel est le prix d\'une rénovation à Sainte-Geneviève-des-Bois ?',
+      name: "Quel est le prix d'une rénovation à Stains ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation à Sainte-Geneviève-des-Bois varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons entièrement remis à neuf avec des prestations soignées, comptez jusqu\'à 2 500 €/m². Devis gratuit sous 48h.',
+        text: "Le coût d'une rénovation à Stains varie entre 700 et 1 200 €/m² pour une rénovation standard d'un pavillon ou d'un appartement. Pour une rénovation complète avec mise aux normes et finitions haut de gamme, comptez 1 200 à 2 500 €/m². Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quel artisan contacter pour rénover à Sainte-Geneviève-des-Bois ?',
+      name: 'Quel artisan contacter pour rénover une maison à Stains ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Espace Design intervient à Sainte-Geneviève-des-Bois pour des rénovations de pavillons et maisons résidentielles. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur.',
+        text: "Espace Design intervient régulièrement à Stains pour des rénovations de pavillons et de maisons individuelles. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h, un seul interlocuteur du diagnostic à la livraison.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment rénover une maison à Sainte-Geneviève-des-Bois ?',
+      name: 'Comment rénover un pavillon en Seine-Saint-Denis ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pour les maisons de Sainte-Geneviève-des-Bois, nous proposons une rénovation complète : isolation, électricité mise aux normes, salle de bain, cuisine, parquet et peinture. Chaque projet est suivi de A à Z par un seul artisan référent.',
+        text: "La rénovation d'un pavillon en Seine-Saint-Denis nécessite souvent une mise aux normes électrique et de plomberie, une isolation des combles et des murs, le remplacement des menuiseries et la rénovation des revêtements intérieurs. Espace Design prend en charge tous ces corps de métier.",
       },
     },
     {
@@ -86,12 +86,12 @@ const schemaBreadcrumb = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://espacedesignparis.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Rénovation Essonne', item: 'https://espacedesignparis.fr/renovation-essonne' },
-    { '@type': 'ListItem', position: 3, name: 'Sainte-Geneviève-des-Bois', item: 'https://espacedesignparis.fr/renovation-sainte-genevieve-des-bois' },
+    { '@type': 'ListItem', position: 2, name: 'Rénovation Seine-Saint-Denis', item: 'https://espacedesignparis.fr/renovation-seine-saint-denis' },
+    { '@type': 'ListItem', position: 3, name: 'Stains', item: 'https://espacedesignparis.fr/renovation-stains' },
   ],
 }
 
-export default function RenovationSainteGenevieveDesBois() {
+export default function RenovationStains() {
   return (
     <>
       <script
@@ -109,13 +109,13 @@ export default function RenovationSainteGenevieveDesBois() {
 
       <section className="pt-28 sm:pt-36 pb-16 bg-[#FAFAF8]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Sainte-Geneviève-des-Bois — 91700</p>
+          <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Stains — 93240</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation maison<br className="hidden sm:block" /> Sainte-Geneviève-des-Bois
+            Rénovation maison<br className="hidden sm:block" /> Stains
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur à Sainte-Geneviève-des-Bois (91700) : pavillons et maisons résidentielles dans cette commune verte et prisée de l'Essonne. Rénovation complète et finitions soignées. Devis gratuit sous 48h.
+            Artisan rénovateur à Stains (93240) : pavillons, maisons individuelles et logements collectifs en Seine-Saint-Denis. Rénovation complète, mise aux normes et finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -138,13 +138,13 @@ export default function RenovationSainteGenevieveDesBois() {
       <section className="py-20 bg-[#F2F2EE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-10">
-            Nos services à Sainte-Geneviève-des-Bois
+            Nos services à Stains
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation de pavillons', desc: 'Remise à neuf complète de pavillons résidentiels à Sainte-Geneviève-des-Bois — isolation, électricité, plomberie, redistribution des espaces pour un confort moderne.' },
-              { num: '02', title: 'Cuisine et salle de bain', desc: 'Conception et réalisation de cuisines équipées et salles de bain contemporaines, adaptées aux maisons résidentielles de cette commune verdoyante de l\'Essonne.' },
-              { num: '03', title: 'Finitions et décoration', desc: 'Parquet, peinture, carrelage, menuiseries intérieures. Des finitions soignées pour valoriser votre bien à Sainte-Geneviève-des-Bois et en Essonne.' },
+              { num: '01', title: 'Rénovation de pavillons', desc: "Remise à neuf complète de maisons individuelles et pavillons à Stains : électricité, plomberie, isolation des combles et des murs, revêtements sols et murs, menuiseries intérieures et extérieures." },
+              { num: '02', title: 'Logements collectifs', desc: "Modernisation des appartements des ensembles collectifs : tableau électrique, plomberie, isolation phonique et thermique, salle de bain et cuisine refaites à neuf." },
+              { num: '03', title: 'Finitions et décoration', desc: 'Peinture, parquet, carrelage, salle de bain clé en main, cuisine — un résultat soigné pour valoriser durablement votre bien à Stains et dans le 93.' },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -160,7 +160,7 @@ export default function RenovationSainteGenevieveDesBois() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-[#1C1C1C] mb-8">
-            Prix rénovation à Sainte-Geneviève-des-Bois
+            Prix rénovation à Stains
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left border border-gray-100 rounded-lg overflow-hidden">
@@ -172,12 +172,12 @@ export default function RenovationSainteGenevieveDesBois() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture intérieure', '30 - 60 €/m²'],
+                  ['Peinture appartement / maison', '25 - 60 €/m²'],
                   ['Rénovation salle de bain', '3 500 - 12 000 €'],
                   ['Rénovation cuisine', '4 000 - 15 000 €'],
                   ['Parquet (pose + fourniture)', '45 - 100 €/m²'],
-                  ['Rénovation complète', '800 - 1 500 €/m²'],
-                  ['Rénovation pavillon', '1 000 - 2 500 €/m²'],
+                  ['Rénovation complète appartement', '700 - 1 200 €/m²'],
+                  ['Rénovation complète pavillon', '1 200 - 2 500 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -197,7 +197,7 @@ export default function RenovationSainteGenevieveDesBois() {
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Salle de bain rénovée — rénovation maison Sainte-Geneviève-des-Bois 91700" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — pavillon Stains 93240" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -230,16 +230,16 @@ export default function RenovationSainteGenevieveDesBois() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation à Sainte-Geneviève-des-Bois ?',
-                a: 'Le coût d\'une rénovation à Sainte-Geneviève-des-Bois varie entre 800 et 1 500 €/m² pour une rénovation standard. Pour les pavillons entièrement remis à neuf avec des finitions soignées, comptez jusqu\'à 2 500 €/m².',
+                q: "Quel est le prix d'une rénovation à Stains ?",
+                a: "Le coût d'une rénovation à Stains varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour une rénovation complète avec mise aux normes et finitions haut de gamme, comptez 1 200 à 2 500 €/m².",
               },
               {
-                q: 'Quel artisan contacter pour rénover à Sainte-Geneviève-des-Bois ?',
-                a: 'Espace Design intervient à Sainte-Geneviève-des-Bois pour des rénovations de pavillons et maisons résidentielles en Essonne. Assuré décennale, devis gratuit sous 48h.',
+                q: 'Quel artisan contacter pour rénover une maison à Stains ?',
+                a: "Espace Design intervient régulièrement à Stains pour des rénovations de pavillons et de maisons individuelles. Assuré décennale, 15 ans d'expérience, devis gratuit sous 48h.",
               },
               {
-                q: 'Comment rénover une maison à Sainte-Geneviève-des-Bois ?',
-                a: 'Pour les maisons de Sainte-Geneviève-des-Bois, nous proposons une rénovation complète : isolation, électricité mise aux normes, salle de bain, cuisine, parquet et peinture. Chaque projet est suivi de A à Z par un seul artisan référent.',
+                q: 'Comment rénover un pavillon en Seine-Saint-Denis ?',
+                a: "La rénovation d'un pavillon en Seine-Saint-Denis nécessite souvent une mise aux normes électrique et plomberie, une isolation des combles et des murs, le remplacement des menuiseries et la rénovation des revêtements. Espace Design prend en charge tous ces corps de métier.",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -263,12 +263,10 @@ export default function RenovationSainteGenevieveDesBois() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-widest mb-4">Zones voisines</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { href: '/renovation-essonne', label: 'Essonne (91)' },
-              { href: '/renovation-massy', label: 'Massy' },
-              { href: '/renovation-palaiseau', label: 'Palaiseau' },
-              { href: '/renovation-longjumeau', label: 'Longjumeau' },
-              { href: '/renovation-evry-courcouronnes', label: 'Évry-Courcouronnes' },
-              { href: '/renovation-gif-sur-yvette', label: 'Gif-sur-Yvette' },
+              { href: '/renovation-seine-saint-denis', label: 'Seine-Saint-Denis (93)' },
+              { href: '/renovation-saint-denis', label: 'Saint-Denis' },
+              { href: '/renovation-pierrefitte-sur-seine', label: 'Pierrefitte-sur-Seine' },
+              { href: '/renovation-epinay-sur-seine', label: 'Épinay-sur-Seine' },
               { href: '/renovation-appartement-paris', label: 'Paris' },
             ].map((z) => (
               <Link
@@ -316,7 +314,7 @@ export default function RenovationSainteGenevieveDesBois() {
             {[
               { href: '/blog/budget-renovation-paris-2025', label: 'Budget rénovation 2025' },
               { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain' },
-              { href: '/blog/renovation-avant-vente-paris', label: 'Rénovation avant vente' },
+              { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant vente' },
               { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
               { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
               { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
@@ -332,10 +330,10 @@ export default function RenovationSainteGenevieveDesBois() {
       <section className="py-20 bg-[#1C1C1C]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-display text-2xl sm:text-3xl font-semibold text-white mb-4">
-            Votre projet à Sainte-Geneviève-des-Bois
+            Votre projet à Stains
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Sainte-Geneviève-des-Bois.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune de Stains et la Seine-Saint-Denis.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

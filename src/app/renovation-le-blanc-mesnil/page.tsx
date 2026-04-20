@@ -6,15 +6,15 @@ import { Phone, ArrowRight, CheckCircle } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Rénovation Le Blanc-Mesnil (93150) — Artisan Rénovateur | Espace Design',
   description:
-    'Artisan rénovateur au Blanc-Mesnil (93150) : pavillons, maisons individuelles, appartements collectifs des années 60-80. Rénovation Seine-Saint-Denis 700-2500€/m². Devis gratuit 48h.',
+    'Artisan rénovateur au Blanc-Mesnil (93150) : pavillons, maisons individuelles, appartements collectifs en Seine-Saint-Denis. Rénovation 700-2500€/m². Devis gratuit 48h.',
   keywords: [
-    'rénovation appartement Le Blanc-Mesnil',
-    'artisan rénovation Le Blanc-Mesnil',
-    'rénovation Le Blanc-Mesnil 93150',
-    'entreprise rénovation Le Blanc-Mesnil',
-    'artisan Le Blanc-Mesnil 93',
-    'rénovation pavillon Le Blanc-Mesnil',
-    'rénovation Seine-Saint-Denis',
+    'rénovation Le Blanc-Mesnil',
+    'artisan rénovation Blanc-Mesnil',
+    'rénovation maison Seine-Saint-Denis',
+    'renovation 93150',
+    'entreprise renovation Blanc-Mesnil',
+    'artisan Blanc-Mesnil 93',
+    'rénovation appartement Seine-Saint-Denis',
   ],
 }
 
@@ -51,23 +51,23 @@ const schemaFaq = {
       name: 'Quel est le prix d\'une rénovation au Blanc-Mesnil ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le coût d\'une rénovation au Blanc-Mesnil varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour une rénovation complète d\'un pavillon ou d\'un appartement des années 60-80, comptez 1 200 à 2 500 €/m². Devis gratuit sous 48h.',
+        text: "Le coût d'une rénovation au Blanc-Mesnil varie entre 700 et 1 400 €/m² pour une rénovation standard de pavillon ou appartement. Pour des finitions haut de gamme, comptez 1 400 à 2 500 €/m². Devis gratuit sous 48h.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment trouver un artisan au Blanc-Mesnil pour rénover sa maison ?',
+      name: 'Comment trouver un artisan fiable au Blanc-Mesnil ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Espace Design intervient régulièrement au Blanc-Mesnil pour des rénovations de pavillons et d\'appartements collectifs. Artisan assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h, un seul interlocuteur du diagnostic à la livraison.',
+        text: "Espace Design intervient régulièrement au Blanc-Mesnil pour des rénovations de pavillons, maisons individuelles et appartements collectifs. Artisan assuré décennale, 15 ans d'expérience, devis gratuit sous 48h, un seul interlocuteur.",
       },
     },
     {
       '@type': 'Question',
-      name: 'Quels travaux sont prioritaires dans un appartement des années 60-80 en Seine-Saint-Denis ?',
+      name: 'Rénovation maison Seine-Saint-Denis : quels travaux sont possibles ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dans les logements des années 60-80 en Seine-Saint-Denis, les travaux prioritaires sont la mise aux normes électrique (tableau, prises, câblage), la réfection de la plomberie, l\'isolation thermique par les combles ou les murs, et la rénovation des revêtements sols et murs.',
+        text: "Espace Design réalise tous types de travaux en Seine-Saint-Denis : rénovation complète, peinture, parquet, salle de bain, cuisine, isolation, plâtrerie, électricité, plomberie. Intervention sur toute la commune du Blanc-Mesnil et alentours.",
       },
     },
     {
@@ -91,7 +91,7 @@ const schemaBreadcrumb = {
   ],
 }
 
-export default function RenovationLeBlanMesnil() {
+export default function RenovationLeBlancMesnil() {
   return (
     <>
       <script
@@ -112,10 +112,10 @@ export default function RenovationLeBlanMesnil() {
           <p className="text-[#B8960C] text-[10px] font-light uppercase tracking-[0.25em] mb-4">Le Blanc-Mesnil — 93150</p>
           <div className="w-8 h-px bg-[#D4AF37]/60 mx-auto mb-6" />
           <h1 className="font-display text-3xl sm:text-5xl font-semibold text-[#1C1C1C] leading-tight mb-5">
-            Rénovation appartement<br className="hidden sm:block" /> Le Blanc-Mesnil
+            Rénovation maison<br className="hidden sm:block" /> Le Blanc-Mesnil
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-            Artisan rénovateur au Blanc-Mesnil (93150) : pavillons, maisons individuelles, appartements collectifs des années 60-80. Rénovation complète, mise aux normes et finitions soignées en Seine-Saint-Denis. Devis gratuit sous 48h.
+            Artisan rénovateur au Blanc-Mesnil (93150) : pavillons, maisons individuelles et appartements collectifs en Seine-Saint-Denis. Rénovation complète et finitions soignées. Devis gratuit sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
@@ -142,9 +142,9 @@ export default function RenovationLeBlanMesnil() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { num: '01', title: 'Rénovation de pavillons', desc: 'Remise à neuf complète de maisons individuelles et pavillons : électricité, plomberie, isolation, doublage des murs, revêtements sols et murs, menuiseries.' },
-              { num: '02', title: 'Appartements collectifs 60-80', desc: 'Mise aux normes et modernisation des appartements des ensembles collectifs des années 60-80 : tableau électrique, plomberie cuivre, isolation phonique et thermique.' },
-              { num: '03', title: 'Finitions et décoration', desc: 'Peinture, parquet, carrelage, salle de bain clé en main, cuisine — un résultat soigné qui valorise durablement votre bien au Blanc-Mesnil.' },
+              { num: '01', title: 'Rénovation de pavillon', desc: "Remise à neuf complète de votre pavillon au Blanc-Mesnil : peinture, parquet, salle de bain, cuisine, isolation. Une transformation sur mesure selon vos besoins et votre budget." },
+              { num: '02', title: "Rénovation d'appartement", desc: "Rénovation complète ou partielle de votre appartement collectif : mise aux normes électriques, modernisation de la salle de bain et de la cuisine, sols et peinture." },
+              { num: '03', title: 'Finitions et décoration', desc: "Peinture décorative, pose de carrelage, revêtements de sol, agencement sur mesure. Des finitions soignées pour un intérieur agréable et valorisé." },
             ].map((s) => (
               <div key={s.title} className="bg-white rounded-lg p-6 border border-gray-100">
                 <div className="font-display text-3xl font-semibold text-[#D4AF37] mb-3">{s.num}</div>
@@ -172,12 +172,12 @@ export default function RenovationLeBlanMesnil() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {[
-                  ['Peinture appartement', '25 - 60 €/m²'],
-                  ['Rénovation salle de bain', '3 500 - 12 000 €'],
-                  ['Rénovation cuisine', '4 000 - 15 000 €'],
-                  ['Parquet (pose + fourniture)', '45 - 100 €/m²'],
-                  ['Rénovation complète appartement', '700 - 1 200 €/m²'],
-                  ['Rénovation complète pavillon', '1 200 - 2 500 €/m²'],
+                  ['Peinture appartement ou maison', '25 - 55 €/m²'],
+                  ['Rénovation salle de bain', '3 000 - 12 000 €'],
+                  ['Rénovation cuisine', '3 500 - 14 000 €'],
+                  ['Parquet (pose + fourniture)', '40 - 95 €/m²'],
+                  ['Rénovation complète', '700 - 1 400 €/m²'],
+                  ['Rénovation haut de gamme', '1 400 - 2 500 €/m²'],
                 ].map(([label, price]) => (
                   <tr key={label} className="bg-white hover:bg-[#FAFAF8] transition-colors">
                     <td className="px-5 py-3 text-gray-700 font-light">{label}</td>
@@ -197,7 +197,7 @@ export default function RenovationLeBlanMesnil() {
             Une réalisation
           </h2>
           <div className="relative rounded-xl overflow-hidden h-72 sm:h-96">
-            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — pavillon Le Blanc-Mesnil 93150" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
+            <Image src="/images/realisations/19-sdb-mosaique-lavabo.jpg" alt="Rénovation salle de bain — artisan Le Blanc-Mesnil Seine-Saint-Denis 93150" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
           </div>
         </div>
       </section>
@@ -230,16 +230,16 @@ export default function RenovationLeBlanMesnil() {
           <div className="space-y-4">
             {[
               {
-                q: 'Quel est le prix d\'une rénovation au Blanc-Mesnil ?',
-                a: 'Le coût d\'une rénovation au Blanc-Mesnil varie entre 700 et 1 200 €/m² pour une rénovation standard. Pour une rénovation complète d\'un pavillon ou d\'un appartement des années 60-80, comptez 1 200 à 2 500 €/m².',
+                q: "Quel est le prix d'une rénovation au Blanc-Mesnil ?",
+                a: "Le coût d'une rénovation au Blanc-Mesnil varie entre 700 et 1 400 €/m² pour une rénovation standard de pavillon ou appartement. Pour des finitions haut de gamme, comptez 1 400 à 2 500 €/m².",
               },
               {
-                q: 'Comment trouver un artisan au Blanc-Mesnil pour rénover sa maison ?',
-                a: 'Espace Design intervient régulièrement au Blanc-Mesnil pour des rénovations de pavillons et d\'appartements collectifs. Assuré décennale, 15 ans d\'expérience, devis gratuit sous 48h.',
+                q: 'Comment trouver un artisan fiable au Blanc-Mesnil ?',
+                a: "Espace Design intervient régulièrement au Blanc-Mesnil pour des rénovations de pavillons, maisons individuelles et appartements collectifs. Assuré décennale, devis gratuit sous 48h.",
               },
               {
-                q: 'Quels travaux sont prioritaires dans un appartement des années 60-80 en Seine-Saint-Denis ?',
-                a: 'Dans les logements des années 60-80 en Seine-Saint-Denis, les travaux prioritaires sont la mise aux normes électrique, la réfection de la plomberie, l\'isolation thermique et acoustique, et la rénovation des revêtements sols et murs.',
+                q: 'Rénovation maison Seine-Saint-Denis : quels travaux sont possibles ?',
+                a: "Espace Design réalise tous types de travaux en Seine-Saint-Denis : rénovation complète, peinture, parquet, salle de bain, cuisine, isolation, plâtrerie, électricité, plomberie.",
               },
               {
                 q: 'Avez-vous une assurance décennale ?',
@@ -317,7 +317,7 @@ export default function RenovationLeBlanMesnil() {
               { href: '/blog/renovation-salle-de-bain-prix-paris', label: 'Prix salle de bain' },
               { href: '/blog/renovation-avant-vente-paris', label: 'Rénover avant vente' },
               { href: '/blog/parquet-flottant-vs-colle-paris', label: 'Parquet flottant vs collé' },
-              { href: '/blog/travaux-electricite-appartement-paris', label: 'Électricité appartement' },
+              { href: '/blog/travaux-electricite-appartement-paris', label: 'Travaux électricité' },
               { href: '/blog/renovation-appartement-investissement-paris', label: 'Rénovation investissement' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-xs border border-gray-200 rounded px-3 py-1.5 text-gray-600 hover:border-[#D4AF37] hover:text-[#B8960C] transition-colors font-light">
@@ -334,7 +334,7 @@ export default function RenovationLeBlanMesnil() {
             Votre projet au Blanc-Mesnil
           </h2>
           <p className="text-gray-400 text-sm font-light mb-8 leading-relaxed">
-            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune du Blanc-Mesnil et la Seine-Saint-Denis.
+            Décrivez votre projet et recevez un devis gratuit et détaillé sous 48h. Déplacement sans engagement dans toute la commune du Blanc-Mesnil et ses alentours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
