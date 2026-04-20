@@ -2148,6 +2148,24 @@ const articles = [
     desc: "Artisan rénovateur à Sèvres (Hauts-de-Seine). Cuisine, salle de bain, parquet. Devis gratuit.",
     tag: 'Ville',
   },
+  {
+    href: '/blog/renovation-appartement-chaville',
+    title: "Rénovation Appartement Chaville (92) — Guide 2025",
+    desc: "Rénover un appartement à Chaville (92). Artisan qualifié, devis gratuit sous 48h.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-le-plessis-robinson',
+    title: "Rénovation Appartement Le Plessis-Robinson (92) — 2025",
+    desc: "Artisan rénovateur au Plessis-Robinson (92). Cuisine, salle de bain, parquet. Devis gratuit.",
+    tag: 'Ville',
+  },
+  {
+    href: '/blog/renovation-appartement-senior-paris',
+    title: "Rénovation Appartement Senior Paris — Accessibilité 2025",
+    desc: "Adapter son appartement à Paris pour les seniors : douche à l'italienne, barres d'appui, prix.",
+    tag: 'Guide',
+  },
 ]
 
 export default function BlogPage() {
